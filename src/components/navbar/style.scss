@@ -1,2 +1,101 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray-color: #ACACAC;
+    --dark-gray: #676767;
+    --standard-font-size: 16px;
+    --gray-bg: #EFEFEF;
+    --orange-color: #FF8833;
+}
+
+.nav-desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 984px;
+    background-color: white;
+    padding: 1em;
+    gap: 54px;
+}
+
+.nav-superior > img {
+    max-width: 179px;
+    margin-right: calc(116px);
+}
+
+.buscador{
+    width: 253px;
+    height: 38px;
+    border: 1.04px solid var(--gray-color);
+    border-radius: 188px;
+}
+
+.buscador::placeholder {
+    position: relative;
+    left: 5%;
+    vertical-align: middle;
+    color: var(--gray-color);
+    font-size: var(--standard-font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+.inicio-sesion{
+    width: 107px;
+    color: var(--orange-color);
+    font-weight: bold;
+}
+
+.pagos-pse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: bold;
+    width: 181px;
+    height: 43px;
+    border-radius: 4.27px;
+    font-size: var(--standard-font-size);
+}
+
+nav{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 63px;
+    background-color: var(--gray-bg);
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 85px;
+    margin: 0;
+}
+
+.navegacion > li {
+    list-style: none;
+}
+
+.navegacion > li > a {
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+
