@@ -1,41 +1,4 @@
-//Colors
-$orange100: #FFE1CC;
-$orange200: #FFC499;
-$orange300: #FFA666;
-$orange400: #FF8833;
-$orange500: #FF6900;
-$orange600: #CC5500;
-$orange700: #994000;
-$orange800: #662B00;
-$orange900: #331500;
-$orange1000: #1B0B00;
-$violet100: #DFCCF3;
-$violet200: #BF99E7;
-$violet300: #9F66DB;
-$violet400: #7F33CF;
-$violet500: #5F259F;
-$violet600: #4D1E7F;
-$violet700: #3A165F;
-$violet800: #260F40;
-$violet900: #130720;
-$violet1000: #0E021B;
-$aqua100: #BEFCFF;
-$aqua200: #7EF9FF;
-$aqua300: #3DF5FF;
-$aqua400: #00EFFC;
-$aqua500: #00B1BB;
-$aqua600: #008E96;
-$aqua700: #006B70;
-$aqua800: #00474B;
-$aqua900: #002425;
-$aqua1000: #001A1B;
-$aqua_divine: #62DEE5;
-
-$gray1: #676767;
-$gray2: #ACACAC;
-$gray3: #EFEFEF;
-
-// Typography
+@import './global.scss';
 
 * {
     margin: 0px;
@@ -56,7 +19,7 @@ body {
     &_banner {
         height: 290px;
         margin: 0px -5.15%;
-        background-color: $gray3;
+        background-color: $gray-3;
     }
 
     &_container-text {
@@ -68,7 +31,7 @@ body {
 
     &_title {
         width: 42.3%;
-        color: $gray1;
+        color: $gray-1;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -77,7 +40,7 @@ body {
 
     &_text {
         width: 36.3%;
-        color: $gray1;
+        color: $gray-1;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -91,7 +54,7 @@ body {
         padding: 10px 0px;
         border-radius: 4px;
         border: none;
-        background-color: $violet300;
+        background-color: $purple-300;
         color: white;
         text-align: center;
         font-size: 13.424px;
