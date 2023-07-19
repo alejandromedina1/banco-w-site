@@ -54,6 +54,33 @@ $gray-3: #EFEFEF;
 
 //Fonts
 
+$font-path: './fonts/';
+
+$font-bariol-bold: 'Bariol Bold', sans-serif;
+$font-bariol-bold-italic: 'Bariol Bold Italic', sans-serif;
+$font-bariol-light: 'Bariol Light', sans-serif;
+$font-bariol-light-italic: 'Bariol Light Italic', sans-serif;
+$font-bariol-regular: 'Bariol Regular', sans-serif;
+$font-bariol-regular-italic: 'Bariol Regular Italic', sans-serif;
+$font-bariol-thin: 'Bariol Thin', sans-serif;
+$font-bariol-thin-italic: 'Bariol Thin Italic', sans-serif;
+$font-geomanist-black: 'Geomanist Black', sans-serif;
+$font-geomanist-bold: 'Geomanist Bold', sans-serif;
+$font-geomanist-book: 'Geomanist Book', sans-serif;
+$font-geomanist-extra-light: 'Geomanist Extra Light', sans-serif;
+$font-geomanist-light: 'Geomanist Light', sans-serif;
+$font-geomanist-medium: 'Geomanist Medium', sans-serif;
+$font-geomanist-regular: 'Geomanist Regular', sans-serif;
+$font-geomanist-thin: 'Geomanist Thin', sans-serif;
+$font-geomanist-ultra: 'Geomanist Ultra', sans-serif;
+
+
+.example {
+    font-family: $font-bariol-regular;
+}
+
+//fonts styles
+
 $font: 24px;
 
 
