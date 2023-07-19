@@ -1,0 +1,25 @@
+
+body {
+    height: 1000px;
+    background-color: black;
+}
+
+.second-navbar {
+    height: 85.292px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 10.774px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    --bs-nav-link-color: #9F66DB;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border-width: 2px;
+}

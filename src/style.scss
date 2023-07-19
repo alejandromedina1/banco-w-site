@@ -1,0 +1,102 @@
+//Colors
+$orange100: #FFE1CC;
+$orange200: #FFC499;
+$orange300: #FFA666;
+$orange400: #FF8833;
+$orange500: #FF6900;
+$orange600: #CC5500;
+$orange700: #994000;
+$orange800: #662B00;
+$orange900: #331500;
+$orange1000: #1B0B00;
+$violet100: #DFCCF3;
+$violet200: #BF99E7;
+$violet300: #9F66DB;
+$violet400: #7F33CF;
+$violet500: #5F259F;
+$violet600: #4D1E7F;
+$violet700: #3A165F;
+$violet800: #260F40;
+$violet900: #130720;
+$violet1000: #0E021B;
+$aqua100: #BEFCFF;
+$aqua200: #7EF9FF;
+$aqua300: #3DF5FF;
+$aqua400: #00EFFC;
+$aqua500: #00B1BB;
+$aqua600: #008E96;
+$aqua700: #006B70;
+$aqua800: #00474B;
+$aqua900: #002425;
+$aqua1000: #001A1B;
+$aqua_divine: #62DEE5;
+
+$gray1: #676767;
+$gray2: #ACACAC;
+$gray3: #EFEFEF;
+
+// Typography
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+}
+
+body {
+    padding: 0px 5.13%;
+}
+
+// Main Banner
+#main {
+    &_banner {
+        height: 290px;
+        margin: 0px -5.15%;
+        background-color: $gray3;
+    }
+
+    &_container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    &_title {
+        width: 42.3%;
+        color: $gray1;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 137%;
+    }
+
+    &_text {
+        width: 36.3%;
+        color: $gray1;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 133%;
+        /* 15.96px */
+    }
+
+    &_btn {
+        width: 31%;
+        height: 30;
+        padding: 10px 0px;
+        border-radius: 4px;
+        border: none;
+        background-color: $violet300;
+        color: white;
+        text-align: center;
+        font-size: 13.424px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
