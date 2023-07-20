@@ -10,15 +10,11 @@ p {
     margin: 0px;
 }
 
-body {
-    padding: 0px 5.13%;
-}
-
 // Main Banner
 #main {
     &_banner {
         height: 290px;
-        margin: 0px -5.15%;
+        margin: 0px;
         background-color: $gray-3;
     }
 
@@ -30,36 +26,61 @@ body {
     }
 
     &_title {
-        width: 42.3%;
         color: $gray-1;
+        font-family: $font-geomanist-bold;
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
         line-height: 137%;
     }
-
+    
     &_text {
-        width: 36.3%;
         color: $gray-1;
+        font-family: $font-bariol-regular;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 133%;
-        /* 15.96px */
     }
-
+    
     &_btn {
-        width: 31%;
-        height: 30;
-        padding: 10px 0px;
+        width: 95%;
+        height: 30px;
+        padding: 5px;
         border-radius: 4px;
         border: none;
         background-color: $purple-300;
         color: white;
         text-align: center;
+        font-family: $font-bariol-regular;
         font-size: 13.424px;
-        font-style: normal;
-        font-weight: 400;
         line-height: normal;
+        text-decoration: none;
     }
+
+    &_banner-container {
+        position: absolute;
+        top: 71px;
+        left: 57.7%;
+        width: 42.3%;
+        display: flex;
+        padding: 0px 5.13%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+.circle-mobile {
+    width: 100%;
+}
+
+.woman-mobile {
+    width: 52%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#nav-bar-float {
+    height: 85.29px;
+    margin: -40px 0;
+    background-color: black;
 }
