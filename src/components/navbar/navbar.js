@@ -21,7 +21,7 @@ class NavBarDesktop extends HTMLElement {
                     <ul class="navegacion">
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Clientes</a></li>
-                        <li><a href="#">Productos y servicios</a></li>
+                        <li><a href="#">Productos y servicios </a></li>
                         <li><a href="#">Asesoría financiera</a></li>
                         <li><a href="#">Acerca de nosotros</a></li>
                     </ul>
