@@ -1,5 +1,6 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
 
 *{
     margin: 0;
@@ -8,24 +9,21 @@
 }
 
 :root{
-    --gray-color: #ACACAC;
-    --dark-gray: #676767;
     --standard-font-size: 16px;
-    --gray-bg: #EFEFEF;
-    --orange-color: #FF8833;
 }
 
 .nav-desktop{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .nav-superior{
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 984px;
+    max-width: 1020px;
     background-color: white;
     padding: 1em;
     gap: 54px;
@@ -36,10 +34,16 @@
     margin-right: calc(116px);
 }
 
+.search-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .buscador{
     width: 253px;
     height: 38px;
-    border: 1.04px solid var(--gray-color);
+    border: 1.04px solid $gray-2;
     border-radius: 188px;
 }
 
@@ -47,31 +51,51 @@
     position: relative;
     left: 5%;
     vertical-align: middle;
-    color: var(--gray-color);
+    color: $gray-2;
     font-size: var(--standard-font-size);
+    font-family: $font-bariol-regular;
 }
+
+.search-icon{
+    position: absolute;
+    margin-right: 15px;
+}
+
 
 a {
     text-decoration: none;
 }
 
 .inicio-sesion{
-    width: 107px;
-    color: var(--orange-color);
+    width: 135px;
+    color: $orange-400;
     font-weight: bold;
+    font-family: $font-geomanist-medium;
 }
 
 .pagos-pse{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: var(--orange-color);
-    color: white;
+    gap: 5px;
+    background-color: $orange-400;
     font-weight: bold;
-    width: 181px;
-    height: 43px;
+    width: 210px;
+    height: 45px;
     border-radius: 4.27px;
+}
+
+.pagos-pse > span {
+    color: white;
     font-size: var(--standard-font-size);
+    font-family: $font-geomanist-medium;
+    width: 100%;
+    margin: 0 5px;
+}
+
+.pagos-pse > img {
+    width: 27px;
+    margin-left: 8px;
 }
 
 nav{
@@ -80,7 +104,10 @@ nav{
     align-items: center;
     width: 100vw;
     height: 63px;
-    background-color: var(--gray-bg);
+    background-color: $gray-3;
+    -webkit-box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
 }
 
 .navegacion{
@@ -96,7 +123,44 @@ nav{
 }
 
 .navegacion > li > a {
-    color: var(--dark-gray);
+    color: $gray-1;
     font-weight: bold;
+    font-family: $font-geomanist-medium;
 }
+
+.navegacion > li > a > img {
+    margin-left: 1.5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $gray-3;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
+    list-style: none;
+    padding: 0;
+    border-radius: 6px;
+  }
+  
+  .dropdown-content li {
+    padding: 8px;
+    margin: 0 18px;
+  }
+  
+  .dropdown-content li a {
+    color: $gray-1;
+    text-decoration: none;
+    font-family: $font-geomanist-regular;
+    font-size: 16px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: max-content;
+    height: 198px;
+  }
 
