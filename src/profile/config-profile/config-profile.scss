@@ -1,5 +1,27 @@
 @use './src/global.scss' as c;
 
+//Mixins
+
+@mixin box_controls() {
+    color: c.$gray-2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 144.516px;
+    height: 120px;
+    gap: 18px;
+    border-radius: 5.385px;
+    background: #FFF;
+    padding: 13px 25px 0 25px;
+    box-shadow: 4.48753023147583px 6.282541751861572px 26.925180435180664px 0px rgba(159, 102, 219, 0.18);
+    text-align: center;
+    line-height: normal;
+    font-size: 13px;
+    font-family: c.$font-bariol-regular;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +79,22 @@ ul {
         }
 }
 
+h2 {
+    font-size: 30px;
+    font-family: c.$font-geomanist-bold;
+    color: c.$gray-2;
+    font-weight: 700;
+}
+
+p {
+    font-family: c.$font-bariol-regular;  
+    font-size: 18px;
+    color: c.$cyan-500;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
 .Hero-menu ul{
     width: 100%;
     display: flex;
@@ -73,6 +111,65 @@ ul {
     margin-bottom: 16px;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+// Buttons
+.Buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 35px 0 35px;
+
+        &-name {
+            display: flex;
+            align-items: center;
+        }
+        &-up {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        &-down {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-up a {
+            @include box_controls();
+        }
+        &-down a {
+            @include box_controls();
+        }
+        &-session {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        &-session button {
+            border: none;
+            font-family: c.$font-bariol-regular;
+            color: #FFF;
+            text-align: center;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 257px;
+            height: 29.258px;
+            border-radius: 3.124px;
+            background: var(--acuamarina-500, #00B1BB);
+            box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
+        }
 }
 
 
