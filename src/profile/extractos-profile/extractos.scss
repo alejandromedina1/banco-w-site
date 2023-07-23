@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-ul {
-    padding-left: 0;
-}
-
 :root {
     --scrollY: 0px;
 }
@@ -66,6 +62,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
     border-radius: 4px;
     background: #FFF;
     box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
@@ -101,6 +98,7 @@ ul {
         color: c.$gray-2;
         font-family: 'Geomanist';
         font-weight: 700;
+        margin: 0;
 
     }
 
@@ -136,7 +134,14 @@ ul {
 
         /*background-color: #FFF;*/
 
+        &:focus{
+            border: 1.93px solid c.$cyan-500;
+            box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+        }
     }
+
+
 
     &__inputs {
         margin-bottom: 40px;
