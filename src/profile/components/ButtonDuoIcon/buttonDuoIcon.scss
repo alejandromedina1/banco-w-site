@@ -1,0 +1,79 @@
+@use './src/global.scss' as c;
+
+.button {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 63px;
+	max-height: 90px;
+	padding: 0;
+	border-radius: 5.734px;
+	background: #FFF;
+	box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
+	border: none;
+	outline: none;
+	overflow: hidden;
+	font-family: 'Bariol';
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    translate: 0px -5px;
+}
+
+
+.button:active {
+	background: c.$orange-400;
+	
+}
+
+.button__text,
+.button__icon,
+.button__arrow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	color: c.$gray-2;
+	fill: #fff;
+	min-height: 63px;
+	max-height: 90px;
+	text-align: left;
+}
+
+.button__icon {
+	font-size: 1.2em;
+	background: c.$orange-400;
+	fill: #fff;
+}
+
+.button__icon svg {
+
+	fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+
+	.button,
+	.button__text,
+	.button__icon,
+	.button__arrow {
+		height: 80px;
+
+	}
+
+	.button {
+		width: 100%;
+	}
+
+	.button__text,
+	.button__icon,
+	.button__arrow {
+		padding: 0 35px;
+
+	}
+
+}
