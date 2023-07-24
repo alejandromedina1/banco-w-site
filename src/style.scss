@@ -50,6 +50,14 @@ h3 {
     line-height: 168.5%;
 }
 
+.body3 {
+    color: $gray-3;
+    font-family: $font-bariol-regular;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+
 // Main Banner
 #main-banner {
     width: 100%;
@@ -428,6 +436,7 @@ h3 {
 
     & .benefits {
         width: 100%;
+        padding: 30px 2.5%;
         border-radius: 4.562px;
         background: var(--naranja-400, #F83);
         background-image: url(./public/images/circles-profile-mobile.webp);
@@ -437,25 +446,94 @@ h3 {
         & .description {
             display: flex;
             flex-direction: row;
+            gap: 4.5%;
 
             & img {
                 width: 52.23%;
-                margin-top: -50px;
+                margin-top: -80px;
             }
 
-            &_text {
+            &_info {
                 display: flex;
                 flex-direction: column;
-                gap: 10px
+                gap: 10px;
+
+                &_text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                }
             }
 
             & h4 {
-                color: var(--gris, #EFEFEF);
+                color: $gray-3;
                 font-family: Geomanist;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+            }
+
+            & .btn {
+                width: 66%;
+                height: auto;
+                padding: 5px 5%;
+                border-radius: 3.638px;
+                background: $purple-300;
+                color: #FFF;
+                text-align: center;
+                font-family: $font-bariol-regular;
+                font-size: 11.435px;
+                font-weight: 400;
+            }
+        }
+
+        & .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4%;
+            padding: 0px 2.5%;
+            margin-top: -45px;
+            margin-bottom: -87px;
+
+            & .each-card {
+                width: 48%;
+
+                & .card {
+                    width: 100%;
+                    height: 146px;
+                    display: flex;
+                    padding: 3.509px 9.57px 1.404px 9.57px;
+                    gap: 5px;
+                    border: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 4.785px;
+                    background: white;
+                    box-shadow: 3.681197166442871px 5.153675556182861px 22.087182998657227px 0px rgba(159, 102, 219, 0.18);
+                    margin-bottom: 10px;
+
+                    & .icon {
+                        width: 25%;
+                    }
+
+                    & .title {
+                        color: $orange-400;
+                        text-align: center;
+                        font-family: $font-bariol-regular;
+                        font-size: 14.819px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        margin: 0px;
+                    }
+
+                    & p {
+                        color: $gray-1;
+                        margin-bottom: 18px;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
