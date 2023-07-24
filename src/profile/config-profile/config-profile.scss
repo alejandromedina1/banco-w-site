@@ -2,23 +2,23 @@
 
 //Mixins
 
-@mixin box_controls() {
+@mixin box_controls($gp: 18px, $w: 144.516px, $h: 120px, $p: 13px 25px 0 25px, $f: 13px) {
     color: c.$gray-2;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 144.516px;
-    height: 120px;
-    gap: 18px;
+    width: $w;
+    height: $h;
+    gap: $gp;
     border-radius: 5.385px;
     background: #FFF;
-    padding: 13px 25px 0 25px;
+    padding: $p;
     box-shadow: 4.48753023147583px 6.282541751861572px 26.925180435180664px 0px rgba(159, 102, 219, 0.18);
     text-align: center;
     line-height: normal;
-    font-size: 13px;
+    font-size: $f;
     font-family: c.$font-bariol-regular;
 }
 
@@ -30,6 +30,10 @@
 
 ul {
     padding-left: 0;
+}
+
+h3 {
+    display: none;
 }
 
 :root {
@@ -45,6 +49,7 @@ ul {
     background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
     background-repeat: no-repeat;
 }
+
 
 .Hero {
     position: relative;
@@ -77,6 +82,15 @@ ul {
         &-border {
             border-right: 0.5px solid c.$orange-300;
         }
+        &-menu ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+        }
 }
 
 h2 {
@@ -84,6 +98,7 @@ h2 {
     font-family: c.$font-geomanist-bold;
     color: c.$gray-2;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 p {
@@ -93,16 +108,7 @@ p {
     margin-top: 2rem;
     margin-bottom: 0;
     font-weight: 400;
-}
-
-.Hero-menu ul{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background: #FFF;
-    box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+    margin: 4rem 35px 0 35px;
 }
 
  .Hero-menu li {
@@ -111,41 +117,33 @@ p {
     margin-bottom: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    cursor: pointer;
 }
 
 // Buttons
-.Buttons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Buttons {
+    margin-top: 4rem;
 }
 
 .Buttons {
     display: flex;
     flex-direction: column;
-    margin: 4rem 35px 0 35px;
+    margin: 0.5rem 35px 0 35px;
 
         &-name {
             display: flex;
             align-items: center;
+            margin: 4rem 35px 0 35px;
         }
         &-up {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-        &-down {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: grid;
+            column-gap: 3rem;
+            grid-auto-rows: 9rem;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 6.5rem), 1fr));
+            max-width: 768px;
+            margin: 4rem 35px 0 0;
         }
         &-up a {
-            @include box_controls();
-        }
-        &-down a {
             @include box_controls();
         }
         &-session {
@@ -171,5 +169,155 @@ p {
             box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
         }
 }
+
+
+@media only screen and (min-width: 780px){
+    .Buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Buttons {
+        &-up {
+            max-width: 780px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    //Header
+    h3 {
+        display: block;
+    }
+
+    .Hero {
+
+        &-buttons {
+            display: none;
+        }
+        &-Profile {
+            padding-bottom: 0;
+        }
+        &-Profile h3{
+            color: #FFF;
+            text-align: center;
+            font-family: c.$font-geomanist-bold;
+            font-weight: 700;
+            font-size: 45px;  
+        }
+        &-Profile img{
+            display: none;
+        }
+        &-menu {
+            position: absolute;
+            top: 67%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        &-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-other {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-menu ul {
+            width: 880px;
+            height: 145px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+        } 
+    }
+
+    .Hero-menu li {
+        width: 145px;
+        height: 80px;
+        list-style: none;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Bg-animation {
+        height: 471px;
+        background-size: auto 863px;
+        background-image: url(/public/images/hero-circles-desktop.webp), url(/public/images/hero-circles-desktop.webp);
+        background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
+        background-repeat: no-repeat;
+    }
+
+    //El resto
+
+    .Buttons {
+        &-name {
+            display: none;
+        }
+        &-up {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1920px;
+            flex-wrap: wrap;
+            gap: 4rem;
+            margin-top: 5rem;
+        }
+        &-up a {
+            @include box_controls($gp: 18px, $w: 280px, $h: 186px, $p: 8px 50px 0 50px, $f: 25px);
+        }
+        &-session button {
+            font-size: 25px;
+            width: 552px;
+            height: 50px;
+            margin-top: 5rem;
+            border-radius: 7px;
+        }
+    }
+
+    svg {
+        width: 33px;
+        height: 33px;
+    }
+    
+    p {
+        font-size: 30px;
+        margin-left: 3rem;
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .Buttons-up {
+        margin: 0;
+        gap: 0rem;
+    }
+
+    p {
+        font-size: 30px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+
+    .Buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 100px 0 100px;
+    }
+}
+
 
 
