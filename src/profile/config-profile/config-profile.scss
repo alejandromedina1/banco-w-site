@@ -36,6 +36,10 @@ h3 {
     display: none;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 :root {
     --scrollY: 0px;
 }
@@ -82,6 +86,12 @@ h3 {
         &-border {
             border-right: 0.5px solid c.$orange-300;
         }
+        &-border p {
+            display: none;
+        }
+        &-other p {
+            display: none;
+        }
         &-menu ul {
             width: 100%;
             display: flex;
@@ -101,14 +111,14 @@ h2 {
     margin-bottom: 0;
 }
 
-p {
+.Button-info {
     font-family: c.$font-bariol-regular;  
     font-size: 18px;
     color: c.$cyan-500;
     margin-top: 2rem;
     margin-bottom: 0;
     font-weight: 400;
-    margin: 4rem 35px 0 35px;
+    margin: 2rem 35px 0 35px;
 }
 
  .Hero-menu li {
@@ -120,15 +130,26 @@ p {
     cursor: pointer;
 }
 
-// Buttons
-.Buttons {
-    margin-top: 4rem;
+.Hero-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: c.$font-geomanist-regular;
+    font-size: 18px;
+    color: c.$orange-300;
+    text-decoration: none;
+    gap: 1rem;
+    text-align: center;
 }
+
+// Buttons
 
 .Buttons {
     display: flex;
     flex-direction: column;
     margin: 0.5rem 35px 0 35px;
+    margin-top: 2rem;
 
         &-name {
             display: flex;
@@ -141,7 +162,7 @@ p {
             grid-auto-rows: 9rem;
             grid-template-columns: repeat(auto-fill, minmax(min(100%, 6.5rem), 1fr));
             max-width: 768px;
-            margin: 4rem 35px 0 0;
+            margin: 2rem 35px 0 0;
         }
         &-up a {
             @include box_controls();
@@ -192,6 +213,7 @@ p {
 
 @media only screen and (min-width: 1024px){
     //Header
+   
     h3 {
         display: block;
     }
@@ -224,6 +246,12 @@ p {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        &-border p {
+            display: block;
+        }
+        &-other p {
+            display: block;
         }
         &-other {
             display: flex;
@@ -292,7 +320,7 @@ p {
         height: 33px;
     }
     
-    p {
+    .Button-info {
         font-size: 30px;
         margin-left: 3rem;
         margin-top: 8rem;
@@ -305,7 +333,7 @@ p {
         gap: 0rem;
     }
 
-    p {
+    .Button-info {
         font-size: 30px;
         margin-left: 6rem;
         margin-top: 10rem;
