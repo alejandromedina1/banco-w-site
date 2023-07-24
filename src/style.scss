@@ -33,6 +33,15 @@ h3 {
     color: $gray-1;
 }
 
+.body1 {
+    color: white;
+    text-align: center;
+    font-family: $font-bariol-regular;
+    font-size: 16.7px;
+    font-weight: 400;
+    line-height: 138%;
+}
+
 .body2 {
     color: $gray-1;
     font-family: $font-bariol-regular;
@@ -42,21 +51,35 @@ h3 {
 }
 
 // Main Banner
-#main {
-    &_banner {
-        height: 290px;
-        margin: 0px;
-        background-color: $gray-3;
+#main-banner {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: $gray-3;
+    background-image: url(./public/images/circle-banner-main-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+
+    & .banner-container {
+        width: 42.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
-    &_container-text {
+    & .container-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
     }
 
-    &_title {
+    & .title {
         color: $gray-1;
         font-family: $font-geomanist-bold;
         font-size: 20px;
@@ -64,14 +87,15 @@ h3 {
         line-height: 137%;
     }
 
-    &_text {
+    & .text {
+        width: 80%;
         color: $gray-1;
         font-family: $font-bariol-regular;
         font-size: 12px;
         line-height: 133%;
     }
 
-    &_btn {
+    & .btn {
         width: 95%;
         height: 30px;
         padding: 5px;
@@ -86,44 +110,35 @@ h3 {
         text-decoration: none;
     }
 
-    &_banner-container {
-        position: absolute;
-        top: 71px;
-        left: 57.7%;
-        width: 42.3%;
-        display: flex;
-        padding: 0px 5.13%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+
+    & .circle-mobile {
+        width: 100%;
+    }
+
+    & .woman-mobile {
+        width: 52%;
+        top: 0px;
+        left: 0px;
     }
 }
 
-.circle-mobile {
-    width: 100%;
-}
-
-.woman-mobile {
-    width: 52%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
 
 #nav-bar-float {
     height: 85.29px;
     margin: -40px 0;
     background-color: black;
+    opacity: 20%;
 }
 
 #products-landing {
-    padding-left: 5.13%;
-    padding-right: 5.13%;
-    padding-top: 87px;
-    padding-right: 25px;
+    background-image: url(./public/images/bg-product-ahorro-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+
 
     & .titles-section {
-
+        padding-left: 5.13%;
+        padding-top: 87px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -134,6 +149,8 @@ h3 {
     }
 
     & .container-products {
+        padding: 0px 5.13%;
+
         & .dropdown-products {
             width: 70.3%;
             height: 35px;
@@ -145,9 +162,16 @@ h3 {
             margin-bottom: 20px;
         }
 
+        & .info-product {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
+
         & .description-product {
             display: flex;
-            flex-direction: row;
+            flex-direction: co;
             margin: 20px 0px;
             gap: 7px;
 
@@ -163,21 +187,8 @@ h3 {
             width: 4.3%;
         }
 
-        & .images-product {
-            margin-top: -140px;
-            justify-content: center;
-
-            & .bg-products {
-                width: 111%;
-                margin: 0px -5.15%
-            }
-
-            & .image-ref-product {
-                position: absolute;
-                width: 61.15%;
-                top: 802px;
-                left: 20%;
-            }
+        & .image-ref-product {
+            width: 61.15%;
         }
     }
 
@@ -188,18 +199,24 @@ h3 {
 
     & .our-app {
         width: 100%;
+        background-image: url(./public/images/bg-news-mobile.webp);
+        background-size: cover;
+        background-position: center center;
         background-color: $purple-300;
         border-radius: 5px;
+        display: flex;
+        justify-content: center;
 
-        & .bg-news {
-            width: 100%;
+        & .container-info {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 163.834px;
         }
 
         & .container-text {
             width: 75.26%;
-            position: absolute;
-            top: 1200px;
-            left: 12.9%;
+            padding-top: 48.8px;
             gap: 10px;
             display: flex;
             flex-direction: column;
@@ -212,16 +229,12 @@ h3 {
             }
 
             & p {
-                width: 80%;
                 color: white !important;
                 text-align: center;
             }
         }
 
         & .btn {
-            position: absolute;
-            top: 1420px;
-            left: 30%;
             width: auto;
             height: auto;
             padding: 11.3px 17px;
@@ -233,6 +246,7 @@ h3 {
             font-family: $font-bariol-regular;
             font-size: 17.655px;
             font-weight: 400;
+            margin-bottom: 70.66px;
         }
     }
 
@@ -240,16 +254,48 @@ h3 {
 
 #favorites {
     padding: 25px 5.13%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 
     & .card-favorite {
 
         & .orange {
+            margin-top: -9px;
+            display: flex;
+            flex-direction: row;
             width: 100%;
             height: 130px;
             border-radius: 7.67px;
             background-image: url(./public/images/card-search-orange-mobile.webp);
             background-size: cover;
             background-position: center center;
+        }
+
+        & .violet {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 130px;
+            border-radius: 7.67px;
+            background-image: url(./public/images/card-search-violet-mobile.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        & .blue {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 130px;
+            border-radius: 7.67px;
+            background-image: url(./public/images/card-search-blue-mobile.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        & img {
+            width: 10.1%;
         }
 
         & h2 {
@@ -262,6 +308,155 @@ h3 {
             width: 56.3%;
             color: white;
             padding-left: 23px;
+        }
+    }
+}
+
+#finance {
+    background-image: url(./public/images/bg-finance-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+    margin: 25px 0;
+    padding-top: 68.53px;
+
+    & .container-text {
+        padding: 0% 5.13%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15.66px;
+
+        & h1 {
+            color: white;
+            text-align: center;
+            font-family: $font-geomanist-bold;
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 138%;
+        }
+
+        & .btn {
+            width: 39.66%;
+            height: 37.574px;
+            padding: 10px 5px;
+            border-radius: 4px;
+            border: none;
+            background: $orange-300;
+            color: white;
+            text-align: center;
+            font-family: $font-bariol-regular;
+            font-size: 16px;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+
+    & img {
+        width: 39.29%;
+        margin-top: -50px;
+    }
+}
+
+#featured-articles {
+    padding: 25px 5.13%;
+
+    & .each-article {
+        width: 96%;
+
+        & .card {
+            border-radius: 8.66px !important;
+            padding: 12.12px 3.35%;
+            box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+            margin: 0px;
+            background: #FDFDFD;
+            border: none;
+
+            & img {
+                margin-bottom: 23px;
+            }
+
+            & h5 {
+                color: $gray-1;
+                font-family: $font-geomanist-bold;
+                font-size: 13.856px;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            & .card-text {
+                color: $gray-1;
+                font-family: $font-bariol-regular;
+                font-size: 12.99px;
+                font-weight: 400;
+                line-height: 150%;
+                margin: 14.72px 0px;
+            }
+
+            & .more {
+                display: flex;
+                height: 12.124px;
+                flex-direction: row;
+                gap: 3.28px;
+                margin-top: 18.34px;
+                justify-content: center;
+                align-items: center;
+
+                & .link {
+                    width: 100%;
+                    color: $purple-300;
+                    text-align: right;
+                    font-family: $font-geomanist-medium;
+                    font-size: 12.124px;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+
+                & .icon {
+                    width: 4.8%;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+#profile-w {
+    padding: 25px 5.13%;
+
+    & .benefits {
+        width: 100%;
+        border-radius: 4.562px;
+        background: var(--naranja-400, #F83);
+        background-image: url(./public/images/circles-profile-mobile.webp);
+        background-size: cover;
+        background-position: center center;
+
+        & .description {
+            display: flex;
+            flex-direction: row;
+
+            & img {
+                width: 52.23%;
+                margin-top: -50px;
+            }
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                gap: 10px
+            }
+
+            & h4 {
+                color: var(--gris, #EFEFEF);
+                font-family: Geomanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
         }
     }
 }
