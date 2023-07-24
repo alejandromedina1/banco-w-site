@@ -1,0 +1,269 @@
+@use './src/global.scss' as c;
+
+//Mixins
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: c.$font-geomanist-bold;
+    color: c.$gray-2;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h3 {
+    display: none;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 255px;
+    background-size: auto 255px;
+    background-image: url(/public/images/hero_circles.webp), url(/public/images/hero_circles.webp);
+    background-position: calc(-211px - var(--scrollY)), calc(100% + 243px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+        &-buttons {
+            display: flex;
+            justify-content: right;
+            gap: 14.72px;   
+            height: 17%;
+        }    
+        &-Profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 4rem;
+        }
+        &-Profile img {
+            width: 160px;
+        }
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+        &-check {
+            display: flex;
+            align-items: center;
+            font-family: c.$font-bariol-regular;
+            font-size: 18px;
+            color: c.$gray-2;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        & img {
+            width: 133px;
+            margin-bottom: 2rem;
+        }
+        & button {
+            padding: 9.668px 29.004px;
+            border-radius: 0.26438rem;
+            background: c.$cyan-500;
+            border: none;
+            color: #FFF;
+            font-family: c.$font-bariol-regular;
+            font-size: 15px;
+            margin-bottom: 1rem;
+        }
+
+        &-name {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        & h4 {
+            font-family: c.$font-bariol-regular;
+            font-size: 30px;
+            color: c.$gray-2;
+        }
+
+        & p {
+            font-family: c.$font-bariol-regular;
+            font-size: 20px;
+            color: c.$gray-2;
+        }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 19px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 20px;
+    left: 0.15em;
+    bottom: 0.08em;
+    background-color: c.$cyan-500;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.6em);
+    background-color: #fff;
+  }
+
+
+@media only screen and (min-width: 780px){
+
+}
+
+
+@media only screen and (min-width: 1024px){
+    //Header
+   
+    h3 {
+        display: block;
+    }
+
+    .Hero {
+
+        &-buttons {
+            display: none;
+        }
+        &-Profile {
+            padding-bottom: 0;
+        }
+        &-Profile h3{
+            color: #FFF;
+            text-align: center;
+            font-family: c.$font-geomanist-bold;
+            font-weight: 700;
+            font-size: 45px;  
+        }
+        &-Profile img{
+            display: none;
+        }
+        &-menu {
+            position: absolute;
+            top: 67%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        &-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-border p {
+            display: block;
+        }
+        &-other p {
+            display: block;
+        }
+        &-other {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-menu ul {
+            width: 880px;
+            height: 145px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+        } 
+    }
+
+    .Hero-menu li {
+        width: 145px;
+        height: 80px;
+        list-style: none;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Bg-animation {
+        height: 471px;
+        background-size: auto 863px;
+        background-image: url(/public/images/hero-circles-desktop.webp), url(/public/images/hero-circles-desktop.webp);
+        background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
+        background-repeat: no-repeat;
+    }
+
+    //El resto
+
+    svg {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+
+}
+
+
+
