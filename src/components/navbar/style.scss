@@ -23,15 +23,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1020px;
+    justify-content: space-between;
+    width: 100vw;
     background-color: white;
     padding: 1em;
-    gap: 54px;
 }
 
 .nav-superior > img {
     max-width: 179px;
-    margin-right: calc(116px);
+    margin-left: 1.5em;
+}
+
+.right-top-nav{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    align-items: center;
+    margin-right: 1.5em;
+    gap: 30px;
 }
 
 .search-box{
@@ -45,18 +54,42 @@
     height: 38px;
     border: 1.04px solid $gray-2;
     border-radius: 188px;
+    text-align: left;
+    padding: 0 10px;
+    color: $gray-1;
+    font-size: var(--standard-font-size);
+    font-family: $font-bariol-regular;
 }
 
 .buscador::placeholder {
     position: relative;
-    left: 5%;
     vertical-align: middle;
     color: $gray-2;
     font-size: var(--standard-font-size);
     font-family: $font-bariol-regular;
 }
 
+.buscador::-webkit-search-cancel-button{
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    background: url('/icons/x.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.buscador:focus{
+    outline: none;
+    border: 2px solid $cyan-500;
+}
+
+.buscador:focus + .search-icon{
+    display: none;
+}
+
 .search-icon{
+    display: inline;
     position: absolute;
     margin-right: 15px;
 }
@@ -67,10 +100,11 @@ a {
 }
 
 .inicio-sesion{
-    width: 135px;
+    width: 121px;
     color: $orange-400;
     font-weight: bold;
     font-family: $font-geomanist-medium;
+    text-align: center;
 }
 
 .pagos-pse{
@@ -80,7 +114,7 @@ a {
     gap: 5px;
     background-color: $orange-400;
     font-weight: bold;
-    width: 210px;
+    width: 181px;
     height: 45px;
     border-radius: 4.27px;
 }
@@ -97,6 +131,41 @@ a {
     width: 27px;
     margin-left: 8px;
 }
+
+.profile{
+    display: none;
+    flex-direction: row;
+    font-family: $font-geomanist-medium;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    height: 41px;
+}
+
+.profile-picture{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1.84px solid $orange-400;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile > span > h5 {
+    font-size: 16px;
+    color: $gray-1;
+    margin: 0
+}
+
+.profile > span> p{
+    color: $gray-2;
+    margin: 0;
+}
+
 
 nav{
     display: grid;
@@ -128,6 +197,10 @@ nav{
     font-family: $font-geomanist-medium;
 }
 
+.navegacion > li > a:hover{
+    color: $orange-400;
+}
+
 .navegacion > li > a > img {
     margin-left: 1.5px;
 }
@@ -141,6 +214,7 @@ nav{
     list-style: none;
     padding: 0;
     border-radius: 6px;
+    
   }
   
   .dropdown-content li {
@@ -154,6 +228,10 @@ nav{
     font-family: $font-geomanist-regular;
     font-size: 16px;
   }
+
+  .dropdown-content li a:hover{
+    color: $orange-400;
+  }
   
   .dropdown:hover .dropdown-content {
     display: flex;
@@ -162,5 +240,6 @@ nav{
     align-items: flex-start;
     width: max-content;
     height: 198px;
+    transition: all 0.3 ease;
   }
 

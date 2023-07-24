@@ -13,12 +13,21 @@ class NavBarDesktop extends HTMLElement {
         <header class="nav-desktop">
             <div class="nav-superior">
                 <img src="images/logo-bancoW.webp" alt="Logo Banco W">
-                <div class="search-box">
-                <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
-                <img src="/icons/fi_search.svg" class="search-icon" alt="Icono buscador"/>
-                </div>
-                <a href="#" class="inicio-sesion">Iniciar sesión</a>
-                <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                <span class="right-top-nav">
+                    <div class="search-box">
+                        <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
+                        <img src="/icons/fi_search.svg" class="search-icon" alt="Icono buscador"/>
+                    </div>
+                    <a href="#" class="inicio-sesion">Iniciar sesión</a>
+                    <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                    <div class="profile">
+                        <img class="profile-picture" src="/images/black_woman_1.webp" alt="Foto de perfil"/>
+                        <span class="profile-info">
+                        <h5>Jessica García</h5>
+                        <p>Ver perfil <i class="bi bi-chevron-right"></i></p>
+                        </span>
+                    </div>
+                </span>
             </div>
                 <nav>
                     <ul class="navegacion">
