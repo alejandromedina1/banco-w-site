@@ -12,9 +12,8 @@ export default defineConfig({
         rollupOptions: {
             input:{
                 main: resolve(root, 'index.html'),
-                "profile": resolve(root, 'profile', 'index.html'),
                 "login": resolve(root, 'login', 'index.html'),
-                "registro": resolve(root, 'register', 'index.html'),
+                "sign-up": resolve(root, 'sign-up', 'index.html'),
             }
         },
         target: 'esnext'
