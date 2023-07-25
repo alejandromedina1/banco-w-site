@@ -1,0 +1,97 @@
+@import "../global.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+label {
+    font-family: $font-bariol-regular;
+    color: $cyan-500;
+    font-size: 13pt;
+}
+
+input:not(.passwords) {
+    border: 2px solid #cdcdcd;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: $font-bariol-regular;
+    font-size: 13pt;
+    color: #cdcdcd;
+}
+
+input:focus {
+    color: $cyan-500 ;
+    border: 2px solid $cyan-500;
+}
+
+select {
+    
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 20px;
+    color: #cdcdcd;
+    font-family: $font-bariol-regular;
+    border: 2px solid #cdcdcd;
+    border-radius: 4px;
+    outline: none;
+}
+
+
+.images {
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    width: 50px;
+}
+
+#login {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+p{
+    font-family: $font-bariol-regular;
+    font-size: 13pt;
+    color: #cdcdcd;
+}
+
+p#tologin{
+    color: $gray-1;
+}
+
+div.input-icons{
+    width: 100%;
+}
+
+.input-fields{
+    width: 100%;
+}
+
+button {
+    background-color: $cyan-500;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    font-family: $font-bariol-regular;
+    width: 100%;
+    padding: 10px;
+}
