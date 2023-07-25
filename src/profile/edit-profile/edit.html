@@ -44,14 +44,54 @@
         
     </section>
 
-    <form action="">
-        <label for="">Nombre Completo
-            <input type="text" placeholder="Jessica García">
-        </label>
-        <label for="">Tipo de usuario
-            <input type="text" placeholder="Jessica García">
-        </label>
-    </form>
+    <section class="Form">
+        <form action="">
+            <label for="">Nombre Completo
+                <input class="Form-Input" type="text" placeholder="Jessica García">
+            </label>
+            <label for="">Tipo de usuario
+                <input class="Form-Input" type="text" placeholder="Microempresario">
+            </label>
+            <label for="">Email
+                <input class="Form-Input" type="text" placeholder="example@gmail.com">
+            </label>
+            <label for="">Documento de identificación
+                <div class="Form-Dni">
+                    <input  type="text" placeholder="C.C">
+                    <input type="text" placeholder="112586195">
+                </div> 
+            </label>
+        </form>
+            <label for="">Documento de identificación
+                <div class="Form-Bday">
+                    <input  type="text" placeholder="24">
+                    <input type="text" placeholder="05">
+                    <input type="text" placeholder="1986">
+                </div> 
+            </label>
+            <label for="">
+                País
+                    <div class="Form-Country">
+                        <select name="" id="">
+                        <option value="">Colombia</option>
+                        <option value="">Ecuador</option>
+                        <option value="">Panamá</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Cali</option>
+                        <option value="">Bogotá</option>
+                        <option value="">Medellín</option>
+                    </select>
+                    </div>                
+            </label>
+            <label for="">Dirección
+                <input class="Form-Input" type="text" placeholder="Cra 68 # 13B -61">
+            </label>   
+            <div class="Form-Send">
+                <input type="submit" value="Guardar cambios">
+            </div>
+        </form>
+    </section>
 
 </body>
 </html>

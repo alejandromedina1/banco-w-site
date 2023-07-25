@@ -1,7 +1,17 @@
 @use './src/global.scss' as c;
 
 //Mixins
-
+@mixin input_box($w: 100%) {
+    width: $w;
+    border-radius: 3px;
+    border: 1px solid c.$gray-2;
+    background: #FFF;
+    padding: 7px 0 7px 15px;
+    font-family: c.$font-bariol-regular;
+    font-size: 13px;
+    color: c.$gray-2;
+    margin-top: 0.8rem; 
+}
 
 * {
     margin: 0;
@@ -121,14 +131,14 @@ h3 {
     display: inline-block;
     width: 47px;
     height: 19px;
-  }
+}
   
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
   /* The slider */
   .slider {
@@ -142,7 +152,7 @@ h3 {
     border: 1px solid #d9d9d9;
     transition: .4s;
     border-radius: 30px;
-  }
+}
   
   .slider:before {
     position: absolute;
@@ -154,22 +164,83 @@ h3 {
     bottom: 0.08em;
     background-color: c.$cyan-500;
     transition: 0.4s;
-  }
+}
   
   input:checked + .slider {
     background-color: #007bff;
     border: 1px solid #007bff;
-  }
+}
   
   input:focus + .slider {
     box-shadow: 0 0 1px #007bff;
-  }
+}
   
   input:checked + .slider:before {
     transform: translateX(1.6em);
     background-color: #fff;
-  }
+}
 
+.Form {
+    margin: 2rem 33px 0 33PX;
+    
+
+        & label {
+            display: flex;
+            flex-direction: column;
+            font-family: c.$font-bariol-regular;
+            font-size: 13px;
+            color: c.$gray-2;
+            margin-bottom: 1.5rem;
+        }
+        & ::placeholder {
+            font-family: c.$font-bariol-regular;
+            font-size: 13px;
+            color: c.$gray-2;
+        }
+        &-Input {
+            @include input_box()    
+        }
+        &-Dni,
+        &-Bday {
+            display: flex;
+        }
+        &-Dni input:nth-child(1) {
+            @include input_box($w: 20%);
+            margin-right: 1rem;
+        }
+        &-Dni input:nth-child(2) {
+            @include input_box($w: 100%);
+        }
+        &-Bday input:nth-child(1),
+        &-Bday input:nth-child(2) {
+            @include input_box($w: 20%);
+            margin-right: 1rem;
+        }
+        &-Bday input:nth-child(3) {
+            @include input_box($w: 25%);
+        }
+        &-Country {
+            display: flex;
+        }
+        &-Country select:nth-child(1){
+            margin-right: 1rem;
+        }
+        & select {
+            @include input_box($w: 50%);
+        }
+        &-Send input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 36px;
+            border: none;
+            border-radius: 0.44306rem;
+            background: var(--acuamarina-500, #00B1BB);
+            color: #FFF;
+        }
+}  
 
 @media only screen and (min-width: 780px){
 
@@ -201,48 +272,6 @@ h3 {
         &-Profile img{
             display: none;
         }
-        &-menu {
-            position: absolute;
-            top: 67%;
-            left: 50%;
-            transform: translate(-50%, 50%);
-        }
-        &-border {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &-border p {
-            display: block;
-        }
-        &-other p {
-            display: block;
-        }
-        &-other {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &-menu ul {
-            width: 880px;
-            height: 145px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 4px;
-            background: #FFF;
-            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
-        } 
-    }
-
-    .Hero-menu li {
-        width: 145px;
-        height: 80px;
-        list-style: none;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 
     .Bg-animation {
