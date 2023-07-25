@@ -1,3 +1,90 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    font-family: $font-bariol-regular;
+    color: $gray-1;
+    font-size: 11pt;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#footer-container{
+    background-color: $gray-3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px
+}
+
+.main-option{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid $orange-200;
+    margin-bottom: 1rem;
+    height: 35px;
+}
+
+.title-option{
+    font-family: $font-geomanist-bold;
+    color: $orange-400;
+    font-size: 13pt;
+}
+
+.dropdown{
+    display: none;
+    flex-direction: column;
+    
+}
+
+.footer-icons{
+    width: 40px;
+}
+
+.icons {
+    width: 20px;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer-logo{
+    width: 120px;
+}
+
+#ownership-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+#ownership{
+    font-family: $font-bariol-regular;
+    font-size: 8pt;
+    color: $gray-1;
+}
 

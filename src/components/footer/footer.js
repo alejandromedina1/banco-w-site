@@ -4,7 +4,7 @@ class Footer extends HTMLElement {
 
         //attributes
     }
-
+    
     static get observedAttributes() {
         return []
     }
@@ -19,14 +19,14 @@ class Footer extends HTMLElement {
     }
 
     render() {
+        
         this.innerHTML = `
-        <link rel="stylesheet" href="./style.scss">
         <footer>
             <div id="footer-container">
             <div id="us-container">
-                <div>
-                <p>Nosotros</p>
-                <img src="../public/icons/fi_chevron-down.svg" alt="">
+                <div class="main-option">
+                <p class="title-option">Nosotros</p>
+                <img class="icons" src="/icons/fi_chevron-down.svg" alt="">
                 </div>
                 <div class="dropdown">
                 <ul>
@@ -39,9 +39,9 @@ class Footer extends HTMLElement {
             </div>
 
             <div id="channels-container">
-                <div>
-                <p>Canales de atención</p>
-                <img src="../public/icons/fi_chevron-down.svg" alt="">
+                <div class="main-option">
+                <p class="title-option">Canales de atención</p>
+                <img class="icons" src="/icons/fi_chevron-down.svg" alt="">
                 </div>
                 <div class="dropdown">
                 <ul>
@@ -54,9 +54,9 @@ class Footer extends HTMLElement {
             </div>
 
             <div id="help-container">
-                <div>
-                <p>Ayuda</p>
-                <img src="../public/icons/fi_chevron-down.svg" alt="">
+                <div class="main-option">
+                <p class="title-option">Ayuda</p>
+                <img class="icons" src="/icons/fi_chevron-down.svg" alt="">
                 </div>
                 <div class="dropdown">
                 <ul>
@@ -70,37 +70,54 @@ class Footer extends HTMLElement {
             </div>
 
             <div id="follow-container">
-                <div>
-                <p>Síguenos</p>
-                <img src="../public/icons/fi_chevron-down.svg" alt="">
+                <div class="main-option">
+                <p class="title-option">Síguenos</p>
+                <img class="icons" src="/icons/fi_chevron-down.svg" alt="">
                 </div>
                 <div class="dropdown">
-                <ul>
+                <ul id="social-media">
                     <li>
-                    <img src="../public/icons/Social Media/Facebook.svg" alt="">
+                    <img class="footer-icons" src="/icons/Social Media/Facebook.svg" alt="">
                     </li>
                     <li>
-                    <img src="../public/icons/Social Media/Instagram.svg" alt="">
+                    <img class="footer-icons" src="/icons/Social Media/Instagram.svg" alt="">
                     </li>
                     <li>
-                    <img src="../public/icons/Social Media/Twitter.svg" alt="">
+                    <img class="footer-icons" src="/icons/Social Media/Twitter.svg" alt="">
                     </li>
                     <li>
-                    <img src="../public/icons/Social Media/Tik Tok.svg" alt="">
+                    <img class="footer-icons" src="/icons/Social Media/Tik Tok.svg" alt="">
                     </li>
                     <li>
-                    <img src="../public/icons/Social Media/Youtube.svg" alt="">
+                    <img class="footer-icons" src="/icons/Social Media/Youtube.svg" alt="">
                     </li>
                 </ul>
                 </div>
             </div>
             </div>
             <div id="ownership-container">
-            <img src="../public/images/footer-logo_4x.webp" alt="">
-            <p>Copyright © 2023 Banco W</p>
+            <img id="footer-logo" src="/images/footer-logo_4x.webp" alt="">
+            <p id="ownership">Copyright © 2023 Banco W</p>
             </div>
         </footer>
         `;
+
+        const buttons = this.querySelectorAll('.main-option')
+        const buttonArray = Array.prototype.slice.call(buttons)
+        console.log(buttonArray)
+        const dropdownElements = this.querySelectorAll('.dropdown')
+
+        buttonArray.forEach(button => {
+            button.addEventListener('click', () => {
+                if (dropdownElements[buttonArray.indexOf(button)].style.display === 'none') {
+                    dropdownElements[buttonArray.indexOf(button)].style.display = 'flex'
+                } else {
+                    dropdownElements[buttonArray.indexOf(button)].style.display = 'none'
+                }
+            })
+        });
+
+        
 
     }
 
