@@ -71,7 +71,7 @@ h3 {
 
 .Profile-checks {
     @include checkbox($m: 0rem); 
-    margin-right: 159px; 
+    margin-right: 100px; 
 }
 
 :root {
@@ -90,6 +90,14 @@ h3 {
 
 .button__icon {
     background: c.$cyan-500 !important;
+}
+
+.button__text{
+	padding-left: 14px !important;
+}
+
+.button__arrow {
+    padding: 0 20px !important;
 }
 
 //Hero Header
@@ -363,13 +371,13 @@ h3 {
 
     .Form {
         flex: 1 1 17rem;
-        margin: 2rem 159px 0 0;
+        margin: 2rem 100px 0 0;
     }
 
     .Profile {
         flex: 1 1 0rem;
-        margin: 1rem 33px 0 100PX;
-        padding-bottom: 34rem;
+        margin: 1rem 85px 0 100PX;
+        padding-bottom: 19rem;
     }
 
     .Profile-check {
