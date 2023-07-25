@@ -13,6 +13,17 @@
     margin-top: 0.8rem; 
 }
 
+@mixin checkbox($m) {
+    display: flex;
+    align-items: center;
+    font-family: c.$font-bariol-regular;
+    font-size: 18px;
+    color: c.$gray-2;
+    gap: 1.25rem;
+    margin-bottom: $m;
+    white-space: nowrap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +31,7 @@
 }
 
 p {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 h2 {
@@ -33,6 +44,27 @@ h2 {
 
 h3 {
     display: none;
+}
+
+
+.Button-toogle {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 5rem 0 5rem 100px;
+}
+
+.Button-toogle h3 {
+    font-family: c.$font-bariol-regular;  
+    font-size: 35px;
+    color: c.$cyan-500;
+    font-weight: 400; 
+}
+
+.Profile-checks {
+    @include checkbox($m: 0rem); 
+    margin-right: 159px; 
 }
 
 :root {
@@ -82,13 +114,7 @@ h3 {
     margin-top: 3rem;
 
         &-check {
-            display: flex;
-            align-items: center;
-            font-family: c.$font-bariol-regular;
-            font-size: 18px;
-            color: c.$gray-2;
-            gap: 1.25rem;
-            margin-bottom: 2rem;
+            @include checkbox($m: 2rem);
         }
         & img {
             width: 133px;
@@ -228,32 +254,55 @@ h3 {
         & select {
             @include input_box($w: 50%);
         }
+        &-Send {
+            display: flex;
+            justify-content: center;
+        }
         &-Send input{
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 100%;
+            width: 150px;
             height: 36px;
             border: none;
             border-radius: 0.44306rem;
             background: var(--acuamarina-500, #00B1BB);
             color: #FFF;
+            margin: 4rem 0;
         }
 }  
 
-@media only screen and (min-width: 780px){
+@media only screen and (min-width: 768px){
 
+    h3 {
+        display: block;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Form {
+        flex: 1 1 17rem;
+        margin: 2rem 159px 0 0;
+    }
+
+    .Profile {
+        flex: 1 1 0rem;
+        margin: 1rem 33px 0 100PX;
+        padding-bottom: 30rem;
+    }
+
+    .Profile-check {
+        display: none;
+    }
 }
 
 
 @media only screen and (min-width: 1024px){
     //Header
-   
-    h3 {
-        display: block;
-    }
-
     .Hero {
 
         &-buttons {
@@ -284,10 +333,7 @@ h3 {
 
     //El resto
 
-    svg {
-        width: 33px;
-        height: 33px;
-    }
+    
 }
 
 @media only screen and (min-width: 1440px){

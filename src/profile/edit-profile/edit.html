@@ -24,74 +24,88 @@
         </div>
     </header>
 
-    <section class="Profile">
-        <div class="Profile-check">
+    <div class="Button-toogle">
+        <h3>Configuración</h3>
+        <div class="Profile-checks">
             <p>Perfil público</p>
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
             </label>
         </div>
+    </div>
 
-        <img src="../../public/images/pp_test_c.webp" alt="">
-
-        <button>Cambiar imagen</button>
-
-        <div class="Profile-name">
-            <h4>Jessica Garcia</h4>
-            <p>Microempresario</p>
-        </div>
-        
-    </section>
-
-    <section class="Form">
-        <form action="">
-            <label for="">Nombre Completo
-                <input class="Form-Input" type="text" placeholder="Jessica García">
-            </label>
-            <label for="">Tipo de usuario
-                <input class="Form-Input" type="text" placeholder="Microempresario">
-            </label>
-            <label for="">Email
-                <input class="Form-Input" type="text" placeholder="example@gmail.com">
-            </label>
-            <label for="">Documento de identificación
-                <div class="Form-Dni">
-                    <input  type="text" placeholder="C.C">
-                    <input type="text" placeholder="112586195">
-                </div> 
-            </label>
-        </form>
-            <label for="">Documento de identificación
-                <div class="Form-Bday">
-                    <input  type="text" placeholder="24">
-                    <input type="text" placeholder="05">
-                    <input type="text" placeholder="1986">
-                </div> 
-            </label>
-            <label for="">
-                País
-                    <div class="Form-Country">
-                        <select name="" id="">
-                        <option value="">Colombia</option>
-                        <option value="">Ecuador</option>
-                        <option value="">Panamá</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Cali</option>
-                        <option value="">Bogotá</option>
-                        <option value="">Medellín</option>
-                    </select>
-                    </div>                
-            </label>
-            <label for="">Dirección
-                <input class="Form-Input" type="text" placeholder="Cra 68 # 13B -61">
-            </label>   
-            <div class="Form-Send">
-                <input type="submit" value="Guardar cambios">
+    <main>
+        <section class="Profile">        
+            <div class="Profile-check">
+                <p>Perfil público</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
             </div>
-        </form>
-    </section>
 
+            <img src="../../public/images/pp_test_c.webp" alt="">
+
+            <button>Cambiar imagen</button>
+
+            <div class="Profile-name">
+                <h4>Jessica Garcia</h4>
+                <p>Microempresario</p>
+            </div>
+        </section>
+
+        <section class="Form">
+            <form action="">
+                <label for="">Nombre Completo
+                    <input class="Form-Input" type="text" placeholder="Jessica García">
+                </label>
+                <label for="">Tipo de usuario
+                    <input class="Form-Input" type="text" placeholder="Microempresario">
+                </label>
+                <label for="">Email
+                    <input class="Form-Input" type="text" placeholder="example@gmail.com">
+                </label>
+                <label for="">Documento de identificación
+                    <div class="Form-Dni">
+                        <input  type="text" placeholder="C.C">
+                        <input type="text" placeholder="112586195">
+                    </div> 
+                </label>
+            </form>
+                <label for="">Documento de identificación
+                    <div class="Form-Bday">
+                        <input  type="text" placeholder="24">
+                        <input type="text" placeholder="05">
+                        <input type="text" placeholder="1986">
+                    </div> 
+                </label>
+                <label for="">
+                    País
+                        <div class="Form-Country">
+                            <select name="" id="">
+                            <option value="">Colombia</option>
+                            <option value="">Ecuador</option>
+                            <option value="">Panamá</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Cali</option>
+                            <option value="">Bogotá</option>
+                            <option value="">Medellín</option>
+                        </select>
+                        </div>                
+                </label>
+                <label for="">Dirección
+                    <input class="Form-Input" type="text" placeholder="Cra 68 # 13B -61">
+                </label>   
+                <div class="Form-Send">
+                    <input type="submit" value="Guardar cambios">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="../components/components.js"></script>
+    <link rel="stylesheet" href="../components/ButtonDuoIcon/buttonDuoIcon.scss">
 </body>
 </html>
