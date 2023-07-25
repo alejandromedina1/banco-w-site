@@ -68,6 +68,12 @@ p {
             gap: 14.72px;   
             height: 17%;
         }    
+        &-buttons a {
+            transition: all 0.2s;
+        }
+        &-buttons a:hover {
+            transform: scale(1.1);
+        }
         &-Profile {
             display: flex;
             justify-content: center;
@@ -88,6 +94,7 @@ p {
         }
         &-border p {
             display: none;
+            white-space: nowrap;
         }
         &-other p {
             display: none;
@@ -126,7 +133,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     font-family: c.$font-geomanist-regular;
-    font-size: 18px;
+    font-size: 16px;
     color: c.$orange-300;
     text-decoration: none;
     gap: 1rem;
