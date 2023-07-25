@@ -1,14 +1,14 @@
 @use './src/global.scss' as c;
 
 //Mixins
-@mixin input_box($w: 100%) {
+@mixin input_box($w: 100%, $br: 3px, $f: 13px) {
     width: $w;
-    border-radius: 3px;
+    border-radius: $br;
     border: 1px solid c.$gray-2;
     background: #FFF;
     padding: 7px 0 7px 15px;
     font-family: c.$font-bariol-regular;
-    font-size: 13px;
+    font-size: $f;
     color: c.$gray-2;
     margin-top: 0.8rem; 
 }
@@ -24,13 +24,18 @@
     white-space: nowrap;
 }
 
+.Toggle {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-p {
+h6, h5, h4, h3, h2, h1 {
+    margin-top: 0;
     margin-bottom: 0 !important;
 }
 
@@ -39,13 +44,15 @@ h2 {
     font-family: c.$font-geomanist-bold;
     color: c.$gray-2;
     font-weight: 700;
-    margin-bottom: 0;
 }
 
 h3 {
     display: none;
 }
 
+#pr {
+    margin-bottom: 0rem !important;
+}
 
 .Button-toogle {
     display: flex;
@@ -69,6 +76,20 @@ h3 {
 
 :root {
     --scrollY: 0px;
+}
+
+//Components
+.Button-components {
+    display: none;
+}
+
+.button {
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.button__icon {
+    background: c.$cyan-500 !important;
 }
 
 //Hero Header
@@ -120,7 +141,7 @@ h3 {
             width: 133px;
             margin-bottom: 2rem;
         }
-        & button {
+        &-Button {
             padding: 9.668px 29.004px;
             border-radius: 0.26438rem;
             background: c.$cyan-500;
@@ -141,12 +162,14 @@ h3 {
             font-family: c.$font-bariol-regular;
             font-size: 30px;
             color: c.$gray-2;
+            text-align: center;
         }
 
         & p {
             font-family: c.$font-bariol-regular;
             font-size: 20px;
             color: c.$gray-2;
+            margin-bottom: 2rem;
         }
 }
 
@@ -193,12 +216,12 @@ h3 {
 }
   
   input:checked + .slider {
-    background-color: #007bff;
-    border: 1px solid #007bff;
+    background-color: c.$cyan-500;
+    border: 1px solid c.$cyan-500;
 }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #007bff;
+    box-shadow: 0 0 1px c.$cyan-500;
 }
   
   input:checked + .slider:before {
@@ -231,19 +254,19 @@ h3 {
             display: flex;
         }
         &-Dni input:nth-child(1) {
-            @include input_box($w: 20%);
+            @include input_box($w: 20%, $br: 3px, $f: 13px);
             margin-right: 1rem;
         }
         &-Dni input:nth-child(2) {
-            @include input_box($w: 100%);
+            @include input_box($w: 100%, $br: 3px, $f: 13px);
         }
         &-Bday input:nth-child(1),
         &-Bday input:nth-child(2) {
-            @include input_box($w: 20%);
+            @include input_box($w: 20%, $br: 3px, $f: 13px);
             margin-right: 1rem;
         }
         &-Bday input:nth-child(3) {
-            @include input_box($w: 25%);
+            @include input_box($w: 25%, $br: 3px, $f: 13px);
         }
         &-Country {
             display: flex;
@@ -252,7 +275,7 @@ h3 {
             margin-right: 1rem;
         }
         & select {
-            @include input_box($w: 50%);
+            @include input_box($w: 50%, $br: 3px, $f: 13px);
         }
         &-Send {
             display: flex;
@@ -270,35 +293,14 @@ h3 {
             background: var(--acuamarina-500, #00B1BB);
             color: #FFF;
             margin: 4rem 0;
+            font-family: c.$font-bariol-regular;
         }
 }  
 
 @media only screen and (min-width: 768px){
-
-    h3 {
-        display: block;
-    }
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Form {
-        flex: 1 1 17rem;
-        margin: 2rem 159px 0 0;
-    }
-
-    .Profile {
-        flex: 1 1 0rem;
-        margin: 1rem 33px 0 100PX;
-        padding-bottom: 30rem;
-    }
-
-    .Profile-check {
-        display: none;
-    }
-}
+    
+}  
+    
 
 
 @media only screen and (min-width: 1024px){
@@ -333,12 +335,83 @@ h3 {
 
     //El resto
 
+    .Button-components {
+        display: block;
+    }
+
+    .Toggle {
+        display: block;
+    }
+
+    h3 {
+        display: block;
+    }
+
+    .Hero-Profile h3 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Geomanist Bold", sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Form {
+        flex: 1 1 17rem;
+        margin: 2rem 159px 0 0;
+    }
+
+    .Profile {
+        flex: 1 1 0rem;
+        margin: 1rem 33px 0 100PX;
+        padding-bottom: 34rem;
+    }
+
+    .Profile-check {
+        display: none;
+    }
     
+    .Form {
+        
+            & label {
+                font-size: 20px;
+            }
+            & ::placeholder {
+                font-size: 18px;
+            }
+            &-Dni input:nth-child(1) {
+                @include input_box($w: 20%, $br: 3px, $f: 13px);
+            }
+            &-Dni input:nth-child(2) {
+                @include input_box($w: 100%, $br: 10px, $f: 13px);
+            }
+            &-Bday input:nth-child(1),
+            &-Bday input:nth-child(2) {
+                @include input_box($w: 20%, $br: 10px, $f: 13px);
+            }
+            &-Bday input:nth-child(3) {
+                @include input_box($w: 25%, $br: 10px, $f: 13px);
+            }
+            & select {
+                @include input_box($w: 50%, $br: 10px, $f: 13px);
+            }
+            & option {
+                font-size: 13px;
+            }
+            &-Send input{
+                width: 100%;
+                height: 50px;
+                font-size: 18px;
+            }
+    }  
 }
 
-@media only screen and (min-width: 1440px){
 
-}
 
 
 
