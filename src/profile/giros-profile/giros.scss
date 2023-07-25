@@ -243,16 +243,18 @@ h2 {
         background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
         background-repeat: no-repeat;
     }
-
-}
-
-    //El resto
-
+    
     .Buttons {
         &-name {
             margin: 8rem 35px 0 80px;  
         }
 }
+
+}
+
+    //El resto
+
+
 
 @media only screen and (min-width: 1440px){
     .Buttons-up {
