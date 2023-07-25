@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#show-btn {
+    display: none;
+}
+
+.inclusive-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.options a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    background: white;
+    width: 61px;
+    height: 61px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.show-btn {
+    background-color: #FF8833;
+    width: 97px;
+    height: 97px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+body {
+    background-color: rgb(148, 148, 148);
+}
