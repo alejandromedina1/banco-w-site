@@ -3,16 +3,43 @@ class NavBarDesktop extends HTMLElement {
         super();
     }
 
-    connectedCallback(){
+    connectedCallback() {
         this.render();
-    }
+        window.addEventListener('resize', () => this.toggleLogo());
+        this.toggleLogo();
+
+        const hamburger = document.querySelector('.hamburger');
+        const iconMenu = document.querySelector('.hamburger-img');
+        const btnText = document.querySelector('.btn-text');
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          if(hamburger.classList.contains('active')){
+            iconMenu.src = 'icons/x.svg';
+            btnText.textContent = 'Cerrar';
+          } else {
+            iconMenu.src = 'icons/fi_menu.svg';
+            btnText.textContent = '';
+          }
+          console.log(hamburger.className);
+        });
+      }
+      
+      toggleLogo() {
+        const logo = document.querySelector('.logo');
+        if (window.matchMedia("(max-width: 1020px)").matches) {
+          logo.src = "images/logo-bancoW-mobile.webp";
+        } else {
+          logo.src = "images/logo-bancoW.webp";
+        }
+      }
 
     render(){
         this.innerHTML = `
         <link rel="stylesheet" href="components/navbar/style.scss">
-        <header class="nav-desktop">
+        <header class="nav-menu">
             <div class="nav-superior">
-                <img src="images/logo-bancoW.webp" alt="Logo Banco W">
+                <img class="logo" src="images/logo-bancoW.webp" alt="Logo Banco W">
+                <button class="hamburger"><img class="hamburger-img" src="icons/fi_menu.svg"><p class="btn-text"></p></button>
                 <span class="right-top-nav">
                     <div class="search-box">
                         <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
@@ -29,7 +56,7 @@ class NavBarDesktop extends HTMLElement {
                     </div>
                 </span>
             </div>
-                <nav>
+                <nav class="nav-desktop">
                     <ul class="navegacion">
                         <li><a href="#">Inicio </a></li>
                         <li class="dropdown"><a href="#">Clientes <img src="icons/arrow-down.svg"/></a>
@@ -65,6 +92,11 @@ class NavBarDesktop extends HTMLElement {
                             </ul>
                         </li>
                     </ul>
+                </nav>
+
+                <nav class="nav-mobile">
+                    <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                    <a href="#" class="inicio-sesion">Iniciar sesión</a>
                 </nav>
         </header>
         `;

@@ -12,7 +12,7 @@
     --standard-font-size: 16px;
 }
 
-.nav-desktop{
+.nav-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     padding: 1em;
 }
 
-.nav-superior > img {
+.logo {
     max-width: 179px;
     margin-left: 1.5em;
 }
@@ -41,6 +41,12 @@
     align-items: center;
     margin-right: 1.5em;
     gap: 30px;
+}
+
+.hamburger{
+    display: none;
+    border: none;
+    background: none;
 }
 
 .search-box{
@@ -166,9 +172,8 @@ a {
     margin: 0;
 }
 
-
-nav{
-    display: grid;
+.nav-desktop{
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -177,6 +182,10 @@ nav{
     -webkit-box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
     -moz-box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
     box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
+}
+
+.nav-mobile{
+    display: none;
 }
 
 .navegacion{
@@ -210,6 +219,8 @@ nav{
     position: absolute;
     background-color: $gray-3;
     border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
     list-style: none;
     padding: 0;
@@ -243,3 +254,45 @@ nav{
     transition: all 0.3 ease;
   }
 
+  .btn-text{
+    margin-bottom: 0.5px;
+    font-family: $font-bariol-regular;
+    color: $gray-1;
+  }
+
+
+  
+@media screen and (max-width: 1020px) {
+    .nav-superior{
+        position: fixed;
+        -webkit-box-shadow: 5px 7px 25px 0px rgba(0,178,187,0.1);
+        -moz-box-shadow: 5px 7px 25px 0px rgba(0,178,187,0.1);
+        box-shadow: 5px 7px 25px 0px rgba(0,178,187,0.1);
+    }
+
+    .logo{
+        width: 60px;
+        margin-left: 1em;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .right-top-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hamburger.active .nav-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
