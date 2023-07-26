@@ -10,13 +10,12 @@
 
 .inclusive-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 60px;
+    right: 50px;
 }
 
 .options a {
     display: block;
-    position: relative;
     text-decoration: none;
     background: white;
     width: 61px;
@@ -24,17 +23,60 @@
     line-height: 55px;
     text-align: center;
     border-radius: 50%;
+    transition: all 500ms ease;
 }
 
-.show-btn {
+#pqrs {
+    position: absolute;
+    bottom: -40px;
+    right: 130px;
+}
+
+#tutorial {
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+}
+
+#asesoria {
+    position: absolute;
+    bottom: 110px;
+    right: 70px;
+}
+
+#chat {
+    position: absolute;
+    bottom: 115px;
+    right: -20px;
+}
+
+.show-btn img{
     background-color: #FF8833;
     width: 97px;
     height: 97px;
     line-height: 55px;
+    padding: 20px 14px;
     text-align: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-body {
-    background-color: rgb(148, 148, 148);
+.options a:hover {
+    background-color: rgb(255, 230, 216);
+
 }
+
+.options a {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#show-btn:checked~ .options a {
+    opacity: 1;
+    visibility: visible;
+}
+
+body{
+    background-color: rgb(218, 218, 218);
+}
+
