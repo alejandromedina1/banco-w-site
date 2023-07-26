@@ -83,6 +83,7 @@
     min-width: 320px;
     justify-content: flex-start;
     flex-direction: column;
+    font-family: 'Bariol';
 
     &__title {
 
@@ -118,25 +119,41 @@
             background: #FFF;
             box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
             padding: 12px;
+            margin-bottom: 2.875em;
         }
 
         &-info {
             display: flex;
             width: 100%;
             flex-direction: row;
+            gap:1.25em;
+            align-items: center;
 
             &-text{
                 display: flex;
                 flex-direction: column;
+                &-level{
+                    color: c.$cyan-500;
+                }
             }
             
 
             &-img {
                 width: 50px;
+                height: 50px;
             }
         }
     }
+
+    &__nextChallenges{
+        display: none;
+    }
 }
+
+.challenges-card, .buttonDuoIcon{
+    margin-bottom: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
     .main {

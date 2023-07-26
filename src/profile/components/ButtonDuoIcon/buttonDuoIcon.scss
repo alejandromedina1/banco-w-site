@@ -1,6 +1,6 @@
 @use './src/global.scss' as c;
 
-.button {
+.buttonDuoIcon {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -20,15 +20,10 @@
 	transition: 0.3s ease-in-out;
 }
 
-.button:hover{
+.buttonDuoIcon:hover{
     translate: 0px -5px;
 }
 
-
-.button:active {
-	background: c.$orange-400;
-	
-}
 
 .button__text,
 .button__icon,
