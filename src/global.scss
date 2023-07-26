@@ -74,10 +74,16 @@ $font-geomanist-regular: 'Geomanist Regular', sans-serif;
 $font-geomanist-thin: 'Geomanist Thin', sans-serif;
 $font-geomanist-ultra: 'Geomanist Ultra', sans-serif;
 
-
 .example {
     font-family: $font-bariol-regular;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 //fonts styles
 
