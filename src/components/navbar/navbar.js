@@ -1,0 +1,108 @@
+class NavBarDesktop extends HTMLElement {
+    constructor(){
+        super();
+    }
+
+    connectedCallback() {
+        this.render();
+        window.addEventListener('resize', () => this.toggleLogo());
+        this.toggleLogo();
+
+        const hamburger = document.querySelector('.hamburger');
+        const iconMenu = document.querySelector('.hamburger-img');
+        const btnText = document.querySelector('.btn-text');
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          if(hamburger.classList.contains('active')){
+            iconMenu.src = 'icons/x.svg';
+            btnText.textContent = 'Cerrar';
+          } else {
+            iconMenu.src = 'icons/fi_menu.svg';
+            btnText.textContent = '';
+          }
+          console.log(hamburger.className);
+        });
+      }
+      
+      toggleLogo() {
+        const logo = document.querySelector('.logo');
+        if (window.matchMedia("(max-width: 1020px)").matches) {
+          logo.src = "images/logo-bancoW-mobile.webp";
+        } else {
+          logo.src = "images/logo-bancoW.webp";
+        }
+      }
+
+    render(){
+        this.innerHTML = `
+        <link rel="stylesheet" href="components/navbar/style.scss">
+        <header class="nav-menu">
+            <div class="nav-superior">
+                <img class="logo" src="images/logo-bancoW.webp" alt="Logo Banco W">
+                <button class="hamburger"><img class="hamburger-img" src="icons/fi_menu.svg"><p class="btn-text"></p></button>
+                <span class="right-top-nav">
+                    <div class="search-box">
+                        <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
+                        <img src="/icons/fi_search.svg" class="search-icon" alt="Icono buscador"/>
+                    </div>
+                    <a href="#" class="inicio-sesion">Iniciar sesión</a>
+                    <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                    <div class="profile">
+                        <img class="profile-picture" src="/images/black_woman_1.webp" alt="Foto de perfil"/>
+                        <span class="profile-info">
+                        <h5>Jessica García</h5>
+                        <p>Ver perfil <i class="bi bi-chevron-right"></i></p>
+                        </span>
+                    </div>
+                </span>
+            </div>
+                <nav class="nav-desktop">
+                    <ul class="navegacion">
+                        <li><a href="#">Inicio </a></li>
+                        <li class="dropdown"><a href="#">Clientes <img src="icons/arrow-down.svg"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Personas con negocio</a></li>
+                                <li><a href="#">Ahorradores e inversionistas</a></li>
+                                <li><a href="#">Pensionados y maestros</a></li>
+                                <li><a href="#">Colombianos en el exterior</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Productos y servicios <img src="icons/arrow-down.svg"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Créditos</a></li>
+                                <li><a href="#">Cuentas de ahorro e inversión</a></li>
+                                <li><a href="#">Giros internacionales</a></li>
+                                <li><a href="#">Seguros</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Asesoría financiera <img src="icons/arrow-down.svg"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Educación financiera</a></li>
+                                <li><a href="#">Consumidor financiero</a></li>
+                                <li><a href="#">Seguridad bancaria</a></li>
+                                <li><a href="#">Revista</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Acerca de nosotros <img src="icons/arrow-down.svg"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Quiénes somos</a></li>
+                                <li><a href="#">Opción transaccional</a></li>
+                                <li><a href="#">Línea telefónica</a></li>
+                                <li><a href="#">PQRS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="nav-mobile">
+                    <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                    <a href="#" class="inicio-sesion">Iniciar sesión</a>
+                </nav>
+        </header>
+        `;
+        
+    }
+}
+
+customElements.define('nav-bar-desktop', NavBarDesktop);
+export default NavBarDesktop;

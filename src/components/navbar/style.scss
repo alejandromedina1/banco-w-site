@@ -1,2 +1,298 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --standard-font-size: 16px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: white;
+    padding: 1em;
+}
+
+.logo {
+    max-width: 179px;
+    margin-left: 1.5em;
+}
+
+.right-top-nav{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    align-items: center;
+    margin-right: 1.5em;
+    gap: 30px;
+}
+
+.hamburger{
+    display: none;
+    border: none;
+    background: none;
+}
+
+.search-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buscador{
+    width: 253px;
+    height: 38px;
+    border: 1.04px solid $gray-2;
+    border-radius: 188px;
+    text-align: left;
+    padding: 0 10px;
+    color: $gray-1;
+    font-size: var(--standard-font-size);
+    font-family: $font-bariol-regular;
+}
+
+.buscador::placeholder {
+    position: relative;
+    vertical-align: middle;
+    color: $gray-2;
+    font-size: var(--standard-font-size);
+    font-family: $font-bariol-regular;
+}
+
+.buscador::-webkit-search-cancel-button{
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    background: url('/icons/x.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.buscador:focus{
+    outline: none;
+    border: 2px solid $cyan-500;
+}
+
+.buscador:focus + .search-icon{
+    display: none;
+}
+
+.search-icon{
+    display: inline;
+    position: absolute;
+    margin-right: 15px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.inicio-sesion{
+    width: 121px;
+    color: $orange-400;
+    font-weight: bold;
+    font-family: $font-geomanist-medium;
+    text-align: center;
+}
+
+.pagos-pse{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    background-color: $orange-400;
+    font-weight: bold;
+    width: 181px;
+    height: 45px;
+    border-radius: 4.27px;
+}
+
+.pagos-pse > span {
+    color: white;
+    font-size: var(--standard-font-size);
+    font-family: $font-geomanist-medium;
+    width: 100%;
+    margin: 0 5px;
+}
+
+.pagos-pse > img {
+    width: 27px;
+    margin-left: 8px;
+}
+
+.profile{
+    display: none;
+    flex-direction: row;
+    font-family: $font-geomanist-medium;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    height: 41px;
+}
+
+.profile-picture{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1.84px solid $orange-400;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile > span > h5 {
+    font-size: 16px;
+    color: $gray-1;
+    margin: 0
+}
+
+.profile > span> p{
+    color: $gray-2;
+    margin: 0;
+}
+
+.nav-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 63px;
+    background-color: $gray-3;
+    -webkit-box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 9px 24px 0px rgba(0,0,0,0.06);
+}
+
+.nav-mobile{
+    display: none;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 85px;
+    margin: 0;
+}
+
+.navegacion > li {
+    list-style: none;
+}
+
+.navegacion > li > a {
+    color: $gray-1;
+    font-weight: bold;
+    font-family: $font-geomanist-medium;
+}
+
+.navegacion > li > a:hover{
+    color: $orange-400;
+}
+
+.navegacion > li > a > img {
+    margin-left: 1.5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $gray-3;
+    border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.06);
+    list-style: none;
+    padding: 0;
+    border-radius: 6px;
+    
+  }
+  
+  .dropdown-content li {
+    padding: 8px;
+    margin: 0 18px;
+  }
+  
+  .dropdown-content li a {
+    color: $gray-1;
+    text-decoration: none;
+    font-family: $font-geomanist-regular;
+    font-size: 16px;
+  }
+
+  .dropdown-content li a:hover{
+    color: $orange-400;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: max-content;
+    height: 198px;
+    transition: all 0.3 ease;
+  }
+
+  .btn-text{
+    margin-bottom: 0.5px;
+    font-family: $font-bariol-regular;
+    color: $gray-1;
+  }
+
+
+  
+@media screen and (max-width: 1020px) {
+    .nav-superior{
+        position: fixed;
+        -webkit-box-shadow: 5px 7px 25px 0px rgba(0,178,187,0.1);
+        -moz-box-shadow: 5px 7px 25px 0px rgba(0,178,187,0.1);
+        box-shadow: 5px 7px 25px 0px rgba(0,178,187,0.1);
+    }
+
+    .logo{
+        width: 60px;
+        margin-left: 1em;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .right-top-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hamburger.active .nav-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -1,6 +1,8 @@
 @use './src/global.scss' as c;
 
+
 .buttonDuoIcon {
+
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -20,7 +22,9 @@
 	transition: 0.3s ease-in-out;
 }
 
+
 .buttonDuoIcon:hover{
+
     translate: 0px -5px;
 }
 
