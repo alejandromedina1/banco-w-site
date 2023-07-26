@@ -29,7 +29,7 @@
 }
 
 ul {
-    padding-left: 0 !important;
+    padding-left: 0;
 }
 
 h3 {
@@ -153,16 +153,6 @@ h2 {
             align-items: center;
             margin: 4rem 35px 0 35px;
         }
-        &-name h2{
-            margin-bottom: 0 !important;
-            font-family: c.$font-geomanist-bold;
-            color: c.$gray-2;
-            font-size: 30px;
-        }
-}
-
-.Product {
-    margin: 20px;
 }
 
 
