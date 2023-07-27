@@ -109,7 +109,7 @@ class TableIcon extends HTMLElement {
     render() {
         this.innerHTML = `
     <link rel="stylesheet" href="../Table/table.scss">
-    
+    <section class="Table-container">
     <table class="Content-table">
         <thead>
           <tr class="Color-Table">

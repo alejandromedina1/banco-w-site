@@ -1,13 +1,14 @@
 @use '../../../global.scss' as c;
-body {
-    margin: 10px;
+
+section {
+    box-shadow: none ;
 }
 
 p {
     margin-bottom: 0 !important;
 }
 
-section {
+.Table-container {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 6px 6px 0 0;
     background: #fff;
@@ -16,7 +17,6 @@ section {
 .Content-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 0.9em;
     overflow: hidden;
     border-radius: 6px;
