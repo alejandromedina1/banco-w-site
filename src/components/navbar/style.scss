@@ -306,6 +306,13 @@ a {
         gap: 0.938rem;
     }
 
+    .search-box{
+        width: 100%;
+        .buscador{
+            width: 100%;
+        }
+    }
+
     .pagos-pse > span{
         width: max-content;
     }
@@ -353,7 +360,7 @@ a {
         padding-bottom: 0.625rem;
         color: $orange-500;
         font-family: $font-geomanist-medium;
-        .arrow-down path{
+        .arrow-down-mobile path{
             stroke: $orange-400;
         }
     }
@@ -363,8 +370,8 @@ a {
     }
 
     .dropdown-content{
+        display: none;
         position: relative;
-        display: flex;
         flex-direction: column;
         background: none;
         border: none;
