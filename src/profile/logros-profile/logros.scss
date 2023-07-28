@@ -153,6 +153,7 @@
                 display: flex;
                 flex-wrap: nowrap;
                 overflow: scroll;
+                margin-bottom: 2.875em;
 
 
 
@@ -191,56 +192,10 @@
     }
 
     &__challenges {
-        &-myProgress {
-            display: flex;
-            border-radius: 10px;
-            padding: 0.9375em;
-            border: 0px solid var(--azul-azul-1, #00B1BB);
-            background: var(--blanco-acento, #FAFAFA);
-            box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
-            justify-content: space-around;
 
-            &-left,
-            &-right {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-
-            }
-
-            &-text {
-                &-1 {
-                    font-family: 'Bariol';
-                    color: c.$gray-1;
-                }
-
-                &-2 {
-                    font-family: 'Geomanist';
-                    color: c.$gray-1;
-                    font-weight: 600;
-                }
-            }
-        }
-
-        &-myMedals {
-
-            display: flex;
-            justify-content: space-evenly;
-            padding: 0.9375em;
-            border-radius: 10px;
-            border: 0px solid var(--azul-azul-1, #00B1BB);
-            background: var(--blanco-acento, #FAFAFA);
-            box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
-
-            &-1,
-            &-2,
-            &-3 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
+        &-container-hideMobile{
+                display: none;
+            
         }
 
     }
@@ -252,7 +207,7 @@
 
 .challenges-card,
 .buttonDuoIcon {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 
@@ -263,7 +218,67 @@
 
         padding: 0px 60px;
 
-        &__achievements {}
+        &__subtitle{
+            margin: 20px 0;
+        }
+
+        &__challenges {
+            &-container-hideMobile{
+                display: block;
+        }
+            &-myProgress {
+                display: none;
+                display: flex;
+                border-radius: 10px;
+                padding: 0.9375em;
+                border: 0px solid var(--azul-azul-1, #00B1BB);
+                background: var(--blanco-acento, #FAFAFA);
+                box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+                justify-content: space-around;
+    
+                &-left,
+                &-right {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+    
+                }
+    
+                &-text {
+                    &-1 {
+                        font-family: 'Bariol';
+                        color: c.$gray-1;
+                    }
+    
+                    &-2 {
+                        font-family: 'Geomanist';
+                        color: c.$gray-1;
+                        font-weight: 600;
+                    }
+                }
+            }
+    
+            &-myMedals {
+                display: none;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0.9375em;
+                border-radius: 10px;
+                border: 0px solid var(--azul-azul-1, #00B1BB);
+                background: var(--blanco-acento, #FAFAFA);
+                box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+    
+                &-1,
+                &-2,
+                &-3 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+            }
+        }
 
         &__button-container {
             display: none;
@@ -277,6 +292,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
+            margin-top: 50px;
         }
 
 
