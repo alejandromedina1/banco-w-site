@@ -78,13 +78,18 @@ p {
         font-size: 1.25rem;
     }
 
-    svg {
-        width: 18px;
-        height: 18px;
-    }
-    .Movements {
-        font-size: 1.3rem;
+    .Content-Type {
+
+        & svg {
+            width: 25px;
+            height: 25px;
+        }
     }
     
+    .Movements {
+            font-size: 1.3rem;
+    }
+        
 }
+
 
