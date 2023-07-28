@@ -111,7 +111,7 @@
 
     }
 
-    &__container-user{
+    &__container-user {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -174,10 +174,10 @@
         }
     }
 
-    &__products{
+    &__products {
         margin-bottom: 3.75em;
 
-        &-button{
+        &-button {
             margin-bottom: 1em;
         }
     }
@@ -188,10 +188,19 @@
 
         padding: 0px 60px;
 
-        &__container-user{
+        &__container-user {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
+        }
+
+        &__account {
+            &-card {
+                &-container {
+                    padding: 15px;
+                    height: 192px;
+                }
+            }
         }
 
 
