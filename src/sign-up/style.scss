@@ -64,7 +64,7 @@ input:focus {
     border: 2px solid $cyan-500;
 }
 
-select {
+select.dropdowns {
 
     cursor: pointer;
     padding: 10px;
@@ -80,7 +80,7 @@ select {
     outline: none;
 }
 
-optgroup {
+optgroup.dropdown-group {
     font-family: $font-bariol-regular;
     font-size: 0.8125rem;
     font-style: normal;
@@ -131,7 +131,7 @@ div.input-icons {
     width: 100%;
 }
 
-button {
+button#submit-button {
     background-color: $cyan-500;
     border: 0px;
     border-radius: 0.24688rem;
