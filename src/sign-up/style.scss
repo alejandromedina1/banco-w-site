@@ -1,0 +1,146 @@
+@import "../global.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+
+    #header-image{
+        content: url("/images/mobile_register_header_4x.webp");
+    }
+}
+
+@media (min-width: 769px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 15%;
+        background-color: white;
+    }
+    #header-image{
+        content: url("/images/web_register_header_4x.webp");
+    }
+}
+
+
+label {
+    font-family: $font-bariol-regular;
+    color: $cyan-500;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input:not(.passwords) {
+    border: 2px solid #cdcdcd;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: $font-bariol-regular;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #cdcdcd;
+}
+
+input:focus {
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
+}
+
+select {
+
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 20px;
+    color: #cdcdcd;
+    font-family: $font-bariol-regular;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 2px solid #cdcdcd;
+    border-radius: 4px;
+    outline: none;
+}
+
+optgroup {
+    font-family: $font-bariol-regular;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.images {
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    width: 50px;
+}
+
+#login {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: $font-bariol-regular;
+    font-size: 13pt;
+    color: #cdcdcd;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p#tologin {
+    color: $gray-1;
+}
+
+div.input-icons {
+    width: 100%;
+}
+
+.input-fields {
+    width: 100%;
+}
+
+button {
+    background-color: $cyan-500;
+    border: 0px;
+    border-radius: 0.24688rem;
+    color: white;
+    font-family: $font-bariol-regular;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    padding: 10px;
+}

@@ -1,9 +1,12 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import "../global.scss";
+main{
+    width: 100%;
 }
 
-main{
+img {
+    width: 100%;
+}
+
+figure {
     width: 100%;
 }
