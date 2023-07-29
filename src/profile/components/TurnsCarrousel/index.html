@@ -6,11 +6,7 @@
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.scss">
-
-  <!-- Demo styles -->
-  <style>
-  </style>
+  <link rel="stylesheet" href="./carrousel.scss">
 </head>
 
 <body>
@@ -86,20 +82,20 @@
 
   <p>hola</p>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <!-- Primero cargamos la librería Swiper -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+ <!-- Luego cargamos tus scripts personalizados -->
+ <script>
+     var swiper = new Swiper(".mySwiper", {
+         slidesPerView: "auto",
+         spaceBetween: 30,
+         pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+         },
+     });
+ </script>
 </body>
 
 </html>
