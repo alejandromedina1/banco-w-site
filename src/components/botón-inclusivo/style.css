@@ -8,7 +8,7 @@
     display: none;
 }
 
-.help-button {
+.inclusive-button {
     position: fixed;
     bottom: 60px;
     right: 50px;
@@ -43,11 +43,11 @@
     color: white;
     transition: opacity 0.3s;
     border-radius: 20px;
-    background-color: #FF8833;
+    background-color: #00B1BB;
 }
 
 #pqrs a img:hover + .pqrs-span{
-    background-color: #FF8833;
+    background-color: #00B1BB;
     opacity: 1;
 }
 
@@ -72,7 +72,7 @@
     color: white;
     transition: opacity 0.3s;
     border-radius: 20px;
-    background-color: #FF8833;
+    background-color: #00B1BB;
 }
 
 #asesoria {
@@ -92,7 +92,7 @@
     color: white;
     transition: opacity 0.3s;
     border-radius: 20px;
-    background-color: #FF8833;
+    background-color: #00B1BB;
 }
 
 #chat {
@@ -111,7 +111,7 @@
     color: white;
     transition: opacity 0.3s;
     border-radius: 20px;
-    background-color: #FF8833;
+    background-color: #00B1BB;
 }
 
 #show-btn:checked~ .options div span {
@@ -119,7 +119,7 @@
 }
 
 .show-btn img{
-    background-color: #FF8833;
+    background-color: #00B1BB;
     width: 97px;
     height: 97px;
     line-height: 55px;
@@ -163,7 +163,7 @@ body{
 }
 
 .show-button:hover + .label-hidden {
-    background-color: #FF8833;
+    background-color: #00B1BB;
     opacity: 1;
 }
 
