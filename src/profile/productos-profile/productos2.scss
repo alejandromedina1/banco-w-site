@@ -99,6 +99,7 @@
         font-family: 'Geomanist';
         font-weight: 700;
         margin: 0;
+        
 
     }
 
@@ -107,8 +108,99 @@
         font-family: 'Bariol';
         font-size: 1.125rem;
         font-weight: 400;
+        margin: 1.5625em 0;
 
     }
+
+
+
+    &__balance {
+        &-card {
+            border-radius: 6.282px;
+            background: #FFF;
+            box-shadow: 5.23528528213501px 7.329399585723877px 31.411714553833008px 0px rgba(159, 102, 219, 0.18);
+            padding: 15px;
+            font-family: 'Bariol';
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: c.$gray-2;
+            font-size: 16px;
+            margin-bottom: 30px;
+
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 0.625em;
+            }
+
+            &-info-1,
+            &-info-2,
+            &-info-3,
+            &-mount {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-info-1,
+            &-info-2,
+            &-info-3 {
+                font-size: 0.8125rem;
+                margin-bottom: 0.625em;
+            }
+        }
+
+
+    }
+
+    &__graph {
+
+        &-card {
+            padding: 15px;
+            border-radius: 6.282px;
+            background: #FFF;
+            box-shadow: 5.235285758972168px 7.329400062561035px 31.41171646118164px 0px rgba(159, 102, 219, 0.18);
+            font-family: 'Bariol';
+            color: c.$gray-2;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            &-bars {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5625em;
+                height: 8.125em;
+                justify-content: center;
+
+
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    &-filled {
+
+                        
+                        width: 30px;
+                        border-radius: 6.282px;
+                        
+                        background: #000000;
+
+                    }
+
+
+                }
+
+            }
+
+
+
+        }
+
+    }
+}
 
 
 @media screen and (min-width: 768px) {
@@ -116,11 +208,15 @@
 
         padding: 0px 60px;
 
-        
+        &__allSections{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+
 
     }
 
-
-}
 
 }

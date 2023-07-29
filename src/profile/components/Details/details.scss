@@ -43,7 +43,36 @@
         font-size: 18px;
         margin: 0 !important;
     }
-
-    
 }
 
+@media only screen and (min-width: 1024px){
+    .Card {
+        border-radius: 10px;
+        background: #FFF;
+        padding: 19px;
+        
+        &-Type,
+        &-Date {
+            margin-bottom: 1.7rem;
+        }
+        &-Type span,
+        &-Date span,
+        &-State span{
+            font-size: 18px;
+        }
+        &-Type p,
+        &-Date p,
+        &-State p {
+            font-size: 35px;
+        }
+        &-Mount{
+            margin-top: 1.7rem;
+        }
+        &-Mount span {
+            font-size: 20px;
+        }
+        &-Mount p {
+            font-size: 35px;
+        }
+    }
+}
