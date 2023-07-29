@@ -1,5 +1,5 @@
 class HelpButton extends HTMLElement {
-    contructor() {
+    constructor() {
         super()
     }
 
