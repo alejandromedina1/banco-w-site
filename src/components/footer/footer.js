@@ -4,23 +4,45 @@ class Footer extends HTMLElement {
 
         //attributes
     }
-    
+
     static get observedAttributes() {
         return []
     }
 
     connectedCallback() {
         this.render()
-    }
+        const buttons = this.querySelectorAll('.main-option')
+        const buttonArray = Array.prototype.slice.call(buttons)
+        console.log(buttonArray)
+        const dropdownElements = this.querySelectorAll('.dropdown')
 
-    attributeChangedCallback(propName, oldValue, newValue) {
-        this[propName] = newValue
-        this.render
-    }
+        buttonArray.forEach(button => {
+            button.addEventListener('click', () => {
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    if (dropdownElements[buttonArray.indexOf(button)].style.display === 'none') {
+                        dropdownElements[buttonArray.indexOf(button)].style.display = 'flex'
+                    } else {
+                        dropdownElements[buttonArray.indexOf(button)].style.display = 'none'
+                    }
+                }
+            })
+        });
 
-    render() {
-        
-        this.innerHTML = `
+        window.addEventListener('resize', () => {
+                if (window.matchMedia("(min-width: 769px)").matches) {
+                    buttonArray.forEach(button => {
+                            dropdownElements[buttonArray.indexOf(button)].style.display = 'flex'
+
+                        }
+                    );
+            }
+        });
+}
+
+render() {
+
+    this.innerHTML = `
+        <link rel="stylesheet" href="/components/footer/style.scss">
         <footer>
             <div id="footer-container">
             <div id="us-container">
@@ -101,25 +123,7 @@ class Footer extends HTMLElement {
             </div>
         </footer>
         `;
-
-        const buttons = this.querySelectorAll('.main-option')
-        const buttonArray = Array.prototype.slice.call(buttons)
-        console.log(buttonArray)
-        const dropdownElements = this.querySelectorAll('.dropdown')
-
-        buttonArray.forEach(button => {
-            button.addEventListener('click', () => {
-                if (dropdownElements[buttonArray.indexOf(button)].style.display === 'none') {
-                    dropdownElements[buttonArray.indexOf(button)].style.display = 'flex'
-                } else {
-                    dropdownElements[buttonArray.indexOf(button)].style.display = 'none'
-                }
-            })
-        });
-
-        
-
-    }
+}
 
 }
 

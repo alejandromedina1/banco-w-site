@@ -47,7 +47,9 @@ class ButtonDuoIcon extends HTMLElement {
         this.innerHTML = `
     <link rel="stylesheet" href="../ButtonDuoIcon/buttonDuoIcon.scss">
     
-    <button type="button" class="button">
+
+    <button type="button" class="buttonDuoIcon">
+
 		<span class="button__icon">
 			<ion-icon>${this.icon}</ion-icon>
 		</span>
