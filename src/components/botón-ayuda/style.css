@@ -1,16 +1,3 @@
-// Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
-@import "../../global.scss";
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-:root{
-    --standard-font-size: 16px;
-}
-
 * {
     margin: 0;
     padding: 0;
