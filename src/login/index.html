@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banco W</title>
-    <link rel="stylesheet" href="/src/global.scss">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-    <h1>login</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco W</title>
+  <link rel="stylesheet" href="./style.scss">
+  <link rel="stylesheet" href="../components/footer/style.scss">
+  <link rel="stylesheet" href="../global.scss">
+</head>
+
+
+<body>
+  <main>
+      <img src="/images/mobile_login_bg_4x.webp" id="bg-cover" alt="">
+    <section id="login-card">
+      <div id="mobile-component">
+        <div id="title-component">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#00B1BB" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+          <h2 id="title">Inicia sesión</h2>
+        </div>
+        <form action="">
+          <div>
+            <li></li>
+            <input class="fields" type="text" placeholder="Usuario">
+          </div>
+          <div>
+            <li></li>
+            <input class="fields" type="text" placeholder="Contraseña">
+            <li></li>
+          </div>
+          <p id="forget-password">¿Olvidaste tu contraseña?</p>
+          <div>
+            <div id="sign-up-container">
+              <p>¿Todavía no tienes una cuenta?</p>
+              <p id="to-sign-up" >Regístrate</p>
+            </div>
+            <button id="login">Ingresar</button>
+          </div>
+        </form>
+      </div>
+      <img src="/images/web-login-person_4x.webp" id="person-image" alt="">
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+
+  <script type="module" src="./login.js"></script>
+  <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
 </html>
