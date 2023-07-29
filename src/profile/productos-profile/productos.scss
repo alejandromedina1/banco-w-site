@@ -124,10 +124,17 @@
     &__account {
 
         margin-bottom: 2.5em;
+        
 
         &-card {
 
             box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                translate: 0px -5px;
+            }
 
 
             &-container {

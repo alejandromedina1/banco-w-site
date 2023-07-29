@@ -1,0 +1,94 @@
+@use '../../../global.scss' as c;
+
+section {
+    box-shadow: none ;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.Table-container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 6px 6px 0 0;
+    background: #fff;
+}
+
+.Content-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    overflow: hidden;
+    border-radius: 6px;
+    
+    & thead {
+        color: #ffffff;
+        text-align: left;
+        font-size: 1rem;
+        font-family: c.$font-bariol-regular;
+    }
+    & td {
+        font-family: c.$font-bariol-regular;
+        color: c.$gray-2;
+        font-size: 0.8rem;
+        
+    }
+}
+
+.Content-Type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.Color-Table {
+    background-color: c.$cyan-500;
+}
+
+.Content-table th,
+.Content-table td {
+    padding: 1.1rem 1.5rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.Movements {
+    font-size: 1rem;
+    font-family: c.$font-bariol-regular;
+    background-color: c.$cyan-500;
+    padding: 0.8rem 0;
+    border-radius: 0rem 0rem 0.34rem 0.34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Movements a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px){
+    .Content-table th {
+        font-size: 1.5rem;
+    }
+    .Content-table td {
+        font-size: 1.25rem;
+    }
+
+    .Content-Type {
+
+        & svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
+    .Movements {
+            font-size: 1.3rem;
+    }
+        
+}
+
