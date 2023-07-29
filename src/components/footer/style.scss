@@ -2,6 +2,8 @@
 @import "bootstrap/scss/bootstrap";
 @import "../../global.scss";
 
+
+
 p {
     margin-bottom: 0;
 }
@@ -17,13 +19,52 @@ ul {
 li {
     font-family: $font-bariol-regular;
     color: $gray-1;
-    font-size: 11pt;
+
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
-#footer-container{
+@media (max-width: 768px) {
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown {
+        display: none;
+        flex-direction: column;
+    }
+
+    img.icons {
+        display: block;
+        width: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    #footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.icons {
+        display: none;
+    }
+}
+
+#footer-container {
     background-color: $gray-3;
     padding-left: 20px;
     padding-right: 20px;
@@ -31,7 +72,7 @@ li {
     padding-bottom: 20px
 }
 
-.main-option{
+.main-option {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -41,37 +82,37 @@ li {
     height: 35px;
 }
 
-.title-option{
+.title-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     font-family: $font-geomanist-bold;
     color: $orange-400;
-    font-size: 13pt;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
 }
 
-.dropdown{
-    display: none;
-    flex-direction: column;
-    
-}
-
-.footer-icons{
+.footer-icons {
     width: 40px;
 }
 
-.icons {
-    width: 20px;
-}
 
-#social-media{
+
+#social-media {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#footer-logo{
+#footer-logo {
     width: 120px;
 }
 
-#ownership-container{
+#ownership-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -82,9 +123,11 @@ li {
     padding-bottom: 30px;
 }
 
-#ownership{
+#ownership {
     font-family: $font-bariol-regular;
-    font-size: 8pt;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     color: $gray-1;
 }
-
