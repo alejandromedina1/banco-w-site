@@ -32,10 +32,6 @@ ul {
     padding-left: 0 !important;
 }
 
-h3 {
-    display: none;
-}
-
 p {
     margin-bottom: 0;
 }
@@ -355,6 +351,25 @@ h2 {
     align-items: center;
 }
 
+last-post {
+   margin: 0 20px; 
+}
+
+.main {
+    &__post{
+        border-top: 1px solid c.$cyan-500;
+        padding-top: 15px;
+        margin: 50px 20px 0 20px;
+    }
+    &__subtitle {
+        color: c.$cyan-500;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 1.25em;
+    }
+}
+
 @media only screen and (min-width: 780px){
 
 }
@@ -452,7 +467,7 @@ h2 {
     //El resto
     .title-calendar {
         margin-left: 80px;
-        font-size: 35px;
+        font-size: 25px;
         font-family: c.$font-geomanist-bold;
     }
 
@@ -462,6 +477,18 @@ h2 {
         & button{
             padding: 10px 140px;
             font-size: 18px;
+        }
+    }
+
+    .Cards-Calendar {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0 80px;
+
+
+        & article {
+            flex: 1;
         }
     }
 
