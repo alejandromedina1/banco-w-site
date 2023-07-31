@@ -62,6 +62,12 @@ input:not(.passwords) {
 input:focus {
     color: $cyan-500;
     border: 2px solid $cyan-500;
+    outline-width: 0;
+}
+
+input:not(:placeholder-shown){
+    border: 2px solid $cyan-500;
+    color: $cyan-500;
 }
 
 select.dropdowns {
@@ -122,6 +128,10 @@ p {
 p#tologin {
     color: $gray-1;
 }
+p#tologin:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 div.input-icons {
     width: 100%;
@@ -143,4 +153,17 @@ button#submit-button {
     line-height: normal;
     width: 100%;
     padding: 10px;
+}
+button#submit-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
+}
+
+button#submit-button:active {
+    cursor: pointer;
+    background-color: $cyan-100;
+    color: $cyan-500;
+    border: 0;
 }
