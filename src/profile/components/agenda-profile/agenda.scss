@@ -108,7 +108,7 @@ p {
 
 h2 {
     font-size: 30px;
-    font-family: c.$font-geomanist-bold;
+    font-family: 'Geomanist';
     color: c.$gray-2;
     font-weight: 700;
     margin-bottom: 0;
@@ -128,7 +128,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: c.$font-geomanist-regular;
+    font-family: 'Geomanist';
     font-size: 16px;
     color: c.$orange-300;
     text-decoration: none;
@@ -393,7 +393,7 @@ last-post {
         &-Profile h3{
             color: #FFF;
             text-align: center;
-            font-family: c.$font-geomanist-bold;
+            font-family: 'Geomanist';
             font-weight: 700;
             font-size: 45px;  
         }
@@ -468,7 +468,7 @@ last-post {
     .title-calendar {
         margin-left: 80px;
         font-size: 25px;
-        font-family: c.$font-geomanist-bold;
+        font-family: 'Geomanist';
     }
 
     .Calendar-button {
