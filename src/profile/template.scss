@@ -44,41 +44,6 @@ p {
     --scrollY: 0px;
 }
 
-.opcion {
-    color: c.$orange-400;
-}
-
-.seleccionada {
-    color: #fff;
-} 
-
-#marker {
-    position: absolute;
-    left: 0;
-    height: 57px;
-    width: 56px;
-    background: c.$orange-400;
-    bottom: 16px;
-    border-radius: 4px;
-    z-index: 0;
-}
-
-#page-switcher li {
-    color: c.$orange-400;
-}
-  
-  #page-switcher li.select {
-    color: #FFF;
-}
-
-#page2,
-#page3, 
-#page4,
-#page5,
-#page6 {
-    display: none;
-}
-
 //Hero Header
 
 .Bg-animation {
@@ -142,7 +107,6 @@ p {
             border-radius: 4px;
             background: #FFF;
             box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
-            z-index: 2;
         }
 }
 
@@ -161,7 +125,6 @@ h2 {
     padding-left: 16px;
     padding-right: 16px;
     cursor: pointer;
-    position: relative;
 }
 
 .Hero-menu a {
@@ -171,10 +134,10 @@ h2 {
     flex-direction: column;
     font-family: c.$font-geomanist-regular;
     font-size: 16px;
+    color: c.$orange-300;
     text-decoration: none;
     gap: 1rem;
     text-align: center;
-    pointer-events: none;
 }
 
 // Buttons
@@ -199,10 +162,6 @@ h2 {
 
 
 @media only screen and (min-width: 1024px){
-    #marker {
-        height: 145px;
-        width: 150px;
-    }
     //Header
     .Hero {
 
