@@ -11,13 +11,16 @@
         padding-bottom: 40px;
         width: 80%;
     }
-    #person-image{
+
+    #person-image {
         display: none;
     }
-    #bg-cover{
+
+    #bg-cover {
         content: url("/images/mobile_login_bg_4x-webp");
     }
-    #mobile-component{
+
+    #mobile-component {
         width: 100%;
     }
 }
@@ -26,6 +29,7 @@
     main {
         min-height: 1000px;
     }
+
     #login-card {
         margin-top: -200px;
         padding-top: 100px;
@@ -33,19 +37,20 @@
         width: 80%;
     }
 
-    #person-image{
+    #person-image {
         display: none;
     }
-    #bg-cover{
+
+    #bg-cover {
         content: url("/images/mobile_login_bg_4x.webp");
     }
 
-    #mobile-component{
+    #mobile-component {
         width: 100%;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1440px){
+@media (min-width: 769px) and (max-width: 1440px) {
     main {
         min-height: 1200px;
     }
@@ -56,20 +61,22 @@
         width: 80%;
     }
 
-    #person-image{
+    #person-image {
         display: block;
         width: 50%;
     }
-    #bg-cover{
+
+    #bg-cover {
         content: url("/images/web_login_bg_4x.webp");
     }
-    #mobile-component{
+
+    #mobile-component {
         width: 70%;
         padding: 40px;
     }
 }
 
-@media (min-width: 1441px) and (max-width: 2560px){
+@media (min-width: 1441px) and (max-width: 2560px) {
     main {
         min-height: 1000px;
     }
@@ -80,14 +87,16 @@
         width: 80%;
     }
 
-    img#person-image{
+    img#person-image {
         display: block;
         width: 40%;
     }
-    #bg-cover{
+
+    #bg-cover {
         content: url("/images/web_login_bg_4x.webp");
     }
-    #mobile-component{
+
+    #mobile-component {
         width: 50%;
         padding: 100px;
     }
@@ -104,7 +113,7 @@ main {
 }
 
 
-img#bg-cover{
+img#bg-cover {
     width: 100%;
 }
 
@@ -123,6 +132,11 @@ input.fields {
     line-height: normal;
     color: #cdcdcd;
     width: 100%;
+}
+
+input.fields:not(:placeholder-shown){
+    border: 2px solid $cyan-500;
+    color: $cyan-500;
 }
 
 p {
@@ -145,6 +159,7 @@ form {
 input.fields:focus {
     color: $cyan-500;
     border: 2px solid $cyan-500;
+    outline-width: 0;
 }
 
 h2#title {
@@ -169,6 +184,20 @@ button#login {
     line-height: normal;
     width: 100%;
     padding: 10px;
+}
+
+button#login:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
+}
+
+button#login:active {
+    cursor: pointer;
+    background-color: $cyan-100;
+    color: $cyan-500;
+    border: 0;
 }
 
 #login-card {
@@ -205,5 +234,16 @@ button#login {
 }
 
 #to-sign-up {
+    color: $gray-1;
+}
+
+#to-sign-up:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#forget-password:hover {
+    cursor: pointer;
+    text-decoration: underline;
     color: $gray-1;
 }
