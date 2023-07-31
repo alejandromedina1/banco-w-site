@@ -1,4 +1,4 @@
-@use '../../../global.scss' as c;
+@use '../../../global.scss'as c;
 
 h6 {
     margin-bottom: 0 !important;
@@ -11,7 +11,7 @@ h6 {
 }
 
 .swiper {
-  height: 100%;
+    height: 100%;
 }
 
 #toggle-swiper {
@@ -33,15 +33,16 @@ h6 {
 
 .Card-Turn {
     text-align: center;
-    
+
     & h6 {
-        font-family: c.$font-bariol-regular;
-        font-size: 18px; 
+        font-family: "font-bariol-regular";
+        font-size: 18px;
         color: white;
         margin-top: 0.5rem;
     }
+
     & span {
-        font-family: c.$font-bariol-regular;
+        font-family: "font-bariol-regular";
         font-size: 13px;
         color: white;
     }
@@ -55,7 +56,7 @@ h6 {
     & div {
         display: flex;
         flex-direction: column;
-        font-family: c.$font-bariol-regular;
+        font-family: "font-bariol-regular";
         font-size: 13px;
         color: white;
     }
@@ -73,27 +74,28 @@ h6 {
             color: c.$gray-2;
         }
     }
+
     & .Card-Turn {
         & h6 {
             color: c.$gray-2;
         }
+
         & span {
             color: c.$gray-2;
         }
     }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
     .swiper-slide {
         font-size: 18px;
         width: 25%;
         max-width: 1024px;
-      }
+    }
 
-      .swiper-wrapper {
+    .swiper-wrapper {
         padding: 2rem 2rem 2rem 2rem;
         align-items: center;
         margin-left: 5rem;
     }
 }
-
