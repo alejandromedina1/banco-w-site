@@ -1,5 +1,8 @@
 @use './src/global.scss' as c;
 
+figure{
+	margin: 0;
+}
 
 .buttonDuoIcon {
 
@@ -20,6 +23,20 @@
 	font-weight: 500;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
+
+	&__info-container{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding-right: 20px;
+
+	}
+
+	&__additional-text{
+		color: c.$gray-1;
+	}
 }
 
 
@@ -29,12 +46,11 @@
 }
 
 
-.button__text,
-.button__icon,
-.button__arrow {
+.buttonDuoIcon__text-container,
+.buttonDuoIcon__icon{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
 	padding: 0 24px;
 	color: c.$gray-2;
 	fill: #fff;
@@ -43,21 +59,31 @@
 	text-align: left;
 }
 
-.button__icon {
+.buttonDuoIcon__icon {
 	font-size: 1.2em;
 	background: c.$orange-400;
 	fill: #fff;
+	margin: auto 0;
+	align-items: center;
 }
 
-.button__icon svg {
+.buttonDuoIcon__arrow{
+	margin: auto 0;
+}
 
+.buttonDuoIcon__icon svg {
 	fill: #fff;
+}
+
+.button__text-container{
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
 
 	.button,
-	.button__text,
+	.button__text-container,
 	.button__icon,
 	.button__arrow {
 		height: 80px;
@@ -66,13 +92,6 @@
 
 	.button {
 		width: 100%;
-	}
-
-	.button__text,
-	.button__icon,
-	.button__arrow {
-		padding: 0 35px;
-
 	}
 
 }

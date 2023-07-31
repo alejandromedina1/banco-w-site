@@ -35,7 +35,6 @@ $cyan-400: #00EFFC;
 $cyan-300: #3DF5FF;
 $cyan-200: #7EF9FF;
 $cyan-100: #BEFCFF;
-$cyan_divine: #62DEE5;
 
 $indigo-1000: #05081B;
 $indigo-900: #0A0C19;
@@ -48,19 +47,25 @@ $indigo-300: #727AC5;
 $indigo-200: #A1A7D9;
 $indigo-100: #D0D3EC;
 
+//Fonts
 $gray-1: #676767;
 $gray-2: #ACACAC;
 $gray-3: #EFEFEF;
 
+<<<<<<< HEAD
 //Fonts
 
 $font-path: "./fonts/";
+=======
+$font-path: './fonts/';
+>>>>>>> edc6916006f0ea510a8596fd254cfa708ea7d2f2
 
 @font-face {
     font-family: "font-bariol-bold";
     src: url("#{$font-path}bariol_bold.ttf") format("truetype");
 }
 
+<<<<<<< HEAD
 @font-face {
     font-family: "font-bariol-bold-italic";
     src: url("#{$font-path}bariol_bold_italic.ttf") format("truetype");
@@ -151,3 +156,5 @@ $font-path: "./fonts/";
 //fonts styles
 
 $font: 24px;
+=======
+>>>>>>> edc6916006f0ea510a8596fd254cfa708ea7d2f2

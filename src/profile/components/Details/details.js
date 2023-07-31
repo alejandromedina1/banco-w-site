@@ -84,7 +84,7 @@ class Details extends HTMLElement {
     render() {
         this.innerHTML = `
     <link rel="stylesheet" href="../Details/details.scss">
-    
+
     <section class="Card">
         <div class="Card-Type">
             <span>${this.typeTitle}</span>

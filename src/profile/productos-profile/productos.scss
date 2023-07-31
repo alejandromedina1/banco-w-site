@@ -111,7 +111,7 @@
 
     }
 
-    &__container-user{
+    &__container-user {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -124,10 +124,17 @@
     &__account {
 
         margin-bottom: 2.5em;
+        
 
         &-card {
 
             box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                translate: 0px -5px;
+            }
 
 
             &-container {
@@ -174,10 +181,10 @@
         }
     }
 
-    &__products{
+    &__products {
         margin-bottom: 3.75em;
 
-        &-button{
+        &-button {
             margin-bottom: 1em;
         }
     }
@@ -188,10 +195,19 @@
 
         padding: 0px 60px;
 
-        &__container-user{
+        &__container-user {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
+        }
+
+        &__account {
+            &-card {
+                &-container {
+                    padding: 15px;
+                    height: 192px;
+                }
+            }
         }
 
 
