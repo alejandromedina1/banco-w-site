@@ -1,0 +1,303 @@
+@use './src/global.scss' as c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 352px;
+    background-size: auto 352px;
+    background-image: url(../../public/images/hero_circles.webp), url(../../public/images/hero_circles.webp);
+    background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+    &-buttons {
+        display: flex;
+        justify-content: right;
+        gap: 14.72px;
+        height: 17%;
+    }
+
+    &-Profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    &-Profile img {
+        width: 160px;
+    }
+
+    &-menu {
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &-border {
+        border-right: 0.5px solid c.$orange-300;
+    }
+}
+
+.Hero-menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+}
+
+.Hero-menu li {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main {
+    margin-top: 2.14375em;
+    margin: 2.14375em 1.46875em;
+    display: flex;
+    min-width: 320px;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Bariol';
+
+    &__title {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.7em;
+        margin-bottom: 2.1em;
+    }
+
+    &__title h1 {
+        font-size: 1.875rem;
+        color: c.$gray-2;
+        font-family: 'Geomanist';
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    &__subtitle {
+        color: c.$cyan-500;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        font-weight: 400;
+
+    }
+
+    &__achievements {
+        &-container {
+            display: flex;
+            flex-direction: row;
+            border-radius: 5.734px;
+            background: #FFF;
+            box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
+            padding: 12px;
+            margin-bottom: 2.875em;
+        }
+
+        &-info {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 1.25em;
+            align-items: center;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+
+                &-level {
+                    color: c.$cyan-500;
+                }
+            }
+
+
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &-coin {
+
+            position: relative;
+
+            &-container {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                margin-bottom: 2.875em;
+
+
+
+                &-vector {
+                    flex: 1 0 auto;
+                    margin: 0 30px;
+
+                }
+
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+
+            &-bar {
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+                top: 25px;
+                height: 5px;
+                background: #D9D9D9;
+                border-radius: 100px;
+                display: flex;
+
+                &-filled {
+
+                    height: 100%;
+                    width: 65%;
+                    background: c.$cyan-500;
+                }
+            }
+        }
+    }
+
+    &__challenges {
+
+        &-container-hideMobile{
+                display: none;
+            
+        }
+
+    }
+
+    &__nextChallenges {
+        display: none;
+    }
+}
+
+.challenges-card,
+.buttonDuoIcon {
+    margin-bottom: 25px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .main {
+
+        padding: 0px 60px;
+
+        &__subtitle{
+            margin: 20px 0;
+        }
+
+        &__challenges {
+            &-container-hideMobile{
+                display: block;
+        }
+            &-myProgress {
+                display: none;
+                display: flex;
+                border-radius: 10px;
+                padding: 0.9375em;
+                border: 0px solid var(--azul-azul-1, #00B1BB);
+                background: var(--blanco-acento, #FAFAFA);
+                box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+                justify-content: space-around;
+    
+                &-left,
+                &-right {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+    
+                }
+    
+                &-text {
+                    &-1 {
+                        font-family: 'Bariol';
+                        color: c.$gray-1;
+                    }
+    
+                    &-2 {
+                        font-family: 'Geomanist';
+                        color: c.$gray-1;
+                        font-weight: 600;
+                    }
+                }
+            }
+    
+            &-myMedals {
+                display: none;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0.9375em;
+                border-radius: 10px;
+                border: 0px solid var(--azul-azul-1, #00B1BB);
+                background: var(--blanco-acento, #FAFAFA);
+                box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+    
+                &-1,
+                &-2,
+                &-3 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+            }
+        }
+
+        &__button-container {
+            display: none;
+        }
+
+        &__nextChallenges {
+            display: block;
+        }
+
+        &__desktop-achievements{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-top: 50px;
+        }
+
+
+
+    }
+
+
+}
