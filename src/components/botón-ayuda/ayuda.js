@@ -19,7 +19,7 @@ class HelpButton extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="./style.scss">
+        <link rel="stylesheet" href="./components/botón-ayuda/style.scss">
         <div id="overlay">
         </div>
         <nav class="help-button">
