@@ -1,0 +1,78 @@
+@use '../../../global.scss' as c;
+.Card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 6.287px;
+    background: #FFF;
+    box-shadow: 5.239534378051758px 7.335348129272461px 31.43720817565918px 0px rgba(159, 102, 219, 0.18);
+    padding: 19px;
+    
+    &-Type,
+    &-Date {
+        margin-bottom: 0.2rem;
+    }
+    &-Type span,
+    &-Date span,
+    &-State span{
+        font-size: c.$font-bariol-regular;
+        font-size: 13px;
+        color: c.$gray-2;
+    }
+    &-Type p,
+    &-Date p,
+    &-State p {
+        font-size: c.$font-bariol-regular;
+        font-size: 16px;
+        color: c.$gray-2;
+    }
+    &-Mount{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    &-Mount span {
+        font-size: c.$font-bariol-regular;
+        font-size: 13px;
+        color: c.$gray-2;
+    }
+    &-Mount p {
+        font-size: c.$font-bariol-regular;
+        color: c.$cyan-500;
+        font-size: 18px;
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .Card {
+        border-radius: 10px;
+        background: #FFF;
+        padding: 19px;
+        
+        &-Type,
+        &-Date {
+            margin-bottom: 1.7rem;
+        }
+        &-Type span,
+        &-Date span,
+        &-State span{
+            font-size: 18px;
+        }
+        &-Type p,
+        &-Date p,
+        &-State p {
+            font-size: 35px;
+        }
+        &-Mount{
+            margin-top: 1.7rem;
+        }
+        &-Mount span {
+            font-size: 20px;
+        }
+        &-Mount p {
+            font-size: 35px;
+        }
+    }
+}

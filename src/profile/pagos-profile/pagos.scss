@@ -1,0 +1,328 @@
+@use './src/global.scss' as c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 352px;
+    background-size: auto 352px;
+    background-image: url(../../public/images/hero_circles.webp), url(../../public/images/hero_circles.webp);
+    background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+    &-buttons {
+        display: flex;
+        justify-content: right;
+        gap: 14.72px;
+        height: 17%;
+    }
+
+    &-Profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    &-Profile img {
+        width: 160px;
+    }
+
+    &-menu {
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &-border {
+        border-right: 0.5px solid c.$orange-300;
+    }
+}
+
+.Hero-menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+}
+
+.Hero-menu li {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main {
+    margin-top: 2.14375em;
+    margin: 2.14375em 1.46875em;
+    display: flex;
+    min-width: 320px;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &__title {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.7em;
+        margin-bottom: 2.1em;
+    }
+
+    &__title h1 {
+        font-size: 1.875rem;
+        color: c.$gray-2;
+        font-family: 'Geomanist';
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    &__subtitle {
+        color: c.$cyan-500;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 1.25em;
+    }
+
+    &__container-payments{
+        margin-bottom: 25px;
+    }
+
+
+
+    &__detailPayment {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5.617px;
+        background: c.$cyan-500;
+        box-shadow: 4.681093692779541px 6.553531169891357px 28.08656120300293px 0px rgba(159, 102, 219, 0.18);
+        margin-bottom: 1.25em;
+
+        &-containers {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-subtitle {
+            color: #FFF;
+            font-family: 'Bariol';
+            font-size: 1.1rem;
+            font-weight: 400;
+
+        }
+
+        &-date {
+            display: flex;
+            gap: 0.375em;
+            color: #FFF;
+            font-family: 'Bariol';
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 0.75em;
+
+            &-text-number {
+                font-size: 1.125rem;
+            }
+
+            &-icon {
+                margin-top: -0.125em;
+            }
+
+        }
+
+        &-notification {
+            margin: 0.3125em;
+        }
+
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        &-button {
+            font-family: 'Bariol';
+            display: flex;
+            min-width: 92px;
+            justify-content: center;
+            padding: 3.5px;
+            align-items: flex-end;
+            border: 2px solid #fff;
+            border-radius: 3.896px;
+            background: #FFF;
+            color: c.$cyan-500;
+            font-size: 0.8125rem;
+            transition: 0.3;
+
+            &:hover {
+                background-color: c.$cyan-500;
+                border: 2px solid #fff;
+                color: #FFF;
+            }
+        }
+    }
+
+    &__otherPayments {
+        margin-bottom: 1.25em;
+        &-card {
+            width: 100%;
+            height: 100%;
+            padding: 0.75em;
+            border-radius: 5.734px;
+            background: #FFF;
+            box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
+            display: flex;
+            justify-content: space-between;
+
+            &-products {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: space-around;
+
+            }
+
+            &-mini {
+                display: flex;
+                gap:20px;
+                font-family: 'Bariol';
+                color: #FFF;
+                
+
+                & .mini-container {
+                    gap: 1.875em;
+                    flex-direction: row;
+                    background: c.$cyan-500;
+                    padding: 0.3125em;
+                    border-radius: 5.734px;
+                    box-shadow: 4.7782793045043945px 6.6895904541015625px 28.669673919677734px 0px rgba(159, 102, 219, 0.18);
+
+                    &-text{
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+
+                &-icon{
+                    margin-top: auto;
+                }
+            }
+
+            &-title {
+                color: c.$gray-2;
+                font-family: 'Bariol';
+                font-size: 1.1rem;
+            }
+
+            &-arrow {
+                margin: auto 0;
+            }
+        }
+
+
+    }
+
+    &__post{
+        border-top: 1px solid c.$cyan-500;
+        padding-top: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .main {
+
+        padding: 0px 60px;
+
+        &__detailPayment{
+            height: 198.8px;
+        }
+
+        &__container-payments{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        &__otherPayments-card{
+            height: 198.8px;
+
+        }
+        
+    }
+
+
+}
+
+
+@media screen and (min-width: 600px) {
+    .main {
+
+        padding: 0px 60px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .main {
+
+        padding: 0px 60px;
+
+        &__otherPayments-card{
+            padding: 1.75em;
+        }
+
+        &__detailPayment {
+            padding: 1.75em;
+            margin-bottom: 0;
+        }
+
+        
+    }
+
+
+}

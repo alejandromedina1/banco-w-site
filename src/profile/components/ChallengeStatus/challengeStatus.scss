@@ -1,0 +1,78 @@
+@use './src/global.scss' as c;
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+figure{
+	margin: 0;
+}
+
+.challenges-card {
+
+	border-radius: 10px;
+	padding: 0.875em;
+	border: 0px solid c.$cyan-500;
+	background: #FFF;
+	box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+	
+
+	&-container {
+		display: flex;
+		flex-direction: column;
+		font-family: 'Bariol';
+	}
+
+	&-top {
+		display: flex;
+		flex-direction: row;
+		gap: 0.9375em;
+
+		& svg {
+			width: 40px;
+		}
+
+		&-text{
+			&-2{
+				color: c.$purple-300;
+			}
+		}
+	}
+
+	&-bottom {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		&-progress {
+			width: 65%;
+			display: flex;
+			align-items: center;
+			gap: 0.625em;
+
+
+			&-bar {
+				height: 0.375em;
+				background: #CDCFD0;
+				border-radius: 100px;
+				width: 100%;
+				display: flex;
+
+				&-filled {
+					border-radius: 100px;
+					background: c.$orange-400;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width:768px) {}

@@ -1,0 +1,1158 @@
+@import './global.scss';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+}
+
+h2 {
+    font-family: $font-geomanist-bold;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-family: $font-geomanist-bold;
+    font-size: 18px;
+    font-weight: 700;
+    color: $orange-400;
+}
+
+.title-25 {
+    margin: 0;
+    font-family: $font-geomanist-bold;
+    font-size: 25px;
+    font-weight: 700;
+    color: $gray-1;
+}
+
+.body1 {
+    color: white;
+    text-align: center;
+    font-family: $font-bariol-regular;
+    font-size: 16.7px;
+    font-weight: 400;
+    line-height: 138%;
+}
+
+.body2 {
+    color: $gray-1;
+    font-family: $font-bariol-regular;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 168.5%;
+}
+
+.body3 {
+    color: $gray-3;
+    font-family: $font-bariol-regular;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#main-banner {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: $gray-3;
+    background-image: url(./public/images/circle-banner-main-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+
+    & .banner-container {
+        width: 42.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    & .container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    & .title {
+        color: $gray-1;
+        font-family: $font-geomanist-bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 137%;
+    }
+
+    & .text {
+        width: 80%;
+        color: $gray-1;
+        font-family: $font-bariol-regular;
+        font-size: 12px;
+        line-height: 133%;
+    }
+
+    & .vo {
+
+        &_desk {
+            display: none;
+        }
+    }
+
+    & .btn {
+        width: 95%;
+        height: 30px;
+        padding: 5px;
+        border-radius: 4px;
+        border: none;
+        background-color: $purple-300;
+        color: white;
+        text-align: center;
+        font-family: $font-bariol-regular;
+        font-size: 13.424px;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    & .woman-img {
+        width: 52%;
+    }
+}
+
+#nav-bar-float {
+    position: relative;
+    width: 95%;
+    height: 85px;
+    border-radius: 6.7px;
+    border: none;
+    background-color: white;
+    box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -40px 0;
+    margin-left: 2.5%;
+    z-index: 1;
+
+    & button {
+        width: 25%;
+        height: 60px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $purple-300;
+        text-align: center;
+        font-family: $font-bariol-regular;
+        font-size: 10.774px;
+        font-weight: 400;
+        justify-content: space-between;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0 1%;
+
+        & .icon {
+            width: 30%;
+        }
+
+        & a {
+            display: flex;
+            text-decoration: none;
+            height: 50%;
+            justify-content: center;
+            color: $purple-300;
+        }
+    }
+
+    & .option {
+
+        &_credit {
+            border-right: 1px solid $purple-100;
+        }
+        
+        &_blog {
+            border-left: 1px solid $purple-100;
+            border-right: 1px solid $purple-100;
+        }
+
+        &_comparator {
+            border-left: 1px solid $purple-100;
+            border-right: 1px solid $purple-100;
+        }
+
+        &_simulator {
+            border-left: 1px solid $purple-100;
+        }
+    }
+}
+
+#products-landing {
+    background-image: url(./public/images/bg-product-ahorro-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+
+
+    & .titles-section {
+        padding-left: 5.13%;
+        padding-top: 87px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & h3 {
+            color: $cyan-500 !important;
+        }
+    }
+
+    & .container-products {
+        padding: 0px 5.13%;
+
+        & .dropdown-products {
+            width: 70.3%;
+            height: 35px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            border: 1.779px solid white;
+            background: $cyan-500;
+            box-shadow: 2.964601755142212px 4.150442600250244px 17.78761100769043px 0px rgba(0, 177, 187, 0.21);
+            margin-bottom: 20px;
+        }
+
+        & .info-product {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
+
+        & .description-product {
+            display: flex;
+            margin: 20px 0px;
+            gap: 7px;
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                padding: 0px;
+
+                & li {
+                    list-style: none;
+                }
+
+                & img {
+                    margin-right: 4%;
+                }
+            }
+        }
+
+        & .btn-desk {
+            display: none;
+        }
+
+        & .asterisks-mobile {
+            width: 4.3%;
+        }
+
+        & .image-ref-product {
+            width: 61.15%;
+        }
+    }
+
+}
+
+.title-practice {
+    display: none;
+}
+
+#explore-news {
+    padding: 25px 5.13%;
+
+    & .our-app {
+        width: 100%;
+        background-image: url(./public/images/bg-news-mobile.webp);
+        background-size: cover;
+        background-position: center center;
+        background-color: $purple-300;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+
+        & .container-info {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 163.834px;
+        }
+
+        & .container-text {
+            width: 75.26%;
+            padding-top: 48.8px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & h1 {
+                width: 100%;
+                color: white !important;
+                text-align: center;
+            }
+
+            & p {
+                color: white !important;
+                text-align: center;
+            }
+        }
+
+        & .btn {
+            width: auto;
+            height: auto;
+            padding: 11.3px 17px;
+            border-radius: 4px;
+            border: none;
+            background-color: $orange-300;
+            color: white;
+            text-align: center;
+            font-family: $font-bariol-regular;
+            font-size: 17.655px;
+            font-weight: 400;
+            margin-bottom: 70.66px;
+        }
+    }
+
+}
+
+#favorites {
+    padding: 25px 5.13%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    & .card-favorite {
+
+        & .orange {
+            margin-top: -9px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 130px;
+            border-radius: 7.67px;
+            background-image: url(./public/images/card-search-orange-mobile.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        & .violet {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 130px;
+            justify-content: space-between;
+            border-radius: 7.67px;
+            background-image: url(./public/images/card-search-violet-mobile.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        & .blue {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 130px;
+            justify-content: space-between;
+            border-radius: 7.67px;
+            background-image: url(./public/images/card-search-blue-mobile.webp);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        & img {
+            width: 17%;
+            padding-right: 7%;
+        }
+
+        & h2 {
+            color: white;
+            padding-top: 31.66px;
+            padding-left: 7%;
+        }
+
+        & p {
+            width: 70%;
+            color: white;
+            padding-left: 7%;
+        }
+    }
+}
+
+#finance {
+    background-image: url(./public/images/bg-finance-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+    margin: 25px 0;
+    padding-top: 68.53px;
+
+    & .container-text {
+        padding: 0% 5.13%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15.66px;
+
+        & h1 {
+            color: white;
+            text-align: center;
+            font-family: $font-geomanist-bold;
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 138%;
+        }
+
+        & .btn {
+            width: 39.66%;
+            height: 37.574px;
+            padding: 10px 5px;
+            border-radius: 4px;
+            border: none;
+            background: $orange-300;
+            color: white;
+            text-align: center;
+            font-family: $font-bariol-regular;
+            font-size: 16px;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+
+    & img {
+        width: 39.29%;
+        margin-top: -50px;
+    }
+}
+
+#featured-articles {
+    padding: 25px 5.13%;
+
+    & .each-article {
+        width: 96%;
+        height: 375px;
+        justify-content: center;
+        align-items: center;
+
+        & .card {
+            height: 90%;
+            border-radius: 8.66px !important;
+            padding: 12.12px 3.35%;
+            box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+            margin: 0px;
+            background: #FDFDFD;
+            border: none;
+
+            & img {
+                margin-bottom: 23px;
+            }
+
+            & h5 {
+                color: $gray-1;
+                font-family: $font-geomanist-bold;
+                font-size: 13.856px;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            & .card-text {
+                color: $gray-1;
+                font-family: $font-bariol-regular;
+                font-size: 12.99px;
+                font-weight: 400;
+                line-height: 150%;
+                margin: 14.72px 0px;
+            }
+
+            & .more {
+                display: flex;
+                height: 12.124px;
+                flex-direction: row;
+                gap: 3.28px;
+                margin-top: 18.34px;
+                justify-content: center;
+                align-items: center;
+
+                & .link {
+                    width: 100%;
+                    color: $purple-300;
+                    text-align: right;
+                    font-family: $font-geomanist-medium;
+                    font-size: 12.124px;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+
+                & .icon {
+                    width: 4.8%;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+#profile-w {
+    padding: 25px 5.13%;
+
+    & .benefits {
+        width: 100%;
+        padding: 30px 2.5%;
+        border-radius: 4.562px;
+        background: var(--naranja-400, #F83);
+        background-image: url(./public/images/circles-profile-mobile.webp);
+        background-size: cover;
+        background-position: center center;
+
+        & .description {
+            display: flex;
+            flex-direction: row;
+            gap: 4.5%;
+
+            & img {
+                width: 52.23%;
+                margin-top: -80px;
+            }
+
+            &_info {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &_text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                }
+            }
+
+            & h4 {
+                color: $gray-3;
+                font-family: Geomanist;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0;
+            }
+
+            & .btn {
+                width: 66%;
+                height: auto;
+                padding: 5px 5%;
+                border-radius: 3.638px;
+                background: $purple-300;
+                color: #FFF;
+                text-align: center;
+                font-family: $font-bariol-regular;
+                font-size: 11.435px;
+                font-weight: 400;
+            }
+        }
+
+        & .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4%;
+            padding: 0px 2.5%;
+            margin-top: -45px;
+            margin-bottom: -87px;
+
+            & .each-card {
+                width: 48%;
+
+                & .card {
+                    width: 100%;
+                    height: 146px;
+                    display: flex;
+                    padding: 3.509px 9.57px 1.404px 9.57px;
+                    gap: 5px;
+                    border: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 4.785px;
+                    background: white;
+                    box-shadow: 3.681197166442871px 5.153675556182861px 22.087182998657227px 0px rgba(159, 102, 219, 0.18);
+                    margin-bottom: 10px;
+
+                    & .icon {
+                        width: 25%;
+                    }
+
+                    & .title {
+                        color: $orange-400;
+                        text-align: center;
+                        font-family: $font-bariol-regular;
+                        font-size: 14.819px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        margin: 0px;
+                    }
+
+                    & p {
+                        color: $gray-1;
+                        margin-bottom: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#profile-w-desk {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    h3 {
+        margin-bottom: 60px;
+        font-size: 35px;
+        color: $orange-500;
+    }
+
+    h4 {
+        font-size: 1.54088rem;
+        color: white;
+    }
+
+    .body2 {
+        font-size: 18px;
+    }
+
+    .body3 {
+        font-size: 16px;
+    }
+
+    #main-banner {
+        background-image: url(./public/images/bg-main-banner-desk.webp);
+        background-size: cover;
+        background-position: center center;
+        gap: 7%;
+        padding-left: 9.72%;
+
+        & .banner-container {
+            width: 45%;
+            gap: 38px;
+        }
+
+        & .container-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 28px;
+        }
+
+        & .title {
+            font-size: 48px;
+        }
+
+        & .text {
+            font-size: 18px;
+            line-height: 168.5%;
+        }
+
+        & .vo {
+            &_mobile {
+                display: none;
+            }
+
+            &_desk {
+                display: inline;
+            }
+        }
+
+        & .btn {
+            width: 44.4%;
+            height: 60px;
+            padding: 13px 5%;
+            border-radius: 7px;
+            font-size: 25px;
+        }
+
+        & .woman-img {
+            width: 31.6%;
+        }
+    }
+
+    #nav-bar-float {
+        position: relative;
+        width: 70%;
+        height: 115px;
+        border-radius: 10px;
+        border: none;
+        background-color: white;
+        box-shadow: 3.619999885559082px 5.070000171661377px 21.739999771118164px 0px rgba(159, 102, 219, 0.18);
+        margin: -55px 0;
+        margin-left: 15%;
+
+        & button {
+            height: 80px;
+            font-size: 18px;
+            font-weight: 400;
+    
+            & .icon {
+                width: 25%;
+            }
+    
+            & a {
+                display: flex;
+                text-decoration: none;
+                height: 50%;
+                justify-content: center;
+                color: $purple-300;
+            }
+        }
+    }
+
+    #products-landing {
+        background-image: url(./public/images/bg-products-desk.webp);
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: 80px;
+
+        & .titles-section {
+            padding-left: 16.88%;
+            padding-top: 215px;
+
+            & .title-25 {
+                display: none;
+            }
+
+            & h3 {
+                color: $gray-1 !important;
+                margin-bottom: 20px !important;
+            }
+        }
+
+        & .container-products {
+            padding: 0px 16.88%;
+
+            & .dropdown-products {
+                width: 43.5%;
+                height: 60px;
+                border-radius: 7px;
+                border: 3px solid #FFF;
+                box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.21);
+            }
+
+            & .info-product {
+                flex-direction: row;
+                gap: 23.6%;
+                align-items: start;
+
+                &_text {
+                    width: 42%;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            & .description-product {
+                gap: 12px;
+
+                &_text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 27px;
+                    margin: 0;
+                }
+            }
+
+            & .btn-desk {
+                display: flex;
+                width: 51.4%;
+                height: 51px;
+                padding: 14.061px 5%;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6.152px;
+                background: $cyan-500;
+                color: white;
+                text-align: center;
+                font-family: $font-bariol-regular;
+                font-size: 21.97px;
+                font-weight: 400;
+                text-decoration: none;
+                margin-bottom: 67px;
+            }
+
+            & .asterisks-mobile {
+                width: 4.3%;
+                margin: 5px 0px;
+            }
+
+            & .image-ref-product {
+                width: 51.31%;
+                margin-right: -17%;
+                margin-top: -118px;
+            }
+        }
+
+    }
+
+    .title-practice {
+        display: flex;
+        padding: 0px 16.88%;
+        margin-bottom: 0;
+    }
+
+    .bank-practices {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 55px 16.88%;
+    }
+
+    #explore-news {
+        padding: 0;
+        width: 55.56%;
+
+        & h3 {
+            color: $gray-1;
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+
+        & .our-app {
+
+            & .container-info {
+                gap: 214px;
+            }
+
+            & .container-text {
+                width: 70%;
+                padding-top: 64px;
+
+                & h1 {
+                    font-size: 32.665px;
+                }
+            }
+
+            & .btn {
+                padding: 14.739px 22.109px;
+                border-radius: 6.448px;
+                font-size: 23.03px;
+            }
+        }
+
+    }
+
+    #favorites {
+        padding: 0;
+        gap: 10px;
+
+        & h3 {
+            width: 50%;
+            color: $gray-1;
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+
+        & .card-favorite {
+
+            & .orange {
+                margin-top: -10px;
+                width: 100%;
+                height: 169px;
+                border-radius: 10px;
+            }
+
+            & .violet {
+                margin-top: 0px;
+                width: 100%;
+                height: 169px;
+                border-radius: 10px;
+            }
+
+            & .blue {
+                margin-top: 0px;
+                width: 100%;
+                height: 169px;
+                border-radius: 10px;
+            }
+
+            & img {
+                width: 18%;
+                padding-right: 7%;
+            }
+
+            & h2 {
+                padding-top: 41px;
+            }
+
+            & p {
+                width: 80%;
+            }
+        }
+    }
+
+    #finance {
+        background-image: url(./public/images/bg-finance-desk.webp);
+        margin: 110px 0;
+        height: 371px;
+        padding-top: 50px !important;
+        padding: 0% 25.5%;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        & .container-text {
+            padding: 0;
+            height: 205px;
+            width: 55%;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+
+            & h1 {
+                text-align: left;
+                margin: 0;
+            }
+
+            & p {
+                text-align: left;
+            }
+
+            & .btn {
+                width: 40%;
+                height: 36px;
+                border-radius: 5px;
+                padding: 9px 5px;
+            }
+        }
+
+        & img {
+            transform: scaleX(-1);
+            width: 50%;
+            height: 100%;
+            margin-right: -30%;
+            align-self: flex-end;
+        }
+    }
+
+    #featured-articles {
+        padding: 25px 16.88%;
+    
+        & .each-article {
+            width: 96%;
+            height: 375px;
+            justify-content: center;
+            align-items: center;
+    
+            & .card {
+                height: 90%;
+                border-radius: 8.66px !important;
+                padding: 12.12px 3.35%;
+                box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+                margin: 0px;
+                background: #FDFDFD;
+                border: none;
+    
+                & img {
+                    margin-bottom: 23px;
+                }
+    
+                & h5 {
+                    color: $gray-1;
+                    font-family: $font-geomanist-bold;
+                    font-size: 13.856px;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0px;
+                }
+    
+                & .card-text {
+                    color: $gray-1;
+                    font-family: $font-bariol-regular;
+                    font-size: 12.99px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 14.72px 0px;
+                }
+    
+                & .more {
+                    display: flex;
+                    height: 12.124px;
+                    flex-direction: row;
+                    gap: 3.28px;
+                    margin-top: 18.34px;
+                    justify-content: center;
+                    align-items: center;
+    
+                    & .link {
+                        width: 100%;
+                        color: $purple-300;
+                        text-align: right;
+                        font-family: $font-geomanist-medium;
+                        font-size: 12.124px;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-decoration: none;
+                    }
+    
+                    & .icon {
+                        width: 4.8%;
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #profile-w {
+        display: none;
+    }
+
+    #profile-w-desk {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 8.33%;
+
+        & h3 {
+            margin-bottom: 112px;
+        }
+
+        & .benefits {
+            width: 100%;
+            height: 573px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 55px 6.43%;
+            border-radius: 20px;
+            background: var(--naranja-400, #F83);
+            background-image: url(./public/images/circle-profile-desk.webp);
+            background-size: cover;
+            background-position: center center;
+
+            & img {
+                width: 45%;
+                margin-top: -200px;
+                margin-bottom: -55px;
+            }
+
+            & .container-btn {
+                position: absolute;
+                display: flex;
+                left: 8.33%;
+                width: 45%;
+                height: 65%;
+                margin: 0;
+                border-radius: 20px;
+                background: linear-gradient(0deg, #F83 0%, rgba(255, 136, 51, 0.00) 100%);
+                justify-content: center;
+                align-items: end;
+
+                & .btn {
+                    display: flex;
+                    width: 33%;
+                    height: 57px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 7px;
+                    background: $purple-300;
+                    color: white;
+                    text-align: center;
+                    font-family: $font-bariol-regular;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 50px;
+                }
+            }
+
+            &_container-info {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+
+                & .description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    align-items: center;
+
+                    & h4 {
+                        text-align: center;
+                    }
+
+                    & p {
+                        text-align: center;
+                        color: white;
+                    }
+                }
+
+                & .cards-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4%;
+                    margin-bottom: -100px;
+
+                    & .each-card {
+                        width: 48%;
+
+                        & .card {
+                            width: 100%;
+                            height: 208px;
+                            display: flex;
+                            padding: 5px 10%;
+                            border: none;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-radius: 6.818px;
+                            background: white;
+                            box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+                            margin-bottom: 20px;
+
+                            & .icon {
+                                width: 25%;
+                                margin: 0;
+                            }
+
+                            & .title {
+                                color: $orange-400;
+                                text-align: center;
+                                font-family: $font-bariol-regular;
+                                font-size: 21.114px;
+                                font-weight: 400;
+                                line-height: 120%;
+                                margin: 0px;
+                            }
+
+                            & p {
+                                color: $gray-1;
+                                margin-bottom: 20px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

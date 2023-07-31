@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#show-btn {
+    display: none;
+}
+
+.inclusive-button {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+}
+
+.options div a {
+    display: block;
+    text-decoration: none;
+    background: white;
+    width: 61px;
+    height: 61px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+#pqrs {
+    position: absolute;
+    bottom: -40px;
+    right: 130px;
+}
+
+#pqrs span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 80px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: #00B1BB;
+}
+
+#pqrs a img:hover + .pqrs-span{
+    background-color: #00B1BB;
+    opacity: 1;
+}
+
+#show-btn:checked~ .show-btn span {
+    opacity: 0;
+}
+
+#tutorial {
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+}
+
+#tutorial span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 110px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: #00B1BB;
+}
+
+#asesoria {
+    position: absolute;
+    bottom: 110px;
+    right: 70px;
+}
+
+#asesoria span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 110px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: #00B1BB;
+}
+
+#chat {
+    position: absolute;
+    bottom: 115px;
+    right: -20px;
+}
+#chat span{
+    margin-left: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+    width: 70px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: #00B1BB;
+}
+
+#show-btn:checked~ .options div span {
+    opacity: 1;
+}
+
+.show-btn img{
+    background-color: #00B1BB;
+    width: 97px;
+    height: 97px;
+    line-height: 55px;
+    padding: 20px 14px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.options div a:hover {
+    background-color: rgb(255, 230, 216);
+
+}
+
+.options div a {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+}
+
+#show-btn:checked~ .options div a {
+    opacity: 1;
+    visibility: visible;
+}
+
+body{
+    background-color: rgb(218, 218, 218);
+}
+
+.label-hidden {
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    width: 160px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.show-button:hover + .label-hidden {
+    background-color: #00B1BB;
+    opacity: 1;
+}
+
+#show-btn:checked~ .show-btn span {
+    opacity: 0;
+}
