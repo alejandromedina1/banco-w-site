@@ -25,10 +25,10 @@ p {
         color: #ffffff;
         text-align: left;
         font-size: 1rem;
-        font-family: c.$font-bariol-regular;
+        font-family: "font-bariol-regular";
     }
     & td {
-        font-family: c.$font-bariol-regular;
+        font-family: "font-bariol-regular";
         color: c.$gray-2;
         font-size: 0.8rem;
         
@@ -56,7 +56,7 @@ p {
 
 .Movements {
     font-size: 1rem;
-    font-family: c.$font-bariol-regular;
+    font-family: "font-bariol-regular";
     background-color: c.$cyan-500;
     padding: 0.8rem 0;
     border-radius: 0rem 0rem 0.34rem 0.34rem;

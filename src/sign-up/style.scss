@@ -39,7 +39,7 @@
 
 
 label {
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     color: $cyan-500;
     font-size: 0.8125rem;
     font-style: normal;
@@ -51,7 +51,7 @@ input:not(.passwords) {
     border: 2px solid #cdcdcd;
     border-radius: 4px;
     padding: 10px;
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -76,7 +76,7 @@ select.dropdowns {
     padding: 10px;
     padding-right: 20px;
     color: #cdcdcd;
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -87,7 +87,7 @@ select.dropdowns {
 }
 
 optgroup.dropdown-group {
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -116,7 +116,7 @@ optgroup.dropdown-group {
 }
 
 p {
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 13pt;
     color: #cdcdcd;
     font-size: 0.8125rem;
@@ -146,7 +146,7 @@ button#submit-button {
     border: 0px;
     border-radius: 0.24688rem;
     color: white;
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
