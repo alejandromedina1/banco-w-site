@@ -277,6 +277,10 @@ p {
 
         padding: 0px 60px;
 
+        &__detailPayment{
+            height: 198.8px;
+        }
+
         &__container-payments{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -284,7 +288,7 @@ p {
         }
 
         &__otherPayments-card{
-            height: 80%;
+            height: 198.8px;
 
         }
         
@@ -309,7 +313,6 @@ p {
         padding: 0px 60px;
 
         &__otherPayments-card{
-            height: 80%;
             padding: 1.75em;
         }
 

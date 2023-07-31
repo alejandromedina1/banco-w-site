@@ -35,7 +35,6 @@ $cyan-400: #00EFFC;
 $cyan-300: #3DF5FF;
 $cyan-200: #7EF9FF;
 $cyan-100: #BEFCFF;
-$cyan_divine: #62DEE5;
 
 $indigo-1000: #05081B;
 $indigo-900: #0A0C19;
@@ -48,11 +47,10 @@ $indigo-300: #727AC5;
 $indigo-200: #A1A7D9;
 $indigo-100: #D0D3EC;
 
+//Fonts
 $gray-1: #676767;
 $gray-2: #ACACAC;
 $gray-3: #EFEFEF;
-
-//Fonts
 
 $font-path: './fonts/';
 
@@ -73,20 +71,4 @@ $font-geomanist-medium: 'Geomanist Medium', sans-serif;
 $font-geomanist-regular: 'Geomanist Regular', sans-serif;
 $font-geomanist-thin: 'Geomanist Thin', sans-serif;
 $font-geomanist-ultra: 'Geomanist Ultra', sans-serif;
-
-.example {
-    font-family: $font-bariol-regular;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-//fonts styles
-
-$font: 24px;
-
 

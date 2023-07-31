@@ -1,0 +1,8 @@
+@use '../styles';
+@import url("../fonts/font.css");
+
+h1 {
+    color: styles.$orange-400;
+    font-family: 'Bariol Regular';
+    font-size: styles.$font;
+}

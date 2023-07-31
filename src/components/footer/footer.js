@@ -1,8 +1,8 @@
 class Footer extends HTMLElement {
     constructor() {
         super()
-
-        //attributes
+        
+    //attributes
     }
 
     static get observedAttributes() {
@@ -11,6 +11,7 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
         this.render()
+
         const buttons = this.querySelectorAll('.main-option')
         const buttonArray = Array.prototype.slice.call(buttons)
         console.log(buttonArray)
@@ -124,6 +125,7 @@ render() {
         </footer>
         `;
 }
+
 
 }
 
