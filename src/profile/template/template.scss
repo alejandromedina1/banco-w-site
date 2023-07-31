@@ -19,7 +19,7 @@
     text-align: center;
     line-height: normal;
     font-size: $f;
-    font-family: c.$font-bariol-regular;
+    font-family: "font-bariol-regular";
 }
 
 * {
@@ -148,7 +148,7 @@ p {
 
 h2 {
     font-size: 30px;
-    font-family: c.$font-geomanist-bold;
+    font-family: "font-geomanist-bold";
     color: c.$gray-2;
     font-weight: 700;
     margin-bottom: 0;
@@ -169,7 +169,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: c.$font-geomanist-regular;
+    font-family: "font-geomanist-regular";
     font-size: 16px;
     text-decoration: none;
     gap: 1rem;
@@ -220,7 +220,7 @@ h2 {
         &-Profile h3{
             color: #FFF;
             text-align: center;
-            font-family: c.$font-geomanist-bold;
+            font-family: "font-geomanist-bold";
             font-weight: 700;
             font-size: 45px;  
         }

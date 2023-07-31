@@ -7,7 +7,7 @@
     border: 1px solid c.$gray-2;
     background: #FFF;
     padding: 7px 0 7px 15px;
-    font-family: c.$font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: $f;
     color: c.$gray-2;
     margin-top: 0.8rem; 
@@ -16,7 +16,7 @@
 @mixin checkbox($m) {
     display: flex;
     align-items: center;
-    font-family: c.$font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 18px;
     color: c.$gray-2;
     gap: 1.25rem;
@@ -41,7 +41,7 @@ h6, h5, h4, h3, h2, h1 {
 
 h2 {
     font-size: 30px;
-    font-family: c.$font-geomanist-bold;
+    font-family: "font-geomanist-bold";
     color: c.$gray-2;
     font-weight: 700;
 }
@@ -63,7 +63,7 @@ h3 {
 }
 
 .Button-toogle h3 {
-    font-family: c.$font-bariol-regular;  
+    font-family: "font-bariol-regular";  
     font-size: 35px;
     color: c.$cyan-500;
     font-weight: 400; 
@@ -155,7 +155,7 @@ h3 {
             background: c.$cyan-500;
             border: none;
             color: #FFF;
-            font-family: c.$font-bariol-regular;
+            font-family: "font-bariol-regular";
             font-size: 15px;
             margin-bottom: 1rem;
             transition: all .2s;
@@ -172,14 +172,14 @@ h3 {
         }
 
         & h4 {
-            font-family: c.$font-bariol-regular;
+            font-family: "font-bariol-regular";
             font-size: 30px;
             color: c.$gray-2;
             text-align: center;
         }
 
         & p {
-            font-family: c.$font-bariol-regular;
+            font-family: "font-bariol-regular";
             font-size: 20px;
             color: c.$gray-2;
             margin-bottom: 2rem;
@@ -249,13 +249,13 @@ h3 {
         & label {
             display: flex;
             flex-direction: column;
-            font-family: c.$font-bariol-regular;
+            font-family: "font-bariol-regular";
             font-size: 13px;
             color: c.$gray-2;
             margin-bottom: 1.5rem;
         }
         & ::placeholder {
-            font-family: c.$font-bariol-regular;
+            font-family: "font-bariol-regular";
             font-size: 13px;
             color: c.$gray-2;
         }
@@ -306,7 +306,7 @@ h3 {
             background: var(--acuamarina-500, #00B1BB);
             color: #FFF;
             margin: 4rem 0;
-            font-family: c.$font-bariol-regular;
+            font-family: "font-bariol-regular";
             transition: all .2s;
         }
         &-Send input:hover {
@@ -335,7 +335,7 @@ h3 {
         &-Profile h3{
             color: #FFF;
             text-align: center;
-            font-family: c.$font-geomanist-bold;
+            font-family: "font-geomanist-bold";
             font-weight: 700;
             font-size: 45px;  
         }
