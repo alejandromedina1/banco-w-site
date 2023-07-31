@@ -1,3 +1,4 @@
+
 class NavBarDesktop extends HTMLElement {
     constructor(){
         super();
@@ -185,3 +186,4 @@ class NavBarDesktop extends HTMLElement {
 
 customElements.define('nav-bar-desktop', NavBarDesktop);
 export default NavBarDesktop;
+

@@ -13,7 +13,7 @@ export default defineConfig({
             input:{
                 main: resolve(root, 'index.html'),
                 "login": resolve(root, 'login', 'index.html'),
-                "sign-up": resolve(root, 'sign-up', 'index.html'),
+                "registro": resolve(root, 'register', 'index.html'),
             }
         },
         target: 'esnext'

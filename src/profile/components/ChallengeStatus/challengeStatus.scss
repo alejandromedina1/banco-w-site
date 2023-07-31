@@ -5,6 +5,10 @@ p {
 	margin-bottom: 0;
 }
 
+figure{
+	margin: 0;
+}
+
 .challenges-card {
 
 	border-radius: 10px;
@@ -51,7 +55,7 @@ p {
 
 			&-bar {
 				height: 0.375em;
-				background: c.$gray-2;
+				background: #CDCFD0;
 				border-radius: 100px;
 				width: 100%;
 				display: flex;
