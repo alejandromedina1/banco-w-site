@@ -52,20 +52,15 @@ $gray-1: #676767;
 $gray-2: #ACACAC;
 $gray-3: #EFEFEF;
 
-<<<<<<< HEAD
 //Fonts
 
 $font-path: "./fonts/";
-=======
-$font-path: './fonts/';
->>>>>>> edc6916006f0ea510a8596fd254cfa708ea7d2f2
 
 @font-face {
     font-family: "font-bariol-bold";
     src: url("#{$font-path}bariol_bold.ttf") format("truetype");
 }
 
-<<<<<<< HEAD
 @font-face {
     font-family: "font-bariol-bold-italic";
     src: url("#{$font-path}bariol_bold_italic.ttf") format("truetype");
@@ -156,5 +151,4 @@ $font-path: './fonts/';
 //fonts styles
 
 $font: 24px;
-=======
->>>>>>> edc6916006f0ea510a8596fd254cfa708ea7d2f2
+
