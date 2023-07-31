@@ -63,7 +63,6 @@
     text-align: left;
     padding: 0 0.625rem;
     color: $gray-1;
-    font-size: var(--standard-font-size);
     font-family: $font-bariol-regular;
 }
 
@@ -71,7 +70,6 @@
     position: relative;
     vertical-align: middle;
     color: $gray-2;
-    font-size: var(--standard-font-size);
     font-family: $font-bariol-regular;
 }
 
@@ -127,7 +125,6 @@ a {
 
 .pagos-pse > span {
     color: white;
-    font-size: var(--standard-font-size);
     font-family: $font-geomanist-medium;
     width: 100%;
     margin: 0 0.313rem;
@@ -388,5 +385,23 @@ a {
     .dropdown-content > li > a{
         font-family: $font-bariol-regular;
         color: $gray-1;
+    }
+}
+
+@media screen and (min-width: 2260px) {
+    :root{
+        font-size: 1.2rem;
+    }
+
+    .logo{
+        max-width: 14.188rem;
+    }
+
+    .navegacion{
+        gap: 9.313rem;
+    }
+
+    .navegacion > li > a {
+        font-size: 1.3rem;
     }
 }
