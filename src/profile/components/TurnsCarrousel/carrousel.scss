@@ -1,0 +1,99 @@
+@use '../../../global.scss' as c;
+
+h6 {
+    margin-bottom: 0 !important;
+}
+
+.swiper-wrapper {
+    padding: 2rem 2rem 2rem 2rem;
+    align-items: center;
+
+}
+
+.swiper {
+  height: 100%;
+}
+
+#toggle-swiper {
+    width: 200px;
+    height: 256px;
+    background: #fff;
+    box-shadow: none !important;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: c.$orange-400;
+    width: 60%;
+    padding: 20px 30px 10px 30px;
+    border-radius: 7px;
+    box-shadow: 4.798332691192627px 6.7176666259765625px 28.789997100830078px 0px rgba(159, 102, 219, 0.18);
+    max-width: 360px;
+}
+
+.Card-Turn {
+    text-align: center;
+    
+    & h6 {
+        font-family: 'Bariol';
+        font-size: 18px; 
+        color: white;
+        margin-top: 0.5rem;
+    }
+    & span {
+        font-family: 'Bariol';
+        font-size: 13px;
+        color: white;
+    }
+}
+
+.Bank-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Bariol';
+        font-size: 13px;
+        color: white;
+    }
+
+    & p {
+        margin-bottom: 0 !important;
+    }
+}
+
+.--color {
+    background-color: #fff;
+
+    & .Bank-info {
+        & div {
+            color: c.$gray-2;
+        }
+    }
+    & .Card-Turn {
+        & h6 {
+            color: c.$gray-2;
+        }
+        & span {
+            color: c.$gray-2;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .swiper-slide {
+        font-size: 18px;
+        width: 25%;
+        max-width: 1024px;
+      }
+
+      .swiper-wrapper {
+        padding: 2rem 2rem 2rem 2rem;
+        align-items: center;
+        margin-left: 5rem;
+    }
+}
+

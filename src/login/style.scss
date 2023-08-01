@@ -1,12 +1,249 @@
 @import "../global.scss";
-main{
-    width: 100%;
+
+@media (max-width: 425px) {
+    main {
+        min-height: 800px;
+    }
+
+    #login-card {
+        margin-top: -130px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 80%;
+    }
+
+    #person-image {
+        display: none;
+    }
+
+    #bg-cover {
+        content: url("/images/mobile_login_bg_4x-webp");
+    }
+
+    #mobile-component {
+        width: 100%;
+    }
 }
 
-img {
+@media (min-width: 426px)and (max-width: 768px) {
+    main {
+        min-height: 1000px;
+    }
+
+    #login-card {
+        margin-top: -200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 80%;
+    }
+
+    #person-image {
+        display: none;
+    }
+
+    #bg-cover {
+        content: url("/images/mobile_login_bg_4x.webp");
+    }
+
+    #mobile-component {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    main {
+        min-height: 1200px;
+    }
+
+    #login-card {
+        margin-top: -300px;
+        margin-bottom: 100px;
+        width: 80%;
+    }
+
+    #person-image {
+        display: block;
+        width: 50%;
+    }
+
+    #bg-cover {
+        content: url("/images/web_login_bg_4x.webp");
+    }
+
+    #mobile-component {
+        width: 70%;
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    main {
+        min-height: 1000px;
+    }
+
+    #login-card {
+        margin-top: -600px;
+        margin-bottom: 100px;
+        width: 80%;
+    }
+
+    img#person-image {
+        display: block;
+        width: 40%;
+    }
+
+    #bg-cover {
+        content: url("/images/web_login_bg_4x.webp");
+    }
+
+    #mobile-component {
+        width: 50%;
+        padding: 100px;
+    }
+}
+
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+img#bg-cover {
     width: 100%;
 }
 
 figure {
     width: 100%;
+}
+
+input.fields {
+    border: 2px solid #cdcdcd;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: "font-bariol-regular";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #cdcdcd;
+    width: 100%;
+}
+
+input.fields:not(:placeholder-shown){
+    border: 2px solid $cyan-500;
+    color: $cyan-500;
+}
+
+p {
+    font-family: Bariol;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #cdcdcd;
+}
+
+form {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input.fields:focus {
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
+    outline-width: 0;
+}
+
+h2#title {
+    color: $cyan-500;
+    text-align: center;
+    font-family: "font-geomanist-bold";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134%;
+}
+
+button#login {
+    background-color: $cyan-500;
+    border: 0px;
+    border-radius: 0.24688rem;
+    color: white;
+    font-family: "font-bariol-regular";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    padding: 10px;
+}
+
+button#login:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
+}
+
+button#login:active {
+    cursor: pointer;
+    background-color: $cyan-100;
+    color: $cyan-500;
+    border: 0;
+}
+
+#login-card {
+    background-color: white;
+    border-radius: 0.625rem;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#title-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+#sign-up-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+#forget-password {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#to-sign-up {
+    color: $gray-1;
+}
+
+#to-sign-up:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#forget-password:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $gray-1;
 }

@@ -1,4 +1,5 @@
 // Import all of Bootstrap's CSS
+
 @import "bootstrap/scss/bootstrap";
 @import "../../global.scss";
 
@@ -17,7 +18,7 @@ ul {
 }
 
 li {
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     color: $gray-1;
 
     font-size: 0.875rem;
@@ -28,6 +29,13 @@ li {
     display: flex;
     flex-direction: column;
     gap: 100px;
+}
+
+li:hover {
+    color: $orange-500;
+    text-decoration: underline;
+    font-family: "font-bariol-bold";
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -87,7 +95,7 @@ li {
     flex-direction: row;
     align-items: center;
 
-    font-family: $font-geomanist-bold;
+    font-family: "font-geomanist-bold";
     color: $orange-400;
     font-size: 1rem;
     font-style: normal;
@@ -98,6 +106,13 @@ li {
 
 .footer-icons {
     width: 40px;
+}
+
+.footer-icons:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    background-color: $orange-100;
+    border-radius: 3px;
 }
 
 
@@ -124,10 +139,11 @@ li {
 }
 
 #ownership {
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.625rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: $gray-1;
 }
+

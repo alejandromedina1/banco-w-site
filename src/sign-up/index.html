@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Banco W</title>
   <link rel="stylesheet" href="./style.scss">
+  <link rel="stylesheet" href="../components/footer/style.scss">
+  <link rel="stylesheet" href="../global.scss">
 </head>
 
 <body>
   <main>
     <figure>
-      <img class="images" src="/images/mobile_register_header_4x.webp" alt="">
+      <img class="images" id="header-image" src="/images/mobile_register_header_4x.webp" alt="">
     </figure>
     <form action="">
       <div class="field" >
@@ -24,10 +26,12 @@
       </div>
       <div class="field" >
         <label for="">Tipo de Usuario</label>
-        <select name="" id="">
-          <option value="">Selecciona el tipo de usuario que eres</option>
-          <option value="">Ahorradores</option>
-          <option value="">Personas con Negocio</option>
+        <select name="" id="" class="dropdowns">
+          <optgroup class="dropdown-group">
+            <option value="Selecciona el tipo de usuario que eres">Selecciona el tipo de usuario que eres</option>
+            <option value="">Ahorradores</option>
+            <option value="">Personas con Negocio</option>
+          </optgroup>
         </select>
       </div>
       <div class="field" >
@@ -38,7 +42,7 @@
         <label for="">Contraseña</label>
         <div class="input-icons" >
           <i></i>
-          <input class="input-fields" type="text" placeholder="Contraseña">
+          <input class="input-fields" type="password" placeholder="Contraseña">
           <i></i>
         </div>
       </div>
@@ -46,16 +50,18 @@
         <label for="">Vuelve a rectificar la contraseña</label>
         <div class="input-icons" >
           <i></i>
-          <input class="input-fields" type="text" placeholder="Contraseña">
+          <input class="input-fields" type="password" placeholder="Contraseña">
           <i></i>
         </div>
       </div>
       <div class="field" >
         <label for="">Sexo</label>
-        <select name="" id="">
-          <option value="">Selecciona tu sexo</option>
-          <option value="">Masculino</option>
-          <option value="">Femenino</option>
+        <select name="" id="" class="dropdowns">
+          <optgroup class="dropdown-group">
+            <option value="">Selecciona tu sexo</option>
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+          </optgroup>
         </select>
       </div>
       <div class="field" >
@@ -67,11 +73,14 @@
           <p>¿Tienes una cuenta?</p>
           <p id="tologin">Ingresa</p>
         </div>
-        <button>Crear una cuenta</button>
+        <button id="submit-button">Crear una cuenta</button>
       </div>
     </form>
   </main>
-  <script type="module" src="./register.js"></script>
+
+  <custom-footer></custom-footer>
+  <script type="module" src="./sign-up.js"></script>
+  <script type="module" src="../components/footer/footer.js"></script>
 </body>
 
 </html>

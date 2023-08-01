@@ -1,35 +1,8 @@
-@import url();
-body {
-  height: 1000px;
-  background-color: black;
-}
-
-.second-navbar {
-  height: 85.292px;
-  background-color: white;
-  border-radius: 7px;
-  text-align: center;
-  font-size: 10.774px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  --bs-nav-link-color: #9F66DB;
-}
-
-a {
-  text-decoration: none;
-}
-
-hr {
-  border-width: 2px;
-}
-
-.icon-money {
-  width: 24.35px;
-  fill: #9F66DB;
-}
-
-.navbar-float {
-  display: flex;
-  flex-direction: column;
-}/*# sourceMappingURL=style.css.map */
+.carousel {
+    position: relative;
+  }
+  
+  .glide__slide {
+    width: 200px; /* Ajusta el ancho de los ítems según tus necesidades */
+  }
+  

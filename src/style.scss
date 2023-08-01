@@ -11,24 +11,24 @@ p {
 }
 
 h2 {
-    font-family: $font-geomanist-bold;
-    font-size: 22px;
+    font-family: "font-geomanist-bold";
+    font-size: 1.375rem;
     font-weight: 700;
     line-height: 100%;
 }
 
 h3 {
-    margin-bottom: 20px;
-    font-family: $font-geomanist-bold;
-    font-size: 18px;
+    margin-bottom: 1.25rem;
+    font-family: "font-geomanist-bold";
+    font-size: 1.125rem;
     font-weight: 700;
-    color: $orange-400;
+    color: $orange-400 !important;
 }
 
 .title-25 {
     margin: 0;
-    font-family: $font-geomanist-bold;
-    font-size: 25px;
+    font-family: "font-geomanist-bold";
+    font-size: 1.5625rem;
     font-weight: 700;
     color: $gray-1;
 }
@@ -36,24 +36,24 @@ h3 {
 .body1 {
     color: white;
     text-align: center;
-    font-family: $font-bariol-regular;
-    font-size: 16.7px;
+    font-family: "font-bariol-regular";
+    font-size: 1.04375rem;
     font-weight: 400;
     line-height: 138%;
 }
 
 .body2 {
     color: $gray-1;
-    font-family: $font-bariol-regular;
-    font-size: 13px;
+    font-family: "font-bariol-regular";
+    font-size: 0.8125rem;
     font-weight: 400;
     line-height: 168.5%;
 }
 
 .body3 {
     color: $gray-3;
-    font-family: $font-bariol-regular;
-    font-size: 10px;
+    font-family: "font-bariol-regular";
+    font-size: 0.625rem;
     font-weight: 400;
     line-height: normal;
 }
@@ -68,7 +68,7 @@ h3 {
     background-position: center center;
     display: flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 1rem;
     align-items: center;
 
     & .banner-container {
@@ -76,30 +76,32 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 0.8rem;
     }
 
     & .container-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 6px;
+        gap: 0.375rem;
     }
 
     & .title {
         color: $gray-1;
-        font-family: $font-geomanist-bold;
-        font-size: 20px;
+        font-family: "font-geomanist-bold";
+        font-size: 1.25rem;
         font-weight: 700;
         line-height: 137%;
+        margin: 0;
     }
 
     & .text {
         width: 80%;
         color: $gray-1;
-        font-family: $font-bariol-regular;
-        font-size: 12px;
+        font-family: "font-bariol-regular";
+        font-size: 0.75rem;
         line-height: 133%;
+        margin: 0;
     }
 
     & .vo {
@@ -111,15 +113,15 @@ h3 {
 
     & .btn {
         width: 95%;
-        height: 30px;
+        height: 1.8305rem;
         padding: 5px;
         border-radius: 4px;
         border: none;
         background-color: $purple-300;
         color: white;
         text-align: center;
-        font-family: $font-bariol-regular;
-        font-size: 13.424px;
+        font-family: "font-bariol-regular";
+        font-size: 0.86244rem;
         line-height: normal;
         text-decoration: none;
     }
@@ -129,12 +131,72 @@ h3 {
     }
 }
 
-
 #nav-bar-float {
-    height: 85.29px;
+    position: relative;
+    width: 95%;
+    height: 85px;
+    border-radius: 6.7px;
+    border: none;
+    background-color: white;
+    box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: -40px 0;
-    background-color: black;
-    opacity: 20%;
+    margin-left: 2.5%;
+    z-index: 1;
+
+    & button {
+        width: 25%;
+        height: 60px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $purple-300;
+        text-align: center;
+        font-family: "font-bariol-regular";
+        font-size: 0.625rem;
+        font-weight: 400;
+        justify-content: space-between;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0 1%;
+
+        & .icon {
+            width: 30%;
+        }
+
+        & a {
+            display: flex;
+            text-decoration: none;
+            height: 50%;
+            justify-content: center;
+            color: $purple-300;
+        }
+    }
+
+    & .option {
+
+        &_credit {
+            border-right: 1px solid $purple-100;
+        }
+
+        &_blog {
+            border-left: 1px solid $purple-100;
+            border-right: 1px solid $purple-100;
+        }
+
+        &_comparator {
+            border-left: 1px solid $purple-100;
+            border-right: 1px solid $purple-100;
+        }
+
+        &_simulator {
+            border-left: 1px solid $purple-100;
+        }
+    }
 }
 
 #products-landing {
@@ -166,7 +228,7 @@ h3 {
             border: 1.779px solid white;
             background: $cyan-500;
             box-shadow: 2.964601755142212px 4.150442600250244px 17.78761100769043px 0px rgba(0, 177, 187, 0.21);
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 
         & .info-product {
@@ -178,14 +240,22 @@ h3 {
 
         & .description-product {
             display: flex;
-            margin: 20px 0px;
+            margin: 1.25rem 0px;
             gap: 7px;
 
             &_text {
                 display: flex;
                 flex-direction: column;
                 gap: 22px;
-                margin-top: -3px;
+                padding: 0px;
+
+                & li {
+                    list-style: none;
+                }
+
+                & img {
+                    margin-right: 4%;
+                }
             }
         }
 
@@ -202,6 +272,10 @@ h3 {
         }
     }
 
+}
+
+#bank-practices {
+    display: none;
 }
 
 #explore-news {
@@ -227,7 +301,7 @@ h3 {
         & .container-text {
             width: 75.26%;
             padding-top: 48.8px;
-            gap: 10px;
+            gap: 0.625rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -253,8 +327,8 @@ h3 {
             background-color: $orange-300;
             color: white;
             text-align: center;
-            font-family: $font-bariol-regular;
-            font-size: 17.655px;
+            font-family: "font-bariol-regular";
+            font-size: 1.10344rem;
             font-weight: 400;
             margin-bottom: 70.66px;
         }
@@ -344,8 +418,8 @@ h3 {
         & h1 {
             color: white;
             text-align: center;
-            font-family: $font-geomanist-bold;
-            font-size: 27px;
+            font-family: "font-geomanist-bold";
+            font-size: 1.69606rem;
             font-weight: 700;
             line-height: 138%;
         }
@@ -353,14 +427,14 @@ h3 {
         & .btn {
             width: 39.66%;
             height: 37.574px;
-            padding: 10px 5px;
+            padding: 0.625rem 5px;
             border-radius: 4px;
             border: none;
             background: $orange-300;
             color: white;
             text-align: center;
-            font-family: $font-bariol-regular;
-            font-size: 16px;
+            font-family: "font-bariol-regular";
+            font-size: 1rem;
             line-height: normal;
             text-decoration: none;
         }
@@ -368,21 +442,37 @@ h3 {
 
     & img {
         width: 39.29%;
-        margin-top: -50px;
+        margin-top: -3.125rem;
     }
 }
 
 #featured-articles {
     padding: 25px 5.13%;
 
+    & .container-articles {
+        display: none;
+    }
+
+    & .slider {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    & .slider-track {
+        display: flex;
+        flex-direction: row;
+        transition: transform 0.5s ease;
+        padding: 0 4%;
+    }
+
     & .each-article {
-        width: 96%;
+        width: 90%;
+        margin-right: 4rem;
         height: 375px;
-        justify-content: center;
-        align-items: center;
 
         & .card {
-            height: 90%;
+            width: 90%;
+            height: 23.16494rem;
             border-radius: 8.66px !important;
             padding: 12.12px 3.35%;
             box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
@@ -396,8 +486,8 @@ h3 {
 
             & h5 {
                 color: $gray-1;
-                font-family: $font-geomanist-bold;
-                font-size: 13.856px;
+                font-family: "font-geomanist-bold";
+                font-size: 0.86244rem;
                 font-weight: 700;
                 line-height: normal;
                 margin: 0px;
@@ -405,8 +495,8 @@ h3 {
 
             & .card-text {
                 color: $gray-1;
-                font-family: $font-bariol-regular;
-                font-size: 12.99px;
+                font-family: "font-bariol-regular";
+                font-size: 0.81188rem;
                 font-weight: 400;
                 line-height: 150%;
                 margin: 14.72px 0px;
@@ -425,8 +515,8 @@ h3 {
                     width: 100%;
                     color: $purple-300;
                     text-align: right;
-                    font-family: $font-geomanist-medium;
-                    font-size: 12.124px;
+                    font-family: "font-geomanist-medium";
+                    font-size: 0.75775rem;
                     font-weight: 500;
                     line-height: normal;
                     text-decoration: none;
@@ -443,6 +533,10 @@ h3 {
 
 #profile-w {
     padding: 25px 5.13%;
+
+    h3 {
+        margin-bottom: 49px;
+    }
 
     & .benefits {
         width: 100%;
@@ -466,7 +560,7 @@ h3 {
             &_info {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 0.625rem;
 
                 &_text {
                     display: flex;
@@ -478,10 +572,11 @@ h3 {
             & h4 {
                 color: $gray-3;
                 font-family: Geomanist;
-                font-size: 16px;
+                font-size: 1rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                margin: 0;
             }
 
             & .btn {
@@ -492,8 +587,8 @@ h3 {
                 background: $purple-300;
                 color: #FFF;
                 text-align: center;
-                font-family: $font-bariol-regular;
-                font-size: 11.435px;
+                font-family: "font-bariol-regular";
+                font-size: 0.71469rem;
                 font-weight: 400;
             }
         }
@@ -522,7 +617,7 @@ h3 {
                     border-radius: 4.785px;
                     background: white;
                     box-shadow: 3.681197166442871px 5.153675556182861px 22.087182998657227px 0px rgba(159, 102, 219, 0.18);
-                    margin-bottom: 10px;
+                    margin-bottom: 0.625rem;
 
                     & .icon {
                         width: 25%;
@@ -531,8 +626,8 @@ h3 {
                     & .title {
                         color: $orange-400;
                         text-align: center;
-                        font-family: $font-bariol-regular;
-                        font-size: 14.819px;
+                        font-family: "font-bariol-regular";
+                        font-size: 0.92619rem;
                         font-weight: 400;
                         line-height: 120%;
                         margin: 0px;
@@ -549,16 +644,48 @@ h3 {
     }
 }
 
-@media only screen and (min-width: 768px) {
+#profile-w-desk {
+    display: none;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    #featured-articles {
+
+        & .slider {
+            display: flex;
+            height: 26rem;
+            align-items: center;
+        }
+        
+        & .card {
+            height: 30rem;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
 
     h3 {
-        margin-bottom: 60px;
-        font-size: 35px;
+        font-size: 2.1875rem;
         color: $orange-500;
     }
 
+    h4 {
+        font-size: 1.54088rem;
+        color: white;
+    }
+
     .body2 {
-        font-size: 18px;
+        font-size: 1.125rem;
+        margin: 0;
+    }
+
+    .body3 {
+        font-size: 1rem;
     }
 
     #main-banner {
@@ -570,22 +697,22 @@ h3 {
 
         & .banner-container {
             width: 45%;
-            gap: 38px;
+            gap: 2.3rem;
         }
 
         & .container-text {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 38px;
+            gap: 1rem;
         }
 
         & .title {
-            font-size: 48px;
+            font-size: 2.8125rem;
         }
 
         & .text {
-            font-size: 18px;
+            font-size: 1.125rem;
             line-height: 168.5%;
         }
 
@@ -601,10 +728,10 @@ h3 {
 
         & .btn {
             width: 44.4%;
-            height: 60px;
-            padding: 13px 48px;
-            border-radius: 7px;
-            font-size: 25px;
+            height: 3.5625rem;
+            padding: 13px 5%;
+            border-radius: 0.5rem;
+            font-size: 1.5625rem;
         }
 
         & .woman-img {
@@ -612,15 +739,45 @@ h3 {
         }
     }
 
+    #nav-bar-float {
+        position: relative;
+        width: 70%;
+        height: 8rem;
+        border-radius: 0.6rem;
+        border: none;
+        background-color: white;
+        box-shadow: 3.619999885559082px 5.070000171661377px 21.739999771118164px 0px rgba(159, 102, 219, 0.18);
+        margin: -3.5rem 0;
+        margin-left: 15%;
+
+        & button {
+            height: 5rem;
+            font-size: 1.125rem;
+            font-weight: 400;
+
+            & .icon {
+                width: 25%;
+            }
+
+            & a {
+                display: flex;
+                text-decoration: none;
+                height: 50%;
+                justify-content: center;
+                color: $purple-300;
+            }
+        }
+    }
+
     #products-landing {
         background-image: url(./public/images/bg-products-desk.webp);
         background-size: cover;
         background-position: center center;
-        margin-bottom: 80px;
+        margin-bottom: 5rem;
 
         & .titles-section {
             padding-left: 16.88%;
-            padding-top: 215px;
+            padding-top: 10rem;
 
             & .title-25 {
                 display: none;
@@ -628,7 +785,7 @@ h3 {
 
             & h3 {
                 color: $gray-1 !important;
-                margin-bottom: 20px !important;
+                margin-bottom: 1.25rem !important;
             }
         }
 
@@ -638,62 +795,1096 @@ h3 {
             & .dropdown-products {
                 width: 43.5%;
                 height: 60px;
-                border-radius: 7px;
+                border-radius: 0.4375rem;
                 border: 3px solid #FFF;
                 box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.21);
             }
 
             & .info-product {
                 flex-direction: row;
-                gap: 23.6%;
+                gap: 20%;
                 align-items: start;
 
                 &_text {
                     width: 42%;
                     display: flex;
                     flex-direction: column;
+                    gap: 0.7rem;
+                    align-items: center;
                 }
             }
 
             & .description-product {
-                gap: 12px;
+                gap: 0.8rem;
 
                 &_text {
                     display: flex;
                     flex-direction: column;
-                    gap: 27px;
+                    gap: 1rem;
+                    margin: 0;
                 }
             }
 
             & .btn-desk {
                 display: flex;
                 width: 51.4%;
-                height: 51px;
-                padding: 14.061px 42.182px;
+                height: 3.1875rem;
+                padding: 0.9rem 5%;
                 justify-content: center;
                 align-items: center;
-                border-radius: 6.152px;
+                border-radius: 0.375rem;
                 background: $cyan-500;
                 color: white;
                 text-align: center;
-                font-family: $font-bariol-regular;
-                font-size: 21.97px;
+                font-family: "font-bariol-regular";
+                font-size: 1.37313rem;
                 font-weight: 400;
                 text-decoration: none;
-                margin-bottom: 67px;
+                margin-bottom: 3.5rem;
             }
 
             & .asterisks-mobile {
                 width: 4.3%;
-                margin: 5px 0px;
+                margin: 0.3125rem 0;
             }
 
             & .image-ref-product {
-                width: 51.31%;
+                width: 55%;
                 margin-right: -17%;
-                margin-top: -118px;
+                margin-top: -13rem;
+                align-self: flex-end;
             }
         }
 
+    }
+
+    #bank-practices {
+        display: flex;
+        flex-direction: column;
+        padding: 55px 16.88%;
+
+        & h3 {
+            display: flex;
+            margin-bottom: 3.5rem;
+        }
+
+        & .titles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & h4 {
+                width: 49%;
+                color: $gray-1;
+                font-family: "font-geomanist-bold";
+                font-size: 1.5625rem;
+                font-weight: 500;
+            }
+        }
+
+        & .cards {
+
+            &_all {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .our-app {
+                    width: 48%;
+                    background-image: url(./public/images/bg-news-mobile.webp);
+                    background-size: cover;
+                    background-position: center center;
+                    background-color: $purple-300;
+                    border-radius: 0.4rem;
+                    display: flex;
+                    justify-content: center;
+
+                    & .container-info {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 13.375rem;
+                    }
+
+                    & .container-text {
+                        width: 70%;
+                        padding-top: 4rem;
+
+                        & h1 {
+                            width: 100%;
+                            color: white !important;
+                            text-align: center;
+                            font-size: 2.04156rem;
+                            margin-bottom: 0.6rem;
+                        }
+
+                        & p {
+                            color: white !important;
+                            text-align: center;
+                        }
+                    }
+
+                    & .btn {
+                        width: auto;
+                        height: 3.51206rem;
+                        padding: 0.91875rem 1.2rem;
+                        border-radius: 0.4375rem;
+                        border: none;
+                        background-color: $orange-300;
+                        color: white;
+                        text-align: center;
+                        font-family: "font-bariol-regular";
+                        font-size: 1.43938rem;
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+
+            &_favorites {
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .card-favorite {
+
+                    & .orange {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 10.5625rem;
+                        border-radius: 0.625rem;
+                        background-image: url(./public/images/card-search-orange-mobile.webp);
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    & .violet {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 10.5625rem;
+                        border-radius: 0.625rem;
+                        background-image: url(./public/images/card-search-violet-mobile.webp);
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    & .blue {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 10.5625rem;
+                        border-radius: 0.625rem;
+                        background-image: url(./public/images/card-search-blue-mobile.webp);
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    & img {
+                        width: 18%;
+                        padding-right: 7%;
+                    }
+
+                    & h2 {
+                        color: white;
+                        padding-top: 2.5625rem;
+                        padding-left: 7%;
+                    }
+
+                    & p {
+                        width: 80%;
+                        color: white;
+                        padding-left: 7%;
+                    }
+                }
+            }
+        }
+    }
+
+    #explore-news {
+        display: none;
+    }
+
+    #favorites {
+        display: none;
+    }
+
+    #finance {
+        background-image: url(./public/images/bg-finance-desk.webp);
+        margin: 10.625rem 0;
+        height: 23.1875rem;
+        padding: 0% 25.5%;
+        display: flex;
+        flex-direction: row;
+        gap: 3.125rem;
+
+        & .container-text {
+            padding: 0;
+            height: 12.8125rem;
+            width: 55%;
+            justify-content: start;
+            align-items: start;
+            gap: 1.25rem;
+            align-self: center;
+
+            & h1 {
+                text-align: left;
+                margin: 0;
+            }
+
+            & p {
+                text-align: left;
+            }
+
+            & .btn {
+                width: 40%;
+                height: 2.25rem;
+                border-radius: 0.3125rem;
+                padding: 0.5625rem 0.3125rem;
+            }
+        }
+
+        & img {
+            transform: scaleX(-1);
+            width: 50%;
+            height: auto;
+            margin-right: -30%;
+            align-self: flex-end;
+        }
+    }
+
+    #featured-articles {
+        padding: 1.5625rem 16.88%;
+
+        .slider {
+            display: none;
+        }
+
+        & h3 {
+            margin-bottom: 3.5625rem;
+        }
+
+        & .container-articles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        & .each-article {
+            width: 32%;
+            height: 25rem;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            & .card {
+                width: 100% !important;
+                border-radius: 7.46px !important;
+                padding: 0.75rem 3.28%;
+                box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+                margin: 0;
+                background: #FDFDFD;
+                border: none;
+
+                & img {
+                    margin-bottom: 0;
+                }
+
+                & h5 {
+                    color: $gray-1;
+                    font-family: "font-geomanist-bold";
+                    font-size: 1.07669rem;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0;
+                }
+
+                & .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 1.2rem 3%;
+                }
+
+                & .card-text {
+                    color: $gray-1;
+                    font-family: "font-bariol-regular";
+                    font-size: 0.96906rem;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 0;
+                }
+
+                & .more {
+                    display: flex;
+                    height: 12.124px;
+                    flex-direction: row;
+                    gap: 0.205rem;
+                    margin-top: 1.14625rem;
+                    justify-content: center;
+                    align-items: center;
+                    justify-self: flex-end;
+
+                    & .link {
+                        width: 100%;
+                        color: $purple-300;
+                        text-align: right;
+                        font-family: "font-geomanist-medium";
+                        font-size: 0.69988rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+
+                    & .icon {
+                        width: 4.8%;
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #profile-w {
+        display: none;
+    }
+
+    #profile-w-desk {
+        display: flex;
+        flex-direction: column;
+        padding: 6.25rem 8.33%;
+
+        & h3 {
+            margin-bottom: 7rem;
+        }
+
+        & .benefits {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3.4375rem 0;
+            padding-right: 6.43%;
+            border-radius: 1.25rem;
+            background: $orange-400;
+            background-image: url(./public/images/circle-profile-desk.webp);
+            background-size: cover;
+            background-position: center center;
+
+            & img {
+                width: 48%;
+                height: auto;
+                margin-top: -12.5rem;
+                margin-bottom: -3.57rem;
+            }
+
+            & .btn {
+                position: absolute;
+                display: flex;
+                align-self: flex-end;
+                width: 17%;
+                left: 22%;
+                height: 57px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+                background: $purple-300;
+                color: white;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 1.54088rem;
+                font-weight: 400;
+                margin-bottom: 1.25rem;
+            }
+
+            &_container-info {
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+                gap: 2.1875rem;
+
+                & .description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4375rem;
+                    align-items: center;
+
+                    & h4 {
+                        text-align: center;
+                        color: white;
+                    }
+
+                    & p {
+                        text-align: center;
+                        color: white;
+                    }
+                }
+
+                & .cards-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4%;
+                    margin-bottom: -6.25rem;
+
+                    & .each-card {
+                        width: 48%;
+
+                        & .card {
+                            width: 100%;
+                            height: 13rem;
+                            display: flex;
+                            padding: 0.3125rem 10%;
+                            border: none;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-radius: 0.42613rem;
+                            background: white;
+                            box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+                            margin-bottom: 1.25rem;
+
+                            & .icon {
+                                width: 25%;
+                                margin: 0;
+                            }
+
+                            & .title {
+                                color: $orange-400;
+                                text-align: center;
+                                font-family: "font-bariol-regular";
+                                font-size: 1.31963rem;
+                                font-weight: 400;
+                                line-height: 120%;
+                                margin: 0px;
+                            }
+
+                            & p {
+                                color: $gray-1;
+                                margin-bottom: 1.25rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+    html {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 2.1875rem;
+        color: $orange-500;
+    }
+
+    h4 {
+        font-size: 1.54088rem;
+        color: white;
+    }
+
+    .body2 {
+        font-size: 1.125rem;
+        margin: 0;
+    }
+
+    .body3 {
+        font-size: 1rem;
+    }
+
+    #main-banner {
+        background-image: url(./public/images/bg-main-banner-desk.webp);
+        background-size: cover;
+        background-position: center center;
+        gap: 7%;
+        padding-left: 9.72%;
+
+        & .banner-container {
+            width: 45%;
+            gap: 2.3rem;
+        }
+
+        & .container-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        & .title {
+            font-size: 2.8125rem;
+        }
+
+        & .text {
+            font-size: 1.125rem;
+            line-height: 168.5%;
+        }
+
+        & .vo {
+            &_mobile {
+                display: none;
+            }
+
+            &_desk {
+                display: inline;
+            }
+        }
+
+        & .btn {
+            width: 44.4%;
+            height: 3.5625rem;
+            padding: 13px 5%;
+            border-radius: 0.5rem;
+            font-size: 1.5625rem;
+        }
+
+        & .woman-img {
+            width: 31.6%;
+        }
+    }
+
+    #nav-bar-float {
+        position: relative;
+        width: 70%;
+        height: 8rem;
+        border-radius: 0.6rem;
+        border: none;
+        background-color: white;
+        box-shadow: 3.619999885559082px 5.070000171661377px 21.739999771118164px 0px rgba(159, 102, 219, 0.18);
+        margin: -3.5rem 0;
+        margin-left: 15%;
+
+        & button {
+            height: 5rem;
+            font-size: 1.125rem;
+            font-weight: 400;
+
+            & .icon {
+                width: 25%;
+            }
+
+            & a {
+                display: flex;
+                text-decoration: none;
+                height: 50%;
+                justify-content: center;
+                color: $purple-300;
+            }
+        }
+    }
+
+    #products-landing {
+        background-image: url(./public/images/bg-products-desk.webp);
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: 5rem;
+
+        & .titles-section {
+            padding-left: 16.88%;
+            padding-top: 10rem;
+
+            & .title-25 {
+                display: none;
+            }
+
+            & h3 {
+                color: $gray-1 !important;
+                margin-bottom: 1.25rem !important;
+            }
+        }
+
+        & .container-products {
+            padding: 0px 16.88%;
+
+            & .dropdown-products {
+                width: 43.5%;
+                height: 60px;
+                border-radius: 0.4375rem;
+                border: 3px solid #FFF;
+                box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.21);
+            }
+
+            & .info-product {
+                flex-direction: row;
+                gap: 20%;
+                align-items: start;
+
+                &_text {
+                    width: 42%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.7rem;
+                    align-items: center;
+                }
+            }
+
+            & .description-product {
+                gap: 0.8rem;
+
+                &_text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin: 0;
+                }
+            }
+
+            & .btn-desk {
+                display: flex;
+                width: 51.4%;
+                height: 3.1875rem;
+                padding: 0.9rem 5%;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.375rem;
+                background: $cyan-500;
+                color: white;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 1.37313rem;
+                font-weight: 400;
+                text-decoration: none;
+                margin-bottom: 3.5rem;
+            }
+
+            & .asterisks-mobile {
+                width: 4.3%;
+                margin: 0.3125rem 0;
+            }
+
+            & .image-ref-product {
+                width: 55%;
+                margin-right: -17%;
+                margin-top: -13rem;
+                align-self: flex-end;
+            }
+        }
+
+    }
+
+    #bank-practices {
+        display: flex;
+        flex-direction: column;
+        padding: 55px 16.88%;
+
+        & h3 {
+            display: flex;
+            margin-bottom: 3.5rem;
+        }
+
+        & .titles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & h4 {
+                width: 49%;
+                color: $gray-1;
+                font-family: "font-geomanist-bold";
+                font-size: 1.5625rem;
+                font-weight: 500;
+            }
+        }
+
+        & .cards {
+
+            &_all {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .our-app {
+                    width: 48%;
+                    background-image: url(./public/images/bg-news-mobile.webp);
+                    background-size: cover;
+                    background-position: center center;
+                    background-color: $purple-300;
+                    border-radius: 0.4rem;
+                    display: flex;
+                    justify-content: center;
+
+                    & .container-info {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 13.375rem;
+                    }
+
+                    & .container-text {
+                        width: 70%;
+                        padding-top: 4rem;
+
+                        & h1 {
+                            width: 100%;
+                            color: white !important;
+                            text-align: center;
+                            font-size: 2.04156rem;
+                            margin-bottom: 0.6rem;
+                        }
+
+                        & p {
+                            color: white !important;
+                            text-align: center;
+                        }
+                    }
+
+                    & .btn {
+                        width: auto;
+                        height: 3.51206rem;
+                        padding: 0.91875rem 1.2rem;
+                        border-radius: 0.4375rem;
+                        border: none;
+                        background-color: $orange-300;
+                        color: white;
+                        text-align: center;
+                        font-family: "font-bariol-regular";
+                        font-size: 1.43938rem;
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+
+            &_favorites {
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .card-favorite {
+
+                    & .orange {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 10.5625rem;
+                        border-radius: 0.625rem;
+                        background-image: url(./public/images/card-search-orange-mobile.webp);
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    & .violet {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 10.5625rem;
+                        border-radius: 0.625rem;
+                        background-image: url(./public/images/card-search-violet-mobile.webp);
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    & .blue {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 10.5625rem;
+                        border-radius: 0.625rem;
+                        background-image: url(./public/images/card-search-blue-mobile.webp);
+                        background-size: cover;
+                        background-position: center center;
+                    }
+
+                    & img {
+                        width: 18%;
+                        padding-right: 7%;
+                    }
+
+                    & h2 {
+                        color: white;
+                        padding-top: 2.5625rem;
+                        padding-left: 7%;
+                    }
+
+                    & p {
+                        width: 80%;
+                        color: white;
+                        padding-left: 7%;
+                    }
+                }
+            }
+        }
+    }
+
+    #explore-news {
+        display: none;
+    }
+
+    #favorites {
+        display: none;
+    }
+
+    #finance {
+        background-image: url(./public/images/bg-finance-desk.webp);
+        margin: 10.625rem 0;
+        height: 23.1875rem;
+        padding: 0% 25.5%;
+        display: flex;
+        flex-direction: row;
+        gap: 3.125rem;
+
+        & .container-text {
+            padding: 0;
+            height: 12.8125rem;
+            width: 55%;
+            justify-content: start;
+            align-items: start;
+            gap: 1.25rem;
+            align-self: center;
+
+            & h1 {
+                text-align: left;
+                margin: 0;
+            }
+
+            & p {
+                text-align: left;
+            }
+
+            & .btn {
+                width: 40%;
+                height: 2.25rem;
+                border-radius: 0.3125rem;
+                padding: 0.5625rem 0.3125rem;
+            }
+        }
+
+        & img {
+            transform: scaleX(-1);
+            width: 50%;
+            height: auto;
+            margin-right: -30%;
+            align-self: flex-end;
+        }
+    }
+
+    #featured-articles {
+        padding: 1.5625rem 16.88%;
+
+        .slider {
+            display: none;
+        }
+
+        & h3 {
+            margin-bottom: 3.5625rem;
+        }
+
+        & .container-articles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        & .each-article {
+            width: 32%;
+            height: 25rem;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            & .card {
+                width: 100% !important;
+                border-radius: 7.46px !important;
+                padding: 0.75rem 3.28%;
+                box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+                margin: 0;
+                background: #FDFDFD;
+                border: none;
+
+                & img {
+                    margin-bottom: 0;
+                }
+
+                & h5 {
+                    color: $gray-1;
+                    font-family: "font-geomanist-bold";
+                    font-size: 1.07669rem;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0;
+                }
+
+                & .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 1.2rem 3%;
+                }
+
+                & .card-text {
+                    color: $gray-1;
+                    font-family: "font-bariol-regular";
+                    font-size: 0.96906rem;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 0;
+                }
+
+                & .more {
+                    display: flex;
+                    height: 12.124px;
+                    flex-direction: row;
+                    gap: 0.205rem;
+                    margin-top: 1.14625rem;
+                    justify-content: center;
+                    align-items: center;
+                    justify-self: flex-end;
+
+                    & .link {
+                        width: 100%;
+                        color: $purple-300;
+                        text-align: right;
+                        font-family: "font-geomanist-medium";
+                        font-size: 0.69988rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+
+                    & .icon {
+                        width: 4.8%;
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #profile-w {
+        display: none;
+    }
+
+    #profile-w-desk {
+        display: flex;
+        flex-direction: column;
+        padding: 6.25rem 8.33%;
+
+        & h3 {
+            margin-bottom: 7rem;
+        }
+
+        & .benefits {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3.4375rem 0;
+            padding-right: 6.43%;
+            border-radius: 1.25rem;
+            background: $orange-400;
+            background-image: url(./public/images/circle-profile-desk.webp);
+            background-size: cover;
+            background-position: center center;
+
+            & img {
+                width: 48%;
+                height: auto;
+                margin-top: -12.5rem;
+                margin-bottom: -3.57rem;
+            }
+
+            & .btn {
+                position: absolute;
+                display: flex;
+                align-self: flex-end;
+                width: 17%;
+                left: 22%;
+                height: 57px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+                background: $purple-300;
+                color: white;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 1.54088rem;
+                font-weight: 400;
+                margin-bottom: 1.25rem;
+            }
+
+            &_container-info {
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+                gap: 2.1875rem;
+
+                & .description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4375rem;
+                    align-items: center;
+
+                    & h4 {
+                        text-align: center;
+                        color: white;
+                    }
+
+                    & p {
+                        text-align: center;
+                        color: white;
+                    }
+                }
+
+                & .cards-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4%;
+                    margin-bottom: -6.25rem;
+
+                    & .each-card {
+                        width: 48%;
+
+                        & .card {
+                            width: 100%;
+                            height: 13rem;
+                            display: flex;
+                            padding: 0.3125rem 10%;
+                            border: none;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-radius: 0.42613rem;
+                            background: white;
+                            box-shadow: 6.1548542976379395px 8.616795539855957px 36.92912673950195px 0px rgba(159, 102, 219, 0.18);
+                            margin-bottom: 1.25rem;
+
+                            & .icon {
+                                width: 25%;
+                                margin: 0;
+                            }
+
+                            & .title {
+                                color: $orange-400;
+                                text-align: center;
+                                font-family: "font-bariol-regular";
+                                font-size: 1.31963rem;
+                                font-weight: 400;
+                                line-height: 120%;
+                                margin: 0px;
+                            }
+
+                            & p {
+                                color: $gray-1;
+                                margin-bottom: 1.25rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

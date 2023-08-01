@@ -15,14 +15,14 @@
     &-Type span,
     &-Date span,
     &-State span{
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         font-size: 13px;
         color: c.$gray-2;
     }
     &-Type p,
     &-Date p,
     &-State p {
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         font-size: 16px;
         color: c.$gray-2;
     }
@@ -33,17 +33,46 @@
         margin-top: 1rem;
     }
     &-Mount span {
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         font-size: 13px;
         color: c.$gray-2;
     }
     &-Mount p {
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         color: c.$cyan-500;
         font-size: 18px;
         margin: 0 !important;
     }
-
-    
 }
 
+@media only screen and (min-width: 1024px){
+    .Card {
+        border-radius: 10px;
+        background: #FFF;
+        padding: 19px;
+        
+        &-Type,
+        &-Date {
+            margin-bottom: 1.7rem;
+        }
+        &-Type span,
+        &-Date span,
+        &-State span{
+            font-size: 18px;
+        }
+        &-Type p,
+        &-Date p,
+        &-State p {
+            font-size: 1rem;
+        }
+        &-Mount{
+            margin-top: 1.7rem;
+        }
+        &-Mount span {
+            font-size: 18px;
+        }
+        &-Mount p {
+            font-size: 35px;
+        }
+    }
+}

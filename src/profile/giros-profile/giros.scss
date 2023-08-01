@@ -19,7 +19,7 @@
     text-align: center;
     line-height: normal;
     font-size: $f;
-    font-family: c.$font-bariol-regular;
+    font-family: "font-bariol-regular";
 }
 
 * {
@@ -112,7 +112,7 @@ p {
 
 h2 {
     font-size: 30px;
-    font-family: c.$font-geomanist-bold;
+    font-family: "font-geomanist-bold";
     color: c.$gray-2;
     font-weight: 700;
     margin-bottom: 0;
@@ -132,7 +132,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: c.$font-geomanist-regular;
+    font-family: "font-geomanist-regular";
     font-size: 16px;
     color: c.$orange-300;
     text-decoration: none;
@@ -155,16 +155,26 @@ h2 {
         }
         &-name h2{
             margin-bottom: 0 !important;
-            font-family: c.$font-geomanist-bold;
+            font-family: "font-geomanist-bold";
             color: c.$gray-2;
             font-size: 30px;
         }
 }
 
 .Product {
-    margin: 20px;
+    margin: 35px;
 }
 
+.Table {
+    margin: 35px;
+}
+
+.subtitle {
+    font-family: "font-bariol-regular";
+    font-size: 18px;
+    color: c.$cyan-500;
+    margin-bottom: 5rem;
+}
 
 @media only screen and (min-width: 780px){
 
@@ -189,7 +199,7 @@ h2 {
         &-Profile h3{
             color: #FFF;
             text-align: center;
-            font-family: c.$font-geomanist-bold;
+            font-family: "font-geomanist-bold";
             font-weight: 700;
             font-size: 45px;  
         }
@@ -256,13 +266,38 @@ h2 {
     
     .Buttons {
         &-name {
-            margin: 8rem 35px 0 80px;  
+            margin: 8rem 35px 30px 95px;  
         }
 }
+ //El resto
+
+    .Product,
+    .Table {
+        width: 50%;
+    }
+
+    .Product {
+        margin: 0 20px 20px 95px;
+    }
+
+    .Table {
+        margin: 0 95px 20px 20px;
+    }
+
+    .Info-Container {
+        display: flex;
+        margin-top: 3rem;
+
+        & span {
+            font-family: "font-bariol-regular";
+            font-size: 30px;
+            color: c.$cyan-500;
+        }
+    }
 
 }
 
-    //El resto
+   
 
 
 
