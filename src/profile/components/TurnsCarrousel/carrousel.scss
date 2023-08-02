@@ -7,7 +7,7 @@ h6 {
 .swiper-wrapper {
     padding: 2rem 2rem 2rem 2rem;
     align-items: center;
-
+    width: none;
 }
 
 .swiper {
@@ -24,7 +24,7 @@ h6 {
 .swiper-slide {
     font-size: 18px;
     background: c.$orange-400;
-    width: 60%;
+    width: 60% !important;
     padding: 20px 30px 10px 30px;
     border-radius: 7px;
     box-shadow: 4.798332691192627px 6.7176666259765625px 28.789997100830078px 0px rgba(159, 102, 219, 0.18);
@@ -86,7 +86,7 @@ h6 {
 @media only screen and (min-width: 1024px){
     .swiper-slide {
         font-size: 18px;
-        width: 25%;
+        width: 25% !important;
         max-width: 1024px;
       }
 
@@ -94,6 +94,7 @@ h6 {
         padding: 2rem 2rem 2rem 2rem;
         align-items: center;
         margin-left: 5rem;
+        width: none;
     }
 }
 
