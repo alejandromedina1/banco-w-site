@@ -24,7 +24,6 @@ class GirosProfile extends HTMLElement {
 
 
         this.innerHTML = `
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./giros.scss">
     <link rel="stylesheet" href="../ButtonDuoIcon/buttonDuoIcon.scss"/>
     <link rel="stylesheet" href="../ChallengeStatus/challengeStatus.scss"/>\
