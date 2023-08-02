@@ -15,4 +15,5 @@ import "./productos1-profile/productos1-profile.js"
 import "./productos2-profile/productos2-profile.js"
 import "./productos3-profile/productos3-profile.js"
 import "./agenda-profile/agenda-profile.js"
+import  "./cita-profile/cita-profile.js"
 
