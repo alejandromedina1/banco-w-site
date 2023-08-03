@@ -1,3 +1,5 @@
+import "./cita-profile.scss"
+
 class CitaProfile extends HTMLElement {
   constructor() {
     super();
@@ -42,9 +44,6 @@ class CitaProfile extends HTMLElement {
 
   render() {
 
-
-
-
     this.innerHTML = `
         <link rel="stylesheet" type="text/css" href="./cita-profile.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -64,17 +63,25 @@ class CitaProfile extends HTMLElement {
         <p class="main-title">Cita #34566</p>
         <label for="">Selecciona la oficina
             <select name="" id="">
-                <option value="">Hola</option>
+                <option value=""></option>
+                <option value="">Cosmocentro Cali</option>
+                <option value="">Centro Sder de Quilichao</option>
             </select>
         </label>
         <label for="">Selecciona la fecha
             <select name="" id="">
-                <option value="">Hola</option>
+                <option value=""></option>
+                <option value="">28/09/2023</option>
+                <option value="">04/10/2023</option>
+                <option value="">17/11/2023</option>
             </select>
         </label>
         <label for="">Selecciona la franja horaria
             <select name="" id="">
-                <option value="">Hola</option>
+                <option value=""> </option>
+                <option value="">09:15</option>
+                <option value="">10:25</option>
+                <option value="">13:30</option>
             </select>
         </label>
     </form>
@@ -118,16 +125,12 @@ class CitaProfile extends HTMLElement {
             </div>
             <div id="modal-buttons">
                 <button id="closeModalBtn">Modificar</button>
-                <button>Confirmar datos</button>
+                <button id="confirm">Confirmar datos</button>
             </div>
         </div>
     <script src="./agendar.js"></script>
-
     `
   }
-
-
-
 }
 
 customElements.define('cita-profile', CitaProfile)

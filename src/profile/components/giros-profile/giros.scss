@@ -52,7 +52,7 @@ p {
     font-family: 'Bariol';
     font-size: 18px;
     color: c.$cyan-500;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 780px){
@@ -80,7 +80,7 @@ p {
         display: flex;
         margin-top: 3rem;
 
-        & span {
+        & h5 {
             font-family: 'Bariol';
             font-size: 30px;
             color: c.$cyan-500;
