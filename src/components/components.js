@@ -1,2 +1,2 @@
-// import "./cards/cards.js"
+import "./cards/cards.js"
 import './navbar/navbar.js';
