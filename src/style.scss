@@ -7,7 +7,7 @@
 }
 
 p {
-    margin: 0px;
+    margin: 0;
 }
 
 h2 {
@@ -56,6 +56,7 @@ h3 {
     font-size: 0.625rem;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
 }
 
 #main-banner {
@@ -112,11 +113,12 @@ h3 {
     }
 
     & .btn {
+        display: flex;
         width: 95%;
         height: 1.8305rem;
-        padding: 5px;
-        border-radius: 4px;
-        border: none;
+        padding: 0.3125rem;
+        border-radius: 0.27rem;
+        border: 0.125rem solid $purple-300;
         background-color: $purple-300;
         color: white;
         text-align: center;
@@ -124,6 +126,19 @@ h3 {
         font-size: 0.86244rem;
         line-height: normal;
         text-decoration: none;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            border-color: $purple-300;
+            background-color: white;
+            color: $purple-300;
+        }
+
+        &:active {
+            background-color: $purple-100;
+            border-color: $purple-100;
+        }
     }
 
     & .woman-img {
@@ -144,7 +159,6 @@ h3 {
     align-items: center;
     margin: -40px 0;
     margin-left: 2.5%;
-    z-index: 1;
 
     & button {
         width: 25%;
@@ -166,12 +180,12 @@ h3 {
 
         & .icon {
             width: 30%;
+            margin-bottom: 0.5rem;
         }
 
         & a {
             display: flex;
             text-decoration: none;
-            height: 50%;
             justify-content: center;
             color: $purple-300;
         }
@@ -207,10 +221,10 @@ h3 {
 
     & .titles-section {
         padding-left: 5.13%;
-        padding-top: 87px;
+        padding-top: 5.44rem;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 1.875rem;
 
         & h3 {
             color: $cyan-500 !important;
@@ -218,14 +232,14 @@ h3 {
     }
 
     & .container-products {
-        padding: 0px 5.13%;
+        padding: 0 5.13%;
 
         & .dropdown-products {
             width: 70.3%;
-            height: 35px;
+            height: 2.1875rem;
             flex-shrink: 0;
-            border-radius: 4px;
-            border: 1.779px solid white;
+            border-radius: 0.25rem;
+            border: 0.125rem solid white;
             background: $cyan-500;
             box-shadow: 2.964601755142212px 4.150442600250244px 17.78761100769043px 0px rgba(0, 177, 187, 0.21);
             margin-bottom: 1.25rem;
@@ -234,20 +248,20 @@ h3 {
         & .info-product {
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 1.125rem;
             align-items: center;
         }
 
         & .description-product {
             display: flex;
-            margin: 1.25rem 0px;
-            gap: 7px;
+            margin: 1.25rem 0;
+            gap: 0.44rem;
 
             &_text {
                 display: flex;
                 flex-direction: column;
-                gap: 22px;
-                padding: 0px;
+                gap: 1.375rem;
+                padding: 0;
 
                 & li {
                     list-style: none;
@@ -279,7 +293,7 @@ h3 {
 }
 
 #explore-news {
-    padding: 25px 5.13%;
+    padding: 1.5625rem 5.13%;
 
     & .our-app {
         width: 100%;
@@ -287,7 +301,7 @@ h3 {
         background-size: cover;
         background-position: center center;
         background-color: $purple-300;
-        border-radius: 5px;
+        border-radius: 0.3125rem;
         display: flex;
         justify-content: center;
 
@@ -295,12 +309,12 @@ h3 {
             display: inline-flex;
             flex-direction: column;
             align-items: center;
-            gap: 163.834px;
+            gap: 10.24rem;
         }
 
         & .container-text {
             width: 75.26%;
-            padding-top: 48.8px;
+            padding-top: 3.05rem;
             gap: 0.625rem;
             display: flex;
             flex-direction: column;
@@ -319,39 +333,53 @@ h3 {
         }
 
         & .btn {
+            display: flex;
             width: auto;
             height: auto;
-            padding: 11.3px 17px;
-            border-radius: 4px;
-            border: none;
+            padding: 0.71rem 1.0625rem;
+            border: 0.125rem solid $orange-300;
+            border-radius: 0.25rem;
             background-color: $orange-300;
             color: white;
             text-align: center;
             font-family: "font-bariol-regular";
             font-size: 1.10344rem;
             font-weight: 400;
-            margin-bottom: 70.66px;
+            margin-bottom: 4.42rem;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                border-color: $orange-300;
+                background-color: white;
+                color: $orange-300;
+            }
+
+            &:active {
+                background-color: $orange-100;
+                border-color: $orange-100;
+            }
         }
     }
 
 }
 
 #favorites {
-    padding: 25px 5.13%;
+    padding: 1.5625rem 5.13%;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 0.5625rem;
 
     & .card-favorite {
 
         & .orange {
-            margin-top: -9px;
+            margin-top: -0.5625rem;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
-            height: 130px;
-            border-radius: 7.67px;
+            height: 8.125rem;
+            border-radius: 0.48rem;
             background-image: url(./public/images/card-search-orange-mobile.webp);
             background-size: cover;
             background-position: center center;
@@ -360,10 +388,10 @@ h3 {
         & .violet {
             display: flex;
             flex-direction: row;
-            width: 100%;
-            height: 130px;
             justify-content: space-between;
-            border-radius: 7.67px;
+            width: 100%;
+            height: 8.125rem;
+            border-radius: 0.48rem;
             background-image: url(./public/images/card-search-violet-mobile.webp);
             background-size: cover;
             background-position: center center;
@@ -373,9 +401,9 @@ h3 {
             display: flex;
             flex-direction: row;
             width: 100%;
-            height: 130px;
             justify-content: space-between;
-            border-radius: 7.67px;
+            height: 8.125rem;
+            border-radius: 0.48rem;
             background-image: url(./public/images/card-search-blue-mobile.webp);
             background-size: cover;
             background-position: center center;
@@ -388,7 +416,7 @@ h3 {
 
         & h2 {
             color: white;
-            padding-top: 31.66px;
+            padding-top: 1.97875rem;
             padding-left: 7%;
         }
 
@@ -404,8 +432,8 @@ h3 {
     background-image: url(./public/images/bg-finance-mobile.webp);
     background-size: cover;
     background-position: center center;
-    margin: 25px 0;
-    padding-top: 68.53px;
+    margin: 1.5625rem 0;
+    padding-top: 4.28rem;
 
     & .container-text {
         padding: 0% 5.13%;
@@ -413,7 +441,7 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15.66px;
+        gap: 1rem;
 
         & h1 {
             color: white;
@@ -425,11 +453,12 @@ h3 {
         }
 
         & .btn {
+            display: flex;
             width: 39.66%;
-            height: 37.574px;
-            padding: 0.625rem 5px;
-            border-radius: 4px;
-            border: none;
+            height: 2.35rem;
+            padding: 0.625rem 0.3125rem;
+            border-radius: 0.25rem;
+            border: 0.125rem solid $orange-300;
             background: $orange-300;
             color: white;
             text-align: center;
@@ -437,6 +466,20 @@ h3 {
             font-size: 1rem;
             line-height: normal;
             text-decoration: none;
+            align-items: center;
+            justify-content: center;
+
+
+            &:hover {
+                border-color: $orange-300;
+                background-color: white;
+                color: $orange-300;
+            }
+
+            &:active {
+                background-color: $orange-100;
+                border-color: $orange-100;
+            }
         }
     }
 
@@ -447,7 +490,7 @@ h3 {
 }
 
 #featured-articles {
-    padding: 25px 5.13%;
+    padding: 1.5625rem 5.13%;
 
     & .container-articles {
         display: none;
@@ -457,7 +500,7 @@ h3 {
         width: 100%;
         overflow: hidden;
     }
-    
+
     & .slider-track {
         display: flex;
         flex-direction: row;
@@ -466,22 +509,23 @@ h3 {
     }
 
     & .each-article {
+        display: flex;
         width: 90%;
         margin-right: 4rem;
-        height: 375px;
+        height: 23.43rem;
 
         & .card {
             width: 90%;
             height: 23.16494rem;
-            border-radius: 8.66px !important;
-            padding: 12.12px 3.35%;
-            box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+            border-radius: 0.55rem !important;
+            padding: 0.7575rem 3.35%;
+            box-shadow: 5px 7px 30px 0 rgba(159, 102, 219, 0.18);
             margin: 0px;
             background: #FDFDFD;
             border: none;
 
             & img {
-                margin-bottom: 23px;
+                margin-bottom: 1.44rem;
             }
 
             & h5 {
@@ -490,7 +534,7 @@ h3 {
                 font-size: 0.86244rem;
                 font-weight: 700;
                 line-height: normal;
-                margin: 0px;
+                margin: 0;
             }
 
             & .card-text {
@@ -499,15 +543,15 @@ h3 {
                 font-size: 0.81188rem;
                 font-weight: 400;
                 line-height: 150%;
-                margin: 14.72px 0px;
+                margin: 0.92rem 0;
             }
 
             & .more {
                 display: flex;
-                height: 12.124px;
+                height: 0.76rem;
                 flex-direction: row;
-                gap: 3.28px;
-                margin-top: 18.34px;
+                gap: 0.205rem;
+                margin-top: 1.146rem;
                 justify-content: center;
                 align-items: center;
 
@@ -532,17 +576,18 @@ h3 {
 }
 
 #profile-w {
-    padding: 25px 5.13%;
+    padding: 1.5625rem 5.13%;
 
     h3 {
-        margin-bottom: 49px;
+        margin-bottom: 3.0625rem;
     }
 
     & .benefits {
         width: 100%;
-        padding: 30px 2.5%;
-        border-radius: 4.562px;
-        background: var(--naranja-400, #F83);
+        height: 22.375rem;
+        padding: 1.3rem 2.5%;
+        border-radius: 0.29rem;
+        background: $orange-400;
         background-image: url(./public/images/circles-profile-mobile.webp);
         background-size: cover;
         background-position: center center;
@@ -550,11 +595,11 @@ h3 {
         & .description {
             display: flex;
             flex-direction: row;
-            gap: 4.5%;
 
             & img {
-                width: 52.23%;
-                margin-top: -80px;
+                width: 55%;
+                height: 100%;
+                margin-top: -4rem;
             }
 
             &_info {
@@ -565,14 +610,14 @@ h3 {
                 &_text {
                     display: flex;
                     flex-direction: column;
-                    gap: 2px;
+                    gap: 0.125rem;
                 }
             }
 
             & h4 {
                 color: $gray-3;
-                font-family: Geomanist;
-                font-size: 1rem;
+                font-family: "font-geomanist-bold";
+                font-size: 0.9rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
@@ -580,16 +625,28 @@ h3 {
             }
 
             & .btn {
-                width: 66%;
+                width: auto;
                 height: auto;
-                padding: 5px 5%;
-                border-radius: 3.638px;
+                padding: 0.3125 5%;
+                border-radius: 0.23;
+                border: 0.125rem solid $purple-300;
                 background: $purple-300;
                 color: #FFF;
                 text-align: center;
                 font-family: "font-bariol-regular";
                 font-size: 0.71469rem;
                 font-weight: 400;
+
+                &:hover {
+                    border-color: $purple-300;
+                    background-color: white;
+                    color: $purple-300;
+                }
+
+                &:active {
+                    background-color: $purple-100;
+                    border-color: $purple-100;
+                }
             }
         }
 
@@ -597,24 +654,23 @@ h3 {
             display: flex;
             flex-wrap: wrap;
             gap: 4%;
-            padding: 0px 2.5%;
-            margin-top: -45px;
-            margin-bottom: -87px;
+            margin-top: -0.5rem;
+            margin-bottom: -0.4375rem;
 
             & .each-card {
                 width: 48%;
 
                 & .card {
                     width: 100%;
-                    height: 146px;
+                    height: 10rem;
                     display: flex;
-                    padding: 3.509px 9.57px 1.404px 9.57px;
-                    gap: 5px;
+                    padding: 0.3125rem 0.6rem;
+                    gap: 0.3125rem;
                     border: none;
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-                    border-radius: 4.785px;
+                    border-radius: 0.29906rem;
                     background: white;
                     box-shadow: 3.681197166442871px 5.153675556182861px 22.087182998657227px 0px rgba(159, 102, 219, 0.18);
                     margin-bottom: 0.625rem;
@@ -630,12 +686,12 @@ h3 {
                         font-size: 0.92619rem;
                         font-weight: 400;
                         line-height: 120%;
-                        margin: 0px;
+                        margin: 0;
                     }
 
                     & p {
                         color: $gray-1;
-                        margin-bottom: 18px;
+                        margin-bottom: 1.125rem;
                         text-align: center;
                     }
                 }
@@ -660,7 +716,7 @@ h3 {
             height: 26rem;
             align-items: center;
         }
-        
+
         & .card {
             height: 30rem;
         }
@@ -732,6 +788,8 @@ h3 {
             padding: 13px 5%;
             border-radius: 0.5rem;
             font-size: 1.5625rem;
+            border: 0.1875rem solid $purple-300;
+
         }
 
         & .woman-img {
@@ -756,7 +814,7 @@ h3 {
             font-weight: 400;
 
             & .icon {
-                width: 25%;
+                width: 20%;
             }
 
             & a {
@@ -832,6 +890,7 @@ h3 {
                 padding: 0.9rem 5%;
                 justify-content: center;
                 align-items: center;
+                border: 0.125rem solid $cyan-500;
                 border-radius: 0.375rem;
                 background: $cyan-500;
                 color: white;
@@ -841,6 +900,17 @@ h3 {
                 font-weight: 400;
                 text-decoration: none;
                 margin-bottom: 3.5rem;
+
+                &:hover {
+                    border-color: $cyan-500;
+                    background-color: white;
+                    color: $cyan-500;
+                }
+
+                &:active {
+                    background-color: $cyan-100;
+                    border-color: $cyan-100;
+                }
             }
 
             & .asterisks-mobile {
@@ -925,9 +995,11 @@ h3 {
                     }
 
                     & .btn {
+                        display: flex;
                         width: auto;
                         height: 3.51206rem;
                         padding: 0.91875rem 1.2rem;
+                        border: 0.125rem solid $orange-300;
                         border-radius: 0.4375rem;
                         border: none;
                         background-color: $orange-300;
@@ -936,6 +1008,19 @@ h3 {
                         font-family: "font-bariol-regular";
                         font-size: 1.43938rem;
                         margin-bottom: 5rem;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            border-color: $orange-300;
+                            background-color: white;
+                            color: $orange-300;
+                        }
+
+                        &:active {
+                            background-color: $orange-100;
+                            border-color: $orange-100;
+                        }
                     }
                 }
             }
@@ -1076,6 +1161,7 @@ h3 {
 
 
         & .each-article {
+            display: flex;
             width: 32%;
             height: 25rem;
             justify-content: center;
@@ -1084,6 +1170,7 @@ h3 {
 
             & .card {
                 width: 100% !important;
+                height: 23.16494rem;
                 border-radius: 7.46px !important;
                 padding: 0.75rem 3.28%;
                 box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
@@ -1177,8 +1264,8 @@ h3 {
             background-position: center center;
 
             & img {
-                width: 48%;
-                height: auto;
+                width: 50%;
+                height: 100%;
                 margin-top: -12.5rem;
                 margin-bottom: -3.57rem;
             }
@@ -1192,6 +1279,7 @@ h3 {
                 height: 57px;
                 justify-content: center;
                 align-items: center;
+                border: 0.125rem solid $purple-300;
                 border-radius: 7px;
                 background: $purple-300;
                 color: white;
@@ -1200,6 +1288,17 @@ h3 {
                 font-size: 1.54088rem;
                 font-weight: 400;
                 margin-bottom: 1.25rem;
+
+                &:hover {
+                    border-color: $purple-300;
+                    background-color: white;
+                    color: $purple-300;
+                }
+
+                &:active {
+                    background-color: $purple-100;
+                    border-color: $purple-100;
+                }
             }
 
             &_container-info {
@@ -1215,6 +1314,7 @@ h3 {
                     align-items: center;
 
                     & h4 {
+                        font-family: "font-geomanist-bold";
                         text-align: center;
                         color: white;
                     }
@@ -1229,7 +1329,7 @@ h3 {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 4%;
-                    margin-bottom: -6.25rem;
+                    margin-bottom: -1000%;
 
                     & .each-card {
                         width: 48%;
@@ -1445,6 +1545,7 @@ h3 {
                 padding: 0.9rem 5%;
                 justify-content: center;
                 align-items: center;
+                border: 0.125rem solid $cyan-500;
                 border-radius: 0.375rem;
                 background: $cyan-500;
                 color: white;
@@ -1454,6 +1555,17 @@ h3 {
                 font-weight: 400;
                 text-decoration: none;
                 margin-bottom: 3.5rem;
+
+                &:hover {
+                    border-color: $cyan-500;
+                    background-color: white;
+                    color: $cyan-500;
+                }
+
+                &:active {
+                    background-color: $cyan-100;
+                    border-color: $cyan-100;
+                }
             }
 
             & .asterisks-mobile {
@@ -1805,6 +1917,7 @@ h3 {
                 height: 57px;
                 justify-content: center;
                 align-items: center;
+                border: 0.125rem solid $purple-300;
                 border-radius: 7px;
                 background: $purple-300;
                 color: white;
@@ -1813,6 +1926,17 @@ h3 {
                 font-size: 1.54088rem;
                 font-weight: 400;
                 margin-bottom: 1.25rem;
+
+                &:hover {
+                    border-color: $purple-300;
+                    background-color: white;
+                    color: $purple-300;
+                }
+
+                &:active {
+                    background-color: $purple-100;
+                    border-color: $purple-100;
+                }
             }
 
             &_container-info {
@@ -1828,6 +1952,7 @@ h3 {
                     align-items: center;
 
                     & h4 {
+                        font-family: "font-geomanist-bold";
                         text-align: center;
                         color: white;
                     }
