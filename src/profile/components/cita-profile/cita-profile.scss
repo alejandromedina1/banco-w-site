@@ -19,7 +19,7 @@
     text-align: center;
     line-height: normal;
     font-size: $f;
-    font-family: c.$font-bariol-regular;
+    font-family: 'Bariol';
 }
 
 * {
@@ -30,10 +30,6 @@
 
 ul {
     padding-left: 0;
-}
-
-h3 {
-    display: none;
 }
 
 p {
@@ -49,7 +45,7 @@ p {
 .Bg-animation {
     height: 352px;
     background-size: auto 352px;
-    background-image: url(../../public/images/hero_circles.webp), url(../../public/images/hero_circles.webp);
+    background-image: url(../../../public/images/hero_circles.webp), url(../../../public/images/hero_circles.webp);
     background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
     background-repeat: no-repeat;
 }
@@ -112,7 +108,7 @@ p {
 
 h2 {
     font-size: 30px;
-    font-family: c.$font-geomanist-bold;
+    font-family: 'Geomanist';
     color: c.$gray-2;
     font-weight: 700;
     margin-bottom: 0;
@@ -132,7 +128,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: c.$font-geomanist-regular;
+    font-family: 'Geomanist';
     font-size: 16px;
     color: c.$orange-300;
     text-decoration: none;
@@ -155,6 +151,184 @@ h2 {
         }
 }
 
+.title-dairy {
+    margin-left: 20px;
+    margin-top: 2rem;
+    color: c.$cyan-500;
+    font-size: 18px;
+    font-family: 'Bariol';
+}
+
+.subtitle-dairy {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 20px;
+    margin-top: 2rem;
+    
+    & a {
+        text-decoration: none;
+        color: c.$cyan-500;
+        font-size: 18px;
+        font-family: 'Bariol';
+    }
+}
+
+.main {
+    margin: 20px;
+
+    &-title {
+        color: c.$gray-1;
+        font-size: 18px;
+        font-family: 'Bariol';
+        margin-bottom: 1rem;
+    }
+    & label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        font-size: 18px;
+        font-family: 'Bariol';
+        margin-bottom: 1rem;
+        color: c.$gray-2;
+    }
+    & select {
+        border-radius: 0.1875rem;
+        border: 1.176px solid var(--gris-3, #ACACAC);
+        background: #FFF;
+        width: 100%;
+        padding: 0.5rem 0.7rem;
+        margin-top: 0.3rem;
+    }
+    & option {
+        color: c.$gray-2;
+        font-size: 13px;
+        font-family: 'Bariol';
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    & button {
+        width: 100%;
+        border-radius: 0.19525rem;
+        background: var(--acuamarina-500, #00B1BB);
+        box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
+        color: #FFF;
+        font-size: 13px;
+        font-family: 'Bariol';
+        padding: 0.3rem;
+        border: none;
+    }
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    & button {
+        width: 100%;
+        border-radius: 0.19525rem;
+        background: var(--acuamarina-500, #00B1BB);
+        box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
+        color: #FFF;
+        font-size: 13px;
+        font-family: 'Bariol';
+        padding: 0.3rem;
+        border: none;
+        margin-bottom: 5rem;
+    }
+}
+
+//Modal
+
+#modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Inicialmente oculto */
+}
+  
+ #modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;      
+        margin-bottom: 1rem;
+        gap: 3rem;
+    }
+    & h3 {
+        font-size: 16px;
+        color: c.$gray-2;
+        font-family: 'Bariol';
+    }
+    & span {
+        font-size: 16px;
+        color: c.$gray-1;
+        font-family: 'Bariol';
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 1rem;
+    }
+    & p {
+        font-size: 13px;
+        color: c.$gray-2;
+    }
+    &-buttons {
+        display: flex;
+        gap: 1rem;
+
+        & button:nth-child(1) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3.92px;
+            background: var(--gris, #EFEFEF);
+            border: none;
+            padding: 9px 26px;
+            flex: 1;
+            color: c.$gray-2;
+        }
+        & button:nth-child(2) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3.92px;
+            background: var(--acuamarina-500, #00B1BB);
+            border: none;
+            padding: 9px;
+            flex: 1;
+            white-space: nowrap;
+            color: #FFF;
+        }
+    }
+}
+  
+button {
+    margin-top: 10px;
+}
 
 @media only screen and (min-width: 780px){
 
@@ -179,7 +353,7 @@ h2 {
         &-Profile h3{
             color: #FFF;
             text-align: center;
-            font-family: c.$font-geomanist-bold;
+            font-family: 'Geomanist';
             font-weight: 700;
             font-size: 45px;  
         }
@@ -246,15 +420,12 @@ h2 {
     
     .Buttons {
         &-name {
-            margin: 8rem 35px 0 80px;  
+            margin: 8rem 35px 0 100px;  
         }
-}
+    }
 
 }
-
     //El resto
-
-
 
 @media only screen and (min-width: 1440px){
     .Buttons-up {
@@ -275,6 +446,5 @@ h2 {
         margin: 4rem 100px 0 100px;
     }
 }
-
 
 

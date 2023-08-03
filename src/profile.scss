@@ -68,6 +68,12 @@ p {
             gap: 14.72px;   
             height: 17%;
         }    
+        &-buttons a {
+            transition: all 0.2s;
+        }
+        &-buttons a:hover {
+            transform: scale(1.1);
+        }
         &-Profile {
             display: flex;
             justify-content: center;
@@ -88,6 +94,7 @@ p {
         }
         &-border p {
             display: none;
+            white-space: nowrap;
         }
         &-other p {
             display: none;
@@ -111,16 +118,6 @@ h2 {
     margin-bottom: 0;
 }
 
-.Button-info {
-    font-family: c.$font-bariol-regular;  
-    font-size: 18px;
-    color: c.$cyan-500;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-weight: 400;
-    margin: 2rem 35px 0 35px;
-}
-
  .Hero-menu li {
     list-style: none;
     margin-top: 16px;
@@ -136,7 +133,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     font-family: c.$font-geomanist-regular;
-    font-size: 18px;
+    font-size: 16px;
     color: c.$orange-300;
     text-decoration: none;
     gap: 1rem;
@@ -156,75 +153,28 @@ h2 {
             align-items: center;
             margin: 4rem 35px 0 35px;
         }
-        &-up {
-            display: grid;
-            column-gap: 3rem;
-            grid-auto-rows: 9rem;
-            grid-template-columns: repeat(auto-fill, minmax(min(100%, 6.5rem), 1fr));
-            max-width: 768px;
-            margin: 2rem 35px 0 0;
-        }
-        &-up a {
-            @include box_controls();
-        }
-        &-session {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-        }
-        &-session button {
-            border: none;
-            font-family: c.$font-bariol-regular;
-            color: #FFF;
-            text-align: center;
-            font-size: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 257px;
-            height: 29.258px;
-            border-radius: 3.124px;
-            background: var(--acuamarina-500, #00B1BB);
-            box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
-        }
 }
 
 
 @media only screen and (min-width: 780px){
-    .Buttons-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .Buttons {
-        &-up {
-            max-width: 780px;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
 }
 
 
 @media only screen and (min-width: 1024px){
     //Header
-   
-    h3 {
-        display: block;
-    }
-
     .Hero {
 
         &-buttons {
-            display: none;
+            gap: 27px;
+            margin: 30px 50px 0 0;
+        }
+        &-buttons svg{
+            width: 30px;
+            height: 30px;
         }
         &-Profile {
-            padding-bottom: 0;
+            padding-bottom: 10rem;
         }
         &-Profile h3{
             color: #FFF;
@@ -234,7 +184,8 @@ h2 {
             font-size: 45px;  
         }
         &-Profile img{
-            display: none;
+            width: 292px;
+            height: 292px;
         }
         &-menu {
             position: absolute;
@@ -268,6 +219,11 @@ h2 {
             background: #FFF;
             box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
         } 
+        &-other svg,
+        &-border svg {
+            width: 33px;
+            height: 33px;
+        }
     }
 
     .Hero-menu li {
@@ -287,45 +243,18 @@ h2 {
         background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
         background-repeat: no-repeat;
     }
+    
+    .Buttons {
+        &-name {
+            margin: 8rem 35px 0 80px;  
+        }
+}
+
+}
 
     //El resto
 
-    .Buttons {
-        &-name {
-            display: none;
-        }
-        &-up {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1920px;
-            flex-wrap: wrap;
-            gap: 4rem;
-            margin-top: 5rem;
-        }
-        &-up a {
-            @include box_controls($gp: 18px, $w: 280px, $h: 186px, $p: 8px 50px 0 50px, $f: 25px);
-        }
-        &-session button {
-            font-size: 25px;
-            width: 552px;
-            height: 50px;
-            margin-top: 5rem;
-            border-radius: 7px;
-        }
-    }
 
-    svg {
-        width: 33px;
-        height: 33px;
-    }
-    
-    .Button-info {
-        font-size: 30px;
-        margin-left: 3rem;
-        margin-top: 8rem;
-    }
-}
 
 @media only screen and (min-width: 1440px){
     .Buttons-up {
@@ -346,6 +275,3 @@ h2 {
         margin: 4rem 100px 0 100px;
     }
 }
-
-
-

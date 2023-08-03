@@ -99,6 +99,7 @@
         font-family: 'Geomanist';
         font-weight: 700;
         margin: 0;
+        
 
     }
 
@@ -107,133 +108,124 @@
         font-family: 'Bariol';
         font-size: 1.125rem;
         font-weight: 400;
+        margin: 1.5625em 0;
 
     }
 
-    &__form {
-        margin: 0.4em 0;
-        display: flex;
-        flex-direction: column;
+
+
+    &__balance {
+        &-card {
+            border-radius: 6.282px;
+            background: #FFF;
+            box-shadow: 5.23528528213501px 7.329399585723877px 31.411714553833008px 0px rgba(159, 102, 219, 0.18);
+            padding: 15px;
+            font-family: 'Bariol';
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: c.$gray-2;
+            font-size: 16px;
+            margin-bottom: 30px;
+
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 0.625em;
+            }
+
+            &-info-1,
+            &-info-2,
+            &-info-3,
+            &-mount {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-info-1,
+            &-info-2,
+            &-info-3 {
+                font-size: 0.8125rem;
+                margin-bottom: 0.625em;
+            }
+        }
+
+
     }
 
-    &__label {
-        margin-top: 0.6875em;
-        color: c.$gray-1;
-        font-family: Bariol;
-        font-size: 0.8125rem;
-        font-weight: 400;
-    }
+    &__graph {
 
-    &__select {
-        font-family: 'Bariol';
-        color: c.$gray-2;
-        width: 100%;
-        min-height: 32px;
-        border-radius: 3px;
-        border: 1px solid c.$gray-2;
+        &-card {
+            padding: 15px;
+            border-radius: 6.282px;
+            background: #FFF;
+            box-shadow: 5.235285758972168px 7.329400062561035px 31.41171646118164px 0px rgba(159, 102, 219, 0.18);
+            font-family: 'Bariol';
+            color: c.$gray-2;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
 
-        /*background-color: #FFF;*/
+            &-bars {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5625em;
+                height: 8.125em;
+                justify-content: center;
 
-        &:focus{
-            border: 1.93px solid c.$cyan-500;
-            box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    &-filled {
+
+                        
+                        width: 30px;
+                        border-radius: 6.282px;
+                        
+                        background: #000000;
+
+                    }
+
+
+                }
+
+            }
+
+
 
         }
-    }
-
-
-
-    &__inputs {
-        margin-bottom: 40px;
-    }
-
-    &__submit-secondary {
-        font-family: 'Bariol';
-        display: flex;
-        width: 100%;
-        min-height: 30px;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.9375rem;
-        font-weight: 400;
-        border-radius: 4.23px;
-        border: 1px solid c.$gray-2;
-        background: #FFF;
-        color: c.$gray-2;
-        margin-bottom: 15px;
-    }
-
-    &__submit-primary {
-        font-family: 'Bariol';
-        display: flex;
-        width: 100%;
-        min-height: 30px;
-        border: none;
-        border-radius: 4.23px;
-        background: c.$cyan-500;
-        justify-content: center;
-        align-items: center;
-        color: #FFF;
 
     }
-
-    &__certifications {
-        margin-top: 2.5em;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__button-container {
-        margin-top: 20px;
-    }
-
-    &__extracts {
-        display: grid;
-        grid-template-rows: 1fr;
-    }
-
-
 
 }
 
-button-duo-icon {
-    margin-bottom: 1.03125em;
-}
+
+.Content-table th .Content-table th, .Content-table td {
+    padding: 1rem 1.1rem !important;
+}   
+    
+
 
 @media screen and (min-width: 768px) {
     .main {
 
         padding: 0px 60px;
 
-        &__extracts {
+        &__allSections{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
         }
 
-        &__certifications {
-            margin-top: 0px;
-            justify-content: center;
-        }
 
-        &__form {
-            width: 100%;
-        }
-
-        &__select {
-            height: 47px;
-        }
-
-        &__submit-secondary {
-            height: 47px;
-        }
-
-        &__submit-primary {
-
-            height: 47px;
-        }
 
     }
+
+    
 
 
 }

@@ -15,14 +15,14 @@
     &-Type span,
     &-Date span,
     &-State span{
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         font-size: 13px;
         color: c.$gray-2;
     }
     &-Type p,
     &-Date p,
     &-State p {
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         font-size: 16px;
         color: c.$gray-2;
     }
@@ -33,12 +33,12 @@
         margin-top: 1rem;
     }
     &-Mount span {
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         font-size: 13px;
         color: c.$gray-2;
     }
     &-Mount p {
-        font-size: c.$font-bariol-regular;
+        font-size: 'Bariol';
         color: c.$cyan-500;
         font-size: 18px;
         margin: 0 !important;
@@ -63,13 +63,13 @@
         &-Type p,
         &-Date p,
         &-State p {
-            font-size: 35px;
+            font-size: 1rem;
         }
         &-Mount{
             margin-top: 1.7rem;
         }
         &-Mount span {
-            font-size: 20px;
+            font-size: 18px;
         }
         &-Mount p {
             font-size: 35px;

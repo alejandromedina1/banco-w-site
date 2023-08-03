@@ -125,7 +125,7 @@ input.fields {
     border: 2px solid #cdcdcd;
     border-radius: 4px;
     padding: 10px;
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -165,7 +165,7 @@ input.fields:focus {
 h2#title {
     color: $cyan-500;
     text-align: center;
-    font-family: $font-geomanist-bold;
+    font-family: "font-geomanist-bold";
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
@@ -177,7 +177,7 @@ button#login {
     border: 0px;
     border-radius: 0.24688rem;
     color: white;
-    font-family: $font-bariol-regular;
+    font-family: "font-bariol-regular";
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;

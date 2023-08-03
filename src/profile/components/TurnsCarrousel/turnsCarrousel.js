@@ -1,3 +1,5 @@
+import "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js";
+
 class TurnsCarrousel extends HTMLElement {
     constructor() {
         super();
@@ -164,20 +166,18 @@ class TurnsCarrousel extends HTMLElement {
       <div class="swiper-slide" id="toggle-swiper"></div>
     </div>
   </div>
-
-       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: "auto",
-                spaceBetween: 30,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
     `;
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
     }
 
 }
