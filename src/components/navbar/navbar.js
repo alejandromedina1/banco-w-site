@@ -49,6 +49,12 @@ class NavBarDesktop extends HTMLElement {
             window.location.replace('/login/');
         })
 
+        const logoBtn = document.querySelector('.logo');
+        logoBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            window.location.replace('/');
+        })
+
       }
 
       
