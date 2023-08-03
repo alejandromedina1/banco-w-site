@@ -1,3 +1,5 @@
+import "./pagos.scss";
+
 class PagosProfile extends HTMLElement {
     constructor() {
         super();

@@ -1,3 +1,5 @@
+import "./agenda.scss";
+
 class AgendaProfile extends HTMLElement {
   constructor() {
     super();

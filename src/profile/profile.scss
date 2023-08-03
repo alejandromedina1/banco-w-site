@@ -2,26 +2,6 @@
 
 //Mixins
 
-@mixin box_controls($gp: 18px, $w: 144.516px, $h: 120px, $p: 13px 25px 0 25px, $f: 13px) {
-    color: c.$gray-2;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: $w;
-    height: $h;
-    gap: $gp;
-    border-radius: 5.385px;
-    background: #FFF;
-    padding: $p;
-    box-shadow: 4.48753023147583px 6.282541751861572px 26.925180435180664px 0px rgba(159, 102, 219, 0.18);
-    text-align: center;
-    line-height: normal;
-    font-size: $f;
-    font-family: 'Bariol';
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -144,14 +124,6 @@ p {
         }
 }
 
-h2 {
-    font-size: 30px;
-    font-family: 'Geomanist';
-    color: c.$gray-2;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
  .Hero-menu li {
     list-style: none;
     margin-top: 16px;
@@ -187,6 +159,13 @@ h2 {
             display: flex;
             align-items: center;
             margin: 4rem 35px 0 35px;
+            & h2 {
+                font-size: 30px;
+                font-family: 'Geomanist';
+                color: c.$gray-2;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
         }
 }
 
@@ -285,7 +264,7 @@ h2 {
     
     .Buttons {
         &-name {
-            margin: 8rem 35px 0 100px;  
+            margin: 8rem 35px 0 80px;  
         }
 }
 

@@ -1,3 +1,5 @@
+import "./buttonDuoIcon.scss";
+
 class ButtonDuoIcon extends HTMLElement {
     constructor() {
         super();

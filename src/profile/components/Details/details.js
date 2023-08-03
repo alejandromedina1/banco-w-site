@@ -1,3 +1,5 @@
+import "./details.scss"
+
 class Details extends HTMLElement {
     constructor() {
         super();
