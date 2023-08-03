@@ -42,6 +42,19 @@ class NavBarDesktop extends HTMLElement {
             }
         });
 
+        //Link login
+        const loginBtn = document.querySelector('.inicio-sesion');
+        loginBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            window.location.replace('/login/');
+        })
+
+        const logoBtn = document.querySelector('.logo');
+        logoBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            window.location.replace('/');
+        })
+
       }
 
       
@@ -88,7 +101,7 @@ class NavBarDesktop extends HTMLElement {
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         </a>
-                            <ul class="dropdown-content">
+                            <ul class="dropdown-content" id="cliente">
                                 <li><a href="#">Personas con negocio</a></li>
                                 <li><a href="#">Ahorradores e inversionistas</a></li>
                                 <li><a href="#">Pensionados y maestros</a></li>

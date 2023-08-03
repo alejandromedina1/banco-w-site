@@ -58,52 +58,61 @@ p {
     padding: 12px 21px;
     background-color: c.$orange-300;
 
-        &-buttons {
-            display: flex;
-            justify-content: right;
-            gap: 14.72px;   
-            height: 17%;
-        }    
-        &-buttons a {
-            transition: all 0.2s;
-        }
-        &-buttons a:hover {
-            transform: scale(1.1);
-        }
-        &-Profile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 4rem;
-        }
-        &-Profile img {
-            width: 160px;
-        }
-        &-menu {
-            position: absolute;
-            top: 81%;
-            left: 50%;
-            transform: translate(-50%, 50%);
-        }
-        &-border {
-            border-right: 0.5px solid c.$orange-300;
-        }
-        &-border p {
-            display: none;
-            white-space: nowrap;
-        }
-        &-other p {
-            display: none;
-        }
-        &-menu ul {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 4px;
-            background: #FFF;
-            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
-        }
+    &-buttons {
+        display: flex;
+        justify-content: right;
+        gap: 14.72px;
+        height: 17%;
+    }
+
+    &-buttons a {
+        transition: all 0.2s;
+    }
+
+    &-buttons a:hover {
+        transform: scale(1.1);
+    }
+
+    &-Profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    &-Profile img {
+        width: 160px;
+    }
+
+    &-menu {
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &-border {
+        border-right: 0.5px solid c.$orange-300;
+    }
+
+    &-border p {
+        display: none;
+        white-space: nowrap;
+    }
+
+    &-other p {
+        display: none;
+    }
+
+    &-menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: #FFF;
+        box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+    }
 }
 
 h2 {
@@ -114,7 +123,7 @@ h2 {
     margin-bottom: 0;
 }
 
- .Hero-menu li {
+.Hero-menu li {
     list-style: none;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -144,11 +153,11 @@ h2 {
     margin: 0.5rem 35px 0 35px;
     margin-top: 2rem;
 
-        &-name {
-            display: flex;
-            align-items: center;
-            margin: 4rem 35px 0 35px;
-        }
+    &-name {
+        display: flex;
+        align-items: center;
+        margin: 4rem 35px 0 35px;
+    }
 }
 
 .title-dairy {
@@ -165,7 +174,7 @@ h2 {
     gap: 0.5rem;
     margin-left: 20px;
     margin-top: 2rem;
-    
+
     & a {
         text-decoration: none;
         color: c.$cyan-500;
@@ -183,6 +192,7 @@ h2 {
         font-family: 'Bariol';
         margin-bottom: 1rem;
     }
+
     & label {
         display: flex;
         flex-direction: column;
@@ -192,6 +202,7 @@ h2 {
         margin-bottom: 1rem;
         color: c.$gray-2;
     }
+
     & select {
         border-radius: 0.1875rem;
         border: 1.176px solid var(--gris-3, #ACACAC);
@@ -200,27 +211,35 @@ h2 {
         padding: 0.5rem 0.7rem;
         margin-top: 0.3rem;
     }
+
     & option {
         color: c.$gray-2;
         font-size: 13px;
         font-family: 'Bariol';
     }
+
     &-button {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
     }
+
     & button {
-        width: 100%;
-        border-radius: 0.19525rem;
-        background: var(--acuamarina-500, #00B1BB);
-        box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
-        color: #FFF;
-        font-size: 13px;
-        font-family: 'Bariol';
-        padding: 0.3rem;
-        border: none;
+
+        &#openModalBtn &#closeModalBtn {
+
+            width: 100%;
+            border-radius: 0.19525rem;
+            box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
+            color: #FFF;
+            font-size: 13px;
+            font-family: 'Bariol';
+            padding: 0.3rem;
+            border: none;
+
+        }
+
     }
 }
 
@@ -231,17 +250,22 @@ h2 {
     margin-top: 2rem;
     margin-left: 20px;
     margin-right: 20px;
+
     & button {
-        width: 100%;
-        border-radius: 0.19525rem;
-        background: var(--acuamarina-500, #00B1BB);
-        box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
-        color: #FFF;
-        font-size: 13px;
-        font-family: 'Bariol';
-        padding: 0.3rem;
-        border: none;
-        margin-bottom: 5rem;
+
+        &#openModalBtn,
+        #closeModalBtn {
+            width: 100%;
+            border-radius: 0.19525rem;
+            background: var(--acuamarina-500, #00B1BB);
+            box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
+            color: #FFF;
+            font-size: 13px;
+            font-family: 'Bariol';
+            padding: 0.3rem;
+            border: none;
+            margin-bottom: 5rem;
+        }
     }
 }
 
@@ -253,14 +277,16 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo transparente */
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
 }
-  
- #modal {
+
+#modal {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -270,30 +296,35 @@ h2 {
     &-title {
         display: flex;
         justify-content: space-between;
-        align-items: center;      
+        align-items: center;
         margin-bottom: 1rem;
         gap: 3rem;
     }
+
     & h3 {
         font-size: 16px;
         color: c.$gray-2;
         font-family: 'Bariol';
     }
+
     & span {
         font-size: 16px;
         color: c.$gray-1;
         font-family: 'Bariol';
     }
+
     &-info {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 1rem;
     }
+
     & p {
         font-size: 13px;
         color: c.$gray-2;
     }
+
     &-buttons {
         display: flex;
         gap: 1rem;
@@ -310,6 +341,7 @@ h2 {
             flex: 1;
             color: c.$gray-2;
         }
+
         & button:nth-child(2) {
             width: 50%;
             display: flex;
@@ -325,17 +357,16 @@ h2 {
         }
     }
 }
-  
+
 button {
     margin-top: 10px;
 }
 
-@media only screen and (min-width: 780px){
-
-}
+@media only screen and (min-width: 780px) {}
 
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
+
     //Header
     .Hero {
 
@@ -343,46 +374,56 @@ button {
             gap: 27px;
             margin: 30px 50px 0 0;
         }
-        &-buttons svg{
+
+        &-buttons svg {
             width: 30px;
             height: 30px;
         }
+
         &-Profile {
             padding-bottom: 10rem;
         }
-        &-Profile h3{
+
+        &-Profile h3 {
             color: #FFF;
             text-align: center;
             font-family: 'Geomanist';
             font-weight: 700;
-            font-size: 45px;  
+            font-size: 45px;
         }
-        &-Profile img{
+
+        &-Profile img {
             width: 292px;
             height: 292px;
         }
+
         &-menu {
             position: absolute;
             top: 67%;
             left: 50%;
             transform: translate(-50%, 50%);
         }
+
         &-border {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         &-border p {
             display: block;
         }
+
         &-other p {
             display: block;
         }
+
         &-other {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         &-menu ul {
             width: 880px;
             height: 145px;
@@ -392,7 +433,8 @@ button {
             border-radius: 4px;
             background: #FFF;
             box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
-        } 
+        }
+
         &-other svg,
         &-border svg {
             width: 33px;
@@ -417,17 +459,18 @@ button {
         background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
         background-repeat: no-repeat;
     }
-    
+
     .Buttons {
         &-name {
-            margin: 8rem 35px 0 100px;  
+            margin: 8rem 35px 0 100px;
         }
     }
 
 }
-    //El resto
 
-@media only screen and (min-width: 1440px){
+//El resto
+
+@media only screen and (min-width: 1440px) {
     .Buttons-up {
         margin: 0;
         gap: 0rem;
@@ -446,6 +489,3 @@ button {
         margin: 4rem 100px 0 100px;
     }
 }
-
-
-
