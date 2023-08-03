@@ -13,13 +13,61 @@
     display: none;
 }
 
+#plus-button {
+    display: none;
+}
+
+#plus-button:checked~ #plus a {
+    background-color: $cyan-500;
+}
+
+#plus-button:checked~ #plus img {
+    filter: saturate(0) brightness(3);
+}
+
+#minus-button {
+    display: none;
+}
+
+#minus-button:checked~ #minus img {
+    filter: saturate(0) brightness(3);
+}
+
+#minus-button:checked~ #minus a {
+    background-color: $cyan-500;
+}
+
+#contrast-button {
+    display: none;
+}
+
+#contrast-button:checked~ #contrast img {
+    filter: saturate(0) brightness(3);
+}
+
+#contrast-button:checked~ #contrast a {
+    background-color: $cyan-500;
+}
+
+#dark-button {
+    display: none;
+}
+
+#dark-button:checked~ #dark img {
+    filter: saturate(0) brightness(3);
+}
+
+#dark-button:checked~ #dark a {
+    background-color: $cyan-500;
+}
+
 .inclusive-button {
     position: fixed;
     bottom: 60px;
     right: 50px;
 }
 
-.options div a {
+.options label a {
     display: block;
     text-decoration: none;
     background: white;
@@ -29,15 +77,16 @@
     text-align: center;
     border-radius: 50%;
     transition: all 500ms ease;
+    cursor: pointer;
 }
 
-#night {
+#dark {
     position: absolute;
     bottom: -40px;
     right: 130px;
 }
 
-#night span{
+#dark span{
     margin-left: 10px;
     position: absolute;
     right: 80px;
@@ -51,7 +100,7 @@
     background-color: $cyan-500;
 }
 
-#night a img:hover + .plus span{
+#dark a img:hover + .plus span{
     background-color: $cyan-500;
     opacity: 1;
 }
@@ -119,7 +168,7 @@
     background-color: $cyan-500;
 }
 
-#show-btn:checked~ .options div span {
+#show-btn:checked~ .options label span {
     opacity: 1;
 }
 
@@ -139,13 +188,13 @@
 
 }
 
-.options div a {
+.options label a {
     opacity: 0;
     visibility: hidden;
     position: relative;
 }
 
-#show-btn:checked~ .options div a {
+#show-btn:checked~ .options label a {
     opacity: 1;
     visibility: visible;
 }
@@ -186,11 +235,11 @@
 }
 
 @media screen and (max-width: 1020px) {
-    #night {
+    #dark {
         position: inherit;
     }
 
-    #night span{
+    #dark span{
         bottom: 80px;
         right: 70px;
         width: 150px;
@@ -236,7 +285,7 @@
         opacity: 0;
     }
 
-    .options div span {
+    .options label span {
         text-align: center;
     }
 

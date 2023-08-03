@@ -10,6 +10,7 @@ class InclusiveButton extends HTMLElement {
     connectedCallback() {
         this.render();
         this.overlayColor();
+        this.imprimirEstado();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -25,27 +26,31 @@ class InclusiveButton extends HTMLElement {
         <nav class="inclusive-button">
             <input type="checkbox" id="show-btn"">
             <div class="options">
-                <div id="plus">
-                    <a href="#"><img src="../../public/icons/plus-font.svg" alt=""></a>
+                <input type="checkbox" id="plus-button"">
+                <input type="checkbox" id="minus-button"">
+                <input type="checkbox" id="contrast-button"">
+                <input type="checkbox" id="dark-button"">
+                <label id="plus" for="plus-button">
+                    <a><img src="../../public/icons/plus-font.svg" alt=""></a>
                     <span>Aumentar fuente</span>
-                </div>
+                </label>
 
-                <div id="minus">
-                    <a href="#"><img src="../../public/icons/minus-font.svg" alt=""></a>
+                <label id="minus" for="minus-button">
+                    <a><img src="../../public/icons/minus-font.svg" alt=""></a>
                     <span>Disminuir fuente</span>
-                </div>
+                </label>
 
-                <div id="contrast">
-                    <a href="#"><img src="../../public/icons/contrast.svg" alt=""></a>
+                <label id="contrast" for="contrast-button">
+                    <a><img src="../../public/icons/contrast.svg" alt=""></a>
                     <span>Contraste</span>
-                </div>
+                </label>
                 
-                <div id="night">
-                    <a href="#">
-                        <img src="../../public/icons/night.svg" alt="">
+                <label id="dark" for="dark-button">
+                    <a>
+                        <img src="../../public/icons/dark.svg" alt="">
                     </a>
                     <span>Modo oscuro</span>
-                </div>
+                </label>
                 
                 
             </div>
@@ -72,6 +77,18 @@ class InclusiveButton extends HTMLElement {
                 overlay.style.display = 'none';
             }
         })
+    }
+
+    imprimirEstado() {
+        let plusStatus = document.getElementById('plus-button')
+        let minusStatus = document.getElementById('minus-button')
+        let contrastStatus = document.getElementById('plus-button')
+        let darkStatus = document.getElementById('dark-button')
+
+        let inclusiveIcon = document.querySelector('.show-button');
+        if(document.getElementById('plus-button').checked) {
+            console.log('aaaa')
+        }
     }
 }
 
