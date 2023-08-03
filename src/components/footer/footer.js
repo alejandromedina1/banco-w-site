@@ -99,21 +99,31 @@ render() {
                 </div>
                 <div class="dropdown">
                 <ul id="social-media">
+                <a href="https://www.facebook.com/bancowoficial" target="_blank">
                     <li>
                     <img class="footer-icons" src="/icons/Social Media/Facebook.svg" alt="">
                     </li>
+                </a>
+                <a href="https://www.instagram.com/bancowoficial/" target="_blank">
                     <li>
                     <img class="footer-icons" src="/icons/Social Media/Instagram.svg" alt="">
                     </li>
+                </a>
+                <a href="https://twitter.com/BancoWOficial" target="_blank">
                     <li>
                     <img class="footer-icons" src="/icons/Social Media/Twitter.svg" alt="">
                     </li>
+                </a>
+                <a href="https://www.tiktok.com/@bancowoficial" target="_blank">
                     <li>
                     <img class="footer-icons" src="/icons/Social Media/Tik Tok.svg" alt="">
                     </li>
+                </a>
+                <a href="https://www.youtube.com/@BancoWOficial" target="_blank">
                     <li>
                     <img class="footer-icons" src="/icons/Social Media/Youtube.svg" alt="">
                     </li>
+                </a>
                 </ul>
                 </div>
             </div>

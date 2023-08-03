@@ -1,0 +1,277 @@
+@use './src/global.scss' as c;
+
+//Mixins
+
+@mixin box_controls($gp: 18px, $w: 144.516px, $h: 120px, $p: 13px 25px 0 25px, $f: 13px) {
+    color: c.$gray-2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: $w;
+    height: $h;
+    gap: $gp;
+    border-radius: 5.385px;
+    background: #FFF;
+    padding: $p;
+    box-shadow: 4.48753023147583px 6.282541751861572px 26.925180435180664px 0px rgba(159, 102, 219, 0.18);
+    text-align: center;
+    line-height: normal;
+    font-size: $f;
+    font-family: c.$font-bariol-regular;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h3 {
+    display: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 352px;
+    background-size: auto 352px;
+    background-image: url(../../public/images/hero_circles.webp), url(../../public/images/hero_circles.webp);
+    background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+        &-buttons {
+            display: flex;
+            justify-content: right;
+            gap: 14.72px;   
+            height: 17%;
+        }    
+        &-buttons a {
+            transition: all 0.2s;
+        }
+        &-buttons a:hover {
+            transform: scale(1.1);
+        }
+        &-Profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 4rem;
+        }
+        &-Profile img {
+            width: 160px;
+        }
+        &-menu {
+            position: absolute;
+            top: 81%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        &-border {
+            border-right: 0.5px solid c.$orange-300;
+        }
+        &-border p {
+            display: none;
+            white-space: nowrap;
+        }
+        &-other p {
+            display: none;
+        }
+        &-menu ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+        }
+}
+
+h2 {
+    font-size: 30px;
+    font-family: c.$font-geomanist-bold;
+    color: c.$gray-2;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+ .Hero-menu li {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.Hero-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: c.$font-geomanist-regular;
+    font-size: 16px;
+    color: c.$orange-300;
+    text-decoration: none;
+    gap: 1rem;
+    text-align: center;
+}
+
+// Buttons
+
+.Buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 35px 0 35px;
+    margin-top: 2rem;
+
+        &-name {
+            display: flex;
+            align-items: center;
+            margin: 4rem 35px 0 35px;
+        }
+}
+
+
+@media only screen and (min-width: 780px){
+
+}
+
+
+@media only screen and (min-width: 1024px){
+    //Header
+    .Hero {
+
+        &-buttons {
+            gap: 27px;
+            margin: 30px 50px 0 0;
+        }
+        &-buttons svg{
+            width: 30px;
+            height: 30px;
+        }
+        &-Profile {
+            padding-bottom: 10rem;
+        }
+        &-Profile h3{
+            color: #FFF;
+            text-align: center;
+            font-family: c.$font-geomanist-bold;
+            font-weight: 700;
+            font-size: 45px;  
+        }
+        &-Profile img{
+            width: 292px;
+            height: 292px;
+        }
+        &-menu {
+            position: absolute;
+            top: 67%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        &-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-border p {
+            display: block;
+        }
+        &-other p {
+            display: block;
+        }
+        &-other {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-menu ul {
+            width: 880px;
+            height: 145px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+        } 
+        &-other svg,
+        &-border svg {
+            width: 33px;
+            height: 33px;
+        }
+    }
+
+    .Hero-menu li {
+        width: 145px;
+        height: 80px;
+        list-style: none;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Bg-animation {
+        height: 471px;
+        background-size: auto 863px;
+        background-image: url(/public/images/hero-circles-desktop.webp), url(/public/images/hero-circles-desktop.webp);
+        background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .Buttons {
+        &-name {
+            margin: 8rem 35px 0 80px;  
+        }
+}
+
+}
+
+    //El resto
+
+
+
+@media only screen and (min-width: 1440px){
+    .Buttons-up {
+        margin: 0;
+        gap: 0rem;
+    }
+
+    .Button-info {
+        font-size: 30px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+
+    .Buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 100px 0 100px;
+    }
+}
