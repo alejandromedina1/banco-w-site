@@ -1,0 +1,241 @@
+@use './src/global.scss' as c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 352px;
+    background-size: auto 352px;
+    background-image: url(../../public/images/hero_circles.webp), url(../../public/images/hero_circles.webp);
+    background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+    &-buttons {
+        display: flex;
+        justify-content: right;
+        gap: 14.72px;
+        height: 17%;
+    }
+
+    &-Profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    &-Profile img {
+        width: 160px;
+    }
+
+    &-menu {
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &-border {
+        border-right: 0.5px solid c.$orange-300;
+    }
+}
+
+.Hero-menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+}
+
+.Hero-menu li {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main {
+    margin-top: 2.14375em;
+    margin: 2.14375em 1.46875em;
+    display: flex;
+    min-width: 320px;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &__title {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.7em;
+        margin-bottom: 2.1em;
+
+        & p{
+            color: c.$cyan-500;
+            &:hover{
+                cursor: pointer;
+                color: c.$orange-400;
+            }
+        }
+    }
+
+    &__title h1 {
+        font-size: 1.875rem;
+        color: c.$gray-2;
+        font-family: 'Geomanist';
+        font-weight: 700;
+        margin: 0;
+        
+
+    }
+
+    &__subtitle {
+        color: c.$cyan-500;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin: 1.5625em 0;
+
+    }
+
+
+
+    &__balance {
+        &-card {
+            border-radius: 6.282px;
+            background: #FFF;
+            box-shadow: 5.23528528213501px 7.329399585723877px 31.411714553833008px 0px rgba(159, 102, 219, 0.18);
+            padding: 15px;
+            font-family: 'Bariol';
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: c.$gray-2;
+            font-size: 16px;
+            margin-bottom: 30px;
+
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 0.625em;
+
+                
+            }
+
+            &-info-1,
+            &-info-2,
+            &-info-3,
+            &-mount {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-info-1,
+            &-info-2,
+            &-info-3 {
+                font-size: 0.8125rem;
+                margin-bottom: 0.625em;
+            }
+        }
+
+
+    }
+
+    &__graph {
+
+        &-card {
+            padding: 15px;
+            border-radius: 6.282px;
+            background: #FFF;
+            box-shadow: 5.235285758972168px 7.329400062561035px 31.41171646118164px 0px rgba(159, 102, 219, 0.18);
+            font-family: 'Bariol';
+            color: c.$gray-2;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            &-bars {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5625em;
+                height: 8.125em;
+                justify-content: center;
+
+
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    &-filled {
+
+                        
+                        width: 30px;
+                        border-radius: 6.282px;
+                        
+                        background: #000000;
+
+                    }
+
+
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+}
+
+
+.Content-table th .Content-table th, .Content-table td {
+    padding: 1rem 1.1rem !important;
+}   
+    
+
+
+@media screen and (min-width: 768px) {
+    .main {
+
+        padding: 0px 60px;
+
+        &__allSections{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+
+
+    }
+
+    
+
+
+}
