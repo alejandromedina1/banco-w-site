@@ -9,8 +9,9 @@ class InclusiveButton extends HTMLElement {
 
     connectedCallback() {
         this.render();
+        this.changeButton();
         this.overlayColor();
-        this.imprimirEstado();
+        this.buttonStatus();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -21,11 +22,11 @@ class InclusiveButton extends HTMLElement {
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
-        <div id="overlay">
+        <div id="inclusive-overlay">
         </div>
         <nav class="inclusive-button">
-            <input type="checkbox" id="show-btn"">
-            <div class="options">
+            <input type="checkbox" id="show-inclusive-btn"">
+            <div class="inclusive-options">
                 <input type="checkbox" id="plus-button"">
                 <input type="checkbox" id="minus-button"">
                 <input type="checkbox" id="contrast-button"">
@@ -54,10 +55,10 @@ class InclusiveButton extends HTMLElement {
                 
                 
             </div>
-            <div class="show-btn">
+            <div class="show-inclusive-btn">
                 
-                <label for="show-btn">
-                    <img class="show-button" src="../../public/icons/inclusive.svg" alt="">
+                <label for="show-inclusive-btn">
+                    <img class="show-inclusive-button" src="../../public/icons/inclusive.svg" alt="">
                     <span class="label-hidden">Botón inclusivo</span>
                 </label>
                 
@@ -67,9 +68,9 @@ class InclusiveButton extends HTMLElement {
     }
 
     overlayColor() {
-        let checkbox = document.getElementById('show-btn');
-        let overlay = document.getElementById('overlay');
-
+        let checkbox = document.getElementById('show-inclusive-btn');
+        let overlay = document.getElementById('inclusive-overlay');
+        let inclusiveIcon = document.querySelector('.show-inclusive-button');
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 overlay.style.display = 'block';
@@ -79,16 +80,38 @@ class InclusiveButton extends HTMLElement {
         })
     }
 
-    imprimirEstado() {
-        let plusStatus = document.getElementById('plus-button')
-        let minusStatus = document.getElementById('minus-button')
-        let contrastStatus = document.getElementById('plus-button')
-        let darkStatus = document.getElementById('dark-button')
+    buttonStatus() {
+        let buttonArray = [];
+        buttonArray[0] = document.getElementById('plus-button')
+        buttonArray[1] = document.getElementById('minus-button')
+        buttonArray[2] = document.getElementById('contrast-button')
+        buttonArray[3] = document.getElementById('dark-button')
 
-        let inclusiveIcon = document.querySelector('.show-button');
-        if(document.getElementById('plus-button').checked) {
-            console.log('aaaa')
-        }
+        let inclusiveIcon = document.querySelector('.show-inclusive-button');
+        
+        buttonArray.forEach((element, index) => {
+            element.addEventListener('change', function() {
+                    inclusiveIcon.setAttribute('src', "../../public/icons/check.svg")
+                    console.log(element.id)
+            })
+        });
+    }
+
+    changeButton() {
+        let checkbox = document.getElementById('show-inclusive-btn');
+        let InclusiveButton = document.querySelector('inclusive-button');
+        let helpButton = document.querySelector('help-button');
+        let lastClickTime = 0;
+
+        checkbox.addEventListener('change', function() {
+
+            const currentTime = new Date().getTime();
+            if (currentTime - lastClickTime < 300) {
+                InclusiveButton.style.display = 'none';
+                helpButton.style.display= 'block';
+            }
+            lastClickTime = currentTime;
+        })
     }
 }
 
