@@ -137,8 +137,9 @@ div.input-icons {
     width: 100%;
 }
 
-.input-fields {
+input.input-fields {
     width: 100%;
+    padding-left: 40px;
 }
 
 button#submit-button {
@@ -166,4 +167,28 @@ button#submit-button:active {
     background-color: $cyan-100;
     color: $cyan-500;
     border: 0;
+}
+
+
+.input-group{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+}
+
+#icon-toggle{
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+}
+
+i{
+    color: #cdcdcd;
 }
