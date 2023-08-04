@@ -218,6 +218,10 @@ h3 {
     background-size: cover;
     background-position: center center;
 
+    & li {
+        text-decoration: none;
+    }
+
 
     & .titles-section {
         padding-left: 5.13%;
@@ -265,6 +269,9 @@ h3 {
 
                 & li {
                     list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0;
                 }
 
                 & img {
@@ -654,7 +661,7 @@ h3 {
             display: flex;
             flex-wrap: wrap;
             gap: 4%;
-            margin-top: -0.5rem;
+            margin-top: -20%;
             margin-bottom: -0.4375rem;
 
             & .each-card {
@@ -804,7 +811,7 @@ h3 {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 4%;
-                margin-top: -3rem;
+                margin-top: -20%;
                 margin-bottom: -0.4375rem;
 
                 & .each-card {
@@ -960,6 +967,10 @@ h3 {
         background-size: cover;
         background-position: center center;
         margin-bottom: 5rem;
+
+        & li {
+            text-decoration: none;
+        }
 
         & .titles-section {
             padding-left: 16.88%;
@@ -1615,6 +1626,10 @@ h3 {
         background-size: cover;
         background-position: center center;
         margin-bottom: 5rem;
+
+        & li {
+            text-decoration: none;
+        }
 
         & .titles-section {
             padding-left: 16.88%;
