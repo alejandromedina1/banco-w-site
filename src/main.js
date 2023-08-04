@@ -99,3 +99,4 @@ function setPositionByIndex() {
     prevTranslate = currentTranslate;
     setSliderPosition();
 }
+
