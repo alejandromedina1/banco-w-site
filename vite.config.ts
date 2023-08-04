@@ -17,7 +17,9 @@ export default defineConfig({
                 "config_profile": resolve(root, 'config_profile','index.html'),
                 "edit_profile": resolve(root, 'edit_profile','index.html'),
                 "profile": resolve(root, 'profile','index.html'),
-                "cita_profile": resolve(root, 'cita_profile','index.html'),
+                "cita-profile": resolve(root, 'cita_profile','index.html'),
+                "productos2_profile": resolve(root, 'productos2_profile','index.html'),
+                "productos3_profile": resolve(root, 'productos3_profile','index.html'),
             }
         },
         target: 'esnext'
