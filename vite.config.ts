@@ -14,9 +14,9 @@ export default defineConfig({
                 main: resolve(root, 'index.html'),
                 "login": resolve(root, 'login', 'index.html'),
                 "sign-up": resolve(root, 'sign-up', 'index.html'),
-                //"config-profile": resolve(root, 'config-profile','index.html'),
-                //"edit-profile": resolve(root, 'edit-profile','index.html'),
-                //"profile": resolve(root, 'profile','index.html'),
+                "config-profile": resolve(root, 'config-profile','index.html'),
+                "edit-profile": resolve(root, 'edit-profile','index.html'),
+                "profile": resolve(root, 'profile','index.html'),
             }
         },
         target: 'esnext'

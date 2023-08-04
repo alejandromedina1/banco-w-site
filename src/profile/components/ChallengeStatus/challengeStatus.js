@@ -1,3 +1,5 @@
+import "./challengeStatus.scss";
+
 class ChallengeStatus extends HTMLElement {
     constructor() {
         super();

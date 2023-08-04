@@ -1,3 +1,5 @@
+import "./logros.scss";
+
 class LogrosProfile extends HTMLElement {
     constructor() {
         super();

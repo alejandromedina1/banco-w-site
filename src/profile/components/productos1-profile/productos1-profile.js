@@ -1,3 +1,4 @@
+import "./productos.scss";
 class Producto1Profile extends HTMLElement {
     constructor() {
         super();
