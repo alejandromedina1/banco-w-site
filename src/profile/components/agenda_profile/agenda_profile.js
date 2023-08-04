@@ -74,6 +74,19 @@ class AgendaProfile extends HTMLElement {
         renderCalendar(); // calling renderCalendar function
       });
     });
+
+    // Escuchamos el evento click del botón "Mostrar Componente"
+document.getElementById('mostrarComponente').addEventListener('click', function() {
+  // Mostramos el componente oculto cambiando su estilo de "display" a "block"
+  document.getElementById('componenteOculto').style.display = 'block';
+});
+
+// Escuchamos el evento click del botón "Cerrar"
+document.getElementById('cerrarComponente').addEventListener('click', function() {
+  // Ocultamos el componente cambiando su estilo de "display" a "none"
+  document.getElementById('componenteOculto').style.display = 'none';
+});
+
   }
 
   render() {
@@ -112,9 +125,9 @@ class AgendaProfile extends HTMLElement {
     </div>
 
     <div class="Calendar-button">
-        <a href="./agendar-cita/agendar.html">
-            <button>Agendar cita</button>
-        </a>
+      <a href="/cita_profile/">
+        <button id="mostrarComponente">Agendar cita</button>
+      </a>    
     </div>
 
     <section class="Cards-Calendar">
