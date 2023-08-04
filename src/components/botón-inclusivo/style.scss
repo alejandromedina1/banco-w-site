@@ -9,7 +9,7 @@
     font-size: 16px;
 }
 
-#show-btn {
+#show-inclusive-btn {
     display: none;
 }
 
@@ -67,7 +67,7 @@
     right: 50px;
 }
 
-.options label a {
+.inclusive-options label a {
     display: block;
     text-decoration: none;
     background: white;
@@ -105,7 +105,7 @@
     opacity: 1;
 }
 
-#show-btn:checked~ .show-btn span {
+#show-inclusive-btn:checked~ .show-inclusive-btn span {
     opacity: 0;
 }
 
@@ -168,11 +168,11 @@
     background-color: $cyan-500;
 }
 
-#show-btn:checked~ .options label span {
+#show-inclusive-btn:checked~ .inclusive-options label span {
     opacity: 1;
 }
 
-.show-btn img{
+.show-inclusive-btn img{
     background-color: $cyan-500;
     width: 97px;
     height: 97px;
@@ -183,18 +183,18 @@
     cursor: pointer;
 }
 
-.options div a:hover {
+.inclusive-options div a:hover {
     background-color: $cyan-500;
 
 }
 
-.options label a {
+.inclusive-options label a {
     opacity: 0;
     visibility: hidden;
     position: relative;
 }
 
-#show-btn:checked~ .options label a {
+#show-inclusive-btn:checked~ .inclusive-options label a {
     opacity: 1;
     visibility: visible;
 }
@@ -212,16 +212,16 @@
     border-radius: 20px;
 }
 
-.show-button:hover + .label-hidden {
+.show-inclusive-button:hover + .label-hidden {
     background-color: $cyan-500;
     opacity: 1;
 }
 
-#show-btn:checked~ .show-btn span {
+#show-inclusive-btn:checked~ .show-btn span {
     opacity: 0;
 }
 
-#overlay{
+#inclusive-overlay{
     display: none;
     position: fixed;
     top: 0;
@@ -277,7 +277,7 @@
         background-color: transparent;
     }
 
-    .options {
+    .inclusive-options {
         background-color: white;
         width:75px;
         border-radius: 50px;
@@ -285,7 +285,7 @@
         opacity: 0;
     }
 
-    .options label span {
+    .inclusive-options label span {
         text-align: center;
     }
 
@@ -295,12 +295,12 @@
         align-items: center;
     }
 
-    .show-btn {
+    .show-inclusive-btn {
         position: absolute;
         bottom: -40px;
     }
 
-    #show-btn:checked~ .options {
+    #show-inclusive-btn:checked~ .inclusive-options {
         opacity: 1;
     }
 }
