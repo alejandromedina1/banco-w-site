@@ -141,4 +141,4 @@ class cardIcon extends HTMLElement {
 window.customElements.define("card-icon", cardIcon)
 
 
-export default Cards
+export default cardArticle

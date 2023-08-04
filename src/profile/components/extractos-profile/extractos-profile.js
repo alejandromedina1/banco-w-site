@@ -1,3 +1,5 @@
+import "./extractos.scss";
+
 class ExtractosProfile extends HTMLElement {
     constructor() {
         super();
