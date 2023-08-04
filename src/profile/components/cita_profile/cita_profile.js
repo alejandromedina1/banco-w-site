@@ -1,4 +1,4 @@
-import "./cita-profile.scss"
+import "./cita_profile.scss"
 
 class CitaProfile extends HTMLElement {
   constructor() {
