@@ -47,28 +47,110 @@ $indigo-300: #727AC5;
 $indigo-200: #A1A7D9;
 $indigo-100: #D0D3EC;
 
+
+
 //Fonts
 $gray-1: #676767;
 $gray-2: #ACACAC;
 $gray-3: #EFEFEF;
 
-$font-path: './fonts/';
+//Fonts
 
-$font-bariol-bold: 'Bariol Bold', sans-serif;
-$font-bariol-bold-italic: 'Bariol Bold Italic', sans-serif;
-$font-bariol-light: 'Bariol Light', sans-serif;
-$font-bariol-light-italic: 'Bariol Light Italic', sans-serif;
-$font-bariol-regular: 'Bariol Regular', sans-serif;
-$font-bariol-regular-italic: 'Bariol Regular Italic', sans-serif;
-$font-bariol-thin: 'Bariol Thin', sans-serif;
-$font-bariol-thin-italic: 'Bariol Thin Italic', sans-serif;
-$font-geomanist-black: 'Geomanist Black', sans-serif;
-$font-geomanist-bold: 'Geomanist Bold', sans-serif;
-$font-geomanist-book: 'Geomanist Book', sans-serif;
-$font-geomanist-extra-light: 'Geomanist Extra Light', sans-serif;
-$font-geomanist-light: 'Geomanist Light', sans-serif;
-$font-geomanist-medium: 'Geomanist Medium', sans-serif;
-$font-geomanist-regular: 'Geomanist Regular', sans-serif;
-$font-geomanist-thin: 'Geomanist Thin', sans-serif;
-$font-geomanist-ultra: 'Geomanist Ultra', sans-serif;
+$font-path: "./fonts/";
+
+@font-face {
+    font-family: "font-bariol-bold";
+    src: url("#{$font-path}bariol_bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-bariol-bold-italic";
+    src: url("#{$font-path}bariol_bold_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "$font-bariol-light";
+    src: url("#{$font-path}bariol_light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-bariol-light-italic";
+    src: url("#{$font-path}bariol_light_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-bariol-regular";
+    src: url("#{$font-path}bariol_regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-bariol-regular-italic";
+    src: url("#{$font-path}bariol_regular_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-bariol-thin-italic";
+    src: url("#{$font-path}bariol_thin_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-bariol-thin";
+    src: url("#{$font-path}bariol_thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-black";
+    src: url("#{$font-path}Geomanist-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-bold";
+    src: url("#{$font-path}Geomanist-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-book";
+    src: url("#{$font-path}Geomanist-Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-extra-light";
+    src: url("#{$font-path}Geomanist-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-light";
+    src: url("#{$font-path}Geomanist-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-medium";
+    src: url("#{$font-path}Geomanist-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-regular";
+    src: url("#{$font-path}Geomanist-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-thin";
+    src: url("#{$font-path}Geomanist-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "font-geomanist-ultra";
+    src: url("#{$font-path}Geomanist-Ultra.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+//fonts styles
+
+$font: 24px;
 

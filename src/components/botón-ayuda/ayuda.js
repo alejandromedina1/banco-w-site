@@ -1,5 +1,5 @@
 class HelpButton extends HTMLElement {
-    contructor() {
+    constructor() {
         super()
     }
 
@@ -9,6 +9,8 @@ class HelpButton extends HTMLElement {
 
     connectedCallback() {
         this.render();
+        this.overlayColor();
+        this.changeButton();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -18,42 +20,76 @@ class HelpButton extends HTMLElement {
 
     render() {
         this.innerHTML = `
+        <link rel="stylesheet" href="./components/botón-ayuda/style.scss">
+        <div id="overlay">
+        </div>
         <nav class="help-button">
-            <input type="checkbox" id="show-btn">
-            <div class="options">
-                <div id="pqrs">
-                    <a href="#">
-                        <img src="../../public/icons/pqrs.svg" alt="">
-                    </a>
-                    <span class="pqrs-span">PQRS</span>
-                </div>
-                
-                <div id="tutorial">
-                    <a href="#"><img src="../../public/icons/tutorial.svg" alt=""></a>
-                    <span>Tutoriales</span>
+            <input type="checkbox" id="show-help-btn"">
+            <div class="help-options">
+                <div id="chat">
+                    <a href="#"><img src="../../public/icons/chat.svg" alt=""></a>
+                    <span>Chat</span>
                 </div>
 
                 <div id="asesoria">
                     <a href="#"><img src="../../public/icons/asesoria.svg" alt=""></a>
                     <span>Asesorías</span>
                 </div>
-                
-                <div id="chat">
-                    <a href="#"><img src="../../public/icons/chat.svg" alt=""></a>
-                    <span>Chat</span>
+
+                <div id="tutorial">
+                    <a href="#"><img src="../../public/icons/tutorial.svg" alt=""></a>
+                    <span>Tutoriales</span>
                 </div>
                 
-            </div>
-            <div class="show-btn">
+                <div id="pqrs">
+                    <a href="#">
+                        <img src="../../public/icons/pqrs.svg" alt="">
+                    </a>
+                    <span>PQRS</span>
+                </div>
                 
-                <label for="show-btn">
-                    <img class="show-button" src="../../public/icons/help.svg" alt="">
-                    <span class="label-hidden">Botón de ayuda</span>
+                
+            </div>
+            <div class="show-help-btn">
+                
+                <label for="show-help-btn">
+                    <img class="show-help-button" src="../../public/icons/help.svg" alt="">
+                    <span class="help-label-hidden">Botón de ayuda</span>
                 </label>
                 
             </div>
         </nav>
         `;
+    }
+
+    overlayColor() {
+        let checkbox = document.getElementById('show-help-btn');
+        let overlay = document.getElementById('overlay');
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                overlay.style.display = 'block';
+            } else {
+                overlay.style.display = 'none';
+            }
+        })
+    }
+
+    changeButton() {
+        let checkbox = document.getElementById('show-help-btn');
+        let helpButton = document.querySelector('help-button');
+        let inclusiveButton = document.querySelector('inclusive-button');
+        let lastClickTime = 0;
+
+        checkbox.addEventListener('change', function() {
+
+            const currentTime = new Date().getTime();
+            if (currentTime - lastClickTime < 300) {
+                helpButton.style.display = 'none';
+                inclusiveButton.style.display = 'block';
+            }
+            lastClickTime = currentTime;
+        })
     }
 }
 

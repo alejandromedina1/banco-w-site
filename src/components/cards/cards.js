@@ -68,7 +68,7 @@ class cardArticle extends HTMLElement {
                 <p class="card-text">${this.text}</p>
                 <div class="more">
                     <a href="${this.link}" class="link">${this.btn}</a>
-                    <img class="icon" src="./public/icons/arrow-right-purple.svg" alt="ícono para ir a buscar más artículos en el mismo formato">
+                    <img class="icon" src="/icons/arrow-right-purple.svg" alt="ícono para ir a buscar más artículos en el mismo formato">
                 </div>
             </div>
         </div>
@@ -141,4 +141,4 @@ class cardIcon extends HTMLElement {
 window.customElements.define("card-icon", cardIcon)
 
 
-export default Cards
+export default cardArticle

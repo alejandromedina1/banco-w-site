@@ -1,0 +1,113 @@
+@use './src/global.scss' as c;
+
+//Mixins
+
+@mixin box_controls($gp: 18px, $w: 144.516px, $h: 120px, $p: 13px 25px 0 25px, $f: 13px) {
+    color: c.$gray-2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: $w;
+    height: $h;
+    gap: $gp;
+    border-radius: 5.385px;
+    background: #FFF;
+    padding: $p;
+    box-shadow: 4.48753023147583px 6.282541751861572px 26.925180435180664px 0px rgba(159, 102, 219, 0.18);
+    text-align: center;
+    line-height: normal;
+    font-size: $f;
+    font-family: 'Bariol';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+.Product {
+    margin: 35px;
+}
+
+.Table {
+    margin: 35px;
+}
+
+.subtitle {
+    font-family: 'Bariol';
+    font-size: 18px;
+    color: c.$cyan-500;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 780px){
+
+}
+
+
+@media only screen and (min-width: 1024px){
+   //El resto
+
+    .Product,
+    .Table {
+        width: 50%;
+    }
+
+    .Product {
+        margin: 0 20px 20px 95px;
+    }
+
+    .Table {
+        margin: 0 95px 20px 20px;
+    }
+
+    .Info-Container {
+        display: flex;
+        margin-top: 3rem;
+
+        & h5 {
+            font-family: 'Bariol';
+            font-size: 30px;
+            color: c.$cyan-500;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+    .Buttons-up {
+        margin: 0;
+        gap: 0rem;
+    }
+
+    .Button-info {
+        font-size: 30px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+
+    .Buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 100px 0 100px;
+    }
+}
+
+
+

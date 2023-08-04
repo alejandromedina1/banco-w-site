@@ -1,2 +1,306 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "font-bariol-regular";
+    font-size: 16px;
+}
+
+#show-inclusive-btn {
+    display: none;
+}
+
+#plus-button {
+    display: none;
+}
+
+#plus-button:checked~ #plus a {
+    background-color: $cyan-500;
+}
+
+#plus-button:checked~ #plus img {
+    filter: saturate(0) brightness(3);
+}
+
+#minus-button {
+    display: none;
+}
+
+#minus-button:checked~ #minus img {
+    filter: saturate(0) brightness(3);
+}
+
+#minus-button:checked~ #minus a {
+    background-color: $cyan-500;
+}
+
+#contrast-button {
+    display: none;
+}
+
+#contrast-button:checked~ #contrast img {
+    filter: saturate(0) brightness(3);
+}
+
+#contrast-button:checked~ #contrast a {
+    background-color: $cyan-500;
+}
+
+#dark-button {
+    display: none;
+}
+
+#dark-button:checked~ #dark img {
+    filter: saturate(0) brightness(3);
+}
+
+#dark-button:checked~ #dark a {
+    background-color: $cyan-500;
+}
+
+.inclusive-button {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+}
+
+.inclusive-options label a {
+    display: block;
+    text-decoration: none;
+    background: white;
+    width: 61px;
+    height: 61px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+#dark {
+    position: absolute;
+    bottom: -40px;
+    right: 130px;
+}
+
+#dark span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 135px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $cyan-500;
+}
+
+#dark a img:hover + .plus span{
+    background-color: $cyan-500;
+    opacity: 1;
+}
+
+#show-inclusive-btn:checked~ .show-inclusive-btn span {
+    opacity: 0;
+}
+
+#contrast {
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+}
+
+#contrast span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 110px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $cyan-500;
+}
+
+#minus {
+    position: absolute;
+    bottom: 110px;
+    right: 70px;
+}
+
+#minus span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 160px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $cyan-500;
+}
+
+#plus {
+    position: absolute;
+    bottom: 115px;
+    right: -20px;
+}
+#plus span{
+    margin-left: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+    width: 160px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $cyan-500;
+}
+
+#show-inclusive-btn:checked~ .inclusive-options label span {
+    opacity: 1;
+}
+
+.show-inclusive-btn img{
+    background-color: $cyan-500;
+    width: 97px;
+    height: 97px;
+    line-height: 55px;
+    padding: 20px 14px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inclusive-options div a:hover {
+    background-color: $cyan-500;
+
+}
+
+.inclusive-options label a {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+}
+
+#show-inclusive-btn:checked~ .inclusive-options label a {
+    opacity: 1;
+    visibility: visible;
+}
+
+.label-hidden {
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    width: 160px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.show-inclusive-button:hover + .label-hidden {
+    background-color: $cyan-500;
+    opacity: 1;
+}
+
+#show-inclusive-btn:checked~ .show-btn span {
+    opacity: 0;
+}
+
+#inclusive-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+    #dark {
+        position: inherit;
+    }
+
+    #dark span{
+        bottom: 80px;
+        right: 70px;
+        width: 150px;
+        background-color: transparent;
+    }
+
+    #contrast {
+        position: inherit;
+    }
+
+    #contrast span {
+        bottom: 145px;
+        right: 80px;
+        background-color: transparent;
+    }
+
+    #minus {
+        position: inherit;
+    }
+
+    #minus span {
+        bottom: 205px;
+        right: 80px;
+        width: 160px;
+        background-color: transparent;
+    }
+
+    #plus {
+        position: inherit;
+    }
+    #plus span {
+        bottom: 265px;
+        right: 85px;
+        width: 160px;
+        background-color: transparent;
+    }
+
+    .inclusive-options {
+        background-color: white;
+        width:75px;
+        border-radius: 50px;
+        padding: 10px 7px 70px 7px;
+        opacity: 0;
+    }
+
+    .inclusive-options label span {
+        text-align: center;
+    }
+
+    .inclusive-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-inclusive-btn {
+        position: absolute;
+        bottom: -40px;
+    }
+
+    #show-inclusive-btn:checked~ .inclusive-options {
+        opacity: 1;
+    }
+}

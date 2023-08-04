@@ -1,0 +1,240 @@
+@use './src/global.scss' as c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 352px;
+    background-size: auto 352px;
+    background-image: url(../../public/images/hero_circles.webp), url(../../public/images/hero_circles.webp);
+    background-position: calc(-290px - var(--scrollY)), calc(100% + 347px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+    &-buttons {
+        display: flex;
+        justify-content: right;
+        gap: 14.72px;
+        height: 17%;
+    }
+
+    &-Profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    &-Profile img {
+        width: 160px;
+    }
+
+    &-menu {
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &-border {
+        border-right: 0.5px solid c.$orange-300;
+    }
+}
+
+.Hero-menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+}
+
+.Hero-menu li {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main {
+    margin-top: 2.14375em;
+    margin: 2.14375em 1.46875em;
+    display: flex;
+    min-width: 320px;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &__title {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.7em;
+        margin-bottom: 2.1em;
+    }
+
+    &__title h1 {
+        font-size: 1.875rem;
+        color: c.$gray-2;
+        font-family: 'Geomanist';
+        font-weight: 700;
+        margin: 0;
+
+    }
+
+    &__subtitle {
+        color: c.$cyan-500;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        font-weight: 400;
+
+    }
+
+    &__form {
+        margin: 0.4em 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        margin-top: 0.6875em;
+        color: c.$gray-1;
+        font-family: Bariol;
+        font-size: 0.8125rem;
+        font-weight: 400;
+    }
+
+    &__select {
+        font-family: 'Bariol';
+        color: c.$gray-2;
+        width: 100%;
+        min-height: 32px;
+        border-radius: 3px;
+        border: 1px solid c.$gray-2;
+
+        /*background-color: #FFF;*/
+
+        &:focus {
+            border: 1.93px solid c.$cyan-500;
+            box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+        }
+    }
+
+
+
+    &__inputs {
+        margin-bottom: 40px;
+    }
+
+    &__submit-secondary {
+        font-family: 'Bariol';
+        display: flex;
+        width: 100%;
+        min-height: 30px;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        border-radius: 4.23px;
+        border: 1px solid c.$gray-2;
+        background: #FFF;
+        color: c.$gray-2;
+        margin-bottom: 15px;
+    }
+
+    &__submit-primary {
+        font-family: 'Bariol';
+        display: flex;
+        width: 100%;
+        min-height: 30px;
+        border: none;
+        border-radius: 4.23px;
+        background: c.$cyan-500;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+
+    }
+
+    &__certifications {
+        margin-top: 2.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button-container-extractos {
+        margin-top: 20px;
+    }
+
+    &__extracts {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+
+
+}
+
+button-duo-icon {
+    margin-bottom: 1.03125em;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+
+        padding: 0px 60px;
+
+        &__extracts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        &__certifications {
+            margin-top: 39px;
+            justify-content: center;
+            gap: 0px;
+        }
+
+        &__form {
+            width: 100%;
+        }
+
+        &__select {
+            height: 47px;
+        }
+
+        &__submit-secondary {
+            height: 47px;
+        }
+
+        &__submit-primary {
+
+            height: 47px;
+        }
+
+    }
+
+
+}

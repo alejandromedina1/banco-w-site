@@ -1,3 +1,5 @@
+import "./lastPost.scss"
+
 class LastPost extends HTMLElement {
     constructor() {
         super();

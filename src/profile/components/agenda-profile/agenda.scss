@@ -1,0 +1,415 @@
+@use './src/global.scss' as c;
+
+//Mixins
+
+@mixin box_controls($gp: 18px, $w: 144.516px, $h: 120px, $p: 13px 25px 0 25px, $f: 13px) {
+    color: c.$gray-2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: $w;
+    height: $h;
+    gap: $gp;
+    border-radius: 5.385px;
+    background: #FFF;
+    padding: $p;
+    box-shadow: 4.48753023147583px 6.282541751861572px 26.925180435180664px 0px rgba(159, 102, 219, 0.18);
+    text-align: center;
+    line-height: normal;
+    font-size: $f;
+    font-family: 'Bariol';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+
+//Calendar
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.wrapper{
+    max-width: 880px;
+    width: 100%;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 4.798332691192627px 6.7176666259765625px 28.789997100830078px 0px rgba(159, 102, 219, 0.18);
+  }
+  .wrapper .head{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  .head .icons{
+    display: flex;
+  }
+  .head .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  .head .icons span:hover{
+    background: #f2f2f2;
+  }
+  .head .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+    font-family: 'Bariol';
+    color: c.$cyan-500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: c.$gray-1;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    font-family: 'Bariol';
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+    color: c.$gray-2;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    font-family: 'Bariol';
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: c.$gray-1;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: c.$cyan-100;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+
+  .title-calendar {
+    font-size: 18px;
+    font-family: 'Bariol';
+    color: c.$cyan-500;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 30px;
+}
+
+.Calendar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0px 27px;
+
+    & button{
+        width: 100%;
+        max-width: 520px;
+        cursor: pointer;
+        border: none;
+        border-radius: 7px;
+        background: var(--acuamarina-500, #00B1BB);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px 60px;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 'Bariol';
+        font-size: 13px; 
+        transition: all 0.2s;
+    }
+    & button:hover {
+        background: #fff;
+        border: 0.5px solid c.$cyan-500;
+        color: c.$cyan-500;
+        transition: all 0.2s;
+    }
+}
+
+.Cards-Calendar {
+    margin-top: 5rem;
+    padding: 0 20px;
+
+    & article {
+        border-radius: 5.758px;
+        background: #FFF;
+        box-shadow: 4.798332691192627px 6.7176666259765625px 28.789997100830078px 0px rgba(159, 102, 219, 0.18);
+        padding: 15px 26px;
+        margin-bottom: 1.5rem;
+    }
+    & div {
+        display: flex;
+    }
+    & h6 {
+        font-size: 16px;
+        font-family: 'Bariol';
+        color: c.$gray-2;
+    }
+    & p {
+        font-size: 14.5px;
+        font-family: 'Bariol';
+        color: c.$gray-2;
+        width: 69%;
+    }
+
+    & div {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 1rem;
+    }
+}
+
+.Button-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & button {
+        border: none;
+        border-radius: 3.993px;
+        background: var(--acuamarina-500, #00B1BB);
+        font-size: 13px;
+        font-family: 'Bariol';
+        color: #FFF;
+        margin-top: 2rem;
+        padding: 6px 25px;
+        transition: all 0.2s;
+    }
+    & button:hover {
+        background: #fff;
+        border: 0.5px solid c.$cyan-500;
+        color: c.$cyan-500;
+        transition: all 0.2s;
+    }
+}
+
+.Title-msg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+last-post {
+   margin: 0 20px; 
+}
+
+.main {
+    &__post{
+        border-top: 1px solid c.$cyan-500;
+        padding-top: 15px;
+        margin: 50px 20px 0 20px;
+    }
+    &__subtitle {
+        color: c.$cyan-500;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 780px){
+
+}
+
+
+@media only screen and (min-width: 1024px){
+    //Header
+    .Hero {
+
+        &-buttons {
+            gap: 27px;
+            margin: 30px 50px 0 0;
+        }
+        &-buttons svg{
+            width: 30px;
+            height: 30px;
+        }
+        &-Profile {
+            padding-bottom: 10rem;
+        }
+        &-Profile h3{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Geomanist';
+            font-weight: 700;
+            font-size: 45px;  
+        }
+        &-Profile img{
+            width: 292px;
+            height: 292px;
+        }
+        &-menu {
+            position: absolute;
+            top: 67%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        &-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-border p {
+            display: block;
+        }
+        &-other p {
+            display: block;
+        }
+        &-other {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-menu ul {
+            width: 880px;
+            height: 145px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 1.9545453786849976px 2.736363649368286px 11.727272987365723px 0px rgba(255, 105, 0, 0.15);
+        } 
+        &-other svg,
+        &-border svg {
+            width: 33px;
+            height: 33px;
+        }
+    }
+
+    .Hero-menu li {
+        width: 145px;
+        height: 80px;
+        list-style: none;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Bg-animation {
+        height: 471px;
+        background-size: auto 863px;
+        background-image: url(/public/images/hero-circles-desktop.webp), url(/public/images/hero-circles-desktop.webp);
+        background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
+        background-repeat: no-repeat;
+    }
+    
+    //El resto
+    .title-calendar {
+        margin-left: 80px;
+        font-size: 25px;
+        font-family: 'Geomanist';
+    }
+
+    .Calendar-button {
+        margin-top: 4rem;
+    
+        & button{
+            padding: 10px 140px;
+            font-size: 18px;
+        }
+    }
+
+    .Cards-Calendar {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0 80px;
+
+
+        & article {
+            flex: 1;
+        }
+    }
+
+    .main {
+    &__post{
+        border-top: 1px solid c.$cyan-500;
+        padding-top: 15px;
+        margin: 50px 80px 0 80px;
+    }
+}
+
+}
+    
+@media only screen and (min-width: 1440px){
+    .Buttons-up {
+        margin: 0;
+        gap: 0rem;
+    }
+
+    .Button-info {
+        font-size: 30px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+
+    .Buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 100px 0 100px;
+    }
+}
+
+

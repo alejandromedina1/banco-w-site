@@ -12,133 +12,168 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
     <!--Scss-->
-    <link rel="stylesheet" href="./style.scss">
 </head>
 
 <body>
-    <div class="container-products">
-        <div class="dropdown ">
-            <button class="btn btn-secondary dropdown-toggle dropdown-products" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Escoge
+    <div class="container mt-4">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ahorro
             </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Ahorro</a></li>
-                <li><a class="dropdown-item" href="#">Crédito</a></li>
-                <li><a class="dropdown-item" href="#">Inversión</a></li>
-                <li><a class="dropdown-item" href="#">Canales</a></li>
-                <li><a class="dropdown-item" href="#">Giros Internacionales</a></li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-options">
+                <li><a class="dropdown-item" href="#" data-value="opcion1">Ahorro</a></li>
+                <li><a class="dropdown-item" href="#" data-value="opcion2">Crédito</a></li>
+                <li><a class="dropdown-item" href="#" data-value="opcion3">Inversión</a></li>
+                <li><a class="dropdown-item" href="#" data-value="opcion4">Canales</a></li>
+                <li><a class="dropdown-item" href="#" data-value="opcion5">Giros Internacionales</a></li>
             </ul>
         </div>
-        <div class="info-product">
-            <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
-                est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.</p>
-            <article class="description-product">
-                <img src="./public/images/viñetas-products-mobile.webp" alt="viñetas" class="asterisks-mobile">
-                <div class="description-product_text">
-                    <p class="body2">Puedes abrir el depósito de bajo monto sin acercarte a una oficina en pocos
-                        minutos.
-                    </p>
-                    <p class="body2">Puedes mantener un saldo mensual disponible máximo de ocho (8) SMMLV.</p>
-                    <p class="body2">Puedes retirar en el mes hasta ocho (8) SMMLV.</p>
-                </div>
-            </article>
-            <img src="./public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito"
-                class="image-ref-product">
-        </div>
-    </div>
 
-    <section id="product_similar">
-        <article id="container_products">
-
-        
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <div id="container_product_select">
-                        <img class="product_selected_img" src="./Images/credito.png">
-                        <div class="product_selected_text">
-                            <h5>Créditos</h5>
-                            <h4>Consigue lo que deseas y necesitas</h4>
-                            <ul class="list_product">
-                                <li class="body_1">Créditos para negocios e independientes</li>
-                                <li class="body_1"> Yo construyo </li>
-                                <li class="body_1"> Gotahorro </li>
-                                <li class="body_1"> Libranza y vehiculos </li>
-                                <li class="body_1"> Inmueble productivo </li>
+        <div id="info-container" class="mt-4">
+            <div id="opcion1-info" class="opcion-info">
+                <div class="info-product">
+                    <div class="info-product_text">
+                        <h1>Ahorro</h1>
+                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                            molestie, dictum
+                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                            lacus.</p>
+                        <article class="description-product">
+                            <ul class="description-product_text">
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                    bajo monto sin
+                                    acercarte a una oficina en pocos minutos.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                    mensual disponible
+                                    máximo de ocho (8) SMMLV.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                    ocho (8) SMMLV.
+                                </li>
                             </ul>
-                            <button class="btn btn_icon btn_medium btn_medium_active text_button_small">Saber más <i
-                                    class="bi bi-arrow-right right"></i>
-                            </button>
-                        </div>
+                        </article>
+                        <a href="" class="btn-desk">Conoce más</a>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                    <div id="container_product_select">
-                        <img class="product_selected_img" src="./Images/seguros.png">
-                        <div class="product_selected_text">
-                            <h5>Seguros</h5>
-                            <h4>Nos adaptamos a tus necesidades </h4>
-                            <ul class="list_product">
-                                <li class="body_1">Soy Vida</li>
-                                <li class="body_1">Incendio y Terremoto</li>
-                                <li class="body_1">Deudores Microcrédito</li>
-                                <li class="body_1">Deudores Libranza</li>
-                                <li class="body_1">Soy Previsión Exequial</li>
-                            </ul>
-                            <button class="btn btn_icon btn_medium btn_medium_active text_button_small">Saber más <i
-                                    class="bi bi-arrow-right right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                    <div id="container_product_select">
-                        <img class="product_selected_img" src="./Images/ahorros.png">
-                        <div class="product_selected_text">
-                            <h5>Ahorros</h5>
-                            <h4>Consigue lo que deseas y necesitas</h4>
-                            <ul class="list_product">
-                                <li class="body_1">Cuenta de Ahorro</li>
-                                <li class="body_1">CDT</li>
-                                <li class="body_1">Depósito de bajo monto</li>
-                            </ul>
-                            <button class="btn btn_icon btn_medium btn_medium_active text_button_small">Saber más <i
-                                    class="bi bi-arrow-right right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab"
-                    tabindex="0">
-                    <div id="container_product_select">
-                        <img class="product_selected_img" src="./Images/servicios.png">
-                        <div class="product_selected_text">
-                            <h5>Servicios</h5>
-                            <h4>Consigue lo que deseas y necesitas</h4>
-                            <ul class="list_product">
-                                <li class="body_1">Convenio de recaudo</li>
-                                <li class="body_1">Remesas</li>
-                                <li class="body_1">Giros</li>
-                            </ul>
-                            <button class="btn btn_icon btn_medium btn_medium_active text_button_small">Saber más <i
-                                    class="bi bi-arrow-right right"></i>
-                            </button>
-                        </div>
-                    </div>
+                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito"
+                        class="image-ref-product">
                 </div>
             </div>
-        
-        </article>
-    </section>
-
+            <div id="opcion2-info" class="opcion-info">
+                <div class="info-product">
+                    <div class="info-product_text">
+                        <h1>Crédito</h1>
+                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                            molestie, dictum
+                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                            lacus.</p>
+                        <article class="description-product">
+                            <ul class="description-product_text">
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                    bajo monto sin
+                                    acercarte a una oficina en pocos minutos.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                    mensual disponible
+                                    máximo de ocho (8) SMMLV.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                    ocho (8) SMMLV.
+                                </li>
+                            </ul>
+                        </article>
+                        <a href="" class="btn-desk">Conoce más</a>
+                    </div>
+                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito"
+                        class="image-ref-product">
+                </div>
+            </div>
+            <div id="opcion3-info" class="opcion-info">
+                <div class="info-product">
+                    <div class="info-product_text">
+                        <h1>Inversión</h1>
+                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                            molestie, dictum
+                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                            lacus.</p>
+                        <article class="description-product">
+                            <ul class="description-product_text">
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                    bajo monto sin
+                                    acercarte a una oficina en pocos minutos.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                    mensual disponible
+                                    máximo de ocho (8) SMMLV.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                    ocho (8) SMMLV.
+                                </li>
+                            </ul>
+                        </article>
+                        <a href="" class="btn-desk">Conoce más</a>
+                    </div>
+                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito"
+                        class="image-ref-product">
+                </div>
+            </div>
+            <div id="opcion4-info" class="opcion-info">
+                <div class="info-product">
+                    <div class="info-product_text">
+                        <h1>Canales</h1>
+                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                            molestie, dictum
+                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                            lacus.</p>
+                        <article class="description-product">
+                            <ul class="description-product_text">
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                    bajo monto sin
+                                    acercarte a una oficina en pocos minutos.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                    mensual disponible
+                                    máximo de ocho (8) SMMLV.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                    ocho (8) SMMLV.
+                                </li>
+                            </ul>
+                        </article>
+                        <a href="" class="btn-desk">Conoce más</a>
+                    </div>
+                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito"
+                        class="image-ref-product">
+                </div>
+            </div>
+            <div id="opcion5-info" class="opcion-info">
+                <div class="info-product">
+                    <div class="info-product_text">
+                        <h1>Giros Internacionales</h1>
+                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                            molestie, dictum
+                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                            lacus.</p>
+                        <article class="description-product">
+                            <ul class="description-product_text">
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                    bajo monto sin
+                                    acercarte a una oficina en pocos minutos.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                    mensual disponible
+                                    máximo de ocho (8) SMMLV.</li>
+                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                    ocho (8) SMMLV.
+                                </li>
+                            </ul>
+                        </article>
+                        <a href="" class="btn-desk">Conoce más</a>
+                    </div>
+                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito"
+                        class="image-ref-product">
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
 
-    <script type="module" src="./components/components.js"></script>
-
+<script src="./products.js"></script>
 
 </body>
 

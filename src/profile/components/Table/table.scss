@@ -9,7 +9,7 @@ p {
 }
 
 .Table-container {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 4.534563064575195px 6.348388195037842px 27.20737648010254px 0px rgba(159, 102, 219, 0.18);
     border-radius: 6px 6px 0 0;
     background: #fff;
 }
@@ -25,10 +25,10 @@ p {
         color: #ffffff;
         text-align: left;
         font-size: 1rem;
-        font-family: c.$font-bariol-regular;
+        font-family: 'Bariol';
     }
     & td {
-        font-family: c.$font-bariol-regular;
+        font-family: 'Bariol';
         color: c.$gray-2;
         font-size: 0.8rem;
         
@@ -56,7 +56,7 @@ p {
 
 .Movements {
     font-size: 1rem;
-    font-family: c.$font-bariol-regular;
+    font-family: 'Bariol';
     background-color: c.$cyan-500;
     padding: 0.8rem 0;
     border-radius: 0rem 0rem 0.34rem 0.34rem;
@@ -72,10 +72,10 @@ p {
 
 @media only screen and (min-width: 1024px){
     .Content-table th {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .Content-table td {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .Content-Type {
