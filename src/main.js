@@ -100,6 +100,7 @@ function setPositionByIndex() {
     setSliderPosition();
 }
 
+<<<<<<< HEAD
 //--------- Products Section-----------
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -135,3 +136,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+=======
+>>>>>>> e2a27cf1ee0355621ed9c73d50b9a61b44ac02c4

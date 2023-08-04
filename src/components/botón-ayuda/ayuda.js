@@ -10,6 +10,7 @@ class HelpButton extends HTMLElement {
     connectedCallback() {
         this.render();
         this.overlayColor();
+        this.changeButton();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -23,8 +24,8 @@ class HelpButton extends HTMLElement {
         <div id="overlay">
         </div>
         <nav class="help-button">
-            <input type="checkbox" id="show-btn"">
-            <div class="options">
+            <input type="checkbox" id="show-help-btn"">
+            <div class="help-options">
                 <div id="chat">
                     <a href="#"><img src="../../public/icons/chat.svg" alt=""></a>
                     <span>Chat</span>
@@ -49,11 +50,11 @@ class HelpButton extends HTMLElement {
                 
                 
             </div>
-            <div class="show-btn">
+            <div class="show-help-btn">
                 
-                <label for="show-btn">
-                    <img class="show-button" src="../../public/icons/help.svg" alt="">
-                    <span class="label-hidden">Botón de ayuda</span>
+                <label for="show-help-btn">
+                    <img class="show-help-button" src="../../public/icons/help.svg" alt="">
+                    <span class="help-label-hidden">Botón de ayuda</span>
                 </label>
                 
             </div>
@@ -62,7 +63,7 @@ class HelpButton extends HTMLElement {
     }
 
     overlayColor() {
-        let checkbox = document.getElementById('show-btn');
+        let checkbox = document.getElementById('show-help-btn');
         let overlay = document.getElementById('overlay');
 
         checkbox.addEventListener('change', function() {
@@ -71,6 +72,23 @@ class HelpButton extends HTMLElement {
             } else {
                 overlay.style.display = 'none';
             }
+        })
+    }
+
+    changeButton() {
+        let checkbox = document.getElementById('show-help-btn');
+        let helpButton = document.querySelector('help-button');
+        let inclusiveButton = document.querySelector('inclusive-button');
+        let lastClickTime = 0;
+
+        checkbox.addEventListener('change', function() {
+
+            const currentTime = new Date().getTime();
+            if (currentTime - lastClickTime < 300) {
+                helpButton.style.display = 'none';
+                inclusiveButton.style.display = 'block';
+            }
+            lastClickTime = currentTime;
         })
     }
 }

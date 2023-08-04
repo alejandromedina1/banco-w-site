@@ -1,3 +1,5 @@
+import "./agenda.scss";
+
 class AgendaProfile extends HTMLElement {
   constructor() {
     super();
@@ -16,9 +18,6 @@ class AgendaProfile extends HTMLElement {
 
   connectedCallback() {
     this.render()
-  }
-
-  render() {
 
     const daysTag = document.querySelector(".days"),
       currentDate = document.querySelector(".current-date"),
@@ -30,8 +29,8 @@ class AgendaProfile extends HTMLElement {
       currMonth = date.getMonth();
 
     // storing full name of all months in array
-    const months = ["January", "February", "March", "April", "May", "June", "July",
-      "August", "September", "October", "November", "December"];
+    const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
     const renderCalendar = () => {
       let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
@@ -75,6 +74,11 @@ class AgendaProfile extends HTMLElement {
         renderCalendar(); // calling renderCalendar function
       });
     });
+  }
+
+  render() {
+
+    
 
 
     this.innerHTML = `
@@ -192,11 +196,13 @@ class AgendaProfile extends HTMLElement {
       </section>
     
     
-    <script type="module" src="../components/components.js"></script>
+    <script type="module" src="../components.js"></script>
     <link rel="stylesheet" href="../components/LastPost/lastPost.scss">
 
     `
   }
+
+  
 
 }
 

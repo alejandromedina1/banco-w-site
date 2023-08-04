@@ -1,3 +1,5 @@
+import "./giros.scss";
+
 class GirosProfile extends HTMLElement {
     constructor() {
         super();
@@ -24,7 +26,6 @@ class GirosProfile extends HTMLElement {
 
 
         this.innerHTML = `
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./giros.scss">
     <link rel="stylesheet" href="../ButtonDuoIcon/buttonDuoIcon.scss"/>
     <link rel="stylesheet" href="../ChallengeStatus/challengeStatus.scss"/>\
@@ -34,12 +35,12 @@ class GirosProfile extends HTMLElement {
 
     <div class="Info-Container">
         <section class="Product">
-            <span class="subtitle">Detalles del producto</span>
+            <h5 class="subtitle">Detalles del producto:</h5>
             <details-component  type_title="Tipo de giro:" type_paraph="Enviado" date_title="Fecha para reclamar" date_paraph="03/04/2023" state_title="Estado" state_paraph="Finalizado" mount_title="Monto total:" mount_paraph="600.000"></details-component>
         </section>
     
         <section class="Table">
-            <span class="subtitle">Ultimos giros</span>
+            <h5 class="subtitle">Ultimos giros:</h5>
             <table-icon icon1='<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.86816 10.8047C3.59202 10.8047 3.36816 10.5808 3.36816 10.3047V2.30469C3.36816 2.02855 3.59202 1.80469 3.86816 1.80469H12.8682C13.1443 1.80469 13.3682 2.02855 13.3682 2.30469V10.3047C13.3682 10.5808 13.1443 10.8047 12.8682 10.8047H10.8682C10.592 10.8047 10.3682 11.0285 10.3682 11.3047C10.3682 11.5808 10.592 11.8047 10.8682 11.8047H12.8682C13.6966 11.8047 14.3682 11.1331 14.3682 10.3047V2.30469C14.3682 1.47626 13.6966 0.804688 12.8682 0.804688H3.86816C3.03974 0.804688 2.36816 1.47626 2.36816 2.30469V10.3047C2.36816 11.1331 3.03974 11.8047 3.86816 11.8047H5.86816C6.14431 11.8047 6.36816 11.5808 6.36816 11.3047C6.36816 11.0285 6.14431 10.8047 5.86816 10.8047H3.86816Z" fill="#00B1BB"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.01485 4.94918C8.21012 4.75392 8.5267 4.75392 8.72196 4.94918L11.722 7.94918C11.9172 8.14444 11.9172 8.46103 11.722 8.65629C11.5267 8.85155 11.2101 8.85155 11.0149 8.65629L8.86841 6.50984V15.3027C8.86841 15.5789 8.64455 15.8027 8.36841 15.8027C8.09227 15.8027 7.86841 15.5789 7.86841 15.3027V6.50984L5.72196 8.65629C5.5267 8.85155 5.21012 8.85155 5.01485 8.65629C4.81959 8.46103 4.81959 8.14444 5.01485 7.94918L8.01485 4.94918Z" fill="#00B1BB"/>

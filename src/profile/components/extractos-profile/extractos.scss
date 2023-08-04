@@ -134,7 +134,7 @@
 
         /*background-color: #FFF;*/
 
-        &:focus{
+        &:focus {
             border: 1.93px solid c.$cyan-500;
             box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
 
@@ -183,7 +183,7 @@
         flex-direction: column;
     }
 
-    &__button-container {
+    &__button-container-extractos {
         margin-top: 20px;
     }
 
@@ -212,9 +212,9 @@ button-duo-icon {
         }
 
         &__certifications {
-            margin-top: 0px;
-            justify-content: flex-start;
-            gap:10px;
+            margin-top: 39px;
+            justify-content: center;
+            gap: 0px;
         }
 
         &__form {

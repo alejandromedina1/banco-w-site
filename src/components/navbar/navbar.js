@@ -18,11 +18,11 @@ class NavBarDesktop extends HTMLElement {
         hamburger.addEventListener('click', () => {
           hamburger.classList.toggle('active');
           if(hamburger.classList.contains('active')){
-            iconMenu.src = 'icons/x.svg';
+            iconMenu.src = '/icons/x.svg';
             btnText.textContent = 'Cerrar';
             navMobile.style.display = 'flex'
           } else {
-            iconMenu.src = 'icons/fi_menu.svg';
+            iconMenu.src = '/icons/fi_menu.svg';
             btnText.textContent = '';
             navMobile.style.display = 'none'
           }
@@ -42,6 +42,19 @@ class NavBarDesktop extends HTMLElement {
             }
         });
 
+        //Link login
+        const loginBtn = document.querySelector('.inicio-sesion');
+        loginBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            window.location.replace('/login/');
+        })
+
+        const logoBtn = document.querySelector('.logo');
+        logoBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            window.location.replace('/');
+        })
+
       }
 
       
@@ -50,9 +63,9 @@ class NavBarDesktop extends HTMLElement {
         const logo = document.querySelector('.logo');
         const navMobile = document.querySelector('.nav-mobile');
         if (window.matchMedia("(max-width: 1020px)").matches) {
-          logo.src = "images/logo-bancoW-mobile.webp";
+          logo.src = "/images/logo-bancoW-mobile.webp";
         } else {
-          logo.src = "images/logo-bancoW.webp";
+          logo.src = "/images/logo-bancoW.webp";
           navMobile.style.display = 'none';
         }
       }
@@ -63,8 +76,8 @@ class NavBarDesktop extends HTMLElement {
         <link rel="stylesheet" href="components/navbar/style.scss">
         <header class="nav-menu">
             <div class="nav-superior">
-                <img class="logo" src="images/logo-bancoW.webp" alt="Logo Banco W">
-                <button class="hamburger"><img class="hamburger-img" src="icons/fi_menu.svg"><p class="btn-text"></p></button>
+                <img class="logo" src="/images/logo-bancoW.webp" alt="Logo Banco W">
+                <button class="hamburger"><img class="hamburger-img" src="/icons/fi_menu.svg"><p class="btn-text"></p></button>
                 <span class="right-top-nav">
                     <div class="search-box">
                         <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
@@ -88,7 +101,7 @@ class NavBarDesktop extends HTMLElement {
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         </a>
-                            <ul class="dropdown-content">
+                            <ul class="dropdown-content" id="cliente">
                                 <li><a href="#">Personas con negocio</a></li>
                                 <li><a href="#">Ahorradores e inversionistas</a></li>
                                 <li><a href="#">Pensionados y maestros</a></li>
