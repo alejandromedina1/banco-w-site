@@ -125,7 +125,7 @@ document.getElementById('cerrarComponente').addEventListener('click', function()
     </div>
 
     <div class="Calendar-button">
-      <a href="/cita-profile/">
+      <a href="/cita_profile/">
         <button id="mostrarComponente">Agendar cita</button>
       </a>    
     </div>
