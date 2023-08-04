@@ -18,11 +18,11 @@ class NavBarDesktop extends HTMLElement {
         hamburger.addEventListener('click', () => {
           hamburger.classList.toggle('active');
           if(hamburger.classList.contains('active')){
-            iconMenu.src = 'icons/x.svg';
+            iconMenu.src = '/icons/x.svg';
             btnText.textContent = 'Cerrar';
             navMobile.style.display = 'flex'
           } else {
-            iconMenu.src = 'icons/fi_menu.svg';
+            iconMenu.src = '/icons/fi_menu.svg';
             btnText.textContent = '';
             navMobile.style.display = 'none'
           }
@@ -50,9 +50,9 @@ class NavBarDesktop extends HTMLElement {
         const logo = document.querySelector('.logo');
         const navMobile = document.querySelector('.nav-mobile');
         if (window.matchMedia("(max-width: 1020px)").matches) {
-          logo.src = "images/logo-bancoW-mobile.webp";
+          logo.src = "/images/logo-bancoW-mobile.webp";
         } else {
-          logo.src = "images/logo-bancoW.webp";
+          logo.src = "/images/logo-bancoW.webp";
           navMobile.style.display = 'none';
         }
       }
@@ -63,8 +63,8 @@ class NavBarDesktop extends HTMLElement {
         <link rel="stylesheet" href="components/navbar/style.scss">
         <header class="nav-menu">
             <div class="nav-superior">
-                <img class="logo" src="images/logo-bancoW.webp" alt="Logo Banco W">
-                <button class="hamburger"><img class="hamburger-img" src="icons/fi_menu.svg"><p class="btn-text"></p></button>
+                <img class="logo" src="/images/logo-bancoW.webp" alt="Logo Banco W">
+                <button class="hamburger"><img class="hamburger-img" src="/icons/fi_menu.svg"><p class="btn-text"></p></button>
                 <span class="right-top-nav">
                     <div class="search-box">
                         <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
