@@ -6,6 +6,10 @@ document.getElementById('to-sign-up').addEventListener("click", () => {
   window.location.replace("/sign-up/")
 })
 
+document.getElementById('login').addEventListener("click", () => {
+  window.location.replace("/profile/")
+})
+
 const visibilityIcon = document.getElementById("icon-toggle")
 const passwordInput = document.getElementById("password-input")
 

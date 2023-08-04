@@ -27,23 +27,23 @@ class HelpButton extends HTMLElement {
             <input type="checkbox" id="show-help-btn"">
             <div class="help-options">
                 <div id="chat">
-                    <a href="#"><img src="../../public/icons/chat.svg" alt=""></a>
+                    <a href="#"><img src="/public/icons/chat.svg" alt=""></a>
                     <span>Chat</span>
                 </div>
 
                 <div id="asesoria">
-                    <a href="#"><img src="../../public/icons/asesoria.svg" alt=""></a>
+                    <a href="#"><img src="/public/icons/asesoria.svg" alt=""></a>
                     <span>Asesorías</span>
                 </div>
 
                 <div id="tutorial">
-                    <a href="#"><img src="../../public/icons/tutorial.svg" alt=""></a>
+                    <a href="#"><img src="/public/icons/tutorial.svg" alt=""></a>
                     <span>Tutoriales</span>
                 </div>
                 
                 <div id="pqrs">
                     <a href="#">
-                        <img src="../../public/icons/pqrs.svg" alt="">
+                        <img src="/public/icons/pqrs.svg" alt="">
                     </a>
                     <span>PQRS</span>
                 </div>
@@ -53,7 +53,7 @@ class HelpButton extends HTMLElement {
             <div class="show-help-btn">
                 
                 <label for="show-help-btn">
-                    <img class="show-help-button" src="../../public/icons/help.svg" alt="">
+                    <img class="show-help-button" src="/public/icons/help.svg" alt="">
                     <span class="help-label-hidden">Botón de ayuda</span>
                 </label>
                 
