@@ -218,6 +218,10 @@ h3 {
     background-size: cover;
     background-position: center center;
 
+    & li {
+        text-decoration: none;
+    }
+
 
     & .titles-section {
         padding-left: 5.13%;
@@ -265,6 +269,18 @@ h3 {
 
                 & li {
                     list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0;
+
+                    &:hover {
+                        color: $gray-1;
+                        font-family: "font-bariol-regular";
+                        font-size: 0.8125rem;
+                        font-weight: 400;
+                        line-height: 168.5%;
+                        cursor: text;
+                    }
                 }
 
                 & img {
@@ -584,7 +600,7 @@ h3 {
 
     & .benefits {
         width: 100%;
-        height: 22.375rem;
+        height: auto;
         padding: 1.3rem 2.5%;
         border-radius: 0.29rem;
         background: $orange-400;
@@ -654,7 +670,7 @@ h3 {
             display: flex;
             flex-wrap: wrap;
             gap: 4%;
-            margin-top: -0.5rem;
+            margin-top: -20%;
             margin-bottom: -0.4375rem;
 
             & .each-card {
@@ -719,6 +735,136 @@ h3 {
 
         & .card {
             height: 30rem;
+        }
+    }
+
+    #profile-w {
+        padding: 1.5625rem 5.13%;
+        margin-bottom: 18rem;
+
+        h3 {
+            margin-bottom: 3.0625rem;
+        }
+
+        & .benefits {
+            width: 100%;
+            height: auto;
+            height: 22.375rem;
+            padding: 1.3rem 2.5%;
+            border-radius: 0.29rem;
+            background: $orange-400;
+            background-image: url(./public/images/circles-profile-mobile.webp);
+            background-size: cover;
+            background-position: center center;
+
+            & .description {
+                display: flex;
+                flex-direction: row;
+
+                & img {
+                    width: 55%;
+                    height: 100%;
+                    margin-top: -4rem;
+                }
+
+                &_info {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.625rem;
+                    margin-left: 4%;
+                    margin-top: 7%;
+
+                    &_text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.125rem;
+                    }
+                }
+
+                & h4 {
+                    color: $gray-3;
+                    font-family: "font-geomanist-bold";
+                    font-size: 0.9rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0;
+                }
+
+                & .btn {
+                    width: auto;
+                    height: auto;
+                    padding: 0.3125 5%;
+                    border-radius: 0.23;
+                    border: 0.125rem solid $purple-300;
+                    background: $purple-300;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: "font-bariol-regular";
+                    font-size: 0.71469rem;
+                    font-weight: 400;
+
+                    &:hover {
+                        border-color: $purple-300;
+                        background-color: white;
+                        color: $purple-300;
+                    }
+
+                    &:active {
+                        background-color: $purple-100;
+                        border-color: $purple-100;
+                    }
+                }
+            }
+
+            & .cards-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4%;
+                margin-top: -20%;
+                margin-bottom: -0.4375rem;
+
+                & .each-card {
+                    width: 48%;
+
+                    & .card {
+                        width: 100%;
+                        height: 10rem;
+                        display: flex;
+                        padding: 0.3125rem 0.6rem;
+                        gap: 0.3125rem;
+                        border: none;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-radius: 0.29906rem;
+                        background: white;
+                        box-shadow: 3.681197166442871px 5.153675556182861px 22.087182998657227px 0px rgba(159, 102, 219, 0.18);
+                        margin-bottom: 0.625rem;
+
+                        & .icon {
+                            width: 25%;
+                        }
+
+                        & .title {
+                            color: $orange-400;
+                            text-align: center;
+                            font-family: "font-bariol-regular";
+                            font-size: 0.92619rem;
+                            font-weight: 400;
+                            line-height: 120%;
+                            margin: 0;
+                        }
+
+                        & p {
+                            color: $gray-1;
+                            margin-bottom: 1.125rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -832,6 +978,10 @@ h3 {
         background-size: cover;
         background-position: center center;
         margin-bottom: 5rem;
+
+        & li {
+            text-decoration: none;
+        }
 
         & .titles-section {
             padding-left: 16.88%;
@@ -1262,6 +1412,7 @@ h3 {
             background-image: url(./public/images/circle-profile-desk.webp);
             background-size: cover;
             background-position: center center;
+            margin-bottom: 25rem;
 
             & img {
                 width: 50%;
@@ -1487,6 +1638,10 @@ h3 {
         background-size: cover;
         background-position: center center;
         margin-bottom: 5rem;
+
+        & li {
+            text-decoration: none;
+        }
 
         & .titles-section {
             padding-left: 16.88%;
