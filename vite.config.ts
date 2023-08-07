@@ -14,10 +14,12 @@ export default defineConfig({
                 main: resolve(root, 'index.html'),
                 "login": resolve(root, 'login', 'index.html'),
                 "sign-up": resolve(root, 'sign-up', 'index.html'),
-                "config-profile": resolve(root, 'config-profile','index.html'),
-                "edit-profile": resolve(root, 'edit-profile','index.html'),
+                "config_profile": resolve(root, 'config_profile','index.html'),
+                "edit_profile": resolve(root, 'edit_profile','index.html'),
                 "profile": resolve(root, 'profile','index.html'),
                 "cita-profile": resolve(root, 'cita_profile','index.html'),
+                "productos2_profile": resolve(root, 'productos2_profile','index.html'),
+                "productos3_profile": resolve(root, 'productos3_profile','index.html'),
             }
         },
         target: 'esnext'
