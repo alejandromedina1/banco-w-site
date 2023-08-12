@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depósito de Bajo Monto</title>
-    <link rel="stylesheet" href="deposito.scss">
+    <link rel="stylesheet" href="style.scss">
 </head>
 <body>
     <section class="banner">
-        <img src="" alt="Mujer revisando el celular">
-        <h2 class="title">Depósito de Bajo Monto</h2>
-        <p>
-            Sin salir de tu casa puedes obtener tu cuenta
-            de ahorros en pocos minutos a cero costo y
-            sin mayor documentación.
-        </p>
+        <img src="/images/bg_deposito.webp" class="banner-bg" alt="Fondo">
+        <img src="/images/mujer_deposito.webp" class="woman-image" alt="Mujer revisando el celular">
+        <span class="info">
+            <h2 class="title">Depósito de Bajo Monto</h2>
+            <p class="text">
+                Sin salir de tu casa puedes obtener tu cuenta
+                de ahorros en pocos minutos a cero costo y
+                sin mayor documentación.
+            </p>
+        </span>
     </section>
     <div class="tab-bar">
         <button class="tab-button" data-tab="caracteristicas">Características</button>
@@ -23,7 +26,15 @@
     </div>
     <section class="content">
         <div class="tab-content" id="caracteristicas-content">
-            Contenido de Características
+            <section>
+                Contenido de Características
+            </section>
+            <section>
+                Contenido de Características
+            </section>
+            <section>
+                Contenido de Características 
+            </section>
         </div>
         <div class="tab-content" id="beneficios-content">
             Contenido de Beneficios
@@ -32,5 +43,6 @@
             Contenido de Requisitos
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
