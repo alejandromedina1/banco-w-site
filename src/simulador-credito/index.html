@@ -55,61 +55,68 @@
           <p class="caption">desde 1 mes a 36 meses</p>
         </div>
 
-        <button id="simulate">Simular</button>
+        <button id="simular">Simular</button>
       </form>
     </section>
     
     <section id="result">
       <img src="/images/mobile-simulador-resultados_4x.webp" class="result-cover" alt=""> 
 
-      <div>
-        <h1>Resultados de la simulación</h1>
-        <div>
-          <h1>1.000.000</h1>
-          <p>Monto del crédito solicitado</p>
+      <div id="results-container">
+        <div id="value-container">
+          <h1 id="results-title">Resultados de la simulación</h1>
+          <div id="amount-container">
+            <h1 id="value-entered">1.000.000</h1>
+            <p id="amount-entered">Monto del crédito solicitado</p>
+          </div>
         </div>
 
         <div id="table">
           <div class="table-row">
-            <p>Categoría</p>
-            <p>Nuevo</p>
+            <p class="table-text">Categoría</p>
+            <p class="table-text">Nuevo</p>
           </div>
 
           <div class="table-row highlighted">
-            <p>Plazo (Meses)</p>
-            <p>22</p>
+            <p class="table-text">Plazo (Meses)</p>
+            <p class="table-text">22</p>
           </div>
 
           <div class="table-row">
-            <p>Tasa de interés E.A %</p>
-            <p>49.19%</p>
+            <p class="table-text">Tasa de interés E.A %</p>
+            <p class="table-text">49.19%</p>
           </div>
 
           <div class="table-row highlighted">
-            <p>Tasa de interés M.V %</p>
-            <p>3.39%</p>
+            <p class="table-text">Tasa de interés M.V %</p>
+            <p class="table-text">3.39%</p>
           </div>
 
           <div class="table-row">
-            <p>Valor aprox. de cuota</p>
-            <p>72.000</p>
+            <p class="table-text">Valor aprox. de cuota</p>
+            <p class="table-text">72.000</p>
           </div>
 
           <div class="table-row highlighted">
-            <p>Interes ($)</p>
-            <p>434.935</p>
+            <p class="table-text">Interes ($)</p>
+            <p class="table-text">434.935</p>
           </div>
 
           <div class="table-row">
-            <p>VTUA % (TIR E.A)</p>
-            <p>71.48%</p>
+            <p class="text-highlighted">VTUA % (TIR E.A)</p>
+            <p class="text-highlighted">71.48%</p>
           </div>
 
-          <div class="table-row highlighted">
-            <p>VTUA EN PESOS ($)</p>
-            <p>1.594.952</p>
+          <div class="table-row last-highlighted">
+            <p class="text-highlighted">VTUA EN PESOS ($)</p>
+            <p class="text-highlighted">1.594.952</p>
           </div>
         </div>
+      </div>
+
+      <div id="bttn-container">
+        <button id="simulate">Solicitar Crédito</button>
+        <button id="back-btn">Regresar</button>
       </div>
 
     </section>

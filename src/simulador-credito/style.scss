@@ -17,6 +17,13 @@
         width: 100%;
     }
 
+    #bttn-container{
+        width: 100%;
+    }
+    #results-container{
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 769px) {
@@ -35,6 +42,12 @@
     }
 
     form {
+        width: 50%;
+    }
+    #bttn-container{
+        width: 50%;
+    }
+    #results-container{
         width: 50%;
     }
 }
@@ -178,6 +191,32 @@ option {
     gap: 10px;
 }
 
+#back-btn {
+    border-radius: 0.4375rem;
+    background: white;
+    width: 100%;
+    border: 0px;
+    height: 50px;
+    color: white;
+
+    color: #676767;
+    text-align: center;
+
+    font-family: "bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#back-btn:hover {
+    border-radius: 0.4375rem;
+    background: white;
+    border: 2px solid $orange-300;
+    color: $orange-300;
+
+}
+
 #simulate {
     border-radius: 0.4375rem;
     background: $orange-400;
@@ -207,19 +246,140 @@ option {
     background-color: $orange-100;
 }
 
-#table{
+#simular {
+    border-radius: 0.4375rem;
+    background: $orange-400;
+    width: 100%;
+    border: 0px;
+    height: 50px;
+    color: white;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#simular:hover {
+    border-radius: 0.4375rem;
+    background: white;
+    border: 2px solid $orange-300;
+    color: $orange-300;
+
+}
+
+#simular:active {
+    background-color: $orange-100;
+}
+
+#results-container {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-div.table-row{
+#result {
+    margin-bottom: 40px;
+    display: none;
+}
+
+#value-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#amount-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4375rem;
+    background: #9F66DB;
+    padding: 15px;
+}
+
+#value-entered {
+    color: $gray-3;
+    text-align: center;
+    font-family: "geomanist-bold";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134%;
+    /* 1.675rem */
+}
+
+#amount-entered {
+    color: $gray-3;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%;
+    /* 1.005rem */
+}
+
+#results-title {
+    color: #F83;
+    font-family: "geomanist-bold";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 152.5%;
+    /* 1.90625rem */
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4375rem;
+    border: 2px solid $gray-2;
+}
+
+.table-text {
+    color: $gray-1;
+    font-family: "bariol-regular";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%;
+    /* 1.1725rem */
+}
+
+.text-highlighted {
+    color: #00B1BB;
+    font-family: "bariol-regular";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%;
+    /* 1.1725rem */
+}
+
+.last-highlighted {
+    border-radius: 0rem 0rem 0.4375rem 0.4375rem;
+    background: #F3F4F5;
+}
+
+div.table-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
 }
 
-div.highlighted{
+div.highlighted {
     background-color: $gray-3;
+}
+
+#bttn-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
