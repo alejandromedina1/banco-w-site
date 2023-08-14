@@ -11,7 +11,7 @@ document.getElementById('to-libranza').addEventListener("click", () => {
     window.location.replace("/simulador-libranza/")
 })
 document.getElementById('to-clave2000').addEventListener("click", () => {
-    window.location.replace("/simulador-clave2000/")
+    window.location.replace("/simulador-clave-2000/")
 })
 
 document.getElementById('back-container').addEventListener("click", () => {
