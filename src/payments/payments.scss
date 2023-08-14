@@ -12,6 +12,10 @@
     --scrollY: 100px;
 }
 
+.Select2 {
+    display: none;
+}
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 margin-bottom: 0 !important;
 }
@@ -134,12 +138,17 @@ main {
 .Checkbox{
     margin-bottom: 0.8rem;
 
-    &-total,
-    &-value {
+    &-total {
         display: flex;
         align-items: center;
         gap: 0.75rem;
         margin-bottom: 1.5rem;
+    }
+    &-value {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.5rem;
     }
     &-total p,
     &-value p {
@@ -167,6 +176,31 @@ main {
     color: c.$gray-1;
     font-family: "Bariol";
     font-size: 1rem;
+}
+
+.Value {
+    & label {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+        margin-bottom: 0.5rem;
+    }
+    & input {
+        width: 100%;
+        border-radius: 0.19944rem;
+        border: 1.367px solid #CDCDCD;
+        background: #FFF;
+        box-shadow: 5px 7px 25px 0px rgba(0, 177, 187, 0.10);
+        padding: 0.7rem 0 0.7rem 0.5rem;
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+    }
+    & ::placeholder {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+    }
 }
 
 #change-value {

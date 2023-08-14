@@ -43,40 +43,65 @@
                     <p>$ 248.000</p>
                 </div>
             </div>
-        </section>
+        </section>    
         <!-- Detalle de los servicios que se van a realizar con el dinero-->
-        <h3 class="subtitle">Selecciona el pago que deseas realizar</h3>
-        <div class="Payment">
-            <div class="Payment-info">
-                <div class="checkbox-wrapper-13">
-                    <input type="checkbox" id="c1-13 checkbox1 mostrarTexto"> 
+        <div class="Select">
+            <h3 class="subtitle">Selecciona el pago que deseas realizar</h3>
+            <div class="Payment">
+                <div class="Payment-info">
+                    <div class="checkbox-wrapper-13">
+                        <input type="checkbox" id="c1-13 checkbox1 mostrarTexto"> 
+                    </div>
+                    <p>Pago mínimo</p>
                 </div>
-                <p>Pago mínimo</p>
+                <span id="spanMessage">Tu cuota del mes para estar al día</span>
             </div>
-            <span id="spanMessage">Tu cuota del mes para estar al día</span>
-        </div>
-        <p class="minium-value">$ 248.000</p>
-        <hr>
-        <div class="Chekbox">
-            <div class="Checkbox-total">
-                <div class="checkbox-wrapper-13">
-                    <input type="checkbox" id="c1-13 checkbox2"> 
+            <p class="minium-value">$ 248.000</p>
+            <hr>
+            <div class="Chekbox">
+                <div class="Checkbox-total">
+                    <div class="checkbox-wrapper-13">
+                        <input type="checkbox" id="c1-13 checkbox2"> 
+                    </div>
+                    <p>Pago total</p>
                 </div>
-                <p>Pago total</p>
-            </div>
-            <div class="Checkbox-value">
-                <div class="checkbox-wrapper-13">
-                    <input type="checkbox" id="c1-13 checkbox3"> 
+                <div class="Checkbox-value">
+                    <div class="checkbox-wrapper-13">
+                        <input type="checkbox" id="c1-13 checkbox3"> 
+                    </div>
+                    <p>Otro valor</p>
                 </div>
-                <p>Otro valor</p>
+                <div class="Value" id="textoInput">
+                    <label id="change-value" for="inputTexto">¿Cuánto deseas pagar?</label>
+                    <input type="number" placeholder="$0.00" id="inputTexto">
+                </div>
             </div>
-            <div id="textoInput">
-                <label id="change-value" for="inputTexto">Ingresa texto:</label>
-                <input type="number" id="inputTexto">
-              </div>
-        </div>
 
-        <button class="next-btn">Siguiente</button>
+            <button id="select-btn" class="next-btn">Siguiente</button>
+        </div>
+        <!--Segundo procedimiento de pagos-->
+        <div class="Select2">
+            <h3 class="subtitle">Selecciona el medio de pago</h3>
+            <div class="Payment">
+                <div class="Payment-info">
+                    <div class="checkbox-wrapper-13">
+                        <input type="checkbox" id="c1-13 checkbox1 mostrarTexto" checked> 
+                    </div>
+                    <p>Pago por PSE</p>
+                </div>
+                <span id="spanMessage">Paga tu crédito usando una cuenta de ahorros, corriente o billeteras como Nequi o Daviplata.</span>
+            </div>
+            <hr>
+            <div class="Chekbox">
+                <div class="Checkbox-total">
+                    <div class="checkbox-wrapper-13">
+                        <input type="checkbox" id="c1-13 checkbox2"> 
+                    </div>
+                    <p>Pago en efectivo</p>
+                </div>
+            </div>
+            <button id="select-btn" class="next-btn">Siguiente</button>
+        </div>  
     </main>
     <script type="module" src="./script.js"></script>
     

@@ -39,3 +39,17 @@ window.addEventListener('DOMContentLoaded', function() {
       textoInput.style.display = 'block';
     }
 });
+
+const nextBtn = document.getElementById("select-btn");
+const pag1 = document.querySelector(".Select")
+const pag2 = document.querySelector(".Select2")
+
+nextBtn.addEventListener('click', function() {
+    if(pag1.style.display === 'none') {
+        pag1.style.display = 'block'
+        pag2.style.display = 'none'
+    } else {
+        pag1.style.display = 'none'
+        pag2.style.display = 'block'
+    }
+});
