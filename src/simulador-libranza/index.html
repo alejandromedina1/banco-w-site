@@ -20,11 +20,97 @@
 
 <body>
   <nav-bar-desktop></nav-bar-desktop>
-  <main></main>
+  <main>
+    <div id="back-container">
+      <img src="/icons/fi_chevron-left.svg" id="back-icon" alt="">
+      <p id="back-title">Atrás</p>
+    </div>
+    <section id="data">
+      <img src="/images/mobile-simulador-libranza_4x.webp" class="page-cover" alt="">
+
+      <form action="">
+        <div class="input-group-sim">
+          <label for="">Monto deseado:</label>
+          <input type="text" class="fields" placeholder="Digite el monto deseado">
+          <p class="caption">desde 30.000.000$ hasta 100.000.000$</p>
+        </div>
+
+        <div class="input-group-sim">
+          <label for="">Plazo en meses</label>
+          <input type="text" class="fields" placeholder="Digite el plazo en meses">
+          <p class="caption">desde 6 meses a 36 meses</p>
+        </div>
+
+        <button id="simular">Simular</button>
+      </form>
+    </section>
+    
+    <section id="result">
+      <img src="/images/mobile-simulador-resultados_4x.webp" class="result-cover" alt=""> 
+
+      <div id="results-container">
+        <div id="value-container">
+          <h1 id="results-title">Resultados de la simulación</h1>
+          <div id="amount-container">
+            <h1 id="value-entered">1.000.000</h1>
+            <p id="amount-entered">Monto del cdt solicitado</p>
+          </div>
+        </div>
+
+        <div id="table">
+          <div class="table-row">
+            <p class="table-text">Plazo (meses)</p>
+            <p class="table-text">26</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p class="table-text">Tasa de interés E.A. %</p>
+            <p class="table-text">13.22%</p>
+          </div>
+
+          <div class="table-row">
+            <p class="table-text">Tasa de interés M.V%</p>
+            <p class="table-text">1.04%</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p class="table-text">Día de pago</p>
+            <p class="table-text">5º de cada mes</p>
+          </div>
+
+          <div class="table-row">
+            <p class="table-text">Periodo de gracia</p>
+            <p class="table-text">30 días</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p class="table-text">Intereses ($)</p>
+            <p class="table-text">1.474.393</p>
+          </div>
+
+          <div class="table-row">
+            <p class="text-highlighted">VTUA (%E.A)</p>
+            <p class="text-highlighted">19.50%</p>
+          </div>
+
+          <div class="table-row last-highlighted">
+            <p class="text-highlighted">VTUA EN PESOS ($)</p>
+            <p class="text-highlighted">12.128.797</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="bttn-container">
+        <button id="simulate">Solicitar Libranza</button>
+        <button id="back-btn">Regresar</button>
+      </div>
+
+    </section>
+  </main>
 
   <custom-footer></custom-footer>
 
-  <script type="module" src="./login.js"></script>
+  <script type="module" src="./simuladores.js"></script>
   <script type="module" src="../components/footer/footer.js"></script>
   <script type="module" src="../components/navbar/navbar.js"></script>
 </body>
