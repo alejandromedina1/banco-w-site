@@ -1,0 +1,302 @@
+@use '../global.scss' as c;
+@import '../global.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  background: #fff;
+
+  
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  font-family: 'Geomanist';
+  color: #EFEFEF;
+  background: $orange-300;
+  border-radius: 5.469px;
+  height: 180px;
+  margin: 0 20px;
+  gap: 15px;
+
+  &-icon {
+    border: 2px solid #EFEFEF;
+    border-radius: 50%;
+    padding: 15px;
+  }
+
+}
+
+.container .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .form-outer form {
+  display: flex;
+  width: 400%;
+  
+}
+
+.slide-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  gap: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-outer form .page {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  flex-shrink: 0;
+  transition: margin-left 0.3s ease-in-out;
+  flex-direction: column;
+}
+
+.form-outer form .page .title {
+  text-align: left;
+  font-size: 1em;
+  font-family: 'Bariol';
+  font-weight: 500;
+  color: $gray-1;
+  margin-bottom: 20px;
+}
+
+.form-outer form .page .field {
+  width: 330px;
+  height: 45px;
+  margin: 25px 0;
+  display: flex;
+  position: relative;
+  font-family: 'Bariol';
+}
+
+form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+  font-family: 'Bariol';
+  color: $orange-400;
+}
+
+form .page .field input {
+  height: 100%;
+  width: 100%;
+  border: 1.5px solid #CDCDCD;
+  background: #FAFAFA;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 1rem;
+  font-family: 'Bariol';
+}
+
+form .page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1.5px solid #CDCDCD;
+  background: #FAFAFA;
+  border-radius: 5px;
+  font-family: 'Bariol';
+  color: $gray-2;
+}
+
+form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: $orange-400;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Bariol';
+  transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+  background: #000;
+}
+
+form .page .btns button {
+  margin-top: -20px !important;
+}
+
+form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+  background: $gray-3;
+  color: $gray-1;
+}
+
+form .page .btns button.next {
+  margin-left: 3px;
+}
+
+.container .progress-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+  user-select: none;
+}
+
+.container .progress-bar .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.container .progress-bar .step p {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: $gray-2;
+  margin-bottom: 8px;
+  font-family: 'Bariol';
+}
+
+.progress-bar .step .bullet {
+  height: 25px;
+  width: 25px;
+  border: 2px solid $gray-2;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: 'Bariol';
+}
+
+.progress-bar .step .bullet.active {
+  border-color: $orange-400;
+  background: $orange-400;
+}
+
+.progress-bar .step .bullet span {
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  transform: translateX(-50%);
+  font-family: 'Bariol';
+  color: $gray-2;
+  font-size: 0.75rem;
+}
+
+.progress-bar .step .bullet.active span {
+  display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  right: -65px;
+  height: 1px;
+  width: 64px;
+  background: $gray-2;
+}
+
+.progress-bar .step .bullet.active:after {
+  background: $orange-400;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+  display: none;
+}
+
+.progress-bar .step p.active {
+  color: $orange-400;
+  transition: 0.2s linear;
+}
+
+.progress-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.progress-bar .step .check.active {
+  display: block;
+  color: #fff;
+}
+
+.field-radio{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.card-credit {
+  display: flex;
+  padding: 10px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 240px;
+  width: 230px;
+  gap: 9.725px;
+  border-radius: 5.673px;
+  background: #FFF;
+  box-shadow: 2px 4px 14px 0px rgba(255, 136, 51, 0.12);
+
+
+
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-title{
+    font-size: 0.8125rem;
+    font-family: 'Geomanist';
+    color: $gray-1;
+  }
+
+  &-text{
+    font-size: 0.6875rem;
+    font-family: 'Bariol';
+    color: $gray-1;
+  }
+}
+
+.submit-text{
+  font-family: 'Bariol';
+  font-size: 1rem;
+  color: $gray-1;
+}
+
+input[type="radio"]{
+  background: $orange-400;
+}
