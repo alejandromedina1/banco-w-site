@@ -98,7 +98,7 @@ function setPositionByIndex() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownOptions = document.querySelectorAll(".dropdown-item");
-    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const dropdownToggle = document.querySelector(".dropdown-products");
     const infoContainer = document.getElementById("info-container");
     let scrollPosition = window.scrollY; // Guardar la posición actual del scroll
 

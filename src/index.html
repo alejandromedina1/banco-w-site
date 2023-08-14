@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./components/botón-ayuda/style.scss">
   <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
   <link rel="stylesheet" href="./components/footer/style.scss">
+  <link rel="stylesheet" href="./components/nav-bar-float/style.scss">
 
 
 </head>
@@ -33,24 +34,9 @@
     </div>
   </section>
 
-  <nav id="nav-bar-float">
-    <button class="option_credit">
-      <img class="icon" src="/icons/credit-purple.svg" alt="Crédito inmediato">
-      <a href="">Crédito inmediato</a>
-    </button>
-    <button class="option_blog">
-      <img class="icon" src="/icons/blog-purple.svg" alt="Blog">
-      <a href="">Blog</a>
-    </button>
-    <button class="option_comparator">
-      <img class="icon" src="/icons/comparator-purple.svg" alt="Blog">
-      <a href="">Comparador financiero</a>
-    </button>
-    <button class="option_simulator">
-      <img class="icon" src="/icons/calculator-purple.svg" alt="Simulador financiero">
-      <a href="">Simulador financiero</a>
-    </button>
-  </nav>
+<section>
+  <navbar-float></navbar-float>
+</section>
 
   <section id="products-landing">
     <div class="titles-section">
@@ -59,7 +45,7 @@
     </div>
     <div class="container-products">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle dropdown-products" type="button" id="dropdownMenuButton"
+          <button class="btn btn-secondary dropdown-products dropdown-toggle" type="button" id="dropdownMenuButton"
             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Ahorro
           </button>

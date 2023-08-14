@@ -1,3 +1,3 @@
-import "./cards/cards.js"
+import './cards/cards.js'
 import './navbar/navbar.js'
-import './products/products.js'
+import './nav-bar-float/navbar-float.js'
