@@ -132,6 +132,10 @@ p{
   vertical-align: middle;
 }
 
+.mobile{
+    display: none;
+}
+
 @media screen and (max-width:1200px) {
     body{
         font-size: 10px;
@@ -162,10 +166,121 @@ p{
         position: relative;
     }
 
-    .tab-bar{
-        top: 50%;
+    .banner-bg{
+        margin-top: -10rem;
+    }
+
+    .woman-image{
+        margin-top: 52%;
+        left: 30%;
+        width: 50%;
+    }
+
+    .info{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 55%;
+        width: 100%;
+        right: 20%;
+    }
+
+    .title{
+        font-size: 2.2rem;
+        text-align: center;
+        font-size: 2.7rem;
+        text-align: center;
+        width: 70%;
+        margin: 0;
+    }
+
+    .text{
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile{
+        display: flex;
     }
 }
+
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
+    }
+
+    .woman-image {
+        margin-top: 40%;
+        left: 30%;
+        width: 50%;
+    }
+
+    .tab-button{
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+    .tab-content{
+        padding: 0.5rem 1rem;
+    }
+
+    .points{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .banner-bg{
+        display: none;
+    }
+
+    .banner{
+        background-color: $gray-3;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
+    }
+
+    .woman-image {
+        margin-top: 40%;
+        width: 30%;
+        left: 35%;
+    }
+
+    .info {
+        margin-bottom: 45%;
+        right: 12%;
+        margin-top: 5%;
+        gap: 5%;
+    }
+
+    .tab-button{
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+    .tab-content{
+        padding: 0.5rem 1rem;
+    }
+
+    .points{
+        font-size: 0.8rem;
+    }
+}
+
+
 
 
 
