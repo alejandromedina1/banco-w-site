@@ -30,35 +30,23 @@
 
       <form action="">
         <div class="input-group-sim">
-          <label for="">Tipo de crédito</label>
+          <label for="">Tipo de CDT</label>
           <select name="" id="" class="fields">
-            <option value="">Selecciona el tipo de crédito</option>
-            <option value="">Microcrédito</option>
-            <option value="">Gotahorro</option>
-            <option value="">Yo construyo</option>
-          </select>
-        </div>
-
-        <div class="input-group-sim">
-          <label for="">Categoría</label>
-          <select name="" id="" class="fields">
-            <option value="">Selecciona la categoría</option>
-            <option value="">Nuevo</option>
-            <option value="">Renovación</option>
-            <option value="">Preferencial</option>
+            <option value="">Selecciona el tipo de CDT</option>
+            <option value="">CDT al vencimiento</option>
+            <option value="">CDT al mensual</option>
           </select>
         </div>
 
         <div class="input-group-sim">
           <label for="">Monto deseado:</label>
           <input type="text" class="fields" placeholder="Ej. 1.000.000">
-          <p class="caption">desde 1 SMMLV hasta 120 SMMLV</p>
         </div>
 
         <div class="input-group-sim">
-          <label for="">Plazo en meses</label>
+          <label for="">Plazo en días</label>
           <input type="text" class="fields" placeholder="Selecciona el plazo en meses">
-          <p class="caption">desde 1 mes a 36 meses</p>
+          <p class="caption">desde 60 días a 900 días</p>
         </div>
 
         <button id="simular">Simular</button>
@@ -73,34 +61,34 @@
           <h1 id="results-title">Resultados de la simulación</h1>
           <div id="amount-container">
             <h1 id="value-entered">1.000.000</h1>
-            <p id="amount-entered">Monto del crédito solicitado</p>
+            <p id="amount-entered">Monto del cdt solicitado</p>
           </div>
         </div>
 
         <div id="table">
           <div class="table-row">
-            <p class="table-text">Categoría</p>
-            <p class="table-text">Nuevo</p>
+            <p class="table-text">Plazo (días)</p>
+            <p class="table-text">365</p>
           </div>
 
           <div class="table-row highlighted">
-            <p class="table-text">Plazo (Meses)</p>
-            <p class="table-text">22</p>
+            <p class="table-text">Tasa de interés E.A. %</p>
+            <p class="table-text">15.20%</p>
           </div>
 
           <div class="table-row">
-            <p class="table-text">Tasa de interés E.A %</p>
-            <p class="table-text">49.19%</p>
+            <p class="table-text">Retención de la fuente %</p>
+            <p class="table-text">4.00%</p>
           </div>
 
           <div class="table-row highlighted">
-            <p class="table-text">Tasa de interés M.V %</p>
-            <p class="table-text">3.39%</p>
+            <p class="table-text">Retención de la fuente ($)</p>
+            <p class="table-text">-56.935</p>
           </div>
 
           <div class="table-row">
-            <p class="table-text">Valor aprox. de cuota</p>
-            <p class="table-text">72.000</p>
+            <p class="table-text">GMF ($)</p>
+            <p class="table-text">0</p>
           </div>
 
           <div class="table-row highlighted">
@@ -115,13 +103,13 @@
 
           <div class="table-row last-highlighted">
             <p class="text-highlighted">VTUA EN PESOS ($)</p>
-            <p class="text-highlighted">1.594.952</p>
+            <p class="text-highlighted">1.366.436</p>
           </div>
         </div>
       </div>
 
       <div id="bttn-container">
-        <button id="simulate">Solicitar Crédito</button>
+        <button id="simulate">Abrir CDT</button>
         <button id="back-btn">Regresar</button>
       </div>
 
@@ -130,7 +118,7 @@
 
   <custom-footer></custom-footer>
 
-  <script type="module" src="./login.js"></script>
+  <script type="module" src="./simuladores.js"></script>
   <script type="module" src="../components/footer/footer.js"></script>
   <script type="module" src="../components/navbar/navbar.js"></script>
 </body>
