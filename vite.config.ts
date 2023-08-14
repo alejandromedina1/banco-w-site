@@ -21,7 +21,7 @@ export default defineConfig({
                 "productos2_profile": resolve(root, 'productos2_profile','index.html'),
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
                 "simuladores": resolve(root, 'simuladores','index.html'),
-                "simulador-cdt": resolve(root, 'simulador-cdt','index.html'),
+                "simulador-CDT": resolve(root, 'simulador-CDT','index.html'),
                 "simulador-clave-2000": resolve(root, 'simulador-clave-2000','index.html'),
                 "simulador-libranza": resolve(root, 'simulador-libranza','index.html'),
                 "simulador-credito": resolve(root, 'simulador-credito','index.html'),
