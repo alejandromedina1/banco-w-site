@@ -19,6 +19,10 @@ p{
     justify-content: space-between;
 }
 
+.left-vector, .right-vector{
+    display: none;
+}
+
 .woman-image{
     position: relative;
     width: 35%;
@@ -241,6 +245,22 @@ p{
         display: none;
     }
 
+    .left-vector {
+        display: inline-block;
+        position: absolute;
+        width: 40%;
+        left: 0%;
+        top: 21%;
+    }
+
+    .right-vector {
+        display: inline-block;
+        position: absolute;
+        width: 35%;
+        right: 0%;
+        top: 17%;
+    }
+
     .banner{
         background-color: $gray-3;
     }
@@ -254,14 +274,14 @@ p{
     }
 
     .woman-image {
-        margin-top: 40%;
-        width: 30%;
-        left: 35%;
+        margin-top: 39%;
+        width: 40%;
+        left: 32%;
     }
 
     .info {
-        margin-bottom: 45%;
-        right: 12%;
+        margin-bottom: 42%;
+        right: 18%;
         margin-top: 5%;
         gap: 5%;
     }
