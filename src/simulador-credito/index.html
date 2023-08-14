@@ -20,11 +20,104 @@
 
 <body>
   <nav-bar-desktop></nav-bar-desktop>
-  <main></main>
+  <main>
+    <div id="back-container">
+      <img src="/icons/fi_chevron-left.svg" id="back-icon" alt="">
+      <p id="back-title">Atrás</p>
+    </div>
+    <section id="data">
+      <img src="/images/mobile-simulador-cdt_4x.webp" class="page-cover" alt="">
+
+      <form action="">
+        <div class="input-group-sim">
+          <label for="">Tipo de crédito</label>
+          <select name="" id="" class="fields">
+            <option value="">Selecciona el tipo de crédito</option>
+          </select>
+        </div>
+
+        <div class="input-group-sim">
+          <label for="">Categoría</label>
+          <select name="" id="" class="fields">
+            <option value="">Selecciona la categoría</option>
+          </select>
+        </div>
+
+        <div class="input-group-sim">
+          <label for="">Monto deseado:</label>
+          <input type="text" class="fields" placeholder="Ej. 1.000.000">
+          <p class="caption">desde 1 SMMLV hasta 120 SMMLV</p>
+        </div>
+
+        <div class="input-group-sim">
+          <label for="">Plazo en meses</label>
+          <input type="text" class="fields" placeholder="Selecciona el plazo en meses">
+          <p class="caption">desde 1 mes a 36 meses</p>
+        </div>
+
+        <button id="simulate">Simular</button>
+      </form>
+    </section>
+    
+    <section id="result">
+      <img src="/images/mobile-simulador-resultados_4x.webp" class="result-cover" alt=""> 
+
+      <div>
+        <h1>Resultados de la simulación</h1>
+        <div>
+          <h1>1.000.000</h1>
+          <p>Monto del crédito solicitado</p>
+        </div>
+
+        <div id="table">
+          <div class="table-row">
+            <p>Categoría</p>
+            <p>Nuevo</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p>Plazo (Meses)</p>
+            <p>22</p>
+          </div>
+
+          <div class="table-row">
+            <p>Tasa de interés E.A %</p>
+            <p>49.19%</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p>Tasa de interés M.V %</p>
+            <p>3.39%</p>
+          </div>
+
+          <div class="table-row">
+            <p>Valor aprox. de cuota</p>
+            <p>72.000</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p>Interes ($)</p>
+            <p>434.935</p>
+          </div>
+
+          <div class="table-row">
+            <p>VTUA % (TIR E.A)</p>
+            <p>71.48%</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p>VTUA EN PESOS ($)</p>
+            <p>1.594.952</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
 
   <custom-footer></custom-footer>
 
-  <script type="module" src="./login.js"></script>
+  <script type="module" src="./simuladores.js"></script>
   <script type="module" src="../components/footer/footer.js"></script>
   <script type="module" src="../components/navbar/navbar.js"></script>
 </body>
