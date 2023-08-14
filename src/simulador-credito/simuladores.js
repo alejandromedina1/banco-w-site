@@ -1,3 +1,7 @@
+document.getElementById('back-container').addEventListener("click", () => {
+    window.location.replace("/simuladores/")
+})
+
 document.getElementById("simular").addEventListener("click", function(event){
     event.preventDefault()
   });
