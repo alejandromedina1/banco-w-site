@@ -43,6 +43,6 @@ const divs = document.querySelectorAll('.each-item');
 
 divs.forEach((div, index) => {
     if (index % 2 === 0) { 
-        div.style.backgroundColor = '#F3F4F5';
+        divs[index+1].style.backgroundColor = '#F3F4F5';
     }
 });
