@@ -73,7 +73,7 @@ p{
     margin: -1rem auto;
     padding: 0.1rem;
     background-color: white;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
     border-radius: 0.4375rem;
@@ -83,7 +83,7 @@ p{
 .tab-button{
     color: $gray-2;
     border: none;
-    width: 100%;
+    width: 20%;
     background: none;
     padding: 0.5rem;
     text-align: center;
@@ -132,9 +132,41 @@ p{
   vertical-align: middle;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1200px) {
     body{
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .text{
+        font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 8px;
+    }
+
+    .title{
+        font-size: 1.4rem;
+    }
+
+    .text{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 821px) {
+    .content{
+        position: relative;
+    }
+
+    .tab-bar{
+        top: 50%;
+    }
+}
+
+
+
 

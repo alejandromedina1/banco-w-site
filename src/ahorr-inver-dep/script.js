@@ -18,3 +18,15 @@ tabButtons.forEach(button => {
     selectedContent.style.display = 'grid';
   });
 });
+
+
+window.addEventListener('resize', ()=> toggleBg())
+
+const toggleBg = () =>{
+  const bannerBg = document.querySelector('.banner-bg');
+  if (window.matchMedia('(max-width: 821px)').matches) {
+    bannerBg.src = '/images/bg_mobile.webp';
+  } else {
+    bannerBg.src = '/images/bg_deposito.webp'
+  }
+}
