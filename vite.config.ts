@@ -20,7 +20,8 @@ export default defineConfig({
                 "cita-profile": resolve(root, 'cita_profile','index.html'),
                 "productos2_profile": resolve(root, 'productos2_profile','index.html'),
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
-                "ahorradores-inversionistas": resolve(root, 'ahorr-inver-dep','index.html'),
+                "deposito-bajo-monto": resolve(root, 'deposito','index.html'),
+                "reclamar-giros": resolve(root, 'reclamar-giros','index.html'),
             }
         },
         target: 'esnext'
