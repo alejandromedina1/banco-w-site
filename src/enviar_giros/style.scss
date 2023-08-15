@@ -64,15 +64,14 @@ p{
 .tab-bar{   
     position: relative;
     display: flex;
+    left: 5%;
     width: 90%;
-    margin-bottom: 40px;
     padding: 0.1rem;
     background-color: white;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
     border-radius: 0.4375rem;
-    z-index: 3;
 }
 
 .tab-button{
@@ -83,19 +82,19 @@ p{
     padding: 0.5rem;
     text-align: center;
     font-family: Bariol, sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: normal;
+    border-right: 1px solid $gray-2;
 }
+
+.tab-button:last-child {
+    border-right: none;
+}
+
 
 .tab-content{
     display: none;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 1.5rem; 
-    padding: 2rem 1rem;
-    width: 90%;
-    margin: 3rem auto;
 }
 
 .active{
@@ -103,14 +102,14 @@ p{
     border-bottom: 2px solid $purple-300;
 }
 
-.content {
-    padding: 50px;
-}
-
 .content-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px;
+    margin: 50px;
+}
+
+.tab-content h3{
+    margin: 50px;
 }
 
 ol li {
@@ -168,6 +167,7 @@ article:before {
 .giros-info p {
     padding: 80px 80px;
     text-align: center;
+    color: white;
 }
 
 .more-info div {

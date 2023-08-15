@@ -3,7 +3,7 @@ const tabContents = document.querySelectorAll('.tab-content');
 
 // Seleccionar la pestaña "Características" por defecto
 tabButtons[0].classList.add('active');
-tabContents[0].style.display = 'grid';
+tabContents[0].style.display = 'block';
 
 tabButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -14,7 +14,8 @@ tabButtons.forEach(button => {
     // Agregar la clase 'active' a la pestaña clickeada y su contenido relacionado
     button.classList.add('active');
     const selectedTab = button.getAttribute('data-tab');
-    const selectedContent = document.getElementById(`${selectedTab}-content`);
-    selectedContent.style.display = 'grid';
+    const selectedContent = document.getElementById(`${selectedTab}`);
+    selectedContent.style.display = 'block';
+    console.log(selectedContent)
   });
 });

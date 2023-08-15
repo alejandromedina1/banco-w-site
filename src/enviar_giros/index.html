@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depósito de Bajo Monto</title>
-    <link rel="stylesheet" href="style.scss">
+    <title>Envía Giros</title>
+    <link rel="stylesheet" href="./style.scss">
 </head>
 <body>
     <section class="banner">
@@ -21,12 +21,12 @@
     </section>
     <div class="tab-bar">
         <button class="tab-button" data-tab="characteristics">Características</button>
-        <button class="tab-button" data-tab="beneficios">Beneficios</button>
-        <button class="tab-button" data-tab="requisitos">Tramites</button>
+        <button class="tab-button" data-tab="benefits">Beneficios</button>
+        <button class="tab-button" data-tab="procedures">Tramites</button>
     </div>
     
     <section class="content">
-        <div class="characteristics">
+        <div class="tab-content" id="characteristics">
             <div class="content-list">
                 <article>
                     <p>Envía tu firo internacional desde cualquiera de
@@ -45,7 +45,7 @@
                 </article>
             </div>
         </div>
-        <div class="benefits">
+        <div class="tab-content" id="benefits">
             <div class="content-list">
                 <article>
                     <p>Seguridad en que tu familiar, amigo o conocido
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="procedures">
+        <div class="tab-content" id="procedures">
             <h3>Envío de Giros desde Colombia hacia el exterior:</h3>
             <div class="content-list">
                 <article>
@@ -108,29 +108,23 @@
                     Banco W y coloca en ella la huella digital.
                 </li>
             </ol>
-        </div>
-    </section>
-
-    <section class="giros-info">
-        <p>Los giros mayores a $10.000.000 requieren
-            autorización del departamento Legal del Banco W
-        </p>
-        <p>Los giros están sujetos a verificación por
-            cumplimiento legal de cada país.
-        </p>
-    </section>
-
-    <section class="content">
-        <div class="procedures">
+            <div class="giros-info">
+                <p>Los giros mayores a $10.000.000 requieren
+                    autorización del departamento Legal del Banco W
+                </p>
+                <p>Los giros están sujetos a verificación por
+                    cumplimiento legal de cada país.
+                </p>
+            </div>
             <h3>Envío de Giros desde el exterior hacia Colombia</h3>
             <div class="content-list">
-                <article>
+                <article class="article-line">
                     <p>Visita un agente de una remesadora afiliada o
                         hazlo a través de un portal de internet o de una
                         aplicación de envío de dinero.
                     </p>
                 </article>
-                <article>
+                <article class="article-line">
                     <p>Informa la cantidad de dinero a enviar
                     </p>
                 </article>
@@ -154,6 +148,7 @@
                 </article>
             </div>
         </div>
+        
     </section>
 
     <section class="more-info">
@@ -164,6 +159,6 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
