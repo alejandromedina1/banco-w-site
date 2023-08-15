@@ -12,7 +12,7 @@
   width: 100%;
   background: #fff;
 
-  
+
 }
 
 .header {
@@ -48,7 +48,7 @@
 .container .form-outer form {
   display: flex;
   width: 400%;
-  
+
 }
 
 .slide-page {
@@ -61,6 +61,7 @@
 .form-outer form .page {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 25%;
   flex-shrink: 0;
   transition: margin-left 0.3s ease-in-out;
@@ -153,7 +154,7 @@ form .page .btns button.next {
 .container .progress-bar {
   display: flex;
   flex-direction: row;
-  margin: 40px 0;
+  margin: 40px auto;
   user-select: none;
 }
 
@@ -252,7 +253,7 @@ form .page .btns button.next {
   color: #fff;
 }
 
-.field-radio{
+.field-radio {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -278,25 +279,92 @@ form .page .btns button.next {
     object-fit: cover;
   }
 
-  &-title{
+  &-title {
     font-size: 0.8125rem;
     font-family: 'Geomanist';
     color: $gray-1;
   }
 
-  &-text{
+  &-text {
     font-size: 0.6875rem;
     font-family: 'Bariol';
     color: $gray-1;
   }
 }
 
-.submit-text{
+.submit-text {
   font-family: 'Bariol';
   font-size: 1rem;
   color: $gray-1;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   background: $orange-400;
 }
+
+@media (min-width: 374px) {
+
+  .progress-bar {
+    max-width: 360px;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    right: -56px;
+    width: 56px;
+  }
+}
+
+@media (min-width: 424px) {
+
+  .progress-bar {
+    max-width: 340px;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    right: -56px;
+    width: 56px;
+  }
+}
+
+@media (min-width: 319px) {
+
+  .progress-bar {
+    max-width: 320px;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    right: -56px;
+    width: 56px;
+  }
+}
+
+@media (min-width: 767px) {
+  .progress-bar {
+    max-width: 450px;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    right: -88px;
+    width: 88px;
+  }
+
+
+  
+}
+
+/*@media (min-width: 425px) {
+
+  .container {
+    max-width: 360px;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    right: -78px;
+    width: 78px;
+  }
+}*/
