@@ -216,6 +216,10 @@ main {
     display: none;
 }
 
+.Select3 {
+    display: none;
+}
+
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     .checkbox-wrapper-13 input[type=checkbox] {
       --active: #FF8833;

@@ -53,3 +53,20 @@ nextBtn.addEventListener('click', function() {
         pag2.style.display = 'block'
     }
 });
+
+const selectBtn = document.getElementById('select2-btn');
+const paymentCheckbox = document.getElementById('c1-13');
+const cashCheckbox = document.getElementById('c2-13');
+const select2Div = document.querySelector('.Select2');
+const select3Div = document.querySelector('.Select3');
+
+selectBtn.addEventListener('click', () => {
+  if (paymentCheckbox.checked) {
+    window.location.href = 'https://www.pse.com.co/persona';
+  } else if (cashCheckbox.checked) {
+    select2Div.style.display = 'none';
+    select3Div.style.display = 'block';
+  }
+});
+
+
