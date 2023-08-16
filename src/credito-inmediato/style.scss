@@ -133,7 +133,10 @@ form .page .field button {
 }
 
 form .page .field button:hover {
-  background: #000;
+  background: #FFF;
+  border: solid 2px $orange-400;
+  color: $orange-400;
+  font-weight: 500;
 }
 
 form .page .btns button {
@@ -296,6 +299,7 @@ form .page .btns button.next {
   font-family: 'Bariol';
   font-size: 1rem;
   color: $gray-1;
+  text-align: center;
 }
 
 input[type="radio"] {
@@ -341,15 +345,31 @@ input[type="radio"] {
   }
 }
 
+@media (min-width: 319px){
+
+}
+
 @media (min-width: 767px) {
   .progress-bar {
-    max-width: 450px;
+    max-width: 650px;
   }
 
   .progress-bar .step .bullet:before,
   .progress-bar .step .bullet:after {
-    right: -88px;
-    width: 88px;
+    right: -139px;
+    width: 139px;
+  }
+
+  .card-credit-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .submit-text {
+    font-size: 1.125rem;
+    max-width: 650px;
   }
 
 
