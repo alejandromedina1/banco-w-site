@@ -97,20 +97,21 @@ p {
     line-height: normal;
 }
 
-#caracteristicas-content,
-#beneficios-content {
+#caracteristicas-content, #beneficios-content {
     display: none;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.5rem; 
     padding: 2rem 1rem;
     width: 90%;
     margin: 3rem auto;
+    flex-direction: column;
 }
 
 #devoluciones-content,
 #tramites-content {
     display: none;
     grid-template-columns: 1fr;
+    flex-direction: column;
     padding: 2rem 1rem;
     width: 90%;
     margin: 3rem auto;
@@ -118,7 +119,7 @@ p {
 }
 
 .dropdown {
-    display: inline-block;
+    display: block;
 }
 
 .dropdown-trigger {
@@ -212,8 +213,9 @@ p {
     background-color: $purple-300;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 6rem;
     align-items: center;
+    gap: 4rem;
 }
 
 .dev-title {
@@ -235,6 +237,45 @@ p {
     line-height: 150%;
 }
 
+.dev-points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.number-image {
+    width: 20%;
+}
+
+.div-number {
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+}
+
+.one-two {
+    color: #FFF;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.dev-bullet {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 1rem 4.2rem;
+}
+
 @media screen and (max-width:1200px) {
     body {
         font-size: 10px;
@@ -250,36 +291,83 @@ p {
         font-size: 8px;
     }
 
-    .title {
+    .title,
+    .dev-title {
         font-size: 1.4rem;
     }
 
-    .text {
+    .text,
+    .tab-button,
+    .points,
+    .dev-text {
         font-size: 1rem;
     }
 
+
 }
 
-@media screen and (min-width: 425px) and (max-width: 540px) {
+@media screen and (max-width: 821px) {
+    .mobile {
+        display: flex;
+    }
+
+    #caracteristicas-content, #beneficios-content{
+        gap: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 690px) {
     .title {
         font-size: 1.2rem;
     }
 
-    .text {
-        font-size: 0.8rem;
+    .text,
+    .tab-button,
+    .points,
+    .dev-text {
+        font-size: 0.9rem;
     }
 
-    .tab-button {
-        font-size: 0.8rem;
-        width: 30%;
+    .info {
+        width: 38%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+
+    .mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info {
+        width: 64%;
+        margin-right: 3rem;
+        margin-bottom: 50%;
     }
 
-    .tab-content {
-        padding: 0.5rem 1rem;
+    .title{
+        text-align: center;
+        font-size: 2rem;
     }
 
-    .points {
-        font-size: 0.8rem;
+    .text{
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tab-button{
+        font-size: 0.7rem;
+    }
+
+    .title{
+        font-size: 1.8rem;
     }
 
 }

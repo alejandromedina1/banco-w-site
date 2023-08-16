@@ -4,7 +4,7 @@ const tabContents = document.querySelectorAll('.tab-content');
 const toggleContent = ()=>{
   if (window.matchMedia('(max-width: 821px)').matches) {
     tabButtons[0].classList.add('active');
-    tabContents[0].style.display = 'block';
+    tabContents[0].style.display = 'flex';
   
     tabButtons.forEach(button => {
       button.addEventListener('click', () => {
@@ -15,7 +15,7 @@ const toggleContent = ()=>{
         button.classList.add('active');
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
-        selectedContent.style.display = 'block';
+        selectedContent.style.display = 'flex';
       });
     });
   } else {
@@ -40,7 +40,7 @@ const toggleContent = ()=>{
 window.addEventListener('resize', ()=> toggleContent())
 toggleContent();
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const dropdowns = document.querySelectorAll(".dropdown");
     
     dropdowns.forEach(dropdown => {
@@ -52,3 +52,16 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+  window.addEventListener('resize', ()=> toggleBg())
+
+const toggleBg = () =>{
+  const bannerBg = document.querySelector('.banner-bg');
+  if (window.matchMedia('(max-width: 500px)').matches) {
+    bannerBg.src = '/images/bg_reclamar_mobile.webp';
+  } else {
+    bannerBg.src = '/images/bg_full_reclamar.webp'
+  }
+}
+
+toggleBg();
