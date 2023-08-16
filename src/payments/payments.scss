@@ -220,6 +220,13 @@ main {
     display: none;
 }
 
+.toggle {
+    display: none;
+}
+
+.toggle2 {
+    display: none;
+}
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     .checkbox-wrapper-13 input[type=checkbox] {
       --active: #FF8833;
@@ -329,6 +336,112 @@ main {
             box-sizing: inherit;
   }
 
+.Review {
+    & h3 {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+    & span {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 13px;
+    }
+    &-mount {
+        margin-top: 1.5rem;
+    }
+    &-mount h6 {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 16px;
+        margin-bottom: 0.5rem !important;
+    }
+    &-mount p {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+    &-mount span {
+        color: c.$orange-300;
+        font-family: Bariol;
+        font-size: 13px;
+    }
+    &-pay {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 16px;
+        margin-bottom: 0.5rem !important;
+    }
+    & select {
+        padding: 15px;
+        border-radius: 4.507px;
+        border: 1.932px solid #CDCDCD;
+        background: #FFF;
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+.--third {
+    margin-top: 10rem;
+}
+
+.--fourth- {
+    background: #fff;
+    color: c.$gray-1;
+    margin-top: 1rem;
+}
+
+.--five {
+    background: c.$orange-400;
+    color: #FFF;
+}
+.--five- {
+    background: c.$gray-3;
+    color: c.$gray-1;
+}
+
+.Detail {
+    margin-top: 2rem;
+
+    & div {
+        margin-bottom: 16px;
+    }
+    & p {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 18px;
+        margin-bottom: 9px;
+    }
+    & span {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+}
+
+.End {
+    display: grid;
+    place-content: center;
+    min-height: 40vh;
+
+    & h2 {
+        color: c.$cyan-500;
+        text-align: center;
+        font-family: "Bariol";
+        font-size: 20px;
+        margin-bottom: 3rem !important;
+    }
+    & p {
+        color: c.$gray-1;
+        text-align: center;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+}
 
   
 @media only screen and (min-width: 780px){

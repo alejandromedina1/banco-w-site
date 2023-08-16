@@ -16,7 +16,7 @@
             </div>
         </header>
         <!-- Información de la tarjeta -->
-        <section class="Card">
+        <section class="Card" id="hidden-card">
             <div class="Card-title">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                     <path d="M0.958374 11.9792V15.8125C0.958374 16.0667 1.05934 16.3104 1.23906 16.4902C1.41879 16.6699 1.66254 16.7709 1.91671 16.7709H2.87504C2.87504 17.5334 3.17794 18.2646 3.71711 18.8038C4.25628 19.343 4.98754 19.6459 5.75004 19.6459C6.51254 19.6459 7.24381 19.343 7.78297 18.8038C8.32214 18.2646 8.62504 17.5334 8.62504 16.7709H14.375C14.375 17.5334 14.6779 18.2646 15.2171 18.8038C15.7563 19.343 16.4875 19.6459 17.25 19.6459C18.0125 19.6459 18.7438 19.343 19.283 18.8038C19.8221 18.2646 20.125 17.5334 20.125 16.7709H21.0834C21.3375 16.7709 21.5813 16.6699 21.761 16.4902C21.9407 16.3104 22.0417 16.0667 22.0417 15.8125V6.22919C22.0417 5.46669 21.7388 4.73542 21.1996 4.19626C20.6605 3.65709 19.9292 3.35419 19.1667 3.35419H8.08837C7.48611 3.35531 6.8994 3.54555 6.41107 3.89805C5.92273 4.25054 5.55742 4.7475 5.36671 5.31877L3.98671 9.44919L1.38962 11.1838C1.25779 11.2706 1.14945 11.3886 1.07422 11.5274C0.998983 11.6661 0.959191 11.8213 0.958374 11.9792ZM20.125 9.10419H18.2084V5.27085H19.1667C19.4209 5.27085 19.6646 5.37182 19.8444 5.55154C20.0241 5.73127 20.125 5.97502 20.125 6.22919V9.10419ZM16.2917 16.7709C16.2917 16.5813 16.3479 16.396 16.4532 16.2384C16.5585 16.0808 16.7082 15.958 16.8833 15.8855C17.0584 15.8129 17.2511 15.794 17.437 15.8309C17.6229 15.8679 17.7937 15.9592 17.9277 16.0932C18.0617 16.2272 18.153 16.398 18.19 16.5839C18.2269 16.7698 18.208 16.9625 18.1354 17.1376C18.0629 17.3127 17.9401 17.4624 17.7825 17.5677C17.6249 17.673 17.4396 17.7292 17.25 17.7292C16.9959 17.7292 16.7521 17.6282 16.5724 17.4485C16.3927 17.2688 16.2917 17.025 16.2917 16.7709ZM14.375 11.0209H20.125V14.8542H19.3775C19.1081 14.5577 18.7796 14.3208 18.4132 14.1588C18.0469 13.9967 17.6507 13.9129 17.25 13.9129C16.8494 13.9129 16.4532 13.9967 16.0868 14.1588C15.7205 14.3208 15.392 14.5577 15.1225 14.8542H14.375V11.0209ZM14.375 5.27085H16.2917V9.10419H14.375V5.27085ZM10.5417 11.0209H12.4584V14.8542H10.5417V11.0209ZM10.5417 5.27085H12.4584V9.10419H10.5417V5.27085ZM8.62504 9.10419H6.12379L7.17796 5.92252C7.24225 5.73218 7.36473 5.56685 7.5281 5.44991C7.69147 5.33297 7.88747 5.27034 8.08837 5.27085H8.62504V9.10419ZM4.79171 16.7709C4.79171 16.5813 4.84791 16.396 4.95322 16.2384C5.05852 16.0808 5.20819 15.958 5.3833 15.8855C5.55842 15.8129 5.7511 15.794 5.937 15.8309C6.1229 15.8679 6.29366 15.9592 6.42768 16.0932C6.56171 16.2272 6.65298 16.398 6.68996 16.5839C6.72694 16.7698 6.70796 16.9625 6.63543 17.1376C6.56289 17.3127 6.44006 17.4624 6.28246 17.5677C6.12487 17.673 5.93958 17.7292 5.75004 17.7292C5.49587 17.7292 5.25212 17.6282 5.0724 17.4485C4.89267 17.2688 4.79171 17.025 4.79171 16.7709ZM2.87504 12.4584L5.07921 11.0209H8.62504V14.8542H7.87754C7.60808 14.5577 7.27962 14.3208 6.91325 14.1588C6.54688 13.9967 6.15067 13.9129 5.75004 13.9129C5.34941 13.9129 4.95321 13.9967 4.58683 14.1588C4.22046 14.3208 3.89201 14.5577 3.62254 14.8542H2.87504V12.4584Z" fill="#00B1BB"/>
@@ -95,15 +95,69 @@
             <div class="Chekbox">
               <div class="Checkbox-total">
                 <div class="checkbox-wrapper-13">
-                  <input type="checkbox" id="c2-13">
+                  <input type="checkbox" id="c2-13" checked>
                 </div>
                 <p>Pago en efectivo</p>
               </div>
             </div>
             <button id="select2-btn" class="next-btn">Siguiente</button>
           </div>
+          <!--Seleccionar el punto de pago-->
           <div class="Select3">
-            <h1>HOLA</h1>
+            <section class="Review">
+                <h3>Revisa la información de pago antes de seguir</h3>
+                <span>Una vez esté creada no podrás editar la información del pago</span>
+
+                <div class="Review-mount">
+                    <h6>Monto a pagar</h6>
+                    <p>$ 248.000</p>
+                    <span>Modificar</span>
+                </div>
+                <hr>
+                <p class="Review-pay">Punto de pago</p>
+                <select name="" id="">
+                    <option value="">Efecty</option>
+                    <option value="">Servientrega</option>
+                    <option value="">Gane</option>
+                </select>
+            </section>
+
+            <button id="select3-btn" class="next-btn --third">Siguiente</button>
+          </div>
+          <div class="Select4 toggle">
+            <section class="Detail">
+                <div>
+                    <p>Referencia de pago</p>
+                    <span>951795961</span>
+                </div>
+                <div>
+                    <p>Número de convenio</p>
+                    <span>110528</span>
+                </div>
+                <div>
+                    <p>Monto a pagar</p>
+                    <span>$ 248.000</span>
+                </div>
+                <div>
+                    <p>Puedes usar este código hasta</p>
+                    <span>02 de mayo de 2023</span>
+                </div>
+                <div>
+                    <p>Punto de pago</p>
+                    <span>Efecty</span>
+                </div>
+            </section>
+
+            <button id="select4-btn" class="next-btn --fourth">Siguiente</button>
+            <button id="select-btn" class="next-btn --fourth-">Cancelar referencia</button>
+          </div>
+          <div class="Select5 toggle2">
+            <div class="End">
+                <h2>¡Gracias por tu pago!</h2>
+                <p>Tu pago de crédito ha sido procesado correctamente y registrado en nuestro sistema. </p>
+            </div>
+            <button id="select-btn" class="next-btn --five-">Ver comprobante</button>
+            <button id="select5-btn" class="next-btn --five">Terminar</button>
           </div>
     </main>
     <script type="module" src="./script.js"></script>

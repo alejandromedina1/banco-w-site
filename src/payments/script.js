@@ -59,6 +59,7 @@ const paymentCheckbox = document.getElementById('c1-13');
 const cashCheckbox = document.getElementById('c2-13');
 const select2Div = document.querySelector('.Select2');
 const select3Div = document.querySelector('.Select3');
+const card = document.getElementById('hidden-card')
 
 selectBtn.addEventListener('click', () => {
   if (paymentCheckbox.checked) {
@@ -67,6 +68,39 @@ selectBtn.addEventListener('click', () => {
     select2Div.style.display = 'none';
     select3Div.style.display = 'block';
   }
+  card.style.display = 'none';
 });
 
+const select3Btn = document.getElementById("select3-btn");
+const select3 = document.querySelector(".Select3")
+const select4 = document.querySelector(".Select4")
+
+select3Btn.addEventListener('click', function() {
+    if(select3.style.display === 'none') {
+        select3.style.display = 'block'
+        select4.style.display = 'none'
+    } else {
+        select3.style.display = 'none'
+        select4.style.display = 'block'
+    }
+});
+
+const select4Btn = document.getElementById("select4-btn");
+const select5 = document.querySelector(".Select5")
+
+select4Btn.addEventListener('click', function() {
+    if(select4.style.display === 'none') {
+        select4.style.display = 'block'
+        select5.style.display = 'none'
+    } else {
+        select4.style.display = 'none'
+        select5.style.display = 'block'
+    }
+});
+
+const select5Btn = document.getElementById("select5-btn");
+
+select5Btn.addEventListener('click', function() {
+  location.reload();
+})
 
