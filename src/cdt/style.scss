@@ -1,4 +1,5 @@
 @import '../global.scss';
+@import "bootstrap/scss/bootstrap";
 
 *{
     margin: 0;
@@ -8,6 +9,15 @@
 
 p{
     margin: 0;
+    font-family: Bariol, sans-serif;
+    color: $gray-1;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: Geomanist, sans-serif;
+    color: $gray-1;
+    font-size: 14px;
 }
 
 .banner{
@@ -102,72 +112,12 @@ p{
     border-bottom: 2px solid $purple-300;
 }
 
-.content-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px;
-}
-
-.tab-content h3{
-    margin: 50px;
-}
-
-ol li {
-    margin-right: 70px;
-    color: $gray-1;
-    font-family: Bariol, sans-serif;
-}
-
-.procedures p{
-    color: $gray-1;
-}
-
-ol li::marker {
-    color: $purple-300;
-}
-
-article {
-    margin: 40px auto;
-    width: 360px;
-    padding: 0 70px 10px 10px;
-    color: $gray-1;
-}
-
-.article-line {
-    border-left: 2px solid $purple-100;
-}
-
-article:before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: $gray-3;
-    border: 4px solid $purple-300;
-    position: absolute;
-    margin-left: -18px;
-}
-
 .more-info {
     background-color: $purple-300;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 0;
-}
-
-.giros-info {
-    background-color: $purple-300;
-    display: flex;
-    flex-direction: row;
-    color: white;
-}
-
-.giros-info p {
-    padding: 80px 80px;
-    text-align: center;
-    color: white;
 }
 
 .more-info div {
@@ -201,3 +151,37 @@ article:before {
     margin: 5px;
     color: white;
 }
+
+#characteristics {
+    margin: 5%;
+}
+.content-vertical-list {
+    margin-left: 10px;
+}
+.content-vertical-list span {
+    color: $purple-300;
+}
+
+.content-vertical-list article:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $gray-3;
+    border: 4px solid $purple-300;
+    position: absolute;
+    margin-left: -38px;
+    margin-top: 5px;
+}
+
+.article-line {
+    border-left: 2px solid $purple-100;
+}
+
+.content-vertical-list article {
+    padding: 0 0px 10px 30px;
+    color: $gray-1;
+}
+
+$accordion-button-bg: $purple-300;
