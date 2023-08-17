@@ -37,6 +37,7 @@ p {
 
 main {
     margin: 0 1.25rem;
+    margin-bottom: 4rem !important;
 }
 
 .Hero {
@@ -170,6 +171,15 @@ main {
     border: none;
     margin-top: 1.5rem;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.next-btn:hover {
+    border-radius: 7px;
+    border: 2px solid c.$orange-300;
+    color: c.$orange-300;
+    background: none;
+    transition: all 0.2s;
 }
 
 .minium-value {
