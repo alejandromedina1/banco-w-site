@@ -22,6 +22,7 @@ export default defineConfig({
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
                 "deposito-bajo-monto": resolve(root, 'deposito','index.html'),
                 "reclamar-giros": resolve(root, 'reclamar-giros','index.html'),
+                "cuenta-ahorros": resolve(root, 'cuenta-ahorros','index.html'),
             }
         },
         target: 'esnext'
