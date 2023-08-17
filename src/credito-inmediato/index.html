@@ -13,8 +13,13 @@
   </head>
   <body>
     <nav-bar-desktop></nav-bar-desktop>
-
-
+  <div class="back-button">
+    
+    <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+      <path d="M9.375 3.75L5.625 7.5L9.375 11.25" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+      Atrás</a>
+  </div>
     <header class="Hero Bg-animation">
       <div class="Hero-header">
           <div class="header-icon">
@@ -130,8 +135,8 @@
               Selecciona el tipo de crédito que deseas solicitar:
             </div>
             <div class="card-credit-container">
-            <div class="field-radio">
-              <input type="radio" />
+            <div class="field-radio checkbox-wrapper-13">
+              <input type="radio" name="credito"/>
               
               <div class="card-credit">
                 <img
@@ -150,8 +155,8 @@
               </div>
             </div>
           
-            <div class="field-radio">
-              <input type="radio" />
+            <div class="field-radio checkbox-wrapper-13">
+              <input type="radio" name="credito"/>
               <div class="card-credit">
                 <img
                   src="/images/yoConstruyo_4x.webp"
@@ -177,12 +182,12 @@
               Diligencia tus datos personales a continuación:
             </div>
             <div class="field">
-              <div class="label">Monto deseado:</div>
-              <input type="number" />
+              <div class="label" >Monto deseado:</div>
+              <input type="number" placeholder="Ej. 1000000"/>
             </div>
             <div class="field">
               <div class="label">Nombres y apellidos:</div>
-              <input type="text" />
+              <input type="text" placeholder="Ingrese nombres y apellidos"/>
             </div>
             <div class="field">
               <div class="label">Tipo de identificación:</div>
@@ -197,7 +202,7 @@
             </div>
             <div class="field">
               <div class="label">Número de documento:</div>
-              <input type="Number" />
+              <input type="Number" placeholder="Ingrese número de documento"/>
             </div>
             <div class="field btns">
               <button class="prev-1 prev">Anterior</button>
@@ -211,11 +216,11 @@
             </div>
             <div class="field">
               <div class="label">Número de celular</div>
-              <input type="number" />
+              <input type="number" placeholder="Ingrese número de celular"/>
             </div>
             <div class="field">
               <div class="label">Correo electrónico</div>
-              <input type="text" />
+              <input type="text" placeholder="Ingrese correo electrónico"/>
             </div>
             <div class="field">
               <div class="label">Departamento:</div>
@@ -236,9 +241,17 @@
           </div>
 
           <div class="page">
+            
+              <div class="header-icon aqua">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                  <path d="M44.1666 13.25L19.875 37.5417L8.83331 26.5" stroke="#00B1BB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="submit-title">¡Gracias por tu confianza!</h3>
+            
             <p class="submit-text">
               Has completado todos los pasos para llevar a cabo la solicitud.
-              Dentro de 15 minutos estaremos dando respuesta a tu petición.
+              Dentro de un momento estaremos dando respuesta a tu petición.
             </p>
             <div class="field btns">
               <button class="prev-3 prev">Anterior</button>

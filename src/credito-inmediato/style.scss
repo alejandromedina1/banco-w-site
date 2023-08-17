@@ -18,8 +18,22 @@
 
 }
 
+.back-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 18px;
+
+  & a{
+    font-family: 'Bariol';
+    color: $gray-1;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
 .header {
-  
+
   color: #EFEFEF;
   background: $orange-300;
   border-radius: 5.469px;
@@ -31,14 +45,19 @@
     border: 2px solid #EFEFEF;
     border-radius: 50%;
     padding: 15px;
+
   }
 
+}
+
+.aqua{
+  border: 2px solid $cyan-500;
 }
 
 //Hero Header
 
 .Bg-animation {
-  background-size: auto 252px; 
+  background-size: auto 252px;
   background-image: url(/images/bg_creditoinmediato_4x.webp), url(/images/bg_creditoinmediato_4x.webp);
   background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
   background-repeat: no-repeat;
@@ -47,26 +66,29 @@
 }
 
 .Hero {
-  width: 100%;
+  width: 90%;
+  margin: 10px auto;
 
   &-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 28px 0;
-      margin: 0 20px;
-      gap: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 28px 0;
+    margin: 0 20px;
+    gap: 22px;
   }
+
   &-header img {
-      width: 74px;
-      height: 74px;
+    width: 74px;
+    height: 74px;
   }
+
   &-header h3 {
-      color: var(--gris, #EFEFEF);
-      text-align: center;
-      font-family: "Geomanist";
-      font-size: 20px;    
+    color: var(--gris, #EFEFEF);
+    text-align: center;
+    font-family: "Geomanist";
+    font-size: 20px;
   }
 
 }
@@ -134,6 +156,11 @@ form .page .field input {
   padding-left: 15px;
   font-size: 1rem;
   font-family: 'Bariol';
+
+  &::placeholder{
+    color: $gray-2;
+  }
+
 }
 
 form .page .field select {
@@ -146,6 +173,12 @@ form .page .field select {
   border-radius: 5px;
   font-family: 'Bariol';
   color: $gray-2;
+
+  &:focus {
+    border: 1.93px solid c.$cyan-500;
+    box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+  }
 }
 
 form .page .field option {
@@ -296,6 +329,7 @@ form .page .btns button.next {
 .field-radio {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 30px;
   margin-bottom: 30px;
 }
@@ -337,10 +371,135 @@ form .page .btns button.next {
   font-size: 1rem;
   color: $gray-1;
   text-align: center;
+  width: 80%;
 }
 
-input[type="radio"] {
-  background: $orange-400;
+.submit-title{
+  color: $orange-400;
+  font-family: 'Geomanist';
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .checkbox-wrapper-13 input[type=radio] {
+    --active: #FF8833;
+    --active-inner: #fff;
+    --focus: 1px #FFE1CC;
+    --border: #FFE1CC;
+    --border-hover: #FF8833;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 3px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:disabled+label {
+    cursor: not-allowed;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+    box-shadow: 0 0 0 var(--focus);
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:not(.switch) {
+    width: 21px;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:not(.switch):checked {
+    --o: 1;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]+label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:not(.switch) {
+    border-radius: 50px;
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 5.5px;
+    top: 3px;
+    -webkit-transform: rotate(var(--r, 20deg));
+    -ms-transform: rotate(var(--r, 20deg));
+    transform: rotate(var(--r, 20deg));
+  }
+
+  .checkbox-wrapper-13 input[type=radio]:not(.switch):checked {
+    --r: 43deg;
+  }
+}
+
+.checkbox-wrapper-13 * {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.checkbox-wrapper-13 *:before,
+.checkbox-wrapper-13 *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 @media (min-width: 374px) {
@@ -382,9 +541,7 @@ input[type="radio"] {
   }
 }
 
-@media (min-width: 319px){
-
-}
+@media (min-width: 319px) {}
 
 @media (min-width: 767px) {
   .progress-bar {
@@ -397,7 +554,7 @@ input[type="radio"] {
     width: 139px;
   }
 
-  .card-credit-container{
+  .card-credit-container {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -409,30 +566,20 @@ input[type="radio"] {
     max-width: 650px;
   }
 
-
-  
-}
-
-@media only screen and (min-width: 767px){
   .Bg-animation {
-      background-size: auto 333px; 
-      background-image: url(/images/creditoinmediatoDK_4x.webp), url(/images/creditoinmediatoDK_4x.webp);
-      background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
-      background-repeat: no-repeat;
-      background-color: $orange-300;
-      border-radius: 5.469px;
+    background-size: auto 333px;
+    background-image: url(/images/creditoinmediatoDK_4x.webp), url(/images/creditoinmediatoDK_4x.webp);
+    background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+    background-color: $orange-300;
+    border-radius: 5.469px;
   }
+
+  .Hero {
+    width: 100%;
+    margin: 0;
+  }
+
+
+
 }
-
-/*@media (min-width: 425px) {
-
-  .container {
-    max-width: 360px;
-  }
-
-  .progress-bar .step .bullet:before,
-  .progress-bar .step .bullet:after {
-    right: -78px;
-    width: 78px;
-  }
-}*/
