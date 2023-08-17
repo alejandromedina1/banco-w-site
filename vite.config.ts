@@ -22,6 +22,7 @@ export default defineConfig({
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
                 "enviar-giros": resolve(root, 'enviar_giros','index.html'),
                 "cdt": resolve(root, 'cdt','index.html'),
+                "ahorradores_inversionistas": resolve(root, 'ahorradores_inversionistas','index.html'),
             }
         },
         target: 'esnext'
