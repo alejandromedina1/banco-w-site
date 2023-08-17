@@ -83,10 +83,11 @@ p {
     line-height: normal;
 }
 
-#caracteristicas-content, #beneficios-content {
+#caracteristicas-content,
+#beneficios-content {
     display: none;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem; 
+    gap: 1.5rem;
     padding: 2rem 1rem;
     width: 90%;
     margin: 3rem auto;
@@ -262,6 +263,32 @@ p {
     margin: 1rem 4.2rem;
 }
 
+.more-info {
+    background: $purple-300;
+    padding: 5rem;
+}
+
+.more-info>h3 {
+    text-align: left;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.info-points>.points,
+.info-points>.points>svg path {
+    color: white;
+    fill: white;
+}
+
+.info-points {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
 @media screen and (max-width:1200px) {
     body {
         font-size: 10px;
@@ -297,7 +324,23 @@ p {
         display: flex;
     }
 
-    #caracteristicas-content, #beneficios-content{
+    .dev-bullet,
+    .info-points {
+        flex-direction: column;
+    }
+
+    .more-info {
+        padding: 3.5rem;
+    }
+
+
+    .more-info>h3,
+    .more-info>.h3 {
+        font-size: 1.2rem;
+    }
+
+    #caracteristicas-content,
+    #beneficios-content {
         gap: 0;
     }
 
@@ -322,13 +365,6 @@ p {
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 540px) {
-
-    .mobile {
-        display: flex;
-    }
-}
-
 @media screen and (max-width: 500px) {
     .info {
         width: 64%;
@@ -336,24 +372,37 @@ p {
         margin-bottom: 50%;
     }
 
-    .title{
+    .title {
         text-align: center;
         font-size: 2rem;
     }
 
-    .text{
+    .text {
         text-align: center;
         font-size: 0.9rem;
+    }
+
+    .dev-points{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .div-number{
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .tab-button{
+    .tab-button {
         font-size: 0.7rem;
     }
 
-    .title{
+    .title {
         font-size: 1.8rem;
+    }
+
+    .more-info>h3 {
+        font-size: 1.1rem;
     }
 
 }

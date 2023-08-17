@@ -1,5 +1,6 @@
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
+const chaSection = document.querySelector('.more-info');
 
 const toggleContent = () => {
   if (window.matchMedia('(max-width: 821px)').matches) {
@@ -16,11 +17,13 @@ const toggleContent = () => {
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
         selectedContent.style.display = 'flex';
+        (selectedTab === 'caracteristicas') ? chaSection.style.display = 'block' : chaSection.style.display = 'none';
       });
     });
   } else {
     tabButtons[0].classList.add('active');
     tabContents[0].style.display = 'grid';
+    chaSection.style.display = 'block';
 
     tabButtons.forEach(button => {
       button.addEventListener('click', () => {
@@ -32,6 +35,7 @@ const toggleContent = () => {
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
         selectedContent.style.display = 'grid';
+        (selectedTab === 'caracteristicas') ? chaSection.style.display = 'block' : chaSection.style.display = 'none';
       });
     });
   }
