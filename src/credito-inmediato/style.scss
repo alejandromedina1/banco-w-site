@@ -38,8 +38,8 @@
 //Hero Header
 
 .Bg-animation {
-  background-size: auto 314px; 
-  background-image: url(/images/bg-creditoInmediatoMB_4x.webp), url(/images/bg-creditoInmediatoDK_4x.webp);
+  background-size: auto 252px; 
+  background-image: url(/images/bg_creditoinmediato_4x.webp), url(/images/bg_creditoinmediato_4x.webp);
   background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
   background-repeat: no-repeat;
   background-color: $orange-300;
@@ -48,7 +48,6 @@
 
 .Hero {
   width: 100%;
-  margin-top: 4rem;
 
   &-header {
       display: flex;
@@ -56,6 +55,7 @@
       align-items: center;
       flex-direction: column;
       padding: 28px 0;
+      margin: 0 20px;
       gap: 22px;
   }
   &-header img {
@@ -144,6 +144,12 @@ form .page .field select {
   border: 1.5px solid #CDCDCD;
   background: #FAFAFA;
   border-radius: 5px;
+  font-family: 'Bariol';
+  color: $gray-2;
+}
+
+form .page .field option {
+
   font-family: 'Bariol';
   color: $gray-2;
 }
@@ -407,10 +413,10 @@ input[type="radio"] {
   
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 767px){
   .Bg-animation {
-      background-size: auto 314px; 
-      background-image: url(/images/bg-creditoInmediatoMB_4x.webp), url(/images/bg-creditoInmediatoDK_4x.webp);
+      background-size: auto 333px; 
+      background-image: url(/images/creditoinmediatoDK_4x.webp), url(/images/creditoinmediatoDK_4x.webp);
       background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
       background-repeat: no-repeat;
       background-color: $orange-300;
