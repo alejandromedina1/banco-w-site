@@ -20,6 +20,7 @@ export default defineConfig({
                 "cita-profile": resolve(root, 'cita_profile','index.html'),
                 "productos2_profile": resolve(root, 'productos2_profile','index.html'),
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
+                "credito-inmediato": resolve(root, 'credito-inmediato','index.html'),
             }
         },
         target: 'esnext'

@@ -572,7 +572,7 @@ form .page .btns button.next {
     background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
     background-repeat: no-repeat;
     background-color: $orange-300;
-    border-radius: 5.469px;
+    border-radius: 0;
   }
 
   .Hero {
