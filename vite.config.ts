@@ -28,6 +28,9 @@ export default defineConfig({
                 "simulador-credito": resolve(root, 'simulador-credito','index.html'),
                 "simulador-ahorro": resolve(root, 'simulador-ahorro','index.html'),
                 "credito-inmediato": resolve(root, 'credito-inmediato','index.html'),
+                "deposito-bajo-monto": resolve(root, 'deposito','index.html'),
+                "reclamar-giros": resolve(root, 'reclamar-giros','index.html'),
+                "cuenta-ahorros": resolve(root, 'cuenta-ahorros','index.html'),
             }
         },
         target: 'esnext'
