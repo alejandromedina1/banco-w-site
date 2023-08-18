@@ -27,6 +27,7 @@ export default defineConfig({
                 "simulador-libranza": resolve(root, 'simulador-libranza','index.html'),
                 "simulador-credito": resolve(root, 'simulador-credito','index.html'),
                 "simulador-ahorro": resolve(root, 'simulador-ahorro','index.html'),
+                "credito-inmediato": resolve(root, 'credito-inmediato','index.html'),
             }
         },
         target: 'esnext'
