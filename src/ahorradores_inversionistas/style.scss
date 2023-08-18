@@ -185,7 +185,7 @@ h3 {
 .options {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 5%;
+    margin: 8% 5%;
     z-index: 2;
 }
 
@@ -210,8 +210,8 @@ h3 {
 }
 
 .card-img-top {
-    margin: 8px;
     width: auto;
+    padding: 4%;
 }
 
 .purple-card-button {
