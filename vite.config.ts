@@ -31,6 +31,9 @@ export default defineConfig({
                 "deposito-bajo-monto": resolve(root, 'deposito','index.html'),
                 "reclamar-giros": resolve(root, 'reclamar-giros','index.html'),
                 "cuenta-ahorros": resolve(root, 'cuenta-ahorros','index.html'),
+                "enviar-giros": resolve(root, 'enviar_giros','index.html'),
+                "cdt": resolve(root, 'cdt','index.html'),
+                "ahorradores_inversionistas": resolve(root, 'ahorradores_inversionistas','index.html'),
             }
         },
         target: 'esnext'
