@@ -20,6 +20,7 @@ export default defineConfig({
                 "cita-profile": resolve(root, 'cita_profile','index.html'),
                 "productos2_profile": resolve(root, 'productos2_profile','index.html'),
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
+                "pagos": resolve(root, 'pagos','index.html'),
                 "simuladores": resolve(root, 'simuladores','index.html'),
                 "simulador-CDT": resolve(root, 'simulador-CDT','index.html'),
                 "simulador-clave-2000": resolve(root, 'simulador-clave-2000','index.html'),
