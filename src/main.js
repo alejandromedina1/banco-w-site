@@ -99,3 +99,38 @@ function setPositionByIndex() {
     prevTranslate = currentTranslate;
     setSliderPosition();
 }
+//--------- Products Section-----------
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownOptions = document.querySelectorAll(".dropdown-item");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const infoContainer = document.getElementById("info-container");
+    let scrollPosition = window.scrollY; // Guardar la posición actual del scroll
+
+    dropdownToggle.addEventListener("click", function () {
+        // Guardar la posición actual del scroll antes de mostrar el dropdown
+        scrollPosition = window.scrollY;
+    });
+
+    dropdownOptions.forEach((option) => {
+        option.addEventListener("click", function (event) {
+            event.preventDefault(); // Evitar recarga de página
+            const selectedValue = this.getAttribute("data-value");
+            const selectedText = this.textContent;
+
+            dropdownToggle.textContent = selectedText;
+
+            // Mostrar el contenido correspondiente en el info-container
+            const opcionInfos = document.querySelectorAll(".opcion-info");
+            opcionInfos.forEach((info) => {
+                info.style.display = "none";
+            });
+
+            const selectedInfo = document.getElementById(`${selectedValue}-info`);
+            selectedInfo.style.display = "block";
+
+            // Restaurar la posición del scroll después del cambio
+            window.scrollTo(0, scrollPosition);
+        });
+    });
+});
