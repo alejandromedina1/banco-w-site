@@ -117,7 +117,7 @@ h3 {
     position: absolute;
     width: 60%;
     height: 15%;
-    border-radius: 6.7px;
+    border-radius: 10px;
     border: none;
     background-color: white;
     box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
@@ -130,7 +130,7 @@ h3 {
 
     & button {
         width: 25%;
-        height: 60px;
+        height: 100%;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -140,12 +140,11 @@ h3 {
         font-family: Bariol, sans-serif;
         font-size: 18px;
         font-weight: 400;
-        justify-content: space-between;
+        justify-content: center;
         border: none;
         outline: none;
         cursor: pointer;
         padding: 0 1%;
-        margin-bottom: 20px;
 
         & .icon {
             width: 30%;
@@ -157,6 +156,18 @@ h3 {
             text-decoration: none;
             justify-content: center;
             color: $purple-300;
+        }
+    }
+
+    .active{
+        background-color: $purple-300;
+        & p {
+            color: white;
+            
+        }
+
+        & img {
+            filter: saturate(0) brightness(3);
         }
     }
 

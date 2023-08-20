@@ -22,27 +22,27 @@
     </div>
   </section>
 
-    <nav id="nav-bar-float">
-        <button class="option_all" data-tab="all">
-          <img class="icon" src="/icons/all_option_inv.svg" alt="Crédito inmediato">
-          <a href="">Todas</a>
+    <nav id="nav-bar-float" class="nav-bar-float">
+        <button class="tab-button" data-tab="all">
+          <img class="icon" src="/icons/all_option_inv.svg" alt="Todas">
+          <p>Todas</p>
         </button>
-        <button class="option_saving" data-tab="saving">
-          <img class="icon" src="/icons/saving_option_inv.svg" alt="Blog">
-          <a href="">Ahorro</a>
+        <button class="tab-button" data-tab="saving">
+          <img class="icon" src="/icons/saving_option_inv.svg" alt="Ahorro">
+          <p>Ahorro</p>
         </button>
-        <button class="option_invest" data-tab="invest">
-          <img class="icon" src="/icons/invest_option_inv.svg" alt="Blog">
-          <a href="">Invertir</a>
+        <button class="tab-button" data-tab="invest">
+          <img class="icon" src="/icons/invest_option_inv.svg" alt="Invertir">
+          <p>Invertir</p>
         </button>
-        <button class="option_int-transfers" data-tab="int-transfers">
-          <img class="icon" src="/icons/transfers_option_inv.svg" alt="Simulador financiero">
-          <a href="">Giros internacionales</a>
+        <button class="tab-button" data-tab="int-transfers">
+          <img class="icon" src="/icons/transfers_option_inv.svg" alt="Giros internacionales">
+          <p>Giros internacionales</p>
         </button>
       </nav>
 
       <section class="options">
-        <div class="card">
+        <div class="card saving all">
           <img src="../public/images/todos-card-1.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cuenta de ahorro</h5>
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card saving all">
           <img src="../public/images/todos-card-2.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Depósito de bajo monto</h5>
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card invest all">
           <img src="../public/images/todos-card-3.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CDT</h5>
@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card int-transfers all">
           <img src="../public/images/todos-card-4.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Enviar giros</h5>
@@ -92,7 +92,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card int-transfers all">
           <img src="../public/images/todos-card-5.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Reclamar giros</h5>
@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card int-transfers all">
           <img src="../public/images/todos-card-6.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ahorranza</h5>
@@ -120,6 +120,6 @@
       
     <script type="module" src="../components/components.js"></script>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
