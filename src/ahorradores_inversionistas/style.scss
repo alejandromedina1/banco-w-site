@@ -6,7 +6,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 p {
     margin: 0;
 }
@@ -256,4 +255,86 @@ h3 {
     width: auto;
     margin-bottom: 20px;
     
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: black;
+    }
+    .banner h2 {
+        font-size: 35px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .banner{
+        background-image: url(../images/bg_envia_giros_mobile.webp);
+        flex-direction: column-reverse;
+    }
+
+    .ancianos-image{
+        position: relative;
+        width: 70%;
+        left: 0%;
+        margin-top: 4rem;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 1rem;
+        height: max-content;
+        margin-right: 5%;
+        z-index: 2;
+        text-align: center;
+    }
+    
+    .banner h2{
+        color: $gray-1;
+        width: 100%;
+        font-family: Geomanist, sans-serif;
+        font-size: 2.78375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .banner p{
+        width: 100%;
+        font-size: 18px;
+    }
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 50px;
+    }
+
+    article {
+        width: 100%;
+        padding: 0px 70px 60px 10px;
+        color: $gray-1;
+        border-left: 2px solid $purple-100;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .white-button {
+        padding: 5px 10px;
+    }
+    .purple-button {
+        background-color: $purple-300;
+        padding: 5px 10px;
+    }
 }
