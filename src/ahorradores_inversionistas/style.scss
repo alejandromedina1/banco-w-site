@@ -258,74 +258,65 @@ h3 {
 }
 
 @media screen and (max-width:1200px) {
-    body {
-        background-color: black;
+    #banner {
+        & .title {
+            font-size: 38px;
+        }
+        & .info {
+            font-size: 18px;
+        }
     }
+    
 }
 
 @media screen and (max-width: 1000px) {
-    body {
-        background-color: black;
-    }
-    .banner h2 {
-        font-size: 35px;
-    }
-
-    .banner p {
-        font-size: 18px;
+    .options {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 12%;
     }
 }
 
 @media screen and (max-width: 821px) {
-    .banner{
-        background-image: url(../images/bg_envia_giros_mobile.webp);
+    .options {
+    grid-template-columns: 1fr;
+    margin-top: 20%;
+    }
+    #banner {
+        background-image: url(../public/images/ahorradores_inversionistas_bg_mobile.webp);
+        background-size: cover;
         flex-direction: column-reverse;
-    }
 
-    .ancianos-image{
-        position: relative;
-        width: 70%;
-        left: 0%;
-        margin-top: 4rem;
-    }
+        & .banner-container {
+            width: 80%;
+            margin: 0;
+        }
 
-    .info{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        gap: 1rem;
-        height: max-content;
-        margin-right: 5%;
-        z-index: 2;
-        text-align: center;
-    }
-    
-    .banner h2{
-        color: $gray-1;
-        width: 100%;
-        font-family: Geomanist, sans-serif;
-        font-size: 2.78375rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .banner p{
-        width: 100%;
-        font-size: 18px;
-    }
-    .content-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 50px;
-    }
+        & .container-text {
+            text-align: center;
+            margin: 0% 5%;
+            align-items: center;
+        }
 
-    article {
-        width: 100%;
-        padding: 0px 70px 60px 10px;
-        color: $gray-1;
-        border-left: 2px solid $purple-100;
-        margin: 0px;
+        & .title {
+            width: 100%;
+        }
+
+        & .text {
+            width: 100%;
+        }
+
+        &  .woman-saver-img{
+            width:  48%;
+        }
+    }
+    #nav-bar-float {
+        top: 520px;
+        height: 10%;
+        & button {
+            & p {
+                font-size: 14px;
+            }
+        }
     }
 }
 
