@@ -64,7 +64,7 @@ h3 {
     height: auto;
     margin: 0px;
     background-color: $gray-3;
-    background-image: url(./public/images/circle-banner-main-mobile.webp);
+    background-image: url(/images/circle-banner-main-mobile.webp);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -251,7 +251,7 @@ h3 {
 
     & .our-app {
         width: 100%;
-        background-image: url(./public/images/bg-news-mobile.webp);
+        background-image: url(/images/bg-news-mobile.webp);
         background-size: cover;
         background-position: center center;
         background-color: $purple-300;
@@ -334,7 +334,7 @@ h3 {
             width: 100%;
             height: 8.125rem;
             border-radius: 0.48rem;
-            background-image: url(./public/images/card-search-orange-mobile.webp);
+            background-image: url(/images/card-search-orange-mobile.webp);
             background-size: cover;
             background-position: center center;
         }
@@ -346,7 +346,7 @@ h3 {
             width: 100%;
             height: 8.125rem;
             border-radius: 0.48rem;
-            background-image: url(./public/images/card-search-violet-mobile.webp);
+            background-image: url(/images/card-search-violet-mobile.webp);
             background-size: cover;
             background-position: center center;
         }
@@ -358,7 +358,7 @@ h3 {
             justify-content: space-between;
             height: 8.125rem;
             border-radius: 0.48rem;
-            background-image: url(./public/images/card-search-blue-mobile.webp);
+            background-image: url(/images/card-search-blue-mobile.webp);
             background-size: cover;
             background-position: center center;
         }
@@ -383,7 +383,7 @@ h3 {
 }
 
 #finance {
-    background-image: url(./public/images/bg-finance-mobile.webp);
+    background-image: url(/images/bg-finance-mobile.webp);
     background-size: cover;
     background-position: center center;
     margin: 1.5625rem 0;
@@ -542,7 +542,7 @@ h3 {
         padding: 1.3rem 2.5%;
         border-radius: 0.29rem;
         background: $orange-400;
-        background-image: url(./public/images/circles-profile-mobile.webp);
+        background-image: url(/images/circles-profile-mobile.webp);
         background-size: cover;
         background-position: center center;
 
@@ -691,7 +691,7 @@ h3 {
             padding: 1.3rem 2.5%;
             border-radius: 0.29rem;
             background: $orange-400;
-            background-image: url(./public/images/circles-profile-mobile.webp);
+            background-image: url(/images/circles-profile-mobile.webp);
             background-size: cover;
             background-position: center center;
 
@@ -829,7 +829,7 @@ h3 {
     }
 
     #main-banner {
-        background-image: url(./public/images/bg-main-banner-desk.webp);
+        background-image: url(/images/bg-main-banner-desk.webp);
         background-size: cover;
         background-position: center center;
         gap: 7%;
@@ -912,7 +912,7 @@ h3 {
     }
 
     #products-landing {
-        background-image: url(./public/images/bg-products-desk.webp);
+        background-image: url(/images/bg-products-desk.webp);
         background-size: cover;
         background-position: center center;
         margin-bottom: 5rem;
@@ -1049,7 +1049,7 @@ h3 {
 
                 & .our-app {
                     width: 48%;
-                    background-image: url(./public/images/bg-news-mobile.webp);
+                    background-image: url(/images/bg-news-mobile.webp);
                     background-size: cover;
                     background-position: center center;
                     background-color: $purple-300;
@@ -1128,7 +1128,7 @@ h3 {
                         justify-content: space-between;
                         height: 10.5625rem;
                         border-radius: 0.625rem;
-                        background-image: url(./public/images/card-search-orange-mobile.webp);
+                        background-image: url(/images/card-search-orange-mobile.webp);
                         background-size: cover;
                         background-position: center center;
                     }
@@ -1140,7 +1140,7 @@ h3 {
                         justify-content: space-between;
                         height: 10.5625rem;
                         border-radius: 0.625rem;
-                        background-image: url(./public/images/card-search-violet-mobile.webp);
+                        background-image: url(/images/card-search-violet-mobile.webp);
                         background-size: cover;
                         background-position: center center;
                     }
@@ -1152,7 +1152,7 @@ h3 {
                         justify-content: space-between;
                         height: 10.5625rem;
                         border-radius: 0.625rem;
-                        background-image: url(./public/images/card-search-blue-mobile.webp);
+                        background-image: url(/images/card-search-blue-mobile.webp);
                         background-size: cover;
                         background-position: center center;
                     }
@@ -1187,7 +1187,7 @@ h3 {
     }
 
     #finance {
-        background-image: url(./public/images/bg-finance-desk.webp);
+        background-image: url(/images/bg-finance-desk.webp);
         margin: 10.625rem 0;
         height: 23.1875rem;
         padding: 0% 25.5%;
@@ -1347,7 +1347,7 @@ h3 {
             padding-right: 6.43%;
             border-radius: 1.25rem;
             background: $orange-400;
-            background-image: url(./public/images/circle-profile-desk.webp);
+            background-image: url(/images/circle-profile-desk.webp);
             background-size: cover;
             background-position: center center;
             margin-bottom: 25rem;
@@ -1491,7 +1491,7 @@ h3 {
     }
 
     #main-banner {
-        background-image: url(./public/images/bg-main-banner-desk.webp);
+        background-image: url(/images/bg-main-banner-desk.webp);
         background-size: cover;
         background-position: center center;
         gap: 7%;
@@ -1572,7 +1572,7 @@ h3 {
     }
 
     #products-landing {
-        background-image: url(./public/images/bg-products-desk.webp);
+        background-image: url(/images/bg-products-desk.webp);
         background-size: cover;
         background-position: center center;
         margin-bottom: 5rem;
@@ -1709,7 +1709,7 @@ h3 {
 
                 & .our-app {
                     width: 48%;
-                    background-image: url(./public/images/bg-news-mobile.webp);
+                    background-image: url(/images/bg-news-mobile.webp);
                     background-size: cover;
                     background-position: center center;
                     background-color: $purple-300;
@@ -1773,7 +1773,7 @@ h3 {
                         justify-content: space-between;
                         height: 10.5625rem;
                         border-radius: 0.625rem;
-                        background-image: url(./public/images/card-search-orange-mobile.webp);
+                        background-image: url(/images/card-search-orange-mobile.webp);
                         background-size: cover;
                         background-position: center center;
                     }
@@ -1785,7 +1785,7 @@ h3 {
                         justify-content: space-between;
                         height: 10.5625rem;
                         border-radius: 0.625rem;
-                        background-image: url(./public/images/card-search-violet-mobile.webp);
+                        background-image: url(/images/card-search-violet-mobile.webp);
                         background-size: cover;
                         background-position: center center;
                     }
@@ -1797,7 +1797,7 @@ h3 {
                         justify-content: space-between;
                         height: 10.5625rem;
                         border-radius: 0.625rem;
-                        background-image: url(./public/images/card-search-blue-mobile.webp);
+                        background-image: url(/images/card-search-blue-mobile.webp);
                         background-size: cover;
                         background-position: center center;
                     }
@@ -1832,7 +1832,7 @@ h3 {
     }
 
     #finance {
-        background-image: url(./public/images/bg-finance-desk.webp);
+        background-image: url(/images/bg-finance-desk.webp);
         margin: 10.625rem 0;
         height: 23.1875rem;
         padding: 0% 25.5%;
@@ -1990,7 +1990,7 @@ h3 {
             padding-right: 6.43%;
             border-radius: 1.25rem;
             background: $orange-400;
-            background-image: url(./public/images/circle-profile-desk.webp);
+            background-image: url(/images/circle-profile-desk.webp);
             background-size: cover;
             background-position: center center;
 

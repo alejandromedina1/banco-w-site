@@ -75,7 +75,7 @@ class NavBarDesktop extends HTMLElement {
                         <img src="/icons/fi_search.svg" class="search-icon" alt="Icono buscador"/>
                     </div>
                     <a href="/login/" class="inicio-sesion">Iniciar sesión</a>
-                    <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                    <a href="/pagos/" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
                     <div class="profile">
                         <img class="profile-picture" src="/images/black_woman_1.webp" alt="Foto de perfil"/>
                         <span class="profile-info">
@@ -94,7 +94,7 @@ class NavBarDesktop extends HTMLElement {
                         </a>
                             <ul class="dropdown-content" id="cliente">
                                 <li><a href="#">Personas con negocio</a></li>
-                                <li><a href="#">Ahorradores e inversionistas</a></li>
+                                <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
                                 <li><a href="#">Pensionados y maestros</a></li>
                                 <li><a href="#">Colombianos en el exterior</a></li>
                             </ul>
