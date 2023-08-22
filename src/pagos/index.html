@@ -6,13 +6,21 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="./pagos.scss">
     <script src="./script.js"></script>
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/nav-bar-float/style.scss">
 </head>
 <body>
-        <header class="Hero Bg-animation">
-            <div class="Hero-header">
-                <img src="../public/images/bg_header.webp" alt="">
-                <h3>Detalles del pago</h3>
-            </div>
+        <nav-bar-desktop></nav-bar-desktop>
+        <header class="Header-container">
+            <header class="Hero Bg-animation">
+                <div class="Hero-header">
+                    <img src="../public/images/bg_header.webp" alt="">
+                    <h3>Detalles del pago</h3>
+                </div>
+            </header>
         </header>
         <main>
         <!-- Información de la tarjeta -->
@@ -111,7 +119,7 @@
                 <div class="Review-mount">
                     <h6>Monto a pagar</h6>
                     <p>$ 248.000</p>
-                    <span>Modificar</span>
+                    <span id="modify">Modificar</span>
                 </div>
                 <hr>
                 <p class="Review-pay">Punto de pago</p>
@@ -149,7 +157,7 @@
             </section>
 
             <button id="select4-btn" class="next-btn --fourth">Siguiente</button>
-            <button id="select-btn" class="next-btn --fourth-">Cancelar referencia</button>
+            <button id="cancel-btn" class="next-btn --fourth-">Cancelar referencia</button>
           </div>
           <div class="Select5 toggle2">
             <div class="End">
@@ -160,7 +168,14 @@
             <button id="select5-btn" class="next-btn --five">Terminar</button>
           </div>
     </main>
+
+    <custom-footer></custom-footer>
+
     <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/components.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
     
 </body>
 </html>

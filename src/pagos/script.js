@@ -104,3 +104,15 @@ select5Btn.addEventListener('click', function() {
   location.reload();
 })
 
+const cancel = document.getElementById("cancel-btn");
+
+cancel.addEventListener('click', function() {
+    location.reload();
+})
+
+const modify = document.getElementById("modify");
+
+modify.addEventListener('click', function() {
+  location.reload();
+})
+
