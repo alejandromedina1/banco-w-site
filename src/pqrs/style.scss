@@ -161,12 +161,24 @@ h1 {
         align-self: center;
         background-color: $cyan-500;
         border-radius: 0.4375rem;
-        border: none;
+        border: 1px solid $cyan-500;
         color: white;
         text-align: center;
         font-family: "font-bariol-regular";
         font-size: 1.375rem;
+
+        &:hover {
+            border-color: $cyan-500;
+            background-color: white;
+            color: $cyan-500;
+        }
+    
+        &:active {
+            background-color: $cyan-100;
+            border-color: $cyan-100;
+        }
     }
+    
 
     :disabled {
         background: $gray-3 !important;
@@ -297,6 +309,7 @@ h1 {
             margin-top: 5.38rem;
             width: 100%;
             font-size: 1.125rem;
+            border: 2px solid $cyan-500;
         }
     }
 
@@ -392,7 +405,7 @@ h1 {
             padding: 0 1.3rem;
         }
 
-        .input-base::placeholder{
+        .input-base::placeholder {
             font-size: 1.3rem !important;
             align-self: center;
         }
@@ -419,6 +432,7 @@ h1 {
             width: 100%;
             height: 5rem;
             font-size: 2rem;
+            border: 2.5px solid $cyan-500;
         }
     }
 

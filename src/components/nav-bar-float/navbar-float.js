@@ -14,7 +14,7 @@ class NavbarFloat extends HTMLElement {
         <nav id="nav-bar-float">
     <button class="option_credit">
         <img class="icon" src="/icons/credit-purple.svg" alt="Crédito inmediato">
-        <a href="">Crédito inmediato</a>
+        <a href="/credito-inmediato/">Crédito inmediato</a>
     </button>
     <button class="option_blog">
         <img class="icon" src="/icons/blog-purple.svg" alt="Blog">
@@ -26,7 +26,7 @@ class NavbarFloat extends HTMLElement {
     </button>
     <button class="option_simulator">
         <img class="icon" src="/icons/calculator-purple.svg" alt="Simulador financiero">
-        <a href="">Simulador financiero</a>
+        <a href="/simuladores/">Simulador financiero</a>
     </button>
     </nav>
         `;

@@ -42,7 +42,7 @@ class HelpButton extends HTMLElement {
                 </div>
                 
                 <div id="pqrs">
-                    <a href="#">
+                    <a href="/pqrs/">
                         <img src="/icons/pqrs.svg" alt="">
                     </a>
                     <span>PQRS</span>

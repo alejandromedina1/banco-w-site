@@ -129,3 +129,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.getElementById('option-credit').addEventListener("click", () => {
+    window.location.replace('/credito-inmediato/')
+})
+
+document.getElementById('simulator-btn').addEventListener("click", () => {
+    window.location.replace('/simuladores/')
+})
+
