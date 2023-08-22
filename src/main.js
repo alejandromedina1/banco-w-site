@@ -1,8 +1,3 @@
-import './global.scss'
-import './components/components.js'
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
-
 const slider = document.querySelector(".slider");
 const sliderTrack = document.querySelector(".slider-track");
 let isDragging = false;
@@ -103,7 +98,7 @@ function setPositionByIndex() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownOptions = document.querySelectorAll(".dropdown-item");
-    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const dropdownToggle = document.querySelector(".dropdown-products");
     const infoContainer = document.getElementById("info-container");
     let scrollPosition = window.scrollY; // Guardar la posición actual del scroll
 
@@ -134,3 +129,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.getElementById('option-credit').addEventListener("click", () => {
+    window.location.replace('/credito-inmediato/')
+})
+
+document.getElementById('simulator-btn').addEventListener("click", () => {
+    window.location.replace('/simuladores/')
+})
+

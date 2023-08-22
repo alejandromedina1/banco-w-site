@@ -1,0 +1,654 @@
+@use '../../src/global.scss' as c;
+
+//Mixins
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --scrollY: 100px;
+}
+
+.Select2 {
+    display: none;
+}
+
+#modify {
+    cursor: pointer;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+margin-bottom: 0 !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+//Hero Header
+
+.Header-container {
+    margin: 0 1.25rem;
+}
+
+.Bg-animation {
+    background-size: auto 314px; 
+    background-image: url(/public/images/bg_pagos.webp), url(/public/images/bg_pagos.webp);
+    background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+    background-color: #00B1BB;
+    border-radius: 5.469px;
+}
+
+main {
+    margin: 0 1.25rem;
+    margin-bottom: 4rem !important;
+}
+
+.Hero {
+    width: 100%;
+    margin-top: 4rem;
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 28px 0;
+        gap: 22px;
+    }
+    &-header img {
+        width: 74px;
+        height: 74px;
+    }
+    &-header h3 {
+        color: var(--gris, #EFEFEF);
+        text-align: center;
+        font-family: "Geomanist";
+        font-size: 20px;    
+    }
+
+}
+//el resto
+
+.Card {
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 5px 7px 25px 0px rgba(0, 177, 187, 0.10);
+    width: 100%;
+    padding: 22px 19px;
+    margin-top: 1.5rem;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 1rem;
+    }
+    &-title h6 {
+        color: c.$cyan-500;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+    &-date,
+    &-value {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    &-info:nth-child(1) {
+        margin-bottom: 0.7rem;
+    }
+    &-date p,
+    &-value p{
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 13px;
+    }
+}
+.subtitle {
+    color: c.$gray-1;
+    font-family: "Bariol";
+    margin-bottom: 1rme;
+    font-size: 1.125rem;
+    margin: 1.5rem 0 !important;
+}
+
+//Checkbox
+
+.Payment{
+    margin-bottom: 0.8rem;
+
+    &-info {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+    }
+    & p {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 1rem; 
+    }
+    & span {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+    }
+}
+
+.Checkbox{
+    margin-bottom: 0.8rem;
+
+    &-total {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    &-value {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    &-total p,
+    &-value p {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 1rem; 
+    }
+}
+
+.next-btn {
+    border-radius: 0.4375rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    background: c.$orange-400;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bariol";
+    font-size: 1rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.next-btn:hover {
+    border-radius: 7px;
+    border: 2px solid c.$orange-300;
+    color: c.$orange-300;
+    background: none;
+    transition: all 0.2s;
+}
+
+.minium-value {
+    color: c.$gray-1;
+    font-family: "Bariol";
+    font-size: 1rem;
+}
+
+.Value {
+    & label {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+        margin-bottom: 0.5rem;
+    }
+    & input {
+        width: 100%;
+        border-radius: 0.19944rem;
+        border: 1.367px solid #CDCDCD;
+        background: #FFF;
+        box-shadow: 5px 7px 25px 0px rgba(0, 177, 187, 0.10);
+        padding: 0.7rem 0 0.7rem 0.5rem;
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+    }
+    & ::placeholder {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 0.8125rem;
+    }
+}
+
+#change-value {
+    display: block;
+}
+
+#textoInput {
+    display: none;
+    margin-top: 10px;
+}
+
+#spanMensaje {
+    display: none;
+}
+
+.Select3 {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle2 {
+    display: none;
+}
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .checkbox-wrapper-13 input[type=checkbox] {
+      --active: #FF8833;
+      --active-inner: #fff;
+      --focus: 1px #FFE1CC;
+      --border: #FFE1CC;
+      --border-hover: #FF8833;
+      --background: #fff;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E1E6F9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 3px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      -webkit-transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+      transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+      transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled + label {
+      cursor: not-allowed;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:focus {
+      -webkit-box-shadow: 0 0 0 var(--focus);
+              box-shadow: 0 0 0 var(--focus);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+      width: 21px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+      --o: 1;
+    }
+    .checkbox-wrapper-13 input[type=checkbox] + label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+      border-radius: 50px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 5.5px;
+      top: 3px;
+      -webkit-transform: rotate(var(--r, 20deg));
+          -ms-transform: rotate(var(--r, 20deg));
+              transform: rotate(var(--r, 20deg));
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+  }
+
+  .checkbox-wrapper-13 * {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  .checkbox-wrapper-13 *:before,
+  .checkbox-wrapper-13 *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+
+.Review {
+    & h3 {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+    & span {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 13px;
+    }
+    &-mount {
+        margin-top: 1.5rem;
+    }
+    &-mount h6 {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 16px;
+        margin-bottom: 0.5rem !important;
+    }
+    &-mount p {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+    &-mount span {
+        color: c.$orange-300;
+        font-family: 'Bariol';
+        font-size: 13px;
+    }
+    &-pay {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 16px;
+        margin-bottom: 0.5rem !important;
+    }
+    & select {
+        padding: 15px;
+        border-radius: 4.507px;
+        border: 1.932px solid #CDCDCD;
+        background: #FFF;
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+.--third {
+    margin-top: 10rem;
+}
+
+.--fourth- {
+    background: #fff;
+    color: c.$gray-1;
+    margin-top: 1rem;
+}
+
+.--five {
+    background: c.$orange-400;
+    color: #FFF;
+}
+.--five- {
+    background: c.$gray-3;
+    color: c.$gray-1;
+}
+
+.Detail {
+    margin-top: 2rem;
+
+    & div {
+        margin-bottom: 16px;
+    }
+    & p {
+        color: c.$gray-1;
+        font-family: "Bariol";
+        font-size: 18px;
+        margin-bottom: 9px;
+    }
+    & span {
+        color: c.$gray-2;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+}
+
+.End {
+    display: grid;
+    place-content: center;
+    min-height: 40vh;
+
+    & h2 {
+        color: c.$cyan-500;
+        text-align: center;
+        font-family: "Bariol";
+        font-size: 20px;
+        margin-bottom: 3rem !important;
+    }
+    & p {
+        color: c.$gray-1;
+        text-align: center;
+        font-family: "Bariol";
+        font-size: 16px;
+    }
+}
+
+  
+@media only screen and (min-width: 780px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .Header-container {
+        margin: 0 0rem;
+    }
+
+    main {
+        margin: 0 15rem;
+        max-width: 1024px;
+    }
+    
+    .Bg-animation {
+        background-size: auto 273px;
+        background-image: url(/public/images/bg-payments-desktop.webp), url(/public/images/bg-payments-desktop.webp);
+        background-position: calc(-783px - var(--scrollY)), calc(100% + 626px + var(--scrollY)), 100%;
+        background-color: #00B1BB;
+        border-radius: 0px;
+    }
+
+    .Hero {
+        margin-top: 0rem;
+
+        &-header {
+            padding: 48px 0;
+            gap: 29px;
+        }
+        &-header img {
+            width: 95px;
+            height: 95px;
+        }   
+        &-header h3 {
+            font-size: 44px;    
+        }
+    }
+
+     /* El resto */
+
+    .Card {
+        padding: 27px 33px;
+        margin-top: 2.5rem;
+    
+        &-title {
+            gap: 18px;
+            margin-bottom: 1.5rem;
+        }
+        &-title h6 {
+            font-size: 20px;
+        }
+        &-info {
+            gap: 18px;
+        }
+        &-info:nth-child(1) {
+            margin-bottom: 0.7rem;
+        }
+        &-date p,
+        &-value p{
+            font-size: 18px;
+        }
+        &-date svg, 
+        &-value svg {
+            width: 19px;
+            height: 19px;
+        }
+    }
+    .subtitle {
+        margin-bottom: 1rem !important;
+        font-size: 20px;
+    }
+    .Payment{
+        margin-bottom: 1rem;
+    
+        & p {
+            font-size: 1.12rem; 
+        }
+        & span {
+            font-size: 1.12rem;
+        }
+    }
+    .Checkbox{
+        margin-bottom: 1rem;
+    
+        &-total {
+            margin-bottom: 1.9rem;
+        }
+        &-value {
+            margin-bottom: 0.9rem;
+        }
+        &-total p,
+        &-value p {
+            font-size: 1.12rem; 
+        }
+    }
+    
+    .next-btn {
+        font-size: 1.12rem;
+    }
+    
+    .minium-value {
+        font-size: 1.25rem;
+    }
+    
+    .Value {
+        & label {
+            font-size: 1rem;
+        }
+        & input {
+            padding: 1rem 0 1rem 1rem;
+            font-size: 1.2rem;
+        }
+        & ::placeholder {
+            font-size: 1.2rem;
+        }
+    }
+    .Review {
+        & h3 {
+            font-size: 20px;
+            margin-top: 4rem;
+            margin-bottom: 0.4rem !important;
+        }
+        & span {
+            font-size: 18px;
+        }
+        &-mount {
+            margin-top: 1.5rem;
+        }
+        &-mount h6 {
+            font-size: 22px;
+            margin-bottom: 0.5rem !important;
+        }
+        &-mount p {
+            font-size: 22px;
+        }
+        &-mount span {
+            font-size: 18px;
+        }
+        &-pay {
+            font-size: 22px;
+            margin-bottom: 0.9rem !important;
+        }
+        & select {
+            padding: 18px;
+            font-size: 22px;
+        }
+    }
+    .Detail {
+        margin-top: 4rem;
+    
+        & div {
+            margin-bottom: 20px;
+        }
+        & p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        & span {
+            font-size: 18px;
+        }
+    }
+
+    .End {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        & h2 {
+            font-size: 28px;
+            margin-bottom: 3rem !important;
+        }
+        & p {
+            width: 60%;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1440px){
+    main {
+        margin: 0 27rem;
+        max-width: 1440px;
+    }
+}
+
+
+

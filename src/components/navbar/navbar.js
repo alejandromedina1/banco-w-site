@@ -42,23 +42,14 @@ class NavBarDesktop extends HTMLElement {
             }
         });
 
-        //Link login
-        const loginBtn = document.querySelector('.inicio-sesion');
-        loginBtn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            window.location.replace('/login/');
-        })
-
         const logoBtn = document.querySelector('.logo');
         logoBtn.addEventListener('click', (e)=>{
             e.preventDefault();
             window.location.replace('/');
         })
-
       }
 
-      
-      
+           
       toggleLogo() {
         const logo = document.querySelector('.logo');
         const navMobile = document.querySelector('.nav-mobile');
@@ -83,8 +74,8 @@ class NavBarDesktop extends HTMLElement {
                         <input type="search" name="buscador" class="buscador" placeholder="¿Qué estás buscando?">
                         <img src="/icons/fi_search.svg" class="search-icon" alt="Icono buscador"/>
                     </div>
-                    <a href="#" class="inicio-sesion">Iniciar sesión</a>
-                    <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
+                    <a href="/login/" class="inicio-sesion">Iniciar sesión</a>
+                    <a href="/pagos/" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
                     <div class="profile">
                         <img class="profile-picture" src="/images/black_woman_1.webp" alt="Foto de perfil"/>
                         <span class="profile-info">
@@ -103,7 +94,7 @@ class NavBarDesktop extends HTMLElement {
                         </a>
                             <ul class="dropdown-content" id="cliente">
                                 <li><a href="#">Personas con negocio</a></li>
-                                <li><a href="#">Ahorradores e inversionistas</a></li>
+                                <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
                                 <li><a href="#">Pensionados y maestros</a></li>
                                 <li><a href="#">Colombianos en el exterior</a></li>
                             </ul>
@@ -144,7 +135,7 @@ class NavBarDesktop extends HTMLElement {
                         <img src="/icons/fi_search.svg" class="search-icon" alt="Icono buscador"/>
                     </div>
                     <a href="#" class="pagos-pse"><img src="/images/logo-pse.webp" alt="Logo PSE" /> <span>Pagos en línea</span></a>
-                    <a href="#" class="inicio-sesion"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="/login/" class="inicio-sesion"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.5 18.375V16.625C17.5 15.6967 17.1313 14.8065 16.4749 14.1501C15.8185 13.4937 14.9283 13.125 14 13.125H7C6.07174 13.125 5.1815 13.4937 4.52513 14.1501C3.86875 14.8065 3.5 15.6967 3.5 16.625V18.375" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M10.5 9.625C12.433 9.625 14 8.058 14 6.125C14 4.192 12.433 2.625 10.5 2.625C8.567 2.625 7 4.192 7 6.125C7 8.058 8.567 9.625 10.5 9.625Z" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
