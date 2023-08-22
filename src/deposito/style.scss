@@ -1,0 +1,301 @@
+@import '../global.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-vector, .right-vector{
+    display: none;
+}
+
+.woman-image{
+    position: relative;
+    width: 35%;
+    height: auto;
+    left: 20%;
+    margin-top: 2rem;
+    z-index: 2;
+}
+
+.banner-bg{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    background-color: $gray-3;
+    z-index: 1;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 1rem;
+    height: max-content;
+    margin-right: 5%;
+    z-index: 2;
+}
+
+.title{
+    color: $gray-1;
+    width: 80%;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.78375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text{
+    width: 80%;
+    color: $gray-2;
+    font-family: Bariol, sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tab-bar{   
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: -1rem auto;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+    z-index: 3;
+}
+
+.tab-button{
+    color: $gray-2;
+    border: none;
+    width: 20%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tab-content{
+    display: none;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.active{
+    color: $purple-300;
+    border-bottom: 2px solid $purple-300;
+}
+
+.bullet-points{
+    display: flex;
+    flex-direction: column;
+}
+
+.points{
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;  
+    font-size: 1.125rem;
+}
+
+.line-break{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 5em;
+  background-color: $purple-100; 
+  margin: 0 0.5em; 
+  vertical-align: middle;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        font-size: 10px;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 8px;
+    }
+
+    .title{
+        font-size: 1.4rem;
+    }
+
+    .text{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 821px) {
+    .content{
+        position: relative;
+    }
+
+    .banner-bg{
+        margin-top: -10rem;
+    }
+
+    .woman-image{
+        margin-top: 52%;
+        left: 30%;
+        width: 50%;
+    }
+
+    .info{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 55%;
+        width: 100%;
+        right: 20%;
+    }
+
+    .title{
+        font-size: 2.2rem;
+        text-align: center;
+        font-size: 2.7rem;
+        text-align: center;
+        width: 70%;
+        margin: 0;
+    }
+
+    .text{
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile{
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
+    }
+
+    .tab-button{
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+    .tab-content{
+        padding: 0.5rem 1rem;
+    }
+
+    .points{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .banner-bg{
+        display: none;
+    }
+
+    .left-vector {
+        display: inline-block;
+        position: absolute;
+        width: 40%;
+        left: 0%;
+        top: 21%;
+    }
+
+    .right-vector {
+        display: inline-block;
+        position: absolute;
+        width: 35%;
+        right: 0%;
+        top: 17%;
+    }
+
+    .banner{
+        background-color: $gray-3;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
+    }
+
+    .woman-image {
+        margin-top: 39%;
+        width: 40%;
+        left: 32%;
+    }
+
+    .info {
+        margin-bottom: 42%;
+        right: 18%;
+        margin-top: 5%;
+        gap: 5%;
+    }
+
+    .tab-button{
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+    .tab-content{
+        padding: 0.5rem 1rem;
+    }
+
+    .points{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+

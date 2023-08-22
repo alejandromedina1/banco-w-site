@@ -77,7 +77,7 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.8rem;
+        gap: 0.5rem
     }
 
     & .container-text {
@@ -114,7 +114,7 @@ h3 {
 
     & .btn {
         display: flex;
-        width: 95%;
+        width: auto;
         height: 1.8305rem;
         padding: 0.3125rem;
         border-radius: 0.27rem;
@@ -141,80 +141,13 @@ h3 {
         }
     }
 
-    & .woman-img {
+    & .woman-saver-img {
         width: 52%;
     }
 }
 
-#nav-bar-float {
-    position: relative;
-    width: 95%;
-    height: 85px;
-    border-radius: 6.7px;
-    border: none;
-    background-color: white;
-    box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: -40px 0;
-    margin-left: 2.5%;
-
-    & button {
-        width: 25%;
-        height: 60px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $purple-300;
-        text-align: center;
-        font-family: "font-bariol-regular";
-        font-size: 0.625rem;
-        font-weight: 400;
-        justify-content: space-between;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 0 1%;
-
-        & .icon {
-            width: 30%;
-            margin-bottom: 0.5rem;
-        }
-
-        & a {
-            display: flex;
-            text-decoration: none;
-            justify-content: center;
-            color: $purple-300;
-        }
-    }
-
-    & .option {
-
-        &_credit {
-            border-right: 1px solid $purple-100;
-        }
-
-        &_blog {
-            border-left: 1px solid $purple-100;
-            border-right: 1px solid $purple-100;
-        }
-
-        &_comparator {
-            border-left: 1px solid $purple-100;
-            border-right: 1px solid $purple-100;
-        }
-
-        &_simulator {
-            border-left: 1px solid $purple-100;
-        }
-    }
-}
-
 #products-landing {
-    background-image: url(./public/images/bg-product-ahorro-mobile.webp);
+    background-image: url(/images/bg-product-ahorro-mobile.webp);
     background-size: cover;
     background-position: center center;
 
@@ -239,14 +172,19 @@ h3 {
         padding: 0 5.13%;
 
         & .dropdown-products {
+            display: flex;
             width: 70.3%;
-            height: 2.1875rem;
+            height: 2.5rem;
             flex-shrink: 0;
             border-radius: 0.25rem;
+            justify-content: space-between;
+            align-items: center;
             border: 0.125rem solid white;
             background: $cyan-500;
             box-shadow: 2.964601755142212px 4.150442600250244px 17.78761100769043px 0px rgba(0, 177, 187, 0.21);
             margin-bottom: 1.25rem;
+            font-size: 2.1875rem;
+            font-family: "font-geomanist-bold";
         }
 
         & .info-product {
@@ -899,7 +837,7 @@ h3 {
 
         & .banner-container {
             width: 45%;
-            gap: 2.3rem;
+            gap: 1rem;
         }
 
         & .container-text {
@@ -929,7 +867,7 @@ h3 {
         }
 
         & .btn {
-            width: 44.4%;
+            width: auto;
             height: 3.5625rem;
             padding: 13px 5%;
             border-radius: 0.5rem;
@@ -1561,7 +1499,7 @@ h3 {
 
         & .banner-container {
             width: 45%;
-            gap: 2.3rem;
+            gap: 1.5rem;
         }
 
         & .container-text {
