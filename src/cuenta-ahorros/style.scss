@@ -16,6 +16,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .banner-bg {
@@ -89,7 +90,7 @@ p {
     align-items: center;
     box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
     border-radius: 0.4375rem;
-    z-index: 3;
+    z-index: 2;
 }
 
 .tab-button {
