@@ -86,7 +86,7 @@ h1 {
 }
 
 .procedure-info {
-    display: none;
+    display: none !important;
 }
 
 .procedure-info.active {
