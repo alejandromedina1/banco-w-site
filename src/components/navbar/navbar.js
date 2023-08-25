@@ -104,7 +104,7 @@ class NavBarDesktop extends HTMLElement {
                 <nav class="nav-desktop">
                     <ul class="navegacion">
                         <li><a href="/" id="inicio">Inicio </a></li>
-                        <li class="dropdown"><a href="#" id="clientes">Clientes <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="dropdownNav"><a href="#" id="clientes">Clientes <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         </a>
@@ -115,7 +115,7 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Colombianos en el exterior</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="dropdownNav"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="#">Créditos</a></li>
@@ -124,7 +124,7 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Seguros</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="dropdownNav"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="#">Educación financiera</a></li>
@@ -133,7 +133,7 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Revista</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="#">Quiénes somos</a></li>
@@ -158,7 +158,7 @@ class NavBarDesktop extends HTMLElement {
                      Iniciar sesión</a>
 
                      <ul class="navegacion">
-                     <li class="dropdown"><a href="#">Clientes <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <li class="dropdownNav"><a href="#">Clientes <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                      </svg>
                      </a>
@@ -169,7 +169,7 @@ class NavBarDesktop extends HTMLElement {
                              <li><a href="#">Colombianos en el exterior</a></li>
                          </ul>
                      </li>
-                     <li class="dropdown"><a href="#">Productos y servicios <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <li class="dropdownNav"><a href="#">Productos y servicios <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                          <ul class="dropdown-content">
                              <li><a href="#">Créditos</a></li>
@@ -178,7 +178,7 @@ class NavBarDesktop extends HTMLElement {
                              <li><a href="#">Seguros</a></li>
                          </ul>
                      </li>
-                     <li class="dropdown"><a href="#">Asesoría financiera <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <li class="dropdownNav"><a href="#">Asesoría financiera <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                          <ul class="dropdown-content">
                              <li><a href="#">Educación financiera</a></li>
@@ -187,7 +187,7 @@ class NavBarDesktop extends HTMLElement {
                              <li><a href="#">Revista</a></li>
                          </ul>
                      </li>
-                     <li class="dropdown"><a href="#">Acerca de nosotros <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <li class="dropdownNav"><a href="#">Acerca de nosotros <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                          <ul class="dropdown-content">
                              <li><a href="#">Quiénes somos</a></li>
