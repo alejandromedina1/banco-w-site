@@ -87,7 +87,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     left: 20%;
-    top: 450px;
+    top: 430px;
     z-index: 1;
 
     & button {
@@ -109,7 +109,7 @@ h3 {
         padding: 0 1%;
 
         & .icon {
-            width: 30%;
+            width: 24%;
             margin-bottom: 0.5rem;
         }
 
@@ -125,7 +125,7 @@ h3 {
         background-color: $purple-100;
     }
 
-    & .active{
+    .active{
         background-color: $purple-300;
         & p {
             color: white;
@@ -212,6 +212,11 @@ h3 {
             font-size: 18px;
         }
     }
+
+    #nav-bar-float {
+        width: 80%;
+        left: 10%;
+    }
     
 }
 
@@ -234,13 +239,17 @@ h3 {
 
         & .banner-container {
             width: 80%;
+            height: 370px;
             margin: 0;
+            justify-content: space-around;
+            height: fit-content;
         }
 
         & .container-text {
             text-align: center;
-            margin: 0% 5%;
+            margin: 10% 0%;
             align-items: center;
+            height: 130px;
         }
 
         & .title {
@@ -252,11 +261,11 @@ h3 {
         }
 
         &  .woman-saver-img{
-            width:  48%;
+            width:  300px;
         }
     }
     #nav-bar-float {
-        top: 520px;
+        top: 580px;
         height: 10%;
         & button {
             & p {
@@ -273,5 +282,24 @@ h3 {
     .purple-button {
         background-color: $purple-300;
         padding: 5px 10px;
+    }
+    #banner {
+
+        & .banner-container {
+            width: 80%;
+            height: 370px;
+            margin: 0;
+            justify-content: space-around;
+            height: fit-content;
+        }
+    }
+    #nav-bar-float {
+        top: 580px;
+        height: 10%;
+        & button {
+            & p {
+                font-size: 14px;
+            }
+        }
     }
 }
