@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQRS</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--Scss-->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+
+</head>
+
+<body>
+
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <section id="breadcrumb-w">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%23BCBDBD'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html"><img src="../public/icons/home-w-gray.svg" alt=""
+                            class="breadcrumb-icon"></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Personas con negocios</li>
+            </ol>
+        </nav>
+    </section>
+
+    <section id="main-banner">
+        <h1>PQRS</h1>
+        <p class="body1 main-text">El Sistema de Peticiones, Quejas, Reclamos y Sugerencias es una herramienta que nos permite
+            conocer las
+            inquietudes y manifestaciones que tienen nuestros grupos de interés para que tengamos la oportunidad de
+            fortalecer nuestro servicio y seguir en el camino hacia la excelencia operativa.</p>
+    </section>
+
+    <nav id="nav-procedure">
+        <button class="btn-procedure active" id="new-procedure-btn">
+                <i class="bi bi-calculator-fill icon-calc"></i>
+                <p class="text-btn">Nuevo trámite</p>
+        </button>
+        <button class="btn-procedure" id="status-procedure-btn">
+            <i class="bi bi-calculator-fill icon-calc"></i>
+            <p class="text-btn">Estado de trámite</p>
+        </button>
+    </nav>
+
+    <section id="new-procedure" class="procedure-info active">
+        <form action="" id="new-pqrs">
+            <section class="form-items">
+                <div class="item-form">
+                    <label for="form-type" class="label-input">Tipo de solicitud</label>
+                    <select class="form-select input-base input-toggle" id="form-type"
+                        aria-label="Default select example">
+                        <option selected>Escoge una opción</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="form-name" class="label-input">Nombre</label>
+                    <input type="text" id="form-name" class="input-base" placeholder="Escribe tu nombre completo">
+                </div>
+                <div class="item-form">
+                    <label for="form-id" class="label-input">Tipo de identificación</label>
+                    <select class="form-select input-base input-toggle" id="form-id"
+                        aria-label="Default select example">
+                        <option selected>Escoge una opción</option>
+                        <option value="1">Cédula de ciudadanía</option>
+                        <option value="2">Ciudadanía Extranjera</option>
+                        <option value="3">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="form-number" class="label-input">Número de identificación</label>
+                    <input type="number" id="form-number" class="input-base">
+                </div>
+                <div class="item-form">
+                    <label for="form-email" class="label-input">Correo electrónico</label>
+                    <input type="email" id="form-email" class="input-base" placeholder="Escribe tu correo">
+                </div>
+                <div class="item-form">
+                    <label for="form-phone" class="label-input">Teléfono</label>
+                    <input type="number" id="form-phone" class="input-base">
+                </div>
+                <div class="item-form">
+                    <label for="form-country" class="label-input">País</label>
+                    <select class="form-select input-base input-toggle" id="form-country"
+                        aria-label="Default select example">
+                        <option selected>Selecciona tu país</option>
+                        <option value="1">Colombia</option>
+                        <option value="2">Estados Unidos</option>
+                        <option value="3">España</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="form-dep" class="label-input">Departamento</label>
+                    <select class="form-select input-base input-toggle" id="form-dep"
+                        aria-label="Default select example">
+                        <option selected>Selecciona tu departamento</option>
+                        <option value="1">Huila</option>
+                        <option value="2">Nariño</option>
+                        <option value="3">Valle del Cauca</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="form-city" class="label-input">Municipio</label>
+                    <select class="form-select input-base input-toggle" id="form-city"
+                        aria-label="Default select example">
+                        <option selected>Selecciona tu municipio</option>
+                        <option value="1">Cali</option>
+                        <option value="2">Florida</option>
+                        <option value="3">Palmira</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="form-subject" class="label-input">Asunto</label>
+                    <select class="form-select input-base input-toggle" id="form-subject"
+                        aria-label="Default select example">
+                        <option selected>Selecciona tu asunto</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="form-description" class="label-input">Descripción</label>
+                    <select class="form-select input-base input-toggle" id="form-description"
+                        aria-label="Default select example">
+                        <option selected>Selecciona la descripción</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </section>
+            <section class="checkbox-items">
+                <div class="checkbox-form">
+                    <input id="form-message-cel" type="checkbox" class="check-input input-base">
+                    <label for="form-message-cel" class="label-check">Autorizo una respuesta vía celular</label>
+                </div>
+                <div class="checkbox-form">
+                    <input id="form-message-email" type="checkbox" class="check-input input-base">
+                    <label for="form-message-email" class="label-check">Autorizo una respuesta vía correo</label>
+                </div>
+                <div class="checkbox-form">
+                    <input id="form-accept" type="checkbox" class="check-input input-base">
+                    <label for="form-accept" class="label-check">Manifiesto y acepto que conozco los términos y
+                        condiciones de política para el uso y tratamiento de datos personales.</label>
+                </div>
+                <input type="submit" id="send-form" disabled>
+            </section>
+        </form>
+    </section>
+
+    <section id="status-procedure" class="procedure-info">
+        <article class="pqrs-status">
+            <div class="each-item">
+                <p class="body1">Tipo de solicitud</p>
+                <p class="body1">Reclamo</p>
+            </div>
+            <div class="each-item">
+                <p class="body1">Ver trámite</p>
+                <a href="">
+                    <p class="body1">Ver</p>
+                </a>
+            </div>
+            <div class="each-item">
+                <p class="body1">Estado</p>
+                <p class="body1">En curso</p>
+            </div>
+            <div class="each-item">
+                <p class="body1">Fecha de solicitud</p>
+                <p class="body1">23/01/2023</p>
+            </div>
+            <div class="each-item">
+                <p class="body1">Fecha de respuesta</p>
+                <p class="body1"><span class="date-in-process">En espera</span></p>
+            </div>
+        </article>
+    </section>
+
+
+    <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+  <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script type="module" src="../components/components.js"></script>
+    <script src="./sketch.js"></script>
+
+</body>
+
+</html>

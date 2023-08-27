@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco W</title>
+  <link rel="stylesheet" href="./style.scss">
+  <link rel="stylesheet" href="../components/footer/style.scss">
+  <link rel="stylesheet" href="../components/navbar/style.scss">
+  <link rel="stylesheet" href="../global.scss">
+
+  <!--Css Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+</head>
+
+
+<body>
+  <nav-bar-desktop></nav-bar-desktop>
+  <main>
+    <div id="back-container">
+      <img src="/icons/fi_chevron-left.svg" id="back-icon" alt="">
+      <p id="back-title">Atrás</p>
+    </div>
+    <section id="data">
+      <img src="/images/mobile-simulador-clave2000_4x.webp" class="page-cover" alt="">
+
+      <form action="">
+        <div class="input-group-sim">
+          <label for="">Monto deseado:</label>
+          <input type="text" class="fields" placeholder="Digite el monto deseado">
+          <p class="caption">desde 30.000.000$ hasta 100.000.000$</p>
+        </div>
+
+        <div class="input-group-sim">
+          <label for="">Plazo en días</label>
+          <input type="text" class="fields" placeholder="Digite el plazo en días">
+          <p class="caption">desde 48 días a 72 días</p>
+        </div>
+
+        <button id="simular">Simular</button>
+      </form>
+    </section>
+    
+    <section id="result">
+      <img src="/images/mobile-simulador-resultados_4x.webp" class="result-cover" alt=""> 
+
+      <div id="results-container">
+        <div id="value-container">
+          <h1 id="results-title">Resultados de la simulación</h1>
+          <div id="amount-container">
+            <h1 id="value-entered">1.000.000</h1>
+            <p id="amount-entered">Monto de clave2000 solicitado</p>
+          </div>
+        </div>
+
+        <div id="table">
+          <div class="table-row">
+            <p class="table-text">Plazo (días)</p>
+            <p class="table-text">50</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p class="table-text">Tasa de interés E.A. %</p>
+            <p class="table-text">35.38%</p>
+          </div>
+
+          <div class="table-row">
+            <p class="table-text">Tasa de interés M.V. %</p>
+            <p class="table-text">2.56%</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p class="table-text">Valor aproximado de cuota</p>
+            <p class="table-text">1.092.312</p>
+          </div>
+
+          <div class="table-row">
+            <p class="table-text">Estudio crédito</p>
+            <p class="table-text">19.700</p>
+          </div>
+
+          <div class="table-row highlighted">
+            <p class="table-text">Interes ($)</p>
+            <p class="table-text">23.485.098</p>
+          </div>
+
+          <div class="table-row">
+            <p class="text-highlighted">VTUA % (TIR E.A)</p>
+            <p class="text-highlighted">37.31%</p>
+          </div>
+
+          <div class="table-row last-highlighted">
+            <p class="text-highlighted">VTUA EN PESOS ($)</p>
+            <p class="text-highlighted">54.705.478</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="bttn-container">
+        <button id="simulate">Solicitar Clave2000</button>
+        <button id="back-btn">Regresar</button>
+      </div>
+
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+  <help-button></help-button>
+  <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+  <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+<script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+  <script type="module" src="./simuladores.js"></script>
+  <script type="module" src="../components/footer/footer.js"></script>
+  <script type="module" src="../components/navbar/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahorradores e inversionistas</title>
+  <link rel="stylesheet" href="./style.scss">
+  <link rel="stylesheet" href="../components/footer/style.scss">
+  <link rel="stylesheet" href="../components/navbar/style.scss">
+  <link rel="stylesheet" href="../global.scss">
+</head>
+
+<body>
+  <nav-bar-desktop></nav-bar-desktop>
+
+  <section id="banner">
+    <img src="/images/woman-saver.webp" alt="mujer ahorradora" class="woman-saver-img">
+    <div class="banner-container">
+      <div class="container-text">
+        <p class="title">Ahorradores e inversionistas</p>
+        <p class="info">Para ti que eres una persona que
+          encuentra en el ahorro una forma de cumplir tus
+          sueños, tenemos la rentabilidad y la seguridad
+          que necesitas para que puedas lograrlo.</p>
+      </div>
+    </div>
+  </section>
+    <nav id="nav-bar-float" class="nav-bar-float">
+        <button class="tab-button" data-tab="all" style="border-right: 1px solid #DFCCF3; border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
+          <img class="icon" src="/icons/all_option_inv.svg" alt="Todas">
+          <p>Todas</p>
+        </button>
+        <button class="tab-button" data-tab="saving" style="border-right: 1px solid #DFCCF3;">
+          <img class="icon" src="/icons/saving_option_inv.svg" alt="Ahorro">
+          <p>Ahorro</p>
+        </button>
+        <button class="tab-button" data-tab="invest" style="border-right: 1px solid #DFCCF3;">
+          <img class="icon" src="/icons/invest_option_inv.svg" alt="Invertir">
+          <p>Invertir</p>
+        </button>
+        <button class="tab-button" data-tab="int-transfers" style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;">
+          <img class="icon" src="/icons/transfers_option_inv.svg" alt="Giros internacionales">
+          <p>Giros internacionales</p>
+        </button>
+      </nav>
+
+  <section class="options">
+    <div class="card saving all">
+      <img src="../public/images/todos-card-1.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cuenta de ahorro</h5>
+        <p class="card-text">Ahorra fácil y gratis para que
+          cumplas tus proyectos y tus propósitos personales
+          como familiares.</p>
+        <div class="card-buttons">
+          <a href="/cuenta-ahorros/" class="purple-card-button">¡Conoce más!</a>
+          <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+        </div>
+      </div>
+    </div>
+    <div class="card saving all">
+      <img src="../public/images/todos-card-2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Depósito de bajo monto</h5>
+        <p class="card-text">Sin salir de tu casa puedes obtener
+          tu cuenta de ahorros en pocos minutos a cero costo y
+          sin mayor documentación.</p>
+        <div class="card-buttons">
+          <a href="/deposito/" class="purple-card-button">¡Conoce más!</a>
+        </div>
+      </div>
+    </div>
+    <div class="card invest all">
+      <img src="../public/images/todos-card-3.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CDT</h5>
+        <p class="card-text">Haz tu inversión de manera segura,
+          fácil y rentable a través de nuestros CDTs</p>
+        <div class="card-buttons">
+          <a href="/cdt/" class="purple-card-button">¡Conoce más!</a>
+          <a href="/simuladorcdt/" class="white-card-button">Simular</a>
+        </div>
+      </div>
+    </div>
+    <div class="card int-transfers all">
+      <img src="../public/images/todos-card-4.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Enviar giros</h5>
+        <p class="card-text">Envía de forma segura a tus
+          seres queridos en otros países, la plata que te
+          mantiene más cerca de ellos.</p>
+        <div class="card-buttons">
+          <a href="/enviar-giros/" class="purple-card-button">¡Conoce más!</a>
+        </div>
+      </div>
+    </div>
+    <div class="card int-transfers all">
+      <img src="../public/images/todos-card-5.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Reclamar giros</h5>
+        <p class="card-text">Recibe de forma fácil y segura
+          los giros que te envían familiares, amigos o
+          conocidos del exterior.</p>
+        <div class="card-buttons">
+          <a href="/reclamar-giros/" class="purple-card-button">¡Conoce más!</a>
+        </div>
+      </section>
+      
+      <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+  <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    
+    
+      <script type="module" src="../components/components.js"></script>
+
+  <script type="module" src="../components/components.js"></script>
+  <script type="module" src="../components/footer/footer.js"></script>
+  <script type="module" src="../components/navbar/navbar.js"></script>
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

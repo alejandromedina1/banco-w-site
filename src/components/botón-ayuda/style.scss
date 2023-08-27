@@ -2,14 +2,7 @@
 @import "bootstrap/scss/bootstrap";
 @import "../../global.scss";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "font-bariol-regular";
-    font-size: 16px;
-}
-
-#show-btn {
+#show-help-btn {
     display: none;
 }
 
@@ -19,7 +12,7 @@
     right: 50px;
 }
 
-.options div a {
+.help-options div a {
     display: block;
     text-decoration: none;
     background: white;
@@ -56,7 +49,7 @@
     opacity: 1;
 }
 
-#show-btn:checked~ .show-btn span {
+#show-help-btn:checked~ .show-btn span {
     opacity: 0;
 }
 
@@ -119,11 +112,11 @@
     background-color: $orange-400;
 }
 
-#show-btn:checked~ .options div span {
+#show-help-btn:checked~ .help-options div span {
     opacity: 1;
 }
 
-.show-btn img{
+.show-help-btn img{
     background-color: $orange-400;
     width: 97px;
     height: 97px;
@@ -134,23 +127,23 @@
     cursor: pointer;
 }
 
-.options div a:hover {
+.help-options div a:hover {
     background-color: $orange-100;
 
 }
 
-.options div a {
+.help-options div a {
     opacity: 0;
     visibility: hidden;
     position: relative;
 }
 
-#show-btn:checked~ .options div a {
+#show-help-btn:checked~ .help-options div a {
     opacity: 1;
     visibility: visible;
 }
 
-.label-hidden {
+.help-label-hidden {
     margin-left: 10px;
     position: absolute;
     right: 80px;
@@ -163,12 +156,12 @@
     border-radius: 20px;
 }
 
-.show-button:hover + .label-hidden {
+.show-help-button:hover + .help-label-hidden {
     background-color: $orange-400;
     opacity: 1;
 }
 
-#show-btn:checked~ .show-btn span {
+#show-help-btn:checked~ .show-help-btn span {
     opacity: 0;
 }
 
@@ -225,7 +218,7 @@
         background-color: transparent;
     }
 
-    .options {
+    .help-options {
         background-color: white;
         width:75px;
         border-radius: 50px;
@@ -239,12 +232,12 @@
         align-items: center;
     }
 
-    .show-btn {
+    .show-help-btn {
         position: absolute;
         bottom: -40px;
     }
 
-    #show-btn:checked~ .options {
+    #show-help-btn:checked~ .help-options {
         opacity: 1;
     }
 }

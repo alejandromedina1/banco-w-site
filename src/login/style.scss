@@ -126,6 +126,7 @@ input.fields {
     border-radius: 4px;
     padding: 10px;
     font-family: "font-bariol-regular";
+    padding-left: 40px;
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
@@ -246,4 +247,27 @@ button#login:active {
     cursor: pointer;
     text-decoration: underline;
     color: $gray-1;
+}
+
+.input-group{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+}
+
+#icon-toggle{
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+}
+
+i{
+    color: #cdcdcd;
 }

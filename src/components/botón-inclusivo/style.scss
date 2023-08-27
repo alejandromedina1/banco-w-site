@@ -2,15 +2,56 @@
 @import "bootstrap/scss/bootstrap";
 @import "../../global.scss";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "font-bariol-regular";
-    font-size: 16px;
+#show-inclusive-btn {
+    display: none;
 }
 
-#show-btn {
+#plus-button {
     display: none;
+}
+
+#plus-button:checked~ #plus a {
+    background-color: $cyan-500;
+}
+
+#plus-button:checked~ #plus img {
+    filter: saturate(0) brightness(3);
+}
+
+#minus-button {
+    display: none;
+}
+
+#minus-button:checked~ #minus img {
+    filter: saturate(0) brightness(3);
+}
+
+#minus-button:checked~ #minus a {
+    background-color: $cyan-500;
+}
+
+#contrast-button {
+    display: none;
+}
+
+#contrast-button:checked~ #contrast img {
+    filter: saturate(0) brightness(3);
+}
+
+#contrast-button:checked~ #contrast a {
+    background-color: $cyan-500;
+}
+
+#dark-button {
+    display: none;
+}
+
+#dark-button:checked~ #dark img {
+    filter: saturate(0) brightness(3);
+}
+
+#dark-button:checked~ #dark a {
+    background-color: $cyan-500;
 }
 
 .inclusive-button {
@@ -19,7 +60,7 @@
     right: 50px;
 }
 
-.options div a {
+.inclusive-options label a {
     display: block;
     text-decoration: none;
     background: white;
@@ -29,15 +70,16 @@
     text-align: center;
     border-radius: 50%;
     transition: all 500ms ease;
+    cursor: pointer;
 }
 
-#night {
+#dark {
     position: absolute;
     bottom: -40px;
     right: 130px;
 }
 
-#night span{
+#dark span{
     margin-left: 10px;
     position: absolute;
     right: 80px;
@@ -51,12 +93,12 @@
     background-color: $cyan-500;
 }
 
-#night a img:hover + .plus span{
+#dark a img:hover + .plus span{
     background-color: $cyan-500;
     opacity: 1;
 }
 
-#show-btn:checked~ .show-btn span {
+#show-inclusive-btn:checked~ .show-inclusive-btn span {
     opacity: 0;
 }
 
@@ -119,11 +161,11 @@
     background-color: $cyan-500;
 }
 
-#show-btn:checked~ .options div span {
+#show-inclusive-btn:checked~ .inclusive-options label span {
     opacity: 1;
 }
 
-.show-btn img{
+.show-inclusive-btn img{
     background-color: $cyan-500;
     width: 97px;
     height: 97px;
@@ -134,18 +176,18 @@
     cursor: pointer;
 }
 
-.options div a:hover {
+.inclusive-options div a:hover {
     background-color: $cyan-500;
 
 }
 
-.options div a {
+.inclusive-options label a {
     opacity: 0;
     visibility: hidden;
     position: relative;
 }
 
-#show-btn:checked~ .options div a {
+#show-inclusive-btn:checked~ .inclusive-options label a {
     opacity: 1;
     visibility: visible;
 }
@@ -163,16 +205,16 @@
     border-radius: 20px;
 }
 
-.show-button:hover + .label-hidden {
+.show-inclusive-button:hover + .label-hidden {
     background-color: $cyan-500;
     opacity: 1;
 }
 
-#show-btn:checked~ .show-btn span {
+#show-inclusive-btn:checked~ .show-btn span {
     opacity: 0;
 }
 
-#overlay{
+#inclusive-overlay{
     display: none;
     position: fixed;
     top: 0;
@@ -186,11 +228,11 @@
 }
 
 @media screen and (max-width: 1020px) {
-    #night {
+    #dark {
         position: inherit;
     }
 
-    #night span{
+    #dark span{
         bottom: 80px;
         right: 70px;
         width: 150px;
@@ -228,7 +270,7 @@
         background-color: transparent;
     }
 
-    .options {
+    .inclusive-options {
         background-color: white;
         width:75px;
         border-radius: 50px;
@@ -236,7 +278,7 @@
         opacity: 0;
     }
 
-    .options div span {
+    .inclusive-options label span {
         text-align: center;
     }
 
@@ -246,12 +288,12 @@
         align-items: center;
     }
 
-    .show-btn {
+    .show-inclusive-btn {
         position: absolute;
         bottom: -40px;
     }
 
-    #show-btn:checked~ .options {
+    #show-inclusive-btn:checked~ .inclusive-options {
         opacity: 1;
     }
 }

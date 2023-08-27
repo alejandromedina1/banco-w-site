@@ -1,57 +1,54 @@
-//Change screen
-const switcher = document.getElementById("page-switcher");
-const pages = document.getElementById("pages").children;
+document.addEventListener("DOMContentLoaded", function() {
+  const switcher = document.getElementById("page-switcher");
+  const pages = document.getElementById("pages").children;
+  const items = document.querySelectorAll('#page-switcher li');
+  const marker = document.querySelector('#marker');
 
-switcher.addEventListener("click", (event) => {
-  const target = event.target.dataset.target;
-  if (target) {
-    for (let page of pages) {
-      if (page.id === target) {
-        page.style.display = "block";
-      } else {
-        page.style.display = "none";
+  switcher.addEventListener("click", (event) => {
+    const target = event.target.dataset.target;
+    if (target) {
+      for (let page of pages) {
+        if (page.id === target) {
+          page.style.display = "block";
+        } else {
+          page.style.display = "none";
+        }
       }
     }
-  }
-});
-
-//Slider
-var marker = document.querySelector('#marker');
-var items = document.querySelectorAll('#page-switcher li');
-
-function indicator(e) {
-  marker.style.left = e.offsetLeft + "px";
-  marker.style.width = e.offsetWidth + "px";
-}
-
-items.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    e.preventDefault();
-    indicator(e.target);
   });
-});
 
-
-function cambiarColor(liSeleccionado) {
-  const opciones = document.getElementsByClassName('opcion');
-  for (const opcion of opciones) {
-    opcion.classList.remove('seleccionada');
+  function indicator(e) {
+    marker.style.left = e.offsetLeft + "px";
+    marker.style.width = e.offsetWidth + "px";
   }
 
-  const enlaceSeleccionado = liSeleccionado.querySelector('a');
-  enlaceSeleccionado.classList.add('seleccionada');
+  items.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      cambiarColor(item); // Llama a la función para cambiar el color en cada clic
+      indicator(e.target);
+    });
+  });
 
-  const iconos = document.getElementsByClassName('icon');
+  function cambiarColor(liSeleccionado) {
+    const opciones = document.getElementsByClassName('opcion');
+    for (const opcion of opciones) {
+      opcion.classList.remove('seleccionada');
+    }
 
-  for (const icono of iconos) {
-    icono.style.fill = '#FF8833';
+    const enlaceSeleccionado = liSeleccionado.querySelector('a');
+    enlaceSeleccionado.classList.add('seleccionada');
+
+    const iconos = document.getElementsByClassName('icon');
+    for (const icono of iconos) {
+      icono.style.fill = '#FF8833';
+    }
+
+    const svgSeleccionado = liSeleccionado.querySelector('.icon');
+    svgSeleccionado.style.fill = '#fff';
   }
 
-  const svgSeleccionado = liSeleccionado.querySelector('.icon');
-  svgSeleccionado.style.fill = '#fff';
-}
-
-window.onload = function() {
+  // Llama a la función cambiarColor al cargar la página para resaltar el primer elemento
   const primerLi = document.querySelector('li');
   cambiarColor(primerLi);
-};
+});

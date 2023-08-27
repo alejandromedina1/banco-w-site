@@ -1,18 +1,16 @@
 import "./ButtonDuoIcon/buttonDuoIcon.js"
-
 import "./Details/details.js"
 import "./LastPost/lastPost.js"
 import "./ChallengeStatus/challengeStatus.js"
 import "./Table/table.js"
-
-
 import "./TurnsCarrousel/turnsCarrousel.js"
-import "./pagos-profile/pagos-profile.js"
-import "./extractos-profile/extractos-profile.js"
-import "./logros-profile/logros-profile.js"
-import "./giros-profile/giros-profile.js"
-import "./productos1-profile/productos1-profile.js"
-import "./productos2-profile/productos2-profile.js"
-import "./productos3-profile/productos3-profile.js"
-import "./agenda-profile/agenda-profile.js"
+import "./pagos_profile/pagos_profile.js"
+import "./extractos-profile/extractos_profile.js"
+import "./logros_profile/logros_profile.js"
+import "./giros_profile/giros_profile.js"
+import "./productos1_profile/productos1_profile.js"
+import "./productos2_profile/productos2_profile.js"
+import "./productos3_profile/productos3_profile.js"
+import "./agenda_profile/agenda_profile.js"
+import  "./cita_profile/cita_profile.js"
 

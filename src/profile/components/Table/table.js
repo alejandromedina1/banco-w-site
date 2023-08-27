@@ -1,3 +1,5 @@
+import "./table.scss";
+
 class TableIcon extends HTMLElement {
     constructor() {
         super();

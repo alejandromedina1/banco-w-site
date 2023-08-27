@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../components/navbar/style.scss" />
+
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss" />
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss" />
+    <link rel="stylesheet" href="../components/footer/style.scss" />
+  </head>
+  <body>
+    <nav-bar-desktop></nav-bar-desktop>
+  <div class="back-button">
+    
+    <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+      <path d="M9.375 3.75L5.625 7.5L9.375 11.25" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+      Atrás</a>
+  </div>
+    <header class="Hero Bg-animation">
+      <div class="Hero-header">
+          <div class="header-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M20 20C19.0111 20 18.0444 20.2933 17.2221 20.8427C16.3999 21.3921 15.759 22.173 15.3806 23.0866C15.0022 24.0003 14.9031 25.0056 15.0961 25.9755C15.289 26.9454 15.7652 27.8363 16.4645 28.5356C17.1637 29.2348 18.0546 29.711 19.0245 29.904C19.9944 30.0969 20.9998 29.9979 21.9134 29.6194C22.827 29.241 23.6079 28.6001 24.1573 27.7779C24.7067 26.9556 25 25.9889 25 25C25 23.674 24.4732 22.4022 23.5355 21.4645C22.5978 20.5268 21.3261 20 20 20ZM20 26.6667C19.6704 26.6667 19.3481 26.569 19.074 26.3858C18.8 26.2027 18.5863 25.9424 18.4602 25.6378C18.334 25.3333 18.301 24.9982 18.3653 24.6749C18.4297 24.3516 18.5884 24.0546 18.8215 23.8215C19.0546 23.5884 19.3515 23.4297 19.6748 23.3654C19.9981 23.3011 20.3333 23.3341 20.6378 23.4602C20.9423 23.5864 21.2026 23.8 21.3858 24.0741C21.5689 24.3482 21.6667 24.6704 21.6667 25C21.6667 25.4421 21.4911 25.866 21.1785 26.1786C20.8659 26.4911 20.442 26.6667 20 26.6667ZM18.8167 16.1834C18.9752 16.3351 19.1621 16.4541 19.3667 16.5334C19.5662 16.6216 19.7819 16.6671 20 16.6671C20.2181 16.6671 20.4338 16.6216 20.6333 16.5334C20.8379 16.4541 21.0248 16.3351 21.1833 16.1834L25 12.4334C25.3227 12.1107 25.5039 11.673 25.5039 11.2167C25.5039 10.7604 25.3227 10.3227 25 10C24.6773 9.67736 24.2397 9.49608 23.7833 9.49608C23.327 9.49608 22.8893 9.67736 22.5667 10L21.6667 10.9834V5.00004C21.6667 4.55801 21.4911 4.13409 21.1785 3.82153C20.8659 3.50897 20.442 3.33337 20 3.33337C19.558 3.33337 19.134 3.50897 18.8215 3.82153C18.5089 4.13409 18.3333 4.55801 18.3333 5.00004V10.9834L17.4333 10C17.1106 9.67736 16.673 9.49608 16.2167 9.49608C15.7603 9.49608 15.3227 9.67736 15 10C14.6773 10.3227 14.496 10.7604 14.496 11.2167C14.496 11.673 14.6773 12.1107 15 12.4334L18.8167 16.1834ZM31.6667 25C31.6667 24.6704 31.5689 24.3482 31.3858 24.0741C31.2026 23.8 30.9423 23.5864 30.6378 23.4602C30.3332 23.3341 29.9981 23.3011 29.6748 23.3654C29.3515 23.4297 29.0546 23.5884 28.8215 23.8215C28.5884 24.0546 28.4297 24.3516 28.3653 24.6749C28.301 24.9982 28.334 25.3333 28.4602 25.6378C28.5863 25.9424 28.8 26.2027 29.074 26.3858C29.3481 26.569 29.6704 26.6667 30 26.6667C30.442 26.6667 30.8659 26.4911 31.1785 26.1786C31.4911 25.866 31.6667 25.4421 31.6667 25ZM33.3333 13.3334H28.3333C27.8913 13.3334 27.4674 13.509 27.1548 13.8215C26.8422 14.1341 26.6667 14.558 26.6667 15C26.6667 15.4421 26.8422 15.866 27.1548 16.1786C27.4674 16.4911 27.8913 16.6667 28.3333 16.6667H33.3333C33.7753 16.6667 34.1993 16.8423 34.5118 17.1549C34.8244 17.4674 35 17.8913 35 18.3334V31.6667C35 32.1087 34.8244 32.5327 34.5118 32.8452C34.1993 33.1578 33.7753 33.3334 33.3333 33.3334H6.66666C6.22463 33.3334 5.80071 33.1578 5.48814 32.8452C5.17558 32.5327 4.99999 32.1087 4.99999 31.6667V18.3334C4.99999 17.8913 5.17558 17.4674 5.48814 17.1549C5.80071 16.8423 6.22463 16.6667 6.66666 16.6667H11.6667C12.1087 16.6667 12.5326 16.4911 12.8452 16.1786C13.1577 15.866 13.3333 15.4421 13.3333 15C13.3333 14.558 13.1577 14.1341 12.8452 13.8215C12.5326 13.509 12.1087 13.3334 11.6667 13.3334H6.66666C5.34057 13.3334 4.0688 13.8602 3.13112 14.7978C2.19344 15.7355 1.66666 17.0073 1.66666 18.3334V31.6667C1.66666 32.9928 2.19344 34.2646 3.13112 35.2022C4.0688 36.1399 5.34057 36.6667 6.66666 36.6667H33.3333C34.6594 36.6667 35.9312 36.1399 36.8689 35.2022C37.8065 34.2646 38.3333 32.9928 38.3333 31.6667V18.3334C38.3333 17.0073 37.8065 15.7355 36.8689 14.7978C35.9312 13.8602 34.6594 13.3334 33.3333 13.3334ZM8.33332 25C8.33332 25.3297 8.43107 25.6519 8.61421 25.926C8.79734 26.2001 9.05764 26.4137 9.36218 26.5398C9.66673 26.666 10.0018 26.699 10.3251 26.6347C10.6484 26.5704 10.9454 26.4116 11.1785 26.1786C11.4116 25.9455 11.5703 25.6485 11.6346 25.3252C11.6989 25.0019 11.6659 24.6668 11.5398 24.3622C11.4136 24.0577 11.2 23.7974 10.9259 23.6143C10.6519 23.4311 10.3296 23.3334 9.99999 23.3334C9.55796 23.3334 9.13404 23.509 8.82148 23.8215C8.50892 24.1341 8.33332 24.558 8.33332 25Z"
+                fill="#EFEFEF"
+              />
+            </svg>
+          </div>
+          <h3>Crédito inmediato</h3>
+      </div>
+  </header>
+
+    <div class="container">
+      
+      <div class="progress-bar">
+        <div class="step">
+          <p>Tipo de crédito</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <svg
+            class="check"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 10 10"
+            fill="none"
+          >
+            <path
+              d="M8.33334 2.5L3.75001 7.08333L1.66667 5"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="step">
+          <p>Datos personales</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <svg
+            class="check"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 10 10"
+            fill="none"
+          >
+            <path
+              d="M8.33334 2.5L3.75001 7.08333L1.66667 5"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="step">
+          <p>Contacto</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <svg
+            class="check"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 10 10"
+            fill="none"
+          >
+            <path
+              d="M8.33334 2.5L3.75001 7.08333L1.66667 5"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="step">
+          <p>Enviar solicitud</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <svg
+            class="check"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 10 10"
+            fill="none"
+          >
+            <path
+              d="M8.33334 2.5L3.75001 7.08333L1.66667 5"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slide-page">
+            <div class="title">
+              Selecciona el tipo de crédito que deseas solicitar:
+            </div>
+            <div class="card-credit-container">
+            <div class="field-radio checkbox-wrapper-13">
+              <input type="radio" name="credito"/>
+              
+              <div class="card-credit">
+                <img
+                  src="/images/gotahorro_4x.webp"
+                  class="card-credit-img"
+                  alt="Persona leyendo un contrato"
+                />
+                <div class="card-body">
+                  <h5 class="card-credit-title">Gotahorro</h5>
+                  <p class="card-credit-text">
+                    Crédito con asesoría personalizada que permitiendo realizar
+                    pagos de manera diaria, semanal o quincenal de forma ágil y
+                    sencilla mientras vas ahorrando.
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="field-radio checkbox-wrapper-13">
+              <input type="radio" name="credito"/>
+              <div class="card-credit">
+                <img
+                  src="/images/yoConstruyo_4x.webp"
+                  class="card-credit-img"
+                  alt="Persona leyendo un contrato"
+                />
+                <div class="card-body">
+                  <h5 class="card-credit-title">Yo construyo</h5>
+                  <p class="card-credit-text">
+                    permitiendo realizar pagos de manera diaria, semanal o quincenal de forma ágil y sencilla mientras vas ahorrando, contribuyendo así a mejorar la calidad de vida de las personas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="field">
+              <button class="firstNext next">Siguiente</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">
+              Diligencia tus datos personales a continuación:
+            </div>
+            <div class="field">
+              <div class="label" >Monto deseado:</div>
+              <input type="number" placeholder="Ej. 1000000"/>
+            </div>
+            <div class="field">
+              <div class="label">Nombres y apellidos:</div>
+              <input type="text" placeholder="Ingrese nombres y apellidos"/>
+            </div>
+            <div class="field">
+              <div class="label">Tipo de identificación:</div>
+              <select>
+                <option selected disabled>
+                  Ingrese tipo de identificación
+                </option>
+                <option>Cédula de ciudadanía</option>
+                <option>Cédula de extranjería</option>
+                <option>NIT</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Número de documento:</div>
+              <input type="Number" placeholder="Ingrese número de documento"/>
+            </div>
+            <div class="field btns">
+              <button class="prev-1 prev">Anterior</button>
+              <button class="next-1 next">Siguiente</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">
+              Diligencia tus datos personales a continuación:
+            </div>
+            <div class="field">
+              <div class="label">Número de celular</div>
+              <input type="number" placeholder="Ingrese número de celular"/>
+            </div>
+            <div class="field">
+              <div class="label">Correo electrónico</div>
+              <input type="text" placeholder="Ingrese correo electrónico"/>
+            </div>
+            <div class="field">
+              <div class="label">Departamento:</div>
+              <select id="departamento">
+                <option selected disabled>Seleccione el departamento</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Ciudad:</div>
+              <select id="ciudad">
+                <option selected disabled>Seleccione la ciudad</option>
+              </select>
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">Anterior</button>
+              <button class="next-2 next">Siguiente</button>
+            </div>
+          </div>
+
+          <div class="page">
+            
+              <div class="header-icon aqua">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                  <path d="M44.1666 13.25L19.875 37.5417L8.83331 26.5" stroke="#00B1BB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="submit-title">¡Gracias por tu confianza!</h3>
+            
+            <p class="submit-text">
+              Has completado todos los pasos para llevar a cabo la solicitud.
+              Dentro de un momento estaremos dando respuesta a tu petición.
+            </p>
+            <div class="field btns">
+              <button class="prev-3 prev">Anterior</button>
+              <button class="submit">Terminar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <custom-footer></custom-footer>
+
+    <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+  <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="./main.js"></script>
+
+    <script type="module" src="../components/components.js"></script>
+
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script
+      type="module"
+      src="../components/botón-inclusivo/inclusivo.js"
+    ></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+  </body>
+</html>
