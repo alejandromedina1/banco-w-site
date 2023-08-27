@@ -92,14 +92,15 @@
         height: 5rem;
         font-size: 1.125rem;
         font-weight: 400;
-
+        
         & .icon {
           width: 20%;
         }
-
+        
         & a {
           display: flex;
           text-decoration: none;
+          font-size: 1rem;
           height: 50%;
           justify-content: center;
           color: $purple-300;
