@@ -12,6 +12,7 @@ class InclusiveButton extends HTMLElement {
         this.changeButton();
         this.overlayColor();
         this.buttonStatus();
+        this.inclusiveChanges();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -88,13 +89,42 @@ class InclusiveButton extends HTMLElement {
         buttonArray[3] = document.getElementById('dark-button')
 
         let inclusiveIcon = document.querySelector('.show-inclusive-button');
+
+        let checkbox = document.getElementById('show-inclusive-btn');
+
+        let change = false;
         
         buttonArray.forEach((element, index) => {
             element.addEventListener('change', function() {
-                    inclusiveIcon.setAttribute('src', "../../public/icons/check.svg")
                     console.log(element.id)
+                    inclusiveIcon.setAttribute('src', "../../public/icons/check.svg");
+                    change = true;
             })
         });
+
+        checkbox.addEventListener('change', function () {
+            if (this.checked && change == true) {
+            } else {
+                inclusiveIcon.setAttribute('src', "../../public/icons/inclusive.svg")
+            }
+        })
+    }
+
+    inclusiveChanges() {
+        let buttonArray = [];
+        buttonArray[0] = document.getElementById('plus-button')
+        buttonArray[1] = document.getElementById('minus-button')
+        buttonArray[2] = document.getElementById('contrast-button')
+        buttonArray[3] = document.getElementById('dark-button')
+
+        buttonArray[3].addEventListener('change', function () {
+            let fondo = document.querySelector('body');
+            if (this.checked) {
+                fondo.style.backgroundColor = 'black';
+            } else {
+                fondo.style.backgroundColor = 'white';
+            }
+        })
     }
 
     changeButton() {
