@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./components/botón-ayuda/style.scss">
   <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
   <link rel="stylesheet" href="./components/footer/style.scss">
+  <link rel="stylesheet" href="./components/nav-bar-float/style.scss">
 
 
 </head>
@@ -33,8 +34,9 @@
     </div>
   </section>
 
+
   <nav id="nav-bar-float">
-    <button class="option_credit">
+    <button class="option_credit" id="option-credit">
       <img class="icon" src="/icons/credit-purple.svg" alt="Crédito inmediato">
       <a href="/credito-inmediato/">Crédito inmediato</a>
     </button>
@@ -46,9 +48,9 @@
       <img class="icon" src="/icons/comparator-purple.svg" alt="Blog">
       <a href="">Comparador financiero</a>
     </button>
-    <button class="option_simulator">
+    <button class="option_simulator" id="simulator-btn">
       <img class="icon" src="/icons/calculator-purple.svg" alt="Simulador financiero">
-      <a href="">Simulador financiero</a>
+      <a href="/simuladores/">Simulador financiero</a>
     </button>
   </nav>
 
@@ -59,7 +61,7 @@
     </div>
     <div class="container-products">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle dropdown-products" type="button" id="dropdownMenuButton"
+          <button class="btn btn-secondary dropdown-products dropdown-toggle" type="button" id="dropdownMenuButton"
             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Ahorro
           </button>
@@ -82,13 +84,13 @@
                             lacus.</p>
                         <article class="description-product">
                             <ul class="description-product_text">
-                                <li class="body2"><img src="public/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes abrir el depósito de
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes abrir el depósito de
                                     bajo monto sin
                                     acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="public/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes mantener un saldo
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes mantener un saldo
                                     mensual disponible
                                     máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="public/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes retirar en el mes hasta
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes retirar en el mes hasta
                                     ocho (8) SMMLV.
                                 </li>
                             </ul>
@@ -107,20 +109,20 @@
                             lacus.</p>
                         <article class="description-product">
                             <ul class="description-product_text">
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
                                     bajo monto sin
                                     acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
                                     mensual disponible
                                     máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
                                     ocho (8) SMMLV.
                                 </li>
                             </ul>
                         </article>
                         <a href="" class="btn-desk">Conoce más</a>
                     </div>
-                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
                 </div>
             </div>
             <div id="opcion3-info" class="opcion-info" style="display: none;">
@@ -132,20 +134,20 @@
                             lacus.</p>
                         <article class="description-product">
                             <ul class="description-product_text">
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
                                     bajo monto sin
                                     acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
                                     mensual disponible
                                     máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
                                     ocho (8) SMMLV.
                                 </li>
                             </ul>
                         </article>
                         <a href="" class="btn-desk">Conoce más</a>
                     </div>
-                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
                 </div>
             </div>
             <div id="opcion4-info" class="opcion-info" style="display: none;">
@@ -157,20 +159,20 @@
                             lacus.</p>
                         <article class="description-product">
                             <ul class="description-product_text">
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
                                     bajo monto sin
                                     acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
                                     mensual disponible
                                     máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
                                     ocho (8) SMMLV.
                                 </li>
                             </ul>
                         </article>
                         <a href="" class="btn-desk">Conoce más</a>
                     </div>
-                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
                 </div>
             </div>
             <div id="opcion5-info" class="opcion-info" style="display: none;">
@@ -182,20 +184,20 @@
                             lacus.</p>
                         <article class="description-product">
                             <ul class="description-product_text">
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
                                     bajo monto sin
                                     acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
                                     mensual disponible
                                     máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="../../public/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
                                     ocho (8) SMMLV.
                                 </li>
                             </ul>
                         </article>
                         <a href="" class="btn-desk">Conoce más</a>
                     </div>
-                    <img src="../../public/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
                 </div>
             </div>
         </div>
@@ -444,7 +446,6 @@
 
   <script src="main.js"></script>
   <script type="module" src="./components/components.js"></script>
-
   <script type="module" src="./components/botón-ayuda/ayuda.js"></script>
   <script type="module" src="./components/botón-inclusivo/inclusivo.js"></script>
   <script type="module" src="./components/footer/footer.js"></script>

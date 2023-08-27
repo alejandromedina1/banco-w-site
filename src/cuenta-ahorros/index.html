@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuenta de Ahorros</title>
     <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
 </head>
 
 <body>
+    <nav-bar-desktop></nav-bar-desktop>
     <section class="banner">
         <span class="info">
             <h2 class="title">Cuenta de Ahorro</h2>
             <p class="text">
                 Ahorra fácil y gratis para que cumplas tus proyectos y tus propósitos personales como familiares.
             </p>
-            <button class="simulador">Simulador de Ahorro</button>
+            <a href="/simulador-ahorro/">
+                <button class="simulador">Simulador de Ahorro</button>
+            </a>
         </span>
         <img src="/images/bg_ahorros.webp" loading="lazy" class="banner-bg" alt="Fondo">
     </section>
@@ -142,7 +147,10 @@
             </section>
         </div>
     </section>
-    <script src="script.js"></script>
+    <custom-footer></custom-footer>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
 </body>
 
 </html>
