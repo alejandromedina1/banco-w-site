@@ -12,7 +12,7 @@ section#first-screen {
 }
 
 section#second-screen {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -24,7 +24,7 @@ section#second-screen {
 }
 
 section#third-screen {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -158,5 +158,33 @@ button.help-button-option.back {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+}
+
+div#keyboard{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.keyboard-line{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button.keyboard-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 0px;
+    background-color: $cyan-500;
+
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "geomanist-bold";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
     line-height: normal;
 }

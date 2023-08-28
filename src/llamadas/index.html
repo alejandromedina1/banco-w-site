@@ -41,7 +41,7 @@
                     </div>
                     <p class="text-controls">Altavoz</p>
                 </div>
-                <div class="control-container">
+                <div class="control-container" id="teclado">
                     <div class="icon-controls">
                         <img class="icons-calls" src="/icons/keyboard.svg" alt="">
                     </div>
@@ -54,7 +54,31 @@
                     <p class="text-controls">Mute</p>
                 </div>
             </div>
-            <img src="/icons/end-call.svg" alt="">
+
+            <div id="keyboard">
+                <div class="keyboard-line">
+                    <button class="keyboard-button">1</button>
+                    <button class="keyboard-button">2</button>
+                    <button class="keyboard-button">3</button>
+                </div>
+                <div class="keyboard-line">
+                    <button class="keyboard-button">4</button>
+                    <button class="keyboard-button">5</button>
+                    <button class="keyboard-button">6</button>
+                </div>
+                <div class="keyboard-line">
+                    <button class="keyboard-button">7</button>
+                    <button class="keyboard-button">8</button>
+                    <button class="keyboard-button">9</button>
+                </div>
+                <div class="keyboard-line">
+                    <button class="keyboard-button">*</button>
+                    <button class="keyboard-button">0</button>
+                    <button class="keyboard-button">#</button>
+                </div>
+
+            </div>
+            <img id="end-call" src="/icons/end-call.svg" alt="">
         </section>
         <section id="third-screen">
             <div>
@@ -76,7 +100,7 @@
     </main>
 
     <custom-footer></custom-footer>
-    <script type="module" src="./login.js"></script>
+    <script type="module" src="./llamadas.js"></script>
     <script type="module" src="../components/footer/footer.js"></script>
     <script type="module" src="../components/navbar/navbar.js"></script>
 </body>
