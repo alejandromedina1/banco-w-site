@@ -86,7 +86,7 @@ h1 {
 }
 
 .procedure-info {
-    display: none;
+    display: none !important;
 }
 
 .procedure-info.active {
@@ -259,7 +259,7 @@ h1 {
         height: 7.125rem;
         margin: 0 12.5%;
         margin-top: -5.5rem;
-        border-radius: 0.4375rem;
+        border-radius: 0.625rem;
 
         .btn-procedure {
             border-radius: 0.625rem;
