@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const switcher = document.getElementById("page-switcher");
   const pages = document.getElementById("pages").children;
-  const items = document.querySelectorAll('#page-switcher li');
+  const items = switcher.querySelectorAll('li');
   const marker = document.querySelector('#marker');
 
   switcher.addEventListener("click", (event) => {
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function cambiarColor(liSeleccionado) {
+
     const opciones = document.getElementsByClassName('opcion');
     for (const opcion of opciones) {
       opcion.classList.remove('seleccionada');
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const enlaceSeleccionado = liSeleccionado.querySelector('a');
     enlaceSeleccionado.classList.add('seleccionada');
+    console.log(enlaceSeleccionado);
 
     const iconos = document.getElementsByClassName('icon');
     for (const icono of iconos) {
@@ -49,6 +51,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Llama a la función cambiarColor al cargar la página para resaltar el primer elemento
-  const primerLi = document.querySelector('li');
-  cambiarColor(primerLi);
+  cambiarColor(items[0]);
 });
