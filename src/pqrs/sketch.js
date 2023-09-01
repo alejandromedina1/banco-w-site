@@ -17,10 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 btn.classList.remove("active");
             });
 
-            button.classList.add("active");
             infoSections.forEach(function (section) {
                 section.classList.remove("active");
             });
+
+            button.classList.add("active");
 
             const activeBtn = button.id;
 
@@ -39,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const divs = document.querySelectorAll('.each-item'); 
+const ITEMS = document.querySelectorAll('.each-item'); 
 
-divs.forEach((div, index) => {
-    if (index % 2 === 0) { 
-        divs[index+1].style.backgroundColor = '#F3F4F5';
+ITEMS.forEach((item, index) => {
+    if ((index+1) % 2 === 0) { 
+        item.style.backgroundColor = '#F3F4F5';
     }
 });

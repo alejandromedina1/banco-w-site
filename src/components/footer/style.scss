@@ -17,7 +17,7 @@ ul {
     gap: 10px;
 }
 
-li {
+.footer-list {
     font-family: "font-bariol-regular";
     color: $gray-1;
 
@@ -31,7 +31,7 @@ li {
     gap: 100px;
 }
 
-li:hover {
+.footer-list:hover {
     color: $orange-500;
     text-decoration: underline;
     font-family: "font-bariol-bold";

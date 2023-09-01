@@ -26,27 +26,24 @@
       </div>
     </div>
   </section>
-
-  <nav id="nav-bar-float" class="nav-bar-float">
-    <button class="tab-button" data-tab="all" style="border-right: 1px solid #DFCCF3;">
-      <img class="icon" src="/icons/all_option_inv.svg" alt="Todas">
-      <p>Todas</p>
-    </button>
-    <button class="tab-button" data-tab="saving"
-      style="border-right: 1px solid #DFCCF3; border-left: 1px solid #DFCCF3;">
-      <img class="icon" src="/icons/saving_option_inv.svg" alt="Ahorro">
-      <p>Ahorro</p>
-    </button>
-    <button class="tab-button" data-tab="invest"
-      style="border-right: 1px solid #DFCCF3; border-left: 1px solid #DFCCF3;">
-      <img class="icon" src="/icons/invest_option_inv.svg" alt="Invertir">
-      <p>Invertir</p>
-    </button>
-    <button class="tab-button" data-tab="int-transfers" style="border-right: 1px solid #DFCCF3;">
-      <img class="icon" src="/icons/transfers_option_inv.svg" alt="Giros internacionales">
-      <p>Giros internacionales</p>
-    </button>
-  </nav>
+    <nav id="nav-bar-float" class="nav-bar-float">
+        <button class="tab-button" data-tab="all" style="border-right: 1px solid #DFCCF3; border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
+          <img class="icon" src="/icons/all_option_inv.svg" alt="Todas">
+          <p>Todas</p>
+        </button>
+        <button class="tab-button" data-tab="saving" style="border-right: 1px solid #DFCCF3;">
+          <img class="icon" src="/icons/saving_option_inv.svg" alt="Ahorro">
+          <p>Ahorro</p>
+        </button>
+        <button class="tab-button" data-tab="invest" style="border-right: 1px solid #DFCCF3;">
+          <img class="icon" src="/icons/invest_option_inv.svg" alt="Invertir">
+          <p>Invertir</p>
+        </button>
+        <button class="tab-button" data-tab="int-transfers" style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;">
+          <img class="icon" src="/icons/transfers_option_inv.svg" alt="Giros internacionales">
+          <p>Giros internacionales</p>
+        </button>
+      </nav>
 
   <section class="options">
     <div class="card saving all">
@@ -71,7 +68,6 @@
           sin mayor documentación.</p>
         <div class="card-buttons">
           <a href="/deposito/" class="purple-card-button">¡Conoce más!</a>
-          <a href="/simulador-libranza/" class="white-card-button">Simular</a>
         </div>
       </div>
     </div>
@@ -83,7 +79,7 @@
           fácil y rentable a través de nuestros CDTs</p>
         <div class="card-buttons">
           <a href="/cdt/" class="purple-card-button">¡Conoce más!</a>
-          <a href="/simulador-cdt/" class="white-card-button">Simular</a>
+          <a href="/simuladorcdt/" class="white-card-button">Simular</a>
         </div>
       </div>
     </div>
@@ -109,23 +105,15 @@
         <div class="card-buttons">
           <a href="/reclamar-giros/" class="purple-card-button">¡Conoce más!</a>
         </div>
-      </div>
-    </div>
-    <div class="card int-transfers all">
-      <img src="../public/images/todos-card-6.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Ahorranza</h5>
-        <p class="card-text">Aliamos a las empresas para que
-          sus empleados puedan empezar a ahorrar
-          desde su salario.</p>
-        <div class="card-buttons">
-          <a href="#" class="purple-card-button">¡Conoce más!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <custom-footer></custom-footer>
+      </section>
+      
+      <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+  <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    
+    
+      <script type="module" src="../components/components.js"></script>
 
   <script type="module" src="../components/components.js"></script>
   <script type="module" src="../components/footer/footer.js"></script>
