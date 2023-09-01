@@ -12,7 +12,6 @@ ul {
     padding-left: 0;
 }
 
-
 p {
     margin-bottom: 0;
 }
@@ -229,7 +228,7 @@ p {
             align-items: center;
         }
         &-menu ul {
-            width: 880px;
+            width: auto;
             height: 145px;
             display: flex;
             justify-content: center;
