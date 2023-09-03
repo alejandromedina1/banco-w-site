@@ -9,6 +9,7 @@ template.innerHTML = `
     font-weight: 400;
     line-height: 150%;
     font-size: 1.125rem;
+    color: #676767;
 }
 
 path fill {

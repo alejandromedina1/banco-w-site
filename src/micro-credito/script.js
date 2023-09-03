@@ -1,4 +1,5 @@
 import '../components/bullet-point/index'
+import '../components/creditos-form/index'
 
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
