@@ -18,6 +18,7 @@ const toggleContent = ()=>{
         button.classList.add('active');
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
+        (selectedTab === 'tramites') ? document.body.style.background = '#EFEFEF' : document.body.style.background = 'white'
         selectedContent.style.display = 'block';
       });
     });

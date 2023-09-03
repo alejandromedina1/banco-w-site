@@ -51,6 +51,12 @@ template.innerHTML = `
     .checkbox-datos{
         margin-top: 3rem;
         width: 40%;
+        color: #676767;
+        font-family: Bariol, sans-serif;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
     }
 
     .submit-datos{
