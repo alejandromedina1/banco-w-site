@@ -110,7 +110,7 @@ h2 {
 }
 
 .more-info {
-    background-color: $purple-300;
+    background-color: $orange-400;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,11 +136,11 @@ h2 {
     padding: 8px 15px;
     border-radius: 6px;
     margin: 5px;
-    color: $purple-300;
+    color: $orange-400;
 }
 
-.purple-button {
-    background-color: $purple-300;
+.orange-button {
+    background-color: $orange-400;
     border-style: none;
     border: 2px solid white;
     padding: 8px 20px;
@@ -153,15 +153,15 @@ h2 {
     margin: 5%;
 }
 
-#benefits {
+#requirements {
     margin: 5%;
 }
 
-#opening {
+#procedures {
     margin: 5%;
 }
 
-#cancellation {
+#request {
     margin: 5%;
 }
 
