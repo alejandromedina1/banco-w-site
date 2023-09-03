@@ -37,6 +37,7 @@ export default defineConfig({
                 "pqrs": resolve(root, 'pqrs','index.html'),
                 "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
+                "micro-credito": resolve(root, 'micro-credito','index.html'),
             }
         },
         target: 'esnext'
