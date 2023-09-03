@@ -1,56 +1,41 @@
 @import '../global.scss';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-p{
+p {
     margin: 0;
 }
 
-.banner{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: max-content;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.left-vector, .right-vector{
-    display: none;
-}
-
-.woman-image{
+.banner {
     position: relative;
-    width: 35%;
-    height: auto;
-    left: 20%;
-    margin-top: 2rem;
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.banner-bg{
-    position: absolute;
+.banner-bg {
+    position: relative;
     top: 0%;
     width: 100%;
-    background-color: $gray-3;
+    background-color: #EFEFEF;
     z-index: 1;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
+    position: absolute;
     width: 35%;
     gap: 1rem;
     height: max-content;
-    margin-right: 5%;
     z-index: 2;
 }
 
-.title{
+.title {
     color: $gray-1;
     width: 80%;
     font-family: Geomanist, sans-serif;
@@ -60,7 +45,7 @@ p{
     line-height: normal;
 }
 
-.text{
+.text {
     width: 80%;
     color: $gray-2;
     font-family: Bariol, sans-serif;
@@ -70,7 +55,7 @@ p{
     line-height: 150%;
 }
 
-.tab-bar{   
+.tab-bar {
     position: relative;
     display: flex;
     width: 90%;
@@ -81,10 +66,10 @@ p{
     align-items: center;
     box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
     border-radius: 0.4375rem;
-    z-index: 3;
+    z-index: 2;
 }
 
-.tab-button{
+.tab-button {
     color: $gray-2;
     border: none;
     width: 20%;
@@ -98,204 +83,135 @@ p{
     line-height: normal;
 }
 
-.tab-content{
+.tab-content {
     display: none;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 1.5rem; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     padding: 2rem 1rem;
     width: 90%;
     margin: 3rem auto;
 }
 
-.active{
+.active {
     color: $purple-300;
     border-bottom: 2px solid $purple-300;
 }
 
-.bullet-points{
+.bullet-points {
     display: flex;
     flex-direction: column;
 }
 
-.points{
+.points {
     color: $gray-1;
     font-family: Bariol, sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;  
+    line-height: 150%;
     font-size: 1.125rem;
 }
 
-.line-break{
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 5em;
-  background-color: $purple-100; 
-  margin: 0 0.5em; 
-  vertical-align: middle;
+.line-break {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 5em;
+    background-color: $purple-100;
+    margin: 0 0.5em;
+    vertical-align: middle;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
 @media screen and (max-width:1200px) {
-    body{
+    body {
         font-size: 10px;
     }
 
-    .text{
+    .text {
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    body{
+    body {
         font-size: 8px;
     }
 
-    .title{
+    .title {
         font-size: 1.4rem;
     }
 
-    .text{
+    .text,
+    .tab-button,
+    .points {
         font-size: 1rem;
     }
+
 
 }
 
 @media screen and (max-width: 821px) {
-    .content{
-        position: relative;
-    }
-
-    .banner-bg{
-        margin-top: -10rem;
-    }
-
-    .woman-image{
-        margin-top: 52%;
-        left: 30%;
-        width: 50%;
-    }
-
-    .info{
-        display: flex;
-        align-items: center;
-        position: relative;
-        margin-bottom: 55%;
-        width: 100%;
-        right: 20%;
-    }
-
-    .title{
-        font-size: 2.2rem;
-        text-align: center;
-        font-size: 2.7rem;
-        text-align: center;
-        width: 70%;
-        margin: 0;
-    }
-
-    .text{
-        font-size: 1.3rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    .mobile{
+    .mobile {
         display: flex;
     }
+
 }
 
-
-@media screen and (min-width: 425px) and (max-width: 540px) {
+@media screen and (max-width: 690px) {
     .title {
         font-size: 1.2rem;
     }
 
-    .text{
-        font-size: 0.8rem;
-    }
-
-    .tab-button{
-        font-size: 0.8rem;
-        width: 30%;
-    }
-
-    .tab-content{
-        padding: 0.5rem 1rem;
-    }
-
-    .points{
-        font-size: 0.8rem;
-    }
-
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
-    .banner-bg{
-        display: none;
-    }
-
-    .left-vector {
-        display: inline-block;
-        position: absolute;
-        width: 40%;
-        left: 0%;
-        top: 21%;
-    }
-
-    .right-vector {
-        display: inline-block;
-        position: absolute;
-        width: 35%;
-        right: 0%;
-        top: 17%;
-    }
-
-    .banner{
-        background-color: $gray-3;
-    }
-
-    .title{
-        font-size: 1rem;
-    }
-
-    .text{
-        font-size: 0.8rem;
-    }
-
-    .woman-image {
-        margin-top: 39%;
-        width: 40%;
-        left: 32%;
+    .text,
+    .tab-button,
+    .points {
+        font-size: 0.9rem;
     }
 
     .info {
-        margin-bottom: 42%;
-        right: 18%;
-        margin-top: 5%;
-        gap: 5%;
-    }
-
-    .tab-button{
-        font-size: 0.8rem;
-        width: 30%;
-    }
-
-    .tab-content{
-        padding: 0.5rem 1rem;
-    }
-
-    .points{
-        font-size: 0.8rem;
+        width: 38%;
+        gap: 0rem;
     }
 }
 
+@media screen and (max-width: 645px) {
+    .info {
+        width: 64%;
+        margin-right: 3rem;
+        margin-bottom: 50%;
+    }
 
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
 
+    .text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
 
+}
 
+@media screen and (max-width: 425px) {
+    .tab-button {
+        font-size: 0.7rem;
+    }
 
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .info {
+        margin-right: 2rem;
+        margin-bottom: 60%;
+    }
+
+}
