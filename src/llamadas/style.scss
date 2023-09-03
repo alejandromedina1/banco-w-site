@@ -1,5 +1,37 @@
 @import "../global.scss";
 
+@media (max-width: 768px) {
+    div#controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    div#call-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    div#controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 30%;
+    }
+    div#call-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        gap: 20px;
+    }
+}
+
 section#first-screen {
     display: flex;
     flex-direction: column;
@@ -34,18 +66,16 @@ section#third-screen {
 
 }
 
-div#controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 80%;
-}
 
 div.icon-controls {
     background-color: white;
     margin: 10px;
     border-radius: 100%;
     padding: 20px;
+}
+
+div.icon-controls:hover {
+    background-color: $cyan-100;
 }
 
 img.icons-calls {
@@ -113,13 +143,6 @@ img.call-icons {
     width: 60px;
 }
 
-div#call-buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-}
 
 button.help-button-option:not(.back) {
     width: 100%;
@@ -141,6 +164,17 @@ button.help-button-option:not(.back) {
     line-height: normal;
 }
 
+button.help-button-option:not(.back):hover {
+    background: $orange-100;
+    color: $orange-500;
+}
+
+button.help-button-option:not(.back):active {
+    background: white;
+    color: $orange-500;
+    border: 2px solid $orange-500;
+}
+
 button.help-button-option.back {
     width: 100%;
     display: flex;
@@ -159,6 +193,17 @@ button.help-button-option.back {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+button.help-button-option.back:hover {
+    background: $cyan-100;
+    color: $cyan-500;
+}
+
+button.help-button-option.back:active {
+    background: white;
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
 }
 
 div#keyboard{
@@ -187,4 +232,14 @@ button.keyboard-button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+button.keyboard-button:hover {
+    background-color: $cyan-100;
+}
+
+button.keyboard-button:active {
+    background-color: white;
+    border: 2px solid $cyan-500;
+    color: $cyan-500;
 }
