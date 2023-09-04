@@ -21,6 +21,10 @@ h2 {
     font-size: 14px;
 }
 
+body {
+    background-color: $gray-3;
+}
+
 .banner{
     display: flex;
     height: max-content;
@@ -165,33 +169,8 @@ h2 {
     margin: 5%;
 }
 
-.content-vertical-list {
-    margin-left: 10px;
-}
-.content-vertical-list span {
-    color: $purple-300;
-}
-
-.content-vertical-list article:before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: $gray-3;
-    border: 4px solid $purple-300;
-    position: absolute;
-    margin-left: -38px;
-    margin-top: 5px;
-}
-
 .article-line {
-    border-left: 2px solid $purple-100;
-}
-
-.content-vertical-list article {
-    padding: 0 0px 10px 30px;
-    color: $gray-1;
+    border-left: 2px solid $orange-100;
 }
 
 .accordion-button {
@@ -223,10 +202,21 @@ h2 {
     height: 15px;
     border-radius: 50%;
     background-color: $gray-3;
-    border: 4px solid $purple-300;
+    border: 4px solid $orange-400;
     position: absolute;
     margin-left: -22px;
     margin-top: 5px;
+}
+
+.accordion-button {
+    background-color: $purple-300;
+    color: white;
+    font-weight: 400;
+    font-size: 1.37rem;
+    font-family: Bariol, sans-serif;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .content-ol-list {
@@ -243,64 +233,67 @@ h2 {
     margin-left: 10%;
 }
 
-.opening-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px 5%;
-    
+.point-list {
+    margin: 5% 10%;
+}
+.opening-list p {
+    margin-top: 2%;
 }
 
-.opening-list article:before {
+.point-list article:before {
     content: '';
     display: block;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: $gray-3;
-    border: 4px solid $purple-300;
+    border: 4px solid $orange-400;
     position: absolute;
     margin-left: -18px;
     margin-top: 5px;
 }
 
-.content-ol-list-one:before {
-    content: url('../public/icons/one-bullet-point.svg');
-    display: block;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    margin-left: -80px;
-    margin-top: -20px;
+.form-inputs {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
 }
 
-.content-ol-list-two:before {
-    content: url('../public/icons/two-bullet-point.svg');
-    display: block;
-    width: 15px;
-    height: 15px;
+.form-inputs div label {
     position: absolute;
-    margin-left: -80px;
-    margin-top: -20px;
+    font-family: Bariol, sans-serif;
 }
 
-.content-ol-list-three:before {
-    content: url('../public/icons/three-bullet-point.svg');
-    display: block;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    margin-left: -80px;
-    margin-top: -20px;
+.form-inputs div input, #tipo_identificacion{
+    width: 85%;
+    margin: 6% 0%;
+    font-family: Bariol, sans-serif;
+    border: 2px solid $gray-2;
+    border-radius: 5px;
+    padding: 2px 8px;
 }
 
-.content-ol-list-four:before {
-    content: url('../public/icons/four-bullet-point.svg');
-    display: block;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    margin-left: -80px;
-    margin-top: -20px;
+#request form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.label-terminos {
+    text-align: left;
+    color: $gray-1;
+}
+
+.terminos {
+    display: flex;
+    align-items: start;
+    padding: 5% 20%;
+
+}
+.terminos input {
+    margin: 5px;
+    border: 2px solid $gray-2;
 }
 
 @media screen and (max-width:1200px) {
@@ -370,29 +363,6 @@ h2 {
         color: $gray-1;
         border-left: 2px solid $purple-100;
         margin: 0px;
-    }
-    .opening-list {
-        grid-template-columns: 1fr;
-        
-    }
-
-    .content-ol-list {
-        grid-template-columns: 1fr;
-        padding: 0% 5%;
-    }
-
-    .content-ol-list li{
-        list-style: decimal;
-        margin: 0px;
-        margin: 2% 0%;
-    }
-
-    .content-ol-list li:before{
-        content: normal;
-    }
-
-    .content-ol-list li::marker {
-        color: $purple-300;
     }
 }
 
