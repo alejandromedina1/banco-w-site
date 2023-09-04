@@ -37,6 +37,7 @@ export default defineConfig({
                 "pqrs": resolve(root, 'pqrs','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
                 "yo-construyo": resolve(root, 'yo-construyo','index.html'),
+                "inmueble-productivo": resolve(root, 'inmueble-productivo','index.html'),
             }
         },
         target: 'esnext'
