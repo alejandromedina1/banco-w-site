@@ -15,6 +15,7 @@ template.innerHTML = `
 path fill {
     color: var(--bullet-color, #676767);
 }
+
 </style>
 <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
 xmlns="http://www.w3.org/2000/svg">
