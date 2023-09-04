@@ -26,7 +26,9 @@ aside {
         display: flex;
         align-items: center;
         left:20px;
-        top: 50%; transform: translateY(-50%);
+        top: 50%; 
+        transform: translateY(-50%);
+        cursor: pointer;
     }
 
     & h6 {
@@ -85,13 +87,78 @@ aside {
         width: 80%;
         height: 40px;
         padding: 10px;
-        background: var(--white, #FFF);
         box-shadow: 5px 7px 25px 0px rgba(0, 177, 187, 0.10);
         border: none;
+        overflow: hidden;
+        resize: none;
+        border: none;
+        outline: none;
     }
     &-buttons {
         display: flex;
         align-items: center;
         gap: 9px;
+    }
+    &-buttons svg {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.svg1:hover, .svg2:hover {
+    transition: all 0.3s ease-in-out;
+    transform: translate(0px, -2px);
+}
+
+@media only screen and (min-width: 1024px){
+    aside {
+        width: 40%;
+        height: 60%;
+        min-height: 60vh;
+        bottom: 85px;
+        right: 50px;
+        border-radius: 5px;
+    }
+
+    .Chat {
+        background: $cyan-500;
+        padding: 30px 20px;
+    
+        &-info {
+            font-size: 25px;
+            color: white;
+        }
+    
+        & h6 {
+            font-size: 30px;
+            color: white;
+        }
+        & svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        & svg path {
+            stroke: white;
+        }
+    }
+
+    .Body {
+        height: 80%;
+    }
+
+    .User {
+        font-size: 16px;
+    }
+    .Write {
+        gap: 20px;
+        &-buttons {
+            gap: 20px;
+        }
+
+        &-buttons svg {
+            width: 32px;
+            height: 32px;
+        }
     }
 }
