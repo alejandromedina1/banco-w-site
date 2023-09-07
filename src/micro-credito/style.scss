@@ -65,6 +65,28 @@ p {
     z-index: 2;
 }
 
+.simulador {
+    border-radius: 0.40106rem;
+    background: $orange-400;
+    padding: 0.91669rem 2.75rem;
+    border: none;
+    color: white;
+    color: #FFF;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60%;
+    transition: all ease 0.3s;
+}
+
+.simulador:hover {
+    cursor: pointer;
+    background: $purple-300;
+}
+
 .tab-bar {
     position: relative;
     display: flex;
@@ -91,6 +113,11 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.content{
+    margin-top: -6%;
+    padding: 5% 0;
 }
 
 #caracteristicas-content,
@@ -123,6 +150,14 @@ p {
 .bullet-points {
     display: flex;
     flex-direction: column;
+}
+
+.secondary-bullets{
+    position: relative;
+    left: 10%;
+    width: max-content;
+    margin-top: 2%;
+    list-style: none;
 }
 
 .points {
@@ -185,4 +220,168 @@ p {
 
 .tramites-points{
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .simulador {
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+    }
+
+    .info {
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 8px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .text,
+    .tab-button,
+    .points {
+        font-size: 1rem;
+    }
+
+    .info {
+        gap: 0.6rem;
+        width: 38%;
+    }
+
+    .simulador {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 832px) {
+    .mobile {
+        display: flex;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .info {
+        gap: 0.5rem;
+        width: 40%;
+    }
+
+    .simulador {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.4rem;
+    }
+
+    .tab-button{
+        width: 32%;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .text,
+    .tab-button,
+    .points {
+        font-size: 0.9rem;
+    }
+
+    .info {
+        width: 42%;
+        gap: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .simulador {
+        font-size: 0.6rem;
+        padding: 0.3rem 1rem;
+    }
+    .title{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
+    }
+
+    .tab-button {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info {
+        width: 64%;
+        margin-right: 3rem;
+        margin-bottom: 50%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .simulador {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+        margin: 1rem 10%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tab-button {
+        font-size: 0.7rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .info {
+        width: 64%;
+        margin-right: 2.3rem;
+        margin-bottom: 50%;
+    }
+
+    .simulador {
+        font-size: 0.57rem;
+        margin: 0.3rem 10%;
+        padding: 0.4rem 1rem;
+    }
+
 }
