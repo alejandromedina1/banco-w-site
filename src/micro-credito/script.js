@@ -8,7 +8,7 @@ const content = document.querySelector('.content')
 const toggleContent = ()=>{
   if (window.matchMedia('(max-width: 821px)').matches) {
     tabButtons[0].classList.add('active');
-    tabContents[0].style.display = 'block';
+    tabContents[0].style.display = 'flex';
   
     tabButtons.forEach(button => {
       button.addEventListener('click', () => {
@@ -20,7 +20,7 @@ const toggleContent = ()=>{
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
         (selectedTab === 'solicitud') ?  content.style.background = '#EFEFEF' : content.style.background = 'white';
-        selectedContent.style.display = 'block';
+        selectedContent.style.display = 'flex';
       });
     });
   } else {
@@ -48,7 +48,7 @@ window.addEventListener('resize', ()=> toggleContent())
 toggleContent();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const dropdowns = document.querySelectorAll(".dropdown");
+  const dropdowns = document.querySelectorAll(".dropdownPages");
 
   dropdowns.forEach(dropdown => {
     const trigger = dropdown.querySelector(".dropdown-trigger");

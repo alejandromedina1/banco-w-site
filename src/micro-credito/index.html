@@ -7,6 +7,9 @@
     <title>Microcrédito</title>
     <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
 </head>
 
 <body>
@@ -58,8 +61,8 @@
                 <ul class="secondary-bullets">
                     <li><bullet-point color="#FF8833">Soy previsión exequial</bullet-point></li>
                     <li><bullet-point color="#FF8833">Soy vida</bullet-point></li>
-                    <li><bullet-point color="#FF8833">Soy protección familiar</bullet-point></li> 
-                    <li><bullet-point color="#FF8833">Soy patrimonio seguro</bullet-point></li> 
+                    <li><bullet-point color="#FF8833">Soy protección familiar</bullet-point></li>
+                    <li><bullet-point color="#FF8833">Soy patrimonio seguro</bullet-point></li>
                 </ul>
                 <br class="line-break">
                 <bullet-point color="#FF8833">Seguros Obligatorios:</bullet-point>
@@ -88,7 +91,7 @@
         </div>
 
         <div class="tab-content" id="tramites-content">
-            <div class="dropdown">
+            <div class="dropdownPages">
                 <div class="dropdown-trigger">
                     <h5 class="dropdown-title">¿Deseas que tu giro sea depositado a tu cuenta bancaria?</h5>
                 </div>
@@ -124,7 +127,7 @@
             </div>
 
             <!-- ------------------------- -->
-            <div class="dropdown">
+            <div class="dropdownPages">
                 <div class="dropdown-trigger">
                     <h5 class="dropdown-title">Trámites de cancelación</h5>
                 </div>
@@ -142,10 +145,15 @@
         </div>
     </section>
 
-
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
 
     <script type="module" src="./script.js"></script>
     <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
 </body>
 
 </html>
