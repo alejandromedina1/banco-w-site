@@ -38,6 +38,7 @@ export default defineConfig({
                 "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
+                "comparator": resolve(root, 'comparator','index.html'),
             }
         },
         target: 'esnext'
