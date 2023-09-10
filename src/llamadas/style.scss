@@ -1,0 +1,245 @@
+@import "../global.scss";
+
+@media (max-width: 768px) {
+    div#controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    div#call-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    div#controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 30%;
+    }
+    div#call-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        gap: 20px;
+    }
+}
+
+section#first-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 667px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+section#second-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 667px;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+section#third-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 667px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+div.icon-controls {
+    background-color: white;
+    margin: 10px;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+div.icon-controls:hover {
+    background-color: $cyan-100;
+}
+
+img.icons-calls {
+    width: 34px;
+}
+
+div.control-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+p.text-controls {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "geomanist-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2.title {
+    color: $cyan-500;
+    text-align: center;
+    font-family: "geomanist-bold";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p.text-content {
+    color: $cyan-500;
+    text-align: center;
+    font-family: "geomanist-regular";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1.call-title {
+    color: white;
+    text-align: center;
+    font-family: "geomanist-bold";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p.call-text-content {
+    color: white;
+    text-align: center;
+    font-family: "geomanist-regular";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+img.call-icons {
+    width: 60px;
+}
+
+
+button.help-button-option:not(.back) {
+    width: 100%;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    border: 0px;
+
+    border-radius: 0.4375rem;
+    background: $orange-400;
+
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button.help-button-option:not(.back):hover {
+    background: $orange-100;
+    color: $orange-500;
+}
+
+button.help-button-option:not(.back):active {
+    background: white;
+    color: $orange-500;
+    border: 2px solid $orange-500;
+}
+
+button.help-button-option.back {
+    width: 100%;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    border: 0px;
+
+    border-radius: 0.4375rem;
+    background: $cyan-500;
+
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button.help-button-option.back:hover {
+    background: $cyan-100;
+    color: $cyan-500;
+}
+
+button.help-button-option.back:active {
+    background: white;
+    color: $cyan-500;
+    border: 2px solid $cyan-500;
+}
+
+div#keyboard{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.keyboard-line{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button.keyboard-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 0px;
+    background-color: $cyan-500;
+
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "geomanist-bold";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button.keyboard-button:hover {
+    background-color: $cyan-100;
+}
+
+button.keyboard-button:active {
+    background-color: white;
+    border: 2px solid $cyan-500;
+    color: $cyan-500;
+}

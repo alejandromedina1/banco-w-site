@@ -181,6 +181,7 @@ h1 {
     
 
     :disabled {
+        border-color: $gray-2 !important;
         background: $gray-3 !important;
         color: $gray-2 !important;
     }
