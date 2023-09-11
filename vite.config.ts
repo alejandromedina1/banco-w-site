@@ -35,7 +35,9 @@ export default defineConfig({
                 "cdt": resolve(root, 'cdt','index.html'),
                 "ahorradores_inversionistas": resolve(root, 'ahorradores_inversionistas','index.html'),
                 "pqrs": resolve(root, 'pqrs','index.html'),
+                "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
+                "micro-credito": resolve(root, 'micro-credito','index.html'),
             }
         },
         target: 'esnext'
