@@ -15,22 +15,11 @@ img#header-images {
     height: auto;
 }
 
-div#title-over-header {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
 h1#title-section {
     color: white;
     text-align: center;
     font-family: "geomanist-regular";
-    font-size: 1.875rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -41,7 +30,7 @@ p#subtitle-section {
     color: white;
     text-align: center;
     font-family: "bariol-regular";
-    font-size: 0.8125rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -55,7 +44,7 @@ button#button-header {
     color: $cyan-500;
     text-align: center;
     font-family: "bariol-regular";
-    font-size: 0.839rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -80,6 +69,16 @@ button#button-header {
         height: auto;
         content: url('/images/mobile-seguros-header_4x.webp');
     }
+    div#title-over-header {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -99,6 +98,17 @@ button#button-header {
         height: auto;
         content: url('/images/web-seguros-header_4x.webp');
     }
+    div#title-over-header {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 40%;
+    }
 }
 
 @media (min-width: 769px) {
@@ -117,5 +127,15 @@ button#button-header {
         width: 100%;
         height: auto;
         content: url('/images/web-seguros-header_4x.webp');
+    }
+    div#title-over-header {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
