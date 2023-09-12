@@ -10,7 +10,7 @@ section#seguros-header {
     position: relative;
 }
 
-img.header-images {
+img#header-images {
     width: 100%;
     height: auto;
 }
@@ -63,12 +63,59 @@ button#button-header {
 
 }
 
-section#seguros-cards-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
 
-    gap: 20px;
 
+@media (max-width: 425px) {
+    section#seguros-cards-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    
+        gap: 20px;
+    
+    }
+    img#header-images {
+        width: 100%;
+        height: auto;
+        content: url('/images/mobile-seguros-header_4x.webp');
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    section#seguros-cards-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+        gap: 20px;
+    
+    }
+    img#header-images {
+        width: 100%;
+        height: auto;
+        content: url('/images/web-seguros-header_4x.webp');
+    }
+}
+
+@media (min-width: 769px) {
+    section#seguros-cards-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+        gap: 20px;
+    
+    }
+    img#header-images {
+        width: 100%;
+        height: auto;
+        content: url('/images/web-seguros-header_4x.webp');
+    }
 }

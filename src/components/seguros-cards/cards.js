@@ -31,10 +31,12 @@ class SegurosCards extends HTMLElement {
                 <img src="${this.card_image}" class="card-image" alt="">
                 <div class="card-text-content">
                     <h2 class="title-card">${this.title_card}</h2>
-                    <p class="text-card"> ${this.text_card}</p>
-                    <a href="${this.redirect_link}">
-                        <button class="button-card">¡Conoce más!</button>
-                    </a>
+                    <div class="text-button-container">
+                        <p class="text-card"> ${this.text_card}</p>
+                        <a href="${this.redirect_link}">
+                            <button class="button-card">¡Conoce más!</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
