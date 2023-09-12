@@ -1,0 +1,71 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "../global.scss";
+
+
+section#seguros-header {
+    position: relative;
+}
+
+img.header-images {
+    width: 100%;
+    height: auto;
+}
+
+div#title-over-header {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1#title-section {
+    color: white;
+    text-align: center;
+    font-family: "geomanist-regular";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+
+p#subtitle-section {
+    color: white;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button#button-header {
+    border: 0px;
+    border-radius: 0.26694rem;
+    background: white;
+
+    color: $cyan-500;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 0.839rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+
+}
+
+section#seguros-cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    gap: 20px;
+
+}

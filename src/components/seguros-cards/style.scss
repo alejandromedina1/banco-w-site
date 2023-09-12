@@ -1,0 +1,68 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
+
+div.card {
+    width: 90%;
+    padding: 20px;
+
+    border-radius: 0.4375rem;
+    background: white;
+
+    /* shadow blue 1 */
+    box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+    border: 0px;
+}
+
+div.card-text-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+img.card-image {
+    width: 100%;
+}
+
+h2.title-card {
+    color: $gray-1;
+    font-family: "geomanist-bold";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.5%;
+    /* 1.165rem */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0px;
+}
+
+p.text-card {
+    color: $gray-1;
+    font-family: "bariol-regular";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 1.21875rem */
+}
+
+button.button-card {
+    border-radius: 0.25375rem;
+    background: $cyan-500;
+    border: 0px;
+
+    color: white;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 0.7975rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 40%;
+    height: 30px;
+
+}
