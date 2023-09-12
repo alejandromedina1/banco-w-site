@@ -25,17 +25,19 @@ class SegurosCards extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="components/seguros-cards/style.scss">
-        <div class="card">
-            <img src="${this.card_image}" class="card-image" alt="">
-            <div class="card-text-content">
-                <h2 class="title-card">${this.title_card}</h2>
-                <p class="text-card"> ${this.text_card}</p>
-                <a href="${this.redirect_link}">
-                    <button class="button-card">¡Conoce más!</button>
-                </a>
+        <link rel="stylesheet" href="/components/seguros-cards/style.scss">
+        <section id="card-container">
+            <div class="seguros-cards">
+                <img src="${this.card_image}" class="card-image" alt="">
+                <div class="card-text-content">
+                    <h2 class="title-card">${this.title_card}</h2>
+                    <p class="text-card"> ${this.text_card}</p>
+                    <a href="${this.redirect_link}">
+                        <button class="button-card">¡Conoce más!</button>
+                    </a>
+                </div>
             </div>
-        </div>
+        </section>
         `;
 
     }

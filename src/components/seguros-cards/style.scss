@@ -2,7 +2,15 @@
 @import "bootstrap/scss/bootstrap";
 @import "../../global.scss";
 
-div.card {
+section#card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+div.seguros-cards {
+
     width: 90%;
     padding: 20px;
 

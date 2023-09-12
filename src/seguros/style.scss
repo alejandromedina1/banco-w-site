@@ -2,6 +2,9 @@
 @import "bootstrap/scss/bootstrap";
 @import "../global.scss";
 
+*{
+    margin-right: 0px;
+}
 
 section#seguros-header {
     position: relative;
