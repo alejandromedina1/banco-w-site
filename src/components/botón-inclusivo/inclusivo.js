@@ -119,8 +119,21 @@ class InclusiveButton extends HTMLElement {
 
         buttonArray[3].addEventListener('change', function () {
             let fondo = document.querySelector('body');
+            let p = document.querySelectorAll('p');
+            let li = document.querySelectorAll('li');
+            let h2 = document.querySelectorAll('h2');
+
             if (this.checked) {
                 fondo.style.backgroundColor = 'black';
+                p.forEach(element => {
+                    element.style.color = 'white';
+                });
+                li.forEach(element => {
+                    element.style.color = 'white';
+                });
+                h2.forEach(element => {
+                    element.style.color= 'white',
+                });
             } else {
                 fondo.style.backgroundColor = 'white';
             }
