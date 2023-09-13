@@ -93,7 +93,6 @@ p {
 }
 
 #caracteristicas-content,
-#beneficios-content,
 #tramites-content {
     display: none;
     grid-template-columns: repeat(3, 1fr);
@@ -102,6 +101,15 @@ p {
     width: 90%;
     margin: 3rem auto;
     flex-direction: column;
+}
+
+#beneficios-content{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 3rem auto;
 }
 
 #devoluciones-content {
@@ -263,6 +271,8 @@ p {
     margin: 1rem 4.2rem;
 }
 
+/* Nuevo seguros */
+
 .more-info {
     background: $cyan-500;
     padding: 5rem;
@@ -278,6 +288,75 @@ p {
         text-decoration: none;
         border-radius: 5.521px;
     }
+}
+
+/* Table */
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: $cyan-500;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table td {
+    padding: 35px 15px;
+    width: 35%;
+    color: var(--Gris-1, #676767);
+    font-family: Bariol, sans-serif;
+    font-size: 18px;
+    line-height: 150%; /* 27px */
+}
+
+.content-table th {
+    text-align: center;
+    padding: 50px 37px;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0%; 
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table .active-center {
+    text-align: center;
+}
+
+.content-table .active-border-left {
+    border-top-left-radius: 7px;
+}
+
+.content-table .active-border-right {
+    border-top-right-radius: 7px;
+}
+
+.content-table tbody tr:last-of-type {
+    border-radius: 0px 0px 7px 7px;
+    border: none;
+}
+
+.content-table tbody tr.active-row {
+    color: $cyan-500;
 }
 
 @media screen and (max-width:1200px) {
