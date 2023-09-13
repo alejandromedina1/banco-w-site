@@ -36,6 +36,8 @@ export default defineConfig({
                 "ahorradores_inversionistas": resolve(root, 'ahorradores_inversionistas','index.html'),
                 "pqrs": resolve(root, 'pqrs','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
+                "giros-internacionales": resolve(root, 'giros-internacionales','index.html'),
+                "depositos-bancarios": resolve(root, 'depositos-bancarios','index.html'),
             }
         },
         target: 'esnext'
