@@ -22,7 +22,7 @@ p {
     top: 0%;
     width: 100%;
     background-color: #EFEFEF;
-    z-index: 1;
+    z-index: 0;
 }
 
 .info {
@@ -31,7 +31,7 @@ p {
     position: absolute;
     width: 40%;
     height: max-content;
-    z-index: 2;
+    z-index: 1;
     gap: 0.5rem;
 }
 
@@ -88,7 +88,7 @@ p {
     align-items: center;
     box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
     border-radius: 0.4375rem;
-    z-index: 2;
+    z-index: 0;
 }
 
 .tab-button {
@@ -110,8 +110,7 @@ p {
     padding: 5% 0;
 }
 
-#caracteristicas-content,
-#requisitos-content {
+#caracteristicas-content {
     display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -121,8 +120,7 @@ p {
     flex-direction: column;
 }
 
-#solicitud-content,
-#tramites-content {
+#mas-informacion-content, #requisitos-content {
     display: none;
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -208,9 +206,6 @@ p {
     margin-left: 4%;
 }
 
-.tramites-points {
-    margin-bottom: 1.5rem;
-}
 
 @media screen and (max-width:1200px) {
     body {
@@ -232,16 +227,21 @@ p {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1062px) {
     body {
         font-size: 8px;
     }
 
     .title {
         font-size: 1.4rem;
+        margin: 0;
     }
 
-    .text,
+
+    .text{
+        font-size: 0.9rem;
+    }
+
     .tab-button,
     .points {
         font-size: 1rem;
@@ -256,7 +256,7 @@ p {
 
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 844px) {
     .mobile {
         display: flex;
     }
@@ -265,7 +265,8 @@ p {
         margin: 0;
     }
 
-    .text {
+    .text{
+        font-size: 0.8rem;
         margin: 0;
     }
 
@@ -289,10 +290,14 @@ p {
         font-size: 1.2rem;
     }
 
-    .text,
+
     .tab-button,
     .points {
         font-size: 0.9rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
     }
 
     .info {
@@ -333,7 +338,8 @@ p {
     .info {
         width: 67%;
         margin-right: 3rem;
-        margin-bottom: 40%;
+        margin-bottom: 45%;
+        gap: 0;
     }
 
     .title {
