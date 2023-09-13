@@ -11,6 +11,7 @@ main {
     img#header-image {
         content: url('/images/mobile-reportar-siniestros_4x.webp');
     }
+
     section#form-container {
         display: flex;
         flex-direction: column;
@@ -19,6 +20,17 @@ main {
         padding-bottom: 40px;
         margin: 0px;
         width: 90%;
+        margin-bottom: 120px;
+    }
+
+    section#process-done {
+        display: none;
+        flex-direction: column;
+        min-height: 400px;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 120px;
+        margin-bottom: 120px;
     }
 }
 
@@ -26,6 +38,7 @@ main {
     img#header-image {
         content: url('/images/mobile-reportar-siniestros_4x.webp');
     }
+
     section#form-container {
         display: flex;
         flex-direction: column;
@@ -34,6 +47,17 @@ main {
         padding-bottom: 40px;
         margin: 0px;
         width: 70%;
+        margin-bottom: 120px;
+    }
+
+    section#process-done {
+        display: none;
+        flex-direction: column;
+        min-height: 400px;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 120px;
+        margin-bottom: 120px;
     }
 }
 
@@ -41,6 +65,7 @@ main {
     img#header-image {
         content: url('/images/web-reportar-siniestros_4x.webp');
     }
+
     section#form-container {
         display: flex;
         flex-direction: column;
@@ -49,6 +74,17 @@ main {
         padding-bottom: 40px;
         margin: 0px;
         width: 50%;
+        margin-bottom: 120px;
+    }
+
+    section#process-done {
+        display: none;
+        flex-direction: column;
+        min-height: 400px;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 120px;
+        margin-bottom: 120px;
     }
 }
 
@@ -120,13 +156,40 @@ button#send-button {
     height: 40px;
 }
 
-img.icon-help{
+img.icon-help {
     width: 20px;
 
 }
 
-div.text-icon-container{
+div.text-icon-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+p#confirm-message {
+    color: $gray-1;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 184.2%;
+    /* 2.07225rem */
+}
+
+button#back-button {
+    border-radius: 0.4rem;
+    background: $cyan-500;
+    border: 0px;
+
+    color: white;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    height: 40px;
 }

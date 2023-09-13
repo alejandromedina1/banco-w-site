@@ -135,6 +135,6 @@ const reportarSiniestro = document.createElement('seguros-cards')
 reportarSiniestro.setAttribute('card_image', '/images/seguros-reportar-siniestro_4x.webp')
 reportarSiniestro.setAttribute('title_card', 'Reportar siniestro')
 reportarSiniestro.setAttribute('text_card', 'Podrásllenar un formulario donde encontraras: la gravedad del siniestro, la frecuencia del siniesro, el tipo de siniestro, su fecha, la descripción y el correo.')
-reportarSiniestro.setAttribute('redirect_link', '/')
+reportarSiniestro.setAttribute('redirect_link', '/reportar-siniestros/')
 cardContainer.append(reportarSiniestro)
 
