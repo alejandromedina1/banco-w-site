@@ -52,6 +52,17 @@ button#button-header {
 
 }
 
+button#button-header:hover{
+    
+    background: $cyan-100;
+}
+
+button#button-header:active{
+    border: 2px solid white;
+    color: $cyan-500;
+    background: $cyan-100;
+}
+
 
 
 @media (max-width: 425px) {

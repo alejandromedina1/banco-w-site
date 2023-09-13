@@ -109,3 +109,14 @@ button.button-card {
     height: 30px;
 
 }
+
+button.button-card:hover{
+    background: $cyan-100;
+    color: $cyan-500;
+}
+
+button.button-card:active{
+    border: 2px solid $cyan-500;
+    background: white;
+    color: $cyan-500;
+}
