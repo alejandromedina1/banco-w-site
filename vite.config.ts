@@ -38,6 +38,7 @@ export default defineConfig({
                 "business-people": resolve(root, 'business-people','index.html'),
                 "yo-construyo": resolve(root, 'yo-construyo','index.html'),
                 "inmueble-productivo": resolve(root, 'inmueble-productivo','index.html'),
+                "contratos-reglamentos": resolve(root, 'contratos-reglamentos','index.html'),
             }
         },
         target: 'esnext'
