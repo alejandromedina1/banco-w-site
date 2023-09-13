@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco W</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../global.scss">
+
+    <!--Css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+</head>
+
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <main>
+        <section id="first-screen">
+            <div>
+                <h2 class="title">Por favor espera</h2>
+                <p class="text-content">estamos validando un asesor disponible para atender tu llamada</p>
+            </div>
+            <img class="call-icons" src="/icons/leave-call.svg" alt="">
+        </section>
+        <section id="second-screen">
+            <div>
+                <h1 class="call-title">Jhon</h1>
+                <p class="call-text-content">Asesor Banco W</p>
+                <p class="call-text-content">00:26</p>
+            </div>
+            <div id="controls">
+                <div class="control-container">
+                    <div class="icon-controls">
+                        <img class="icons-calls" src="/icons/speaker.svg" alt="">
+                    </div>
+                    <p class="text-controls">Altavoz</p>
+                </div>
+                <div class="control-container" id="teclado">
+                    <div class="icon-controls">
+                        <img class="icons-calls" src="/icons/keyboard.svg" alt="">
+                    </div>
+                    <p class="text-controls">Teclado</p>
+                </div>
+                <div class="control-container">
+                    <div class="icon-controls">
+                        <img class="icons-calls" src="/icons/mute.svg" alt="">
+                    </div>
+                    <p class="text-controls">Mute</p>
+                </div>
+            </div>
+
+            <div id="keyboard">
+                <div class="keyboard-line">
+                    <button class="keyboard-button">1</button>
+                    <button class="keyboard-button">2</button>
+                    <button class="keyboard-button">3</button>
+                </div>
+                <div class="keyboard-line">
+                    <button class="keyboard-button">4</button>
+                    <button class="keyboard-button">5</button>
+                    <button class="keyboard-button">6</button>
+                </div>
+                <div class="keyboard-line">
+                    <button class="keyboard-button">7</button>
+                    <button class="keyboard-button">8</button>
+                    <button class="keyboard-button">9</button>
+                </div>
+                <div class="keyboard-line">
+                    <button class="keyboard-button">*</button>
+                    <button class="keyboard-button">0</button>
+                    <button class="keyboard-button">#</button>
+                </div>
+
+            </div>
+            <img id="end-call" src="/icons/end-call.svg" alt="">
+        </section>
+        <section id="third-screen">
+            <div>
+                <h2 class="title">Lo sentimos</h2>
+                <p class="text-content">En este momento no hay algún asesor que pueda atender tu solicitud, te ofrecemos
+                    estas opciones, escoge la que se más cómoda para ti</p>
+            </div>
+            <div id="call-buttons-container">
+                <button class="help-button-option">Chatea con un asesor</button>
+                <button class="help-button-option">Revisa horarios y sedes</button>
+                <button class="help-button-option">Mira un tutorial</button>
+                <button class="help-button-option back">Regresar al sitio</button>
+            </div>
+            <div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script type="module" src="./llamadas.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+</body>
+
+</html>

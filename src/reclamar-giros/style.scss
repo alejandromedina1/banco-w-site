@@ -83,6 +83,15 @@ p {
     line-height: normal;
 }
 
+.points {
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.125rem;
+}
+
 #caracteristicas-content,
 #beneficios-content {
     display: none;
@@ -116,7 +125,7 @@ p {
     background-color: $purple-300;
 }
 
-.dropdown-content {
+.dropdown-tab {
     display: none;
     border-radius: 0rem 0rem 0.4375rem 0.4375rem;
     background: #FFF;
@@ -155,15 +164,6 @@ p {
 .bullet-points {
     display: flex;
     flex-direction: column;
-}
-
-.points {
-    color: $gray-1;
-    font-family: Bariol, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    font-size: 1.125rem;
 }
 
 .line-break {
