@@ -1,0 +1,152 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "../global.scss";
+
+*{
+    margin-right: 0px;
+}
+
+section#seguros-header {
+    position: relative;
+}
+
+img#header-images {
+    width: 100%;
+    height: auto;
+}
+
+h1#title-section {
+    color: white;
+    text-align: center;
+    font-family: "geomanist-regular";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+
+p#subtitle-section {
+    color: white;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button#button-header {
+    border: 0px;
+    border-radius: 0.26694rem;
+    background: white;
+
+    color: $cyan-500;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+
+}
+
+button#button-header:hover{
+    
+    background: $cyan-100;
+}
+
+button#button-header:active{
+    border: 2px solid white;
+    color: $cyan-500;
+    background: $cyan-100;
+}
+
+
+
+@media (max-width: 425px) {
+    section#seguros-cards-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    
+        gap: 20px;
+    
+    }
+    img#header-images {
+        width: 100%;
+        height: auto;
+        content: url('/images/mobile-seguros-header_4x.webp');
+    }
+    div#title-over-header {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    section#seguros-cards-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+        gap: 20px;
+    
+    }
+    img#header-images {
+        width: 100%;
+        height: auto;
+        content: url('/images/web-seguros-header_4x.webp');
+    }
+    div#title-over-header {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 40%;
+    }
+}
+
+@media (min-width: 769px) {
+    section#seguros-cards-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+        gap: 20px;
+    
+    }
+    img#header-images {
+        width: 100%;
+        height: auto;
+        content: url('/images/web-seguros-header_4x.webp');
+    }
+    div#title-over-header {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

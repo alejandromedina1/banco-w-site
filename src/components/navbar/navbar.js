@@ -164,7 +164,7 @@ class NavBarDesktop extends HTMLElement {
                      </a>
                          <ul class="dropdown-content">
                              <li><a href="#">Personas con negocio</a></li>
-                             <li><a href="#">Ahorradores e inversionistas</a></li>
+                             <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
                              <li><a href="#">Pensionados y maestros</a></li>
                              <li><a href="#">Colombianos en el exterior</a></li>
                          </ul>
@@ -193,7 +193,7 @@ class NavBarDesktop extends HTMLElement {
                              <li><a href="#">Quiénes somos</a></li>
                              <li><a href="#">Opción transaccional</a></li>
                              <li><a href="#">Línea telefónica</a></li>
-                             <li><a href="#">PQRS</a></li>
+                             <li><a href="/pqrs/">PQRS</a></li>
                          </ul>
                      </li>
                  </ul>

@@ -1,4 +1,6 @@
 import '../components/bullet-point/index'
+import '../components/creditos-form/index'
+
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -16,6 +18,7 @@ const toggleContent = ()=>{
         button.classList.add('active');
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
+        (selectedTab === 'tramites') ? document.body.style.background = '#EFEFEF' : document.body.style.background = 'white'
         selectedContent.style.display = 'block';
       });
     });
@@ -38,19 +41,18 @@ const toggleContent = ()=>{
   }
 }
 
-window.addEventListener('resize', () => toggleContent())
+window.addEventListener('resize', ()=> toggleContent())
 toggleContent();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
 
-window.addEventListener('resize', ()=> toggleBg())
-
-const toggleBg = () =>{
-  const bannerBg = document.querySelector('.banner-bg');
-  if (window.matchMedia('(max-width: 645px)').matches) {
-    bannerBg.src = '/images/deposito_bg_mobile.webp';
-  } else {
-    bannerBg.src = '/images/deposito_bg_full.webp'
-  }
-}
-
-toggleBg();
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector(".dropdown-trigger");
+    const content = dropdown.querySelector(".dropdown-tab");
+    console.log(content);
+    trigger.addEventListener("click", () => {
+      content.classList.toggle("show");
+    });
+  });
+});

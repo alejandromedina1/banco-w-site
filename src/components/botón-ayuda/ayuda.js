@@ -1,3 +1,5 @@
+import '../components.js'
+
 class HelpButton extends HTMLElement {
     constructor() {
         super()
@@ -11,6 +13,16 @@ class HelpButton extends HTMLElement {
         this.render();
         this.overlayColor();
         this.changeButton();
+
+        const chat = document.getElementById('chat');
+        const showChat = document.getElementById('show-chat');
+        const btns = document.getElementById('close-btns');
+        const disable = document.getElementById('show-help-btn');
+
+        chat.addEventListener('click', () => {
+            showChat.style.display = 'block';
+            btns.style.display = 'none';
+        })
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -20,12 +32,12 @@ class HelpButton extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="./components/botón-ayuda/style.scss">
+        <link rel="stylesheet" href="/components/botón-ayuda/style.scss">
         <div id="overlay">
         </div>
         <nav class="help-button">
             <input type="checkbox" id="show-help-btn"">
-            <div class="help-options">
+            <div id="close-btns" class="help-options">
                 <div id="chat">
                     <a href="#"><img src="/icons/chat.svg" alt=""></a>
                     <span>Chat</span>
@@ -59,6 +71,9 @@ class HelpButton extends HTMLElement {
                 
             </div>
         </nav>
+        <div id="show-chat" style="display:none">
+            <chat-component></chat-component>
+        </div>   
         `;
     }
 
