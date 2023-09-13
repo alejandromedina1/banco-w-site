@@ -39,6 +39,8 @@ export default defineConfig({
                 "business-people": resolve(root, 'business-people','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
                 "seguros": resolve(root, 'seguros','index.html'),
+                "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
+                "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
             }
         },
         target: 'esnext'
