@@ -1,0 +1,195 @@
+@import "../global.scss";
+
+main {
+    background-color: $gray-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 425px) {
+    img#header-image {
+        content: url('/images/mobile-reportar-siniestros_4x.webp');
+    }
+
+    section#form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 0px;
+        width: 90%;
+        margin-bottom: 120px;
+    }
+
+    section#process-done {
+        display: none;
+        flex-direction: column;
+        min-height: 400px;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    img#header-image {
+        content: url('/images/mobile-reportar-siniestros_4x.webp');
+    }
+
+    section#form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 0px;
+        width: 70%;
+        margin-bottom: 120px;
+    }
+
+    section#process-done {
+        display: none;
+        flex-direction: column;
+        min-height: 400px;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 769px) {
+    img#header-image {
+        content: url('/images/web-reportar-siniestros_4x.webp');
+    }
+
+    section#form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 0px;
+        width: 50%;
+        margin-bottom: 120px;
+    }
+
+    section#process-done {
+        display: none;
+        flex-direction: column;
+        min-height: 400px;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+
+img#header-image {
+    width: 100%;
+}
+
+
+label {
+    color: $gray-1;
+    font-family: "bariol-regular";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 1.21875rem */
+}
+
+div.gap-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs {
+    width: 100%;
+    border-radius: 0.28169rem;
+    border: 2.5px solid #CDCDCD;
+    background: white;
+    height: 40px;
+
+    color: $gray-2;
+    font-family: "bariol-regular";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 10px;
+    /* 1.21875rem */
+}
+
+div#inputs-labels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+button#send-button {
+    border-radius: 0.4rem;
+    background: $cyan-500;
+    border: 0px;
+
+    color: white;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    height: 40px;
+}
+
+img.icon-help {
+    width: 20px;
+
+}
+
+div.text-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p#confirm-message {
+    color: $gray-1;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 184.2%;
+    /* 2.07225rem */
+}
+
+button#back-button {
+    border-radius: 0.4rem;
+    background: $cyan-500;
+    border: 0px;
+
+    color: white;
+    text-align: center;
+    font-family: "bariol-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    height: 40px;
+}

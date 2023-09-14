@@ -35,10 +35,17 @@ export default defineConfig({
                 "cdt": resolve(root, 'cdt','index.html'),
                 "ahorradores_inversionistas": resolve(root, 'ahorradores_inversionistas','index.html'),
                 "pqrs": resolve(root, 'pqrs','index.html'),
+                "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
                 "yo-construyo": resolve(root, 'yo-construyo','index.html'),
                 "inmueble-productivo": resolve(root, 'inmueble-productivo','index.html'),
                 "contratos-reglamentos": resolve(root, 'contratos-reglamentos','index.html'),
+                "micro-credito": resolve(root, 'micro-credito','index.html'),
+                "gotahorro": resolve(root, 'gotahorro','index.html'),
+                "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
+                "seguros": resolve(root, 'seguros','index.html'),
+                "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
+                "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
             }
         },
         target: 'esnext'

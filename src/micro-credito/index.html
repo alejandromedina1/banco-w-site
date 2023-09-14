@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcrédito</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2 class="title">Microcrédito</h2>
+            <p class="text">
+                Crédito con asesoría personalizada que te permitirá fortalecer y hacer crecer tu negocio.
+            </p>
+            <a href="/simulador-credito/">
+                <button class="simulador">Simulador de crédito</button>
+            </a>
+        </span>
+        <img src="/images/microcredito_bg_desktop.webp" class="banner-bg">
+    </section>
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="caracteristicas">Características</button>
+        <button class="tab-button" data-tab="requisitos">Requisitos</button>
+        <button class="tab-button" data-tab="tramites">Trámites</button>
+        <button class="tab-button" data-tab="solicitud">Solicitud</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="caracteristicas-content">
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Antigüedad mínima del negocio: 1 año.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Monto: desde 1 SMMLV hasta 120 SMMLV.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Tasa fija durante toda la vigencia del préstamo.</bullet-point>
+                <br class="line-break mobile">
+            </section>
+
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">El plazo será dado de acuerdo al monto y al tipo de
+                    cliente.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Tienes la opción de ahorrar mientras pagas tu crédito con nuestro
+                    Pagahorro.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Se otorga a clientes nuevos, renovación y preferenciales.</bullet-point>
+                <br class="line-break mobile">
+            </section>
+
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Puedes adquirir de manera opcional:</bullet-point>
+                <ul class="secondary-bullets">
+                    <li><bullet-point color="#FF8833">Soy previsión exequial</bullet-point></li>
+                    <li><bullet-point color="#FF8833">Soy vida</bullet-point></li>
+                    <li><bullet-point color="#FF8833">Soy protección familiar</bullet-point></li>
+                    <li><bullet-point color="#FF8833">Soy patrimonio seguro</bullet-point></li>
+                </ul>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Seguros Obligatorios:</bullet-point>
+                <ul class="secondary-bullets">
+                    <li><bullet-point color="#FF8833">Seguros deudores</bullet-point></li>
+                </ul>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Asegúrate de estar informado con nuestro nuevo portal de seguros. Un lugar
+                    que te permite conocer todo lo necesario sobre tu seguro y las demás opciones que tenemos para
+                    ti.</bullet-point>
+                <br class="line-break mobile">
+            </section>
+        </div>
+
+        <div class="tab-content" id="requisitos-content">
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Fotocopia de la cédula de ciudadanía</bullet-point>
+            </section>
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Dos referencias comerciales y/o personales, y una familiar</bullet-point>
+            </section>
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Facturas de compra del último año y servicios públicos al
+                    día.</bullet-point>
+            </section>
+        </div>
+
+        <div class="tab-content" id="tramites-content">
+            <div class="dropdownPages">
+                <div class="dropdown-trigger">
+                    <h5 class="dropdown-title">¿Deseas que tu giro sea depositado a tu cuenta bancaria?</h5>
+                </div>
+                <article class="dropdown-tab">
+                    <p class="points">Puedes hacer tu solicitud de crédito a través de los siguientes canales:</p>
+                    <article class="tramites-points">
+                        <bullet-point color="#FF8833">Analista de crédito.</bullet-point>
+                        <bullet-point color="#FF8833">Línea gratuita de Servicio al Cliente: 01 8000
+                            515656</bullet-point>
+                        <bullet-point color="#FF8833">Celular: 323 5996557</bullet-point>
+                        <bullet-point color="#FF8833">Oficinas del Banco W.</bullet-point>
+                        <bullet-point color="#FF8833">Corresponsales Bancarios y/o Enlaces Comerciales.</bullet-point>
+                    </article>
+
+                    <article>
+                        <p class="points">Plazos de estudio de crédito: una vez realizada la solicitud de crédito, un
+                            Analista del Banco W
+                            visitará tu negocio, y en un máximo de tres días hábiles se realizará el desembolso del
+                            dinero
+                            en una de nuestras oficinas o Corresponsales Bancarios.</p>
+                    </article>
+                    <article>
+                        <p class="points">Abonos: de acuerdo con lo establecido en la Ley 1555 de 2012, y en el literal
+                            3.2.6.14. de la
+                            Circular Jurídica de la Superintendencia Financiera de Colombia, los deudores podrán
+                            realizar
+                            abonos a capital con disminución de plazo, o a capital con disminución del valor de la cuota
+                            de
+                            la obligación.</p>
+                    </article>
+                </article>
+
+            </div>
+
+            <!-- ------------------------- -->
+            <div class="dropdownPages">
+                <div class="dropdown-trigger">
+                    <h5 class="dropdown-title">Trámites de cancelación</h5>
+                </div>
+                <article class="dropdown-tab">
+                    <p class="points">El crédito queda cancelado en el momento en que se pague la totalidad de cuotas y
+                        el saldo quede en cero. Puedes solicitar el paz y salvo a través de la Línea de Servicio al
+                        Cliente o en la agencia en la que tu crédito fue desembolsado.</p>
+                </article>
+            </div>
+        </div>
+
+
+        <div class="tab-content" id="solicitud-content">
+            <creditos-form></creditos-form>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+import '../components/bullet-point/index'
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -45,10 +46,10 @@ window.addEventListener('resize', ()=> toggleBg())
 
 const toggleBg = () =>{
   const bannerBg = document.querySelector('.banner-bg');
-  if (window.matchMedia('(max-width: 821px)').matches) {
-    bannerBg.src = '/images/bg_mobile.webp';
+  if (window.matchMedia('(max-width: 645px)').matches) {
+    bannerBg.src = '/images/deposito_bg_mobile.webp';
   } else {
-    bannerBg.src = '/images/bg_deposito.webp'
+    bannerBg.src = '/images/deposito_bg_full.webp'
   }
 }
 
