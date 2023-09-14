@@ -32,6 +32,7 @@ p {
     width: 40%;
     height: max-content;
     z-index: 2;
+    gap: 0.5rem;
 }
 
 .title {
@@ -60,6 +61,7 @@ p {
     padding: 0.91669rem 2.75rem;
     border: none;
     color: white;
+    color: #FFF;
     text-align: center;
     font-family: Bariol, sans-serif;
     font-size: 1.2rem;
@@ -296,6 +298,10 @@ p {
     .info {
         width: 42%;
     }
+
+    .simulador {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 594px) {
@@ -327,7 +333,7 @@ p {
     .info {
         width: 67%;
         margin-right: 3rem;
-        margin-bottom: 55%;
+        margin-bottom: 40%;
     }
 
     .title {
