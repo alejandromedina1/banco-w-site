@@ -18,15 +18,22 @@ class Producto1Profile extends HTMLElement {
     connectedCallback() {
         this.render()
         const press = document.getElementById('pressed')
-        const hidden = document.querySelector('productos2-profile')
+        const hidden = document.querySelector('productos3-profile')
+        const hiddenSelf = document.querySelector('productos1-profile')
 
         press.addEventListener('click', function() {
-          if (hidden.style.display === 'block') {
-            hidden.style.display = 'none'
-          } else {
-            hidden.style.display = "block"
-          }
+          hidden.style.display = 'block'
+          hiddenSelf.style.display = 'none'
         })  
+
+        const active = document.getElementById('active-products')
+        const products3 = document.querySelector('productos2-profile')
+        const products1 = document.querySelector('productos1-profile')
+
+        active.addEventListener('click', function() {
+          products3.style.display = 'block'
+          products1.style.display = 'none'
+        })
     }
 
     render() {
@@ -38,7 +45,7 @@ class Producto1Profile extends HTMLElement {
     <section class="main">
 
     <div class="main__container-user">
-    <section class="main__account">
+    <section id="active-products" class="main__account">
         <h3 class="main__subtitle">Productos de ahorro:</h3>
         <div class="main__account-card">
           <div class="main__account-card-container">
