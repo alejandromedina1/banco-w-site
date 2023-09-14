@@ -94,8 +94,8 @@ p{
 }
 
 .active{
-    color: $purple-300;
-    border-bottom: 2px solid $purple-300;
+    color: $cyan-500;
+    border-bottom: 2px solid $cyan-500;
 }
 
 .content-list {
@@ -124,7 +124,7 @@ ol li {
 }
 
 ol li::marker {
-    color: $purple-300;
+    color: $cyan-500;
 }
 
 article {
