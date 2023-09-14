@@ -52,6 +52,10 @@ class NavBarDesktop extends HTMLElement {
         const sections = [
             {path: '/', id: 'inicio'},
             {path: '/ahorradores_inversionistas/', id: 'clientes'},
+            {path: '/business-people/', id: 'clientes'},
+            {path: '/gotahorro/', id: 'clientes'},
+            {path: '/credito-vehiculo/', id: 'clientes'},
+            {path: '/micro-credito/', id: 'clientes'},
             {path: '/pqrs/', id: 'nosotros'}
         ]
 
@@ -109,7 +113,7 @@ class NavBarDesktop extends HTMLElement {
                         </svg>
                         </a>
                             <ul class="dropdown-content" id="cliente">
-                                <li><a href="#">Personas con negocio</a></li>
+                                <li><a href="/business-people/">Personas con negocio</a></li>
                                 <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
                                 <li><a href="#">Pensionados y maestros</a></li>
                                 <li><a href="#">Colombianos en el exterior</a></li>
@@ -121,7 +125,7 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Créditos</a></li>
                                 <li><a href="#">Cuentas de ahorro e inversión</a></li>
                                 <li><a href="#">Giros internacionales</a></li>
-                                <li><a href="#">Seguros</a></li>
+                                <li><a href="/seguros/">Seguros</a></li>
                             </ul>
                         </li>
                         <li class="dropdownNav"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">

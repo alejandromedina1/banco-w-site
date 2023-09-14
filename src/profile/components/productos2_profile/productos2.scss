@@ -203,6 +203,15 @@
 
 }
 
+.back {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: c.$gray-2;
+    font-family: 'Bariol';
+    font-size: 18px;
+    cursor: pointer;
+}
 
 .Content-table th .Content-table th, .Content-table td {
     padding: 1rem 1.1rem !important;
