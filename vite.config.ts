@@ -41,6 +41,8 @@ export default defineConfig({
                 "gotahorro": resolve(root, 'gotahorro','index.html'),
                 "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
                 "seguros": resolve(root, 'seguros','index.html'),
+                "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
+                "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
             }
         },
         target: 'esnext'
