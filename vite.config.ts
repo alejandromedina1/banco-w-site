@@ -38,6 +38,8 @@ export default defineConfig({
                 "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
+                "gotahorro": resolve(root, 'gotahorro','index.html'),
+                "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
                 "seguros": resolve(root, 'seguros','index.html'),
                 "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
                 "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
