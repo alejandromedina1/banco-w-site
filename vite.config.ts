@@ -40,6 +40,10 @@ export default defineConfig({
                 "giros-internacionales": resolve(root, 'giros-internacionales','index.html'),
                 "depositos-bancarios": resolve(root, 'depositos-bancarios','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
+                "dep-bancarios": resolve(root, 'depositos-bancarios','index.html'),
+                "billetera-w": resolve(root, 'billetera-w','index.html'),
+                "corresponsales-giros": resolve(root, 'corresponsales-giros','index.html'),
+                
             }
         },
         target: 'esnext'
