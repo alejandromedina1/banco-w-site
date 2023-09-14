@@ -62,7 +62,7 @@ window.addEventListener('resize', () => toggleBg())
 const toggleBg = () => {
   const bannerBg = document.querySelector('.banner-bg');
   if (window.matchMedia('(max-width: 500px)').matches) {
-    bannerBg.src = '/images/bg_reclamar_mobile.webp';
+    bannerBg.src = '/images/bg_terremotos_mobile.webp';
   } else {
     bannerBg.src = '/images/bg_terremotos.webp'
   }
