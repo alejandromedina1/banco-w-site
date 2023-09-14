@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corresponsales giros</title>
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../components/footer/style.scss" />
+    <link rel="stylesheet" href="../components/navbar/style.scss" />
+    <link rel="stylesheet" href="../global.scss" />
+  </head>
+
+  <body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+      <img src="/images/ancianos_envia_giros.webp" class="ancianos-image" />
+      <span class="info">
+        <h2>Oficinas y corresponsales</h2>
+        <p>
+          Con nuestro servicio de Giros Internacionales llegamos más lejos para
+          acercarte a los tuyos.
+        </p>
+      </span>
+    </section>
+    <section class="content">
+      <div id="characteristics">
+        <h4 class="subtitle-person">
+          Recuerda, que para que puedas reclamar tu dinero debes presentar:
+        </h4>
+        <div class="content-list">
+          <article>
+            <p>Documento de identificación original (Valido en Colombia)</p>
+          </article>
+          <article>
+            <p>
+              El código de referencia, clave o PIN de su giro, que es informado
+              por la persona que envía el giro en el exterior.
+            </p>
+          </article>
+          <article>
+            <p>
+              En Su Red reclama giros de hasta USD 1.000, para montos superiores
+              acércate a nuestras oficinas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+      <div class="info-cards">
+        <div class="card">
+          <img
+            src="https://www.bancow.com.co/wp-content/uploads/2017/06/hito-2017-banco-w.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Oficinas banco W</h5>
+            <div class="card-buttons">
+              <a href="/enviar-giros/" class="purple-card-button"
+                >¡Conoce más!</a
+              >
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img
+            src="https://www.sured.com.co/wp-content/uploads/2019/02/cobertura_narino_9_ON.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Puntos SuRed</h5>
+            <div class="card-buttons">
+              <a href="/enviar-giros/" class="purple-card-button"
+                >¡Conoce más!</a
+              >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none" disabled="true"></inclusive-button>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script
+      type="module"
+      src="../components/botón-inclusivo/inclusivo.js"
+    ></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/cards/card-article.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+</head>
+<body>
+    <nav-bar-desktop></nav-bar-desktop> 
+    
+    <section class="banner">
+        <img src="/images/mujer_deposito.webp" class="woman-image" alt="Mujer revisando el celular">
+        <span class="info">
+            <h2 class="title">Acerca de nosotros</h2>
+            <p class="text">
+                Somos un Banco colombiano que promueve la inclusión a través de las microfinanzas y otros productos y servicios financieros. Ponemos al alcance de las personas; productos prácticos e innovadores en materia de crédito para negocios, ahorro, inversiones, microseguros y remesas.
+            </p>
+        </span>
+        <img src="/images/bg_deposito.webp" class="banner-bg" alt="Fondo">
+        <img src="/icons/banner_vector_left.svg" class="left-vector">
+        <img src="/icons/banner_vector_right.svg" class="right-vector">
+    </section>
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="proposito">Propósito</button>
+        <button class="tab-button" data-tab="historia">Historia</button>
+        <button class="tab-button" data-tab="presentacion-institucional">Presentación institucional</button>
+    </div>
+    <section class="content">
+        <div class="tab-content" id="proposito-content">
+            <p class="text-outside">Nuestro propósito es aportar al desarrollo económico y social facilitando soluciones financieras a micronegocios y pequeñas empresas.
+            </p>
+
+            <div class="drop1" id="dropdown-button">
+                <p>Misión y visión</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                    <path d="M27.8062 21.1687L19.8562 13.2187C19.6819 13.0429 19.4745 12.9035 19.246 12.8083C19.0175 12.7131 18.7724 12.6641 18.5249 12.6641C18.2774 12.6641 18.0323 12.7131 17.8038 12.8083C17.5754 12.9035 17.368 13.0429 17.1937 13.2187C16.8445 13.57 16.6484 14.0452 16.6484 14.5406C16.6484 15.0359 16.8445 15.5111 17.1937 15.8624L23.8312 22.4999L17.1937 29.1374C16.8445 29.4887 16.6484 29.964 16.6484 30.4593C16.6484 30.9547 16.8445 31.4299 17.1937 31.7812C17.3689 31.955 17.5767 32.0924 17.8051 32.1858C18.0335 32.2791 18.2782 32.3264 18.5249 32.3249C18.7717 32.3264 19.0163 32.2791 19.2447 32.1858C19.4732 32.0924 19.681 31.955 19.8562 31.7812L27.8062 23.8312C27.9819 23.6569 28.1214 23.4495 28.2166 23.221C28.3118 22.9925 28.3608 22.7475 28.3608 22.4999C28.3608 22.2524 28.3118 22.0073 28.2166 21.7789C28.1214 21.5504 27.9819 21.343 27.8062 21.1687Z" fill="white"/>
+                  </svg>
+            </div>
+
+
+            <section id="dropdown-menu" class="info-drop1">
+                    <section class="bullet-points">              
+                        <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                          </svg> Misión</p>
+                            <p class="text-points points">Aportar a la calidad de vida de las personas de menores ingresos, facilitándoles productos y servicios financieros sencillos, innovadores y oportunos, de manera responsable, rentable y sostenible.</p>
+                            <br class="line-break">
+                            <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                              </svg> Visión</p>
+                                <p class="text-points points">Ser el Banco mejor valorado por sus colaboradores, clientes, accionistas y la comunidad por aportar a su bienestar y calidad de vida en forma transparente, eficiente, innovadora y rentable.</p>
+                            <br class="line-break mobile">
+                    </section>
+            </section>
+
+            <div class="drop2" id="dropdown-button2">
+                <p>Valores</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                    <path d="M27.8062 21.1687L19.8562 13.2187C19.6819 13.0429 19.4745 12.9035 19.246 12.8083C19.0175 12.7131 18.7724 12.6641 18.5249 12.6641C18.2774 12.6641 18.0323 12.7131 17.8038 12.8083C17.5754 12.9035 17.368 13.0429 17.1937 13.2187C16.8445 13.57 16.6484 14.0452 16.6484 14.5406C16.6484 15.0359 16.8445 15.5111 17.1937 15.8624L23.8312 22.4999L17.1937 29.1374C16.8445 29.4887 16.6484 29.964 16.6484 30.4593C16.6484 30.9547 16.8445 31.4299 17.1937 31.7812C17.3689 31.955 17.5767 32.0924 17.8051 32.1858C18.0335 32.2791 18.2782 32.3264 18.5249 32.3249C18.7717 32.3264 19.0163 32.2791 19.2447 32.1858C19.4732 32.0924 19.681 31.955 19.8562 31.7812L27.8062 23.8312C27.9819 23.6569 28.1214 23.4495 28.2166 23.221C28.3118 22.9925 28.3608 22.7475 28.3608 22.4999C28.3608 22.2524 28.3118 22.0073 28.2166 21.7789C28.1214 21.5504 27.9819 21.343 27.8062 21.1687Z" fill="white"/>
+                  </svg>
+            </div>
+
+            <section id="dropdown-menu2" class="info-drop2">
+                <section class="bullet-points">              
+                    <p class="points"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                      </svg> Compromiso</p>
+                        <br class="line-break">
+                        <p class="points"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                          </svg> Transparencia</p>
+                          <br class="line-break">
+                          <p class="points"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                              <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                            </svg> Respeto</p>
+                        <br class="line-break mobile">
+                </section>
+        </section>
+
+        <div class="drop3" id="dropdown-button3">
+            <p>Pilares de nuestra cultura</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                <path d="M27.8062 21.1687L19.8562 13.2187C19.6819 13.0429 19.4745 12.9035 19.246 12.8083C19.0175 12.7131 18.7724 12.6641 18.5249 12.6641C18.2774 12.6641 18.0323 12.7131 17.8038 12.8083C17.5754 12.9035 17.368 13.0429 17.1937 13.2187C16.8445 13.57 16.6484 14.0452 16.6484 14.5406C16.6484 15.0359 16.8445 15.5111 17.1937 15.8624L23.8312 22.4999L17.1937 29.1374C16.8445 29.4887 16.6484 29.964 16.6484 30.4593C16.6484 30.9547 16.8445 31.4299 17.1937 31.7812C17.3689 31.955 17.5767 32.0924 17.8051 32.1858C18.0335 32.2791 18.2782 32.3264 18.5249 32.3249C18.7717 32.3264 19.0163 32.2791 19.2447 32.1858C19.4732 32.0924 19.681 31.955 19.8562 31.7812L27.8062 23.8312C27.9819 23.6569 28.1214 23.4495 28.2166 23.221C28.3118 22.9925 28.3608 22.7475 28.3608 22.4999C28.3608 22.2524 28.3118 22.0073 28.2166 21.7789C28.1214 21.5504 27.9819 21.343 27.8062 21.1687Z" fill="white"/>
+              </svg>
+        </div>
+
+        <section id="dropdown-menu3" class="info-drop3">
+            <section class="bullet-points">              
+                <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                  </svg> Principios</p>
+                  <p class="text-points points">Actuamos con respeto, transparencia y compromiso.</p>
+                    <br class="line-break">
+                    <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                      </svg> Trabajo colaborativo</p>
+                      <p class="text-points points">Unimos esfuerzos y talentos para hacer nuestro
+                        propósito una realidad.</p>
+                      <br class="line-break">
+                      <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                          <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                        </svg> Clientes</p>
+                        <p class="text-points points">Brindamos experiencias positivas a nuestros clientes,
+                            implementando acciones efectivas.</p>
+                        <br class="line-break">
+                    <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                      </svg> Liderazgo</p>
+                      <p class="text-points points">Alcanzamos resultados, inspirando con el ejemplo positivo, y
+                        generando confianza y compromiso.</p>
+                      <br class="line-break">
+                    <p class="points points-title"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#FFA666"/>
+                      </svg> Innovación</p>
+                      <p class="text-points points">Somos flexibles y ágiles, generando valor a los clientes,
+                        colaboradores y a la organización.</p>
+                    <br class="line-break mobile">
+            </section>
+    </section>
+</div>
+            
+            
+        <!-- --------------------- -->
+        <div class="tab-content" id="historia-content">
+            
+            <section class="bullet-points">              
+                    <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                        </svg> Puedes abrir el depósito de bajo monto sin acercarte a una oficina en pocos minutos.</p>
+                        <br class="line-break">
+
+                    <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                        </svg> Puedes abrirla sin documentación física.</p>
+                        <br class="line-break">
+
+                <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                        </svg> Después de abrir tu depósito, recibirás un mensaje con el número de la cuenta y un correo electrónico con información de tu interés.</p>
+                        <br class="line-break">
+
+                <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                        </svg> Para transferencias por ACH si el valor supera el tope del depósito de bajo monto dicha transferencia será devuelta al originador.</p>
+                        <br class="line-break">
+
+            <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                        </svg> Tu dinero crece, te reconocemos intereses diarios, los cuales son liquidados sobre tus saldos diarios; estos intereses serán consignados en tu cuenta de ahorro al final del mes.</p>
+                        <br class="line-break mobile">
+            </section>
+
+            <section class="bullet-points">              
+                <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                    </svg> Puedes mantener un saldo mensual disponible máximo de ocho (8) SMMLV.</p>
+                    <br class="line-break">
+
+                <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                    </svg> Solo podrás tener acceso a un (1) depósito de bajo monto en el Banco W.</p>
+                    <br class="line-break">
+
+            <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                    </svg> El depósito de bajo monto queda activo para que comiences a ahorrar inmediatamente.</p>
+                    <br class="line-break">
+
+            <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                    </svg> Ten en cuenta que los depósitos de bajo monto tienen unos límites, por lo que en caso de que tus transacciones llegaren a sobrepasarlos, te invitamos a adquirir el producto de cuenta de ahorros, el cual también te permitirá guardar tu dinero de forma segura y sin costos asociados a transacciones. </p>
+                    <br class="line-break">
+
+        <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                    </svg> Tu dinero estará más seguro, en todo momento, ya que nuestro Banco es una entidad sólida, vigilada por la Superintendencia Financiera; además, nuestras cuentas de ahorro se encuentran cubiertas hasta por $50.000.000 por el seguro de depósitos Fogafín. Este seguro aplica para la recuperación de tu dinero ante una eventual situación de liquidación de la entidad.</p>
+                    <br class="line-break mobile">
+        </section>
+
+        <section class="bullet-points">              
+            <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                </svg> Puedes retirar en el mes hasta ocho (8) SMMLV.</p>
+                <br class="line-break">
+
+            <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                </svg> El depósito de bajo monto solo podrá tener un (1) titular.</p>
+                <br class="line-break">
+
+        <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                </svg> Al abrir tu depósito de bajo monto accedes automáticamente al servicio de Banca Telefónica</p>
+                <br class="line-break">
+
+        <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                </svg> En el Banco W no exigimos saldos mínimos mensuales en el depósito de bajo monto.</p>
+                <br class="line-break">
+
+    <p class="points"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4608 8.23042C16.4608 12.7759 12.7759 16.4608 8.23042 16.4608C3.68488 16.4608 0 12.7759 0 8.23042C0 3.68488 3.68488 0 8.23042 0C12.7759 0 16.4608 3.68488 16.4608 8.23042ZM4.44145 8.23042C4.44145 10.323 6.13783 12.0194 8.23042 12.0194C10.323 12.0194 12.0194 10.323 12.0194 8.23042C12.0194 6.13783 10.323 4.44145 8.23042 4.44145C6.13783 4.44145 4.44145 6.13783 4.44145 8.23042Z" fill="#9F66DB"/>
+                </svg> Tu cuenta de ahorro está exenta del 4×1000 (GMF) hasta (65) UVT.</p>
+    </section>
+        </div>
+        <div class="tab-content" id="presentacion-institucional-content">
+            
+            <section class="Presentación">
+                <p>Te invitamos a conocer más sobre nosotros</p>
+                <a href="images/moneda-w.webp" download>
+                    <button>Descargar Presentación institucional</button>
+                </a>
+            </section>
+       
+        </div>
+    </section>
+    <custom-footer></custom-footer>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+</html>

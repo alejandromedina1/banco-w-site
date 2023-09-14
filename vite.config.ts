@@ -37,6 +37,8 @@ export default defineConfig({
                 "pqrs": resolve(root, 'pqrs','index.html'),
                 "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
+                "giros-internacionales": resolve(root, 'giros-internacionales','index.html'),
+                "depositos-bancarios": resolve(root, 'depositos-bancarios','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
                 "comparator": resolve(root, 'comparator','index.html'),
                 "gotahorro": resolve(root, 'gotahorro','index.html'),
