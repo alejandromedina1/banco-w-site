@@ -126,6 +126,7 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Cuentas de ahorro e inversión</a></li>
                                 <li><a href="#">Giros internacionales</a></li>
                                 <li><a href="/seguros/">Seguros</a></li>
+
                             </ul>
                         </li>
                         <li class="dropdownNav"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
