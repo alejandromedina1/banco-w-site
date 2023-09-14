@@ -156,3 +156,65 @@ button#button-header:active{
         gap: 10px;
     }
 }
+
+nav#nav-bar-float {
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 20%;
+    top: 430px;
+    z-index: 1;
+
+    & button {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $cyan-300;
+        text-align: center;
+        font-family: Bariol, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        justify-content: center;
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0 1%;
+
+        & .icon {
+            width: 24%;
+            margin-bottom: 0.5rem;
+        }
+
+        & a {
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            color: $cyan-300;
+        }
+    }
+
+    & button:hover {
+        background-color: $cyan-100;
+    }
+
+    .active{
+        background-color: $cyan-300;
+        & p {
+            color: white;
+            
+        }
+
+        & img {
+            filter: saturate(0) brightness(3);
+        }
+    }
+}
