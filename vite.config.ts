@@ -38,7 +38,6 @@ export default defineConfig({
                 "llamadas": resolve(root, 'llamadas','index.html'),
                 "business-people": resolve(root, 'business-people','index.html'),
                 "giros-internacionales": resolve(root, 'giros-internacionales','index.html'),
-                "depositos-bancarios": resolve(root, 'depositos-bancarios','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
                 "dep-bancarios": resolve(root, 'depositos-bancarios','index.html'),
                 "billetera-w": resolve(root, 'billetera-w','index.html'),
@@ -49,9 +48,9 @@ export default defineConfig({
                 "seguros": resolve(root, 'seguros','index.html'),
                 "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
                 "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
-                "soy-patrimonio": resolve(root, 'soy_patrimonio','index.html'),
-                "incendio-terremotos": resolve(root, 'incendio_terremotos','index.html'),
-                "actualizar-información": resolve(root, 'actualizar_informacion','index.html'),
+                "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
+                "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
+                "actualizar_información": resolve(root, 'actualizar_informacion','index.html'),
             }
         },
         target: 'esnext'
