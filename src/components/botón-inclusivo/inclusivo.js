@@ -21,7 +21,7 @@ class InclusiveButton extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
+        <link rel="stylesheet" href="/components/botón-inclusivo/style.scss">
         <div id="inclusive-overlay">
         </div>
         <nav class="inclusive-button">
