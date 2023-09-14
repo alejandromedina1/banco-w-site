@@ -1,8 +1,10 @@
 import '../components/bullet-point/index'
-import '../components/creditos-form/index'
 
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
+const bulletPoints = document.querySelectorAll('.bullet-points')
+const directionsSection = document.querySelector('.directions')
+
 
 const toggleContent = ()=>{
   if (window.matchMedia('(max-width: 821px)').matches) {
@@ -18,6 +20,9 @@ const toggleContent = ()=>{
         button.classList.add('active');
         const selectedTab = button.getAttribute('data-tab');
         const selectedContent = document.getElementById(`${selectedTab}-content`);
+        bulletPoints.forEach(point => {
+          point.style.flexDirection = (selectedTab === 'mas-informacion') ? 'row' : 'column';
+        });
         selectedContent.style.display = 'flex';
       });
     });
@@ -34,8 +39,11 @@ const toggleContent = ()=>{
       button.classList.add('active');
       const selectedTab = button.getAttribute('data-tab');
       const selectedContent = document.getElementById(`${selectedTab}-content`);
+      console.log(selectedTab);
+      bulletPoints.forEach(point => {
+        point.style.flexDirection = (selectedTab === 'mas-informacion') ? 'row' : 'column';
+      });
       selectedContent.style.display = 'grid';
-      console.log(selectedTab, grayContent);
     });
   });
   }
