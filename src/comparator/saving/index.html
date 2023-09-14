@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Créditos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!--Scss-->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../../components/navbar/style.scss">
+    <link rel="stylesheet" href="../../components/footer/style.scss">
+
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <section id="main-banner">
+        <div class="main-container">
+            <h1>CONOCE TU MEJOR OPCIÓN</h1>
+            <p class="body_2">¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la
+                clasificación que más se ajusta a ti.</p>
+        </div>
+        <img src="/images/comparator-saving-woman.webp" alt="">
+    </section>
+
+    <section id="nav-bar">
+        <nav class="nav-comparator">
+            <button class="nav-btn credit-btn">
+                <a href="" class="text-btn">Ahorro</a>
+            </button>
+            <a href="../credit/" class="nav-btn saving-btn">
+                <p class="text-btn">Créditos</p>
+            </a>
+        </nav>
+
+    </section>
+
+    <section id="choose-products" class="active">
+        <div class="title">
+            <p class="body_1">Selecciona los productos a comparar</p>
+        </div>
+        <div class="content-table">
+            <ul>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Cuenta de ahorro</p>
+                        <button class="bi bi-check-circle checking" id="check-saving-count"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Depósito de bajo monto</p>
+                        <button class="bi bi-check-circle checking" id="check-deposit"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Reclamar giros</p>
+                        <button class="bi bi-check-circle checking" id="check-claim"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Reclamar giros</p>
+                        <button class="bi bi-check-circle checking" id="check-send"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">CDT</p>
+                        <button class="bi bi-check-circle checking" id="check-cdt"></button>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <button class="btn-compare">
+            Comparar
+        </button>
+    </section>
+
+    <section id="results-compare" class="inactive">
+        <table class="results-table">
+            <tr class="types-credit">
+                <th class="micro-credit">
+                    <img src="/icons/dollars-white.svg" alt="">
+                    <p class="body_1">Cuenta de ahorro</p>
+                </th>
+                <th class="savings">
+                    <img src="/icons/piggy-white.svg" alt="">
+                    <p class="body_1">Depósito de bajo monto</p>
+                </th>
+                <th class="productive">
+                    <img src="/icons/cdt-white.svg" alt="">
+                    <p class="body_1">CDT</p>
+                </th>
+            </tr>
+            <tr class="results">
+                <td>Cuenta gratuita</td>
+                <td>Cuenta gratuita</td>
+                <td>Cuenta gratuita</td>
+            </tr>
+            <tr class="results">
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr class="results">
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+            </tr>
+            <tr class="results">
+                <td>1 año</td>
+                <td>1 año</td>
+                <td>1 año</td>
+            </tr>
+        </table>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../../components/components.js"></script>
+</body>
+
+</html>

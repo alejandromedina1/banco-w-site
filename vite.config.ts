@@ -40,6 +40,12 @@ export default defineConfig({
                 "giros-internacionales": resolve(root, 'giros-internacionales','index.html'),
                 "depositos-bancarios": resolve(root, 'depositos-bancarios','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
+                "comparator": resolve(root, 'comparator','index.html'),
+                "gotahorro": resolve(root, 'gotahorro','index.html'),
+                "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
+                "seguros": resolve(root, 'seguros','index.html'),
+                "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
+                "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
             }
         },
         target: 'esnext'
