@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotahorro</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2 class="title">Gotahorro</h2>
+            <p class="text">
+                Crédito con asesoría personalizada que te brinda acceder fácilmente a préstamos para que impulses tu
+                negocio.
+            </p>
+            <a href="/simulador-credito/">
+                <button class="simulador">Simulador de crédito</button>
+            </a>
+        </span>
+        <img src="/images/microcredito_bg_desktop.webp" class="banner-bg">
+    </section>
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="caracteristicas">Características</button>
+        <button class="tab-button" data-tab="requisitos">Requisitos</button>
+        <button class="tab-button" data-tab="tramites">Trámites</button>
+        <button class="tab-button" data-tab="solicitud">Solicitud</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="caracteristicas-content">
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Crédito dirigido a microempresarios, con una antigüedad mínima de un año
+                    en su negocio.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Destino económico</bullet-point>
+                <ul class="secondary-bullets">
+                    <li><bullet-point color="#FF8833">Capital de trabajo</bullet-point></li>
+                </ul>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Monto</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Plazo</bullet-point>
+                <ul class="secondary-bullets">
+                    <li><bullet-point color="#FF8833">30, 45, 60, 75, 90 y 120 días: Pago diario</bullet-point></li>
+                    <li><bullet-point color="#FF8833">4, 8, 12 y 16 semanas: Pago semanal</bullet-point></li>
+                    <li><bullet-point color="#FF8833">2, 4, 6 y 8 quincenas: Pago quincenal</bullet-point></li>
+                </ul>
+                <br class="line-break mobile">
+            </section>
+
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">La frecuencia de pago diaria, únicamente se encuentra disponible en las
+                    siguientes oficinas en Cali y Bogotá.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">La frecuencia de pago semanal y quincenal se encuentra disponible en todas
+                    nuestras oficinas a nivel nacional</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Tasa fija durante toda la vigencia del préstamo.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Este producto tiene un componente de ahorro que está incluido en el valor
+                    de la cuota, permitiendo que al final del crédito se cuente con un dinero para invertir en su propio
+                    negocio. Si el cliente desea disponer de sus ahorros, lo puede hacer en cualquier momento ya que su
+                    ahorro está siempre a la vista.</bullet-point>
+                <br class="line-break mobile">
+            </section>
+
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Seguros Obligatorios:</bullet-point>
+                <ul class="secondary-bullets">
+                    <li><bullet-point color="#FF8833">Seguros deudores</bullet-point></li>
+                </ul>
+                <br class="line-break">
+                <bullet-point color="#FF8833">El pago de la cuota se puede realizar en cualquiera de nuestros canales de
+                    servicio</bullet-point>
+            </section>
+        </div>
+
+        <div class="tab-content" id="requisitos-content">
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Fotocopia de la cédula de ciudadanía</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">Dos referencias comerciales y/o personales, y una familiar</bullet-point>
+                <br class="line-break mobile">
+            </section>
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Facturas de compra del último año y servicios públicos al
+                    día.</bullet-point>
+                <br class="line-break">
+                <bullet-point color="#FF8833">En caso de estar reportado negativamente en las centrales de riesgo,
+                    presentar Paz y Salvo de la obligación</bullet-point>
+                <br class="line-break mobile">
+            </section>
+            <section class="bullet-points">
+                <bullet-point color="#FF8833">Antigüedad mínima del negocio: 1 año</bullet-point>
+            </section>
+        </div>
+
+        <div class="tab-content" id="tramites-content">
+            <div class="dropdownPages">
+                <div class="dropdown-trigger">
+                    <h5 class="dropdown-title">Trámites de apertura</h5>
+                </div>
+                <article class="dropdown-tab">
+                    <p class="points">Puedes hacer tu solicitud de crédito a través de los siguientes canales:</p>
+                    <article class="tramites-points">
+                        <bullet-point color="#FF8833">Analista de crédito.</bullet-point>
+                        <bullet-point color="#FF8833">Línea gratuita de Servicio al Cliente: 01 8000
+                            515656</bullet-point>
+                        <bullet-point color="#FF8833">Celular: 323 5996557</bullet-point>
+                        <bullet-point color="#FF8833">Oficinas del Banco W.</bullet-point>
+                        <bullet-point color="#FF8833">Corresponsales Bancarios y/o Enlaces Comerciales.</bullet-point>
+                    </article>
+
+                    <article>
+                        <p class="points">Plazos de estudio de crédito: una vez realizada la solicitud de crédito, un
+                            Analista del Banco W visitará tu negocio, y en un máximo de tres días hábiles se realizará
+                            el desembolso del dinero en una de nuestras oficinas o Corresponsales Bancarios.</p>
+                    </article>
+                    <article>
+                        <p class="points">Abonos: de acuerdo con lo establecido en la Ley 1555 de 2012, y en el literal
+                            3.2.6.14. de la Circular Jurídica de la Superintendencia Financiera de Colombia, los
+                            deudores podrán realizar abonos a capital con disminución de plazo, o a capital con
+                            disminución del valor de la cuota de la obligación.</p>
+                    </article>
+                </article>
+
+            </div>
+        </div>
+
+
+        <div class="tab-content" id="solicitud-content">
+            <creditos-form></creditos-form>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
+</html>

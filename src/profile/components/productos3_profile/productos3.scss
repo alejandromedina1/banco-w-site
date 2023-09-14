@@ -280,6 +280,16 @@
     }
 }
 
+.back {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: c.$gray-2;
+    font-family: 'Bariol';
+    font-size: 18px;
+    cursor: pointer;
+}
+
 
 
 @media screen and (min-width: 768px) {

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Créditos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!--Scss-->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../../components/navbar/style.scss">
+    <link rel="stylesheet" href="../../components/footer/style.scss">
+
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <section id="main-banner">
+        <div class="main-container">
+            <h1 class="title-banner">CONOCE TU MEJOR OPCIÓN</h1>
+            <p class="body_2 text-banner">¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la
+                clasificación que más se ajusta a ti.</p>
+        </div>
+        <img src="/images/comparator-women.webp" alt="">
+    </section>
+
+    <section id="nav-bar">
+        <nav class="nav-comparator">
+            <a href="../saving/index.html" class="nav-btn saving-btn">
+                <p class="text-btn">Ahorro</p>
+            </a>
+            <button class="nav-btn credit-btn">
+                <a href="" class="text-btn">Créditos</a>
+            </button>
+        </nav>
+
+    </section>
+
+    <section id="choose-products" class="active">
+        <div class="title">
+            <p class="body_1">Selecciona los créditos a comparar</p>
+        </div>
+        <div class="content-table">
+            <ul>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Microcrédito</p>
+                        <button class="bi bi-check-circle checking" id="check-micro-credit"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Gotahorro</p>
+                        <button class="bi bi-check-circle checking" id="check-savings"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Yo construyo</p>
+                        <button class="bi bi-check-circle checking" id="check-build"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Inmueble productivo</p>
+                        <button class="bi bi-check-circle checking" id="check-productive"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Crédito de vehículo</p>
+                        <button class="bi bi-check-circle checking" id="check-vehicle"></button>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <button class="btn-compare">
+            Comparar
+        </button>
+    </section>
+
+    <section id="results-compare" class="inactive">
+        <table class="results-table">
+            <tr class="types-credit">
+                <th class="micro-credit">
+                    <img src="/icons/credit-white.svg" alt="">
+                    <p class="body_1">Microcrédito</p>
+                </th>
+                <th class="savings">
+                    <img src="/icons/piggy-white.svg" alt="">
+                    <p class="body_1">Gotahorro</p>
+                </th>
+                <th class="productive">
+                    <img src="/icons/house-white.svg" alt="">
+                    <p class="body_1">Inmueble productivo</p>
+                </th>
+            </tr>
+            <tr class="results">
+                <td>De 1 a 120 SMMLV</td>
+                <td>N/A</td>
+                <td>De 25 a 200 SMMLV</td>
+            </tr>
+            <tr class="results">
+                <td>
+                    <!-- <div class="title-section">
+                        <p class="body_1">Monto</p>
+                    </div> -->
+                    De acuerdo al monto y tipo de cliente
+                </td>
+                <td>Diario/ quincenal/ mensual</td>
+                <td>De 12 a 120 meses</td>
+            </tr>
+            <tr class="results">
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+            </tr>
+            <tr class="results">
+                <td>1 año</td>
+                <td>1 año</td>
+                <td>1 año</td>
+            </tr>
+        </table>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../../components/components.js"></script>
+</body>
+
+</html>
