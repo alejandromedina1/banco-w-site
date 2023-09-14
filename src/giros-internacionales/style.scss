@@ -87,7 +87,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     left: 20%;
-    top: 430px;
+    top: 610px;
     z-index: 1;
 
     & button {
@@ -96,7 +96,7 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $indigo-300;
+        color: $purple-300;
         text-align: center;
         font-family: Bariol, sans-serif;
         font-size: 18px;
@@ -117,7 +117,7 @@ h3 {
             display: flex;
             text-decoration: none;
             justify-content: center;
-            color: $indigo-300;
+            color: $purple-300;
         }
     }
 
@@ -204,6 +204,8 @@ h3 {
     
 }
 
+
+
 @media screen and (max-width:1200px) {
     #banner {
         & .title {
@@ -215,7 +217,6 @@ h3 {
     }
 
     #nav-bar-float {
-        top: 77%;
         width: 80%;
         left: 10%;
     }
@@ -227,6 +228,7 @@ h3 {
         grid-template-columns: 1fr 1fr;
         margin-top: 12%;
     }
+
 }
 
 @media screen and (max-width: 821px) {
@@ -267,8 +269,8 @@ h3 {
         }
     }
     #nav-bar-float {
-        top: 108%;
-        height: 15%;
+        top: 580px;
+        height: 10%;
         & button {
             & p {
                 font-size: 14px;
@@ -296,11 +298,11 @@ h3 {
         }
     }
     #nav-bar-float {
-        top: 100%;
-        height: 15%;
+        top: 580px;
+        height: 10%;
         & button {
             & p {
-                font-size: 0.8125rem;
+                font-size: 14px;
             }
         }
     }

@@ -19,3 +19,17 @@ tabButtons.forEach(button => {
     console.log(selectedContent)
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown-billetera");
+
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector(".dropdown-trigger");
+    const content = dropdown.querySelector(".dropdown-tab");
+
+    trigger.addEventListener("click", () => {
+      content.classList.toggle("show");
+    });
+  });
+});
