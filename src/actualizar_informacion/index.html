@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar información</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../global.scss">
+</head>
+
+<body>
+    <section class="banner">
+        <img src="/images/ancianos_envia_giros.webp" class="ancianos-image">
+        <span class="info">
+            <h2>Actualizar información</h2>
+            <p>
+                Actualiza la información de tus seguros, tales como la dirección o si desea añadir algún integrante de la familia. También puede solicitiar un crédito o cambiarlo. 
+            </p>
+        </span>
+    </section>
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="characteristics">Características</button>
+        <button class="tab-button" data-tab="benefits">Beneficios</button>
+        <button class="tab-button" data-tab="procedures">Tramites</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="characteristics">
+            <div class="content-list">
+                
+            </div>
+        </div>
+        <div class="tab-content" id="benefits">
+            <div class="content-list">
+          
+            </div>
+        </div>
+
+        <div class="tab-content" id="procedures">
+            <div class="content-list">
+               
+            </div>
+        </div>
+
+    </section>
+
+    <section class="more-info">
+        <h2>Para mayor información</h2>
+        <div>
+            <button class="white-button">Contratos y reglamentos de productos</button>
+            <button class="purple-button">Tasas y tarifas vigentes</button>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+</body>
+
+</html>
