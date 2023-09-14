@@ -114,7 +114,8 @@ p {
 
 #devoluciones-content {
     display: none;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 2rem 1rem;
     width: 90%;
@@ -357,6 +358,71 @@ p {
 
 .content-table tbody tr.active-row {
     color: $cyan-500;
+}
+
+/* Card */
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 8% 5%;
+    gap: 2rem;
+    z-index: 2;
+}
+
+.template-cards {
+    border-radius: 7px;
+    background: var(--white, #FFF);
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+}
+
+.up-card {
+    position: relative;
+    flex-direction: column;
+
+    & img {
+        width: 100%;
+    }
+}
+
+/* Center absolute */
+
+.pdf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & img {
+        width: 30%;
+    }
+
+    & h6 {
+        color: var(--white, #FFF);
+        text-align: center;
+        font-family: Geomanist, sans-serif;
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 1rem !important;
+    }
+}
+
+.down-card {
+    & p {
+        color: var(--Gris-1, #676767);
+        font-family: Bariol, sans-serif;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        padding: 1rem !important;
+    }
 }
 
 @media screen and (max-width:1200px) {
