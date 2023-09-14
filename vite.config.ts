@@ -43,7 +43,12 @@ export default defineConfig({
                 "dep-bancarios": resolve(root, 'depositos-bancarios','index.html'),
                 "billetera-w": resolve(root, 'billetera-w','index.html'),
                 "corresponsales-giros": resolve(root, 'corresponsales-giros','index.html'),
-                
+                "comparator": resolve(root, 'comparator','index.html'),
+                "gotahorro": resolve(root, 'gotahorro','index.html'),
+                "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
+                "seguros": resolve(root, 'seguros','index.html'),
+                "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
+                "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
             }
         },
         target: 'esnext'
