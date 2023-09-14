@@ -39,7 +39,7 @@
 
     </section>
 
-    <section id="choose-products">
+    <section id="choose-products" class="active">
         <div class="title">
             <p class="body_1">Selecciona los productos a comparar</p>
         </div>
@@ -48,40 +48,79 @@
                 <li>
                     <div class="each-option">
                         <p class="body_1">Cuenta de ahorro</p>
-                    <button class="bi bi-check-circle checking" id="check-saving-count"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Depósito de bajo monto</p>
-                    <button class="bi bi-check-circle checking" id="check-deposit"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Reclamar giros</p>
-                    <button class="bi bi-check-circle checking" id="check-claim"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Reclamar giros</p>
-                    <button class="bi bi-check-circle checking" id="check-send"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">CDT</p>
-                    <button class="bi bi-check-circle checking" id="check-cdt"></button>
+                        <button class="bi bi-check-circle checking" id="check-saving-count"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Depósito de bajo monto</p>
+                        <button class="bi bi-check-circle checking" id="check-deposit"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Reclamar giros</p>
+                        <button class="bi bi-check-circle checking" id="check-claim"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Reclamar giros</p>
+                        <button class="bi bi-check-circle checking" id="check-send"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">CDT</p>
+                        <button class="bi bi-check-circle checking" id="check-cdt"></button>
                     </div>
                 </li>
 
             </ul>
         </div>
 
-        <button class="btn-compare" >
+        <button class="btn-compare">
             Comparar
         </button>
+    </section>
+
+    <section id="results-compare" class="inactive">
+        <table class="results-table">
+            <tr class="types-credit">
+                <th class="micro-credit">
+                    <img src="/icons/dollars-white.svg" alt="">
+                    <p class="body_1">Cuenta de ahorro</p>
+                </th>
+                <th class="savings">
+                    <img src="/icons/piggy-white.svg" alt="">
+                    <p class="body_1">Depósito de bajo monto</p>
+                </th>
+                <th class="productive">
+                    <img src="/icons/cdt-white.svg" alt="">
+                    <p class="body_1">CDT</p>
+                </th>
+            </tr>
+            <tr class="results">
+                <td>Cuenta gratuita</td>
+                <td>Cuenta gratuita</td>
+                <td>Cuenta gratuita</td>
+            </tr>
+            <tr class="results">
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr class="results">
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+            </tr>
+            <tr class="results">
+                <td>1 año</td>
+                <td>1 año</td>
+                <td>1 año</td>
+            </tr>
+        </table>
     </section>
 
     <custom-footer></custom-footer>

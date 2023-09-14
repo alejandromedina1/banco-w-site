@@ -20,8 +20,8 @@
 
     <section id="main-banner">
         <div class="main-container">
-            <h1>CONOCE TU MEJOR OPCIÓN</h1>
-            <p class="body_2">¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la
+            <h1 class="title-banner">CONOCE TU MEJOR OPCIÓN</h1>
+            <p class="body_2 text-banner">¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la
                 clasificación que más se ajusta a ti.</p>
         </div>
         <img src="/images/comparator-women.webp" alt="">
@@ -39,7 +39,7 @@
 
     </section>
 
-    <section id="choose-products">
+    <section id="choose-products" class="active">
         <div class="title">
             <p class="body_1">Selecciona los créditos a comparar</p>
         </div>
@@ -48,40 +48,84 @@
                 <li>
                     <div class="each-option">
                         <p class="body_1">Microcrédito</p>
-                    <button class="bi bi-check-circle checking" id="check-micro-credit"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Gotahorro</p>
-                    <button class="bi bi-check-circle checking" id="check-savings"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Yo construyo</p>
-                    <button class="bi bi-check-circle checking" id="check-build"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Inmueble productivo</p>
-                    <button class="bi bi-check-circle checking" id="check-productive"></button>
-                </div>
-            </li>
-            <li>
-                <div class="each-option">
-                    <p class="body_1">Crédito de vehículo</p>
-                    <button class="bi bi-check-circle checking" id="check-vehicle"></button>
+                        <button class="bi bi-check-circle checking" id="check-micro-credit"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Gotahorro</p>
+                        <button class="bi bi-check-circle checking" id="check-savings"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Yo construyo</p>
+                        <button class="bi bi-check-circle checking" id="check-build"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Inmueble productivo</p>
+                        <button class="bi bi-check-circle checking" id="check-productive"></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="each-option">
+                        <p class="body_1">Crédito de vehículo</p>
+                        <button class="bi bi-check-circle checking" id="check-vehicle"></button>
                     </div>
                 </li>
 
             </ul>
         </div>
 
-        <button class="btn-compare" >
+        <button class="btn-compare">
             Comparar
         </button>
+    </section>
+
+    <section id="results-compare" class="inactive">
+        <table class="results-table">
+            <tr class="types-credit">
+                <th class="micro-credit">
+                    <img src="/icons/credit-white.svg" alt="">
+                    <p class="body_1">Microcrédito</p>
+                </th>
+                <th class="savings">
+                    <img src="/icons/piggy-white.svg" alt="">
+                    <p class="body_1">Gotahorro</p>
+                </th>
+                <th class="productive">
+                    <img src="/icons/house-white.svg" alt="">
+                    <p class="body_1">Inmueble productivo</p>
+                </th>
+            </tr>
+            <tr class="results">
+                <td>De 1 a 120 SMMLV</td>
+                <td>N/A</td>
+                <td>De 25 a 200 SMMLV</td>
+            </tr>
+            <tr class="results">
+                <td>
+                    <!-- <div class="title-section">
+                        <p class="body_1">Monto</p>
+                    </div> -->
+                    De acuerdo al monto y tipo de cliente
+                </td>
+                <td>Diario/ quincenal/ mensual</td>
+                <td>De 12 a 120 meses</td>
+            </tr>
+            <tr class="results">
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+                <td>A clientes nuevos, renovación y preferenciales</td>
+            </tr>
+            <tr class="results">
+                <td>1 año</td>
+                <td>1 año</td>
+                <td>1 año</td>
+            </tr>
+        </table>
     </section>
 
     <custom-footer></custom-footer>

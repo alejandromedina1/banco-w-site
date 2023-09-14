@@ -12,6 +12,7 @@ h1 {
     &_1 {
         font-family: 'font-bariol-regular';
         font-size: 1rem;
+        font-weight: 400;
     }
 
     &_2 {
@@ -100,7 +101,7 @@ h1 {
 }
 
 #choose-products {
-    margin: 1.5rem 3.08%;
+    margin: 1.5rem 10.7%;
     border-radius: 0.28169rem;
     background-color: white;
     box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
@@ -130,13 +131,14 @@ h1 {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            color: $gray-1;
 
             .checking {
                 border: none;
                 background-color: transparent;
                 font-size: 0.9rem;
                 color: $orange-400;
-                
+
                 &:hover {
                     color: $orange-100;
                 }
@@ -163,7 +165,7 @@ h1 {
         &:active {
             border: 2px solid $orange-100;
             color: $orange-400;
-            background-color: $orange-100;  
+            background-color: $orange-100;
         }
 
         &:disabled {
@@ -174,6 +176,369 @@ h1 {
     }
 }
 
-#active {
+.active {
     display: flex !important;
+}
+
+.inactive {
+    display: none !important;
+}
+
+#results-compare {
+    margin: 1.5rem 0;
+    padding: 0 10.7%;
+
+    table,
+    th,
+    td {
+        border: 0.15rem solid white;
+    }
+
+    .results-table {
+        width: 100%;
+
+        & th {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            background-color: $orange-400;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            text-align: center;
+            gap: 0.5rem;
+            padding-bottom: 0.75rem;
+
+            & img {
+                margin-top: 1.56rem;
+                height: 1.5rem;
+            }
+        }
+
+        & td {
+            display: flex;
+            width: 33.33%;
+            padding: 2.75rem 0.7rem 1rem 0.7rem;
+            align-items: center;
+            justify-content: center;
+            background-color: $gray-3;
+
+            color: $gray-1;
+            font-family: 'font-bariol-regular';
+            font-size: 0.8125rem;
+            line-height: 150%;
+        }
+
+        .types-credit {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .micro-credit {
+            border-radius: 0.5rem 0rem 0rem 0rem;
+        }
+
+        .productive {
+            border-radius: 0rem 0.5rem 0rem 0rem;
+        }
+
+        .results {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    // .title-section {
+    //     background-color: $orange-400;
+    //     color: white;
+    //     position:absolute;
+    //     padding: 0.1rem 0.64rem;
+    //     left: -0.01%;
+    //     top: 100%;
+    // }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    h1 {
+        font-size: 2.8125rem;
+        text-align: left;
+    }
+
+    .body {
+        &_1 {
+            font-family: 'font-bariol-regular';
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        &_2 {
+            font-size: 1rem;
+            text-align: left;
+        }
+    }
+
+    .text-btn {
+        font-size: 1.25rem;
+    }
+
+    #main-banner {
+        padding: 0 9.65%;
+        padding-top: 3.1rem;
+        background-color: $gray-3;
+        flex-direction: row-reverse;
+        gap: 5%;
+
+        background-image: url('/images/comparator-option-bg-desk.webp');
+
+        img {
+            width: 50%;
+        }
+    }
+
+    #nav-bar {
+        padding: 0 6.11%;
+        margin-top: -2rem;
+
+
+        .nav-comparator {
+            height: 4rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-btn {
+            width: 50%;
+        }
+
+        .saving-btn {
+            height: 2rem;
+        }
+
+        .credit-btn {
+            margin: 0 5%;
+            width: 40%;
+        }
+    }
+
+    #choose-products {
+        margin: 1.5rem 10%;
+
+        .title {
+            padding: 1rem 4.81%;
+        }
+
+        .content-table {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 4.81%;
+            width: 100%;
+
+            ul {
+                gap: 2.5rem;
+            }
+
+            .each-option {
+
+                .checking {
+                    font-size: 1.2rem;
+                }
+
+            }
+        }
+
+    }
+
+    #results-compare {
+        padding: 0 10%;
+
+        table,
+        th,
+        td {
+            border: 0.7rem solid white;
+        }
+
+        .results-table {
+            width: 100%;
+
+            & th {
+                gap: 0.4rem;
+                padding-bottom: 1.3rem;
+
+                & img {
+                    margin-top: 1rem;
+                    height: 2rem;
+                }
+            }
+
+            & td {
+
+                padding: 2.75rem 1rem 2rem 1rem;
+                font-size: 1rem;
+            }
+
+            .micro-credit {
+                border-radius: 1.5rem 1.5rem 0rem 0rem;
+            }
+
+            .savings {
+                border-radius: 1.5rem 1.5rem 0rem 0rem;
+            }
+
+            .productive {
+                border-radius: 1.5rem 1.5rem 0rem 0rem;
+            }
+
+            .results {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    h1 {
+        font-size: 2.8125rem;
+        text-align: left;
+    }
+
+    .body {
+        &_1 {
+            font-family: 'font-bariol-regular';
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        &_2 {
+            font-size: 1rem;
+            text-align: left;
+        }
+    }
+
+    .text-btn {
+        font-size: 1.25rem;
+    }
+
+    #main-banner {
+        padding: 0 9.65%;
+        padding-top: 3.1rem;
+        background-color: $gray-3;
+        flex-direction: row-reverse;
+        gap: 5%;
+
+        background-image: url('/images/comparator-option-bg-desk.webp');
+
+        img {
+            width: 50%;
+        }
+    }
+
+    #nav-bar {
+        padding: 0 6.11%;
+        margin-top: -2rem;
+
+
+        .nav-comparator {
+            height: 4rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-btn {
+            width: 50%;
+        }
+
+        .saving-btn {
+            height: 2rem;
+        }
+
+        .credit-btn {
+            margin: 0 5%;
+            width: 40%;
+        }
+    }
+
+    #choose-products {
+        margin: 1.5rem 10%;
+
+        .title {
+            padding: 1rem 4.81%;
+        }
+
+        .content-table {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 4.81%;
+            width: 100%;
+
+            ul {
+                gap: 2.5rem;
+            }
+
+            .each-option {
+
+                .checking {
+                    font-size: 1.2rem;
+                }
+
+            }
+        }
+
+    }
+
+    #results-compare {
+        padding: 0 10%;
+
+        table,
+        th,
+        td {
+            border: 0.7rem solid white;
+        }
+
+        .results-table {
+            width: 100%;
+
+            & th {
+                gap: 0.4rem;
+                padding-bottom: 1.3rem;
+
+                & img {
+                    margin-top: 1rem;
+                    height: 2rem;
+                }
+            }
+
+            & td {
+
+                padding: 2.75rem 1rem 2rem 1rem;
+                font-size: 1rem;
+            }
+
+            .micro-credit {
+                border-radius: 1.5rem 1.5rem 0rem 0rem;
+            }
+
+            .savings {
+                border-radius: 1.5rem 1.5rem 0rem 0rem;
+            }
+
+            .productive {
+                border-radius: 1.5rem 1.5rem 0rem 0rem;
+            }
+
+            .results {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+        }
+    }
 }
