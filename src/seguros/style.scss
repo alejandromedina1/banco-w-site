@@ -2,7 +2,7 @@
 @import "bootstrap/scss/bootstrap";
 @import "../global.scss";
 
-*{
+* {
     margin-right: 0px;
 }
 
@@ -52,12 +52,12 @@ button#button-header {
 
 }
 
-button#button-header:hover{
-    
+button#button-header:hover {
+
     background: $cyan-100;
 }
 
-button#button-header:active{
+button#button-header:active {
     border: 2px solid white;
     color: $cyan-500;
     background: $cyan-100;
@@ -70,18 +70,20 @@ button#button-header:active{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
-    
+        margin-top: 100px;
+
         gap: 20px;
 
         margin-bottom: 60px;
-    
+
     }
+
     img#header-images {
         width: 100%;
         height: auto;
         content: url('/images/mobile-seguros-header_4x.webp');
     }
+
     div#title-over-header {
         position: absolute;
         top: 25%;
@@ -97,22 +99,22 @@ button#button-header:active{
 @media (min-width: 426px) and (max-width: 768px) {
     section#seguros-cards-section {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 50px;
-        flex-wrap: wrap;
-    
+        flex-flow: row wrap;
+        
+        margin-top: 100px;
+
         gap: 20px;
 
         margin-bottom: 60px;
-    
+
     }
+
     img#header-images {
         width: 100%;
         height: auto;
         content: url('/images/web-seguros-header_4x.webp');
     }
+
     div#title-over-header {
         position: absolute;
         top: 50%;
@@ -129,22 +131,23 @@ button#button-header:active{
 @media (min-width: 769px) {
     section#seguros-cards-section {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        flex-flow: row wrap;
         justify-content: center;
-        margin-top: 50px;
-        flex-wrap: wrap;
-    
-        gap: 20px;
+        padding: auto;
+        margin-top: 100px;
+
+        
 
         margin-bottom: 60px;
-    
+
     }
+
     img#header-images {
         width: 100%;
         height: auto;
         content: url('/images/web-seguros-header_4x.webp');
     }
+
     div#title-over-header {
         position: absolute;
         top: 50%;
@@ -159,16 +162,16 @@ button#button-header:active{
 
 nav#nav-bar-float {
     position: absolute;
-    width: 60%;
-    height: 15%;
+    width: 80%;
+    height: 100px;
     border-radius: 5%;
     border: none;
     box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
     display: flex;
     flex-direction: row;
     align-items: center;
-    left: 20%;
-    top: 430px;
+    left: 10%;
+    bottom: -70px;
     z-index: 1;
 
     & button {
@@ -206,15 +209,29 @@ nav#nav-bar-float {
         background-color: $cyan-100;
     }
 
-    .active{
+    .active {
         background-color: $cyan-300;
+
         & p {
             color: white;
-            
+
         }
 
         & img {
             filter: saturate(0) brightness(3);
         }
+    }
+
+    p {
+        font-family: "bariol-regular";
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button.tab-button {
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 }

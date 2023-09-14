@@ -26,7 +26,7 @@ class SegurosCards extends HTMLElement {
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="/components/seguros-cards/style.scss">
-        <section id="card-container">
+        <section id="card-container" class="card all">
             <div class="seguros-cards">
                 <img src="${this.card_image}" class="card-image" alt="">
                 <div class="card-text-content">
