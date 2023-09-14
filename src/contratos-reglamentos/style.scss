@@ -149,6 +149,9 @@ h3 {
 @media screen and (max-width: 1000px) {
     #banner {
         padding-top: 50%;
+        & .title {
+            text-align: center;
+        }
     }
     .card-list {
         grid-template-columns: 1fr 1fr;
@@ -166,6 +169,9 @@ h3 {
     
     #banner {
         padding-top: 70%;
+        & .title {
+            text-align: center;
+        }
     }
 
     .card-list {
