@@ -18,6 +18,16 @@ class Producto2Profile extends HTMLElement {
 
     connectedCallback() {
         this.render()
+
+        const back = document.getElementById('back-product2')
+        const activeShow = document.querySelector('productos1-profile')
+        const desactiveShow = document.querySelector('productos2-profile')
+
+        back.addEventListener('click', () => {
+            activeShow.style.display = 'block'
+            desactiveShow.style.display = 'none'
+        })
+
     }
 
     render() {
@@ -29,6 +39,12 @@ class Producto2Profile extends HTMLElement {
       <link rel="stylesheet" href="../Details/details.js">
 
         <section class="main">
+          <div class="back" id="back-product2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
+            <path d="M14.7346 20.2618L24.5924 10.4214C24.7543 10.2582 24.9469 10.1286 25.1592 10.0402C25.3714 9.95177 25.5991 9.90625 25.829 9.90625C26.0589 9.90625 26.2865 9.95177 26.4988 10.0402C26.711 10.1286 26.9036 10.2582 27.0656 10.4214C27.3899 10.7478 27.572 11.1892 27.572 11.6493C27.572 12.1094 27.3899 12.5509 27.0656 12.8772L18.4443 21.5855L27.0656 30.2068C27.3899 30.5331 27.572 30.9745 27.572 31.4346C27.572 31.8948 27.3899 32.3362 27.0656 32.6625C26.9043 32.8271 26.7119 32.958 26.4996 33.0477C26.2874 33.1374 26.0594 33.1841 25.829 33.185C25.5985 33.1841 25.3706 33.1374 25.1583 33.0477C24.9461 32.958 24.7537 32.8271 24.5924 32.6625L14.7346 22.8221C14.5578 22.659 14.4167 22.4611 14.3202 22.2407C14.2237 22.0204 14.1739 21.7825 14.1739 21.542C14.1739 21.3014 14.2237 21.0635 14.3202 20.8432C14.4167 20.6229 14.5578 20.4249 14.7346 20.2618V20.2618Z" fill="#ACACAC"/>
+            </svg>
+            <h6>Atrás</h6>
+          </div>
     <section class="main__allSections">
       <div class="main__desktop-left">
         <section class="main__detail">
