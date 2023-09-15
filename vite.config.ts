@@ -50,7 +50,7 @@ export default defineConfig({
                 "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
                 "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
                 "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
-                "actualizar_información": resolve(root, 'actualizar_informacion','index.html'),
+                "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
             }
         },
         target: 'esnext'

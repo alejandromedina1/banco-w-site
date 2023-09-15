@@ -106,7 +106,7 @@ const incendioTerremoto = document.createElement('seguros-cards')
 incendioTerremoto.setAttribute('card_image', '/images/seguros-incendio-y-terremoto_4x.webp')
 incendioTerremoto.setAttribute('title_card', 'Incendio y terremoto')
 incendioTerremoto.setAttribute('text_card', 'Es un seguro que ampara las pérdidas de daños materiales y económicos que puedan sufrir los inmuebles entregados como garantía hipotecaria al Banco W, de acuerdo a la cobertura.')
-incendioTerremoto.setAttribute('redirect_link', '/incendio_terremoto')
+incendioTerremoto.setAttribute('redirect_link', '/incendio_terremotos')
 cardContainer.append(incendioTerremoto)
 incendioTerremoto.querySelector('.card').classList.add('insurances-morosos')
 
