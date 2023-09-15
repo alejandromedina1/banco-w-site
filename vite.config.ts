@@ -43,6 +43,8 @@ export default defineConfig({
                 "billetera-w": resolve(root, 'billetera-w','index.html'),
                 "corresponsales-giros": resolve(root, 'corresponsales-giros','index.html'),
                 "comparator": resolve(root, 'comparator','index.html'),
+                "comparator-credit": resolve(root, 'comparator','credit','index.html'),
+                "comparator-saving": resolve(root, 'comparator','saving' ,'index.html'),
                 "gotahorro": resolve(root, 'gotahorro','index.html'),
                 "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
                 "seguros": resolve(root, 'seguros','index.html'),
