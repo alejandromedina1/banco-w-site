@@ -124,7 +124,7 @@ class NavBarDesktop extends HTMLElement {
                             <ul class="dropdown-content">
                                 <li><a href="#">Créditos</a></li>
                                 <li><a href="#">Cuentas de ahorro e inversión</a></li>
-                                <li><a href="#">Giros internacionales</a></li>
+                                <li><a href="/giros-internacionales/">Giros internacionales</a></li>
                                 <li><a href="/seguros/">Seguros</a></li>
 
                             </ul>
@@ -179,7 +179,7 @@ class NavBarDesktop extends HTMLElement {
                          <ul class="dropdown-content">
                              <li><a href="#">Créditos</a></li>
                              <li><a href="#">Cuentas de ahorro e inversión</a></li>
-                             <li><a href="#">Giros internacionales</a></li>
+                             <li><a href="/giros-internacionales/">Giros internacionales</a></li>
                              <li><a href="#">Seguros</a></li>
                          </ul>
                      </li>
