@@ -19,3 +19,52 @@ tabButtons.forEach(button => {
     console.log(selectedContent)
   });
 });
+
+const form = document.getElementById("form");
+const activeMsg = document.getElementById("active-msg");
+const backBtn = document.getElementById("comeback");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    form.style.display = "none";
+    activeMsg.style.display = "flex";
+});
+
+backBtn.addEventListener("click", function() {
+    form.style.display = "flex";
+    activeMsg.style.display = "none";
+});
+
+const form2 = document.getElementById("form2");
+const activeMsg2 = document.getElementById("active-msg2");
+const backBtn2 = document.getElementById("comeback2");
+
+form2.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    form2.style.display = "none";
+    activeMsg2.style.display = "flex";
+});
+
+backBtn2.addEventListener("click", function() {
+    form2.style.display = "flex";
+    activeMsg2.style.display = "none";
+});
+
+const form3 = document.getElementById("form3");
+const activeMsg3 = document.getElementById("active-msg3");
+const backBtn3 = document.getElementById("comeback3");
+
+form3.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    form3.style.display = "none";
+    activeMsg3.style.display = "flex";
+});
+
+backBtn3.addEventListener("click", function() {
+    form3.style.display = "flex";
+    activeMsg3.style.display = "none";
+});
+

@@ -265,8 +265,20 @@ p {
 }
 
 .more-info {
-    background: $purple-300;
+    background: $cyan-500;
     padding: 5rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    & a{
+        background: #FFF;
+        padding: 12.619px 39.803px;
+        flex-shrink: 0;
+        color: $cyan-500;
+        text-decoration: none;
+        border-radius: 5.521px;
+    }
 }
 
 .more-info>h3 {
@@ -457,9 +469,9 @@ p {
 
 @media screen and (max-width: 500px) {
     .info {
-        width: 64%;
-        margin-right: 3rem;
-        margin-bottom: 50%;
+        width: 91%;
+        margin-right: -1rem;
+        margin-bottom: 25%;
     }
 
     .title {
