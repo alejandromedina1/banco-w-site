@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Inversionista</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2 class="title">Emisión de Bonos y Gobierno Corporativo: Cifras, Estatutos y Códigos Éticos</h2>
+        </span>
+        <img src="/images/atencion_inver_bg.webp" class="banner-bg">
+    </section>
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="cifras-estadisticas">Cifras Estadísticas</button>
+        <button class="tab-button" data-tab="gobierno-corporativo">Gobierno Corporativo</button>
+        <button class="tab-button" data-tab="estatutos">Estatutos</button>
+        <button class="tab-button" data-tab="emision-bonos">Emisión de Bonos</button>
+        <button class="tab-button" data-tab="codigo-pais">Código País</button>
+        <button class="tab-button" data-tab="asamblea-accionistas">Asamblea de Accionistas</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="cifras-estadisticas-content">
+            <h2>Cifras estadisticas 3 dropdowns</h2>
+            <div class="dropdownPages">
+                <div class="dropdown-trigger">
+                    <h5 class="dropdown-title">2021</h5>
+                </div>
+                <article class="dropdown-tab">
+                    <inver-card content="Junio"></inver-card>
+                    <inver-card content="Mayo"></inver-card>
+                    <inver-card content="Abril"></inver-card>
+                    <inver-card content="Febrero"></inver-card>
+                    <inver-card content="Enero"></inver-card>
+                </article>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="dropdownPages">
+                <div class="dropdown-trigger">
+                    <h5 class="dropdown-title">2020</h5>
+                </div>
+                <article class="dropdown-tab">
+
+                </article>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="dropdownPages">
+                <div class="dropdown-trigger">
+                    <h5 class="dropdown-title">2019</h5>
+                </div>
+                <article class="dropdown-tab">
+
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-content" id="gobierno-corporativo-content">
+            <h2>Gobierno Corporativo 4 dropdowns</h2>
+        </div>
+
+
+        <div class="tab-content" id="estatutos-content">
+            <h2>Estatutos 1 dropdown</h2>
+        </div>
+
+        <div class="tab-content" id="emision-bonos-content">
+            <h2>Emisión de bonos 5 dropdowns</h2>
+        </div>
+
+        <div class="tab-content" id="codigo-pais-content">
+            <h2>dos inputs 1 buscador y cards para descargar</h2>
+        </div>
+
+        <div class="tab-content" id="asamblea-accionistas-content">
+            <h2>Un input 1 buscador y cards para descargar</h2>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
+</html>

@@ -56,6 +56,7 @@ class NavBarDesktop extends HTMLElement {
             {path: '/gotahorro/', id: 'clientes'},
             {path: '/credito-vehiculo/', id: 'clientes'},
             {path: '/micro-credito/', id: 'clientes'},
+            {path: '/giros-internacionales/', id: 'clientes'},
             {path: '/pqrs/', id: 'nosotros'}
         ]
 
