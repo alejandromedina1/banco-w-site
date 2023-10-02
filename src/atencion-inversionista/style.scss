@@ -173,6 +173,65 @@ p {
     margin-left: 4%;
 }
 
+.inver-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.inver-span h4 {
+    font-family: Geomanist, sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #676767;
+    margin: 0;
+}
+
+.inver-span p {
+    font-family: Bariol, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: #676767;
+}
+
+.pais-form, .asamblea-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pais-form input {
+    border-radius: 8.8125rem;
+    padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
+    border: 1.04px solid #ACACAC;
+    width: 40%;
+}
+
+.asamblea-form input {
+    border-radius: 8.8125rem;
+    padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
+    border: 1.04px solid #ACACAC;
+    width: 85%;
+}
+
+.pais-form button, .asamblea-form button {
+    width: 12%;
+    padding: 0.7rem 2rem;
+    background-color: $purple-300;
+    border-radius: 0.4375rem;
+    text-align: center;
+    font-family: Bariol;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    border: none;
+}
+
 
 @media screen and (max-width:1200px) {
     body {
