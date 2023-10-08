@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdowns.forEach(dropdown => {
     const trigger = dropdown.querySelector(".dropdown-trigger");
     const content = dropdown.querySelector(".dropdown-tab");
+    const arrow = document.querySelectorAll(".dropdown-arrow")
     trigger.addEventListener("click", () => {
       content.classList.toggle("show");
     });

@@ -142,10 +142,29 @@ p {
 }
 
 .dropdown-trigger {
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
     padding: 10px;
     border-radius: 0.4375rem;
     background-color: $orange-400;
+}
+
+.download{
+    background-color: $purple-300;
+    .dropdown-title{
+        margin-left: 0;
+        width: fit-content;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.pdf{
+    text-decoration: none;
 }
 
 .dropdown-tab {
@@ -160,8 +179,8 @@ p {
 
 .show {
     display: grid;
+    
 }
-
 .dropdown-title {
     color: #FFF;
     font-family: Bariol;
@@ -203,15 +222,15 @@ p {
     justify-content: space-between;
 }
 
-.pais-form input {
-    border-radius: 8.8125rem;
+.pais-form input, .pais-form select {
+    border-radius: 0.4375rem;
     padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
     border: 1.04px solid #ACACAC;
     width: 40%;
 }
 
-.asamblea-form input {
-    border-radius: 8.8125rem;
+.asamblea-form select {
+    border-radius: 0.4375rem;
     padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
     border: 1.04px solid #ACACAC;
     width: 85%;
