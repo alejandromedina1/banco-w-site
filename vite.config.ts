@@ -53,6 +53,8 @@ export default defineConfig({
                 "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
                 "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
+                "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
+                
             }
         },
         target: 'esnext'
