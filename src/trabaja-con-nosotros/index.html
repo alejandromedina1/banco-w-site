@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <header class="Hero Bg-animation">
+        <div class="Hero-Profile">
+            <h1>Trabaja con nosotros</h1>
+        </div>
+    </header>
+
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="home">Inicio</button>
+        <button class="tab-button" data-tab="cv">Registra Hoja de vida</button>
+        <button class="tab-button" data-tab="offer">Ofertas de empleo</button>
+        <button class="tab-button" data-tab="contact">Contáctenos</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="home">
+            <header class="Header">
+                <div class="Header-title">
+                    <h2>¡Somos un gran lugar para trabajar, solo faltas tú!</h2>
+                </div>
+                <div class="Header-paragraph">
+                    <p>Somos un Banco diferente con sentido social, buscamos impactar positivamente la vida de las y los clientes, colaboradores y colaboradoras. Sentimos pasión por lo que hacemos y por la manera como aportamos a la sociedad. Queremos que te sumes a vivir la mejor experiencia y hagas parte de uno de los mejores lugares para trabajar en Colombia</p>
+                </div>
+            </header>
+            
+            <section class="Cards">
+                <div class="Cards-up-container">
+                    <article>
+                        <img src="../public/images/banco-lider.webp" alt="Imagen Banco Lider">
+                        <h6>Somos un Banco líder</h6>
+                        <p>Nos reconocen por facilitar productos y servicios financieros sencillos, innovadores y oportunos, de manera responsable, rentable y sostenible. Somos el Banco de las y los microempresarios colombianos.</p>
+                    </article>
+                    <article>
+                        <img src="../public/images/escuchamos.webp" alt="Imagen Escuchamos y construimos">
+                        <h6>Escuchamos y construimos</h6>
+                        <p>Nuestra promesa de servicio surge de un ambiente de trabajo comprometido y respetuoso en las relaciones interpersonales. En nuestro Banco trabajamos por la equidad y la igualdad en todos los sentidos.</p>
+                    </article>
+                </div>
+                <div class="Cards-down-container">
+                    <article>
+                        <img src="../public/images/interesa.webp" alt="Imagen felicidad y tu familia">
+                        <h6>Nos interesa tu felicidad y la de tu familia</h6>
+                        <p>Somos un Banco que piensa en ti y en el bienestar de tu familia. Somos conscientes de las necesidades que tienes como profesional y como integrante de familia, por eso contamos con un portafolio integral de beneficios económicos y emocionales.</p>
+                    </article>
+                    <article>
+                        <img src="../public/images/desarrollarte.webp" alt="Imagen desarrollarte profesionalmente">
+                        <h6>Aquí podrás desarrollarte profesionalmente</h6>
+                        <p>Somos una organización comprometida con el talento interno, por eso, contamos con oportunidades de crecimiento laboral.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="cv">
+            <h1>malditos</h1>
+        </div>
+
+        <div class="tab-content" id="offer">
+            <h1>xd
+
+            </h1>
+        </div>
+        <div class="tab-content" id="contact">
+            <h1>goku
+
+            </h1>
+        </div>
+
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+</body>
+
+</html>
