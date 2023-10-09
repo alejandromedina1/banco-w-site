@@ -185,7 +185,7 @@ ol li::marker {
 
 @media only screen and (min-width: 1024px){
     .content {
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         padding: 4rem;
     }
 
@@ -226,29 +226,30 @@ ol li::marker {
         &-paragraph {
             font-size: 1.2rem;
             max-width: 1200px;
+            line-height: normal;
         }
     }
 
     .Cards {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
-        gap: 2rem;
         margin-top: 5rem;
     
         &-up-container,
         &-down-container {
             display: flex;
             justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
+            flex-direction: row;
+            align-items: flex-start;
             margin-top: 0rem;
             margin-bottom: 2rem;
+            gap: 2rem;
         }
         & article {
             margin-bottom: 3rem;
+            width: 50%;
         }
         & article img {
             width: 100%;
@@ -256,10 +257,11 @@ ol li::marker {
             margin-bottom: 0.5rem;
         }
         & article h6 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         & article p {
-            font-size: 0.8rem;
+            font-size: 1.1rem;
+            line-height: 150%; 
         }
     }
 
