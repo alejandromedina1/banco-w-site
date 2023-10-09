@@ -53,6 +53,11 @@ export default defineConfig({
                 "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
                 "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
+                "informacion-al-consumidor-financiero": resolve(root, 'informacion-al-consumidor-financiero','index.html'),
+                "tasas-y-tarifas": resolve(root, 'tasas-y-tarifas','index.html'),
+                "reglamentos": resolve(root, 'reglamentos','index.html'),
+                "protecciones-de-datos": resolve(root, 'protecciones-de-datos','index.html'),
+                "cobranza-y-soluciones": resolve(root, 'cobranza-y-soluciones','index.html'),
             }
         },
         target: 'esnext'
