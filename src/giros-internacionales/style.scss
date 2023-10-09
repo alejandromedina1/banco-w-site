@@ -88,7 +88,7 @@ h3 {
     align-items: center;
     left: 20%;
     top: 610px;
-    z-index: 1;
+    z-index: 0;
 
     & button {
         width: 25%;
@@ -96,13 +96,14 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $purple-300;
+        color: $indigo-300;
         text-align: center;
         font-family: Bariol, sans-serif;
         font-size: 18px;
         font-weight: 400;
         justify-content: center;
         background-color: white;
+        fill: $indigo-300;
         border: none;
         outline: none;
         cursor: pointer;
@@ -111,13 +112,14 @@ h3 {
         & .icon {
             width: 24%;
             margin-bottom: 0.5rem;
+            fill: $indigo-300;
         }
 
         & a {
             display: flex;
             text-decoration: none;
             justify-content: center;
-            color: $purple-300;
+            color: $indigo-300;
         }
     }
 
@@ -127,15 +129,22 @@ h3 {
 
     .active{
         background-color: $indigo-300;
+        
         & p {
             color: white;
             
         }
 
-        & img {
+        .icon {
             filter: saturate(0) brightness(3);
+            fill: white;
         }
     }
+}
+
+nav#nav-bar-float .active{
+    color: white;
+    fill: white;
 }
 
 .options {
