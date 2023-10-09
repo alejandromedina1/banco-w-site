@@ -135,6 +135,8 @@ h2 {
     padding: 4% 5%;
     margin: 0;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .icon-list article div{
@@ -142,7 +144,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     color: $gray-1;
-    padding: 0% 5%;
+    padding: 3% 5%;
 }
 
 .icon-list article h4 {
@@ -240,6 +242,10 @@ h2 {
     width: 50%;
 }
 
+.mobile {
+    display: none;
+}
+
 
 
 @media screen and (max-width:1200px) {
@@ -261,15 +267,17 @@ h2 {
 
 @media screen and (max-width: 821px) {
     .banner{
-        background-image: url(../images/bg_cdt_mobile.webp);
+        background-image: url(../public/images/bg_atencion_mobile.webp);
         flex-direction: column-reverse;
     }
 
-    .cdt-woman{
-        position: relative;
-        width: 70%;
-        left: 0%;
-        margin-top: 4rem;
+    #revisor {
+        background-image: url(../public/images/bg_revisor_mobile.webp);
+    }
+
+    .revisor-content img {
+        left: 30%;
+        width: 50%;
     }
 
     .info{
@@ -281,6 +289,20 @@ h2 {
         margin-right: 5%;
         z-index: 2;
         text-align: center;
+        padding: 0;
+        margin: 8% 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .icon-list article {
+        flex-direction: column;
     }
     
     .banner h2{
@@ -303,13 +325,14 @@ h2 {
         margin: 50px;
     }
 
-    article {
-        width: 100%;
-        padding: 0px 70px 60px 10px;
-        color: $gray-1;
-        border-left: 2px solid $purple-100;
-        margin: 0px;
+    .defesor-section1 {
+        flex-direction: column;
     }
+
+    .revisor-content-separe {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (min-width: 425px) and (max-width: 540px) {
