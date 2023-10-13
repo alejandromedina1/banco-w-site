@@ -37,10 +37,10 @@
 #content {
     display: flex;
     flex-direction: column;
-    margin-top: -5.75rem;
-    border-radius: 0.8125rem 0.8125rem 0rem 0rem;
+    border-radius: 0.8125rem 0.8125rem 0 0;
     background: white;
     padding: 2rem 5.13%;
+    margin-top: -1rem;
 
     & .search-bank {
         display: flex;
@@ -123,6 +123,7 @@
     }
 
     #main-banner {
+        display: flex;
         padding: 7.5rem 17% 14.5rem;
         background-color: $gray_3;
         gap: 1rem;
@@ -138,7 +139,6 @@
     #content {
         display: flex;
         flex-direction: column;
-        margin-top: -4rem;
         border-radius: 0.8125rem 0.8125rem 0rem 0rem;
         background: white;
         padding: 2rem 5.13%;
@@ -198,6 +198,7 @@
         border-radius: 0;
         background: white;
         padding: 3.5rem 6%;
+        margin: 0;
 
         & .search-bank {
             align-items: start;
@@ -268,6 +269,7 @@
     #content {
         border-radius: 0;
         background: white;
+        margin: 0;
         padding: 5rem 10%;
         margin: 0;
 
