@@ -59,6 +59,8 @@ export default defineConfig({
                 "own-banking": resolve(root, 'information-channel','own-banking', 'index.html'),
                 "own-office": resolve(root, 'information-channel','own-office', 'index.html'),
                 "phone-banking": resolve(root, 'information-channel','phone-banking', 'index.html'),
+                "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
+                "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
             }
         },
         target: 'esnext'
