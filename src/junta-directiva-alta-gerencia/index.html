@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Inversionista</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2 class="title">Junta Directiva y Alta Gerencia</h2>
+        </span>
+        <img src="/images/atencion_inver_bg.webp" class="banner-bg">
+    </section>
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="junta-directiva">Junta Directiva</button>
+        <button class="tab-button" data-tab="alta-gerencia">Alta Gerencia</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="junta-directiva-content">
+                <div class="dropdownPages">
+                    <div class="dropdown-trigger download">
+                        <span class="title-span">
+                            <img class="dropdown-arrow" src="/icons/fi_file-minus.svg" alt="">
+                            <span class="gerente-name">
+                                <h5 class="dropdown-title">Germán</h5>
+                                <p>Info Gerente</p>
+                            </span>        
+                        </span>
+                        <img class="dropdown-arrow" src="/icons/download.svg" alt="">
+                    </div>
+                    <article class="dropdown-tab">
+                        Info Gerente
+                    </article>
+                </div>
+        </div>
+
+        <div class="tab-content" id="alta-gerencia-content">
+                <div class="dropdownPages">
+                    <div class="dropdown-trigger download">
+                        <span class="title-span">
+                            <img class="dropdown-arrow" src="/icons/fi_file-minus.svg" alt="">
+                            <span class="gerente-name">
+                                <h5 class="dropdown-title">Germán</h5>
+                                <p>Info Gerente</p>
+                            </span>        
+                        </span>
+                        <img class="dropdown-arrow" src="/icons/download.svg" alt="">
+                    </div>
+                    <article class="dropdown-tab">
+                        Info Gerente
+                    </article>
+                </div>
+            
+        </div>
+
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
+</html>
