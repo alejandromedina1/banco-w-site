@@ -62,7 +62,7 @@ p{
 }
 
 .tab-button{
-    color: $gray-2;
+    color: $gray-1;
     border: none;
     width: 100%;
     background: none;
@@ -72,7 +72,7 @@ p{
     font-size: 0.8rem;
     font-weight: 400;
     line-height: normal;
-    border-right: 1px solid $gray-2;
+    border-right: 1px solid $gray-1;
 }
 
 .tab-button:last-child {
@@ -104,7 +104,7 @@ p{
 }
 
 .p-tab-content {
-    color: $gray-2;
+    color: $gray-1;
     margin: 0px 5%;
 }
 
@@ -130,7 +130,7 @@ ol li::marker {
 @media only screen and (min-width: 1024px){
     .content {
         margin-top: 1.5rem;
-        padding: 4rem;
+        padding: 5rem;
     }
 
     .tab-button{
@@ -151,45 +151,6 @@ ol li::marker {
             }
     }
 
-    /* screen 2 */
-
-    .content-title {
-        & h2 {
-            font-size: 2.18rem;
-        }
-        & p {
-            font-size: 1.1rem;
-        }
-    }
-
-    .Segments {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-        padding: 1rem;
-        margin-bottom: 3rem;
-    
-        & figure {
-            width: 30%;
-            padding: 2rem;
-            margin-bottom: 0rem;
-        }
-        &-info h2 {
-            color: $gray-1;
-            font-size: 1.5rem;
-        }
-        &-info p {
-            color: $gray-2;
-            font-size: 0.9rem;
-            line-height: 150%;
-        }
-    }
-    
-    .last-button {
-        & a {
-            padding: 0.5rem 9rem;
-            font-size: 1.1rem;
-        }
-    }
+    /* El resto */
 
 }
