@@ -1,0 +1,176 @@
+@import '../../../global.scss';
+
+.offers-title {
+    margin: 3.5rem 0;
+    color: var(--Morado-300, #9F66DB);
+    font-family: Geomanist, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Products {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    & div {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    & p {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+            }
+}
+
+.Description {
+    margin-top: 0.5rem;
+
+    & h6 {
+        color: $gray-1;
+        font-family: Geomanist, sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 0.8rem !important;
+    }
+    & p {
+        color: $gray-1;
+        font-family: Bariol, sans-serif ;
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.Complements {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    &-bullets {
+        margin-bottom: 3rem;
+    }
+    &-bullets h2{
+        color: $purple-300;
+        font-family: Geomanist, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    &-bullets p {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    &-bullets div {
+        display: flex;
+        gap: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+    }
+    &-button button {
+        border-radius: 0.19525rem;
+        background: $purple-300;
+        box-shadow: 3.95385px 3.95385px 22.93231px 0px rgba(0, 177, 187, 0.10);
+        padding: 0.5rem 4.5rem;
+        color: white;
+        text-align: center;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 400;
+        border: none;
+    }
+}
+
+.new-bullets {
+    padding-top: 3px;
+    padding-left: 1rem;
+}
+
+.new-bullets:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $gray-3;
+    border: 4px solid $purple-300;
+    position: absolute;
+    margin-left: -18px;
+}
+
+@media only screen and (min-width: 1024px){
+    .offers-title {
+        margin-bottom: 2.5rem;
+        margin-top: 0rem;
+        font-size: 2rem;
+    }
+
+    .Products {
+        border-radius: 0.57263rem;
+        background: var(--white, #FFF);
+        box-shadow: 7.63533px 10.68946px 23.19px 0px rgba(159, 102, 219, 0.18);
+        padding: 2rem;
+
+        & div svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .Description {
+        margin-top: 0.5rem;
+
+        & h6 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem !important;
+        }
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .Complements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4rem 0;
+
+        &-bullets {
+            margin-bottom: 0rem;
+        }
+        &-bullets h2{
+            font-size: 2rem;
+            margin-bottom: 1.8rem;
+        }
+        &-bullets p {
+            font-size: 1.2rem;
+        }
+        &-bullets div {
+            margin-bottom: 0.7rem;
+        }
+        &-button {
+            display: block;
+            justify-content: start;
+        }
+        &-button button {
+            padding: 0.7rem 6rem;
+            font-size: 1.2rem;
+        }
+    }
+}
