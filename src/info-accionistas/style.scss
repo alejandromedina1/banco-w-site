@@ -48,34 +48,6 @@ p {
 }
 
 
-.tab-bar {
-    position: relative;
-    display: flex;
-    width: 90%;
-    margin: -1rem auto;
-    padding: 0.1rem;
-    background-color: white;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
-    border-radius: 0.4375rem;
-    z-index: 2;
-}
-
-.tab-button {
-    color: $gray-2;
-    border: none;
-    width: 50%;
-    background: none;
-    padding: 0.5rem;
-    text-align: center;
-    font-family: Bariol, sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .content {
     margin-top: -6%;
     padding: 5% 0;
