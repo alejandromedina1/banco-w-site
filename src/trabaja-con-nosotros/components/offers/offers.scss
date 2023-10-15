@@ -94,12 +94,12 @@
     }
 }
 
-span {
+.new-bullets {
     padding-top: 3px;
     padding-left: 1rem;
 }
 
-span:before {
+.new-bullets:before {
     content: '';
     display: block;
     width: 15px;

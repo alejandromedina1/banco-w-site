@@ -61,7 +61,7 @@ class Offers extends HTMLElement {
         </svg>
         <p>Administración de empresas / Otras</p>
     </div>
-    <article class="Description">
+    <section class="Description">
         <h6>Descripción general</h6>
         <p>Buscamos alguien como TÚ, para que formes parte de nuestro equipo. Somos una entidad financiera que genera crecimiento personal, profesional y bienestar para nuestros colaboradores y sus familias.
             <br><br>
@@ -69,29 +69,29 @@ class Offers extends HTMLElement {
             <br><br>
             Salario: $ 2,271,400 + Comisiones (1 ´000.000) Contrato a termino indefinido directo Banco + Beneficios extralegales. ¡Como entidad financiera te esperamos con los brazos abiertos!
             </p>  
-    </article>    
+    </section>    
 </section>
 <section class="Complements">
     <div class="Complements-bullets">
         <h2>Datos complementarios</h2>
         <div>
-            <span></span>
+            <article class="new-bullets"></article>
             <p>Profesional Universitaria</p>
         </div>
         <div>
-            <span></span>
+            <article class="new-bullets"></article>
             <p>Banca</p>
         </div>
         <div>
-            <span></span>
+            <article class="new-bullets"></article>
             <p>1 año de experiencia</p>
         </div>
         <div>
-            <span></span>
+            <article class="new-bullets"></article>
             <p>Contrato indefinido</p>
         </div>
         <div>
-            <span></span>
+            <article class="new-bullets"></article>
             <p>1 Vacante</p>
         </div>
     </div>
