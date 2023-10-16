@@ -55,6 +55,12 @@ export default defineConfig({
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
                 "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
                 "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
+                "informacion-al-consumidor-financiero": resolve(root, 'informacion-al-consumidor-financiero','index.html'),
+                "tasas-y-tarifas": resolve(root, 'tasas-y-tarifas','index.html'),
+                "reglamentos": resolve(root, 'reglamentos','index.html'),
+                "protecciones-de-datos": resolve(root, 'protecciones-de-datos','index.html'),
+                "cobranza-y-soluciones": resolve(root, 'cobranza-y-soluciones','index.html'),
+                "fogafin": resolve(root, 'fogafin','index.html'),
             }
         },
         target: 'esnext'
