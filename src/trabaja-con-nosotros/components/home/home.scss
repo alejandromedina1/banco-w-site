@@ -5,15 +5,15 @@
 
     &-title h2{
         color: $gray-1;
-        font-family: Geomanist, sans-serif;
+        font-family: font-geomanist-medium, sans-serif;
         font-size: 1.25rem;
         font-weight: 500;
         line-height: normal;
         margin-bottom: 0.5rem;
     }
     &-paragraph {
-        color: $gray-2;
-        font-family: Bariol, sans-serif;
+        color: $gray-1;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8125rem;
         font-weight: 400;
         line-height: normal;
@@ -43,14 +43,14 @@
     }
     & article h6 {
         color: $gray-1;
-        font-family: Geomanist, sans-serif;
+        font-family: font-geomanist-medium, sans-serif;
         font-size: 0.8125rem;
         line-height: 116.5%; 
         margin-bottom: 0.5rem;
     }
     & article p {
-        color: $gray-2;
-        font-family: Bariol;
+        color: $gray-1;
+        font-family: font-bariol-regular;
         font-size: 0.625rem;
         line-height: 150%; 
     }
