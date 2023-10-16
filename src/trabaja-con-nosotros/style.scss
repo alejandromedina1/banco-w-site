@@ -1,0 +1,263 @@
+@import '../global.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 352px;
+    background-size: auto 627px;
+    background-image: url(../../public/images/bg_trabaja_mobile.webp), url(../../public/images/bg_trabaja_mobile.webp);
+    background-position: calc(-493px - var(--scrollY)), calc(100% + 482px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: $purple-300;
+
+        &-Profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-Profile h1 {
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: Geomanist, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+}
+
+.tab-bar{   
+    position: relative;
+    display: flex;
+    left: 5%;
+    width: 90%;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+}
+
+.tab-button{
+    color: $gray-1;
+    border: none;
+    width: 100%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: normal;
+    border-right: 1px solid $gray-1;
+}
+
+.tab-button:last-child {
+    border-right: none;
+}
+
+
+.tab-content{
+    display: none;
+}
+
+.active{
+    color: $purple-300;
+    border-bottom: 2px solid $purple-300;
+}
+
+.content {
+    padding: 1.4rem;
+}
+
+.content-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+}
+
+.tab-content h3{
+    margin: 50px;
+}
+
+.p-tab-content {
+    color: $gray-1;
+    margin: 0px 5%;
+}
+
+ol li {
+    margin-right: 70px;
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+}
+
+.procedures p{
+    color: $gray-1;
+}
+
+ol li::marker {
+    color: $purple-300;
+}
+
+offers-work {
+    display: none;
+}
+
+/* El resto */
+
+.Title-works {
+    color: $purple-300;
+    font-family: Geomanist, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.line {
+    margin: 2rem 0;
+}
+
+.Filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+    
+    & input {
+        border-radius: 8.8125rem;
+        background: var(--white, #FFF);
+        box-shadow: 7.64px 4px 23.19px 0px rgba(159, 102, 219, 0.18);
+        width: 100%;
+        padding: 0.4rem 0 0.4rem 0.5rem;
+        border: none;
+    }
+    & input::placeholder {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+    & button {
+        border-radius: 0.49225rem;
+        background: $purple-300;
+        padding: 0.4rem;
+        border: none;
+    }
+}
+
+.Info {
+    &-counter {
+        display: flex;
+        justify-content: end;
+    }
+    &-counter p {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        margin-bottom: 1.8rem !important;
+    }
+    &-offer h6 {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 400;
+        margin-bottom: 1rem !important;
+    }
+    &-now {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    &-now div {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    &-now div p {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.572rem;
+    }
+    &-offer button {
+        border-radius: 0.25025rem;
+        background: $purple-300;
+        border: none;
+        padding: 0.5rem 2rem;
+        margin-top: 1rem;
+        color: white;
+        font-family: Bariol, sans-serif;
+        font-size: 0.572rem;
+    }
+    &-pagination {
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 0.4rem;
+    }
+    &-pagination button {
+        border: none;
+        background: transparent;
+        color: $cyan-500;
+        font-family: Geomanist, sans-serif;
+        font-size: 0.88769rem;
+    }
+    &-pagination active {
+        color: $orange-500 !important;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .content {
+        margin-top: 1.5rem;
+        padding: 5rem;
+    }
+
+    .tab-button{
+        font-size: 1.3rem;
+    }
+
+    .Bg-animation {
+        height: 296px;
+        background-size: auto 568px;
+        background-image: url(/public/images/bg_trabaja_desktop.webp), url(/public/images/bg_trabaja_desktop.webp);
+        background-position: calc(-722px - var(--scrollY)), calc(100% + 648px + var(--scrollY)), 100%;
+        background-repeat: no-repeat;
+    }
+
+    .Hero {
+            &-Profile h1 {
+                font-size: 42px;
+            }
+    }
+
+    /* El resto */
+
+}
