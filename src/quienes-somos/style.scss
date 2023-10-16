@@ -51,16 +51,15 @@
 //Hero Header
 
 .Bg-animation {
-  background-size: auto 252px;
-  background-image: url(/images/bg_creditoinmediato_4x.webp), url(/images/bg_creditoinmediato_4x.webp);
-  background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
+  background-size: auto 254px;
+  background-image: url(/images/bg_quienes-somos_DK_4x.webp), url(/images/bg_quienes-somos_DK_4x.webp);
+  background-position: calc(-557px - var(--scrollY)), calc(100% + 512px + var(--scrollY)), 100%;
   background-repeat: no-repeat;
-  background-color: $indigo-300;
-  border-radius: 5.469px;
+  background-color: $purple-300;
 }
 
 .Hero {
-  width: 90%;
+  width: 100%;
   margin: 10px auto;
 
   &-header {
@@ -105,11 +104,11 @@
     color: white;
     transition: 0.2s;
 
-    &:hover{
+    &:hover {
       background: $orange-200;
     }
 
-    & a{
+    & a {
       text-decoration: none;
       color: #fff;
 
@@ -172,10 +171,9 @@
 
   &-values {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 120px;
+    grid-row-gap: 40px;
 
     & h3 {
       color: $gray-1;
@@ -217,9 +215,13 @@
 
   }
 
-  &-timeline {
+  &-timeline-animation {
 
-    width: 100%;
+    background-size: auto 340px;
+    background-image: url(/images/bg_quienes-somos_DK_4x.webp), url(/images/bg_quienes-somos_DK_4x.webp);
+    background-position: calc(-1040px - var(--scrollY)), calc(100% + 1012px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+    background-color: #9F66DB;
 
   }
 
@@ -293,12 +295,41 @@
 }
 
 
-@media (min-width: 767px) {
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width: 1000px) {
+
+  .content {
+    margin: 40px;
+    gap: 60px;
+  }
+
+  .president-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .content {
+    margin: 20px;
+    gap: 40px;
+  }
 
   .Bg-animation {
     background-size: auto 333px;
-    background-image: url(/images/creditoinmediatoDK_4x.webp), url(/images/creditoinmediatoDK_4x.webp);
-    background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
+    background-image: url(/images/bg_quienes-somos_MB_4x.webp), url(/images/bg_quienes-somos_MB_4x.webp);
+    background-position: calc(-288px - var(--scrollY)), calc(100% + 344px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+    background-color: $purple-300;
+    border-radius: 0;
+  }
+
+  .content-timeline-animation {
+    background-size: auto 407px;
+    background-image: url(/images/bg_quienes-somos_DK_4x.webp), url(/images/bg_quienes-somos_DK_4x.webp);
+    background-position: calc(-873px - var(--scrollY)), calc(100% + 1454px + var(--scrollY)), 100%;
     background-repeat: no-repeat;
     background-color: $purple-300;
     border-radius: 0;
@@ -309,14 +340,15 @@
     margin: 0;
   }
 
-  .content {
-
-    &-buttons {
-      /*grid-template-columns: 1fr;*/
-    }
+  .content-docs-container {
+    padding: 10px 20px 10px 20px;
+    gap: 15px;
   }
 
-
-
+  .president-container, .content-buttons {
+    grid-template-columns: 1fr;
+  }
 
 }
+
+@media screen and (min-width: 425px) and (max-width: 540px) {}

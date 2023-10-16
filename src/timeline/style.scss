@@ -51,16 +51,15 @@
 //Hero Header
 
 .Bg-animation {
-  background-size: auto 252px;
-  background-image: url(/images/bg_creditoinmediato_4x.webp), url(/images/bg_creditoinmediato_4x.webp);
-  background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
+  background-size: auto 254px;
+  background-image: url(/images/bg_quienes-somos_DK_4x.webp), url(/images/bg_quienes-somos_DK_4x.webp);
+  background-position: calc(-557px - var(--scrollY)), calc(100% + 512px + var(--scrollY)), 100%;
   background-repeat: no-repeat;
-  background-color: $indigo-300;
-  border-radius: 5.469px;
+  background-color: $purple-300;
 }
 
 .Hero {
-  width: 90%;
+  width: 100%;
   margin: 10px auto;
 
   &-header {
@@ -336,12 +335,28 @@
 }
 
 
-@media (min-width: 767px) {
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width: 1000px) {
+
+  .content {
+    margin: 40px;
+    gap: 60px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .content {
+    margin: 20px;
+    gap: 40px;
+  }
 
   .Bg-animation {
     background-size: auto 333px;
-    background-image: url(/images/creditoinmediatoDK_4x.webp), url(/images/creditoinmediatoDK_4x.webp);
-    background-position: calc(-142px - var(--scrollY)), calc(100% + 110px + var(--scrollY)), 100%;
+    background-image: url(/images/bg_quienes-somos_MB_4x.webp), url(/images/bg_quienes-somos_MB_4x.webp);
+    background-position: calc(-288px - var(--scrollY)), calc(100% + 344px + var(--scrollY)), 100%;
     background-repeat: no-repeat;
     background-color: $purple-300;
     border-radius: 0;
@@ -351,15 +366,6 @@
     width: 100%;
     margin: 0;
   }
-
-  .content {
-
-    &-buttons {
-      /*grid-template-columns: 1fr;*/
-    }
-  }
-
-
 
 
 }
