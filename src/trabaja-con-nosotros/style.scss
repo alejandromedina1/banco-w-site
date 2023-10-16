@@ -40,7 +40,7 @@ p{
         &-Profile h1 {
             color: var(--white, #FFF);
             text-align: center;
-            font-family: Geomanist, sans-serif;
+            font-family: font-geomanist-medium, sans-serif;
             font-size: 24px;
             font-style: normal;
             font-weight: 700;
@@ -68,7 +68,7 @@ p{
     background: none;
     padding: 0.5rem;
     text-align: center;
-    font-family: Bariol, sans-serif;
+    font-family: font-bariol-regular, sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     line-height: normal;
@@ -111,7 +111,7 @@ p{
 ol li {
     margin-right: 70px;
     color: $gray-1;
-    font-family: Bariol, sans-serif;
+    font-family: font-bariol-regular, sans-serif;
 }
 
 .procedures p{
@@ -130,7 +130,7 @@ offers-work {
 
 .Title-works {
     color: $purple-300;
-    font-family: Geomanist, sans-serif;
+    font-family: font-geomanist-medium, sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     margin-top: 2rem;
@@ -156,7 +156,7 @@ offers-work {
     }
     & input::placeholder {
         color: $gray-1;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8rem;
         font-weight: 400;
         line-height: normal;
@@ -176,14 +176,14 @@ offers-work {
     }
     &-counter p {
         color: $gray-1;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8125rem;
         font-weight: 700;
         margin-bottom: 1.8rem !important;
     }
     &-offer h6 {
         color: $gray-1;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8125rem;
         font-weight: 400;
         margin-bottom: 1rem !important;
@@ -196,13 +196,13 @@ offers-work {
     }
     &-now div {
         display: flex;
-        align-items: center;
         gap: 0.3rem;
     }
     &-now div p {
         color: $gray-1;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.572rem;
+        text-align: center;
     }
     &-offer button {
         border-radius: 0.25025rem;
@@ -211,7 +211,7 @@ offers-work {
         padding: 0.5rem 2rem;
         margin-top: 1rem;
         color: white;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.572rem;
     }
     &-pagination {
@@ -225,7 +225,7 @@ offers-work {
         border: none;
         background: transparent;
         color: $cyan-500;
-        font-family: Geomanist, sans-serif;
+        font-family: font-geomanist-medium, sans-serif;
         font-size: 0.88769rem;
     }
     &-pagination active {
