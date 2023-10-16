@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <header class="Hero Bg-animation">
+        <div class="Hero-Profile">
+            <h1>Trabaja con nosotros</h1>
+        </div>
+    </header>
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="home">Inicio</button>
+        <button class="tab-button" data-tab="cv">Registra Hoja de vida</button>
+        <button class="tab-button" data-tab="offer">Ofertas de empleo</button>
+        <button class="tab-button" data-tab="contact">Contáctenos</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="home">
+            <home-work></home-work>
+        </div>
+
+        <div class="tab-content" id="cv">
+            <cv-resume></cv-resume>
+        </div>
+
+        <div class="tab-content" id="offer">
+            <offers-work></offers-work>
+        </div>
+        <div class="tab-content" id="contact">
+            <h1>goku
+
+            </h1>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="./components/home/home.js"></script>
+    <script type="module" src="./components/resume/resume.js"></script>
+    <script type="module" src="./components/offers/offers.js"></script>
+</body>
+
+</html>
