@@ -58,6 +58,7 @@ export default defineConfig({
                 "reglamentos": resolve(root, 'reglamentos','index.html'),
                 "protecciones-de-datos": resolve(root, 'protecciones-de-datos','index.html'),
                 "cobranza-y-soluciones": resolve(root, 'cobranza-y-soluciones','index.html'),
+                "fogafin": resolve(root, 'fogafin','index.html'),
             }
         },
         target: 'esnext'
