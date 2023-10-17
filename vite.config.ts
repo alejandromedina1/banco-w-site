@@ -69,7 +69,7 @@ export default defineConfig({
                 "tasas-y-tarifas": resolve(root, 'tasas-y-tarifas','index.html'),
                 "reglamentos": resolve(root, 'reglamentos','index.html'),
                 "cobranza-y-soluciones": resolve(root, 'cobranza-y-soluciones','index.html'),
-                "proteccion-de-datos": resolve(root, 'proteccion-de-datos','index.html'),
+                "protecciones-de-datos": resolve(root, 'protecciones-de-datos','index.html'),
                 "fogafin": resolve(root, 'fogafin','index.html'),
                 "quienes-somos": resolve(root, 'quienes-somos', 'index.html'),
                 "timeline": resolve(root, 'timeline', 'index.html'),
