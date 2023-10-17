@@ -170,6 +170,9 @@ offers-work {
 }
 
 .Info {
+    & hr {
+        border: 1px solid $gray-2;
+    }
     &-counter {
         display: flex;
         justify-content: end;
@@ -259,5 +262,106 @@ offers-work {
     }
 
     /* El resto */
+
+    .DesktopFilter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.5rem;
+        gap: 2.5rem;
+
+        &-selects {
+            display: flex;
+            align-items: center;
+            border-radius: 8.8125rem;
+            background: var(--white, #FFF);
+            filter: drop-shadow(3.859999895095825px 5.409999847412109px 23.190000534057617px rgba(159, 102, 219, 0.18));
+        }
+        &-work {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            border-right: 1px solid $gray-2;
+        }
+        &-work p {
+            color: $gray-2;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.07875rem;
+        }
+        &-city {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+        }
+        &-city select {
+            color: $gray-2;
+            border-radius: 10px;
+            border-color: transparent; 
+        }
+        & button {
+            border-radius: 0.4375rem;
+            background: var(--Morado-300, #9F66DB);
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.375rem;
+            padding: 0.5rem 3rem;
+            border: none;
+        }
+    }
+
+    .Main {
+        border-radius: 0.57263rem;
+        background: var(--white, #FFF);
+        box-shadow: 3.86px 5.41px 23.19px 0px rgba(159, 102, 219, 0.18);
+        padding: 3.3rem 3.3rem;
+    }
+
+    .Title-works {
+        font-size: 2.1rem;
+    }
+
+    .Filter{
+        display: none;
+    }
+    
+    .Info {
+        &-counter {
+            display: none;
+        }
+        &-offer h6 {
+            font-size: 1.5rem;
+        }
+        &-now div p {
+            font-size: 1rem;
+        }
+        &-now {
+            gap: 2rem;
+        }
+        &-now div {
+            align-items: center;
+            gap: 1rem;
+        }
+        &-now div svg {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+        &-offer button {
+            padding: 0.3rem 3rem;
+            font-size: 1rem;
+        }
+        &-more {
+            display: flex;
+            justify-content: end;
+        }
+        &-pagination {
+            gap: 0.9rem;
+        }
+        &-pagination button {
+            font-size: 1.5rem;
+        }
+    }
 
 }
