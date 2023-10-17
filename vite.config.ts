@@ -55,6 +55,10 @@ export default defineConfig({
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
                 "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
                 "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
+                "atencion-inversionista": resolve(root, 'atencion-inversionista', 'index.html'),
+                "estados-financieros": resolve(root, 'estados-financieros', 'index.html'),
+                "info-accionistas": resolve(root, 'info-accionistas', 'index.html'),
+                "junta-directiva-alta-gerencia": resolve(root, 'junta-directiva-alta-gerencia', 'index.html'),
                 "reglamentos": resolve(root, 'reglamentos','index.html'),
             }
         },
