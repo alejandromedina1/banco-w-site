@@ -53,6 +53,12 @@ export default defineConfig({
                 "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
                 "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
+                "information-channel": resolve(root, 'information-channel','index.html'),
+                "alliance-banking": resolve(root, 'information-channel','alliance-banking', 'index.html'),
+                "open-products": resolve(root, 'information-channel','open-products', 'index.html'),
+                "own-banking": resolve(root, 'information-channel','own-banking', 'index.html'),
+                "own-office": resolve(root, 'information-channel','own-office', 'index.html'),
+                "phone-banking": resolve(root, 'information-channel','phone-banking', 'index.html'),
                 "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
                 "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
                 "atencion-inversionista": resolve(root, 'atencion-inversionista', 'index.html'),
@@ -66,7 +72,6 @@ export default defineConfig({
                 "proteccion-y-sostenibilidad": resolve(root, 'proteccion-y-sostenibilidad', 'index.html'),
                 "licitaciones": resolve(root, 'licitaciones', 'index.html'),
                 "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html')
-
             }
         },
         target: 'esnext'
