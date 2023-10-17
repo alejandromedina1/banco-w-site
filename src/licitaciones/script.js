@@ -37,7 +37,7 @@ async function generarBotones() {
     // Asigna un evento de clic a cada botón
     boton.addEventListener('click', () => {
       // Redirige a la página de detalle de la licitación con el ID de la licitación como parámetro en la URL
-      window.location.href = `/info-licitaciones/index.html?id=${licitacion.numero}`;
+      window.location.href = `./../info-licitaciones/index.html?id=${licitacion.numero}`;
     });
 
     // Agrega el botón al contenedor de botones
