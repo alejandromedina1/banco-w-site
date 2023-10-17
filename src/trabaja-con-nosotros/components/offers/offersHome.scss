@@ -1,0 +1,286 @@
+@import '../../../global.scss';
+
+.Title-works {
+    color: $purple-300;
+    font-family: font-geomanist-medium, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.line {
+    margin: 2rem 0;
+}
+
+.Filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+    
+    & input {
+        border-radius: 8.8125rem;
+        background: var(--white, #FFF);
+        box-shadow: 7.64px 4px 23.19px 0px rgba(159, 102, 219, 0.18);
+        width: 100%;
+        padding: 0.4rem 0 0.4rem 0.5rem;
+        border: none;
+    }
+    & input::placeholder {
+        color: $gray-1;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+    & button {
+        border-radius: 0.49225rem;
+        background: $purple-300;
+        padding: 0.4rem;
+        border: none;
+    }
+}
+
+.Info {
+    & hr {
+        border: 1px solid $gray-2;
+    }
+    &-counter {
+        display: flex;
+        justify-content: end;
+    }
+    &-counter p {
+        color: $gray-1;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        margin-bottom: 1.8rem !important;
+    }
+    &-offer h6 {
+        color: $gray-1;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 400;
+        margin-bottom: 1rem !important;
+    }
+    &-now {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    &-now div {
+        display: flex;
+        gap: 0.3rem;
+    }
+    &-now div p {
+        color: $gray-1;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.572rem;
+        text-align: center;
+    }
+    &-offer button {
+        border-radius: 0.25025rem;
+        background: $purple-300;
+        border: none;
+        padding: 0.5rem 2rem;
+        margin-top: 1rem;
+        color: white;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.572rem;
+    }
+    &-pagination {
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 0.4rem;
+    }
+    &-pagination button {
+        border: none;
+        background: transparent;
+        color: $cyan-500;
+        font-family: font-geomanist-medium, sans-serif;
+        font-size: 0.88769rem;
+    }
+}
+
+.Left, .DesktopFilter {
+    display: none;
+}
+
+.Right {
+    &-title p {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .DesktopFilter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.5rem;
+        gap: 2.5rem;
+
+        &-selects {
+            display: flex;
+            align-items: center;
+            border-radius: 8.8125rem;
+            background: var(--white, #FFF);
+            filter: drop-shadow(3.859999895095825px 5.409999847412109px 23.190000534057617px rgba(159, 102, 219, 0.18));
+        }
+        &-work {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            border-right: 1px solid $gray-2;
+        }
+        &-work p {
+            color: $gray-2;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.07875rem;
+        }
+        &-city {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+        }
+        &-city select {
+            color: $gray-2;
+            border-radius: 10px;
+            border-color: transparent; 
+        }
+        & button {
+            border-radius: 0.4375rem;
+            background: var(--Morado-300, #9F66DB);
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.375rem;
+            padding: 0.5rem 3rem;
+            border: none;
+        }
+    }
+
+    .Main {
+        border-radius: 0.57263rem;
+        background: var(--white, #FFF);
+        box-shadow: 3.86px 5.41px 23.19px 0px rgba(159, 102, 219, 0.18);
+        padding: 3.3rem 3.3rem;
+        display: flex;
+        gap: 4rem;
+    }
+
+    .Left {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        &-salary {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        &-salary p {
+            color: $gray-1;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.2rem;
+            white-space: nowrap;
+        }
+        &-checkboxes {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        &-checkboxes label input {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $gray-2;
+            padding: 0 10px;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: normal;
+            color: $gray-2;
+        }
+        &-checkboxes label {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        &-checkboxes label p {
+            color: $gray-1;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+
+    .Right {
+        width: 70%;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title p {
+            display: flex;
+            color: $gray-1;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+
+    .Title-works {
+        font-size: 2.1rem;
+        margin-top: 0;
+    }
+
+    .Filter{
+        display: none;
+    }
+    
+    .Info {
+        &-counter {
+            display: none;
+        }
+        &-offer h6 {
+            font-size: 1.5rem;
+        }
+        &-now div p {
+            font-size: 1rem;
+        }
+        &-now {
+            gap: 2rem;
+        }
+        &-now div {
+            align-items: center;
+            gap: 1rem;
+        }
+        &-now div svg {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+        &-offer button {
+            padding: 0.3rem 3rem;
+            font-size: 1rem;
+        }
+        &-more {
+            display: flex;
+            justify-content: end;
+        }
+        &-pagination {
+            gap: 0.9rem;
+        }
+        &-pagination button {
+            font-size: 1.5rem;
+        }
+    }
+
+}

@@ -3,7 +3,7 @@
 .offers-title {
     margin: 3.5rem 0;
     color: var(--Morado-300, #9F66DB);
-    font-family: Geomanist, sans-serif;
+    font-family: font-geomanist-medium, sans-serif;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
@@ -21,7 +21,7 @@
     }
     & p {
         color: $gray-1;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8125rem;
         font-style: normal;
         font-weight: 400;
@@ -34,7 +34,7 @@
 
     & h6 {
         color: $gray-1;
-        font-family: Geomanist, sans-serif;
+        font-family: font-geomanist-medium, sans-serif;
         font-size: 1rem;
         font-style: normal;
         font-weight: 500;
@@ -42,7 +42,7 @@
     }
     & p {
         color: $gray-1;
-        font-family: Bariol, sans-serif ;
+        font-family: font-bariol-regular, sans-serif ;
         font-size: 0.8125rem;
         font-style: normal;
         font-weight: 400;
@@ -60,14 +60,14 @@
     }
     &-bullets h2{
         color: $purple-300;
-        font-family: Geomanist, sans-serif;
+        font-family: font-geomanist-medium, sans-serif;
         font-size: 1rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
     }
     &-bullets p {
         color: $gray-1;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8rem;
         font-weight: 400;
     }
@@ -87,7 +87,7 @@
         padding: 0.5rem 4.5rem;
         color: white;
         text-align: center;
-        font-family: Bariol, sans-serif;
+        font-family: font-bariol-regular, sans-serif;
         font-size: 0.8125rem;
         font-weight: 400;
         border: none;
@@ -111,7 +111,26 @@
     margin-left: -18px;
 }
 
+#backBtn {
+    border-radius: 0.4375rem;
+    background: var(--Morado-300, #9F66DB);
+    border: none;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: font-bariol-regular, sans-serif;
+    font-size: 1.25rem;
+    padding: 0.3rem 2.5rem;
+    margin-top: 2rem;
+}
+
 @media only screen and (min-width: 1024px){
+
+    #backBtn {
+        padding: 0.3rem 2.5rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
     .offers-title {
         margin-bottom: 2.5rem;
         margin-top: 0rem;
