@@ -123,6 +123,13 @@
   flex-direction: column;
   gap: 100px;
 
+  & h3 {
+    color: $gray-1;
+    font-family: Geomanist;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
 
   &-header {
     font-family: "Geomanist";
@@ -171,9 +178,10 @@
 
   &-values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-column-gap: 150px;
-    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 
     & h3 {
       color: $gray-1;
@@ -215,13 +223,9 @@
 
   }
 
-  &-timeline-animation {
+  &-timeline {
 
-    background-size: auto 340px;
-    background-image: url(/images/bg_quienes-somos_DK_4x.webp), url(/images/bg_quienes-somos_DK_4x.webp);
-    background-position: calc(-1040px - var(--scrollY)), calc(100% + 1012px + var(--scrollY)), 100%;
-    background-repeat: no-repeat;
-    background-color: #9F66DB;
+    width: 100%;
 
   }
 
@@ -264,6 +268,42 @@
   margin-bottom: 30px;
 }
 
+.accordion {
+  background: transparent;
+}
+
+.accordion-item {
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 6.15485px 8.6168px 36.92913px 0px rgba(0, 177, 187, 0.10);
+  border: none !important;
+}
+
+.accordion-body{
+  font-family: 'font-bariol-regular';
+  color: $gray-1;
+}
+
+.accordion-button {
+  font-size: 1.25rem !important;
+  background-color: #00B1BB;
+  outline: none;
+  font-family: 'Bariol';
+  font-weight: 500;
+  color: white !important;
+  border-radius: 4px !important;
+
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 45 45' fill='none'><path d='M27.814 21.1687L19.864 13.2187C19.6897 13.0429 19.4823 12.9035 19.2538 12.8083C19.0253 12.7131 18.7803 12.6641 18.5327 12.6641C18.2852 12.6641 18.0401 12.7131 17.8117 12.8083C17.5832 12.9035 17.3758 13.0429 17.2015 13.2187C16.8523 13.57 16.6562 14.0452 16.6562 14.5406C16.6562 15.0359 16.8523 15.5111 17.2015 15.8624L23.839 22.4999L17.2015 29.1374C16.8523 29.4887 16.6562 29.964 16.6562 30.4593C16.6563 30.9547 16.8523 31.4299 17.2015 31.7812C17.3767 31.955 17.5845 32.0924 17.8129 32.1858C18.0414 32.2791 18.286 32.3264 18.5327 32.3249C18.7795 32.3264 19.0241 32.2791 19.2526 32.1858C19.481 32.0924 19.6888 31.955 19.864 31.7812L27.814 23.8312C27.9897 23.6569 28.1292 23.4495 28.2244 23.221C28.3196 22.9925 28.3686 22.7475 28.3686 22.4999C28.3686 22.2524 28.3196 22.0073 28.2244 21.7789C28.1292 21.5504 27.9897 21.343 27.814 21.1687Z' fill='white'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed):after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 45 45' fill='none'%3E%3Cpath d='M23.8235 27.8062L31.7735 19.8562C31.9492 19.6819 32.0887 19.4745 32.1839 19.246C32.2791 19.0175 32.3281 18.7724 32.3281 18.5249C32.3281 18.2774 32.2791 18.0323 32.1839 17.8038C32.0887 17.5754 31.9492 17.368 31.7735 17.1937C31.4222 16.8445 30.947 16.6484 30.4516 16.6484C29.9563 16.6484 29.4811 16.8445 29.1298 17.1937L22.4923 23.8312L15.8548 17.1937C15.5034 16.8445 15.0282 16.6484 14.5329 16.6484C14.0375 16.6484 13.5623 16.8445 13.211 17.1937C13.0372 17.3689 12.8997 17.5767 12.8064 17.8051C12.7131 18.0335 12.6658 18.2782 12.6673 18.5249C12.6658 18.7717 12.7131 19.0163 12.8064 19.2447C12.8997 19.4732 13.0372 19.681 13.211 19.8562L21.161 27.8062C21.3353 27.9819 21.5427 28.1214 21.7712 28.2166C21.9997 28.3118 22.2447 28.3608 22.4923 28.3608C22.7398 28.3608 22.9848 28.3118 23.2133 28.2166C23.4418 28.1214 23.6492 27.9819 23.8235 27.8062Z' fill='white'/%3E%3C/svg%3E") !important;
+}
 
 
 .buttonDuoIcon__icon {
@@ -304,10 +344,6 @@
     gap: 60px;
   }
 
-  .president-container {
-    grid-template-columns: 1fr;
-  }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -326,29 +362,10 @@
     border-radius: 0;
   }
 
-  .content-timeline-animation {
-    background-size: auto 407px;
-    background-image: url(/images/bg_quienes-somos_DK_4x.webp), url(/images/bg_quienes-somos_DK_4x.webp);
-    background-position: calc(-873px - var(--scrollY)), calc(100% + 1454px + var(--scrollY)), 100%;
-    background-repeat: no-repeat;
-    background-color: $purple-300;
-    border-radius: 0;
-  }
-
   .Hero {
     width: 100%;
     margin: 0;
   }
 
-  .content-docs-container {
-    padding: 10px 20px 10px 20px;
-    gap: 15px;
-  }
-
-  .president-container, .content-buttons {
-    grid-template-columns: 1fr;
-  }
 
 }
-
-@media screen and (min-width: 425px) and (max-width: 540px) {}

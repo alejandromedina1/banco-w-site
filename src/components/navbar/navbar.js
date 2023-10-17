@@ -143,10 +143,10 @@ class NavBarDesktop extends HTMLElement {
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
-                                <li><a href="#">Quiénes somos</a></li>
-                                <li><a href="#">Protección de datos</a></li>
-                                <li><a href="#">Licitación de seguros</a></li>
-                                <li><a href="#">Fundación WWB Colombia</a></li>
+                                <li><a href="/quienes-somos/">Quiénes somos</a></li>
+                                <li><a href="/proteccion-y-sostenibilidad/">Protección de datos</a></li>
+                                <li><a href="/licitaciones/">Licitación de seguros</a></li>
+                                <li><a href="/fundacion-wwb/">Fundación WWB Colombia</a></li>
                                 <li><a href="#">Sala de prensa</a></li>
                             </ul>
                         </li>
