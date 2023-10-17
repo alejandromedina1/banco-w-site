@@ -60,6 +60,13 @@ export default defineConfig({
                 "info-accionistas": resolve(root, 'info-accionistas', 'index.html'),
                 "junta-directiva-alta-gerencia": resolve(root, 'junta-directiva-alta-gerencia', 'index.html'),
                 "reglamentos": resolve(root, 'reglamentos','index.html'),
+                "quienes-somos": resolve(root, 'quienes-somos', 'index.html'),
+                "timeline": resolve(root, 'timeline', 'index.html'),
+                "fundacion-wwb": resolve(root, 'fundacion-wwb', 'index.html'),
+                "proteccion-y-sostenibilidad": resolve(root, 'proteccion-y-sostenibilidad', 'index.html'),
+                "licitaciones": resolve(root, 'licitaciones', 'index.html'),
+                "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html')
+
             }
         },
         target: 'esnext'
