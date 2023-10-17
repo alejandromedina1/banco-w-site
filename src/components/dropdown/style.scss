@@ -1,0 +1,79 @@
+.dropdownPages {
+    display: block;
+}
+
+.dropdown-trigger {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0.4375rem;
+    background-color: #FF8833;
+}
+
+.download {
+    background-color: #9F66DB;
+
+    .dropdown-title {
+        margin-left: 0;
+        width: fit-content;
+    }
+
+    .title-span {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.status, .description{
+    margin: 0;
+}
+
+.pdf {
+    text-decoration: none;
+}
+
+.dropdown-tab {
+    display: none;
+    border-radius: 0rem 0rem 0.4375rem 0.4375rem;
+    background: #FFF;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 2rem;
+}
+
+.show {
+    display: inline-block;
+}
+
+.dropdown-title {
+    color: #FFF;
+    font-family: Bariol;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0.4rem;
+    margin-left: 4%;
+}
+
+.gerente-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    .dropdown-title{
+        padding: 0;
+        font-size: 1.8rem;
+    }
+}
+
+.gerente-name p {
+    font-family: Bariol;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 150%;
+    color: white;
+}
