@@ -55,6 +55,7 @@ export default defineConfig({
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
                 "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
                 "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
+                "reglamentos": resolve(root, 'reglamentos','index.html'),
             }
         },
         target: 'esnext'

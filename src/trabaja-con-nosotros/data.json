@@ -1,0 +1,164 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "title": "Asesor(a) comercial de productos y canales",
+            "salary": "2 a $2,5 millones",
+            "city": "Cali",
+            "date": "Publicado 22 Sep 2023",
+            "description": "Buscamos alguien como TÚ, para que formes parte de nuestro equipo. Somos una entidad financiera que genera crecimiento personal, profesional y bienestar para nuestros colaboradores y sus familias. Te invitamos a participar para el cargo Asesor (a) Comercial de Productos y Canales en el municipio de Popayán. Perfil académico: Técnico, Tecnólogo o estudiante activo de mínimo 5° semestre de Administración de Empresas, Mercadeo, Finanzas o afines. Experiencia: Un (1) año en asesoría comercial de productos del activo y del pasivo en entidades financieras, con amplia experiencia en cumplimiento de metas y servicio al cliente. Salario: $ 2,271,400 + Comisiones (1 ´000.000) Contrato a termino indefinido directo Banco + Beneficios extralegales. ¡Como entidad financiera te esperamos con los brazos abiertos!",
+            "administration": "Administración de empresas / Otras",
+            "expiration_date": "Vence 22 Oct 2023"
+        },
+        {
+            "id": 2,
+            "title": "Data Analyst",
+            "salary": "$80,000 - $100,000",
+            "city": "New York",
+            "date": "June 15, 2022",
+            "description": "We are looking for a data analyst to help us analyze and interpret complex data sets.",
+            "administration": "Data Science",
+            "expiration_date": "July 15, 2022"
+        },
+        {
+            "id": 3,
+            "title": "Frontend Developer",
+            "salary": "$90,000 - $110,000",
+            "city": "Seattle",
+            "date": "June 30, 2022",
+            "description": "We are seeking a talented frontend developer to help us build beautiful and responsive web applications.",
+            "administration": "Engineering",
+            "expiration_date": "July 30, 2022"
+        },
+        {
+            "id": 4,
+            "title": "Marketing Manager",
+            "salary": "$120,000 - $140,000",
+            "city": "Los Angeles",
+            "date": "July 1, 2022",
+            "description": "We are looking for an experienced marketing manager to help us develop and execute effective marketing campaigns.",
+            "administration": "Marketing",
+            "expiration_date": "August 1, 2022"
+        },
+        {
+            "id": 5,
+            "title": "Backend Developer",
+            "salary": "$100,000 - $120,000",
+            "city": "San Francisco",
+            "date": "July 15, 2022",
+            "description": "We are seeking a talented backend developer to help us build scalable and efficient web applications.",
+            "administration": "Engineering",
+            "expiration_date": "August 15, 2022"
+        },
+        {
+            "id": 6,
+            "title": "Product Manager",
+            "salary": "$130,000 - $150,000",
+            "city": "New York",
+            "date": "July 30, 2022",
+            "description": "We are looking for an experienced product manager to help us develop and launch innovative products.",
+            "administration": "Product",
+            "expiration_date": "August 30, 2022"
+        },
+        {
+            "id": 7,
+            "title": "UI/UX Designer",
+            "salary": "$80,000 - $100,000",
+            "city": "Seattle",
+            "date": "August 1, 2022",
+            "description": "We are seeking a talented UI/UX designer to help us create beautiful and intuitive user interfaces.",
+            "administration": "Design",
+            "expiration_date": "September 1, 2022"
+        },
+        {
+            "id": 8,
+            "title": "Data Scientist",
+            "salary": "$120,000 - $140,000",
+            "city": "Los Angeles",
+            "date": "August 15, 2022",
+            "description": "We are looking for a data scientist to help us build predictive models and analyze complex data sets.",
+            "administration": "Data Science",
+            "expiration_date": "September 15, 2022"
+        },
+        {
+            "id": 9,
+            "title": "Full Stack Developer",
+            "salary": "$100,000 - $120,000",
+            "city": "San Francisco",
+            "date": "August 30, 2022",
+            "description": "We are seeking a talented full stack developer to help us build end-to-end web applications.",
+            "administration": "Engineering",
+            "expiration_date": "September 30, 2022"
+        },
+        {
+            "id": 10,
+            "title": "Content Writer",
+            "salary": "$60,000 - $80,000",
+            "city": "New York",
+            "date": "September 1, 2022",
+            "description": "We are looking for a creative content writer to help us develop engaging and informative content.",
+            "administration": "Marketing",
+            "expiration_date": "October 1, 2022"
+        },
+        {
+            "id": 11,
+            "title": "DevOps Engineer",
+            "salary": "$110,000 - $130,000",
+            "city": "Seattle",
+            "date": "September 15, 2022",
+            "description": "We are seeking a skilled DevOps engineer to help us build and maintain scalable infrastructure.",
+            "administration": "Engineering",
+            "expiration_date": "October 15, 2022"
+        },
+        {
+            "id": 12,
+            "title": "Social Media Manager",
+            "salary": "$80,000 - $100,000",
+            "city": "Los Angeles",
+            "date": "September 30, 2022",
+            "description": "We are looking for a social media manager to help us develop and execute effective social media strategies.",
+            "administration": "Marketing",
+            "expiration_date": "October 30, 2022"
+        },
+        {
+            "id": 13,
+            "title": "Mobile Developer",
+            "salary": "$100,000 - $120,000",
+            "city": "San Francisco",
+            "date": "October 1, 2022",
+            "description": "We are seeking a talented mobile developer to help us build innovative mobile applications.",
+            "administration": "Engineering",
+            "expiration_date": "November 1, 2022"
+        },
+        {
+            "id": 14,
+            "title": "Graphic Designer",
+            "salary": "$60,000 - $80,000",
+            "city": "New York",
+            "date": "October 15, 2022",
+            "description": "We are looking for a creative graphic designer to help us develop visually appealing designs.",
+            "administration": "Design",
+            "expiration_date": "November 15, 2022"
+        },
+        {
+            "id": 15,
+            "title": "Business Analyst",
+            "salary": "$90,000 - $110,000",
+            "city": "Seattle",
+            "date": "October 30, 2022",
+            "description": "We are seeking a skilled business analyst to help us analyze and interpret complex business data.",
+            "administration": "Business",
+            "expiration_date": "November 30, 2022"
+        },
+        {
+            "id": 16,
+            "title": "Quality Assurance Engineer",
+            "salary": "$80,000 - $100,000",
+            "city": "Los Angeles",
+            "date": "November 1, 2022",
+            "description": "We are looking for a quality assurance engineer to help us ensure the quality of our software products.",
+            "administration": "Engineering",
+            "expiration_date": "December 1, 2022"
+        }
+    ]
+}
