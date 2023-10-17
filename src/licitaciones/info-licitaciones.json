@@ -1,0 +1,73 @@
+[
+    {
+        "numero": "271",
+        "tipo":"Licitación pública No.",
+        "titulo": "Seguro de Vida Grupo Deudor asociado a microcrédito y/o mipyme",
+        "descripcion": "Señores Compañías de Seguros, el Banco W, con el objetivo de aportar en el bienestar y la tranquilidad de los clientes y sus familias, está realizando el presente proceso de licitación, para la contratación de la póliza de vida grupo deudores para créditos asociados a producto de microcrédito y/o mipyme de acuerdo con la normatividad vigente. De acuerdo a lo anterior, le invitamos a conocer el aviso de prensa publicado en el diario la Republica y el modelo de carta remitido a las diferentes aseguradoras que tienen habilitado el ramo de vida grupo deudor, donde se les invita a participar en nuestro proceso licitatorio. Una vez surtidos los procesos de validación de los requisitos habilitantes, mediante la plataforma de contratación del Banco, se estarán publicando el pliego y los anexos a las compañías habilitadas de acuerdo al cronograma definido para este proceso",
+        "cards": [
+            {
+                "card1": [
+                    {
+                        "card_image": "/images/orange-card-image_4x.webp",
+                        "title_card": "Aviso de Prensa",
+                        "text_card": "11/11/2021"
+                    }
+                ]
+            },
+            {
+                "card2": [
+                    {
+                        "card_image": "/images/orange-card-image_4x.webp",
+                        "title_card": "Modelo carta invitación Aseguradoras",
+                        "text_card": "11/11/2021"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "numero": "272",
+        "tipo":"Licitación pública No.",
+        "titulo": "Seguro de vida grupo deudor asociados a créditos y microcréditos con garantía hipotecaria",
+        "descripcion": "Señores Compañías de Seguros, el Banco W, con el objetivo de aportar en el bienestar y la tranquilidad de los clientes y sus familias, está realizando el presente proceso de licitación, para la contratación de la póliza de vida grupo deudores para créditos asociados a producto de microcrédito y/o mipyme de acuerdo con la normatividad vigente. De acuerdo a lo anterior, le invitamos a conocer el aviso de prensa publicado en el diario la Republica y el modelo de carta remitido a las diferentes aseguradoras que tienen habilitado el ramo de vida grupo deudor, donde se les invita a participar en nuestro proceso licitatorio. Una vez surtidos los procesos de validación de los requisitos habilitantes, mediante la plataforma de contratación del Banco, se estarán publicando el pliego y los anexos a las compañías habilitadas de acuerdo al cronograma definido para este proceso",
+        "cards": [
+            {
+                "card1": [
+                    {
+                        "card_image": "/images/orange-card-image_4x.webp",
+                        "title_card": "Aviso de Prensa",
+                        "text_card": "11/11/2021"
+                    }
+                ]
+            },
+            {
+                "card2": [
+                    {
+                        "card_image": "/images/orange-card-image_4x.webp",
+                        "title_card": "Modelo carta invitación Aseguradoras",
+                        "text_card": "11/11/2021"
+                    }
+                ]
+            },
+            {
+                "card3": [
+                    {
+                        "card_image": "/images/orange-card-image_4x.webp",
+                        "title_card": "Cronograma del proceso",
+                        "text_card": "17/12/21"
+                    }
+                ]
+            },
+            {
+                "card4": [
+                    {
+                        "card_image": "/images/orange-card-image_4x.webp",
+                        "title_card": "Anexo 2 Consolidado de Preguntas",
+                        "text_card": "31/12/21"
+                    }
+                ]
+            }
+        ]
+    }
+    
+]
