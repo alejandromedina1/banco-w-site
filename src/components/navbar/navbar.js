@@ -144,7 +144,7 @@ class NavBarDesktop extends HTMLElement {
                             <ul class="dropdown-content">
                                 <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
                                 <li><a href="/quienes-somos/">Quiénes somos</a></li>
-                                <li><a href="/proteccion-y-sostenibilidad">Protección de datos</a></li>
+                                <li><a href="/proteccion-y-sostenibilidad/">Protección de datos</a></li>
                                 <li><a href="/licitaciones/">Licitación de seguros</a></li>
                                 <li><a href="/fundacion-wwb/">Fundación WWB Colombia</a></li>
                                 <li><a href="#">Sala de prensa</a></li>
