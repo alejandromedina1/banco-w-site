@@ -58,7 +58,8 @@ export default defineConfig({
                 "atencion-inversionista": resolve(root, 'atencion-inversionista', 'index.html'),
                 "estados-financieros": resolve(root, 'estados-financieros', 'index.html'),
                 "info-accionistas": resolve(root, 'info-accionistas', 'index.html'),
-                "junta-directiva-alta-gerencia": resolve(root, 'junta-directiva-alta-gerencia', 'index.html')
+                "junta-directiva-alta-gerencia": resolve(root, 'junta-directiva-alta-gerencia', 'index.html'),
+                "reglamentos": resolve(root, 'reglamentos','index.html'),
             }
         },
         target: 'esnext'

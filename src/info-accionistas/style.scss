@@ -47,6 +47,38 @@ p {
     text-align: center;
 }
 
+.table-title {
+    color: #F83;
+    font-family: Geomanist;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.table-head th {
+    color: #FF6900;
+    font-family: Geomanist;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.table-data{
+    border-bottom: 1px solid #FFA666;
+}
+
+.table-data td {
+    color: #ACACAC;
+    padding: 2.5rem 0;
+    font-family: Bariol;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 .content {
     margin-top: -6%;
@@ -55,7 +87,7 @@ p {
 
 
 .tab-content {
-    display: none;
+    display: flex;
     grid-template-columns: 1fr;
     flex-direction: column;
     padding: 2rem 1rem;
@@ -63,21 +95,6 @@ p {
     margin: 3rem auto;
     gap: 1.5rem;
 }
-
-.active {
-    color: $purple-300;
-    border-bottom: 2px solid $purple-300;
-}
-
-.points {
-    color: $gray-1;
-    font-family: Bariol, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    font-size: 1.125rem;
-}
-
 
 .mobile {
     display: none;

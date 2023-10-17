@@ -1,0 +1,84 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
+
+//Estilos componente de la card
+
+div.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    border-radius: 0.4375rem;
+    background: white;
+
+    /* shadow-card-perfil */
+    box-shadow: 4.79833px 6.71767px 28.79px 0px rgba(159, 102, 219, 0.18);
+}
+
+img#image-header {
+    width: 100%;
+    border-radius: 8 8 0 0;
+}
+
+div.card-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+}
+
+h1.card-title {
+    color: $gray-1;
+
+    /* Desktop/Card Title */
+    font-family: "font-geomanist-bold";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    /* 1.625rem */
+}
+
+p.card-text {
+    color: $gray-1;
+
+    /* Desktop/Body */
+    font-family: "font-bariol-regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 1.4625rem */
+}
+
+p.card-date {
+    color: $gray-1;
+
+    /* Desktop/Body */
+    font-family: "font-bariol-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 1.4625rem */
+}
+
+p.card-info {
+    color: $gray-1;
+
+    /* Desktop/Body */
+    display: none;
+    font-family: "font-bariol-regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 1.4625rem */
+}
+
+@media (max-width: 768px) {
+    p.card-info {
+        display: flex;
+    }
+}
