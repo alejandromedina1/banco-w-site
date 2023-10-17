@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corresponsales Bancarios</title>
+
+    <!--Scss-->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../../components/navbar/style.scss">
+    <link rel="stylesheet" href="../../components/footer/style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <section id="main-banner">
+        <div class="container-text">
+            <h1>Corresponsales bancarios propios</h1>
+            <p class="body_1">Son establecimientos comerciales que facilitan servicios a los clientes del banco.</p>
+        </div>
+    </section>
+
+    <section id="content">
+        <article class="info-add">
+            <p class="body_1">Dirígete a cualquiera de los Corresponsales Bancarios Propios, para hacer transacciones
+                como: Desembolsos, consignaciones, pagar las cuotas de tu crédito o *retirar dinero de tu cuenta de
+                ahorro, referir nuevos clientes y algunas otras transacciones, de las cuales podrás obtener mayor
+                información en la <span>Línea de Servicio al Cliente</span> 01 8000 515656.</p>
+        </article>
+
+        <article class="remember">
+            <div class="text-remember">
+                <h2>Recuerda</h2>
+                <p class="body_1">Para realizar retiros de dinero de tu cuenta de ahorros o realizar desembolsos de crédito,
+                    debes estar inscrito en el servicio de la Línea de Servicio Transaccional.</p>
+            </div>
+            <a href=""> <button class="text-btn btn">Línea de Servicio al Cliente <i
+                        class="bi bi-telephone"></i></button></a>
+        </article>
+
+        <article class="schedule">
+            <ul class="description-schedule">
+                <li class="body1"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-list">
+                        <p class="body_1">Estas transacciones no
+                            tienen ningún costo para el cliente.</p>
+                    </div>
+                </li>
+                <li class="body1"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-list">
+                        <p class="body_1"><span>Horario de Atención:</span> <br>
+                            Lunes a Sábado de 7:00 a.m. a 7:00 p.m. Domingos y Festivos de 8:00 a.m. a 5:00 p.m.
+                            <span>Sujeto al horario de atención del establecimiento comercial.</span></p>
+                    </div>
+                </li>
+                <li class="body1"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-list">
+                        <p class="body_1">Los días Domingos y Festivos <span> no se realizarían reversos
+                                automáticos</span> en los
+                            Corresponsales
+                            Bancarios. Además, todas las transacciones quedarían aplicadas con fecha del día hábil
+                            siguiente.</p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <article class="search-bank">
+            <h3>Busca tu corresponsal bancario más cercano</h3>
+            <form action="" class="searching">
+                <section class="form-items">
+                    <div class="item-form">
+                        <select class="form-select input-base input-toggle" id="form-dep"
+                            aria-label="Default select example">
+                            <option selected>Selecciona tu departamento</option>
+                            <option value="1">Huila</option>
+                            <option value="2">Nariño</option>
+                            <option value="3">Valle del Cauca</option>
+                        </select>
+                    </div>
+                    <div class="item-form">
+                        <select class="form-select input-base input-toggle" id="form-city"
+                            aria-label="Default select example">
+                            <option selected>Selecciona tu municipio</option>
+                            <option value="1">Cali</option>
+                            <option value="2">Florida</option>
+                            <option value="3">Palmira</option>
+                        </select>
+                    </div>
+                    <div class="item-form">
+                        <input type="text" id="form-name-point" class="input-base" placeholder="Nombre del punto">
+                    </div>
+                </section>
+                <input type="submit" id="send-form" value="Buscar">
+            </form>
+        </article>
+
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../../components/components.js"></script>
+
+</body>
+
+</html>
