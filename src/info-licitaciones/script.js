@@ -9,7 +9,7 @@ function cargarContenido() {
   // Función para cargar los detalles de la licitación desde un archivo JSON
   async function cargarDetalleLicitacion(licitacionId) {
       try {
-          const response = await fetch('./info-licitaciones.json'); // Asegúrate de tener la ruta correcta al archivo JSON
+          const response = await fetch('./../licitaciones/info-licitaciones.json'); // Asegúrate de tener la ruta correcta al archivo JSON
           const licitaciones = await response.json();
           
           // Encuentra la licitación correspondiente al ID proporcionado

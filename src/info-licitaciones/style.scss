@@ -158,16 +158,22 @@
 
 #tasas-card-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 320px));
   gap: 20px;
-  justify-items: center;
-  align-items: center;
-
 }
 
 
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+
+  #tasas-card-container{
+    justify-items: center;
+    align-items: center;
+
+  }
+
+
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -198,6 +204,7 @@
     width: 100%;
     margin: 0;
   }
-
+  
+  
 
 }
