@@ -65,7 +65,7 @@ class OffersHome extends HTMLElement {
                 </div>
             </div>
             <div class="Info-more">
-                <button>Ver más</button>
+                <button class="details-btn" data-card='${JSON.stringify(card)}'>Ver más</button>
             </div>
             <hr>
             </article>
@@ -198,6 +198,7 @@ class OffersHome extends HTMLElement {
         const previousBtn = this.querySelector('#previousBtn');
         const nextBtn = this.querySelector('#nextBtn');
         const pageButtons = this.querySelectorAll('.page-btn');
+        const detailsButtons = this.querySelectorAll('.details-btn');
 
         previousBtn.addEventListener('click', () => {
             if (this.currentPage > 0) {
@@ -220,6 +221,15 @@ class OffersHome extends HTMLElement {
             });
         });
 
+        detailsButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const details = JSON.parse(button.getAttribute('data-card'));
+                this.style.display = 'none';
+                const detailsComponent = document.querySelector('offers-details');
+                detailsComponent.style.display = 'block';
+                detailsComponent.render(details);
+            });
+        });
     }
 }
 
