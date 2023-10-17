@@ -4,7 +4,7 @@ const botonesContainer = document.getElementById('botones-container');
 
 async function cargarLicitaciones() {
   try {
-    const response = await fetch('.https://apimocha.com/licitaciones-banco/data/1'); 
+    const response = await fetch('https://apimocha.com/licitaciones-banco/data/1'); 
     const licitaciones = await response.json();
     return licitaciones;
   } catch (error) {
