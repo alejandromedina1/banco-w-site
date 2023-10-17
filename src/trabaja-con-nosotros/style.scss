@@ -190,14 +190,13 @@ ol li::marker {
         display: flex;
         align-items: center;
         gap: 1rem;
-        color: $gray-1;
+        
+    }
+
+    & label p {
         font-family: font-bariol-regular, sans-serif;
         font-size: 0.8125rem;
-    }
-    & input p {
-        font-family: font-bariol-regular, sans-serif;
-        font-size: 1rem;
-        margin-top: 3rem;
+        color: $gray-1;
     }
 }
 
