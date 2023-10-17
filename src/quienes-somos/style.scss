@@ -171,8 +171,8 @@
 
   &-values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-column-gap: 120px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-column-gap: 150px;
     grid-row-gap: 40px;
 
     & h3 {
