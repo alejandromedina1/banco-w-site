@@ -246,4 +246,74 @@ ol li::marker {
 
     /* El resto */
 
+    .title {
+    font-size: 2.18rem;
+    margin-top: 0rem;
+    }
+
+    .description {
+        font-size: 1.4rem;
+        margin-bottom: 5rem !important;
+    }
+
+    .alert {
+        display: none;
+    }
+
+    .Form {
+        margin-bottom: 3rem;
+
+        &-info {
+            display: flex;
+            gap: 3rem;
+        }
+        &-left {
+            display: flex; 
+            flex-direction: column;
+            width: 50%;
+        }
+        &-right {
+            display: flex; 
+            flex-direction: column;
+            width: 50%;
+        }
+        & label p {
+            font-size: 1.3rem;
+            margin-bottom: 0.4rem;
+        }
+        & label {
+            margin-bottom: 0.8rem;
+        }
+        &-text {
+            padding: 0.3rem 0;
+        }
+        & select, & textarea {
+            padding: 0.3rem 0;
+        }
+    }
+
+    .check-accept {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+        & label p {
+            font-size: 1.4rem;
+            width: 45%;
+        }
+    }
+    
+    .submit {
+        padding: 0.5rem 5rem;
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+    
+    .submit-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
