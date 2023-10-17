@@ -1,5 +1,5 @@
 class NavBarDesktop extends HTMLElement {
-    constructor(){
+    constructor() {
         super();
     }
 
@@ -15,23 +15,23 @@ class NavBarDesktop extends HTMLElement {
 
         //Deploy hamburger menu mobile
         hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('active');
-          if(hamburger.classList.contains('active')){
-            iconMenu.src = '/icons/x.svg';
-            btnText.textContent = 'Cerrar';
-            navMobile.style.display = 'flex'
-          } else {
-            iconMenu.src = '/icons/fi_menu.svg';
-            btnText.textContent = '';
-            navMobile.style.display = 'none'
-          }
-          console.log(hamburger.className);
+            hamburger.classList.toggle('active');
+            if (hamburger.classList.contains('active')) {
+                iconMenu.src = '/icons/x.svg';
+                btnText.textContent = 'Cerrar';
+                navMobile.style.display = 'flex'
+            } else {
+                iconMenu.src = '/icons/fi_menu.svg';
+                btnText.textContent = '';
+                navMobile.style.display = 'none'
+            }
+            console.log(hamburger.className);
         });
 
 
         const dropdownMobile = document.querySelector('.arrow-down-mobile');
         const dropdownContent = document.querySelector('.dropdown-content');
-      // Deploy dropdown menu mobile
+        // Deploy dropdown menu mobile
         dropdownMobile.addEventListener('click', () => {
             dropdownMobile.classList.toggle('active')
             if (dropdownMobile.classList.contains('active')) {
@@ -42,48 +42,48 @@ class NavBarDesktop extends HTMLElement {
         });
 
         const logoBtn = document.querySelector('.logo');
-        logoBtn.addEventListener('click', (e)=>{
+        logoBtn.addEventListener('click', (e) => {
             e.preventDefault();
             window.location.replace('/');
         })
 
         const currentPath = window.location.pathname
-        
+
         const sections = [
-            {path: '/', id: 'inicio'},
-            {path: '/ahorradores_inversionistas/', id: 'clientes'},
-            {path: '/business-people/', id: 'clientes'},
-            {path: '/gotahorro/', id: 'clientes'},
-            {path: '/credito-vehiculo/', id: 'clientes'},
-            {path: '/micro-credito/', id: 'clientes'},
+            { path: '/', id: 'inicio' },
+            { path: '/ahorradores_inversionistas/', id: 'clientes' },
+            { path: '/business-people/', id: 'clientes' },
+            { path: '/gotahorro/', id: 'clientes' },
+            { path: '/credito-vehiculo/', id: 'clientes' },
+            { path: '/micro-credito/', id: 'clientes' },
             {path: '/giros-internacionales/', id: 'clientes'},
-            {path: '/pqrs/', id: 'nosotros'}
+            { path: '/pqrs/', id: 'nosotros' }
         ]
 
         const activeColor = '#FF8833'
-        sections.forEach( section =>{
+        sections.forEach(section => {
             if (currentPath === section.path || (currentPath === '/' && section.path === '/')) {
                 const sectionNavItem = document.getElementById(section.id);
                 sectionNavItem.style.color = activeColor
             }
         })
-      }
+    }
 
-           
-      toggleLogo() {
+
+    toggleLogo() {
         const logo = document.querySelector('.logo');
         const navMobile = document.querySelector('.nav-mobile');
         if (window.matchMedia("(max-width: 1020px)").matches) {
-          logo.src = "/images/logo-bancoW-mobile.webp";
+            logo.src = "/images/logo-bancoW-mobile.webp";
         } else {
-          logo.src = "/images/logo-bancoW.webp";
-          navMobile.style.display = 'none';
+            logo.src = "/images/logo-bancoW.webp";
+            navMobile.style.display = 'none';
         }
-    
-      }
+
+    }
 
 
-    render(){
+    render() {
         this.innerHTML = `
         <link rel="stylesheet" href="components/navbar/style.scss">
         <header class="nav-menu">
@@ -142,10 +142,33 @@ class NavBarDesktop extends HTMLElement {
                         <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
+                                <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
                                 <li><a href="#">Quiénes somos</a></li>
-                                <li><a href="#">Opción transaccional</a></li>
-                                <li><a href="#">Línea telefónica</a></li>
-                                <li><a href="/pqrs/">PQRS</a></li>
+                                <li><a href="#">Protección de datos</a></li>
+                                <li><a href="#">Licitación de seguros</a></li>
+                                <li><a href="#">Fundación WWB Colombia</a></li>
+                                <li><a href="#">Sala de prensa</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="/atencion-inversionista/" id="atencion-inversionista">Atención al inversionista <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Informes PDF</a></li>
+                                <li><a href="/estados-financieros/">Estados Financieros</a></li>
+                                <li><a href="/info-accionistas/">Información de accionistas</a></li>
+                                <li><a href="/junta-directiva-alta-gerencia/">Junta Directiva y Alta Gerencia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="#" id="canales-atencion">Canales de atención <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content last-dropdown">
+                                <li><a href="#">Puntos de pago</a></li>
+                                <li><a href="#">Nuestras oficinas</a></li>
+                                <li><a href="#">Corresponsales en alianza</a></li>
+                                <li><a href="#">Banca telefónica</a></li>
+                                <li><a href="/pqrs/">Preguntas, quejas, reclamos y sugerencias</a></li>
+                                <li><a href="#">Abrir nuevos productos</a></li>
+                                <li><a href="/atencion_financiero/">Atención al consumidor financiero</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -164,49 +187,73 @@ class NavBarDesktop extends HTMLElement {
                      Iniciar sesión</a>
 
                      <ul class="navegacion">
-                     <li class="dropdownNav"><a href="#">Clientes <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                     </svg>
-                     </a>
-                         <ul class="dropdown-content">
-                             <li><a href="#">Personas con negocio</a></li>
-                             <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
-                             <li><a href="#">Pensionados y maestros</a></li>
-                             <li><a href="#">Colombianos en el exterior</a></li>
-                         </ul>
-                     </li>
-                     <li class="dropdownNav"><a href="#">Productos y servicios <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
-                         <ul class="dropdown-content">
-                             <li><a href="#">Créditos</a></li>
-                             <li><a href="#">Cuentas de ahorro e inversión</a></li>
-                             <li><a href="/giros-internacionales/">Giros internacionales</a></li>
-                             <li><a href="#">Seguros</a></li>
-                         </ul>
-                     </li>
-                     <li class="dropdownNav"><a href="#">Asesoría financiera <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
-                         <ul class="dropdown-content">
-                             <li><a href="#">Educación financiera</a></li>
-                             <li><a href="#">Consumidor financiero</a></li>
-                             <li><a href="#">Seguridad bancaria</a></li>
-                             <li><a href="#">Revista</a></li>
-                         </ul>
-                     </li>
-                     <li class="dropdownNav"><a href="#">Acerca de nosotros <svg class="arrow-down-mobile" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
-                         <ul class="dropdown-content">
-                             <li><a href="#">Quiénes somos</a></li>
-                             <li><a href="#">Opción transaccional</a></li>
-                             <li><a href="#">Línea telefónica</a></li>
-                             <li><a href="/pqrs/">PQRS</a></li>
-                         </ul>
-                     </li>
+                     <li class="dropdownNav"><a href="#" id="clientes">Clientes <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </a>
+                            <ul class="dropdown-content" id="cliente">
+                                <li><a href="/business-people/">Personas con negocio</a></li>
+                                <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
+                                <li><a href="#">Pensionados y maestros</a></li>
+                                <li><a href="#">Colombianos en el exterior</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Créditos</a></li>
+                                <li><a href="#">Cuentas de ahorro e inversión</a></li>
+                                <li><a href="/giros-internacionales/">Giros internacionales</a></li>
+                                <li><a href="/seguros/">Seguros</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Educación financiera</a></li>
+                                <li><a href="#">Consumidor financiero</a></li>
+                                <li><a href="#">Seguridad bancaria</a></li>
+                                <li><a href="#">Revista</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
+                                <li><a href="#">Quiénes somos</a></li>
+                                <li><a href="#">Protección de datos</a></li>
+                                <li><a href="#">Licitación de seguros</a></li>
+                                <li><a href="#">Fundación WWB Colombia</a></li>
+                                <li><a href="#">Sala de prensa</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="#" id="atencion-inversionista">Atención al inversionista <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Informes PDF</a></li>
+                                <li><a href="/estados-financieros/">Estados Financieros</a></li>
+                                <li><a href="/info-accionistas/">Información de accionistas</a></li>
+                                <li><a href="/junta-directiva-alta-gerencia/">Junta Directiva y Alta Gerencia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdownNav"><a href="#" id="canales-atencion">Canales de atención <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Puntos de pago</a></li>
+                                <li><a href="#">Nuestras oficinas</a></li>
+                                <li><a href="#">Corresponsales en alianza</a></li>
+                                <li><a href="#">Banca telefónica</a></li>
+                                <li><a href="/pqrs/">Preguntas, quejas, reclamos y sugerencias</a></li>
+                                <li><a href="#">Abrir nuevos productos</a></li>
+                                <li><a href="/atencion_financiero/">Atención al consumidor financiero</a></li>
+                            </ul>
+                        </li>
                  </ul>
                 </nav>
         </header>
         `;
-        
+
     }
 }
 
