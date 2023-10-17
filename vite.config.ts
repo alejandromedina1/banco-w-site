@@ -53,12 +53,20 @@ export default defineConfig({
                 "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
                 "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 23244d64bb77552d74060c65f5d6baac47244862
                 "information-channel": resolve(root, 'information-channel','index.html'),
                 "alliance-banking": resolve(root, 'information-channel','alliance-banking', 'index.html'),
                 "open-products": resolve(root, 'information-channel','open-products', 'index.html'),
                 "own-banking": resolve(root, 'information-channel','own-banking', 'index.html'),
                 "own-office": resolve(root, 'information-channel','own-office', 'index.html'),
                 "phone-banking": resolve(root, 'information-channel','phone-banking', 'index.html'),
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 23244d64bb77552d74060c65f5d6baac47244862
                 "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
                 "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
                 "atencion-inversionista": resolve(root, 'atencion-inversionista', 'index.html'),
@@ -73,6 +81,10 @@ export default defineConfig({
                 "licitaciones": resolve(root, 'licitaciones', 'index.html'),
                 "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html')
 
+<<<<<<< HEAD
+>>>>>>> 8ba186adfe99df170c59695cbe6cf56ac549c870
+=======
+>>>>>>> 23244d64bb77552d74060c65f5d6baac47244862
             }
         },
         target: 'esnext'
