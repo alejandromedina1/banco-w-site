@@ -165,7 +165,7 @@ class OffersHome extends HTMLElement {
 
                 <section class="Right">
                     <div class="Right-title">
-                        <h2>Empleo en BANCO W S.A.</h2>
+                        <h2 class="Title-works">Empleo en BANCO W S.A.</h2>
                         <p>${pageCounter}</p>
                     </div>
                     <hr class="line">
