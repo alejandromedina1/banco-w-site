@@ -124,6 +124,100 @@ ol li::marker {
 
 /* El resto */
 
+.title {
+    color: $gray-1;
+    font-family: font-geomanist-medium, sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.description {
+    color: $gray-1;
+    font-family: font-bariol-regular, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 3rem !important;
+}
+
+.alert {
+    color: $gray-1;
+    text-align: center;
+    font-family: font-bariol-regular, sans-serif;
+    font-size: 0.8125rem;
+    margin-bottom: 2rem !important;
+}
+
+.alert span {
+    color: $orange-300;
+}
+
+.Form {
+    margin-bottom: 3rem;
+
+    &-left {
+        display: flex; 
+        flex-direction: column;
+    }
+    & label p {
+        color: $purple-300;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    & label {
+        margin-bottom: 0.5rem;
+    }
+    &-text {
+        border-radius: 0.17025rem;
+        border: 1.167px solid #CDCDCD;
+        background: var(--white, #FFF);
+        padding-left: 0.5rem;
+        width: 100%;
+    }
+    & select, & textarea {
+        border-radius: 0.17025rem;
+        border: 1.167px solid #CDCDCD;
+        background: var(--white, #FFF);
+        padding-left: 0.5rem;
+        width: 100%;
+    }
+}
+
+.check-accept {
+    margin-top: 4rem;
+
+    & label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $gray-1;
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 0.8125rem;
+    }
+    & input p {
+        font-family: font-bariol-regular, sans-serif;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+}
+
+.submit {
+    border-radius: 0.4375rem;
+    background: var(--Morado-300, #9F66DB);
+    padding: 0.5rem 2rem;
+    color: var(--white, #FFF);
+    text-align: center;
+    border: none;
+    font-family: font-bariol-regular, sans-serif;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -153,5 +247,4 @@ ol li::marker {
 
     /* El resto */
 
-    
 }
