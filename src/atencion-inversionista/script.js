@@ -1,4 +1,4 @@
-import '../components/InverCards/InverCards'
+import '../components/InverCards/InverCards.js'
 
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
