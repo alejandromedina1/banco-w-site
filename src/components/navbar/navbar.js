@@ -141,7 +141,7 @@ class NavBarDesktop extends HTMLElement {
                         <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
-                                <li><a href="#">Trabaja con nosotros</a></li>
+                                <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
                                 <li><a href="#">Quiénes somos</a></li>
                                 <li><a href="#">Protección de datos</a></li>
                                 <li><a href="#">Licitación de seguros</a></li>
@@ -165,9 +165,9 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Nuestras oficinas</a></li>
                                 <li><a href="#">Corresponsales en alianza</a></li>
                                 <li><a href="#">Banca telefónica</a></li>
-                                <li><a href="#">Preguntas, quejas, reclamos y sugerencias</a></li>
+                                <li><a href="/pqrs/">Preguntas, quejas, reclamos y sugerencias</a></li>
                                 <li><a href="#">Abrir nuevos productos</a></li>
-                                <li><a href="#">Atención al consumidor financiero</a></li>
+                                <li><a href="/atencion_financiero/">Atención al consumidor financiero</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -219,7 +219,7 @@ class NavBarDesktop extends HTMLElement {
                         <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
-                                <li><a href="#">Trabaja con nosotros</a></li>
+                                <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
                                 <li><a href="#">Quiénes somos</a></li>
                                 <li><a href="#">Protección de datos</a></li>
                                 <li><a href="#">Licitación de seguros</a></li>
@@ -231,9 +231,9 @@ class NavBarDesktop extends HTMLElement {
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="#">Informes PDF</a></li>
-                                <li><a href="#">Estados Financieros</a></li>
-                                <li><a href="#">Información de accionistas</a></li>
-                                <li><a href="#">Junta Directiva y Alta Gerencia</a></li>
+                                <li><a href="/estados-financieros/">Estados Financieros</a></li>
+                                <li><a href="/info-accionistas/">Información de accionistas</a></li>
+                                <li><a href="/junta-directiva-alta-gerencia/">Junta Directiva y Alta Gerencia</a></li>
                             </ul>
                         </li>
                         <li class="dropdownNav"><a href="#" id="canales-atencion">Canales de atención <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,9 +243,9 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="#">Nuestras oficinas</a></li>
                                 <li><a href="#">Corresponsales en alianza</a></li>
                                 <li><a href="#">Banca telefónica</a></li>
-                                <li><a href="#">Preguntas, quejas, reclamos y sugerencias</a></li>
+                                <li><a href="/pqrs/">Preguntas, quejas, reclamos y sugerencias</a></li>
                                 <li><a href="#">Abrir nuevos productos</a></li>
-                                <li><a href="#">Atención al consumidor financiero</a></li>
+                                <li><a href="/atencion_financiero/">Atención al consumidor financiero</a></li>
                             </ul>
                         </li>
                  </ul>
