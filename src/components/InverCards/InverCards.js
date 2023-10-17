@@ -1,7 +1,7 @@
 const template = document.createElement('template')
 
 template.innerHTML = `
-    <link rel="stylesheet" href="components/InverCards/style.scss">
+    <link rel="stylesheet" href="/components/InverCards/style.scss">
     <a href="#" class="inver-link" download><article class="inver-card">
     <img src="/images/inver_card.webp" alt="Patrón de fondo">
     <h3 class="inver-text"></h3>
