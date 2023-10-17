@@ -39,7 +39,7 @@ p {
 .title {
     color: $gray-1;
     width: 80%;
-    font-family: Geomanist, sans-serif;
+    font-family: "font-geomanist-medium", sans-serif;
     font-size: 2.78375rem;
     font-style: normal;
     font-weight: 700;
@@ -50,7 +50,7 @@ p {
 .text {
     width: 80%;
     color: $gray-2;
-    font-family: Bariol, sans-serif;
+    font-family: "font-bariol-regular", sans-serif;
     font-size: 1.4375rem;
     font-style: normal;
     font-weight: 400;
@@ -65,7 +65,7 @@ p {
     color: white;
     color: #FFF;
     text-align: center;
-    font-family: Bariol, sans-serif;
+    font-family: "font-bariol-regular", sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -95,7 +95,7 @@ p {
     background: none;
     padding: 0.5rem;
     text-align: center;
-    font-family: Bariol, sans-serif;
+    font-family: "font-bariol-regular", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -125,7 +125,7 @@ p {
 
 .points {
     color: $gray-1;
-    font-family: Bariol, sans-serif;
+    font-family: "font-bariol-regular", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -183,7 +183,7 @@ p {
 }
 .dropdown-title {
     color: #FFF;
-    font-family: Bariol;
+    font-family: "font-bariol-regular";
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -199,7 +199,7 @@ p {
 }
 
 .inver-span h4 {
-    font-family: Geomanist, sans-serif;
+    font-family: "font-geomanist-regular", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -209,7 +209,7 @@ p {
 }
 
 .inver-span p {
-    font-family: Bariol, sans-serif;
+    font-family: "font-bariol-regular", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -242,7 +242,7 @@ p {
     background-color: $purple-300;
     border-radius: 0.4375rem;
     text-align: center;
-    font-family: Bariol;
+    font-family: "font-bariol-regular";
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
