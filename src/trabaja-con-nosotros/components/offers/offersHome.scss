@@ -116,8 +116,6 @@
 }
 
 
-
-
 @media only screen and (min-width: 1024px){
     .DesktopFilter{
         display: flex;
@@ -198,6 +196,18 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 2rem;
+        }
+        &-checkboxes label input {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $gray-2;
+            padding: 0 10px;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: normal;
+            color: $gray-2;
         }
         &-checkboxes label {
             display: flex;

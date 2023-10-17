@@ -111,7 +111,26 @@
     margin-left: -18px;
 }
 
+#backBtn {
+    border-radius: 0.4375rem;
+    background: var(--Morado-300, #9F66DB);
+    border: none;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: font-bariol-regular, sans-serif;
+    font-size: 1.25rem;
+    padding: 0.3rem 2.5rem;
+    margin-top: 2rem;
+}
+
 @media only screen and (min-width: 1024px){
+
+    #backBtn {
+        padding: 0.3rem 2.5rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
     .offers-title {
         margin-bottom: 2.5rem;
         margin-top: 0rem;

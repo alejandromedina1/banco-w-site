@@ -140,7 +140,7 @@ class OffersHome extends HTMLElement {
                         <p>Fecha de publicación</p>
                     </div>
                     <div class="Left-checkboxes">
-                        <label for="">
+                        <label class="circular-checkbox" for="">
                             <input type="checkbox" name="" id="">
                             <p>Hoy y ayer</p>
                         </label>
