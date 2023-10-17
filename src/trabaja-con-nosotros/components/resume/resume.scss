@@ -1,0 +1,108 @@
+@import '../../../global.scss';
+
+.content-title {
+    margin-bottom: 3rem;
+
+    & h2 {
+        color: $gray-1;
+        font-family: Geomanist, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    & p {
+        color: $gray-1;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8125rem;
+        line-height: normal;
+    }
+}
+
+.Segments {
+    border-radius: 0.35456rem;
+    background: var(--white, #FFF);
+    box-shadow: 2px 4px 14px 0px rgba(159, 102, 219, 0.18);
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    & figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $purple-300;
+        padding: 2.5rem 0rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    &-info h2 {
+        color: $gray-1;
+        font-family: Geomanist, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    &-info p {
+        color: $gray-2;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 127%;
+    }
+}
+
+.last-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        border-radius: 0.4375rem;
+        background: $purple-300;
+        padding: 0.5rem 2.5rem;
+        color: white;
+        font-family: Bariol, sans-serif;
+        font-size: 0.8125rem;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .content-title {
+        & h2 {
+            font-size: 2.18rem;
+        }
+        & p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .Segments {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 3rem;
+    
+        & figure {
+            width: 30%;
+            padding: 2rem;
+            margin-bottom: 0rem;
+        }
+        &-info h2 {
+            color: $gray-1;
+            font-size: 1.5rem;
+        }
+        &-info p {
+            color: $gray-2;
+            font-size: 0.9rem;
+            line-height: 150%;
+        }
+    }
+    
+    .last-button {
+        & a {
+            padding: 0.5rem 9rem;
+            font-size: 1.1rem;
+        }
+    }
+}

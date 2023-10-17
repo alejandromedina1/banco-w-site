@@ -53,12 +53,29 @@ export default defineConfig({
                 "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
                 "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
                 "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
+<<<<<<< HEAD
                 "information-channel": resolve(root, 'information-channel','index.html'),
                 "alliance-banking": resolve(root, 'information-channel','alliance-banking', 'index.html'),
                 "open-products": resolve(root, 'information-channel','open-products', 'index.html'),
                 "own-banking": resolve(root, 'information-channel','own-banking', 'index.html'),
                 "own-office": resolve(root, 'information-channel','own-office', 'index.html'),
                 "phone-banking": resolve(root, 'information-channel','phone-banking', 'index.html'),
+=======
+                "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
+                "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
+                "atencion-inversionista": resolve(root, 'atencion-inversionista', 'index.html'),
+                "estados-financieros": resolve(root, 'estados-financieros', 'index.html'),
+                "info-accionistas": resolve(root, 'info-accionistas', 'index.html'),
+                "junta-directiva-alta-gerencia": resolve(root, 'junta-directiva-alta-gerencia', 'index.html'),
+                "reglamentos": resolve(root, 'reglamentos','index.html'),
+                "quienes-somos": resolve(root, 'quienes-somos', 'index.html'),
+                "timeline": resolve(root, 'timeline', 'index.html'),
+                "fundacion-wwb": resolve(root, 'fundacion-wwb', 'index.html'),
+                "proteccion-y-sostenibilidad": resolve(root, 'proteccion-y-sostenibilidad', 'index.html'),
+                "licitaciones": resolve(root, 'licitaciones', 'index.html'),
+                "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html')
+
+>>>>>>> 8ba186adfe99df170c59695cbe6cf56ac549c870
             }
         },
         target: 'esnext'

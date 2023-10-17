@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al consumidos financiero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../global.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2>Atención al consumidor financiero</h2>
+            <p>
+                Te invitamos a manifestar tus peticiones, quejas y 
+                sugerencias, acerca de nuestros productos y/o servicios 
+                en los canales que te presentamos a continuación. 
+                Para que tu manifestación sea atendida debes reportar 
+                los siguientes datos: nombres y apellidos, número de 
+                identificación, teléfono, correo electrónico y descripción 
+                clara de tu manifestación. 
+                En el siguiente <a href="" style="text-decoration: none; color: #00B1BB;">link</a> podrás conocer consejos para presentar 
+                una reclamación en una Entidad.
+            </p>
+        </span>
+    </section>
+
+
+    <div class="tab-bar desktop">
+        <button class="tab-button" data-tab="canales-pqrs">Canales de atención PQRS</button>
+        <button class="tab-button" data-tab="defensor">Defensor del consumidor</button>
+        <button class="tab-button" data-tab="superintendencia">Superintendencia financiera</button>
+        <button class="tab-button" data-tab="revisor">Revisor fiscal</button>
+    </div>
+
+    <div class="tab-bar mobile">
+        <button class="tab-button pqrs" data-tab="canales-pqrs">PQRS</button>
+        <button class="tab-button defensor" data-tab="defensor">Defensor</button>
+        <button class="tab-button superintendencia" data-tab="superintendencia">Superintendencia</button>
+        <button class="tab-button revisor-fiscal" data-tab="revisor">Revisor fiscal</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content icon-list" id="canales-pqrs">
+            <article>
+                <figure><img src="../public/icons/canal-pqrs1.svg" alt=""></figure>
+                <div>
+                    <h4>Oficinas a nivel nacional</h4>
+                    <p>Te damos toda la información que necesites sobre nuestras 
+                        oficinas para que encuentres el punto más cercano a ti. 
+                        Consulta nuestras direcciones y horarios de atención aquí.</p>
+                </div>
+            </article>
+            <article>
+                <figure><img src="../public/icons/canal-pqrs2.svg" alt=""></figure>
+                <div>
+                    <h4>Línea de servicio al cliente</h4>
+                    <p>Listos para atenderte de lunes a viernes de 07:00 a.m. a 
+                        06:00 p.m. y sábados de 08:00 a.m. – 02:00 p.m.</p>
+                    <div class="content-vertical-list">
+                        <nav>
+                            <p><strong>Teléfono:</strong> 01 8000 51 56 56</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Celular:</strong> 323 5996557</p>
+                        </nav>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <figure><img src="../public/icons/canal-pqrs3.svg" alt=""></figure>
+                <div>
+                    <h4>Formulario PQRS</h4>
+                    <p>Las consultas sobre los requisitos para acceder a 
+                        nuestros productos financieros y la atención de 
+                        casos de colaboradores o ex colaboradores del 
+                        banco, accionistas, proveedores, remisión de 
+                        notificaciones judiciales, tutelas y hojas de 
+                        vida, no se responderán a través de este formulario. 
+                        En esta página encontrarás la información para 
+                        dirigir correctamente tu solicitud.</p>
+                </div>
+            </article>
+        </div>
+        <div class="tab-content" id="defensor">
+            <div class="defesor-section1">
+                <nav>
+                    <h3>Defensor del consumidor</h3>
+                    <div class="content-vertical-list">
+                        <nav>
+                            <p><strong>Defensor del consumidor financiero:</strong> Dr. Dario Laguado Monsalve</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Suplente:</strong> Dr. Carlos Fernando Duran Preciado</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Número de Teléfono:</strong> (601) 5439850 / 55, (601) 2351604</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Número de Celular:</strong> 320 398 1187.</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Horario de atención al público:</strong> 9:00 A.M. – 4:00 P.M. Jornada continua.</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Página web para trámite de quejas:</strong> www.defensorialg.com.co</p>
+                        </nav>
+                        <nav>
+                            <p><strong>Dirección:</strong> Calle 70 A Nro. 11-83 Bogotá.</p>
+                        </nav>
+                    </div>
+                </nav>
+                <nav>
+                    <nav>
+                        <h3>Recuerda incluir los siguientes datos en tu reclamación:</h3>
+                        <div class="content-vertical-list">
+                            <nav>
+                                <p>Nombres.</p>
+                            </nav>
+                            <nav>
+                                <p>Apellidos.</p>
+                            </nav>
+                            <nav>
+                                <p>Número de identificación.</p>
+                            </nav>
+                            <nav>
+                                <p>Teléfono.</p>
+                            </nav>
+                            <nav>
+                                <p>Correo electrónico.</p>
+                            </nav>
+                            <nav>
+                                <p>Describir los hechos y derechos que consideras vulnerados.</p>
+                            </nav>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+
+            <div>
+                <h3>¡En el Banco W queremos que tu experiencia sea la mejor!</h3>
+                <div class="content-vertical-list">
+                    <nav>
+                        <p>En esta sección encontrará información detallada 
+                            de los Derechos y Deberes del Consumidor Financiero, 
+                            las obligaciones de la entidad financiera, indicaciones 
+                            de cómo reportar al Defensor, las funciones del 
+                            defensor del Consumidor Financiero así como los 
+                            datos para contactarlo.</p>
+                    </nav>
+                    <nav>
+                        <p>También encontrará una guía de casos que le servirán 
+                            para determinar qué tipo de situaciones no son de la 
+                            competencia del Defensor del Consumidor Financiero.</p>
+                    </nav>
+                    <nav>
+                        <p>El Defensor del Consumidor Financiero puede ser sancionado, 
+                            previa investigación administrativa, por el incumplimiento 
+                            de las obligaciones a su cargo. Asimismo, el Banco W S.A. 
+                            puede ser objeto de investigación con fines sancionatorios 
+                            por no designar Defensor del Consumidor Financiero, no 
+                            efectuar las apropiaciones necesarias para el suministro 
+                            de recursos humanos y técnicos que requiera el Defensor 
+                            para su adecuado desempeño, o por no proveer al Defensor 
+                            la información que necesite.</p>
+                    </nav>
+                    <nav>
+                        <p>Como consumidor financiero podrás formular tus quejas ante 
+                            el DCF en cualquier agencia, sucursal, corresponsal u 
+                            oficina de atención al público o cualquier otro canal 
+                            de atención dispuesto por el Banco. Así mismo, también 
+                            podrás formular recomendaciones y propuestas frente 
+                            aquellos aspectos que puedan mejorar nuestras relaciones.</p>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div>
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Funciones del defensor del conumidor financiero
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>Atender de manera oportuna y efectiva las quejas o 
+                                        sugerencias siempre y cuando sean de su competencia.</p>
+                                </nav>
+                                <nav>
+                                    <p>Conocer y resolver de manera gratuita las quejas o 
+                                        sugerencias en los términos y procedimientos establecidos 
+                                        en la ley. No olvide que las quejas o sugerencias deben 
+                                        presentarse por escrito.</p>
+                                </nav>
+                                <nav>
+                                    <p>Actuar como conciliador entre el Banco W y el consumidor 
+                                        financiero. Para ello, los términos de la conciliación 
+                                        se registran en un documento firmado por el consumidor 
+                                        financiero, la entidad y el defensor. En el evento que 
+                                        una de las partes incumpla con los términos de la 
+                                        conciliación, permitirá a la otra parte que cumplió, 
+                                        acudir a vías legales para exigir su cumplimiento. 
+                                        Conoce Aquí el proceso para solicitar tu conciliación.</p>
+                                </nav>
+                                <nav>
+                                    <p>Ser vocero del consumidor financiero ante el Banco W. 
+                                        Para ello, los términos de la conciliación se registrarán 
+                                        en un documento firmado por el consumidor financiero, la 
+                                        entidad y el defensor. En el evento que una de las partes 
+                                        incumpla con los términos de conciliación, permitirá a la 
+                                        otra parte que cumplió, acudir a vías legales para exigir 
+                                        su cumplimiento.</p>
+                                </nav>
+                                <nav>
+                                    <p>Proponer a las autoridades competentes la modificación de 
+                                        normas que sean convenientes para una mejor protección 
+                                        de los derechos del consumidor financiero.</p>
+                                </nav>
+                                <nav>
+                                    <p>Las demás que el gobierno nacional asigne y que tenga el 
+                                        adecuado desarrollo del SAC (Sistema de Atención al 
+                                        Consumidor Financiero).</p>
+                                </nav>
+                                <nav>
+                                    <p>Como vocero también deberá presentar recomendaciones y 
+                                        propuestas relacionadas con los servicios y atención a 
+                                        los consumidores financieros, sobre eventos que hubieran 
+                                        merecido su atención y que a su juicio, puedan mejorar y 
+                                        facilitar las relaciones entre la entidad y los consumidores 
+                                        financieros, la correcta prestación del servicio, la seguridad 
+                                        en el desarrollo de las actividades de la entidad y la 
+                                        participación en la identificación de la causa raíz de 
+                                        situaciones que afecten la calidad en los productos y 
+                                        servicios ofrecidos.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Tiempos de respuesta del defensor del consumidor financiero a tu reclamo
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>El defensor aceptará o rechazará su queja, dependiendo si es o 
+                                        no de su competencia. Puede determinar que amerita ser enviada 
+                                        a la Superintendencia Financiera por corresponder a temas de 
+                                        interés general para que sea resuelta por dicha entidad.</p>
+                                </nav>
+                                <nav>
+                                    <p>En caso de no ser de su competencia el defensor, niega su 
+                                        admisión, comunicando su decisión al Banco W a usted, 
+                                        dentro del término de cinco (5) días hábiles contando 
+                                        desde el día siguiente en que se recibe la queja.</p>
+                                </nav>
+                                <nav>
+                                    <p>En caso de ser admitida, el defensor puede solicitarle 
+                                        a usted y al Banco W mayor información para dar solución 
+                                        a su caso, la cual debe ser enviada máximo a los ocho (8) 
+                                        días hábiles siguientes a la notificación de la solicitud 
+                                        de información. En algunos casos podrá solicitarse un mayor 
+                                        plazo, el cual deberá notificarse al cliente.</p>
+                                </nav>
+                                <nav>
+                                    <p>Si el defensor recibe oportunamente la información, deberá 
+                                        notificarse en un plazo máximo de tres (3) días hábiles, 
+                                        si es admitida o no. Si el defensor no recibe respuestas 
+                                        de su parte, se dará por hecho que desistió de su petición.</p>
+                                </nav>
+                                <nav>
+                                    <p>Una vez evaluada la información aportada por las partes, el 
+                                        defensor tomará la decisión dentro de un término de ocho (8) 
+                                        días hábiles, la cual deberá ser comunicada tanto a usted 
+                                        como al Banco W.</p>
+                                </nav>
+                                <nav>
+                                    <p>El Banco W, tendrá ocho (8) días hábiles para darle respuesta 
+                                        al DCF y en caso de considerarse se solicitará prorroga por 
+                                        un plazo de ocho (8) días hábiles para ampliar la información.</p>
+                                </nav>
+                                <nav>
+                                    <p>Una vez que el defensor del Consumidor Financiero emite un 
+                                        pronunciamiento, el caso se cierra, a no ser que el quejoso 
+                                        solicite la reconsideración porque no está de acuerdo con la 
+                                        respuesta. Si esto sucede, el quejoso debe manifestar por 
+                                        escrito las razones de su inconformidad y el defensor deberá 
+                                        enviar esa comunicación a la entidad financiera para que 
+                                        revise el caso y se pronuncie sobre el particular.</p>
+                                </nav>
+                                <nav>
+                                    <p>Usted podrá en cualquier estado del trámite desistir de la queja, 
+                                        y para hacerlo deberá enviar una comunicación al defensor 
+                                        del consumidor financiero.</p>
+                                </nav>
+                                <nav>
+                                    <p>Si usted no está satisfecho con la decisión tomada por el defensor, 
+                                        podrá someter su queja ante otra entidad competente o acudir a 
+                                        la vida judicial, evento en el cual la queja se suspende de inmediato.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Casos excluidos de la competencia del defensor del consumidor financiero
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>Los que no correspondan o no estén directamente relacionados 
+                                        con el giro ordinario de las operaciones autorizadas 
+                                        por la entidad.</p>
+                                </nav>
+                                <nav>
+                                    <p>Las decisiones de la entidad en cuanto a prestar o no su servicio.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los concernientes al vínculo laboral entre la entidad y 
+                                        sus empleados o respecto de sus contratistas.</p>
+                                </nav>
+                                <nav>
+                                    <p>Aquellos que se deriven de la condición de accionista de la entidad.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los relativos al reconocimiento de las prestaciones y de las pensiones 
+                                        de invalidez, de vejez y de sobrevivientes, salvo en los aspectos 
+                                        relacionados con la cantidad de servicio y en los trámites 
+                                        del reconocimientos de éstas.</p>
+                                </nav>
+                                <nav>
+                                    <p>Lo que se refiere a cuestiones que encuentren trámite judicial 
+                                        o arbitral o hayan sido resueltas en estas vías.</p>
+                                </nav>
+                                <nav>
+                                    <p>Aquellos que correspondan a la decisión sobre la prestación 
+                                        de un servicio o producto.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los que se refieren a hechos sucedidos con tres (3) años o 
+                                        más de anterioridad a la fecha de prestación de la 
+                                        solicitud ante el defensor del consumidor financiero.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los que tengan por objeto los mismos hechos y afecten a 
+                                        las mismas partes, cuando hayan sido objeto de decisión 
+                                        por parte del defensor del consumidor financiero.</p>
+                                </nav>
+                                <nav>
+                                    <p>Aquellos casos cuya garantía, sumados todos los conceptos, 
+                                        superen los cien (100) salarios mínimos legales mensuales 
+                                        vigentes al momento de su prestación.</p>
+                                </nav>
+                                <nav>
+                                    <p>Las demás que defina el Gobierno Nacional.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Alcance de las decisiones del defensor del consumidor
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>En principio, las decisiones del defensor del consumidor no son obligatorias, salvo que:</p>
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>Entre consumidor financiero o usuario y el Banco W de manera 
+                                        previa y expresa acuerden la obligatoriedad de la decisión.</p>
+                                </nav>
+                                <nav>
+                                    <p>El Banco W haya acogido en sus estatutos la obligatoriedad 
+                                        de las decisiones del defensor del consumidor.</p>
+                                </nav>
+                                <nav>
+                                    <p>Se haya establecido en el acuerdo de conciliación.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            ¿Qué sucede con el defensor del consumidor o el banco W si no cumplen con sus funciones?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>El defensor del consumidor puede ser sancionado una 
+                                        vez se realicen las investigaciones administrativas 
+                                        pertinentes por el posible incumplimiento de las 
+                                        funciones que tenga a cargo.</p>
+                                </nav>
+                                <nav>
+                                    <p>El Banco W también puede ser sancionado, en caso de no haber 
+                                        designado un defensor, no realizar las apropiaciones a que haya 
+                                        lugar para el suministro de recursos humanos y técnicos o por no 
+                                        suministrar al defensor del consumidor la información necesaria 
+                                        para el ejercicio de su cargo.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Derechos de los consumidores financieros
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>En desarrollo del principio de debida diligencia, los consumidores 
+                                        financieros tienen el derecho de recibir de parte de las entidades 
+                                        vigiladas productos y servicios con estándares de seguridad y 
+                                        calidad, de acuerdo con las condiciones ofrecidas y las 
+                                        obligaciones asumidas por las entidades vigiladas.</p>
+                                </nav>
+                                <nav>
+                                    <p>Tener a su disposición, en los términos establecidos en la 
+                                        presente ley y en las demás disposiciones de carácter especial, 
+                                        publicidad e información transparente, clara, veraz, oportuna y 
+                                        verificable, sobre las características propias de los productos 
+                                        o servicios ofrecidos y/o suministrados. En particular, la 
+                                        información suministrada por la respectiva entidad deberá ser 
+                                        de tal que permita y facilite su comparación y comprensión 
+                                        frente a los diferentes productos y servicios ofrecidos 
+                                        en el mercado.</p>
+                                </nav>
+                                <nav>
+                                    <p>Exigir la debida diligencia en la prestación del servicio por 
+                                        parte de las entidades vigiladas.</p>
+                                </nav>
+                                <nav>
+                                    <p>Recibir una adecuada educación respecto de las diferentes 
+                                        formas de instrumentar los productos y servicios ofrecidos, 
+                                        sus derechos y obligaciones, así como los costos que se 
+                                        generan sobre los mismos, los mercados y tipo de actividad 
+                                        que desarrollan las entidades vigiladas así como sobre los 
+                                        diversos mecanismos de protección establecidos para la 
+                                        defensa de sus derechos.</p>
+                                </nav>
+                                <nav>
+                                    <p>Presentar de manera respetuosa consultas, peticiones, solicitudes, 
+                                        quejas o reclamos ante la entidad vigilada, el defensor del 
+                                        Consumidor Financiero, la Superintendencia Financiera de 
+                                        Colombia y los organismos de autorregulación.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los demás derechos que se establezcan en esta ley o en otras 
+                                        disposiciones, y los contemplados en las instrucciones que 
+                                        imparta la Superintendencia Financiera de Colombia.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Buenas prácticas de protección propia por parte de los consumidores financieros
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>Cerciorarse si la entidad con la cual desean contratar 
+                                        o utilizar los productos o servicios se encuentre autorizada 
+                                        y vigilada por la Superintendencia Financiera de Colombia.</p>
+                                </nav>
+                                <nav>
+                                    <p>Informarse sobre los productos o servicios que piensa adquirir 
+                                        o emplear, indagando sobre las condiciones generales de la 
+                                        operación; es decir, los derechos, obligaciones, costos, 
+                                        exclusiones y restricciones aplicables al producto o 
+                                        servicio, exigiendo las explicaciones verbales y escritas 
+                                        necesarias, precisas y suficientes que le posibiliten 
+                                        la toma de decisiones informadas.</p>
+                                </nav>
+                                <nav>
+                                    <p>Observar las instrucciones y recomendaciones que imparta la 
+                                        entidad vigilada sobre el manejo de productos o servicios financieros.</p>
+                                </nav>
+                                <nav>
+                                    <p>Revisar los términos y condiciones del respectivo contrato 
+                                        y sus anexos, así como conservar las copias que se le 
+                                        suministren de dichos documentos.</p>
+                                </nav>
+                                <nav>
+                                    <p>Informarse sobre los órganos y medios de que dispone la 
+                                        entidad para presentar peticiones, solicitudes, quejas o reclamos.</p>
+                                </nav>
+                                <nav>
+                                    <p>Obtener una respuesta oportuna a cada solicitud de producto o servicio.</p>
+                                </nav>
+                            </div>
+                            <strong>Anotaciones:</strong>
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>El no ejercicio de las prácticas de protección propia por parte 
+                                        de los consumidores financieros no implica la pérdida o 
+                                        desconocimiento de los derechos que le son propios ante 
+                                        las entidades vigiladas y las autoridades competentes. 
+                                        De igual manera, no exime a las entidades vigiladas de 
+                                        las obligaciones especiales consagradas en la presente 
+                                        ley respecto de los consumidores financieros.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los consumidores financieros tendrán el deber de suministrar 
+                                        información cierta, suficiente y oportuna a las entidades 
+                                        vigiladas y a las autoridades competentes en los eventos 
+                                        en que estas lo soliciten para el debido cumplimiento de 
+                                        sus deberes y de actualizar los datos que así lo requieran. 
+                                        Del mismo modo, informarán a la Superintendencia Financiera 
+                                        de Colombia y a las demás autoridades competentes sobre las 
+                                        entidades que suministran productos o servicios financieros 
+                                        sin estar legalmente autorizadas para ello.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingEight">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            Obligaciones espciales de las entidades vigiladas
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <strong>Las entidades vigiladas tendrán las siguientes obligaciones especiales:</strong>
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>Suministrar información al público respecto de los Defensores del 
+                                        Consumidor Financiero, de conformidad con las instrucciones que 
+                                        sobre el particular imparta la Superintendencia Financiera de Colombia.</p>
+                                </nav>
+                                <nav>
+                                    <p>Entregar el producto o prestar el servicio debidamente, es decir, en las 
+                                        condiciones informadas, ofrecidas o pactadas con el consumidor financiero, 
+                                        y emplear adecuados estándares de seguridad y calidad en el suministro de los mismos.</p>
+                                </nav>
+                                <nav>
+                                    <p>Suministrar información comprensible y publicidad transparente, clara, 
+                                        veraz, oportuna acerca de sus productos y servicios ofrecidos en el mercado.</p>
+                                </nav>
+                                <nav>
+                                    <p>Contar con un Sistema de Atención al Consumidor Financiero (SAC), en los términos 
+                                        indicados en la presente ley, en los decretos que la reglamenten y en las 
+                                        instrucciones que imparta sobre el particular la Superintendencia Financiera de Colombia.</p>
+                                </nav>
+                                <nav>
+                                    <p>Abstenerse de incurrir en conductas que conlleven abusos contractuales o de 
+                                        convenir cláusulas que puedan afectar el equilibrio del contrato o dar 
+                                        lugar a un abuso de posición dominante contractual.</p>
+                                </nav>
+                                <nav>
+                                    <p>Elaborar los contratos y anexos que regulen las relaciones con los clientes, 
+                                        con claridad, en caracteres legibles a simple vista, y ponerlos a disposición 
+                                        de estos para su aceptación. Copia de los documentos que soporten la relación 
+                                        contractual deberá estar a disposición del respectivo cliente, y contendrá 
+                                        los términos y condiciones del producto o servicio, los derechos y 
+                                        obligaciones, y las tasas de interés, precios o tarifas y la forma 
+                                        para determinarlos.</p>
+                                </nav>
+                                <nav>
+                                    <p>Abstenerse de hacer cobros no pactados o no informados previamente al consumidor 
+                                        financiero, de acuerdo con los términos establecidos en las normas sobre la 
+                                        materia, y tener a disposición de este los comprobantes o soportes de los 
+                                        pagos, transacciones u operaciones realizadas por cualquier canal ofrecido 
+                                        por la entidad vigilada. La conservación de dichos comprobantes y soportes 
+                                        deberá atender las normas sobre la materia.</p>
+                                </nav>
+                                <nav>
+                                    <p>Abstenerse de realizar cobro alguno por concepto de gastos de cobranza 
+                                        prejudicial sin haberse desplegado una actividad real encaminada 
+                                        efectivamente a dicha gestión, y sin haber informado previamente 
+                                        al consumidor financiero el valor de los mismos. Las gestiones de 
+                                        cobro deben efectuarse de manera respetuosa y en horarios adecuados.</p>
+                                </nav>
+                                <nav>
+                                    <p>Guardar la reserva de la información suministrada por el consumidor 
+                                        financiero y que tenga carácter de reservada en los términos 
+                                        establecidos en las normas correspondientes, sin perjuicio 
+                                        de su suministro a las autoridades competentes.</p>
+                                </nav>
+                                <nav>
+                                    <p>Dar constancia del estado y/o las condiciones específicas de los 
+                                        productos a una fecha determinada, cuando el consumidor financiero 
+                                        lo solicite, de conformidad con el procedimiento establecido para 
+                                        el efecto, salvo aquellos casos en que la entidad vigilada se 
+                                        encuentre obligada a hacerlo sin necesidad de solicitud previa.</p>
+                                </nav>
+                                <nav>
+                                    <p>Atender y dar respuesta oportuna a las solicitudes, quejas o reclamos 
+                                        formulados por los consumidores financieros, siguiendo los procedimientos 
+                                        establecidos para el efecto, las disposiciones consagradas en esta ley y 
+                                        en las demás normas que resulten aplicables.</p>
+                                </nav>
+                                <nav>
+                                    <p>Proveer los recursos humanos, físicos y tecnológicos para que en las 
+                                        sucursales y agencias se brinde una atención eficiente y oportuna 
+                                        a los consumidores financieros.</p>
+                                </nav>
+                                <nav>
+                                    <p>Permitir a sus clientes la consulta gratuita, al menos una vez al 
+                                        mes, por los canales que la entidad señale, del estado de sus 
+                                        productos y servicios.</p>
+                                </nav>
+                                <nav>
+                                    <p>Contar en su sitio en Internet con un enlace al sitio de la 
+                                        Superintendencia Financiera de Colombia dedicado al consumidor financiero.</p>
+                                </nav>
+                                <nav>
+                                    <p>Reportar a la Superintendencia Financiera de Colombia, en la forma que esta 
+                                        señale, el precio de todos los productos y servicios que se ofrezcan de 
+                                        manera masiva. Esta información deberá ser divulgada de manera permanente 
+                                        por cada entidad vigilada en sus oficinas, los cajeros de su red y su 
+                                        página de Internet.</p>
+                                </nav>
+                                <nav>
+                                    <p>Dar a conocer a los consumidores financieros, en los plazos que señale 
+                                        la Superintendencia Financiera de Colombia, por el respectivo canal y 
+                                        en forma previa a la realización de la operación, el costo de la 
+                                        misma, si lo hay, brindándoles la posibilidad de efectuarla o no.</p>
+                                </nav>
+                                <nav>
+                                    <p>Disponer de los medios electrónicos y controles idóneos para brindar 
+                                        eficiente seguridad a las transacciones, a la información confidencial 
+                                        de los consumidores financieros y a las redes que la contengan.</p>
+                                </nav>
+                                <nav>
+                                    <p>Colaborar oportuna y diligentemente con el Defensor del Consumidor 
+                                        Financiero, las autoridades judiciales y administrativas y los 
+                                        organismos de autorregulación en la recopilación de la información 
+                                        y la obtención de pruebas, en los casos que se requieran, entre 
+                                        otros, los de fraude, hurto o cualquier otra conducta que pueda 
+                                        ser constitutiva de un hecho punible realizada mediante la 
+                                        utilización de tarjetas crédito o débito, la realización de 
+                                        transacciones electrónicas o telefónicas, así como cualquier 
+                                        otra modalidad.</p>
+                                </nav>
+                                <nav>
+                                    <p>No requerir al consumidor financiero información que ya repose 
+                                        en la entidad vigilada o en sus dependencias, sucursales o 
+                                        agencias, sin perjuicio de la obligación del consumidor 
+                                        financiero de actualizar la información que de acuerdo 
+                                        con la normatividad correspondiente así lo requiera.</p>
+                                </nav>
+                                <nav>
+                                    <p>Desarrollar programas y campañas de educación financiera a 
+                                        sus clientes sobre los diferentes productos y servicios que 
+                                        prestan, obligaciones y derechos de estos y los costos de los 
+                                        productos y servicios que prestan, mercados y tipo de 
+                                        entidades vigiladas, así como de los diferentes mecanismos 
+                                        establecidos para la protección de sus derechos, según las 
+                                        instrucciones que para el efecto imparta la Superintendencia 
+                                        Financiera de Colombia.</p>
+                                </nav>
+                                <nav>
+                                    <p>Las demás previstas en esta ley, las normas concordantes, 
+                                        complementarias, reglamentarias, las que se deriven de 
+                                        la naturaleza del contrato celebrado o del servicio 
+                                        prestado a los consumidores financieros, así como de 
+                                        las instrucciones que emita la Superintendencia 
+                                        Financiera de Colombia en desarrollo de sus funciones 
+                                        y los organismos de autorregulación en sus reglamentos.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingNine">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                            Proceso de Conciliación ante la Defensoría del consumidor financiero
+                        </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>La conciliación es un mecanismo alternativo de solución de 
+                                conflictos en el que el consumidor y la entidad vigilada 
+                                en forma amistosa y equitativa, pueden llegar a un acuerdo 
+                                sin necesidad de acudir a un proceso judicial y con la 
+                                ayuda de un tercero calificado, en este caso el Defensor 
+                                del consumidor financiero.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingTen">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                            Procedimiento para solicitar la conciliación
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>La conciliación es un mecanismo alternativo de solución de 
+                                conflictos en el que el consumidor y la entidad vigilada en 
+                                forma amistosa y equitativa, pueden llegar a un acuerdo sin 
+                                necesidad de acudir a un proceso judicial y con la ayuda de 
+                                un tercero calificado, en este caso el Defensor del 
+                                consumidor financiero.</p>
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>Tanto el consumidor financiero como el Banco pueden presentar la 
+                                        solicitud de conciliación respecto de los asuntos que se deriven 
+                                        de la relación entre los dos.</p>
+                                </nav>
+                                <nav>
+                                    <p>Para hacerlo el consumidor financiero debe presentar 
+                                        un escrito en el que indique brevemente la situación 
+                                        y lo que pretende, anotando sus datos personales y 
+                                        las pruebas de que disponga.</p>
+                                </nav>
+                            </div>
+                            <p>Recuerde que en cualquier etapa del trámite podrá solicitar 
+                                la actuación del Defensor del Consumidor Financiero como conciliador.</p>
+                                <strong style="color: #00B1BB;">¡Esta conciliación es gratuita!</strong>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingEleven">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                            Asuntos que no son conciliables
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="content-vertical-list">
+                                <nav>
+                                    <p>La situación no tiene relación con los productos o servicios 
+                                        que presta la entidad vigilada (aquellos de tipo laboral o 
+                                        por su calidad de accionista de la entidad vigilada).</p>
+                                </nav>
+                                <nav>
+                                    <p>Se trate del no pago de obligaciones de prestaciones sociales 
+                                        o de pensiones, a menos que tenga relación con una indebida 
+                                        atención (calidad del servicio o en el trámite correspondiente).</p>
+                                </nav>
+                                <nav>
+                                    <p>El asunto supera los 100 SMLM.</p>
+                                </nav>
+                                <nav>
+                                    <p>El asunto está en trámite o ha sido resuelto por un juez 
+                                        (hay proceso judicial) o por un árbitro.</p>
+                                </nav>
+                                <nav>
+                                    <p>Los hechos ocurrieron hace tres o más años.</p>
+                                </nav>
+                                <nav>
+                                    <p>Ya tomé una decisión sobre el mismo asunto.</p>
+                                </nav>
+                                <nav>
+                                    <p>Se refiere a la decisión de la entidad de prestarle o no un servicio o producto.</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="accordion-header" id="flush-headingTwelve">
+                        <button style="background-color: #00B1BB; color: white; border-radius: 5px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                            Efectos de la conciliación
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>El acta de conciliación presta mérito ejecutivo, esto quiere 
+                                decir que, si las partes incumplen lo acordado en dicho 
+                                documento, se puede exigir el cumplimiento por la vía 
+                                judicial, directamente mediante un proceso ejecutivo 
+                                (porque la pretensión es indiscutible al estar contenida 
+                                en tal documento). Igualmente, el acuerdo al que lleguen 
+                                las partes en la conciliación tiene efectos de cosa juzgada, 
+                                lo que significa que la controversia quedó resuelta y no 
+                                puede acudirse a ninguna instancia judicial para que 
+                                conozca de los mismos hechos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-content icon-list" id="superintendencia">
+            <article>
+                <figure><img src="../public/icons/alert.svg" alt=""></figure>
+                <div>
+                    <h4>Superintendencia financiera de Colombia</h4>
+                    <p>Accede a la página web de la Superintendencia financiera 
+                        de Colombia para obtener más información.</p>
+                </div>
+            </article>
+            <article>
+                <figure><img src="../public/icons/canal-pqrs2.svg" alt=""></figure>
+                <div>
+                    <h4>Línea gratuita nacional</h4>
+                    <div class="content-vertical-list">
+                        <nav>
+                            <p><strong>Teléfono:</strong> 01 8000 120100.</p>
+                        </nav>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="tab-content" id="revisor">
+            <div class="revisor-content">
+                <h2>Revisoría Fiscal KPMG</h2>
+                <nav class="revisor-content-separe">
+                    <div class="content-vertical-list">
+                        <nav>
+                            <p>La Revisoría Fiscal hace las veces de un órgano de 
+                                control independiente cuyo objetivo es vigilar y 
+                                garantizar el cumplimiento ajustado de una 
+                                organización a la normativa externa e interna.</p>
+                        </nav>
+                        <nav>
+                            <p>Como consumidor Financiero podrás radicar tus 
+                                manifestaciones, quejas y sugerencias ante la 
+                                Revisoría Fiscal al siguiente correo electrónico:</p>
+                                <a href="" style="color: #00B1BB;">CO-FMColombia@kpmg.com</a>
+                        </nav>
+                    </div>
+                    <img src="../public/images/revisor_woman.webp" alt="">
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <help-button></help-button>
+      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+  <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
