@@ -7,11 +7,12 @@ class cardButton extends HTMLElement {
         this.title;
         this.text;
         this.ref;
+        this.dir;
     }
 
     static get observedAttributes() {
         return [
-            "image", "title", "text", "ref"
+            "image", "title", "text", "ref", "dir"
         ]
     }
 
@@ -39,6 +40,12 @@ class cardButton extends HTMLElement {
                 case "ref":
 
                     this.ref = newValue
+
+                    break;
+
+                case "dir":
+
+                    this.dir = newValue
 
                     break;
 
