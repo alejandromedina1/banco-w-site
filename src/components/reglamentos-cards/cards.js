@@ -22,7 +22,7 @@ class ReglamentosCards extends HTMLElement {
         //console.log(`attr ${propName} changed`)
         this[propName] = newValue
         this.render
-        this.showInfo
+        this.showInfo()
     }
 
     render() {
@@ -57,6 +57,7 @@ class ReglamentosCards extends HTMLElement {
             })
         });
     }
+    
 }
 
 customElements.define('reglamentos-cards', ReglamentosCards);

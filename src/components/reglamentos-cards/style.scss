@@ -16,6 +16,12 @@ div.card-container {
     box-shadow: 4.79833px 6.71767px 28.79px 0px rgba(159, 102, 219, 0.18);
 }
 
+div.card-container:hover .card-info{
+    position: relative;
+    opacity: 1;
+    transition: 2s;
+}
+
 img#image-header {
     width: 100%;
     border-radius: 8 8 0 0;
@@ -66,9 +72,9 @@ p.card-date {
 
 p.card-info {
     color: $gray-1;
-
     /* Desktop/Body */
-    display: none;
+    
+
     font-family: "font-bariol-regular";
     font-size: 1rem;
     font-style: normal;
@@ -77,8 +83,15 @@ p.card-info {
     /* 1.4625rem */
 }
 
+
+
 @media (max-width: 768px) {
     p.card-info {
         display: flex;
+    }
+}
+@media (min-width: 769px) {
+    p.card-info {
+        display: none;
     }
 }
