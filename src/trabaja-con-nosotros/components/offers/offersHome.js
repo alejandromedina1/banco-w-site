@@ -4,6 +4,8 @@ import data from "../../data.json";
 class OffersHome extends HTMLElement {
     constructor() {
         super();
+        this.currentPage = 0;
+        this.pageSize = 6; 
     }
 
     static get observedAttributes() {
@@ -22,8 +24,10 @@ class OffersHome extends HTMLElement {
     }
 
     render() {
+        const totalCards = data.cards.length;
+        const totalPages = Math.ceil(totalCards / this.pageSize);
 
-        const cards = data.cards.map((card) => `
+        const cards = data.cards.slice(this.currentPage, this.currentPage + this.pageSize).map((card) => `
             <article class="Info-offer">
             <h6>${card.title}</h6>
             <div class="Info-now">
@@ -65,7 +69,18 @@ class OffersHome extends HTMLElement {
             </div>
             <hr>
             </article>
-        `).join("")
+        `).join("");
+
+        const pageEnd = Math.min(this.currentPage + this.pageSize, totalCards);
+        const pageCounter = `${pageEnd} de ${totalCards} ofertas`;
+
+        const paginationButtons = [];
+        for (let i = 0; i < totalPages; i++) {
+            const pageNumber = i + 1;
+            const isActive = i === this.currentPage / this.pageSize ? "active" : "";
+
+            paginationButtons.push(`<button class="page-btn ${isActive}">${pageNumber}</button>`);
+        }
 
         this.innerHTML = `
         <div class="DesktopFilter">
@@ -149,10 +164,11 @@ class OffersHome extends HTMLElement {
                 </article>
 
                 <section class="Right">
-                    <div>
-                        <h2 class="Title-works">Empleo en BANCO W S.A.</h2>
-                        <hr class="line">
+                    <div class="Right-title">
+                        <h2>Empleo en BANCO W S.A.</h2>
+                        <p>${pageCounter}</p>
                     </div>
+                    <hr class="line">
                     <nav class="Filter">
                         <input type="text" placeholder="Seleccionar área de trabajo">
                         <button>
@@ -164,20 +180,46 @@ class OffersHome extends HTMLElement {
     
                     <section class="Info">
                         <div class="Info-counter">
-                            <p> 7 de 16 ofertas</p>
+                            <p>${pageCounter}</p>
                         </div>
 
                         ${cards}
                         
                         <div class="Info-pagination">
-                            <button class="active">1</button>
-                            <button>2</button>
-                            <button>3</button>
+                        <button id="previousBtn">Anterior</button>
+                            ${paginationButtons.join('')}
+                        <button id="nextBtn">Siguiente</button>
                         </div>
                     </section>
                 </section>
             </main>
-        `
+        `;
+
+        const previousBtn = this.querySelector('#previousBtn');
+        const nextBtn = this.querySelector('#nextBtn');
+        const pageButtons = this.querySelectorAll('.page-btn');
+
+        previousBtn.addEventListener('click', () => {
+            if (this.currentPage > 0) {
+                this.currentPage -= this.pageSize;
+                this.render();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (this.currentPage + this.pageSize < totalCards) {
+                this.currentPage += this.pageSize;
+                this.render();
+            }
+        });
+
+        pageButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                this.currentPage = index * this.pageSize;
+                this.render();
+            });
+        });
+
     }
 }
 

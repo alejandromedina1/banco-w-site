@@ -103,14 +103,18 @@
         font-family: font-geomanist-medium, sans-serif;
         font-size: 0.88769rem;
     }
-    &-pagination active {
-        color: $orange-500 !important;
-    }
 }
 
 .Left, .DesktopFilter {
     display: none;
 }
+
+.Right {
+    &-title p {
+        display: none;
+    }
+}
+
 
 
 
@@ -209,6 +213,18 @@
 
     .Right {
         width: 70%;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title p {
+            display: flex;
+            color: $gray-1;
+            font-family: font-bariol-regular, sans-serif;
+            font-size: 1.2rem;
+        }
     }
 
     .Title-works {
