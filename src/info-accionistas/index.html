@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Inversionista</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2 class="title">Información de Accionsitas</h2>
+        </span>
+        <img src="/images/atencion_inver_bg.webp" class="banner-bg">
+    </section>
+
+    <section class="content">
+        <div class="tab-content" id="info-accionitas-content">
+                <table>
+                        <h2 class="table-title">Composición Accionaria</h2>
+                    <tr class="table-head">
+                        <th>Accionistas</th>
+                        <th>Nit - Cédula</th>
+                        <th>Acciones</th>
+                        <th>Valor</th>
+                        <th>Participación</th>
+                    </tr>
+                    <tr class="table-data">
+                        <td>FUNDACIÓN WWB COLOMBIA</td>
+                        <td>890.321.989-5</td>
+                        <td>147.281.029</td>
+                        <td>147.281.029,000</td>
+                        <td>85.73844934%</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>DWM PANAMA S.A.</td>
+                        <td>444.444.059</td>
+                        <td>10.499.317</td>
+                        <td>10.499.317,000</td>
+                        <td>6.11209173%</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>BAMBOO FINANCIAL INCLUSIÓN PANAMA S.A.</td>
+                        <td>444.444.044</td>
+                        <td>10.499.317</td>
+                        <td>10.499.317,000</td>
+                        <td>6.11209173%</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>WWB ISIS FUND PANAMA INC</td>
+                        <td>444.444.033</td>
+                        <td>3.499.772</td>
+                        <td>3.499.772,000</td>
+                        <td>2.03736371%</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>ANA MILENA CADAVID DE JARAMILLO</td>
+                        <td>38.991.830</td>
+                        <td>2</td>
+                        <td>2,000</td>
+                        <td>0.00000116%</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>LUZ STELLA GARDEAZABAL JIMENEZ</td>
+                        <td>38.991.830</td>
+                        <td>2</td>
+                        <td>2,000</td>
+                        <td>0.00000116%</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>CLARA SERRA RIASCOS</td>
+                        <td>38.991.830</td>
+                        <td>2</td>
+                        <td>2,000</td>
+                        <td>0.00000116%</td>
+                    </tr>
+                </table>
+        </div>
+
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
+</html>
