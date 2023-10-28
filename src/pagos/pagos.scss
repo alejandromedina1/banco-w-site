@@ -18,6 +18,12 @@
 
 #modify {
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+#modify:hover {
+    text-decoration: underline;
+    transition: all 0.2s;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -67,7 +73,7 @@ main {
     &-header h3 {
         color: var(--gris, #EFEFEF);
         text-align: center;
-        font-family: "Geomanist";
+        font-family: "font-geomanist-bold";
         font-size: 20px;    
     }
 
@@ -90,7 +96,7 @@ main {
     }
     &-title h6 {
         color: c.$cyan-500;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
     }
     &-date,
@@ -110,13 +116,13 @@ main {
     &-date p,
     &-value p{
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 13px;
     }
 }
 .subtitle {
     color: c.$gray-1;
-    font-family: "Bariol";
+    font-family: "font-bariol-regular";
     margin-bottom: 1rme;
     font-size: 1.125rem;
     margin: 1.5rem 0 !important;
@@ -134,12 +140,12 @@ main {
     }
     & p {
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 1rem; 
     }
     & span {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 0.8125rem;
     }
 }
@@ -162,7 +168,7 @@ main {
     &-total p,
     &-value p {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 1rem; 
     }
 }
@@ -173,10 +179,10 @@ main {
     padding: 1rem 3rem;
     background: c.$orange-400;
     color: #FFF;
+    border: 2px solid c.$orange-400;
     text-align: center;
-    font-family: "Bariol";
+    font-family: "font-bariol-regular";
     font-size: 1rem;
-    border: none;
     margin-top: 1.5rem;
     cursor: pointer;
     transition: all 0.2s;
@@ -192,14 +198,14 @@ main {
 
 .minium-value {
     color: c.$gray-1;
-    font-family: "Bariol";
+    font-family: "font-bariol-regular";
     font-size: 1rem;
 }
 
 .Value {
     & label {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 0.8125rem;
         margin-bottom: 0.5rem;
     }
@@ -211,12 +217,12 @@ main {
         box-shadow: 5px 7px 25px 0px rgba(0, 177, 187, 0.10);
         padding: 0.7rem 0 0.7rem 0.5rem;
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 0.8125rem;
     }
     & ::placeholder {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 0.8125rem;
     }
 }
@@ -245,6 +251,8 @@ main {
 .toggle2 {
     display: none;
 }
+
+// -------- Checkbox -------- //
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     .checkbox-wrapper-13 input[type=checkbox] {
       --active: #FF8833;
@@ -333,8 +341,8 @@ main {
       border: 2px solid var(--active-inner);
       border-top: 0;
       border-left: 0;
-      left: 5.5px;
-      top: 3px;
+      left: 4.5px;
+      top: 2px;
       -webkit-transform: rotate(var(--r, 20deg));
           -ms-transform: rotate(var(--r, 20deg));
               transform: rotate(var(--r, 20deg));
@@ -357,13 +365,13 @@ main {
 .Review {
     & h3 {
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 18px;
         margin-top: 2rem;
     }
     & span {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 13px;
     }
     &-mount {
@@ -371,23 +379,23 @@ main {
     }
     &-mount h6 {
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
         margin-bottom: 0.5rem !important;
     }
     &-mount p {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
     }
     &-mount span {
         color: c.$orange-300;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         font-size: 13px;
     }
     &-pay {
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
         margin-bottom: 0.5rem !important;
     }
@@ -397,7 +405,7 @@ main {
         border: 1.932px solid #CDCDCD;
         background: #FFF;
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
         width: 100%;
     }
@@ -430,13 +438,13 @@ main {
     }
     & p {
         color: c.$gray-1;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 18px;
         margin-bottom: 9px;
     }
     & span {
         color: c.$gray-2;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
     }
 }
@@ -449,14 +457,14 @@ main {
     & h2 {
         color: c.$cyan-500;
         text-align: center;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 20px;
         margin-bottom: 3rem !important;
     }
     & p {
         color: c.$gray-1;
         text-align: center;
-        font-family: "Bariol";
+        font-family: "font-bariol-regular";
         font-size: 16px;
     }
 }
