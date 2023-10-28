@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Inversionista</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+        <span class="info">
+            <h2 class="title">Estados financieros</h2>
+        </span>
+        <img src="/images/atencion_inver_bg.webp" class="banner-bg">
+    </section>
+
+    <div class="tab-bar">
+        <button class="tab-button" data-tab="informes-anuales">Informes anuales</button>
+        <button class="tab-button" data-tab="informes-trimestrales">Informes trimestrales</button>
+    </div>
+
+    <section class="content">
+        <div class="tab-content" id="informes-anuales-content">
+            <form class="informes-form">
+                <select name="" id="">
+                    <option value="" disabled selected>Seleccione Año:</option>
+                    <option value="todos">Todos</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+            <a href="#" download="" class="pdf">
+                <div class="dropdownPages">
+                    <div class="dropdown-trigger download">
+                        <span>
+                            <img class="dropdown-arrow" src="/icons/fi_file-minus.svg" alt="">
+                            <h5 class="dropdown-title">Estados Financieros 2022</h5>
+                        </span>
+                        <img class="dropdown-arrow" src="/icons/download.svg" alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="tab-content" id="informes-trimestrales-content">
+            <form class="informes-form">
+                <select name="" id="">
+                    <option value="" disabled selected>Seleccione Año:</option>
+                    <option value="todos">Todos</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+            <a href="#" download="" class="pdf">
+                <div class="dropdownPages">
+                    <div class="dropdown-trigger download">
+                        <span>
+                            <img class="dropdown-arrow" src="/icons/fi_file-minus.svg" alt="">
+                            <h5 class="dropdown-title">Estados Financieros a Diciembre 2022</h5>
+                        </span>
+                        <img class="dropdown-arrow" src="/icons/download.svg" alt="">
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+</body>
+
+</html>
