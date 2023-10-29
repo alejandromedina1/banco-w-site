@@ -3,6 +3,12 @@
   color: $orange-500 !important;
 }
 
+.no-results {
+  font-family: "font-bariol-regular", sans-serif;
+  font-size: 1.5rem;
+  color: $gray-1;
+}
+
 .Title-works {
   color: $purple-300;
   font-family: "font-geomanist-medium", sans-serif;
@@ -276,7 +282,14 @@
       padding: 0.75rem 1rem;
       border-right: 1px solid $gray-2;
     }
-    &-work p {
+    &-work input {
+      color: $gray-1;
+      font-family: "font-bariol-regular", sans-serif;
+      font-size: 1.07875rem;
+      border-color: transparent;
+      padding-left: 3px;
+    }
+    &-work input::placeholder {
       color: $gray-2;
       font-family: "font-bariol-regular", sans-serif;
       font-size: 1.07875rem;

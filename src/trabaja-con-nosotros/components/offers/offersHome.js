@@ -7,6 +7,7 @@ class OffersHome extends HTMLElement {
     this.currentPage = 0;
     this.pageSize = 6;
     this.selectedCity = "";
+    this.searchText = "";
   }
 
   static get observedAttributes() {
@@ -23,12 +24,37 @@ class OffersHome extends HTMLElement {
   }
 
   render() {
-    const cities = ["Cali", "Bogotá", "Medellín", "Barranquilla", "Cartagena", "Pereira", "Bucaramanga", "Manizales", "Cúcuta", "Pasto"];
+    const cities = [
+      "Cali",
+      "Bogotá",
+      "Medellín",
+      "Barranquilla",
+      "Cartagena",
+      "Pereira",
+      "Bucaramanga",
+      "Manizales",
+      "Cúcuta",
+      "Pasto",
+    ];
 
     const totalCards = data.cards.length;
-    const filteredCards = data.cards.filter(
-      (card) => this.selectedCity === "" || card.city === this.selectedCity
-    );
+    let filteredCards = data.cards;
+
+    if (this.selectedCity) {
+      filteredCards = filteredCards.filter(
+        (card) => card.city === this.selectedCity
+      );
+    }
+
+    if (this.searchText) {
+      const search = this.searchText.toLowerCase();
+      filteredCards = filteredCards.filter(
+        (card) =>
+          card.city.toLowerCase().includes(search) ||
+          card.title.toLowerCase().includes(search)
+      );
+    }
+
     const totalPages = Math.ceil(filteredCards.length / this.pageSize);
 
     const cards = filteredCards
@@ -91,12 +117,15 @@ class OffersHome extends HTMLElement {
     const paginationButtons = [];
     for (let i = 0; i < totalPages; i++) {
       const pageNumber = i + 1;
-      const isActive = i === this.currentPage / this.pageSize ? "active-page" : "";
+      const isActive =
+        i === this.currentPage / this.pageSize ? "active-page" : "";
 
       paginationButtons.push(
         `<button class="page-btn ${isActive}">${pageNumber}</button>`
       );
     }
+
+    const resultsMessage = filteredCards.length > 0 ? "" : `<p class="no-results">No hay resultados para "${this.searchText}"</p>`;
 
     this.innerHTML = `
         <div class="DesktopFilter">
@@ -105,7 +134,9 @@ class OffersHome extends HTMLElement {
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3249 12.8955L19.7044 18.2767C19.8928 18.4654 20 18.7226 20 18.9912C20 19.2598 19.8928 19.5142 19.7044 19.7056C19.516 19.8943 19.258 20 18.9914 20C18.7247 20 18.4668 19.8943 18.2784 19.7056L12.8989 14.3244C11.2903 15.5704 9.26722 16.1562 7.24414 15.9648C5.21815 15.7733 3.34286 14.8159 1.998 13.2898C0.653144 11.7638 -0.0598288 9.78044 0.00393607 7.74853C0.0705993 5.71376 0.905359 3.78187 2.34297 2.34439C3.78347 0.906908 5.71378 0.0695673 7.74845 0.00383742C9.78023 -0.0590346 11.7628 0.652562 13.2873 1.9986C14.8148 3.34463 15.7713 5.21936 15.9625 7.24555C16.1567 9.27175 15.5712 11.2951 14.3249 12.904V12.8955ZM8.00065 13.9957C9.59187 13.9957 11.1193 13.3641 12.2439 12.2382C13.3685 11.1122 14.0003 9.58611 14.0003 7.9943C14.0003 6.40249 13.3685 4.87642 12.2439 3.75044C11.1193 2.62446 9.59187 1.99288 8.00065 1.99288C6.40943 1.99288 4.88483 2.62446 3.75735 3.75044C2.63277 4.87642 2.0009 6.40249 2.0009 7.9943C2.0009 9.58611 2.63277 11.1122 3.75735 12.2382C4.88483 13.3641 6.40943 13.9957 8.00065 13.9957Z" fill="#797979"/>
                         </svg>
-                        <p>Seleccionar área de trabajo</p>
+                        <input type="text" id="searchInput" placeholder="Escribe para buscar.." value="${
+                          this.searchText
+                        }">
                     </div>
                     <div class="DesktopFilter-city">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
@@ -115,12 +146,15 @@ class OffersHome extends HTMLElement {
                             <option>Selecciona la ciudad</option>
                             <option value="">Todas las ciudades</option>
                             ${cities
-                              .map((city) => `<option value="${city}">${city}</option>`)
+                              .map(
+                                (city) =>
+                                  `<option value="${city}">${city}</option>`
+                              )
                               .join("")}
                           </select>
                     </div>
                 </div>
-                <button>Buscar</button>
+                <button id="searchBtn">Buscar</button>
             </div>
 
             <main class="Main">
@@ -204,6 +238,7 @@ class OffersHome extends HTMLElement {
                         </div>
 
                         ${cards}
+                        <p class="results-message">${resultsMessage}</p>
                         
                         <div class="Info-pagination">
                         <button id="previousBtn">Anterior</button>
@@ -219,13 +254,20 @@ class OffersHome extends HTMLElement {
     const nextBtn = this.querySelector("#nextBtn");
     const pageButtons = this.querySelectorAll(".page-btn");
     const detailsButtons = this.querySelectorAll(".details-btn");
-    const citySelect = this.querySelector('#citySelect');
+    const citySelect = this.querySelector("#citySelect");
+    const searchInput = this.querySelector("#searchInput");
+    const searchBtn = this.querySelector("#searchBtn");
 
-    citySelect.addEventListener('change', () => {
+    citySelect.addEventListener("change", () => {
       this.selectedCity = citySelect.value;
-      this.currentPage = 0; // Resetear a la primera página al cambiar la ciudad
+      this.currentPage = 0;
+    });
+
+    searchBtn.addEventListener("click", () => {
+      this.searchText = searchInput.value;
+      this.currentPage = 0;
       this.render();
-  });
+    });
 
     previousBtn.addEventListener("click", () => {
       if (this.currentPage > 0) {
