@@ -2,32 +2,75 @@ import "./offersHome.scss";
 import data from "../../data.json";
 
 class OffersHome extends HTMLElement {
-    constructor() {
-        super();
-        this.currentPage = 0;
-        this.pageSize = 6; 
+  constructor() {
+    super();
+    this.currentPage = 0;
+    this.pageSize = 6;
+    this.selectedCity = "";
+    this.searchText = "";
+    this.searchText2 = "";
+  }
+
+  static get observedAttributes() {
+    return [];
+  }
+
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+    switch (nameAtr) {
+    }
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    const cities = [
+      "Cali",
+      "Bogotá",
+      "Medellín",
+      "Barranquilla",
+      "Cartagena",
+      "Pereira",
+      "Bucaramanga",
+      "Manizales",
+      "Cúcuta",
+      "Pasto",
+    ];
+
+    const totalCards = data.cards.length;
+    let filteredCards = data.cards;
+
+    if (this.selectedCity) {
+      filteredCards = filteredCards.filter(
+        (card) => card.city === this.selectedCity
+      );
     }
 
-    static get observedAttributes() {
-        return [
-        ]
+    if (this.searchText) {
+      const search = this.searchText.toLowerCase();
+      filteredCards = filteredCards.filter(
+        (card) =>
+          card.city.toLowerCase().includes(search) ||
+          card.title.toLowerCase().includes(search)
+      );
     }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
-
-        switch (nameAtr) {
-        }
+    if (this.searchText2) {
+      const search2 = this.searchText2.toLowerCase();
+      filteredCards = filteredCards.filter(
+        (card) =>
+          card.city.toLowerCase().includes(search2) ||
+          card.title.toLowerCase().includes(search2)
+      );
     }
 
-    connectedCallback() {
-        this.render()
-    }
+    const totalPages = Math.ceil(filteredCards.length / this.pageSize);
 
-    render() {
-        const totalCards = data.cards.length;
-        const totalPages = Math.ceil(totalCards / this.pageSize);
-
-        const cards = data.cards.slice(this.currentPage, this.currentPage + this.pageSize).map((card) => `
+    const cards = filteredCards
+      .slice(this.currentPage, this.currentPage + this.pageSize)
+      .map(
+        (card) => `
             <article class="Info-offer">
             <h6>${card.title}</h6>
             <div class="Info-now">
@@ -65,42 +108,70 @@ class OffersHome extends HTMLElement {
                 </div>
             </div>
             <div class="Info-more">
-                <button class="details-btn" data-card='${JSON.stringify(card)}'>Ver más</button>
+                <button class="details-btn" data-card='${JSON.stringify(
+                  card
+                )}'>Ver más</button>
             </div>
             <hr>
             </article>
-        `).join("");
+        `
+      )
+      .join("");
 
-        const pageEnd = Math.min(this.currentPage + this.pageSize, totalCards);
-        const pageCounter = `${pageEnd} de ${totalCards} ofertas`;
+    const pageEnd = Math.min(
+      this.currentPage + this.pageSize,
+      filteredCards.length
+    );
+    const pageCounter = `${pageEnd} de ${filteredCards.length} ofertas`;
 
-        const paginationButtons = [];
-        for (let i = 0; i < totalPages; i++) {
-            const pageNumber = i + 1;
-            const isActive = i === this.currentPage / this.pageSize ? "active" : "";
+    const paginationButtons = [];
+    for (let i = 0; i < totalPages; i++) {
+      const pageNumber = i + 1;
+      const isActive =
+        i === this.currentPage / this.pageSize ? "active-page" : "";
 
-            paginationButtons.push(`<button class="page-btn ${isActive}">${pageNumber}</button>`);
-        }
+      paginationButtons.push(
+        `<button class="page-btn ${isActive}">${pageNumber}</button>`
+      );
+    }
 
-        this.innerHTML = `
+    const resultsMessage =
+      filteredCards.length > 0
+        ? ""
+        : `<p class="no-results">No hay resultados para "${this.searchText}"</p>`;
+    const resultsMessage2 =
+      filteredCards.length > 0
+        ? ""
+        : `No hay resultados para "${this.searchText2}"`;
+
+    this.innerHTML = `
         <div class="DesktopFilter">
                 <div class="DesktopFilter-selects">
                     <div class="DesktopFilter-work">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3249 12.8955L19.7044 18.2767C19.8928 18.4654 20 18.7226 20 18.9912C20 19.2598 19.8928 19.5142 19.7044 19.7056C19.516 19.8943 19.258 20 18.9914 20C18.7247 20 18.4668 19.8943 18.2784 19.7056L12.8989 14.3244C11.2903 15.5704 9.26722 16.1562 7.24414 15.9648C5.21815 15.7733 3.34286 14.8159 1.998 13.2898C0.653144 11.7638 -0.0598288 9.78044 0.00393607 7.74853C0.0705993 5.71376 0.905359 3.78187 2.34297 2.34439C3.78347 0.906908 5.71378 0.0695673 7.74845 0.00383742C9.78023 -0.0590346 11.7628 0.652562 13.2873 1.9986C14.8148 3.34463 15.7713 5.21936 15.9625 7.24555C16.1567 9.27175 15.5712 11.2951 14.3249 12.904V12.8955ZM8.00065 13.9957C9.59187 13.9957 11.1193 13.3641 12.2439 12.2382C13.3685 11.1122 14.0003 9.58611 14.0003 7.9943C14.0003 6.40249 13.3685 4.87642 12.2439 3.75044C11.1193 2.62446 9.59187 1.99288 8.00065 1.99288C6.40943 1.99288 4.88483 2.62446 3.75735 3.75044C2.63277 4.87642 2.0009 6.40249 2.0009 7.9943C2.0009 9.58611 2.63277 11.1122 3.75735 12.2382C4.88483 13.3641 6.40943 13.9957 8.00065 13.9957Z" fill="#797979"/>
                         </svg>
-                        <p>Seleccionar área de trabajo</p>
+                        <input type="text" id="searchInput" placeholder="Buscar por ciudad o título" value="${
+                          this.searchText
+                        }">
                     </div>
                     <div class="DesktopFilter-city">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
                             <path d="M21.5454 9.63C21.402 8.16892 20.8746 6.76909 20.0145 5.56682C19.1544 4.36456 17.9909 3.40083 16.6375 2.7695C15.284 2.13816 13.7866 1.86072 12.291 1.96421C10.7955 2.06769 9.35283 2.54856 8.10349 3.36C7.03018 4.06265 6.12914 4.9893 5.46511 6.07339C4.80107 7.15749 4.39052 8.37211 4.26295 9.63C4.13781 10.8797 4.29837 12.1409 4.73298 13.3223C5.16759 14.5036 5.86535 15.5755 6.77565 16.46L12.1892 21.77C12.2841 21.8637 12.3971 21.9381 12.5216 21.9889C12.646 22.0397 12.7795 22.0658 12.9144 22.0658C13.0492 22.0658 13.1827 22.0397 13.3072 21.9889C13.4317 21.9381 13.5446 21.8637 13.6396 21.77L19.0327 16.46C19.943 15.5755 20.6408 14.5036 21.0754 13.3223C21.51 12.1409 21.6705 10.8797 21.5454 9.63ZM17.6027 15.05L12.9042 19.65L8.20564 15.05C7.5132 14.3721 6.98279 13.5523 6.65253 12.6498C6.32227 11.7472 6.20037 10.7842 6.29558 9.83C6.39141 8.86111 6.70595 7.92516 7.21646 7.08985C7.72697 6.25453 8.4207 5.54071 9.24748 5C10.3312 4.29524 11.6032 3.9193 12.9042 3.9193C14.2051 3.9193 15.4772 4.29524 16.5609 5C17.3851 5.53862 18.0773 6.24928 18.5877 7.08094C19.0981 7.9126 19.414 8.84461 19.5128 9.81C19.6111 10.7674 19.4907 11.7343 19.1604 12.6406C18.83 13.5468 18.2979 14.3698 17.6027 15.05ZM12.9042 6C11.9951 6 11.1064 6.26392 10.3506 6.75839C9.59468 7.25286 9.00555 7.95566 8.65766 8.77793C8.30977 9.6002 8.21874 10.505 8.3961 11.3779C8.57345 12.2508 9.01121 13.0526 9.65403 13.682C10.2968 14.3113 11.1158 14.7399 12.0075 14.9135C12.8991 15.0872 13.8233 14.9981 14.6631 14.6575C15.503 14.3169 16.2209 13.7401 16.7259 13.0001C17.231 12.26 17.5006 11.39 17.5006 10.5C17.4979 9.30734 17.0127 8.16428 16.1513 7.32094C15.2899 6.4776 14.1224 6.00265 12.9042 6ZM12.9042 13C12.3991 13 11.9054 12.8534 11.4855 12.5787C11.0656 12.304 10.7383 11.9135 10.545 11.4567C10.3517 10.9999 10.3012 10.4972 10.3997 10.0123C10.4982 9.52733 10.7414 9.08187 11.0985 8.73224C11.4557 8.38261 11.9107 8.1445 12.406 8.04804C12.9013 7.95158 13.4148 8.00109 13.8814 8.1903C14.348 8.37952 14.7468 8.69996 15.0274 9.11108C15.308 9.5222 15.4577 10.0056 15.4577 10.5C15.4577 11.163 15.1887 11.7989 14.7098 12.2678C14.2309 12.7366 13.5814 13 12.9042 13Z" fill="#797979"/>
                           </svg>
-                        <select name="" id="">
-                            <option value="">Seleccionar Ciudad</option>
-                        </select>
+                          <select id="citySelect">
+                            <option>Selecciona la ciudad</option>
+                            <option value="">Todas las ciudades</option>
+                            ${cities
+                              .map(
+                                (city) =>
+                                  `<option value="${city}">${city}</option>`
+                              )
+                              .join("")}
+                          </select>
                     </div>
                 </div>
-                <button>Buscar</button>
+                <button id="searchBtn">Buscar</button>
             </div>
 
             <main class="Main">
@@ -112,26 +183,26 @@ class OffersHome extends HTMLElement {
                         <p>Salario (en millones de pesos)</p>
                     </div>
                     <div class="Left-checkboxes">
-                        <label for="">
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$1 a $1,5</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$1,5 a $2</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$2 a $2,5</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$3,5 a $4</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$4,5 a $5,5</p>
-                        </label>
+                        </div>
                     </div>
                     <div class="Left-salary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -140,26 +211,26 @@ class OffersHome extends HTMLElement {
                         <p>Fecha de publicación</p>
                     </div>
                     <div class="Left-checkboxes">
-                        <label class="circular-checkbox" for="">
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hoy y ayer</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace 1 semana</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace 2 semanas</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace 1 mes</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace más de 1 mes</p>
-                        </label>
+                        </div>
                     </div>
                 </article>
 
@@ -170,11 +241,12 @@ class OffersHome extends HTMLElement {
                     </div>
                     <hr class="line">
                     <nav class="Filter">
-                        <input type="text" placeholder="Seleccionar área de trabajo">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path d="M12.2043 2.2644H3.22319C2.71277 2.2644 2.22326 2.46717 1.86234 2.82809C1.50142 3.189 1.29866 3.67852 1.29866 4.18893V4.9395C1.29857 5.20441 1.35317 5.46648 1.45904 5.70931V5.7478C1.54967 5.95371 1.67804 6.14083 1.83753 6.2995L5.78923 10.2255V14.4531C5.78901 14.5621 5.81658 14.6694 5.86933 14.7648C5.92209 14.8602 5.99829 14.9406 6.09074 14.9984C6.19283 15.0616 6.31063 15.095 6.43074 15.0946C6.53116 15.094 6.63004 15.0698 6.71942 15.024L9.28545 13.741C9.39125 13.6877 9.48021 13.6061 9.54249 13.5054C9.60477 13.4046 9.63793 13.2885 9.63828 13.1701V10.2255L13.5643 6.2995C13.7238 6.14083 13.8522 5.95371 13.9428 5.7478V5.70931C14.0575 5.46838 14.1209 5.20623 14.1289 4.9395V4.18893C14.1289 3.67852 13.9261 3.189 13.5652 2.82809C13.2043 2.46717 12.7147 2.2644 12.2043 2.2644ZM8.5413 9.50705C8.48185 9.56699 8.43481 9.63808 8.40288 9.71624C8.37096 9.7944 8.35478 9.87809 8.35527 9.96252V12.7723L7.07225 13.4138V9.96252C7.07273 9.87809 7.05655 9.7944 7.02463 9.71624C6.9927 9.63808 6.94566 9.56699 6.88621 9.50705L3.48621 6.11346H11.9413L8.5413 9.50705ZM12.8458 4.83044H2.58168V4.18893C2.58168 4.01879 2.64927 3.85562 2.76957 3.73532C2.88988 3.61501 3.05305 3.54742 3.22319 3.54742H12.2043C12.3745 3.54742 12.5376 3.61501 12.6579 3.73532C12.7782 3.85562 12.8458 4.01879 12.8458 4.18893V4.83044Z" fill="white"/>
-                            </svg>
+                        <input type="text" id="searchInput2" placeholder="Buscar por ciudad o título" value="${this.searchText2}">
+                        <button id="searchBtn2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3249 12.8955L19.7044 18.2767C19.8928 18.4654 20 18.7226 20 18.9912C20 19.2598 19.8928 19.5142 19.7044 19.7056C19.516 19.8943 19.258 20 18.9914 20C18.7247 20 18.4668 19.8943 18.2784 19.7056L12.8989 14.3244C11.2903 15.5704 9.26722 16.1562 7.24414 15.9648C5.21815 15.7733 3.34286 14.8159 1.998 13.2898C0.653144 11.7638 -0.0598288 9.78044 0.00393607 7.74853C0.0705993 5.71376 0.905359 3.78187 2.34297 2.34439C3.78347 0.906908 5.71378 0.0695673 7.74845 0.00383742C9.78023 -0.0590346 11.7628 0.652562 13.2873 1.9986C14.8148 3.34463 15.7713 5.21936 15.9625 7.24555C16.1567 9.27175 15.5712 11.2951 14.3249 12.904V12.8955ZM8.00065 13.9957C9.59187 13.9957 11.1193 13.3641 12.2439 12.2382C13.3685 11.1122 14.0003 9.58611 14.0003 7.9943C14.0003 6.40249 13.3685 4.87642 12.2439 3.75044C11.1193 2.62446 9.59187 1.99288 8.00065 1.99288C6.40943 1.99288 4.88483 2.62446 3.75735 3.75044C2.63277 4.87642 2.0009 6.40249 2.0009 7.9943C2.0009 9.58611 2.63277 11.1122 3.75735 12.2382C4.88483 13.3641 6.40943 13.9957 8.00065 13.9957Z" fill="#FFFFFF"/>
+                          </svg>
+                            Buscar
                         </button>
                     </nav>
     
@@ -184,10 +256,12 @@ class OffersHome extends HTMLElement {
                         </div>
 
                         ${cards}
-                        
+                        <p class="results-message">${resultsMessage}</p>
+                        <p class="results-message">${resultsMessage2}</p>
+
                         <div class="Info-pagination">
                         <button id="previousBtn">Anterior</button>
-                            ${paginationButtons.join('')}
+                            ${paginationButtons.join("")}
                         <button id="nextBtn">Siguiente</button>
                         </div>
                     </section>
@@ -195,42 +269,64 @@ class OffersHome extends HTMLElement {
             </main>
         `;
 
-        const previousBtn = this.querySelector('#previousBtn');
-        const nextBtn = this.querySelector('#nextBtn');
-        const pageButtons = this.querySelectorAll('.page-btn');
-        const detailsButtons = this.querySelectorAll('.details-btn');
+    const previousBtn = this.querySelector("#previousBtn");
+    const nextBtn = this.querySelector("#nextBtn");
+    const pageButtons = this.querySelectorAll(".page-btn");
+    const detailsButtons = this.querySelectorAll(".details-btn");
+    const citySelect = this.querySelector("#citySelect");
+    const searchInput = this.querySelector("#searchInput");
+    const searchBtn = this.querySelector("#searchBtn");
+    const searchInput2 = this.querySelector('#searchInput2');
+        const searchBtn2 = this.querySelector('#searchBtn2');
 
-        previousBtn.addEventListener('click', () => {
-            if (this.currentPage > 0) {
-                this.currentPage -= this.pageSize;
-                this.render();
-            }
+    citySelect.addEventListener("change", () => {
+      this.selectedCity = citySelect.value;
+      this.currentPage = 0;
+    });
+
+    searchBtn.addEventListener("click", () => {
+      this.searchText = searchInput.value;
+      this.currentPage = 0;
+      this.render();
+    });
+
+    searchBtn2.addEventListener('click', () => {
+            this.searchText2 = searchInput2.value;
+            this.currentPage = 0;
+            this.render();
         });
 
-        nextBtn.addEventListener('click', () => {
-            if (this.currentPage + this.pageSize < totalCards) {
-                this.currentPage += this.pageSize;
-                this.render();
-            }
-        });
+    previousBtn.addEventListener("click", () => {
+      if (this.currentPage > 0) {
+        this.currentPage -= this.pageSize;
+        this.render();
+      }
+    });
 
-        pageButtons.forEach((button, index) => {
-            button.addEventListener('click', () => {
-                this.currentPage = index * this.pageSize;
-                this.render();
-            });
-        });
+    nextBtn.addEventListener("click", () => {
+      if (this.currentPage + this.pageSize < filteredCards.length) {
+        this.currentPage += this.pageSize;
+        this.render();
+      }
+    });
 
-        detailsButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                const details = JSON.parse(button.getAttribute('data-card'));
-                this.style.display = 'none';
-                const detailsComponent = document.querySelector('offers-details');
-                detailsComponent.style.display = 'block';
-                detailsComponent.render(details);
-            });
-        });
-    }
+    pageButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        this.currentPage = index * this.pageSize;
+        this.render();
+      });
+    });
+
+    detailsButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const details = JSON.parse(button.getAttribute("data-card"));
+        this.style.display = "none";
+        const detailsComponent = document.querySelector("offers-details");
+        detailsComponent.style.display = "block";
+        detailsComponent.render(details);
+      });
+    });
+  }
 }
 
-customElements.define('offers-home', OffersHome)
+customElements.define("offers-home", OffersHome);

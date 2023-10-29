@@ -2,100 +2,97 @@ import "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js";
 import "./carrousel.scss";
 
 class TurnsCarrousel extends HTMLElement {
-    constructor() {
-        super();
-        this.icon1;
-        this.icon2;
-        this.icon3;
-        this.name1;
-        this.name2;
-        this.name3;
-        this.since1;
-        this.since2;
-        this.since3;
-        this.state1;
-        this.state2;
-        this.state3;
+  constructor() {
+    super();
+    this.icon1;
+    this.icon2;
+    this.icon3;
+    this.name1;
+    this.name2;
+    this.name3;
+    this.since1;
+    this.since2;
+    this.since3;
+    this.state1;
+    this.state2;
+    this.state3;
+  }
+
+  static get observedAttributes() {
+    return [
+      "icon1",
+      "icon2",
+      "icon3",
+      "name1",
+      "name2",
+      "name3",
+      "since1",
+      "since2",
+      "since3",
+      "state1",
+      "state2",
+      "state3",
+    ];
+  }
+
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+    switch (nameAtr) {
+      case "icon1":
+        this.icon1 = newValue;
+        break;
+
+      case "icicon2on":
+        this.icon2 = newValue;
+        break;
+
+      case "icon3":
+        this.icon3 = newValue;
+        break;
+
+      case "name1":
+        this.name1 = newValue;
+        break;
+
+      case "name2":
+        this.name2 = newValue;
+        break;
+
+      case "name3":
+        this.name3 = newValue;
+        break;
+
+      case "since1":
+        this.since1 = newValue;
+        break;
+
+      case "since2":
+        this.since2 = newValue;
+        break;
+
+      case "since3":
+        this.since3 = newValue;
+        break;
+
+      case "state1":
+        this.state1 = newValue;
+        break;
+
+      case "state2":
+        this.state2 = newValue;
+        break;
+
+      case "state3":
+        this.state3 = newValue;
+        break;
     }
+  }
 
-    static get observedAttributes() {
-        return [
-            "icon1",
-            "icon2",
-            "icon3",
-            "name1",
-            "name2",
-            "name3",
-            "since1",
-            "since2",
-            "since3",
-            "state1",
-            "state2",
-            "state3"
-        ]
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
-
-        switch (nameAtr) {
-            case "icon1":
-                this.icon1 = newValue
-                break;
-
-            case "icicon2on":
-                this.icon2 = newValue
-                break;
-
-            case "icon3":
-                this.icon3 = newValue
-                break;
-
-            case "name1":
-                this.name1 = newValue
-                break;
-
-            case "name2":
-                this.name2 = newValue
-                break;
-
-            case "name3":
-                this.name3 = newValue
-                break;
-
-            case "since1":
-                this.since1 = newValue
-                break;
-
-            case "since2":
-                this.since2 = newValue
-                break;
-
-            case "since3":
-                this.since3 = newValue
-                break;
-                
-            case "state1":
-                this.state1 = newValue
-                break;
-
-            case "state2":
-                this.state2 = newValue
-                break;
-
-            case "state3":
-                this.state3 = newValue
-                break;
-
-        }
-
-    }
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../TurnsCarrousel/carrousel.scss">
      <!-- Swiper -->
@@ -169,18 +166,15 @@ class TurnsCarrousel extends HTMLElement {
   </div>
     `;
 
-
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    pagination: {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-});
-    }
-
+      },
+    });
+  }
 }
 
-customElements.define('turns-carrousel', TurnsCarrousel)
+customElements.define("turns-carrousel", TurnsCarrousel);

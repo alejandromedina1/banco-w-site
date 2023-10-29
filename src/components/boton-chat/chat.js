@@ -1,34 +1,34 @@
-import './chat.scss'
+import "./chat.scss";
 
 class Chat extends HTMLElement {
-    constructor() {
-        super()
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return []; 
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    connectedCallback() {
-        this.render();
+  connectedCallback() {
+    this.render();
 
-        const close = document.getElementById('close-chat');
-        const open = document.getElementById('show-chat');
-        const btns = document.getElementById('close-btns');
+    const close = document.getElementById("close-chat");
+    const open = document.getElementById("show-chat");
+    const btns = document.getElementById("close-btns");
 
-        close.addEventListener('click', () => {
-        open.style.display = 'none';
-        btns.style.display = 'block';
-        });
-    }
+    close.addEventListener("click", () => {
+      open.style.display = "none";
+      btns.style.display = "block";
+    });
+  }
 
-    attributeChangedCallback(propName, oldValue, newValue) {
-        this[propName] = newValue
-        this.render
-    }
+  attributeChangedCallback(propName, oldValue, newValue) {
+    this[propName] = newValue;
+    this.render;
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <aside>
         <header class="Chat">
             <div id="close-chat" class="Chat-info">
@@ -77,9 +77,8 @@ class Chat extends HTMLElement {
         </section>
     </aside>
         `;
-    }
-
+  }
 }
 
-customElements.define('chat-component', Chat)
+customElements.define("chat-component", Chat);
 export default Chat;

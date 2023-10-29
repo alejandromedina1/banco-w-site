@@ -35,13 +35,13 @@ h6 {
     text-align: center;
     
     & h6 {
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         font-size: 18px; 
         color: white;
         margin-top: 0.5rem;
     }
     & span {
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         font-size: 13px;
         color: white;
     }
@@ -55,7 +55,7 @@ h6 {
     & div {
         display: flex;
         flex-direction: column;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         font-size: 13px;
         color: white;
     }
