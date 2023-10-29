@@ -2,32 +2,33 @@ import "./offersHome.scss";
 import data from "../../data.json";
 
 class OffersHome extends HTMLElement {
-    constructor() {
-        super();
-        this.currentPage = 0;
-        this.pageSize = 6; 
+  constructor() {
+    super();
+    this.currentPage = 0;
+    this.pageSize = 6;
+  }
+
+  static get observedAttributes() {
+    return [];
+  }
+
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+    switch (nameAtr) {
     }
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  render() {
+    const totalCards = data.cards.length;
+    const totalPages = Math.ceil(totalCards / this.pageSize);
 
-        switch (nameAtr) {
-        }
-    }
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-        const totalCards = data.cards.length;
-        const totalPages = Math.ceil(totalCards / this.pageSize);
-
-        const cards = data.cards.slice(this.currentPage, this.currentPage + this.pageSize).map((card) => `
+    const cards = data.cards
+      .slice(this.currentPage, this.currentPage + this.pageSize)
+      .map(
+        (card) => `
             <article class="Info-offer">
             <h6>${card.title}</h6>
             <div class="Info-now">
@@ -65,24 +66,30 @@ class OffersHome extends HTMLElement {
                 </div>
             </div>
             <div class="Info-more">
-                <button class="details-btn" data-card='${JSON.stringify(card)}'>Ver más</button>
+                <button class="details-btn" data-card='${JSON.stringify(
+                  card
+                )}'>Ver más</button>
             </div>
             <hr>
             </article>
-        `).join("");
+        `
+      )
+      .join("");
 
-        const pageEnd = Math.min(this.currentPage + this.pageSize, totalCards);
-        const pageCounter = `${pageEnd} de ${totalCards} ofertas`;
+    const pageEnd = Math.min(this.currentPage + this.pageSize, totalCards);
+    const pageCounter = `${pageEnd} de ${totalCards} ofertas`;
 
-        const paginationButtons = [];
-        for (let i = 0; i < totalPages; i++) {
-            const pageNumber = i + 1;
-            const isActive = i === this.currentPage / this.pageSize ? "active" : "";
+    const paginationButtons = [];
+    for (let i = 0; i < totalPages; i++) {
+      const pageNumber = i + 1;
+      const isActive = i === this.currentPage / this.pageSize ? "active" : "";
 
-            paginationButtons.push(`<button class="page-btn ${isActive}">${pageNumber}</button>`);
-        }
+      paginationButtons.push(
+        `<button class="page-btn ${isActive}">${pageNumber}</button>`
+      );
+    }
 
-        this.innerHTML = `
+    this.innerHTML = `
         <div class="DesktopFilter">
                 <div class="DesktopFilter-selects">
                     <div class="DesktopFilter-work">
@@ -112,26 +119,26 @@ class OffersHome extends HTMLElement {
                         <p>Salario (en millones de pesos)</p>
                     </div>
                     <div class="Left-checkboxes">
-                        <label for="">
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$1 a $1,5</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$1,5 a $2</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$2 a $2,5</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$3,5 a $4</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>$4,5 a $5,5</p>
-                        </label>
+                        </div>
                     </div>
                     <div class="Left-salary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -140,26 +147,26 @@ class OffersHome extends HTMLElement {
                         <p>Fecha de publicación</p>
                     </div>
                     <div class="Left-checkboxes">
-                        <label class="circular-checkbox" for="">
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hoy y ayer</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace 1 semana</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace 2 semanas</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace 1 mes</p>
-                        </label>
-                        <label for="">
+                        </div>
+                        <div class="checkbox-wrapper-13">
                             <input type="checkbox" name="" id="">
                             <p>Hace más de 1 mes</p>
-                        </label>
+                        </div>
                     </div>
                 </article>
 
@@ -187,7 +194,7 @@ class OffersHome extends HTMLElement {
                         
                         <div class="Info-pagination">
                         <button id="previousBtn">Anterior</button>
-                            ${paginationButtons.join('')}
+                            ${paginationButtons.join("")}
                         <button id="nextBtn">Siguiente</button>
                         </div>
                     </section>
@@ -195,42 +202,42 @@ class OffersHome extends HTMLElement {
             </main>
         `;
 
-        const previousBtn = this.querySelector('#previousBtn');
-        const nextBtn = this.querySelector('#nextBtn');
-        const pageButtons = this.querySelectorAll('.page-btn');
-        const detailsButtons = this.querySelectorAll('.details-btn');
+    const previousBtn = this.querySelector("#previousBtn");
+    const nextBtn = this.querySelector("#nextBtn");
+    const pageButtons = this.querySelectorAll(".page-btn");
+    const detailsButtons = this.querySelectorAll(".details-btn");
 
-        previousBtn.addEventListener('click', () => {
-            if (this.currentPage > 0) {
-                this.currentPage -= this.pageSize;
-                this.render();
-            }
-        });
+    previousBtn.addEventListener("click", () => {
+      if (this.currentPage > 0) {
+        this.currentPage -= this.pageSize;
+        this.render();
+      }
+    });
 
-        nextBtn.addEventListener('click', () => {
-            if (this.currentPage + this.pageSize < totalCards) {
-                this.currentPage += this.pageSize;
-                this.render();
-            }
-        });
+    nextBtn.addEventListener("click", () => {
+      if (this.currentPage + this.pageSize < totalCards) {
+        this.currentPage += this.pageSize;
+        this.render();
+      }
+    });
 
-        pageButtons.forEach((button, index) => {
-            button.addEventListener('click', () => {
-                this.currentPage = index * this.pageSize;
-                this.render();
-            });
-        });
+    pageButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        this.currentPage = index * this.pageSize;
+        this.render();
+      });
+    });
 
-        detailsButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                const details = JSON.parse(button.getAttribute('data-card'));
-                this.style.display = 'none';
-                const detailsComponent = document.querySelector('offers-details');
-                detailsComponent.style.display = 'block';
-                detailsComponent.render(details);
-            });
-        });
-    }
+    detailsButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const details = JSON.parse(button.getAttribute("data-card"));
+        this.style.display = "none";
+        const detailsComponent = document.querySelector("offers-details");
+        detailsComponent.style.display = "block";
+        detailsComponent.render(details);
+      });
+    });
+  }
 }
 
-customElements.define('offers-home', OffersHome)
+customElements.define("offers-home", OffersHome);
