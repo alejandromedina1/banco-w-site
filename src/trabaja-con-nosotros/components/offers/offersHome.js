@@ -91,7 +91,7 @@ class OffersHome extends HTMLElement {
     const paginationButtons = [];
     for (let i = 0; i < totalPages; i++) {
       const pageNumber = i + 1;
-      const isActive = i === this.currentPage / this.pageSize ? "active" : "";
+      const isActive = i === this.currentPage / this.pageSize ? "active-page" : "";
 
       paginationButtons.push(
         `<button class="page-btn ${isActive}">${pageNumber}</button>`
