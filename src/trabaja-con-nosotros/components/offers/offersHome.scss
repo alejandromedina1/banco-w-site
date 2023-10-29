@@ -43,10 +43,16 @@
     line-height: normal;
   }
   & button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     border-radius: 0.49225rem;
     background: $purple-300;
-    padding: 0.4rem;
+    padding: 0.4rem 0.8rem;
     border: none;
+    color: white;
+    font-family: "font-bariol-regular", sans-serif;
+    font-size: 0.8rem;
   }
 }
 

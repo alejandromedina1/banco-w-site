@@ -8,6 +8,7 @@ class OffersHome extends HTMLElement {
     this.pageSize = 6;
     this.selectedCity = "";
     this.searchText = "";
+    this.searchText2 = "";
   }
 
   static get observedAttributes() {
@@ -52,6 +53,15 @@ class OffersHome extends HTMLElement {
         (card) =>
           card.city.toLowerCase().includes(search) ||
           card.title.toLowerCase().includes(search)
+      );
+    }
+
+    if (this.searchText2) {
+      const search2 = this.searchText2.toLowerCase();
+      filteredCards = filteredCards.filter(
+        (card) =>
+          card.city.toLowerCase().includes(search2) ||
+          card.title.toLowerCase().includes(search2)
       );
     }
 
@@ -125,7 +135,14 @@ class OffersHome extends HTMLElement {
       );
     }
 
-    const resultsMessage = filteredCards.length > 0 ? "" : `<p class="no-results">No hay resultados para "${this.searchText}"</p>`;
+    const resultsMessage =
+      filteredCards.length > 0
+        ? ""
+        : `<p class="no-results">No hay resultados para "${this.searchText}"</p>`;
+    const resultsMessage2 =
+      filteredCards.length > 0
+        ? ""
+        : `No hay resultados para "${this.searchText2}"`;
 
     this.innerHTML = `
         <div class="DesktopFilter">
@@ -134,7 +151,7 @@ class OffersHome extends HTMLElement {
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3249 12.8955L19.7044 18.2767C19.8928 18.4654 20 18.7226 20 18.9912C20 19.2598 19.8928 19.5142 19.7044 19.7056C19.516 19.8943 19.258 20 18.9914 20C18.7247 20 18.4668 19.8943 18.2784 19.7056L12.8989 14.3244C11.2903 15.5704 9.26722 16.1562 7.24414 15.9648C5.21815 15.7733 3.34286 14.8159 1.998 13.2898C0.653144 11.7638 -0.0598288 9.78044 0.00393607 7.74853C0.0705993 5.71376 0.905359 3.78187 2.34297 2.34439C3.78347 0.906908 5.71378 0.0695673 7.74845 0.00383742C9.78023 -0.0590346 11.7628 0.652562 13.2873 1.9986C14.8148 3.34463 15.7713 5.21936 15.9625 7.24555C16.1567 9.27175 15.5712 11.2951 14.3249 12.904V12.8955ZM8.00065 13.9957C9.59187 13.9957 11.1193 13.3641 12.2439 12.2382C13.3685 11.1122 14.0003 9.58611 14.0003 7.9943C14.0003 6.40249 13.3685 4.87642 12.2439 3.75044C11.1193 2.62446 9.59187 1.99288 8.00065 1.99288C6.40943 1.99288 4.88483 2.62446 3.75735 3.75044C2.63277 4.87642 2.0009 6.40249 2.0009 7.9943C2.0009 9.58611 2.63277 11.1122 3.75735 12.2382C4.88483 13.3641 6.40943 13.9957 8.00065 13.9957Z" fill="#797979"/>
                         </svg>
-                        <input type="text" id="searchInput" placeholder="Escribe para buscar.." value="${
+                        <input type="text" id="searchInput" placeholder="Buscar por ciudad o título" value="${
                           this.searchText
                         }">
                     </div>
@@ -224,11 +241,12 @@ class OffersHome extends HTMLElement {
                     </div>
                     <hr class="line">
                     <nav class="Filter">
-                        <input type="text" placeholder="Seleccionar área de trabajo">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path d="M12.2043 2.2644H3.22319C2.71277 2.2644 2.22326 2.46717 1.86234 2.82809C1.50142 3.189 1.29866 3.67852 1.29866 4.18893V4.9395C1.29857 5.20441 1.35317 5.46648 1.45904 5.70931V5.7478C1.54967 5.95371 1.67804 6.14083 1.83753 6.2995L5.78923 10.2255V14.4531C5.78901 14.5621 5.81658 14.6694 5.86933 14.7648C5.92209 14.8602 5.99829 14.9406 6.09074 14.9984C6.19283 15.0616 6.31063 15.095 6.43074 15.0946C6.53116 15.094 6.63004 15.0698 6.71942 15.024L9.28545 13.741C9.39125 13.6877 9.48021 13.6061 9.54249 13.5054C9.60477 13.4046 9.63793 13.2885 9.63828 13.1701V10.2255L13.5643 6.2995C13.7238 6.14083 13.8522 5.95371 13.9428 5.7478V5.70931C14.0575 5.46838 14.1209 5.20623 14.1289 4.9395V4.18893C14.1289 3.67852 13.9261 3.189 13.5652 2.82809C13.2043 2.46717 12.7147 2.2644 12.2043 2.2644ZM8.5413 9.50705C8.48185 9.56699 8.43481 9.63808 8.40288 9.71624C8.37096 9.7944 8.35478 9.87809 8.35527 9.96252V12.7723L7.07225 13.4138V9.96252C7.07273 9.87809 7.05655 9.7944 7.02463 9.71624C6.9927 9.63808 6.94566 9.56699 6.88621 9.50705L3.48621 6.11346H11.9413L8.5413 9.50705ZM12.8458 4.83044H2.58168V4.18893C2.58168 4.01879 2.64927 3.85562 2.76957 3.73532C2.88988 3.61501 3.05305 3.54742 3.22319 3.54742H12.2043C12.3745 3.54742 12.5376 3.61501 12.6579 3.73532C12.7782 3.85562 12.8458 4.01879 12.8458 4.18893V4.83044Z" fill="white"/>
-                            </svg>
+                        <input type="text" id="searchInput2" placeholder="Buscar por ciudad o título" value="${this.searchText2}">
+                        <button id="searchBtn2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3249 12.8955L19.7044 18.2767C19.8928 18.4654 20 18.7226 20 18.9912C20 19.2598 19.8928 19.5142 19.7044 19.7056C19.516 19.8943 19.258 20 18.9914 20C18.7247 20 18.4668 19.8943 18.2784 19.7056L12.8989 14.3244C11.2903 15.5704 9.26722 16.1562 7.24414 15.9648C5.21815 15.7733 3.34286 14.8159 1.998 13.2898C0.653144 11.7638 -0.0598288 9.78044 0.00393607 7.74853C0.0705993 5.71376 0.905359 3.78187 2.34297 2.34439C3.78347 0.906908 5.71378 0.0695673 7.74845 0.00383742C9.78023 -0.0590346 11.7628 0.652562 13.2873 1.9986C14.8148 3.34463 15.7713 5.21936 15.9625 7.24555C16.1567 9.27175 15.5712 11.2951 14.3249 12.904V12.8955ZM8.00065 13.9957C9.59187 13.9957 11.1193 13.3641 12.2439 12.2382C13.3685 11.1122 14.0003 9.58611 14.0003 7.9943C14.0003 6.40249 13.3685 4.87642 12.2439 3.75044C11.1193 2.62446 9.59187 1.99288 8.00065 1.99288C6.40943 1.99288 4.88483 2.62446 3.75735 3.75044C2.63277 4.87642 2.0009 6.40249 2.0009 7.9943C2.0009 9.58611 2.63277 11.1122 3.75735 12.2382C4.88483 13.3641 6.40943 13.9957 8.00065 13.9957Z" fill="#FFFFFF"/>
+                          </svg>
+                            Buscar
                         </button>
                     </nav>
     
@@ -239,7 +257,8 @@ class OffersHome extends HTMLElement {
 
                         ${cards}
                         <p class="results-message">${resultsMessage}</p>
-                        
+                        <p class="results-message">${resultsMessage2}</p>
+
                         <div class="Info-pagination">
                         <button id="previousBtn">Anterior</button>
                             ${paginationButtons.join("")}
@@ -257,6 +276,8 @@ class OffersHome extends HTMLElement {
     const citySelect = this.querySelector("#citySelect");
     const searchInput = this.querySelector("#searchInput");
     const searchBtn = this.querySelector("#searchBtn");
+    const searchInput2 = this.querySelector('#searchInput2');
+        const searchBtn2 = this.querySelector('#searchBtn2');
 
     citySelect.addEventListener("change", () => {
       this.selectedCity = citySelect.value;
@@ -268,6 +289,12 @@ class OffersHome extends HTMLElement {
       this.currentPage = 0;
       this.render();
     });
+
+    searchBtn2.addEventListener('click', () => {
+            this.searchText2 = searchInput2.value;
+            this.currentPage = 0;
+            this.render();
+        });
 
     previousBtn.addEventListener("click", () => {
       if (this.currentPage > 0) {
