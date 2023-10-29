@@ -176,7 +176,7 @@
 
   &-values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-column-gap: 150px;
     grid-row-gap: 40px;
 
@@ -252,14 +252,14 @@
 & h5 {
   color: $gray-1;
   font-family: Geomanist;
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.0875rem + 0.6667vw, 1.5rem);
   font-weight: 700;
 }
 
 & p {
   color: $gray-1;
   font-family: Bariol;
-  font-size: 1.25rem;
+  font-size:clamp(1.12rem, 0.8700rem + 0.3vw, 1.25rem);
   font-weight: 400;
 
 }
@@ -393,7 +393,7 @@ article:before {
 @media screen and (max-width: 767px) {
 
   .content {
-    margin: 20px;
+    margin: 30px;
     gap: 40px;
   }
 
@@ -435,6 +435,12 @@ article:before {
 
   .buttons{
     width: 100%;
+  }
+
+  p{
+
+    max-width: 330px;
+
   }
 
 }

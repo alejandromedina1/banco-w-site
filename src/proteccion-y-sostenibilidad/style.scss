@@ -200,7 +200,7 @@
     & p {
       color: $gray-1;
       font-family: Bariol;
-      font-size: 1.25rem;
+      font-size:clamp(1.12rem, 0.8700rem + 0.3vw, 1.0rem);;
       font-weight: 400;
     }
   }
@@ -258,7 +258,7 @@
       & p {
         width: 60%;
         color: #fff !important;
-        font-size: 1.375rem;
+        font-size:clamp(1.12rem, 0.8700rem + 0.3vw, 1.0rem);
       }
 
       &:hover {
@@ -281,14 +281,14 @@
   & h5 {
     color: $gray-1;
     font-family: Geomanist;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.0875rem + 0.6667vw, 1.5rem);
     font-weight: 700;
   }
 
   & p {
     color: $gray-1;
     font-family: Bariol;
-    font-size: 1.25rem;
+    font-size:clamp(1.12rem, 0.8700rem + 0.3vw, 1.0rem);
     font-weight: 400;
 
   }
@@ -311,7 +311,7 @@
 
 .options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 2.1875rem;
 }
 
@@ -418,7 +418,7 @@
 
 @media screen and (max-width: 821px) {
   .content{
-    margin: 20px;
+    margin: 30px;
     gap: 60px;
   }
 

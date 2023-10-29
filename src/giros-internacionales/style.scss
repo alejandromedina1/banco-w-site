@@ -25,6 +25,11 @@ h3 {
     color: $orange-400 !important;
 }
 
+h5{
+    margin-bottom: 0px;
+
+}
+
 #banner {
     width: 100%;
     height: auto;
@@ -129,6 +134,7 @@ h3 {
 
     .active{
         background-color: $indigo-300;
+        fill: white;
         
         & p {
             color: white;
@@ -168,6 +174,7 @@ nav#nav-bar-float .active{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
     
 }
 
@@ -178,6 +185,7 @@ nav#nav-bar-float .active{
 .card-img-top {
     width: auto;
     padding: 4%;
+    
 }
 
 .purple-card-button {
@@ -201,6 +209,7 @@ nav#nav-bar-float .active{
     font-family: Geomanist, sans-serif;
     font-size: 20px;
     color: $gray-1;
+    margin-bottom: 0;
 }
 
 .card-text {
@@ -240,7 +249,7 @@ nav#nav-bar-float .active{
 
 }
 
-@media screen and (max-width: 821px) {
+@media screen and (max-width: 767px) {
     .options {
     grid-template-columns: 1fr;
     margin-top: 20%;
@@ -276,15 +285,36 @@ nav#nav-bar-float .active{
         &  .woman-saver-img{
             width:  300px;
         }
+
     }
     #nav-bar-float {
-        top: 580px;
+        top: 645px;
         height: 10%;
+        width: 90%;
+        left: 5%;
         & button {
             & p {
                 font-size: 14px;
             }
         }
+    }
+
+}
+
+@media screen and (min-width: 768px)and (max-width: 1439px){
+    #banner .woman-saver-img {
+        width: 345px;
+        margin-left: 5%;
+    }
+
+    #banner .banner-container {
+        margin-left: 3%;
+    }
+
+    #nav-bar-float {
+        top: 480px;
+        height: 12%;
+
     }
 }
 
