@@ -82,12 +82,19 @@
   &-offer button {
     border-radius: 0.25025rem;
     background: $purple-300;
-    border: none;
     padding: 0.5rem 2rem;
     margin-top: 1rem;
     color: white;
     font-family: "font-bariol-regular", sans-serif;
     font-size: 0.572rem;
+    border: 2px solid $purple-300;
+    transition: all 0.2s ease-in-out;
+  }
+  &-offer button:hover {
+    border: 2px solid $purple-300;
+    color: $purple-300;
+    background: white;
+    transition: all 0.2s ease-in-out;
   }
   &-pagination {
     margin-top: 2.5rem;
@@ -118,128 +125,128 @@
 
 // -------- Checkbox -------- //
 .checkbox-wrapper-13 {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-    margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-    .checkbox-wrapper-13 input[type="checkbox"] {
-      --active: #ff8833;
-      --active-inner: #fff;
-      --focus: 1px #ffe1cc;
-      --border: #ffe1cc;
-      --border-hover: #ff8833;
-      --background: #fff;
-      --disabled: #f6f8ff;
-      --disabled-inner: #e1e6f9;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      height: 21px;
-      outline: none;
-      display: inline-block;
-      vertical-align: top;
-      position: relative;
-      margin: 0;
-      cursor: pointer;
-      border: 3px solid var(--bc, var(--border));
-      background: var(--b, var(--background));
-      -webkit-transition: background 0.3s, border-color 0.3s,
-        -webkit-box-shadow 0.2s;
-      transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
-      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s,
-        -webkit-box-shadow 0.2s;
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:after {
-      content: "";
-      display: block;
-      left: 0;
-      top: 0;
-      position: absolute;
-      -webkit-transition: opacity var(--d-o, 0.2s),
-        -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-      transition: opacity var(--d-o, 0.2s),
-        -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
-        opacity var(--d-o, 0.2s);
-      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
-        opacity var(--d-o, 0.2s),
-        -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:checked {
-      --b: var(--active);
-      --bc: var(--active);
-      --d-o: 0.3s;
-      --d-t: 0.6s;
-      --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:disabled {
-      --b: var(--disabled);
-      cursor: not-allowed;
-      opacity: 0.9;
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:disabled:checked {
-      --b: var(--disabled-inner);
-      --bc: var(--border);
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:disabled + label {
-      cursor: not-allowed;
-    }
-    .checkbox-wrapper-13
-      input[type="checkbox"]:hover:not(:checked):not(:disabled) {
-      --bc: var(--border-hover);
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:focus {
-      -webkit-box-shadow: 0 0 0 var(--focus);
-      box-shadow: 0 0 0 var(--focus);
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
-      width: 21px;
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
-      opacity: var(--o, 0);
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):checked {
-      --o: 1;
-    }
-    .checkbox-wrapper-13 input[type="checkbox"] + label {
-      display: inline-block;
-      vertical-align: middle;
-      cursor: pointer;
-      margin-left: 4px;
-    }
-  
-    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
-      border-radius: 50px;
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
-      width: 5px;
-      height: 9px;
-      border: 2px solid var(--active-inner);
-      border-top: 0;
-      border-left: 0;
-      left: 4.5px;
-      top: 2px;
-      -webkit-transform: rotate(var(--r, 20deg));
-      -ms-transform: rotate(var(--r, 20deg));
-      transform: rotate(var(--r, 20deg));
-    }
-    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):checked {
-      --r: 43deg;
-    }
+  .checkbox-wrapper-13 input[type="checkbox"] {
+    --active: #ff8833;
+    --active-inner: #fff;
+    --focus: 1px #ffe1cc;
+    --border: #ffe1cc;
+    --border-hover: #ff8833;
+    --background: #fff;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 3px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background 0.3s, border-color 0.3s,
+      -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s,
+      -webkit-box-shadow 0.2s;
   }
-  
-  .checkbox-wrapper-13 * {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+  .checkbox-wrapper-13 input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s),
+      -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s),
+      -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+      opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+      opacity var(--d-o, 0.2s),
+      -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
   }
-  .checkbox-wrapper-13 *:before,
-  .checkbox-wrapper-13 *:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+  .checkbox-wrapper-13 input[type="checkbox"]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: 0.3s;
+    --d-t: 0.6s;
+    --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
   }
+  .checkbox-wrapper-13 input[type="checkbox"]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:disabled + label {
+    cursor: not-allowed;
+  }
+  .checkbox-wrapper-13
+    input[type="checkbox"]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+    box-shadow: 0 0 0 var(--focus);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
+    width: 21px;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):checked {
+    --o: 1;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
+    border-radius: 50px;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 4.5px;
+    top: 2px;
+    -webkit-transform: rotate(var(--r, 20deg));
+    -ms-transform: rotate(var(--r, 20deg));
+    transform: rotate(var(--r, 20deg));
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):checked {
+    --r: 43deg;
+  }
+}
+
+.checkbox-wrapper-13 * {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.checkbox-wrapper-13 *:before,
+.checkbox-wrapper-13 *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 @media only screen and (min-width: 1024px) {
   .DesktopFilter {
@@ -290,7 +297,14 @@
       font-family: "font-bariol-regular", sans-serif;
       font-size: 1.375rem;
       padding: 0.5rem 3rem;
-      border: none;
+      border: 2px solid $purple-300;
+      transition: all 0.2s ease-in-out;
+    }
+    & button:hover {
+      border: 2px solid $purple-300;
+      color: $purple-300;
+      background: white;
+      transition: all 0.2s ease-in-out;
     }
   }
 

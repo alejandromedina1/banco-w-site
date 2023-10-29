@@ -2,27 +2,25 @@ import "./offersDetails.scss";
 import data from "../../data.json";
 
 class OffersDetails extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
+  }
+
+  static get observedAttributes() {
+    return [];
+  }
+
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+    switch (nameAtr) {
     }
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
-
-        switch (nameAtr) {
-        }
-    }
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render(details) {
-        this.innerHTML = `
+  render(details) {
+    this.innerHTML = `
         <button id="backBtn">Volver</button>
      <h2 class="offers-title">Asesor(a) comercial de productos y canales</h2>
 
@@ -98,14 +96,13 @@ class OffersDetails extends HTMLElement {
 </section>      
     `;
 
-const backBtn = this.querySelector('#backBtn');
-backBtn.addEventListener('click', () => {
-    this.style.display = 'none';
-    const offersHome = document.querySelector('offers-home');
-    offersHome.style.display = 'block';
-});
-
-    }
+    const backBtn = this.querySelector("#backBtn");
+    backBtn.addEventListener("click", () => {
+      this.style.display = "none";
+      const offersHome = document.querySelector("offers-home");
+      offersHome.style.display = "block";
+    });
+  }
 }
 
-customElements.define('offers-details', OffersDetails)
+customElements.define("offers-details", OffersDetails);
