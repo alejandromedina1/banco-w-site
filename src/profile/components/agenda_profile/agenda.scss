@@ -240,6 +240,7 @@ p {
     color: #fff;
     margin-top: 2rem;
     padding: 6px 25px;
+    border: 0.5px solid c.$cyan-500;
     transition: all 0.2s;
   }
   & button:hover {
@@ -376,6 +377,9 @@ last-post {
     & button {
       padding: 10px 140px;
       font-size: 18px;
+    }
+    & a {
+        text-decoration: none;
     }
   }
 
