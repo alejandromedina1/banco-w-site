@@ -6,6 +6,7 @@ class OffersHome extends HTMLElement {
     super();
     this.currentPage = 0;
     this.pageSize = 6;
+    this.selectedCity = "";
   }
 
   static get observedAttributes() {
@@ -22,10 +23,15 @@ class OffersHome extends HTMLElement {
   }
 
   render() {
-    const totalCards = data.cards.length;
-    const totalPages = Math.ceil(totalCards / this.pageSize);
+    const cities = ["Cali", "Bogotá", "Medellín"];
 
-    const cards = data.cards
+    const totalCards = data.cards.length;
+    const filteredCards = data.cards.filter(
+      (card) => this.selectedCity === "" || card.city === this.selectedCity
+    );
+    const totalPages = Math.ceil(filteredCards.length / this.pageSize);
+
+    const cards = filteredCards
       .slice(this.currentPage, this.currentPage + this.pageSize)
       .map(
         (card) => `
@@ -76,8 +82,11 @@ class OffersHome extends HTMLElement {
       )
       .join("");
 
-    const pageEnd = Math.min(this.currentPage + this.pageSize, totalCards);
-    const pageCounter = `${pageEnd} de ${totalCards} ofertas`;
+    const pageEnd = Math.min(
+      this.currentPage + this.pageSize,
+      filteredCards.length
+    );
+    const pageCounter = `${pageEnd} de ${filteredCards.length} ofertas`;
 
     const paginationButtons = [];
     for (let i = 0; i < totalPages; i++) {
@@ -102,9 +111,12 @@ class OffersHome extends HTMLElement {
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
                             <path d="M21.5454 9.63C21.402 8.16892 20.8746 6.76909 20.0145 5.56682C19.1544 4.36456 17.9909 3.40083 16.6375 2.7695C15.284 2.13816 13.7866 1.86072 12.291 1.96421C10.7955 2.06769 9.35283 2.54856 8.10349 3.36C7.03018 4.06265 6.12914 4.9893 5.46511 6.07339C4.80107 7.15749 4.39052 8.37211 4.26295 9.63C4.13781 10.8797 4.29837 12.1409 4.73298 13.3223C5.16759 14.5036 5.86535 15.5755 6.77565 16.46L12.1892 21.77C12.2841 21.8637 12.3971 21.9381 12.5216 21.9889C12.646 22.0397 12.7795 22.0658 12.9144 22.0658C13.0492 22.0658 13.1827 22.0397 13.3072 21.9889C13.4317 21.9381 13.5446 21.8637 13.6396 21.77L19.0327 16.46C19.943 15.5755 20.6408 14.5036 21.0754 13.3223C21.51 12.1409 21.6705 10.8797 21.5454 9.63ZM17.6027 15.05L12.9042 19.65L8.20564 15.05C7.5132 14.3721 6.98279 13.5523 6.65253 12.6498C6.32227 11.7472 6.20037 10.7842 6.29558 9.83C6.39141 8.86111 6.70595 7.92516 7.21646 7.08985C7.72697 6.25453 8.4207 5.54071 9.24748 5C10.3312 4.29524 11.6032 3.9193 12.9042 3.9193C14.2051 3.9193 15.4772 4.29524 16.5609 5C17.3851 5.53862 18.0773 6.24928 18.5877 7.08094C19.0981 7.9126 19.414 8.84461 19.5128 9.81C19.6111 10.7674 19.4907 11.7343 19.1604 12.6406C18.83 13.5468 18.2979 14.3698 17.6027 15.05ZM12.9042 6C11.9951 6 11.1064 6.26392 10.3506 6.75839C9.59468 7.25286 9.00555 7.95566 8.65766 8.77793C8.30977 9.6002 8.21874 10.505 8.3961 11.3779C8.57345 12.2508 9.01121 13.0526 9.65403 13.682C10.2968 14.3113 11.1158 14.7399 12.0075 14.9135C12.8991 15.0872 13.8233 14.9981 14.6631 14.6575C15.503 14.3169 16.2209 13.7401 16.7259 13.0001C17.231 12.26 17.5006 11.39 17.5006 10.5C17.4979 9.30734 17.0127 8.16428 16.1513 7.32094C15.2899 6.4776 14.1224 6.00265 12.9042 6ZM12.9042 13C12.3991 13 11.9054 12.8534 11.4855 12.5787C11.0656 12.304 10.7383 11.9135 10.545 11.4567C10.3517 10.9999 10.3012 10.4972 10.3997 10.0123C10.4982 9.52733 10.7414 9.08187 11.0985 8.73224C11.4557 8.38261 11.9107 8.1445 12.406 8.04804C12.9013 7.95158 13.4148 8.00109 13.8814 8.1903C14.348 8.37952 14.7468 8.69996 15.0274 9.11108C15.308 9.5222 15.4577 10.0056 15.4577 10.5C15.4577 11.163 15.1887 11.7989 14.7098 12.2678C14.2309 12.7366 13.5814 13 12.9042 13Z" fill="#797979"/>
                           </svg>
-                        <select name="" id="">
-                            <option value="">Seleccionar Ciudad</option>
-                        </select>
+                          <select id="citySelect">
+                            <option value="">Todas las ciudades</option>
+                            ${cities
+                              .map((city) => `<option value="${city}">${city}</option>`)
+                              .join("")}
+                          </select>
                     </div>
                 </div>
                 <button>Buscar</button>
@@ -206,6 +218,13 @@ class OffersHome extends HTMLElement {
     const nextBtn = this.querySelector("#nextBtn");
     const pageButtons = this.querySelectorAll(".page-btn");
     const detailsButtons = this.querySelectorAll(".details-btn");
+    const citySelect = this.querySelector('#citySelect');
+
+    citySelect.addEventListener('change', () => {
+      this.selectedCity = citySelect.value;
+      this.currentPage = 0; // Resetear a la primera página al cambiar la ciudad
+      this.render();
+  });
 
     previousBtn.addEventListener("click", () => {
       if (this.currentPage > 0) {
@@ -215,7 +234,7 @@ class OffersHome extends HTMLElement {
     });
 
     nextBtn.addEventListener("click", () => {
-      if (this.currentPage + this.pageSize < totalCards) {
+      if (this.currentPage + this.pageSize < filteredCards.length) {
         this.currentPage += this.pageSize;
         this.render();
       }
