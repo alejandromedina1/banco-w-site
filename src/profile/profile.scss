@@ -139,7 +139,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Geomanist';
+    font-family: 'font-geomanist-bold';
     font-size: 16px;
     text-decoration: none;
     gap: 1rem;
@@ -161,7 +161,7 @@ p {
             margin: 4rem 35px 0 35px;
             & h2 {
                 font-size: 30px;
-                font-family: 'Geomanist';
+                font-family: 'font-geomanist-bold';
                 color: c.$gray-2;
                 font-weight: 700;
                 margin-bottom: 0;
@@ -185,7 +185,7 @@ productos3-profile {
 @media only screen and (min-width: 1024px){
     #marker {
         height: 145px;
-        width: 150px;
+        width: 145px;
     }
     //Header
     .Hero {
