@@ -1,45 +1,38 @@
 import "./productos.scss";
 class Producto1Profile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
+    const press = document.getElementById("pressed");
+    const hidden = document.querySelector("productos3-profile");
+    const hiddenSelf = document.querySelector("productos1-profile");
 
+    press.addEventListener("click", function () {
+      hidden.style.display = "block";
+      hiddenSelf.style.display = "none";
+    });
 
-    connectedCallback() {
-        this.render()
-        const press = document.getElementById('pressed')
-        const hidden = document.querySelector('productos3-profile')
-        const hiddenSelf = document.querySelector('productos1-profile')
+    const active = document.getElementById("active-products");
+    const products3 = document.querySelector("productos2-profile");
+    const products1 = document.querySelector("productos1-profile");
 
-        press.addEventListener('click', function() {
-          hidden.style.display = 'block'
-          hiddenSelf.style.display = 'none'
-        })  
+    active.addEventListener("click", function () {
+      products3.style.display = "block";
+      products1.style.display = "none";
+    });
+  }
 
-        const active = document.getElementById('active-products')
-        const products3 = document.querySelector('productos2-profile')
-        const products1 = document.querySelector('productos1-profile')
-
-        active.addEventListener('click', function() {
-          products3.style.display = 'block'
-          products1.style.display = 'none'
-        })
-    }
-
-    render() {
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <link rel="stylesheet" type="text/css" href="productos.scss" />
 
     <section class="main">
@@ -110,9 +103,8 @@ class Producto1Profile extends HTMLElement {
 
   <link rel="stylesheet" href="../components/LastPost/lastPost.scss" />
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('productos1-profile', Producto1Profile)
+customElements.define("productos1-profile", Producto1Profile);

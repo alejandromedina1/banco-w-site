@@ -1,39 +1,31 @@
 import "./productos2.scss";
 
 class Producto2Profile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
 
+    const back = document.getElementById("back-product2");
+    const activeShow = document.querySelector("productos1-profile");
+    const desactiveShow = document.querySelector("productos2-profile");
 
-    connectedCallback() {
-        this.render()
+    back.addEventListener("click", () => {
+      activeShow.style.display = "block";
+      desactiveShow.style.display = "none";
+    });
+  }
 
-        const back = document.getElementById('back-product2')
-        const activeShow = document.querySelector('productos1-profile')
-        const desactiveShow = document.querySelector('productos2-profile')
-
-        back.addEventListener('click', () => {
-            activeShow.style.display = 'block'
-            desactiveShow.style.display = 'none'
-        })
-
-    }
-
-    render() {
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
 
       <link rel="stylesheet" href="./productos2.scss">
       <link rel="stylesheet" href="../Details/details.js">
@@ -160,9 +152,8 @@ class Producto2Profile extends HTMLElement {
 
   <script type="module" src="../components/components.js"></script>
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('productos2-profile', Producto2Profile)
+customElements.define("productos2-profile", Producto2Profile);

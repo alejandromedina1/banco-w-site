@@ -1,38 +1,31 @@
 import "./productos3.scss";
 
 class Producto3Profile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
 
+    const back = document.getElementById("back-product3");
+    const activeShow = document.querySelector("productos1-profile");
+    const desactiveShow = document.querySelector("productos3-profile");
 
-    connectedCallback() {
-        this.render()
+    back.addEventListener("click", () => {
+      activeShow.style.display = "block";
+      desactiveShow.style.display = "none";
+    });
+  }
 
-        const back = document.getElementById('back-product3')
-        const activeShow = document.querySelector('productos1-profile')
-        const desactiveShow = document.querySelector('productos3-profile')
-
-        back.addEventListener('click', () => {
-            activeShow.style.display = 'block'
-            desactiveShow.style.display = 'none'
-        })
-    }
-
-    render() {
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
 
 <link rel="stylesheet" type="text/css" href="productos3.scss" />
   <link rel="stylesheet" href="../components/Details/details.scss" />
@@ -187,9 +180,8 @@ class Producto3Profile extends HTMLElement {
 
   <script type="module" src="../components/components.js"></script>
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('productos3-profile', Producto3Profile)
+customElements.define("productos3-profile", Producto3Profile);

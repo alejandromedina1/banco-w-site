@@ -1,29 +1,22 @@
 import "./pagos.scss";
 
 class PagosProfile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
     <link rel="stylesheet" href="./pagos.scss">
     <link rel="stylesheet" href="../LastPost/lastPost.scss">
     
@@ -152,9 +145,8 @@ class PagosProfile extends HTMLElement {
 
     <script type="module" src="../LastPost/lastPost.js"></script>
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('pagos-profile', PagosProfile)
+customElements.define("pagos-profile", PagosProfile);
