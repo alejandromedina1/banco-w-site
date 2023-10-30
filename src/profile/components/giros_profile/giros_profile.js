@@ -1,31 +1,22 @@
 import "./giros.scss";
 
 class GirosProfile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-
-      
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
     <link rel="stylesheet" href="./giros.scss">
     <link rel="stylesheet" href="../ButtonDuoIcon/buttonDuoIcon.scss"/>
     <link rel="stylesheet" href="../ChallengeStatus/challengeStatus.scss"/>\
@@ -79,9 +70,8 @@ class GirosProfile extends HTMLElement {
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../components.js"></script>
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('giros-profile', GirosProfile)
+customElements.define("giros-profile", GirosProfile);

@@ -268,7 +268,8 @@ article:before {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    gap: 10px;
     
 }
 
@@ -277,8 +278,10 @@ article:before {
 }
 
 .card-img-top {
-    width: auto;
+    width: 100%;
     padding: 4%;
+    max-height: 350px;
+    object-fit: cover;
 }
 
 .purple-card-button {
@@ -389,7 +392,7 @@ article:before {
     .content-list {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 50px;
+        margin: 30px;
     }
 
     article {

@@ -212,7 +212,7 @@ class NavBarDesktop extends HTMLElement {
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="#">Educación financiera</a></li>
-                                <li><a href="#">Consumidor financiero</a></li>
+                                <li><a href="/informacion-al-consumidor-financiero/">Consumidor financiero</a></li>
                                 <li><a href="#">Seguridad bancaria</a></li>
                                 <li><a href="#">Revista</a></li>
                             </ul>

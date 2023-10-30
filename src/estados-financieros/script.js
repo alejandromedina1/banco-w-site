@@ -1,5 +1,3 @@
-import '../components/InverCards/InverCards'
-
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 

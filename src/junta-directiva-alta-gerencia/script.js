@@ -1,4 +1,4 @@
-import '/components/dropdown/dropdown'
+import '../components/dropdown/dropdown.js'
 
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
