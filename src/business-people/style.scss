@@ -41,28 +41,6 @@
 }
 
 
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-    #main-banner {
-
-        .container-text {
-            display: flex;
-            flex-direction: column;
-            gap: 0.44rem;
-            padding: 0 18.22%;
-
-            .mobile {
-                font-size: 2rem;
-            }
-
-            p {
-                font-family: "font-bariol-regular";
-                font-size: 0.9rem;
-            }
-        }
-    }
-}
-
 #nav-bar-float {
     position: absolute;
     width: 60%;
@@ -83,7 +61,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $purple-300;
+        color: $orange-300;
         text-align: center;
         font-family: Bariol, sans-serif;
         font-size: 18px;
@@ -104,16 +82,16 @@
             display: flex;
             text-decoration: none;
             justify-content: center;
-            color: $purple-300;
+            color: $orange-300;
         }
     }
 
     & button:hover {
-        background-color: $purple-100;
+        background-color: $orange-100;
     }
 
     .active{
-        background-color: $purple-300;
+        background-color: $orange-300;
         & p {
             color: white;
             
@@ -180,7 +158,43 @@
     width: auto;
 }
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #main-banner {
+
+        .container-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.44rem;
+            padding: 0 18.22%;
+
+            .mobile {
+                font-size: 2rem;
+            }
+
+            p {
+                font-family: "font-bariol-regular";
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .options {
+        grid-template-columns: 1fr;
+        margin-top: 20%;
+        }
+        #nav-bar-float {
+            width: 80%;
+            left: 10%;
+            top: 790px;
+        }
+
+    
+}
+
 @media screen and (min-width: 769px) and (max-width: 1440px) {
+    .options {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20%;
+        }
     #main-banner {
         height: 24.5625rem;
         flex-direction: row-reverse;
@@ -226,6 +240,12 @@
                 height: auto;
             }
         }
+    }
+
+    #nav-bar-float {
+        width: 80%;
+        left: 10%;
+        top: 480px;
     }
 }
 
