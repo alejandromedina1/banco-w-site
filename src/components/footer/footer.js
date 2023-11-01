@@ -55,8 +55,12 @@ render() {
                 <ul>
                     <li class="footer-list">Quiénes somos</li>
                     <li class="footer-list">Proveedores</li>
-                    <li class="footer-list">Educación financiera</li>
-                    <li class="footer-list">Trabaja con nosotros</li>
+                    <a href="/atencion_financiero/">
+                        <li class="footer-list">Educación financiera</li>
+                    </a>
+                    <a href="/trabaja-con-nosotros/">
+                        <li class="footer-list">Trabaja con nosotros</li>
+                    </a>
                 </ul>
                 </div>
             </div>
@@ -83,11 +87,17 @@ render() {
                 </div>
                 <div class="dropdown">
                 <ul>
-                    <li class="footer-list">Preguntas frecuentes</li>
-                    <li class="footer-list">Tasas y tarifas</li>
+                    <a href="/preguntas-frecuentes/">
+                        <li class="footer-list">Preguntas frecuentes</li>
+                    </a>
+                    <a href="/tasas-y-tarifas/">
+                        <li class="footer-list">Tasas y tarifas</li>
+                    </a>
                     <li class="footer-list">Información legal</li>
                     <li class="footer-list">Comunicados de prensa</li>
-                    <li class="footer-list">PQRS</li>
+                    <a href="/pqrs/">
+                        <li class="footer-list">PQRS</li>
+                    </a>
                 </ul>
                 </div>
             </div>

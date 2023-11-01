@@ -25,6 +25,11 @@ h3 {
     color: $orange-400 !important;
 }
 
+h5{
+    margin-bottom: 0px;
+
+}
+
 #banner {
     width: 100%;
     height: auto;
@@ -88,7 +93,7 @@ h3 {
     align-items: center;
     left: 20%;
     top: 610px;
-    z-index: 1;
+    z-index: 0;
 
     & button {
         width: 25%;
@@ -96,13 +101,14 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $purple-300;
+        color: $indigo-300;
         text-align: center;
         font-family: Bariol, sans-serif;
         font-size: 18px;
         font-weight: 400;
         justify-content: center;
         background-color: white;
+        fill: $indigo-300;
         border: none;
         outline: none;
         cursor: pointer;
@@ -111,13 +117,14 @@ h3 {
         & .icon {
             width: 24%;
             margin-bottom: 0.5rem;
+            fill: $indigo-300;
         }
 
         & a {
             display: flex;
             text-decoration: none;
             justify-content: center;
-            color: $purple-300;
+            color: $indigo-300;
         }
     }
 
@@ -127,15 +134,23 @@ h3 {
 
     .active{
         background-color: $indigo-300;
+        fill: white;
+        
         & p {
             color: white;
             
         }
 
-        & img {
+        .icon {
             filter: saturate(0) brightness(3);
+            fill: white;
         }
     }
+}
+
+nav#nav-bar-float .active{
+    color: white;
+    fill: white;
 }
 
 .options {
@@ -159,6 +174,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
     
 }
 
@@ -169,6 +185,7 @@ h3 {
 .card-img-top {
     width: auto;
     padding: 4%;
+    
 }
 
 .purple-card-button {
@@ -192,6 +209,7 @@ h3 {
     font-family: Geomanist, sans-serif;
     font-size: 20px;
     color: $gray-1;
+    margin-bottom: 0;
 }
 
 .card-text {
@@ -231,7 +249,7 @@ h3 {
 
 }
 
-@media screen and (max-width: 821px) {
+@media screen and (max-width: 767px) {
     .options {
     grid-template-columns: 1fr;
     margin-top: 20%;
@@ -267,15 +285,36 @@ h3 {
         &  .woman-saver-img{
             width:  300px;
         }
+
     }
     #nav-bar-float {
-        top: 580px;
+        top: 645px;
         height: 10%;
+        width: 90%;
+        left: 5%;
         & button {
             & p {
                 font-size: 14px;
             }
         }
+    }
+
+}
+
+@media screen and (min-width: 768px)and (max-width: 1439px){
+    #banner .woman-saver-img {
+        width: 345px;
+        margin-left: 5%;
+    }
+
+    #banner .banner-container {
+        margin-left: 3%;
+    }
+
+    #nav-bar-float {
+        top: 480px;
+        height: 12%;
+
     }
 }
 

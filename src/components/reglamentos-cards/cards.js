@@ -15,14 +15,12 @@ class ReglamentosCards extends HTMLElement {
 
     connectedCallback() {
         this.render();
-        this.showInfo();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
         //console.log(`attr ${propName} changed`)
         this[propName] = newValue
         this.render
-        this.showInfo
     }
 
     render() {
@@ -41,22 +39,8 @@ class ReglamentosCards extends HTMLElement {
 
     }
 
-    showInfo() {
-        const cards = document.querySelectorAll('.card-container');
-
-        cards.forEach(card => {
-            card.addEventListener('mouseover', () => {
-                const hiddenContent = card.querySelector('.card-info');
-                hiddenContent.style.display = 'block';
-                console.log('aaaaa')
-            })
     
-            card.addEventListener('mouseout', () => {
-                const hiddenContent = card.querySelector('.card-info');
-                hiddenContent.style.display = 'none';
-            })
-        });
-    }
+    
 }
 
 customElements.define('reglamentos-cards', ReglamentosCards);

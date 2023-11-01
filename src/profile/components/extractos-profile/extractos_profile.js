@@ -1,29 +1,22 @@
 import "./extractos.scss";
 
 class ExtractosProfile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
     <link rel="stylesheet" href="./extractos.scss">
     <link rel="stylesheet" href="../LastPost/lastPost.scss">
     <link rel="stylesheet" href="../ButtonDuoIcon/buttonDuoIcon.scss">
@@ -87,9 +80,8 @@ class ExtractosProfile extends HTMLElement {
 
     <script type="module" src="../LastPost/lastPost.js"></script>
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('extractos-profile', ExtractosProfile)
+customElements.define("extractos-profile", ExtractosProfile);

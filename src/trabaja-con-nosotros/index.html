@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/public/icons/faviconW_4x.webp">
     <title>Trabaja con nosotros</title>
-    <link rel="stylesheet" href="./style.scss">
-    <link rel="stylesheet" href="../components/footer/style.scss">
-    <link rel="stylesheet" href="../components/navbar/style.scss">
-    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss">
-    <link rel="stylesheet" href="../components/botón-ayuda/style.scss">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../components/footer/style.scss" />
+    <link rel="stylesheet" href="../components/navbar/style.scss" />
+    <link rel="stylesheet" href="../components/botón-inclusivo/style.scss" />
+    <link rel="stylesheet" href="../components/botón-ayuda/style.scss" />
+  </head>
+  <body>
     <nav-bar-desktop></nav-bar-desktop>
 
     <header class="Hero Bg-animation">
-        <div class="Hero-Profile">
-            <h1>Trabaja con nosotros</h1>
-        </div>
+      <div class="Hero-Profile">
+        <h1>Trabaja con nosotros</h1>
+      </div>
     </header>
 
     <div class="tab-bar">
-        <button class="tab-button" data-tab="home">Inicio</button>
-        <button class="tab-button" data-tab="cv">Registra Hoja de vida</button>
-        <button class="tab-button" data-tab="offer">Ofertas de empleo</button>
-        <button class="tab-button" data-tab="contact">Contáctenos</button>
+      <button class="tab-button" data-tab="home">Inicio</button>
+      <button class="tab-button" data-tab="cv">Registra Hoja de vida</button>
+      <button class="tab-button" data-tab="offer">Ofertas de empleo</button>
+      <button class="tab-button" data-tab="contact">Contáctenos</button>
     </div>
 
     <section class="content">
-        <div class="tab-content" id="home">
-            <home-work></home-work>
-        </div>
+      <div class="tab-content" id="home">
+        <home-work></home-work>
+      </div>
 
-        <div class="tab-content" id="cv">
-            <cv-resume></cv-resume>
-        </div>
+      <div class="tab-content" id="cv">
+        <cv-resume></cv-resume>
+      </div>
 
-        <div class="tab-content" id="offer">
-            <offers-work></offers-work>
-        </div>
-        <div class="tab-content" id="contact">
-            <h1>goku
+      <div class="tab-content" id="offer">
+        <offers-details></offers-details>
+        <offers-home></offers-home>
+      </div>
 
-            </h1>
-        </div>
+      <div class="tab-content" id="contact">
+        <contact-component></contact-component>
+      </div>
     </section>
 
     <custom-footer></custom-footer>
     <help-button></help-button>
-      <inclusive-button style="display: none;" disabled="true"></inclusive-button>
-      <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
-    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
+    <inclusive-button style="display: none" disabled="true"></inclusive-button>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script
+      type="module"
+      src="../components/botón-inclusivo/inclusivo.js"
+    ></script>
     <script type="module" src="./script.js"></script>
     <script type="module" src="../components/footer/footer.js"></script>
     <script type="module" src="../components/navbar/navbar.js"></script>
     <script type="module" src="./components/home/home.js"></script>
     <script type="module" src="./components/resume/resume.js"></script>
-    <script type="module" src="./components/offers/offers.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="./components/offersDetails/offersDetails.js"
+    ></script>
+    <script type="module" src="./components/offers/offersHome.js"></script>
+    <script type="module" src="./components/contactUs/contact.js"></script>
+  </body>
 </html>

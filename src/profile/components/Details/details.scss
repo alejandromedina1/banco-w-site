@@ -1,78 +1,79 @@
-@use '../../../global.scss' as c;
+@use "../../../global.scss" as c;
 .Card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 6.287px;
+  background: #fff;
+  box-shadow: 5.239534378051758px 7.335348129272461px 31.43720817565918px 0px
+    rgba(159, 102, 219, 0.18);
+  padding: 19px;
+
+  &-Type,
+  &-Date {
+    margin-bottom: 0.2rem;
+  }
+  &-Type span,
+  &-Date span,
+  &-State span {
+    font-size: "font-bariol-regular";
+    font-size: 13px;
+    color: c.$gray-2;
+  }
+  &-Type p,
+  &-Date p,
+  &-State p {
+    font-size: "font-bariol-regular";
+    font-size: 16px;
+    color: c.$gray-2;
+  }
+  &-Mount {
     display: flex;
-    width: 100%;
-    flex-direction: column;
-    border-radius: 6.287px;
-    background: #FFF;
-    box-shadow: 5.239534378051758px 7.335348129272461px 31.43720817565918px 0px rgba(159, 102, 219, 0.18);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  &-Mount span {
+    font-size: "font-bariol-regular";
+    font-size: 13px;
+    color: c.$gray-2;
+  }
+  &-Mount p {
+    font-size: "font-bariol-regular";
+    color: c.$cyan-500;
+    font-size: 18px;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Card {
+    border-radius: 10px;
+    background: #fff;
     padding: 19px;
-    
+
     &-Type,
     &-Date {
-        margin-bottom: 0.2rem;
+      margin-bottom: 1.7rem;
     }
     &-Type span,
     &-Date span,
-    &-State span{
-        font-size: 'Bariol';
-        font-size: 13px;
-        color: c.$gray-2;
+    &-State span {
+      font-size: 16px;
     }
     &-Type p,
     &-Date p,
     &-State p {
-        font-size: 'Bariol';
-        font-size: 16px;
-        color: c.$gray-2;
+      font-size: 1rem;
     }
-    &-Mount{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
+    &-Mount {
+      margin-top: 1.7rem;
     }
     &-Mount span {
-        font-size: 'Bariol';
-        font-size: 13px;
-        color: c.$gray-2;
+      font-size: 16px;
     }
     &-Mount p {
-        font-size: 'Bariol';
-        color: c.$cyan-500;
-        font-size: 18px;
-        margin: 0 !important;
+      font-size: 33px;
     }
-}
-
-@media only screen and (min-width: 1024px){
-    .Card {
-        border-radius: 10px;
-        background: #FFF;
-        padding: 19px;
-        
-        &-Type,
-        &-Date {
-            margin-bottom: 1.7rem;
-        }
-        &-Type span,
-        &-Date span,
-        &-State span{
-            font-size: 16px;
-        }
-        &-Type p,
-        &-Date p,
-        &-State p {
-            font-size: 1rem;
-        }
-        &-Mount{
-            margin-top: 1.7rem;
-        }
-        &-Mount span {
-            font-size: 16px;
-        }
-        &-Mount p {
-            font-size: 33px;
-        }
-    }
+  }
 }
