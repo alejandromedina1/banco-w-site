@@ -83,7 +83,7 @@
     min-width: 320px;
     justify-content: flex-start;
     flex-direction: column;
-    font-family: 'Bariol';
+    font-family: 'font-bariol-regular';
 
     &__title {
 
@@ -97,7 +97,7 @@
     &__title h1 {
         font-size: 1.875rem;
         color: c.$gray-2;
-        font-family: 'Geomanist';
+        font-family: 'font-geomanist-bold';
         font-weight: 700;
         margin: 0;
 
@@ -105,7 +105,7 @@
 
     &__subtitle {
         color: c.$cyan-500;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         font-size: 1.125rem;
         font-weight: 400;
 
@@ -246,12 +246,12 @@
     
                 &-text {
                     &-1 {
-                        font-family: 'Bariol';
+                        font-family: 'font-bariol-regular';
                         color: c.$gray-1;
                     }
     
                     &-2 {
-                        font-family: 'Geomanist';
+                        font-family: 'font-geomanist-bold';
                         color: c.$gray-1;
                         font-weight: 600;
                     }

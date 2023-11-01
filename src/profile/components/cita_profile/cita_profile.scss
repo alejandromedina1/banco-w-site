@@ -19,7 +19,7 @@
     text-align: center;
     line-height: normal;
     font-size: $f;
-    font-family: 'Bariol';
+    font-family: 'font-bariol-regular';
 }
 
 * {
@@ -49,7 +49,7 @@ a {
     margin-top: 2rem;
     color: c.$cyan-500;
     font-size: 18px;
-    font-family: 'Bariol';
+    font-family: 'font-bariol-regular';
 }
 
 .subtitle-dairy {
@@ -63,7 +63,7 @@ a {
         text-decoration: none;
         color: c.$cyan-500;
         font-size: 18px;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
     }
 }
 
@@ -73,7 +73,7 @@ a {
     &-title {
         color: c.$gray-1;
         font-size: 18px;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         margin-bottom: 1rem;
     }
 
@@ -82,7 +82,7 @@ a {
         flex-direction: column;
         margin-bottom: 1rem;
         font-size: 18px;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
         margin-bottom: 1rem;
         color: c.$gray-2;
     }
@@ -99,7 +99,7 @@ a {
     & option {
         color: c.$gray-2;
         font-size: 13px;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
     }
 
     &-button {
@@ -127,7 +127,7 @@ a {
             box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
             color: #FFF;
             font-size: 13px;
-            font-family: 'Bariol';
+            font-family: 'font-bariol-regular';
             padding: 0.3rem;
             border: none;
             margin-bottom: 5rem;
@@ -170,13 +170,13 @@ a {
     & h3 {
         font-size: 16px;
         color: c.$gray-2;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
     }
 
     & span {
         font-size: 16px;
         color: c.$gray-1;
-        font-family: 'Bariol';
+        font-family: 'font-bariol-regular';
     }
 
     &-info {
@@ -274,7 +274,7 @@ button {
             box-shadow: 3.9538462162017822px 3.9538462162017822px 22.932308197021484px 0px rgba(0, 177, 187, 0.10);
             color: #FFF;
             font-size: 16px;
-            font-family: 'Bariol';
+            font-family: 'font-bariol-regular';
             padding: 0.6rem;
             border: none;
             margin-bottom: 5rem;

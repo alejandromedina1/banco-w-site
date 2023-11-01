@@ -1,0 +1,32 @@
+.inver-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.59338rem;
+    box-shadow: 6.50774px 9.11084px 39.04645px 0px rgba(159, 102, 219, 0.18);
+    height: 11.25rem;
+    transition: all ease 0.3s;
+}
+
+.inver-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.inver-link{
+    text-decoration: none;
+}
+
+.inver-card img{
+    width: 100%;
+}
+
+.inver-text {
+    color: #676767;
+    font-family: "font-geomanist-regular", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-left: 1rem;
+}

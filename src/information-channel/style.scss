@@ -1,0 +1,273 @@
+@import '../global.scss';
+
+h1 {
+    color: $gray_1;
+    text-align: center;
+    font-family: "font-geomanist-bold";
+    font-size: 1.9375rem;
+}
+
+.body_1 {
+    color: $gray_1;
+    font-family: "font-bariol-regular";
+    font-size: 0.8125rem;
+}
+
+.text-btn {
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.7975rem;
+}
+
+#main-banner {
+    background-image: url("/images/atention-bg-mobile.webp");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.38rem;
+    background-color: $gray_3;
+
+    & .container-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & h1 {
+        text-transform: uppercase;
+    }
+
+    & .body_1 {
+        width: 65%;
+        text-align: center;
+    }
+
+    & img {
+        width: 100%;
+    }
+}
+
+#options {
+    display: flex;
+    margin-top: -2rem;
+    padding: 0 3.08% 5.06rem;
+
+    & .container-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 0.95rem;
+    }
+
+    & .each-option {
+        width: 100%;
+        display: flex;
+        padding: 1.0625rem 0.875rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        border-radius: 0.4375rem;
+        background: white;
+        box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+        gap: 0.75rem;
+
+        & img {
+            width: 100%;
+        }
+
+        & h5 {
+            color: $gray_1;
+            font-family: "font-geomanist-bold";
+            line-height: 116.5%;
+            margin: 0;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+
+        & .btn {
+            display: flex;
+            height: 1.81rem;
+            justify-content: center;
+            align-items: center;
+            border: 0.125rem solid $cyan-500;
+            border-radius: 0.375rem;
+            background: $cyan-500;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 0.74rem;
+
+            &:hover {
+                border-color: $cyan-500;
+                background-color: white;
+                color: $cyan-500;
+            }
+
+            &:active {
+                background-color: $cyan-100;
+                border-color: $cyan-100;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .body_1 {
+        font-size: 1rem;
+    }
+
+    .text-btn {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .body_1 {
+        font-size: 1.125rem;
+    }
+
+    .text-btn {
+        font-size: 1.125rem;
+    }
+
+    #main-banner {
+        background-image: url("/images/atention-bg-desk.webp");
+        flex-direction: row-reverse;
+        padding-top: 4.38rem;
+        padding: 1.5rem 5%;
+
+        & .container-text {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        & h1 {
+            color: $gray-2;
+            text-transform: none;
+            text-align: left;
+        }
+
+        & .body_1 {
+            width: 95%;
+            text-align: left;
+        }
+
+        & img {
+            width: 65%;
+        }
+    }
+
+    #options {
+        display: flex;
+        margin-top: -5rem;
+        padding: 0 8% 4rem;
+
+        & .container-cards {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & card-button {
+                width: 30%;
+            }
+
+            & .each-option {
+                height: 100%;
+                justify-content: space-between;
+                display: flex;
+                padding: 1.2rem 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0 3%;
+
+                & h5 {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2500px) {
+    h1 {
+        font-size: 2.78375rem;
+    }
+
+    .body_1 {
+        font-size: 1.5rem;
+    }
+
+    .text-btn {
+        font-size: 1.3rem;
+    }
+
+
+    #main-banner {
+        background-image: url("/images/atention-bg-desk.webp");
+        flex-direction: row-reverse;
+        padding-top: 4.38rem;
+        padding: 1.5rem 5%;
+
+        & .container-text {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        & h1 {
+            color: $gray-2;
+            text-transform: none;
+            text-align: left;
+        }
+
+        & .body_1 {
+            width: 95%;
+            text-align: left;
+        }
+
+        & img {
+            width: 65%;
+        }
+    }
+
+    #options {
+        display: flex;
+        margin-top: -5rem;
+        padding: 0 8% 4rem;
+
+        & .container-cards {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & card-button {
+                width: 30%;
+            }
+
+            & .each-option {
+                height: 100%;
+                justify-content: space-between;
+                display: flex;
+                padding: 1.2rem 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+
+                & h5 {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

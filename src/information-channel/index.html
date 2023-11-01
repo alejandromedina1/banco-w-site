@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/public/icons/faviconW_4x.webp">
+    <title>Canales de Información</title>
+
+
+    <!--Scss-->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../components/footer/style.scss">
+
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <section id="main-banner">
+        <div class="container-text">
+            <h1>Canales de atención</h1>
+            <p class="body_1">Bienvenido a la sección donde te guiaremos en lo que necesites para que puedas comunicarte con
+                nosotros.</p>
+        </div>
+        <img src="/images/atention-woman.webp" alt="">
+    </section>
+
+    <section id="options">
+        <div class="container-cards">
+
+            <card-button class="component-card-button" image="/images/atention-img1.webp" title="Puntos de pago" text="Aquí encontrarás establecimientos comerciales, que a través de su negocio, facilitan a los
+            clientes del Banco la prestación de determinados servicios."></card-button>
+
+            <card-button class="component-card-button" image="/images/atention-img2.webp" title="Nuestras oficinas"
+                text="Te damos toda la información que necesites sobre nuestras oficinas para que encuentres el punto más cercano a ti."
+                ref="./own-office/index.html">
+            </card-button>
+
+            <card-button class="component-card-button" image="/images/atention-img3.webp" title="Corresponsales bancarios en alianza"
+                text="Encuentra establecimientos comerciales a través de los cuales te ofrecemos servicios del Banco W para que no tengas que dirigirte a una oficina."
+                ref="./alliance-banking/index.html">
+            </card-button>
+
+            <card-button class="component-card-button" image="/images/atention-img4.webp" title="Realizar transacciones"
+                text="Con nuestra banca telefónica realiza transacciones bancarias, obtén asesoría, consultas, PQRS e información de tus giros sin salir de casa.">
+            </card-button>
+
+            <card-button class="component-card-button" image="/images/atention-img5.webp" title="PQRS"
+                text="¡Queremos escucharte! Completa el formulario de peticiones, quejas y sugerencias para brindarte asesoría personalizada."
+                ref="../pqrs/index.html">
+            </card-button>
+
+            <card-button class="component-card-button" image="/images/atention-img6.webp" title="Abrir nuevos productos"
+                text="Aquí encontrarás información para atender tu petición, queja, reclamación o sugerencia y brindarte asesoría personalizada sobre tus productos o giros."
+                ref="./open-products/index.html">
+            </card-button>
+
+            <card-button class="component-card-button" image="/images/atention-img7.webp" title="Atención al consumidor financiero"
+                text="Como CF tienes derecho a escoger entre acudir directamente a nuestra entidad, al DCF, a la SFC o a los organismos de autorregulación.">
+            </card-button>
+        </div>
+
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/components.js"></script>
+
+</body>
+
+</html>

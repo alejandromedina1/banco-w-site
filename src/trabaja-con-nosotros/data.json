@@ -1,0 +1,164 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "title": "Asesor(a) comercial de productos y canales",
+            "salary": "2 a $2,5 millones",
+            "city": "Cali",
+            "date": "Publicado 22 Sep 2023",
+            "description": "Buscamos alguien como TÚ, para que formes parte de nuestro equipo. Somos una entidad financiera que genera crecimiento personal, profesional y bienestar para nuestros colaboradores y sus familias. Te invitamos a participar para el cargo Asesor (a) Comercial de Productos y Canales en el municipio de Popayán. Perfil académico: Técnico, Tecnólogo o estudiante activo de mínimo 5° semestre de Administración de Empresas, Mercadeo, Finanzas o afines. Experiencia: Un (1) año en asesoría comercial de productos del activo y del pasivo en entidades financieras, con amplia experiencia en cumplimiento de metas y servicio al cliente. Salario: $ 2,271,400 + Comisiones (1 ´000.000) Contrato a termino indefinido directo Banco + Beneficios extralegales. ¡Como entidad financiera te esperamos con los brazos abiertos!",
+            "administration": "Administración de empresas / Otras",
+            "expiration_date": "Vence 22 Oct 2023"
+        },
+        {
+            "id": 2,
+            "title": "Desarrollador de Software Junior",
+            "salary": "$2.5 a $3 millones",
+            "city": "Bogotá",
+            "date": "Publicado 15 Oct 2023",
+            "description": "Estamos en busca de un Desarrollador de Software Junior apasionado por la programación y la resolución de problemas. Requisitos: Grado en Ciencias de la Computación o campo relacionado. Experiencia: Mínimo 1 año en desarrollo de software. Ofrecemos un ambiente de trabajo colaborativo y oportunidades de crecimiento.",
+            "administration": "Tecnología de la Información",
+            "expiration_date": "Vence 15 Nov 2023"
+        },
+        {
+            "id": 3,
+            "title": "Analista de Datos",
+            "salary": "$2 a $2.5 millones",
+            "city": "Medellín",
+            "date": "Publicado 20 Oct 2023",
+            "description": "Buscamos un Analista de Datos altamente motivado para unirse a nuestro equipo. Requisitos: Grado en Estadística, Matemáticas o campo relacionado. Experiencia: 2 años en análisis de datos y manejo de herramientas como Python y SQL.",
+            "administration": "Ciencia de Datos",
+            "expiration_date": "Vence 20 Nov 2023"
+        },
+        {
+            "id": 4,
+            "title": "Diseñador Gráfico Creativo",
+            "salary": "$2.2 a $2.7 millones",
+            "city": "Cali",
+            "date": "Publicado 18 Oct 2023",
+            "description": "Estamos en busca de un Diseñador Gráfico creativo y apasionado por el arte digital. Requisitos: Grado en Diseño Gráfico o campo relacionado. Experiencia: 1 año en diseño gráfico, dominio de herramientas Adobe y habilidades creativas excepcionales.",
+            "administration": "Diseño Gráfico",
+            "expiration_date": "Vence 18 Nov 2023"
+        },
+        {
+            "id": 5,
+            "title": "Especialista en Marketing Digital",
+            "salary": "$2.3 a $2.8 millones",
+            "city": "Barranquilla",
+            "date": "Publicado 17 Oct 2023",
+            "description": "Buscamos un Especialista en Marketing Digital con experiencia en estrategias de marketing en línea. Requisitos: Título en Marketing o campo relacionado. Experiencia: Mínimo 2 años en marketing digital y conocimiento de SEO, SEM y redes sociales.",
+            "administration": "Marketing",
+            "expiration_date": "Vence 17 Nov 2023"
+        },
+        {
+            "id": 6,
+            "title": "Ingeniero de Redes",
+            "salary": "$2.4 a $2.9 millones",
+            "city": "Cartagena",
+            "date": "Publicado 19 Oct 2023",
+            "description": "Estamos en busca de un Ingeniero de Redes con experiencia en administración y mantenimiento de redes. Requisitos: Título en Ingeniería de Redes o campo relacionado. Experiencia: 3 años en administración de redes, certificaciones en CCNA son un plus.",
+            "administration": "Tecnología de la Información",
+            "expiration_date": "Vence 19 Nov 2023"
+        },
+        {
+            "id": 7,
+            "title": "Gerente de Recursos Humano",
+            "salary": "$2.8 a $3.3 millones",
+            "city": "Pereira",
+            "date": "Publicado 16 Oct 2023",
+            "description": "Buscamos un Gerente de Recursos Humanos con habilidades de liderazgo y gestión de personal. Requisitos: Título en Recursos Humanos o campo relacionado. Experiencia: 5 años en funciones de recursos humanos y habilidades de comunicación excepcionales.",
+            "administration": "Recursos Humanos",
+            "expiration_date": "Vence 16 Nov 2023"
+        },
+        {
+            "id": 8,
+            "title": "Analista de Seguridad de la Información",
+            "salary": "$2.5 a $3 millones",
+            "city": "Bucaramanga",
+            "date": "Publicado 21 Oct 2023",
+            "description": "Estamos en busca de un Analista de Seguridad de la Información para proteger nuestros sistemas y datos. Requisitos: Título en Seguridad de la Información o campo relacionado. Experiencia: 2 años en seguridad de la información y conocimientos en ciberseguridad.",
+            "administration": "Seguridad de la Información",
+            "expiration_date": "Vence 21 Nov 2023"
+        },
+        {
+            "id": 9,
+            "title": "Asistente de Ventas",
+            "salary": "$2 a $2.5 millones",
+            "city": "Manizales",
+            "date": "Publicado 14 Oct 2023",
+            "description": "Buscamos un Asistente de Ventas con habilidades de atención al cliente y ventas. Requisitos: Estudios en Ventas o campo relacionado. Experiencia: Experiencia en atención al cliente y ventas es una ventaja.",
+            "administration": "Ventas",
+            "expiration_date": "Vence 14 Nov 2023"
+        },
+        {
+            "id": 10,
+            "title": "Enfermero(a)",
+            "salary": "$2.2 a $2.7 millones",
+            "city": "Cúcuta",
+            "date": "Publicado 13 Oct 2023",
+            "description": "Estamos en busca de un Enfermero(a) apasionado por la atención de pacientes. Requisitos: Título en Enfermería. Experiencia: Mínimo 1 año en enfermería.",
+            "administration": "Salud",
+            "expiration_date": "Vence 13 Nov 2023"
+        },
+        {
+            "id": 11,
+            "title": "Desarrollador Web Front-End",
+            "salary": "$2.6 a $3.1 millones",
+            "city": "Pasto",
+            "date": "Publicado 11 Oct 2023",
+            "description": "Estamos en busca de un Desarrollador Web Front-End con experiencia en diseño web y desarrollo de sitios interactivos. Requisitos: Grado en Diseño Web o campo relacionado. Experiencia: 2 años en desarrollo web front-end.",
+            "administration": "Tecnología de la Información",
+            "expiration_date": "Vence 11 Nov 2023"
+        },
+        {
+            "id": 12,
+            "title": "Chef de Cocina",
+            "salary": "$2.3 a $2.8 millones",
+            "city": "Bogotá",
+            "date": "Publicado 12 Oct 2023",
+            "description": "Buscamos un Chef de Cocina con habilidades culinarias excepcionales. Requisitos: Experiencia previa en cocina y habilidades culinarias demostrables.",
+            "administration": "Hostelería",
+            "expiration_date": "Vence 12 Nov 2023"
+        },
+        {
+            "id": 13,
+            "title": "Analista Financiero",
+            "salary": "$2.7 a $3.2 millones",
+            "city": "Cali",
+            "date": "Publicado 10 Oct 2023",
+            "description": "Buscamos un Analista Financiero con experiencia en análisis de inversiones y presupuestos. Requisitos: Grado en Finanzas o campo relacionado. Experiencia: Mínimo 3 años en análisis financiero.",
+            "administration": "Finanzas",
+            "expiration_date": "Vence 10 Nov 2023"
+        },
+        {
+            "id": 14,
+            "title": "Ingeniero de Sistemas",
+            "salary": "$2.5 a $3 millones",
+            "city": "Cali",
+            "date": "Publicado 9 Oct 2023",
+            "description": "Estamos en busca de un Ingeniero de Sistemas con habilidades en desarrollo de software y administración de sistemas. Requisitos: Título en Ingeniería de Sistemas o campo relacionado. Experiencia: 2 años en desarrollo de software y administración de sistemas.",
+            "administration": "Tecnología de la Información",
+            "expiration_date": "Vence 9 Nov 2023"
+        },
+        {
+            "id": 15,
+            "title": "Analista de Recursos Humanos",
+            "salary": "$2.4 a $2.9 millones",
+            "city": "Cali",
+            "date": "Publicado 8 Oct 2023",
+            "description": " Buscamos un Analista de Recursos Humanos con experiencia en reclutamiento y selección de personal. Requisitos: Título en Recursos Humanos o campo relacionado. Experiencia: 2 años en funciones de recursos humanos.",
+            "administration": "Recursos Humanos",
+            "expiration_date": "Vence 8 Nov 2023"
+        },
+        {
+            "id": 16,
+            "title": "Técnico en Soporte de TI",
+            "salary": "$2 a $2.5 millones",
+            "city": "Medellín",
+            "date": "Publicado 7 Oct 2023",
+            "description": "Estamos en busca de un Técnico en Soporte de TI con habilidades técnicas en reparación de hardware y resolución de problemas. Requisitos: Diploma en Soporte de TI o campo relacionado. Experiencia: Experiencia en soporte técnico es una ventaja.",
+            "administration": "Tecnología de la Información",
+            "expiration_date": "Vence 7 Nov 2023"
+        }
+    ]
+}

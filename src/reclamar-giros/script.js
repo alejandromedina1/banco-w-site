@@ -45,11 +45,11 @@ window.addEventListener('resize', () => toggleContent())
 toggleContent();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const dropdowns = document.querySelectorAll(".dropdown");
+  const dropdowns = document.querySelectorAll(".dropdownPages");
 
   dropdowns.forEach(dropdown => {
     const trigger = dropdown.querySelector(".dropdown-trigger");
-    const content = dropdown.querySelector(".dropdown-content");
+    const content = dropdown.querySelector(".dropdown-tab");
 
     trigger.addEventListener("click", () => {
       content.classList.toggle("show");

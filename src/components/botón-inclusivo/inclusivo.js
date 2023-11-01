@@ -12,6 +12,7 @@ class InclusiveButton extends HTMLElement {
         this.changeButton();
         this.overlayColor();
         this.buttonStatus();
+        this.inclusiveChanges();
     }
 
     attributeChangedCallback(propName, oldValue, newValue) {
@@ -21,7 +22,7 @@ class InclusiveButton extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
+        <link rel="stylesheet" href="/components/botón-inclusivo/style.scss">
         <div id="inclusive-overlay">
         </div>
         <nav class="inclusive-button">
@@ -70,7 +71,6 @@ class InclusiveButton extends HTMLElement {
     overlayColor() {
         let checkbox = document.getElementById('show-inclusive-btn');
         let overlay = document.getElementById('inclusive-overlay');
-        let inclusiveIcon = document.querySelector('.show-inclusive-button');
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 overlay.style.display = 'block';
@@ -88,13 +88,150 @@ class InclusiveButton extends HTMLElement {
         buttonArray[3] = document.getElementById('dark-button')
 
         let inclusiveIcon = document.querySelector('.show-inclusive-button');
+
+        let checkbox = document.getElementById('show-inclusive-btn');
+
+        let change = false;
         
         buttonArray.forEach((element, index) => {
             element.addEventListener('change', function() {
-                    inclusiveIcon.setAttribute('src', "/icons/check.svg")
                     console.log(element.id)
+                    inclusiveIcon.setAttribute('src', "../../public/icons/check.svg");
+                    change = true;
             })
         });
+
+        checkbox.addEventListener('change', function () {
+            if (this.checked && change == true) {
+            } else {
+                inclusiveIcon.setAttribute('src', "../../public/icons/inclusive.svg")
+            }
+        })
+    }
+
+    inclusiveChanges() {
+        let buttonArray = [];
+        buttonArray[0] = document.getElementById('plus-button')
+        buttonArray[1] = document.getElementById('minus-button')
+        buttonArray[2] = document.getElementById('contrast-button')
+        buttonArray[3] = document.getElementById('dark-button')
+
+        buttonArray[3].addEventListener('change', function () {
+            let fondo = document.querySelector('body');
+            let p = document.querySelectorAll('p');
+            let li = document.querySelectorAll('li');
+            let h2 = document.querySelectorAll('h2');
+
+            if (this.checked) {
+                fondo.style.backgroundColor = 'black';
+                p.forEach(element => {
+                    element.style.color = 'white';
+                });
+                li.forEach(element => {
+                    element.style.color = 'white';
+                });
+                h2.forEach(element => {
+                    element.style.color= 'white';
+                });
+            } else {
+                fondo.style.backgroundColor = 'white';
+            }
+        })
+
+        buttonArray[0].addEventListener('change', function () {
+            let p = document.querySelectorAll('p');
+            let li = document.querySelectorAll('li');
+            let h1 = document.querySelectorAll('h1');
+            let h2 = document.querySelectorAll('h2');
+            let h3 = document.querySelectorAll('h3');
+            let h4 = document.querySelectorAll('h4');
+            let a = document.querySelectorAll('a');
+            if (this.checked) {
+                p.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+                li.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h1.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h2.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h3.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h4.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+                a.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 1.2;
+                    element.style.fontSize = newSize + 'px';
+                });
+            } else {
+            }
+        })
+        buttonArray[1].addEventListener('change', function () {
+            let p = document.querySelectorAll('p');
+            let li = document.querySelectorAll('li');
+            let h1 = document.querySelectorAll('h1');
+            let h2 = document.querySelectorAll('h2');
+            let h3 = document.querySelectorAll('h3');
+            let h4 = document.querySelectorAll('h4');
+            let a = document.querySelectorAll('a');
+            if (this.checked) {
+                p.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+                li.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h1.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h2.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h3.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+                h4.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+                a.forEach(element => {
+                    const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                    const newSize = parseFloat(currentSize) * 0.8;
+                    element.style.fontSize = newSize + 'px';
+                });
+            } else {
+            }
+        })
     }
 
     changeButton() {

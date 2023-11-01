@@ -1,0 +1,387 @@
+@import '../../global.scss';
+
+
+.body_1 {
+    font-family: "font-bariol-regular";
+    font-size: 0.8125rem;
+    line-height: 150%;
+}
+
+.text-btn {
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.7975rem;
+}
+
+#main-banner {
+    background-image: url("/images/attention-own-bg-mobile.webp");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.5rem 14.61% 12.5rem;
+    background-color: $gray_3;
+    gap: 1rem;
+
+    & h1 {
+        color: $gray_1;
+        text-align: center;
+        font-family: "font-geomanist-bold";
+        font-size: 1.875rem;
+        line-height: 110%;
+        margin: 0;
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8125rem 0.8125rem 0 0;
+    background: white;
+    padding: 0 5.13%;
+    margin-top: -1rem;
+
+    & .comunicate {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3.3rem;
+        gap: 1rem;
+
+        & h3 {
+            font-family: "font-geomanist-bold";
+            color: $gray-1;
+            text-align: center;
+            font-size: 1.125rem;
+            line-height: 130%;
+            margin: 0;
+        }
+
+        & .container {
+
+            &_icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                gap: 1.7rem;
+
+                & .each-icon {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2.64%;
+                    align-items: center;
+                    justify-content: start;
+
+
+                    & .icon {
+                        color: white;
+                        padding: 0.5rem 0.8rem;
+                        background-color: $orange-300;
+                        border-radius: 0.33113rem;
+
+                        & i {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    & .text {
+                        & h4 {
+                            color: $gray-1;
+                            font-family: "font-geomanist-bold";
+                            font-size: 0.9375rem;
+                            line-height: 150%;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            &_bg {
+                background-image: url("/images/new-product-bg2-mobile.webp");
+                background-size: cover;
+                background-position: center center;
+                margin: 0 -5.2%;
+                margin-top: -2rem;
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .body_1 {
+        font-size: 1rem;
+    }
+
+    .text-btn {
+        font-size: 0.85rem;
+    }
+
+    #main-banner {
+        display: flex;
+        padding: 7.5rem 17% 14.5rem;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        & h1 {
+            width: 70%;
+            font-size: 2rem;
+        }
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.8125rem 0.8125rem 0 0;
+        background: white;
+        padding: 0 5.13%;
+        margin-top: -1rem;
+
+        & .comunicate {
+            padding-top: 3.5rem;
+            gap: 1.5rem;
+
+            & h3 {
+                font-size: 1.3rem;
+            }
+
+            & .container {
+
+                &_icons {
+                    gap: 2rem;
+
+                    & .each-icon {
+
+                        & .icon {
+
+                            & i {
+                                font-size: 1.7rem;
+                            }
+                        }
+
+                        & .text {
+                            & h4 {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+
+                &_bg {
+                    margin: 0 -5.2%;
+                    margin-top: -3rem;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .body_1 {
+        font-size: 1.25rem;
+    }
+
+    .text-btn {
+        font-size: 1.12rem;
+    }
+
+    #main-banner {
+        background-image: url("/images/new-product-bg-desk.webp");
+        padding: 6.3rem 20%;
+
+        & h1 {
+            font-size: 2rem;
+        }
+    }
+
+    #content {
+        background-image: url("/images/new-product-bg2-desk.webp");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0;
+        padding: 0 6%;
+        margin-top: 0;
+
+
+        & .comunicate {
+            display: flex;
+            flex-direction: column;
+            padding-top: 5rem;
+            gap: 2rem;
+
+            & h3 {
+                font-size: 1.875rem;
+            }
+
+            & .container {
+
+                &_all {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                &_icons {
+                    width: 44%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: flex-start;
+                    gap: 1.7rem;
+                    padding-bottom: 5rem;
+
+                    & .each-icon {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10%;
+                        align-items: center;
+                        justify-content: start;
+
+
+                        & .icon {
+                            color: white;
+                            padding: 0.78rem 1.56rem;
+                            border-radius: 0.625rem;
+
+                            & i {
+                                font-size: 3.125rem;
+                            }
+                        }
+
+                        & .text {
+                            & h4 {
+                                font-size: 1.4375rem;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                &_bg {
+                    display: flex;
+                    background-image: none;
+                    margin: 0;
+                    margin-top: -5rem;
+                    justify-content: end;
+
+                    & img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2500px) {
+    .body_1 {
+        font-size: 1.5rem;
+    }
+
+    .text-btn {
+        font-size: 1.3rem;
+    }
+
+    #main-banner {
+        background-image: url("/images/attention-own-bg-desk.webp");
+        padding: 10rem 25%;
+
+        & .container-text {
+            width: 60%;
+        }
+
+        & h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    #content {
+        background-image: url("/images/new-product-bg2-desk.webp");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0;
+        padding: 0 10%;
+        margin-top: 0;
+
+
+        & .comunicate {
+            display: flex;
+            flex-direction: column;
+            padding-top: 7.3rem;
+            gap: 2rem;
+
+            & h3 {
+                font-size: 1.875rem;
+            }
+
+            & .container {
+
+                &_all {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                &_icons {
+                    width: 44%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: flex-start;
+                    gap: 1.7rem;
+                    padding-bottom: 5rem;
+
+                    & .each-icon {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 4%;
+                        align-items: center;
+                        justify-content: start;
+
+
+                        & .icon {
+                            color: white;
+                            padding: 0.55rem 1rem;
+                            border-radius: 0.625rem;
+
+                            & i {
+                                font-size: 1.7rem;
+                            }
+                        }
+
+                        & .text {
+                            & h4 {
+                                font-size: 0.9375rem;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                &_bg {
+                    display: flex;
+                    background-image: none;
+                    margin: 0;
+                    margin-top: -5rem;
+                    justify-content: end;
+
+                    & img {
+                        height: auto;
+                        margin-right: -10%;
+                    }
+                }
+            }
+        }
+    }
+}

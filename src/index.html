@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Banco W</title>
+  <link rel="icon" type="image/x-icon" href="/public/icons/faviconW_4x.webp">
 
   <!--Scss-->
   <link rel="stylesheet" href="./style.scss">
@@ -36,7 +37,7 @@
 
 
   <nav id="nav-bar-float">
-    <button class="option_credit" id="option-credit">
+    <button class="option_credit" id="credit-btn">
       <img class="icon" src="/icons/credit-purple.svg" alt="Crédito inmediato">
       <a href="/credito-inmediato/">Crédito inmediato</a>
     </button>
@@ -44,9 +45,9 @@
       <img class="icon" src="/icons/blog-purple.svg" alt="Blog">
       <a href="">Blog</a>
     </button>
-    <button class="option_comparator">
+    <button class="option_comparator" id="comparator-btn">
       <img class="icon" src="/icons/comparator-purple.svg" alt="Blog">
-      <a href="">Comparador financiero</a>
+      <a href="/comparator/">Comparador financiero</a>
     </button>
     <button class="option_simulator" id="simulator-btn">
       <img class="icon" src="/icons/calculator-purple.svg" alt="Simulador financiero">
@@ -60,147 +61,135 @@
       <h3>Productos</h3>
     </div>
     <div class="container-products">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-products dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Ahorro
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-options">
-            <li><a class="dropdown-item" href="#opcion1-info" data-value="opcion1">Ahorro</a></li>
-            <li><a class="dropdown-item" href="#opcion2-info" data-value="opcion2">Crédito</a></li>
-            <li><a class="dropdown-item" href="#opcion3-info" data-value="opcion3">Inversión</a></li>
-            <li><a class="dropdown-item" href="#opcion4-info" data-value="opcion4">Canales</a></li>
-            <li><a class="dropdown-item" href="#opcion5-info" data-value="opcion5">Giros Internacionales</a></li>
-          </ul>
-        </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-products dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ahorro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-options">
+          <li><a class="dropdown-item" href="#opcion1-info" data-value="opcion1">Ahorro</a></li>
+          <li><a class="dropdown-item" href="#opcion2-info" data-value="opcion2">Crédito</a></li>
+          <li><a class="dropdown-item" href="#opcion3-info" data-value="opcion3">Inversión</a></li>
+          <li><a class="dropdown-item" href="#opcion4-info" data-value="opcion4">Canales</a></li>
+          <li><a class="dropdown-item" href="#opcion5-info" data-value="opcion5">Giros</a></li>
+        </ul>
+      </div>
 
-<div id="info-container" class="mt-4">
-            <div id="opcion1-info" class="opcion-info" style="display: block;">
-                <div class="info-product">
-                    <div class="info-product_text">
-                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                            molestie, dictum
-                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
-                            lacus.</p>
-                        <article class="description-product">
-                            <ul class="description-product_text">
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes abrir el depósito de
-                                    bajo monto sin
-                                    acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes mantener un saldo
-                                    mensual disponible
-                                    máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes retirar en el mes hasta
-                                    ocho (8) SMMLV.
-                                </li>
-                            </ul>
-                        </article>
-                        <a href="" class="btn-desk">Conoce más</a>
-                    </div>
-                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
-                </div>
+      <div id="info-container" class="mt-4">
+        <div id="opcion1-info" class="opcion-info" style="display: block;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">Para ti que eres una persona que encuentra en el ahorro una forma de cumplir tus sueños,
+                tenemos la rentabilidad y la seguridad que necesitas para que puedas lograrlo.</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes abrir el
+                    depósito de
+                    bajo monto sin
+                    acercarte a una oficina en pocos minutos.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes mantener un
+                    saldo
+                    mensual disponible
+                    máximo de ocho (8) SMMLV.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes retirar en el
+                    mes hasta
+                    ocho (8) SMMLV.
+                  </li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
             </div>
-            <div id="opcion2-info" class="opcion-info" style="display: none;">
-                <div class="info-product">
-                    <div class="info-product_text">
-                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                            molestie, dictum
-                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
-                            lacus.</p>
-                        <article class="description-product">
-                            <ul class="description-product_text">
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
-                                    bajo monto sin
-                                    acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
-                                    mensual disponible
-                                    máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
-                                    ocho (8) SMMLV.
-                                </li>
-                            </ul>
-                        </article>
-                        <a href="" class="btn-desk">Conoce más</a>
-                    </div>
-                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
-                </div>
-            </div>
-            <div id="opcion3-info" class="opcion-info" style="display: none;">
-                <div class="info-product">
-                    <div class="info-product_text">
-                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                            molestie, dictum
-                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
-                            lacus.</p>
-                        <article class="description-product">
-                            <ul class="description-product_text">
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
-                                    bajo monto sin
-                                    acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
-                                    mensual disponible
-                                    máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
-                                    ocho (8) SMMLV.
-                                </li>
-                            </ul>
-                        </article>
-                        <a href="" class="btn-desk">Conoce más</a>
-                    </div>
-                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
-                </div>
-            </div>
-            <div id="opcion4-info" class="opcion-info" style="display: none;">
-                <div class="info-product">
-                    <div class="info-product_text">
-                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                            molestie, dictum
-                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
-                            lacus.</p>
-                        <article class="description-product">
-                            <ul class="description-product_text">
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
-                                    bajo monto sin
-                                    acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
-                                    mensual disponible
-                                    máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
-                                    ocho (8) SMMLV.
-                                </li>
-                            </ul>
-                        </article>
-                        <a href="" class="btn-desk">Conoce más</a>
-                    </div>
-                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
-                </div>
-            </div>
-            <div id="opcion5-info" class="opcion-info" style="display: none;">
-                <div class="info-product">
-                    <div class="info-product_text">
-                        <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                            molestie, dictum
-                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
-                            lacus.</p>
-                        <article class="description-product">
-                            <ul class="description-product_text">
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
-                                    bajo monto sin
-                                    acercarte a una oficina en pocos minutos.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
-                                    mensual disponible
-                                    máximo de ocho (8) SMMLV.</li>
-                                <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
-                                    ocho (8) SMMLV.
-                                </li>
-                            </ul>
-                        </article>
-                        <a href="" class="btn-desk">Conoce más</a>
-                    </div>
-                    <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
-                </div>
-            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
         </div>
+        <div id="opcion2-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">Creemos en las personas como tú, que se encuentra en un nuevo momento de su vida y que
+                están buscando emprender sus proyectos</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Contamos con diferentes tipos de créditos que
+                    pueden adaptarse a tí y a tus necesidades.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Nuestros asesores siempre estarán ahí para
+                    brindarte una ayuda especializada.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Tienes la oportunidad de ahorrar mientras
+                    pagas el crédito</li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion3-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum
+                est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                lacus.</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                    bajo monto sin
+                    acercarte a una oficina en pocos minutos.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                    mensual disponible
+                    máximo de ocho (8) SMMLV.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                    ocho (8) SMMLV.
+                  </li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion4-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2"> La accesibilidad y cercanía con nuestros clientes son fundamentales cuando se trata de
+                gestionar sus
+                finanzas. En Banco W entendemos la importancia de estar siempre al alcance de todos.</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Comtamos con múltiples opciones para que
+                    puedas contactarnos.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes gestionar una petición, queja, reclamo
+                    o sugerencia</li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion5-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">La distancia no existe cuando nos une el amor. Por ello, te ayudamos a recibir o enviar
+                tu dinero
+                en cualquier parte del mundo.
+              </p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Nuestros giros son 100% confiables</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes elegir la manera de recibir tus giros
+                  </li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Recibe y envía dinero a más de 190 países
+                  </li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Para reclamar tu giro sólo necesitas tu
+                    cédula original y el número de referencia del giro (Código o PIN de transacción).</li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -322,7 +311,7 @@
       </article>
       <article class="each-article">
         <card-article image="/images/carousel-article3-mobile.webp"
-          description="miniatura del documento, click para abrirlo" title="Gastos emocionales"
+          description="miniatura del documento, click para abrirlo" title="Finanzas"
           text="Si eres un empleador podrás recibir un beneficio monetario mensual" btn="Ver más documentos">
         </card-article>
       </article>
@@ -343,7 +332,7 @@
         </article>
         <article class="each-article">
           <card-article image="/images/carousel-article3-mobile.webp"
-            description="miniatura del documento, click para abrirlo" title="Gastos emocionales"
+            description="miniatura del documento, click para abrirlo" title="Finanzas"
             text="Si eres un empleador podrás recibir un beneficio monetario mensual" btn="Ver más documentos">
           </card-article>
         </article>
@@ -433,7 +422,7 @@
     </article>
 
   </section>
-  
+
   <help-button></help-button>
   <inclusive-button style="display: none;" disabled="true"></inclusive-button>
 
@@ -444,11 +433,10 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>
 
-  <script src="main.js"></script>
+  <script type="module" src="./main.js"></script>
   <script type="module" src="./components/components.js"></script>
   <script type="module" src="./components/botón-ayuda/ayuda.js"></script>
   <script type="module" src="./components/botón-inclusivo/inclusivo.js"></script>
-  <script type="module" src="./components/footer/footer.js"></script>
 </body>
 
 </html>

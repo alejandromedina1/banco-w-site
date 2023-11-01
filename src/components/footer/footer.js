@@ -53,10 +53,14 @@ render() {
                 </div>
                 <div class="dropdown">
                 <ul>
-                    <li>Quiénes somos</li>
-                    <li>Proveedores</li>
-                    <li>Educación financiera</li>
-                    <li>Trabaja con nosotros</li>
+                    <li class="footer-list">Quiénes somos</li>
+                    <li class="footer-list">Proveedores</li>
+                    <a href="/atencion_financiero/">
+                        <li class="footer-list">Educación financiera</li>
+                    </a>
+                    <a href="/trabaja-con-nosotros/">
+                        <li class="footer-list">Trabaja con nosotros</li>
+                    </a>
                 </ul>
                 </div>
             </div>
@@ -68,10 +72,10 @@ render() {
                 </div>
                 <div class="dropdown">
                 <ul>
-                    <li>Oficinas</li>
-                    <li>App móvil</li>
-                    <li>Linea nacional gratuita</li>
-                    <li>Corresponsales bancarios</li>
+                    <li class="footer-list">Oficinas</li>
+                    <li class="footer-list">App móvil</li>
+                    <li class="footer-list">Linea nacional gratuita</li>
+                    <li class="footer-list">Corresponsales bancarios</li>
                 </ul>
                 </div>
             </div>
@@ -83,11 +87,17 @@ render() {
                 </div>
                 <div class="dropdown">
                 <ul>
-                    <li>Preguntas frecuentes</li>
-                    <li>Tasas y tarifas</li>
-                    <li>Información legal</li>
-                    <li>Comunicados de prensa</li>
-                    <li>PQRS</li>
+                    <a href="/preguntas-frecuentes/">
+                        <li class="footer-list">Preguntas frecuentes</li>
+                    </a>
+                    <a href="/tasas-y-tarifas/">
+                        <li class="footer-list">Tasas y tarifas</li>
+                    </a>
+                    <li class="footer-list">Información legal</li>
+                    <li class="footer-list">Comunicados de prensa</li>
+                    <a href="/pqrs/">
+                        <li class="footer-list">PQRS</li>
+                    </a>
                 </ul>
                 </div>
             </div>
