@@ -71,7 +71,6 @@ class InclusiveButton extends HTMLElement {
     overlayColor() {
         let checkbox = document.getElementById('show-inclusive-btn');
         let overlay = document.getElementById('inclusive-overlay');
-        let inclusiveIcon = document.querySelector('.show-inclusive-button');
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 overlay.style.display = 'block';
@@ -132,7 +131,7 @@ class InclusiveButton extends HTMLElement {
                     element.style.color = 'white';
                 });
                 h2.forEach(element => {
-                    element.style.color= 'white',
+                    element.style.color= 'white';
                 });
             } else {
                 fondo.style.backgroundColor = 'white';
