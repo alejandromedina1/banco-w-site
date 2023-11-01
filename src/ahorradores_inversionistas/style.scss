@@ -1,0 +1,305 @@
+@import '../global.scss';
+@import "bootstrap/scss/bootstrap";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+
+h2 {
+    font-family: "font-geomanist-bold";
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+h3 {
+    margin-bottom: 1.25rem;
+    font-family: "font-geomanist-bold";
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $orange-400 !important;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: $gray-3;
+    background-image: url(../public/images/ahorradores-inversionistas-bg.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .banner-container {
+        width: 42.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        margin-left: 10%;
+    }
+
+    & .container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    & .title {
+        color: white;
+        font-family: Geomanist, sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 137%;
+        margin: 0;
+    }
+
+    & .info {
+        width: 80%;
+        color: white;
+        font-family: Bariol, sans-serif;
+        font-size: 20px;
+        line-height: 133%;
+        margin: 0;
+    }
+
+    & .woman-saver-img {
+        width: 400px;
+        margin-left: 10%;
+    }
+}
+
+#nav-bar-float {
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 20%;
+    top: 570px;
+    z-index: 1;
+
+    & button {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $purple-300;
+        text-align: center;
+        font-family: Bariol, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        justify-content: center;
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0 1%;
+
+        & .icon {
+            width: 24%;
+            margin-bottom: 0.5rem;
+        }
+
+        & a {
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            color: $purple-300;
+        }
+    }
+
+    & button:hover {
+        background-color: $purple-100;
+    }
+
+    .active{
+        background-color: $purple-300;
+        & p {
+            color: white;
+            
+        }
+
+        & img {
+            filter: saturate(0) brightness(3);
+        }
+    }
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 8% 5%;
+    z-index: 2;
+}
+
+.card {
+    border-style: none;
+    margin: 8px;
+    width: auto;
+    height: auto;
+    border-radius: 7.723px;
+    box-shadow: 5.516607284545898px 7.723250389099121px 33.09964370727539px 0px rgba(159, 102, 219, 0.18);
+    
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-buttons {
+    margin-bottom: 8px;
+}
+
+.card-img-top {
+    width: auto;
+    padding: 4%;
+}
+
+.purple-card-button {
+    background-color:  $purple-300;
+    color: white;
+    padding: 6px 10px 8px 10px;
+    border-radius: 4.479px;
+    text-decoration: none;
+}
+
+.white-card-button {
+    background-color: white;
+    color: $purple-300;
+    padding: 6px 10px 8px 10px;
+    border-radius: 4.479px;
+    border: 2px solid $purple-300;
+    text-decoration: none;
+}
+
+.card-title {
+    font-family: Geomanist, sans-serif;
+    font-size: 20px;
+    color: $gray-1;
+}
+
+.card-text {
+    color: $gray-1; 
+    font-family: Bariol, sans-serif;
+    font-size: 18px;
+    width: 20px;
+    width: auto;
+    margin-bottom: 20px;
+    
+}
+
+@media screen and (max-width:1200px) {
+    #banner {
+        & .title {
+            font-size: 38px;
+        }
+        & .info {
+            font-size: 18px;
+        }
+    }
+
+    #nav-bar-float {
+        width: 80%;
+        left: 10%;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .options {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .options {
+    grid-template-columns: 1fr;
+    margin-top: 20%;
+    }
+    #banner {
+        background-image: url(../public/images/ahorradores_inversionistas_bg_mobile.webp);
+        background-size: cover;
+        flex-direction: column-reverse;
+
+        & .banner-container {
+            width: 80%;
+            height: 370px;
+            margin: 0;
+            justify-content: space-around;
+            height: fit-content;
+        }
+
+        & .container-text {
+            text-align: center;
+            margin: 10% 0%;
+            align-items: center;
+            height: 130px;
+        }
+
+        & .title {
+            width: 100%;
+        }
+
+        & .text {
+            width: 100%;
+        }
+
+        &  .woman-saver-img{
+            width:  300px;
+        }
+    }
+    #nav-bar-float {
+        top: 580px;
+        height: 10%;
+        & button {
+            & p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .white-button {
+        padding: 5px 10px;
+    }
+    .purple-button {
+        background-color: $purple-300;
+        padding: 5px 10px;
+    }
+    #banner {
+
+        & .banner-container {
+            width: 80%;
+            height: 370px;
+            margin: 0;
+            justify-content: space-around;
+            height: fit-content;
+        }
+    }
+    #nav-bar-float {
+        top: 580px;
+        height: 10%;
+        & button {
+            & p {
+                font-size: 14px;
+            }
+        }
+    }
+}

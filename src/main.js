@@ -1,8 +1,3 @@
-import './global.scss'
-import './components/components.js'
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
-
 const slider = document.querySelector(".slider");
 const sliderTrack = document.querySelector(".slider-track");
 let isDragging = false;
@@ -99,3 +94,50 @@ function setPositionByIndex() {
     prevTranslate = currentTranslate;
     setSliderPosition();
 }
+//--------- Products Section-----------
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownOptions = document.querySelectorAll(".dropdown-item");
+    const dropdownToggle = document.querySelector(".dropdown-products");
+    const infoContainer = document.getElementById("info-container");
+    let scrollPosition = window.scrollY;
+
+    dropdownToggle.addEventListener("click", function () {
+        scrollPosition = window.scrollY;
+    });
+
+    dropdownOptions.forEach((option) => {
+        option.addEventListener("click", function (event) {
+            event.preventDefault();
+            const selectedValue = this.getAttribute("data-value");
+            const selectedText = this.textContent;
+
+            dropdownToggle.textContent = selectedText;
+
+            const opcionInfos = document.querySelectorAll(".opcion-info");
+            opcionInfos.forEach((info) => {
+                info.style.display = "none";
+            });
+
+            const selectedInfo = document.getElementById(`${selectedValue}-info`);
+            selectedInfo.style.display = "block";
+
+            window.scrollTo(0, scrollPosition);
+        });
+    });
+});
+
+//-------- NavBar ------------
+
+document.getElementById('credit-btn').addEventListener("click", () => {
+    window.location.replace('/credito-inmediato/')
+})
+
+document.getElementById('simulator-btn').addEventListener("click", () => {
+    window.location.replace('/simuladores/')
+})
+
+document.getElementById('comparator-btn').addEventListener("click", () => {
+    window.location.replace('/comparator/')
+})
+

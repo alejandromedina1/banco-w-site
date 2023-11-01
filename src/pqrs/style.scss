@@ -1,0 +1,464 @@
+@import '../global.scss';
+
+h1 {
+    font-family: "font-geomanist-bold";
+    font-size: 1.9375rem;
+    color: $gray-1 !important;
+}
+
+.body1 {
+    color: $gray-1;
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.875rem;
+    line-height: 150%;
+    margin: 0;
+}
+
+.text-btn {
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.67313rem;
+    margin: 0;
+}
+
+#breadcrumb-w {
+    margin: 0.6rem 3.08%;
+    font-size: 0.625rem;
+    font-family: "font-bariol-regular";
+
+    & .breadcrumb-icon {
+        fill: white;
+    }
+
+    & .active {
+        color: #BCBDBD;
+    }
+}
+
+#main-banner {
+    margin: 2.6875rem 0;
+    padding: 3.63rem 7.18% 7.81rem 7.18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gray-3;
+    background-image: url(/images/bg-pqrs-mobile.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+#nav-procedure {
+    display: flex;
+    flex-direction: row !important;
+    width: 93.85%;
+    height: 5.75rem;
+    margin: 0 3.08%;
+    margin-top: -5.5rem;
+    align-items: center;
+    border-radius: 0.4375rem;
+    background: white;
+    box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+    .btn-procedure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        border: none;
+        border-radius: 0.4375rem;
+        color: $cyan-500 !important;
+        background-color: transparent;
+
+        .icon-calc {
+            width: 25%;
+            fill: $cyan-500;
+        }
+    }
+
+    .active {
+        background-color: $cyan-500;
+        box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+        color: white !important;
+    }
+}
+
+.procedure-info {
+    display: none !important;
+}
+
+.procedure-info.active {
+    display: flex !important;
+}
+
+#new-procedure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-pqrs {
+    padding: 3.6rem 7.18%;
+
+    .form-items {
+        display: flex;
+        flex-direction: column;
+        gap: 2.1rem;
+        margin-bottom: 1.56rem;
+
+        .label-input {
+            color: $gray-1;
+            font-family: "font-bariol-regular";
+            font-size: 0.8125rem;
+            line-height: 150%;
+        }
+    }
+
+    .input-base {
+        width: 100%;
+        height: 2.375rem;
+        border-radius: 0.28169rem;
+        border: 1.932px solid #CDCDCD !important;
+        color: $gray-2;
+        padding: 0 0.81rem;
+    }
+
+    .input-base::placeholder {
+        color: $gray-2;
+    }
+
+    .checkbox-items {
+        display: flex;
+        flex-direction: column;
+        gap: 0.44rem;
+
+        .checkbox-form {
+            display: flex;
+            flex-direction: row;
+            gap: 1.79%;
+            align-items: flex-start;
+        }
+
+        .label-check {
+            color: $gray-1;
+            font-family: "font-bariol-regular";
+            font-size: 0.5rem;
+            line-height: 150%;
+        }
+
+        .check-input {
+            width: 6.36%;
+            height: auto;
+        }
+    }
+
+    #send-form {
+        margin-top: 8.25rem;
+        width: 58.45%;
+        height: 3.13rem;
+        align-self: center;
+        background-color: $cyan-500;
+        border-radius: 0.4375rem;
+        border: 1px solid $cyan-500;
+        color: white;
+        text-align: center;
+        font-family: "font-bariol-regular";
+        font-size: 1.375rem;
+
+        &:hover {
+            border-color: $cyan-500;
+            background-color: white;
+            color: $cyan-500;
+        }
+    
+        &:active {
+            background-color: $cyan-100;
+            border-color: $cyan-100;
+        }
+    }
+    
+
+    :disabled {
+        border-color: $gray-2 !important;
+        background: $gray-3 !important;
+        color: $gray-2 !important;
+    }
+}
+
+#status-procedure {
+    padding: 3.6rem 7.18%;
+
+    a {
+        text-decoration: none;
+    }
+
+    .pqrs-status {
+        width: 100%;
+        height: auto;
+        border-radius: 0.4375rem;
+        border: 1px solid $gray-3;
+
+        .each-item {
+            padding: 0 4.83%;
+            display: flex;
+            width: 100%;
+            height: 2.0625rem;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: transparent;
+            align-items: center;
+
+            .date-in-process {
+                color: $gray-2;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .body1 {
+        font-size: 1.2rem;
+    }
+
+    .text-btn {
+        font-size: 0.87rem;
+    }
+
+    #breadcrumb-w {
+        display: none;
+    }
+
+    #main-banner {
+        margin: 1.56rem 0;
+        height: 100%;
+        padding: 7.5rem 15%;
+        justify-content: center;
+        background-color: $gray-3;
+        background-image: url(/images/bg-pqrs-desk.webp);
+
+        .main-text {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+
+    #nav-procedure {
+        width: 75%;
+        height: 7.125rem;
+        margin: 0 12.5%;
+        margin-top: -5.5rem;
+        border-radius: 0.625rem;
+
+        .btn-procedure {
+            border-radius: 0.625rem;
+
+            .icon-calc {
+                font-size: 1.65rem;
+                fill: $cyan-500;
+            }
+        }
+    }
+
+    #new-pqrs {
+        margin: 5.87rem 12.5%;
+        padding: 0 12%;
+
+        .form-items {
+            margin-bottom: 2.5rem;
+
+            .label-input {
+                font-size: 1rem;
+            }
+        }
+
+        .input-base {
+            height: 3.13rem;
+            padding: 0 1rem;
+        }
+
+        .checkbox-items {
+            gap: 0.77rem;
+
+            .checkbox-form {
+                gap: 1.79%;
+            }
+
+            .label-check {
+                font-size: 0.8125rem;
+                width: 90%;
+            }
+
+            .check-input {
+                transform: scale(2);
+            }
+        }
+
+        #send-form {
+            margin-top: 5.38rem;
+            width: 100%;
+            font-size: 1.125rem;
+            border: 2px solid $cyan-500;
+        }
+    }
+
+    #status-procedure {
+        padding: 4.87rem 12.5%;
+
+        .pqrs-status {
+            border-radius: 0.625rem;
+            border: none;
+            box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+            .each-item {
+                padding: 0 5.68%;
+                display: flex;
+                width: 100%;
+                height: 5.2rem;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: transparent;
+                align-items: center;
+
+                .date-in-process {
+                    color: $gray-2;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    .body1 {
+        font-size: 1.87rem;
+    }
+
+    .text-btn {
+        font-size: 1.25rem;
+    }
+
+    #breadcrumb-w {
+        display: none;
+    }
+
+    #main-banner {
+        margin: 1.56rem 0;
+        height: 100%;
+        padding: 10rem 27%;
+        justify-content: center;
+        background-color: $gray-3;
+        background-image: url(/images/bg-pqrs-desk.webp);
+
+        .main-text {
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+
+    #nav-procedure {
+        width: 67.8%;
+        height: 8.78rem;
+        margin: 0 16.1%;
+        margin-top: -6.5rem;
+        border-radius: 0.7rem;
+
+        .btn-procedure {
+            border-radius: 0.7rem;
+
+            .icon-calc {
+                font-size: 2.2rem;
+                fill: $cyan-500;
+            }
+        }
+    }
+
+    #new-pqrs {
+        margin: 6rem 16.1%;
+        padding: 0 10%;
+
+        .form-items {
+            margin-bottom: 3rem;
+
+            .label-input {
+                font-size: 1.7rem;
+            }
+        }
+
+        .input-base {
+            height: 3.5rem;
+            padding: 0 1.3rem;
+        }
+
+        .input-base::placeholder {
+            font-size: 1.3rem !important;
+            align-self: center;
+        }
+
+        .checkbox-items {
+            gap: 0.84rem;
+
+            .checkbox-form {
+                gap: 2%;
+            }
+
+            .label-check {
+                font-size: 1rem;
+                width: 90%;
+            }
+
+            .check-input {
+                transform: scale(2.5);
+            }
+        }
+
+        #send-form {
+            margin-top: 5.5rem;
+            width: 100%;
+            height: 5rem;
+            font-size: 2rem;
+            border: 2.5px solid $cyan-500;
+        }
+    }
+
+    #status-procedure {
+        padding: 5rem 16.1%;
+
+        .pqrs-status {
+            border-radius: 1.3rem;
+            border: none;
+            box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.15);
+
+            .each-item {
+                padding: 0 6%;
+                display: flex;
+                width: 100%;
+                height: 6.5rem;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: transparent;
+                align-items: center;
+
+                .date-in-process {
+                    color: $gray-2;
+                }
+            }
+        }
+    }
+}

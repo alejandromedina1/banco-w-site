@@ -1,0 +1,409 @@
+@import '../global.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-bg {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    background-color: #EFEFEF;
+    z-index: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 35%;
+    gap: 1rem;
+    height: max-content;
+    z-index: 2;
+}
+
+.title {
+    color: $gray-1;
+    width: 80%;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.78375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text {
+    width: 80%;
+    color: $gray-2;
+    font-family: Bariol, sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tab-bar {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: -1rem auto;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+    z-index: 2;
+}
+
+.tab-button {
+    color: $gray-2;
+    border: none;
+    width: 20%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.points {
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.125rem;
+}
+
+#caracteristicas-content,
+#beneficios-content {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 3rem auto;
+    flex-direction: column;
+}
+
+#devoluciones-content,
+#tramites-content {
+    display: none;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 3rem auto;
+    gap: 1.5rem;
+}
+
+
+.dropdownPages {
+    display: block;
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0.4375rem;
+    background-color: $purple-300;
+}
+
+.dropdown-tab {
+    display: none;
+    border-radius: 0rem 0rem 0.4375rem 0.4375rem;
+    background: #FFF;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    padding: 2rem;
+}
+
+.dropdown-title {
+    color: #FFF;
+    font-family: Bariol;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0.4rem;
+    margin-left: 4%;
+}
+
+.list {
+    margin: 3rem 0;
+}
+
+.list-text {
+    margin: 1rem auto;
+}
+
+.show {
+    display: block;
+}
+
+.active {
+    color: $purple-300;
+    border-bottom: 2px solid $purple-300;
+}
+
+.bullet-points {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-break {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 5em;
+    background-color: $purple-100;
+    margin: 0 0.5em;
+    vertical-align: middle;
+}
+
+.mobile {
+    display: none;
+}
+
+#devoluciones-content {
+    width: 100%;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.subtitle {
+    color: $gray-1;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0 4.5rem;
+}
+
+.dev-section {
+    background-color: $purple-300;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    align-items: center;
+    gap: 4rem;
+}
+
+.dev-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.dev-text {
+    padding: 1rem 0rem;
+    margin: 0 4.5rem;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.dev-points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.number-image {
+    width: 20%;
+}
+
+.div-number {
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+}
+
+.one-two {
+    color: #FFF;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.dev-bullet {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 1rem 4.2rem;
+}
+
+.more-info {
+    background: $purple-300;
+    padding: 5rem;
+}
+
+.more-info>h3 {
+    text-align: left;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.info-points>.points,
+.info-points>.points>svg path {
+    color: white;
+    fill: white;
+}
+
+.info-points {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 8px;
+    }
+
+    .title,
+    .dev-title {
+        font-size: 1.4rem;
+    }
+
+    .text,
+    .tab-button,
+    .points,
+    .dev-text {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 821px) {
+    .mobile {
+        display: flex;
+    }
+
+    .dev-bullet,
+    .info-points {
+        flex-direction: column;
+    }
+
+    .more-info {
+        padding: 3.5rem;
+    }
+
+
+    .more-info>h3,
+    .more-info>.h3 {
+        font-size: 1.2rem;
+    }
+
+    #caracteristicas-content,
+    #beneficios-content {
+        gap: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 690px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .text,
+    .tab-button,
+    .points,
+    .dev-text {
+        font-size: 0.9rem;
+    }
+
+    .info {
+        width: 38%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info {
+        width: 64%;
+        margin-right: 3rem;
+        margin-bottom: 50%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .dev-points{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .div-number{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tab-button {
+        font-size: 0.7rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .more-info>h3 {
+        font-size: 1.1rem;
+    }
+
+}

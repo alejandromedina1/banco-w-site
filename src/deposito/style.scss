@@ -1,0 +1,217 @@
+@import '../global.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-bg {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    background-color: #EFEFEF;
+    z-index: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 35%;
+    gap: 1rem;
+    height: max-content;
+    z-index: 1;
+}
+
+.title {
+    color: $gray-1;
+    width: 80%;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.78375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text {
+    width: 80%;
+    color: $gray-2;
+    font-family: Bariol, sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tab-bar {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: -1rem auto;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+    z-index: 0;
+}
+
+.tab-button {
+    color: $gray-2;
+    border: none;
+    width: 20%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tab-content {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.active {
+    color: $purple-300;
+    border-bottom: 2px solid $purple-300;
+}
+
+.bullet-points {
+    display: flex;
+    flex-direction: column;
+}
+
+.points {
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.125rem;
+}
+
+.line-break {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 5em;
+    background-color: $purple-100;
+    margin: 0 0.5em;
+    vertical-align: middle;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 8px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .text,
+    .tab-button,
+    .points {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 821px) {
+    .mobile {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .text,
+    .tab-button,
+    .points {
+        font-size: 0.9rem;
+    }
+
+    .info {
+        width: 38%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .info {
+        width: 64%;
+        margin-right: 3rem;
+        margin-bottom: 50%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .tab-button {
+        font-size: 0.7rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .info {
+        margin-right: 2rem;
+        margin-bottom: 60%;
+    }
+
+}

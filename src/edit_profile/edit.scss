@@ -1,0 +1,436 @@
+@use '../global.scss' as c;
+
+//Mixins
+@mixin input_box($w: 100%, $br: 3px, $f: 13px) {
+    width: $w;
+    border-radius: $br;
+    border: 1px solid c.$gray-2;
+    background: #FFF;
+    padding: 7px 0 7px 15px;
+    font-family: 'Bariol';
+    font-size: $f;
+    color: c.$gray-2;
+    margin-top: 0.8rem; 
+}
+
+@mixin checkbox($m) {
+    display: flex;
+    align-items: center;
+    font-family: 'Bariol';
+    font-size: 18px;
+    color: c.$gray-2;
+    gap: 1.25rem;
+    margin-bottom: $m;
+    white-space: nowrap;
+}
+
+.Toggle {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h6, h5, h4, h3, h2, h1 {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Geomanist';
+    color: c.$gray-2;
+    font-weight: 700;
+}
+
+h3 {
+    display: none;
+}
+
+#pr {
+    margin-bottom: 0rem !important;
+}
+
+.Button-toogle {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 5rem 0 5rem 100px;
+}
+
+.Button-toogle h3 {
+    font-family: 'Bariol';  
+    font-size: 35px;
+    color: c.$cyan-500;
+    font-weight: 400; 
+}
+
+.Profile-checks {
+    @include checkbox($m: 0rem); 
+    margin-right: 100px; 
+}
+
+:root {
+    --scrollY: 0px;
+}
+
+//Components
+.Button-components {
+    display: none;
+}
+
+.button {
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.button__icon {
+    background: c.$cyan-500 !important;
+}
+
+.button__text{
+	padding-left: 14px !important;
+}
+
+.button__arrow {
+    padding: 0 20px !important;
+}
+
+//Hero Header
+
+.Bg-animation {
+    height: 255px;
+    background-size: auto 255px;
+    background-image: url(/public/images/hero_circles.webp), url(/public/images/hero_circles.webp);
+    background-position: calc(-211px - var(--scrollY)), calc(100% + 243px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+}
+
+
+.Hero {
+    position: relative;
+    display: grid;
+    margin-top: 0;
+    padding: 12px 21px;
+    background-color: c.$orange-300;
+
+        &-buttons {
+            display: flex;
+            justify-content: right;
+            gap: 14.72px;   
+            height: 17%;
+        }    
+        &-Profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 4rem;
+        }
+        &-Profile img {
+            width: 160px;
+        }
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+        &-check {
+            @include checkbox($m: 2rem);
+        }
+        & img {
+            width: 133px;
+            margin-bottom: 2rem;
+        }
+        &-Button {
+            padding: 9.668px 29.004px;
+            border-radius: 0.26438rem;
+            background: c.$cyan-500;
+            border: none;
+            color: #FFF;
+            font-family: 'Bariol';
+            font-size: 15px;
+            margin-bottom: 1rem;
+            transition: all .2s;
+        }
+        &-Button:hover {
+            background: c.$cyan-100;
+            color: c.$cyan-500;
+            transition: all .2s;
+        }
+        &-name {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        & h4 {
+            font-family: 'Bariol';
+            font-size: 30px;
+            color: c.$gray-2;
+            text-align: center;
+        }
+
+        & p {
+            font-family: 'Bariol';
+            font-size: 20px;
+            color: c.$gray-2;
+            margin-bottom: 2rem;
+        }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 19px;
+}
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    transition: .4s;
+    border-radius: 30px;
+}
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 20px;
+    left: 0.15em;
+    bottom: 0.08em;
+    background-color: c.$cyan-500;
+    transition: 0.4s;
+}
+  
+  input:checked + .slider {
+    background-color: c.$cyan-500;
+    border: 1px solid c.$cyan-500;
+}
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px c.$cyan-500;
+}
+  
+  input:checked + .slider:before {
+    transform: translateX(1.6em);
+    background-color: #fff;
+}
+
+.Form {
+    margin: 2rem 33px 0 33PX;
+    
+
+        & label {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Bariol';
+            font-size: 13px;
+            color: c.$gray-2;
+            margin-bottom: 1.5rem;
+        }
+        & ::placeholder {
+            font-family: 'Bariol';
+            font-size: 13px;
+            color: c.$gray-2;
+        }
+        &-Input {
+            @include input_box()    
+        }
+        &-Dni,
+        &-Bday {
+            display: flex;
+        }
+        &-Dni input:nth-child(1) {
+            @include input_box($w: 20%, $br: 3px, $f: 13px);
+            margin-right: 1rem;
+        }
+        &-Dni input:nth-child(2) {
+            @include input_box($w: 100%, $br: 3px, $f: 13px);
+        }
+        &-Bday input:nth-child(1),
+        &-Bday input:nth-child(2) {
+            @include input_box($w: 20%, $br: 3px, $f: 13px);
+            margin-right: 1rem;
+        }
+        &-Bday input:nth-child(3) {
+            @include input_box($w: 25%, $br: 3px, $f: 13px);
+        }
+        &-Country {
+            display: flex;
+        }
+        &-Country select:nth-child(1){
+            margin-right: 1rem;
+        }
+        & select {
+            @include input_box($w: 50%, $br: 3px, $f: 13px);
+        }
+        &-Send {
+            display: flex;
+            justify-content: center;
+        }
+        &-Send input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            height: 36px;
+            border: none;
+            border-radius: 0.44306rem;
+            background: var(--acuamarina-500, #00B1BB);
+            color: #FFF;
+            margin: 4rem 0;
+            font-family: 'Bariol';
+            transition: all .2s;
+        }
+        &-Send input:hover {
+            background: c.$cyan-100;
+            color: c.$cyan-500;
+            transition: all .2s;
+        }
+}  
+
+@media only screen and (min-width: 768px){
+    
+}  
+    
+
+
+@media only screen and (min-width: 1024px){
+    //Header
+    .Hero {
+
+        &-buttons {
+            display: none;
+        }
+        &-Profile {
+            padding-bottom: 0;
+        }
+        &-Profile h3{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Geomanist';
+            font-weight: 700;
+            font-size: 45px;  
+        }
+        &-Profile img{
+            display: none;
+        }
+    }
+
+    .Bg-animation {
+        height: 471px;
+        background-size: auto 863px;
+        background-image: url(/public/images/hero-circles-desktop.webp), url(/public/images/hero-circles-desktop.webp);
+        background-position: calc(-919px - var(--scrollY)), calc(100% + 858px + var(--scrollY)), 100%;
+        background-repeat: no-repeat;
+    }
+
+    //El resto
+
+    .Button-components {
+        display: block;
+    }
+
+    .Toggle {
+        display: block;
+    }
+
+    h3 {
+        display: block;
+    }
+
+    .Hero-Profile h3 {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Geomanist';
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Form {
+        flex: 1 1 17rem;
+        margin: 2rem 100px 0 0;
+    }
+
+    .Profile {
+        flex: 1 1 0rem;
+        margin: 1rem 85px 0 100PX;
+        padding-bottom: 19rem;
+    }
+
+    .Profile-check {
+        display: none;
+    }
+    
+    .Form {
+        
+            & label {
+                font-size: 20px;
+            }
+            & ::placeholder {
+                font-size: 18px;
+            }
+            &-Dni input:nth-child(1) {
+                @include input_box($w: 20%, $br: 3px, $f: 13px);
+            }
+            &-Dni input:nth-child(2) {
+                @include input_box($w: 100%, $br: 10px, $f: 13px);
+            }
+            &-Bday input:nth-child(1),
+            &-Bday input:nth-child(2) {
+                @include input_box($w: 20%, $br: 10px, $f: 13px);
+            }
+            &-Bday input:nth-child(3) {
+                @include input_box($w: 25%, $br: 10px, $f: 13px);
+            }
+            & select {
+                @include input_box($w: 50%, $br: 10px, $f: 13px);
+            }
+            & option {
+                font-size: 13px;
+            }
+            &-Send input{
+                width: 100%;
+                height: 50px;
+                font-size: 18px;
+            }
+    }  
+}
+
+
+
+
+

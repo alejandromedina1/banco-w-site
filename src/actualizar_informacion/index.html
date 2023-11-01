@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/public/icons/faviconW_4x.webp">
+    <title>Actualizar información</title>
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../components/footer/style.scss" />
+    <link rel="stylesheet" href="../components/navbar/style.scss" />
+    <link rel="stylesheet" href="../global.scss" />
+  </head>
+
+  <body>
+    <nav-bar-desktop></nav-bar-desktop>
+    <section class="banner">
+      <img src="/images/bg_people.webp" class="ancianos-image" />
+      <span class="info">
+        <h2>Actualizar información</h2>
+        <p>
+          Actualiza la información de tus seguros, tales como la dirección o si
+          desea añadir algún integrante de la familia. También puede solicitiar
+          un crédito o cambiarlo.
+        </p>
+      </span>
+    </section>
+    <div class="tab-bar">
+      <button class="tab-button" data-tab="characteristics">
+        Cambiar dirección
+      </button>
+      <button class="tab-button" data-tab="benefits">Añadir familia</button>
+      <button class="tab-button" data-tab="procedures">Cambiar seguro</button>
+    </div>
+
+    <section class="content">
+      <div class="tab-content" id="characteristics">
+        <div class="content-list">
+          <form class="form-seguros" id="form" action="">
+            <section class="form-content">
+              <div class="left-form">
+                <label for="departamento">
+                  Departamento
+                  <select name="departamento" id="departamento" required>
+                    <option value="Valle del Cauca">Valle del Cauca</option>
+                  </select>
+                </label>
+                <label for="ciudad">
+                  Ciudad
+                  <select name="ciudad" id="ciudad" required>
+                    <option value="Cali">Cali</option>
+                  </select>
+                </label>
+                <label for="direccion">
+                  Dirección
+                  <input
+                    type="text"
+                    name="direccion"
+                    required
+                    placeholder="Calle 18#121-180"
+                  />
+                </label>
+              </div>
+              <div class="right-form">
+                <label for="municipio">
+                  Municipio
+                  <select name="municipio" id="municipio" required>
+                    <option value="Cali">Cali</option>
+                  </select>
+                </label>
+                <label for="barrio">
+                  Barrio
+                  <input
+                    type="text"
+                    name="barrio"
+                    id="barrio"
+                    placeholder="Pance"
+                    required
+                  />
+                </label>
+                <label for="datos">
+                  Más datos específicos
+                  <input
+                    type="text"
+                    name="datos"
+                    id="datos"
+                    placeholder="Apto 802A, torre A"
+                    required
+                  />
+                </label>
+              </div>
+            </section>
+            <input class="submit" type="submit" value="Guardar datos" />
+          </form>
+          <div id="active-msg" class="oculto">
+            La información se actualizo correctamente
+            <button id="comeback">Atrás</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="benefits">
+        <div class="content-list">
+          <form class="form-seguros" id="form2" action="">
+            <section class="form-content">
+              <div class="left-form">
+                <label for="apellido">
+                  Apellido
+                  <input
+                    type="text"
+                    placeholder="Escribe acá tu apellido"
+                    required
+                  />
+                </label>
+                <label for="documento">
+                  Número de documento
+                  <input
+                    type="text"
+                    placeholder="Escribe acá tu número de documento"
+                    required
+                  />
+                </label>
+                <label for="consiguinidad">
+                  Grado de consanguinidad
+                  <input
+                    type="text"
+                    name="consanguinidad"
+                    placeholder="Escribe el grado de consanguinidad"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="right-form">
+                <label for="tipo">
+                  Tipo de documento
+                  <select name="tipo" id="tipo" required>
+                    <option value="cedula">Cédula</option>
+                  </select>
+                </label>
+                <label for="nacimiento">
+                  Fecha de nacimiento
+                  <input
+                    type="date"
+                    name="nacimiento"
+                    id="nacimiento"
+                    required
+                  />
+                </label>
+                <label for="correo">
+                  Correo
+                  <input type="text" name="correo" id="correo" required />
+                </label>
+              </div>
+            </section>
+            <input class="submit" type="submit" value="Guardar datos" />
+          </form>
+          <div id="active-msg2" class="oculto">
+            La información se actualizo correctamente
+            <button id="comeback2">Atrás</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="procedures">
+        <div class="content-list">
+          <form class="form-seguros" id="form3" action="">
+            <section class="form-content2">
+              <label class="unique-label" for="seguro">
+                Tipo de seguro
+                <select name="seguro" id="seguro" required>
+                  <option value="seguro">Seguro voluntario</option>
+                </select>
+              </label>
+              <p class="subtitle-seguro">
+                Seleccione el tipo de seguro voluntario
+              </p>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy patrimonio seguro
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy protección familiar
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy prevención exequial
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy prevenido
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy seguro
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy seguro familiar
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy seguro hogar
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Plan exequial
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy salud
+              </div>
+              <div class="checkbox-wrapper-13">
+                <input class="check" type="checkbox" />
+                Soy beneficio educativo
+              </div>
+            </section>
+            <input class="submit" type="submit" value="Guardar datos" />
+          </form>
+          <div id="active-msg3" class="oculto">
+            La información se actualizo correctamente
+            <button id="comeback3">Atrás</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <help-button></help-button>
+    <inclusive-button style="display: none" disabled="true"></inclusive-button>
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script
+      type="module"
+      src="../components/botón-inclusivo/inclusivo.js"
+    ></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+  </body>
+</html>

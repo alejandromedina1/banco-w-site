@@ -1,0 +1,346 @@
+@import '../global.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    height: 70%;
+    align-items: center;
+    background-image: url(../images/bg_envia_giros.webp);
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.ancianos-image {
+    position: relative;
+    width: 40%;
+    left: 12%;
+    margin-top: 4rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 1rem;
+    height: max-content;
+    margin-right: 5%;
+    z-index: 2;
+}
+
+.title-person {
+    color: $indigo-400;
+    font-family: 'Geomanist';
+    font-size: 1.375rem;
+}
+
+.subtitle-person {
+    font-family: 'Bariol';
+    font-size: 1.125rem;
+    margin-left: 3.125rem;
+    color: $indigo-400;
+
+    &-gray {
+        color: $gray-1;
+        font-family: 'Bariol';
+        font-size: 1.125rem;
+        margin-left: 3.125rem;
+    }
+}
+
+.banner h2 {
+    color: $gray-1;
+    width: 80%;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.78375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner p {
+    width: 80%;
+    color: $gray-2;
+    font-family: Bariol, sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tab-bar {
+    position: relative;
+    display: flex;
+    left: 5%;
+    width: 90%;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+    margin: -1rem 0;
+}
+
+.tab-button {
+    color: $gray-2;
+    border: none;
+    width: 100%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    border-right: 1px solid $gray-2;
+}
+
+.tab-button:last-child {
+    border-right: none;
+}
+
+
+.tab-content {
+    display: none;
+    margin: auto;
+}
+
+.active {
+    color: $indigo-300;
+    border-bottom: 2px solid $indigo-300;
+}
+
+.content-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+    font-family: 'Bariol';
+}
+
+.tab-content h3 {
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.p-tab-content {
+    color: $gray-2;
+    margin: 0px 5%;
+}
+
+ol li {
+    margin-right: 70px;
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+}
+
+.procedures p {
+    color: $gray-1;
+}
+
+ol li::marker {
+    color: $indigo-300;
+}
+
+article {
+    width: auto;
+    padding: 0 70px 15px 10px;
+    color: $gray-1;
+}
+
+.article-line {
+    border-left: 2px solid $indigo-100;
+}
+
+article:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid $indigo-300;
+    position: absolute;
+    margin-left: -18px;
+}
+
+.bottom:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $indigo-300;
+    border: 4px solid white;
+    position: absolute;
+    margin-left: -18px;
+}
+
+
+
+.more-info {
+    background-color: $indigo-300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+
+.giros-info {
+    background-color: $indigo-300;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.giros-info p {
+    padding: 80px 80px;
+    text-align: center;
+    color: white;
+}
+
+.more-info div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Bariol, sans-serif;
+}
+
+.more-info h2 {
+    font-family: Geomanist, sans-serif;
+    font-weight: 1000;
+    color: white;
+    font-size: 1.375rem;
+}
+
+.white-button {
+    background-color: white;
+    border-style: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin: 30px;
+    color: $indigo-300;
+    border: 2.5px solid white;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $indigo-300;
+        color: white;
+        border: 2px solid $indigo-100;
+    }
+}
+
+.purple-button {
+    background-color: $indigo-300;
+    border-style: none;
+    border: 2px solid white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin: 5px;
+    color: white;
+}
+
+.bottom-text {
+    color: white;
+}
+
+
+@media screen and (max-width:1200px) {
+    .banner p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .banner h2 {
+        font-size: 35px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .banner {
+        background-image: url(../images/bg_envia_giros_mobile.webp);
+        flex-direction: column-reverse;
+    }
+
+    .ancianos-image {
+        position: relative;
+        width: 70%;
+        left: 0%;
+        margin-top: 4rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 1rem;
+        height: max-content;
+        margin-right: 5%;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .banner h2 {
+        color: $gray-1;
+        width: 100%;
+        font-family: Geomanist, sans-serif;
+        font-size: 2.78375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 50px;
+    }
+
+    article {
+        width: 100%;
+        padding: 0 50px 40px 10px;
+        color: $gray-1;
+        border-left: 2px solid $indigo-100;
+        margin: 0px;
+    }
+
+    .more-info h2{
+        margin: 10px 50px;
+    }
+
+    .more-info div {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: Bariol, sans-serif;
+        margin: 50px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .white-button {
+        padding: 5px 10px;
+    }
+
+    .purple-button {
+        background-color: $indigo-300;
+        padding: 5px 10px;
+    }
+}

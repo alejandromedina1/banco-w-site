@@ -1,0 +1,302 @@
+@import '../global.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-bg {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    background-color: #EFEFEF;
+    z-index: 1;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    height: max-content;
+    z-index: 2;
+    gap: 0.5rem;
+}
+
+.title {
+    color: $gray-1;
+    width: 80%;
+    font-family: "font-geomanist-medium", sans-serif;
+    font-size: 2.78375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.tab-bar {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: -1rem auto;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+    z-index: 2;
+}
+
+.tab-button {
+    color: $gray-2;
+    border: none;
+    width: 50%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "font-bariol-regular", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content {
+    margin-top: -6%;
+    padding: 5% 0;
+}
+
+
+.tab-content {
+    display: none;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 3rem auto;
+    gap: 1.5rem;
+}
+
+.active {
+    color: $purple-300;
+    border-bottom: 2px solid $purple-300;
+}
+
+.points {
+    color: $gray-1;
+    font-family: "font-bariol-regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.125rem;
+}
+
+
+.mobile {
+    display: none;
+}
+
+.dropdownPages {
+    display: block;
+}
+
+.dropdown-trigger {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0.4375rem;
+    background-color: $orange-400;
+}
+
+.download{
+    background-color: $purple-300;
+    .dropdown-title{
+        margin-left: 0;
+        width: fit-content;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.pdf{
+    text-decoration: none;
+}
+
+.dropdown-tab {
+    display: none;
+    border-radius: 0rem 0rem 0.4375rem 0.4375rem;
+    background: #FFF;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 2rem;
+}
+
+.show {
+    display: grid;   
+}
+
+.dropdown-title {
+    color: #FFF;
+    font-family: "font-bariol-regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0.4rem;
+    margin-left: 4%;
+}
+
+.inver-span p {
+    font-family: "font-bariol-regular", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: #676767;
+}
+
+.informes-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informes-form select {
+    border-radius: 0.4375rem;
+    padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
+    border: 1.04px solid #ACACAC;
+    width: 40%;
+}
+
+.informes-form select {
+    border-radius: 0.4375rem;
+    padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
+    border: 1.04px solid #ACACAC;
+    width: 85%;
+}
+
+.informes-form button {
+    width: 12%;
+    padding: 0.7rem 2rem;
+    background-color: $purple-300;
+    border-radius: 0.4375rem;
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    border: none;
+}
+
+
+@media screen and (max-width:1200px) {
+    body {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 8px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .tab-button,
+    .points {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 832px) {
+    .mobile {
+        display: flex;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .tab-button {
+        width: 32%;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .tab-button,
+    .points {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 594px) {
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .tab-button {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .tab-button {
+        font-size: 0.7rem;
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+
+}

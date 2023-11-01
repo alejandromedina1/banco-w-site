@@ -22,7 +22,7 @@ class InclusiveButton extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
+        <link rel="stylesheet" href="/components/botón-inclusivo/style.scss">
         <div id="inclusive-overlay">
         </div>
         <nav class="inclusive-button">
@@ -33,23 +33,23 @@ class InclusiveButton extends HTMLElement {
                 <input type="checkbox" id="contrast-button"">
                 <input type="checkbox" id="dark-button"">
                 <label id="plus" for="plus-button">
-                    <a><img src="../../public/icons/plus-font.svg" alt=""></a>
+                    <a><img src="/icons/plus-font.svg" alt=""></a>
                     <span>Aumentar fuente</span>
                 </label>
 
                 <label id="minus" for="minus-button">
-                    <a><img src="../../public/icons/minus-font.svg" alt=""></a>
+                    <a><img src="/icons/minus-font.svg" alt=""></a>
                     <span>Disminuir fuente</span>
                 </label>
 
                 <label id="contrast" for="contrast-button">
-                    <a><img src="../../public/icons/contrast.svg" alt=""></a>
+                    <a><img src="/icons/contrast.svg" alt=""></a>
                     <span>Contraste</span>
                 </label>
                 
                 <label id="dark" for="dark-button">
                     <a>
-                        <img src="../../public/icons/dark.svg" alt="">
+                        <img src="/icons/dark.svg" alt="">
                     </a>
                     <span>Modo oscuro</span>
                 </label>
@@ -59,7 +59,7 @@ class InclusiveButton extends HTMLElement {
             <div class="show-inclusive-btn">
                 
                 <label for="show-inclusive-btn">
-                    <img class="show-inclusive-button" src="../../public/icons/inclusive.svg" alt="">
+                    <img class="show-inclusive-button" src="/icons/inclusive.svg" alt="">
                     <span class="label-hidden">Botón inclusivo</span>
                 </label>
                 
