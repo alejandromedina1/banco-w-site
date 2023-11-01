@@ -1,0 +1,552 @@
+@import '../../global.scss';
+
+
+.body_1 {
+    font-family: "font-bariol-regular";
+    font-size: 0.8125rem;
+    line-height: 150%;
+}
+
+.text-btn {
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.7975rem;
+}
+
+#main-banner {
+    background-image: url("/images/attention-own-bg-mobile.webp");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.5rem 14.61% 12.5rem;
+    background-color: $gray_3;
+    gap: 1rem;
+
+    & .container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    & .body_1 {
+        text-align: center;
+        color: $gray_1;
+    }
+
+    & h1 {
+        color: $gray_1;
+        text-align: center;
+        font-family: "font-geomanist-bold";
+        font-size: 1.875rem;
+        line-height: 110%;
+        margin: 0;
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5.75rem;
+    border-radius: 0.8125rem 0.8125rem 0rem 0rem;
+    background: white;
+    padding: 2rem 5.13%;
+
+    & .info-add {
+        padding-bottom: 1.62rem;
+    }
+
+    & .remember {
+        display: flex;
+        flex-direction: column;
+        background-color: $cyan-500;
+        margin: 0 -5.5%;
+        padding: 2.25rem 5.5%;
+        gap: 1rem;
+
+        & h2 {
+            color: white;
+            text-align: center;
+            font-family: "font-geomanist-bold";
+            font-size: 1.5625rem;
+            margin: 0;
+        }
+
+        & .body_1 {
+            color: white;
+            text-align: center;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+
+        & .btn {
+            width: 100%;
+            display: flex;
+            padding: 0.58rem 0;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.25375rem;
+            background-color: white;
+            gap: 3%;
+            color: $cyan-500;
+            border: 2px white solid;
+
+            &:hover {
+                background-color: $cyan-100;
+                border: 2px $cyan-100 solid;
+            }
+
+            &:active {
+                background-color: transparent;
+                border: 2px white solid;
+                color: white;
+            }
+
+        }
+    }
+
+    & .schedule {
+        padding: 2rem 0;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+            align-items: flex-start;
+            margin: 0.6rem 0;
+
+            & .text-list {
+                margin-top: -0.2rem;
+
+                & span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    & .search-bank {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h3 {
+            color: $gray-1;
+            text-align: center;
+            font-family: "font-geomanist-bold";
+            font-size: 1.125rem;
+            line-height: 130%;
+            margin: 0;
+        }
+
+        & .searching {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0;
+
+            & .form-items {
+                display: flex;
+                flex-direction: column;
+                gap: 0.88rem;
+                margin-bottom: 1.75rem;
+
+            }
+
+            & .input-base {
+                width: 100%;
+                height: 2.375rem;
+                border-radius: 0.28169rem;
+                border: 1.932px solid #CDCDCD !important;
+                color: $gray-2;
+                padding: 0 0.81rem;
+
+                & ::placeholder {
+                    color: $gray-2;
+                }
+            }
+
+            #send-form {
+                width: auto;
+                align-self: center;
+                justify-self: center;
+                padding: 0.58rem 1.74rem;
+                background-color: $cyan-500;
+                border-radius: 0.4375rem;
+                border: 1px solid $cyan-500;
+                color: white;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 0.7975rem;
+
+                &:hover {
+                    border-color: $cyan-500;
+                    background-color: white;
+                    color: $cyan-500;
+                }
+
+                &:active {
+                    background-color: $cyan-100;
+                    border-color: $cyan-100;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .body_1 {
+        font-size: 1rem;
+    }
+
+    .text-btn {
+        font-size: 0.85rem;
+    }
+
+    #main-banner {
+        padding: 7.5rem 17% 14.5rem;
+        background-color: $gray_3;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        & .body_1 {
+            width: 70%;
+        }
+
+        & h1 {
+            width: 70%;
+            font-size: 2rem;
+        }
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        margin-top: -4rem;
+        border-radius: 0.8125rem 0.8125rem 0rem 0rem;
+        background: white;
+        padding: 2rem 5.13%;
+
+        & .search-bank {
+
+            & h3 {
+                font-size: 1.6rem;
+            }
+
+            & .searching {
+                width: 100%;
+
+                & .input-base {
+                    width: 100%;
+                    height: 2.375rem;
+                    border-radius: 0.28169rem;
+                    border: 1.932px solid #CDCDCD !important;
+                    color: $gray-2;
+                    padding: 0 0.81rem;
+
+                    & ::placeholder {
+                        color: $gray-2;
+                    }
+                }
+
+                #send-form {
+                    width: auto;
+                    align-self: center;
+                    justify-self: center;
+                    padding: 0.58rem 1.74rem;
+                    background-color: $cyan-500;
+                    border-radius: 0.4375rem;
+                    border: 1px solid $cyan-500;
+                    color: white;
+                    text-align: center;
+                    font-family: "font-bariol-regular";
+                    font-size: 0.7975rem;
+
+                    &:hover {
+                        border-color: $cyan-500;
+                        background-color: white;
+                        color: $cyan-500;
+                    }
+
+                    &:active {
+                        background-color: $cyan-100;
+                        border-color: $cyan-100;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .body_1 {
+        font-size: 1.25rem;
+    }
+
+    .text-btn {
+        font-size: 1.12rem;
+    }
+
+    #main-banner {
+        background-image: url("/images/attention-own-bg-desk.webp");
+        padding: 6.3rem 20%;
+
+        & .container-text {
+            width: 60%;
+        }
+
+        & h1 {
+            font-size: 2rem;
+        }
+    }
+
+    #content {
+        border-radius: 0;
+        background: white;
+        padding: 3.5rem 6%;
+
+        & .info-add {
+            padding-bottom: 3rem;
+
+            & span {
+                font-weight: 700;
+            }
+        }
+
+        & .remember {
+            display: flex;
+            flex-direction: row;
+            background-color: $cyan-500;
+            margin: 0 -10%;
+            padding: 2.25rem 15%;
+            justify-content: space-between;
+            align-items: center;
+
+            & .text-remember {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+
+                & h2 {
+                    font-size: 2.1875rem;
+                    text-align: left;
+                }
+
+                & .body_1 {
+                    text-align: left;
+                }
+            }
+
+            & .btn {
+                width: auto;
+                padding: 1rem 3rem;
+            }
+        }
+
+        & .schedule {
+            padding: 2rem 0;
+
+            & ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & li {
+                    width: 30%;
+                }
+            }
+
+        }
+
+        & .search-bank {
+            align-items: start;
+
+            & h3 {
+                text-align: left;
+                font-size: 1.875rem;
+            }
+
+            & .searching {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding: 2.5rem 0;
+                gap: 5%;
+
+                & .form-items {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+                }
+
+                & .input-base {
+                    width: 100%;
+                    height: 2.375rem;
+                    border-radius: 0.28169rem;
+                    border: 1.932px solid #CDCDCD !important;
+                    color: $gray-2;
+                    padding: 0 0.81rem;
+
+                    & ::placeholder {
+                        color: $gray-2;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2500px) {
+    .body_1 {
+        font-size: 1.5rem;
+    }
+
+    .text-btn {
+        font-size: 1.3rem;
+    }
+
+    #main-banner {
+        background-image: url("/images/attention-own-bg-desk.webp");
+        padding: 10rem 25%;
+
+        & .container-text {
+            width: 60%;
+        }
+
+        & h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    #content {
+        border-radius: 0;
+        background: white;
+        padding: 5rem 10%;
+        margin: 0;
+
+        & .info-add {
+            padding-bottom: 4.3rem;
+
+            & span {
+                font-weight: 700;
+            }
+        }
+
+        & .remember {
+            display: flex;
+            flex-direction: row;
+            background-color: $cyan-500;
+            margin: 0 -15%;
+            padding: 2.25rem 20%;
+            align-items: center;
+            justify-content: space-between;
+
+            & .text-remember {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+
+                & h2 {
+                    font-size: 2.5rem;
+                    text-align: left;
+                }
+
+                & .body_1 {
+                    text-align: left;
+                }
+            }
+
+            & a {
+                width: 30%;
+                display: flex;
+            }
+
+            & .btn {
+                width: 100%;
+                padding: 1rem 2%;
+            }
+        }
+
+        & .schedule {
+            padding: 2.3rem 0;
+
+            & ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & li {
+                    width: 30%;
+                }
+            }
+
+        }
+
+        & .search-bank {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+
+            & h3 {
+                text-align: left;
+                font-size: 2rem;
+            }
+
+            & .searching {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding: 2.5rem 0;
+                gap: 5%;
+
+                & .form-items {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+
+                    & .item-form {
+                        width: 32%;
+                    }
+                }
+
+                & .input-base {
+                    width: 100%;
+                    height: 3rem;
+                    border-radius: 0.28169rem;
+                    border: 2px solid #CDCDCD !important;
+                    color: $gray-2;
+                    padding: 0 0.81rem;
+
+                    & ::placeholder {
+                        color: $gray-2;
+                    }
+                }
+
+                #send-form {
+                    padding: 0.6rem 2%;
+                    border: 2px solid $cyan-500;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

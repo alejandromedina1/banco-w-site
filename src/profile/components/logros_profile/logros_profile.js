@@ -1,31 +1,22 @@
 import "./logros.scss";
 
 class LogrosProfile extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return [
-        ]
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  attributeChangedCallback(nameAtr, oldValue, newValue) {}
 
-        
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-
-      
-
-
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <link rel="stylesheet" type="text/css" href="./logros.scss" />
     <link rel="stylesheet" href="../components/ButtonDuoIcon/buttonDuoIcon.scss"/>
     <link rel="stylesheet" href="../components/ChallengeStatus/challengeStatus.scss"/>
@@ -889,9 +880,8 @@ class LogrosProfile extends HTMLElement {
 
     <script type="module" src="../components/components.js"></script>
 
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('logros-profile', LogrosProfile)
+customElements.define("logros-profile", LogrosProfile);

@@ -1,35 +1,35 @@
-import './chat.scss'
+import "./chat.scss";
 
 class Chat extends HTMLElement {
-    constructor() {
-        super()
-    }
+  constructor() {
+    super();
+  }
 
-    static get observedAttributes() {
-        return []; 
-    }
+  static get observedAttributes() {
+    return [];
+  }
 
-    connectedCallback() {
-        this.render();
+  connectedCallback() {
+    this.render();
 
-        const close = document.getElementById('close-chat');
-        const open = document.getElementById('show-chat');
-        const btns = document.getElementById('close-btns');
+    const close = document.getElementById("close-chat");
+    const open = document.getElementById("show-chat");
+    const btns = document.getElementById("close-btns");
 
-        close.addEventListener('click', () => {
-        open.style.display = 'none';
-        btns.style.display = 'block';
-        });
-    }
+    close.addEventListener("click", () => {
+      open.style.display = "none";
+      btns.style.display = "block";
+    });
+  }
 
-    attributeChangedCallback(propName, oldValue, newValue) {
-        this[propName] = newValue
-        this.render
-    }
+  attributeChangedCallback(propName, oldValue, newValue) {
+    this[propName] = newValue;
+    this.render;
+  }
 
-    render() {
-        this.innerHTML = `
-         <aside>
+  render() {
+    this.innerHTML = `
+        <aside>
         <header class="Chat">
             <div id="close-chat" class="Chat-info">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15" fill="none">
@@ -59,13 +59,13 @@ class Chat extends HTMLElement {
                     <div class="Write-buttons">
                         <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                             <g clip-path="url(#clip0_2413_22915)">
-                              <path d="M20.852 17.2255C20.852 17.7064 20.6609 18.1676 20.3209 18.5077C19.9808 18.8477 19.5196 19.0387 19.0388 19.0387H2.71982C2.23893 19.0387 1.77773 18.8477 1.43769 18.5077C1.09764 18.1676 0.906609 17.7064 0.906609 17.2255V7.25285C0.906609 6.77196 1.09764 6.31076 1.43769 5.97072C1.77773 5.63067 2.23893 5.43964 2.71982 5.43964H6.34625L8.15947 2.71982H13.5991L15.4123 5.43964H19.0388C19.5196 5.43964 19.9808 5.63067 20.3209 5.97072C20.6609 6.31076 20.852 6.77196 20.852 7.25285V17.2255Z" stroke="#00A2AF" stroke-width="1.81321" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M10.8793 15.4123C12.8821 15.4123 14.5057 13.7887 14.5057 11.7859C14.5057 9.78306 12.8821 8.15945 10.8793 8.15945C8.87646 8.15945 7.25285 9.78306 7.25285 11.7859C7.25285 13.7887 8.87646 15.4123 10.8793 15.4123Z" stroke="#00A2AF" stroke-width="1.81321" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.852 17.2255C20.852 17.7064 20.6609 18.1676 20.3209 18.5077C19.9808 18.8477 19.5196 19.0387 19.0388 19.0387H2.71982C2.23893 19.0387 1.77773 18.8477 1.43769 18.5077C1.09764 18.1676 0.906609 17.7064 0.906609 17.2255V7.25285C0.906609 6.77196 1.09764 6.31076 1.43769 5.97072C1.77773 5.63067 2.23893 5.43964 2.71982 5.43964H6.34625L8.15947 2.71982H13.5991L15.4123 5.43964H19.0388C19.5196 5.43964 19.9808 5.63067 20.3209 5.97072C20.6609 6.31076 20.852 6.77196 20.852 7.25285V17.2255Z" stroke="#00A2AF" stroke-width="1.81321" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.8793 15.4123C12.8821 15.4123 14.5057 13.7887 14.5057 11.7859C14.5057 9.78306 12.8821 8.15945 10.8793 8.15945C8.87646 8.15945 7.25285 9.78306 7.25285 11.7859C7.25285 13.7887 8.87646 15.4123 10.8793 15.4123Z" stroke="#00A2AF" stroke-width="1.81321" stroke-linecap="round" stroke-linejoin="round"/>
                             </g>
                             <defs>
-                              <clipPath id="clip0_2413_22915">
-                                <rect width="21.7586" height="21.7586" fill="white"/>
-                              </clipPath>
+                            <clipPath id="clip0_2413_22915">
+                            <rect width="21.7586" height="21.7586" fill="white"/>
+                            </clipPath>
                             </defs>
                         </svg>
                         <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
@@ -77,9 +77,8 @@ class Chat extends HTMLElement {
         </section>
     </aside>
         `;
-    }
-
+  }
 }
 
-customElements.define('chat-component', Chat)
+customElements.define("chat-component", Chat);
 export default Chat;

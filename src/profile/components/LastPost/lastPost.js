@@ -1,126 +1,111 @@
-import "./lastPost.scss"
+import "./lastPost.scss";
 
 class LastPost extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-            this.profile_picture;
-            this.name;
-            this.date;
-            this.spot;
-            this.stars;
-            this.text;
-            this.likes;
-            this.comments;
-            this.reactions;
-            this.link;
+    this.profile_picture;
+    this.name;
+    this.date;
+    this.spot;
+    this.stars;
+    this.text;
+    this.likes;
+    this.comments;
+    this.reactions;
+    this.link;
+  }
+
+  static get observedAttributes() {
+    return [
+      "profile_picture",
+      "name",
+      "date",
+      "spot",
+      "stars",
+      "text",
+      "likes",
+      "comments",
+      "reactions",
+      "link",
+    ];
+  }
+
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+    switch (nameAtr) {
+      case "profile_picture":
+        this.profile_picture = newValue;
+
+        break;
+
+      case "name":
+        this.name = newValue;
+
+        break;
+
+      case "date":
+        this.date = newValue;
+
+        break;
+
+      case "spot":
+        this.spot = newValue;
+
+        break;
+
+      case "stars":
+        this.stars = newValue;
+
+        break;
+
+      case "text":
+        this.text = newValue;
+
+        break;
+
+      case "likes":
+        this.likes = newValue;
+
+        break;
+
+      case "comments":
+        this.comments = newValue;
+
+        break;
+
+      case "reactions":
+        this.reactions = newValue;
+
+        break;
+
+      case "link":
+        this.link = newValue;
+
+        break;
     }
+  }
 
-    static get observedAttributes() {
-        return [
-            "profile_picture",
-            "name",
-            "date",
-            "spot",
-            "stars",
-            "text",
-            "likes",
-            "comments",
-            "reactions",
-            "link"
-        ]
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    attributeChangedCallback(nameAtr, oldValue, newValue) {
+  render() {
+    const maxStars = 5;
+    const coloredStars = Math.min(this.stars, maxStars);
+    const blankStars = maxStars - coloredStars;
 
-        switch (nameAtr) {
-
-            case "profile_picture":
-
-                this.profile_picture = newValue
-
-                break;
-
-            case "name":
-
-                this.name = newValue
-
-                break;
-
-            case "date":
-
-                this.date = newValue
-
-                break;
-                
-            case "spot":
-
-                this.spot = newValue
-
-            break;
-            
-
-            case "stars":
-
-                this.stars = newValue
-
-                break;
-
-            case "text":
-
-                this.text = newValue
-
-                break;
-
-            case "likes":
-
-                this.likes = newValue
-
-                break;
-
-            case "comments":
-
-                this.comments = newValue
-
-                break;
-
-            case "reactions":
-
-                this.reactions = newValue
-
-                break;
-
-            case "link":
-
-                this.link = newValue
-
-                break;
-        }
-
-    }
-
-
-    connectedCallback() {
-        this.render()
-    }
-
-    render() {
-
-        const maxStars = 5;
-        const coloredStars = Math.min(this.stars, maxStars); 
-        const blankStars = maxStars - coloredStars; 
-      
-        const coloredStarsSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 11 11" fill="none">
+    const coloredStarsSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 11 11" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6127 3.65484C10.6951 3.71903 10.7571 3.80574 10.7912 3.90447C10.8174 4.00317 10.8151 4.1073 10.7846 4.20475C10.754 4.3022 10.6964 4.38897 10.6185 4.45499L8.38937 6.61391L8.9291 9.67958C8.94837 9.78077 8.93828 9.88536 8.90002 9.981C8.86177 10.0766 8.79695 10.1593 8.71321 10.2193C8.6206 10.2864 8.5091 10.3223 8.39477 10.3219C8.3078 10.3221 8.22224 10.2998 8.14649 10.2571L5.39387 8.81062L2.63045 10.2517C2.54181 10.2987 2.44182 10.3201 2.34172 10.3134C2.24161 10.3067 2.14535 10.2723 2.06373 10.2139C1.97999 10.1539 1.91517 10.0712 1.87691 9.9756C1.83866 9.87996 1.82857 9.77537 1.84784 9.67418L2.38757 6.60852L0.158482 4.4496C0.0891043 4.38036 0.0398884 4.29354 0.0161166 4.19846C-0.0076552 4.10337 -0.00508551 4.0036 0.0235499 3.90987C0.0548326 3.81394 0.112377 3.72871 0.189652 3.66383C0.266927 3.59896 0.36084 3.55705 0.460731 3.54285L3.5318 3.08947L4.90811 0.304467C4.95231 0.213215 5.02131 0.136256 5.10722 0.0824079C5.19313 0.0285598 5.29247 0 5.39387 0C5.49526 0 5.5946 0.0285598 5.68051 0.0824079C5.76642 0.136256 5.83543 0.213215 5.87962 0.304467L7.25594 3.09487L10.327 3.54285C10.4311 3.55175 10.5303 3.59066 10.6127 3.65484Z" fill="#00B1BB"/>
       </svg>`;
-        
-        const blankStarsSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 14 14" fill="none">
-        <path d="M12.6891 6.04119C12.655 5.94246 12.593 5.85575 12.5106 5.79156C12.4282 5.72738 12.329 5.68847 12.2249 5.67957L9.15385 5.23159L7.77754 2.44119C7.73334 2.34993 7.66434 2.27297 7.57843 2.21913C7.49252 2.16528 7.39318 2.13672 7.29178 2.13672C7.19039 2.13672 7.09105 2.16528 7.00514 2.21913C6.91923 2.27297 6.85022 2.34993 6.80603 2.44119L5.42971 5.22619L2.35865 5.67957C2.25876 5.69377 2.16484 5.73568 2.08757 5.80055C2.01029 5.86543 1.95275 5.95066 1.92147 6.04658C1.89283 6.14032 1.89026 6.24009 1.91403 6.33517C1.93781 6.43026 1.98702 6.51708 2.0564 6.58631L4.28549 8.74524L3.74576 11.8109C3.72649 11.9121 3.73658 12.0167 3.77483 12.1123C3.81309 12.208 3.87791 12.2906 3.96165 12.3506C4.04326 12.409 4.13953 12.4434 4.23963 12.4501C4.33974 12.4568 4.43972 12.4354 4.52836 12.3884L7.29178 10.9473L10.0444 12.3938C10.1202 12.4365 10.2057 12.4589 10.2927 12.4586C10.407 12.459 10.5185 12.4231 10.6111 12.356C10.6949 12.296 10.7597 12.2134 10.7979 12.1177C10.8362 12.0221 10.8463 11.9175 10.827 11.8163L10.2873 8.75063L12.5164 6.59171C12.5943 6.52569 12.6519 6.43892 12.6825 6.34147C12.713 6.24401 12.7153 6.13989 12.6891 6.04119ZM9.36975 8.20011C9.30645 8.26133 9.25909 8.33711 9.23181 8.42084C9.20453 8.50457 9.19815 8.59371 9.21322 8.68047L9.60183 10.9419L7.57244 9.86248C7.49435 9.8209 7.40724 9.79915 7.31877 9.79915C7.2303 9.79915 7.14319 9.8209 7.0651 9.86248L5.03571 10.9419L5.42432 8.68047C5.43939 8.59371 5.43301 8.50457 5.40573 8.42084C5.37845 8.33711 5.33109 8.26133 5.2678 8.20011L3.6486 6.58092L5.92087 6.25168C6.0083 6.23952 6.09142 6.2061 6.16294 6.15434C6.23445 6.10259 6.29218 6.03408 6.33106 5.95483L7.29178 3.89846L8.30648 5.96023C8.34536 6.03948 8.40309 6.10799 8.4746 6.15974C8.54612 6.21149 8.62924 6.24492 8.71667 6.25708L10.9889 6.58631L9.36975 8.20011Z" fill="#00B1BB"/>
-      </svg>`
-      
-        const starsHTML = coloredStarsSVG.repeat(coloredStars) + blankStarsSVG.repeat(blankStars);
 
-        this.innerHTML = `
+    const blankStarsSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 14 14" fill="none">
+        <path d="M12.6891 6.04119C12.655 5.94246 12.593 5.85575 12.5106 5.79156C12.4282 5.72738 12.329 5.68847 12.2249 5.67957L9.15385 5.23159L7.77754 2.44119C7.73334 2.34993 7.66434 2.27297 7.57843 2.21913C7.49252 2.16528 7.39318 2.13672 7.29178 2.13672C7.19039 2.13672 7.09105 2.16528 7.00514 2.21913C6.91923 2.27297 6.85022 2.34993 6.80603 2.44119L5.42971 5.22619L2.35865 5.67957C2.25876 5.69377 2.16484 5.73568 2.08757 5.80055C2.01029 5.86543 1.95275 5.95066 1.92147 6.04658C1.89283 6.14032 1.89026 6.24009 1.91403 6.33517C1.93781 6.43026 1.98702 6.51708 2.0564 6.58631L4.28549 8.74524L3.74576 11.8109C3.72649 11.9121 3.73658 12.0167 3.77483 12.1123C3.81309 12.208 3.87791 12.2906 3.96165 12.3506C4.04326 12.409 4.13953 12.4434 4.23963 12.4501C4.33974 12.4568 4.43972 12.4354 4.52836 12.3884L7.29178 10.9473L10.0444 12.3938C10.1202 12.4365 10.2057 12.4589 10.2927 12.4586C10.407 12.459 10.5185 12.4231 10.6111 12.356C10.6949 12.296 10.7597 12.2134 10.7979 12.1177C10.8362 12.0221 10.8463 11.9175 10.827 11.8163L10.2873 8.75063L12.5164 6.59171C12.5943 6.52569 12.6519 6.43892 12.6825 6.34147C12.713 6.24401 12.7153 6.13989 12.6891 6.04119ZM9.36975 8.20011C9.30645 8.26133 9.25909 8.33711 9.23181 8.42084C9.20453 8.50457 9.19815 8.59371 9.21322 8.68047L9.60183 10.9419L7.57244 9.86248C7.49435 9.8209 7.40724 9.79915 7.31877 9.79915C7.2303 9.79915 7.14319 9.8209 7.0651 9.86248L5.03571 10.9419L5.42432 8.68047C5.43939 8.59371 5.43301 8.50457 5.40573 8.42084C5.37845 8.33711 5.33109 8.26133 5.2678 8.20011L3.6486 6.58092L5.92087 6.25168C6.0083 6.23952 6.09142 6.2061 6.16294 6.15434C6.23445 6.10259 6.29218 6.03408 6.33106 5.95483L7.29178 3.89846L8.30648 5.96023C8.34536 6.03948 8.40309 6.10799 8.4746 6.15974C8.54612 6.21149 8.62924 6.24492 8.71667 6.25708L10.9889 6.58631L9.36975 8.20011Z" fill="#00B1BB"/>
+      </svg>`;
+
+    const starsHTML =
+      coloredStarsSVG.repeat(coloredStars) + blankStarsSVG.repeat(blankStars);
+
+    this.innerHTML = `
     <link rel="stylesheet" href="../LastPost/lastPost.scss">
     
     <div class="post-card">
@@ -173,9 +158,8 @@ class LastPost extends HTMLElement {
 
         <button class="post-button">Ver publicación</button>
     </div>
-    `
-    }
-
+    `;
+  }
 }
 
-customElements.define('last-post', LastPost)
+customElements.define("last-post", LastPost);

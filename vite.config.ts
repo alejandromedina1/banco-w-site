@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { defineConfig } from "vite";
+import { defineConfig} from "vite";
 
 const root = resolve(__dirname,'src')
 const outDir = resolve(__dirname, 'dist')
@@ -17,7 +17,7 @@ export default defineConfig({
                 "config_profile": resolve(root, 'config_profile','index.html'),
                 "edit_profile": resolve(root, 'edit_profile','index.html'),
                 "profile": resolve(root, 'profile','index.html'),
-                "cita-profile": resolve(root, 'cita_profile','index.html'),
+                "cita_profile": resolve(root, 'cita_profile','index.html'),
                 "productos2_profile": resolve(root, 'productos2_profile','index.html'),
                 "productos3_profile": resolve(root, 'productos3_profile','index.html'),
                 "pagos": resolve(root, 'pagos','index.html'),
@@ -40,12 +40,46 @@ export default defineConfig({
                 "yo-construyo": resolve(root, 'yo-construyo','index.html'),
                 "inmueble-productivo": resolve(root, 'inmueble-productivo','index.html'),
                 "contratos-reglamentos": resolve(root, 'contratos-reglamentos','index.html'),
+                "giros-internacionales": resolve(root, 'giros-internacionales','index.html'),
                 "micro-credito": resolve(root, 'micro-credito','index.html'),
+                "dep-bancarios": resolve(root, 'dep-bancarios','index.html'),
+                "billetera-w": resolve(root, 'billetera-w','index.html'),
+                "corresponsales-giros": resolve(root, 'corresponsales-giros','index.html'),
+                "comparator": resolve(root, 'comparator','index.html'),
+                "comparator-credit": resolve(root, 'comparator','credit','index.html'),
+                "comparator-saving": resolve(root, 'comparator','saving' ,'index.html'),
                 "gotahorro": resolve(root, 'gotahorro','index.html'),
                 "credito-vehiculo": resolve(root, 'credito-vehiculo','index.html'),
                 "seguros": resolve(root, 'seguros','index.html'),
                 "preguntas-frecuentes": resolve(root, 'preguntas-frecuentes','index.html'),
                 "reportar-siniestros": resolve(root, 'reportar-siniestros','index.html'),
+                "soy_patrimonio": resolve(root, 'soy_patrimonio','index.html'),
+                "incendio_terremotos": resolve(root, 'incendio_terremotos','index.html'),
+                "actualizar_informacion": resolve(root, 'actualizar_informacion','index.html'),
+                "information-channel": resolve(root, 'information-channel','index.html'),
+                "alliance-banking": resolve(root, 'information-channel','alliance-banking', 'index.html'),
+                "open-products": resolve(root, 'information-channel','open-products', 'index.html'),
+                "own-banking": resolve(root, 'information-channel','own-banking', 'index.html'),
+                "own-office": resolve(root, 'information-channel','own-office', 'index.html'),
+                "phone-banking": resolve(root, 'information-channel','phone-banking', 'index.html'),
+                "trabaja-con-nosotros": resolve(root, 'trabaja-con-nosotros','index.html'),
+                "atencion_financiero": resolve(root, 'atencion_financiero','index.html'),
+                "atencion-inversionista": resolve(root, 'atencion-inversionista', 'index.html'),
+                "estados-financieros": resolve(root, 'estados-financieros', 'index.html'),
+                "info-accionistas": resolve(root, 'info-accionistas', 'index.html'),
+                "junta-directiva-alta-gerencia": resolve(root, 'junta-directiva-alta-gerencia', 'index.html'),
+                "informacion-al-consumidor-financiero": resolve(root, 'informacion-al-consumidor-financiero','index.html'),
+                "tasas-y-tarifas": resolve(root, 'tasas-y-tarifas','index.html'),
+                "reglamentos": resolve(root, 'reglamentos','index.html'),
+                "cobranza-y-soluciones": resolve(root, 'cobranza-y-soluciones','index.html'),
+                "protecciones-de-datos": resolve(root, 'protecciones-de-datos','index.html'),
+                "fogafin": resolve(root, 'fogafin','index.html'),
+                "quienes-somos": resolve(root, 'quienes-somos', 'index.html'),
+                "timeline": resolve(root, 'timeline', 'index.html'),
+                "fundacion-wwb": resolve(root, 'fundacion-wwb', 'index.html'),
+                "proteccion-y-sostenibilidad": resolve(root, 'proteccion-y-sostenibilidad', 'index.html'),
+                "licitaciones": resolve(root, 'licitaciones', 'index.html'),
+                "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html')
             }
         },
         target: 'esnext'

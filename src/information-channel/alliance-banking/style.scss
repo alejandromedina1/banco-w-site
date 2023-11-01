@@ -1,0 +1,1142 @@
+@import '../../global.scss';
+
+
+.body {
+    &_1 {
+        font-family: "font-bariol-regular";
+        font-size: 0.8125rem;
+        line-height: 150%;
+    }
+
+    &_2 {
+        font-family: "font-bariol-regular";
+        color: $gray-1;
+        font-size: 0.7rem;
+    }
+
+    &_3 {
+        font-family: "font-bariol-regular";
+        color: $gray-1;
+        font-size: 0.6rem;
+        line-height: 113%;
+    }
+}
+
+.text-btn {
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.7rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: "font-geomanist-bold";
+    font-size: 1.125rem !important;
+    margin: 0 !important;
+    color: $gray-1 !important;
+}
+
+.container_all::-webkit-scrollbar {
+    width: 0.4005rem;
+}
+
+.container_all::-webkit-scrollbar-track {
+    background: $purple-100;
+    border-radius: 20px;
+}
+
+.container_all::-webkit-scrollbar-thumb {
+    background-color: $purple-300;
+    border-radius: 20px;
+    border: none;
+}
+
+#main-banner {
+    background-image: url("/images/attention-own-bg-mobile.webp");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.5rem 14.61% 12.5rem;
+    background-color: $gray_3;
+
+    & h1 {
+        color: $gray_1;
+        text-align: center;
+        font-family: "font-geomanist-bold";
+        font-size: 1.875rem;
+        line-height: 110%;
+        margin: 0;
+    }
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 3.08%;
+    margin-top: -5.75rem;
+    align-items: center;
+    justify-content: center;
+
+    .nav-banking {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 0.4375rem;
+        background-color: white;
+        height: 2.6875rem;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+
+    }
+
+    .nav-btn {
+        width: auto;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .inactive-btn {
+        height: 1.6875rem;
+        color: $gray-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+
+        &:hover {
+            color: $purple-500;
+        }
+    }
+
+    .active-btn {
+        border: none;
+        height: 100%;
+        border-bottom: 0.25rem solid $purple-300;
+        color: $purple-300;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+    border-radius: 0.8125rem 0.8125rem 0rem 0rem;
+    background: white;
+    padding: 3rem 5.13% 0;
+
+    & .benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.45rem;
+
+        & h3 {
+            width: 80%;
+            color: $gray-1;
+        }
+
+        & .container-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            & .each-icon {
+                display: flex;
+                flex-direction: row;
+                gap: 5.78%;
+                align-items: center;
+
+                &_icon {
+                    display: flex;
+                    padding: 0.79475rem;
+                    border-radius: 0.33113rem;
+                    background: $purple-200;
+
+                    & img {
+                        width: 1.55625rem;
+                        height: 1.55625rem;
+                    }
+                }
+            }
+        }
+    }
+
+    & .rates {
+        background-image: url("/images/alliance-banking-b2-mobile.webp");
+        background-size: cover;
+        background-position: center center;
+        background-color: $purple-200;
+        padding: 5.69rem 5.13% 2.5rem;
+        margin: 2.15rem -5.5% 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6.21rem;
+
+        & .banking-card {
+            width: 100%;
+            background-color: white;
+            border-radius: 0.50894rem;
+            background: var(--white, #FFF);
+            box-shadow: 5.58206px 7.81489px 33.49236px 0px rgba(159, 102, 219, 0.18);
+
+            & img {
+                width: 100%;
+                border-radius: 0.50894rem 0.50894rem 0rem 0rem;
+            }
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 0.2rem;
+                padding: 0.7rem 4.3%;
+                color: $gray-1;
+            }
+        }
+
+        & .text-container {
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+
+            & h3 {
+                color: white !important;
+            }
+        }
+    }
+
+    & .search-channel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .searching {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0;
+
+            & .form-items {
+                display: flex;
+                flex-direction: column;
+                gap: 0.88rem;
+                margin-bottom: 1.75rem;
+
+            }
+
+            & .input-base {
+                width: 100%;
+                height: 2.375rem;
+                border-radius: 0.28169rem;
+                border: 1.932px solid #CDCDCD !important;
+                color: $gray-2;
+                padding: 0 0.81rem;
+
+                & ::placeholder {
+                    color: $gray-2;
+                }
+            }
+
+            #send-form {
+                width: auto;
+                align-self: center;
+                justify-self: center;
+                padding: 0.58rem 1.74rem;
+                background-color: $purple-400;
+                border-radius: 0.4375rem;
+                border: 1px solid $purple-400;
+                color: white;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 0.7975rem;
+
+                &:hover {
+                    border-color: $purple-400;
+                    background-color: white;
+                    color: $purple-400;
+                }
+
+                &:active {
+                    background-color: $purple-100;
+                    border-color: $purple-100;
+                }
+            }
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .container {
+        &_all {
+            display: flex;
+            flex-direction: column;
+            height: 21.07438rem;
+            overflow: auto;
+            margin: 1rem 0;
+            gap: 1rem;
+        }
+
+        &_each-result {
+            display: flex;
+            flex-direction: row;
+            width: 94%;
+            justify-content: space-between;
+            align-self: flex-start;
+
+            & img {
+                width: 25%;
+                height: 100%;
+            }
+        }
+
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+
+            & h5 {
+                color: $gray-1;
+                font-family: "font-geomanist-bold";
+                font-size: 1rem;
+                line-height: 113%;
+                margin: 0;
+            }
+
+            & span {
+                color: $purple-300;
+            }
+        }
+
+        &_directions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & span {
+                color: $purple-500;
+                font-family: "font-geomanist-bold";
+            }
+        }
+    }
+
+    & .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.12rem;
+
+        & h3 {
+            width: 80%;
+        }
+
+        & table,
+        th,
+        td {
+            border: 0.25rem solid white;
+        }
+
+        & table {
+
+            & .empty {
+                background-color: transparent;
+            }
+
+            & .style-type {
+                border-radius: 1rem 1rem 0rem 0rem;
+                background: $purple-300;
+                color: white;
+                padding: 0 2%;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 0.8125rem;
+                margin: 0;
+            }
+
+            & img {
+                width: 70%;
+                margin: 0.5rem 15%;
+            }
+
+            & td {
+                background: rgba(226, 226, 226, 0.20);
+                width: 20%;
+
+                & img {
+                    width: 0.7rem !important;
+                    height: 0.7rem !important;
+                    margin: 0 35%;
+                }
+            }
+
+            & th {
+                background: rgba(226, 226, 226, 0.20);
+            }
+
+            & .comparing {
+                height: 5.5625rem;
+                border-radius: 1rem 0rem 0rem 1rem;
+                background: $purple-200;
+                color: white;
+                font-family: "font-bariol-regular";
+                font-size: 0.8125rem;
+                text-align: left;
+                padding: 0 1%;
+            }
+        }
+    }
+
+    & .comunicate {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & ul {
+            & li {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & .text-ul {
+                    margin-top: -0.01rem;
+                }
+
+                & a {
+                    color: $purple-300;
+                }
+            }
+        }
+
+        & .tips-container {
+
+            &_icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                gap: 1.7rem;
+
+                & .each-icon {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2.64%;
+                    align-items: center;
+                    justify-content: start;
+
+
+                    & .icon {
+                        color: white;
+                        padding: 0.5rem 0.8rem;
+                        background-color: $purple-300;
+                        border-radius: 0.33113rem;
+
+                        & i {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    & .text {
+                        & h4 {
+                            color: $gray-1;
+                            font-family: "font-geomanist-bold";
+                            font-size: 0.9375rem;
+                            line-height: 150%;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            &_bg {
+                background-image: url("/images/new-product-bg2-mobile.webp");
+                background-size: cover;
+                background-position: center center;
+                margin: 0 -5.2%;
+                margin-top: -1rem;
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.inactive-section {
+    display: none !important;
+}
+
+.active-section {
+    display: flex;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .body {
+        &_1 {
+            font-size: 1rem;
+        }
+
+        &_2 {
+            font-size: 0.85rem;
+        }
+
+        &_3 {
+            font-size: 0.75rem;
+        }
+    }
+
+    .text-btn {
+        font-size: 0.85rem;
+    }
+
+    h3 {
+        font-size: 1.6rem !important;
+    }
+
+    #main-banner {
+        padding: 7.5rem 17% 14.5rem;
+        gap: 1rem;
+        justify-content: center;
+
+        & h1 {
+            width: 70%;
+            font-size: 2rem;
+        }
+    }
+
+    #nav-bar {
+        .nav-banking {
+            height: 3.5rem;
+            justify-content: space-evenly;
+            margin-bottom: -0.65rem;
+        }
+
+        .nav-btn {
+            margin: 0;
+        }
+    }
+
+    .content {
+        width: 100%;
+        padding: 4rem 5.13% 0;
+
+        & .searching {
+            width: 100%;
+
+            & .input-base {
+                height: 2.375rem;
+            }
+
+        }
+
+        & .container {
+            &_all {
+                margin: 3rem 0;
+                gap: 2rem;
+            }
+
+            &_text {
+                & h5 {
+                    font-size: 1.12rem;
+                }
+            }
+        }
+
+        & .services {
+            width: 100%;
+
+            & table {
+                width: 100%;
+
+                & .style-type {
+                    font-size: 1rem;
+                }
+
+                & td {
+                    width: 20%;
+                    text-align: center;
+
+                    & img {
+                        width: 25% !important;
+                        height: 100% !important;
+                        margin: 0%;
+                    }
+                }
+            }
+        }
+
+        & .comunicate {
+
+            gap: 1.5rem;
+
+            & ul {
+                & li {
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+
+            & .tips-container {
+
+                &_icons {
+                    & .each-icon {
+                        & .text {
+                            & h4 {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .body {
+        &_1 {
+            color: $gray-1;
+            font-size: 1.2rem;
+        }
+
+        &_2 {
+            font-size: 1rem;
+        }
+
+        &_3 {
+            font-size: 0.87rem;
+        }
+    }
+
+    .text-btn {
+        font-size: 0.9rem;
+        line-height: 100%;
+    }
+
+    h3 {
+        font-size: 1.6rem !important;
+    }
+
+    #main-banner {
+        background-image: url("/images/alliance-banking-bg-desk.webp");
+        padding: 6.3rem 20%;
+
+        & h1 {
+            font-size: 2rem;
+        }
+    }
+
+    #nav-bar {
+        padding: 0 6%;
+        margin-top: -1.5rem;
+
+        & .nav-banking {
+            width: 100%;
+            height: 3rem;
+            padding: 0 3%;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+        border-radius: 0rem;
+        padding: 5rem 6% 0;
+
+        & .benefits {
+            gap: 4rem;
+
+            & .container-icons {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .each-icon {
+                    width: 47%;
+                    gap: 9.5%;
+
+                    &_icon {
+                        padding: 1rem;
+
+                        & img {
+                            width: 2.725rem;
+                            height: 2.725rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .rates {
+            background-image: url("/images/alliance-banking-bg2-desk.webp");
+            padding: 5rem 6%;
+            margin: 6rem -7% 0;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            & .banking-card {
+                width: 100%;
+
+                &_text {
+                    & h3 {
+                        font-size: 1.2rem !important;
+                    }
+                }
+            }
+
+            & .text-container {
+                text-align: left;
+
+                & h3 {
+                    color: white !important;
+                    text-align: left;
+                }
+
+                & p {
+                    color: white !important;
+                }
+            }
+        }
+
+        & .search-channel {
+
+            & .searching {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.75rem;
+
+                & .form-items {
+                    width: 85%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0;
+
+                    & .item-form {
+                        width: 90%;
+                    }
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        .img-ubi {
+            width: 60%;
+        }
+
+        & .container {
+            &_all {
+                width: 37%;
+                height: 26.876rem;
+                margin: 0;
+                margin-right: 1rem;
+            }
+        }
+
+        & .services {
+            gap: 5rem;
+
+            & h3 {
+                width: 80%;
+            }
+
+            & table,
+            th,
+            td {
+                border: 0.3rem solid white;
+            }
+
+            & table {
+                margin-bottom: 2rem;
+
+                & .style-type {
+                    height: 5rem;
+                    border-radius: 2rem 2rem 0rem 0rem;
+                    font-size: 1.2rem;
+                }
+
+                & td {
+                    width: 17.5%;
+                    text-align: center;
+
+                    & img {
+                        width: 25% !important;
+                        height: 100% !important;
+                        margin: 0%;
+                    }
+                }
+
+
+                & .comparing {
+                    width: 30%;
+                    height: 3rem;
+                    font-size: 1rem;
+                    padding: 0 1.5%;
+                }
+            }
+        }
+
+        & .comunicate {
+            margin: -5rem -13% 0;
+            padding: 5rem 10% 0;
+            background-image: url("/images/new-product-bg2-desk.webp");
+            background-size: cover;
+            background-position: start center;
+
+            & ul {
+                width: 70%;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+
+            & .tips-container {
+
+                &_all {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                &_icons {
+                    width: 49%;
+
+                    & .each-icon {
+
+                        & .icon {
+                            padding: 0.667rem 1.2rem;
+
+                            & i {
+                                font-size: 2.125rem;
+                            }
+                        }
+
+                        & .text {
+                            & h4 {
+                                color: $gray-1;
+                                font-family: "font-geomanist-bold";
+                                font-size: 0.9375rem;
+                                line-height: 150%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                &_bg {
+                    width: 49%;
+                    background-image: none;
+                    margin: 0 -7%;
+                    margin-top: 0;
+
+                    & img {
+                        width: 80%;
+                        margin: -13rem -5% 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .ubi-sect {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2500px) {
+    .body {
+        &_1 {
+            color: $gray-1;
+            font-size: 1.5rem;
+        }
+
+        &_2 {
+            font-size: 1.3rem;
+        }
+
+        &_3 {
+            font-size: 1rem;
+        }
+    }
+
+    .text-btn {
+        font-size: 1.3rem;
+        line-height: 100%;
+    }
+
+    h3 {
+        font-size: 1.875rem !important;
+    }
+
+    #main-banner {
+        background-image: url("/images/alliance-banking-bg-desk.webp");
+        padding: 10rem 25%;
+
+        & h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    #nav-bar {
+        padding: 0 6%;
+        margin-top: -2.5rem;
+
+        & .nav-banking {
+            width: 100%;
+            height: 5rem;
+            padding: 0 3%;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+        border-radius: 0rem;
+        padding: 5rem 10% 0;
+
+        & .benefits {
+            gap: 4rem;
+
+            & .container-icons {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .each-icon {
+                    width: 47%;
+                    gap: 9.5%;
+
+                    &_icon {
+                        padding: 1rem;
+
+                        & img {
+                            width: 3.125rem;
+                            height: 3.125rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .rates {
+            background-image: url("/images/alliance-banking-bg2-desk.webp");
+            padding: 5rem 10%;
+            margin: 6rem -15% 0;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            & .banking-card {
+                width: 45%;
+
+                &_text {
+                    & h3 {
+                        height: 2.45894rem !important;
+                    }
+                }
+            }
+
+            & .text-container {
+                text-align: left;
+
+                & h3 {
+                    width: 75%;
+                    color: white !important;
+                    text-align: left;
+                    font-size: 2.8125rem !important;
+                }
+
+                & p {
+                    color: white !important;
+                }
+            }
+        }
+
+        & .search-channel {
+
+            & .searching {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.75rem;
+
+                & .form-items {
+                    width: 90%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0;
+
+                    & .item-form {
+                        width: 90%;
+                    }
+                }
+            }
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        .img-ubi {
+            width: 60%;
+        }
+
+        & .container {
+            &_all {
+                width: 37%;
+                height: 43rem;
+                margin: 0;
+                margin-right: 1rem;
+            }
+        }
+
+        & .services {
+            gap: 5rem;
+
+            & h3 {
+                width: 80%;
+            }
+
+            & table,
+            th,
+            td {
+                border: 0.5rem solid white;
+            }
+
+            & table {
+                margin-bottom: 5rem;
+
+                & .style-type {
+                    height: 8rem;
+                    border-radius: 2rem 2rem 0rem 0rem;
+                    font-size: 1.875rem;
+                }
+
+                & td {
+                    width: 17.5%;
+                    text-align: center;
+
+                    & img {
+                        width: 25% !important;
+                        height: 100% !important;
+                        margin: 0%;
+                    }
+                }
+
+
+                & .comparing {
+                    width: 30%;
+                    height: 5rem;
+                    font-size: 1.5625rem;
+                    padding: 0 1.5%;
+                }
+            }
+        }
+
+        & .comunicate {
+            margin: -8rem -13% 0;
+            padding: 8rem 15% 0;
+            background-image: url("/images/new-product-bg2-desk.webp");
+            background-size: cover;
+            background-position: start center;
+            gap: 3rem;
+
+            & ul {
+                width: 70%;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+
+            & .tips-container {
+
+                &_all {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                &_icons {
+                    width: 49%;
+
+                    & .each-icon {
+
+                        & .icon {
+                            padding: 0.667rem 1.2rem;
+
+                            & i {
+                                font-size: 2.125rem;
+                            }
+                        }
+
+                        & .text {
+                            & h4 {
+                                color: $gray-1;
+                                font-family: "font-geomanist-bold";
+                                font-size: 0.9375rem;
+                                line-height: 150%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                &_bg {
+                    width: 49%;
+                    background-image: none;
+                    margin: 0 -15%;
+                    margin-top: 0;
+
+                    & img {
+                        width: 80%;
+                        margin: -18rem -15% 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .ubi-sect {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        margin-bottom: 5rem;
+    }
+}

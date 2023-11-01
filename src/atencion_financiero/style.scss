@@ -1,0 +1,346 @@
+@import '../global.scss';
+@import "bootstrap/scss/bootstrap";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    font-family: Bariol, sans-serif;
+    color: $gray-1;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: Geomanist, sans-serif;
+    color: $gray-1;
+    font-size: 14px;
+}
+
+.banner{
+    display: flex;
+    height: max-content;
+    background-image: url(../images/bg_atencion_financiero.webp);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    height: max-content;
+    margin-right: 5%;
+    z-index: 2;
+    padding: 10% 0%;
+    padding-left: 32%;
+}
+
+.banner h2{
+    color: $gray-1;
+    width: 100%;
+    font-family: Geomanist, sans-serif;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner p{
+    width: 80%;
+    color: $gray-2;
+    font-family: Bariol, sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tab-bar{   
+    position: relative;
+    display: flex;
+    left: 5%;
+    width: 90%;
+    padding: 0.1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    border-radius: 0.4375rem;
+    margin: -1rem 0;
+}
+
+.tab-button{
+    color: $gray-2;
+    border: none;
+    width: 100%;
+    background: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Bariol, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    border-right: 1px solid $gray-2;
+}
+
+.tab-button:last-child {
+    border-right: none;
+}
+
+
+.tab-content{
+    display: none;
+}
+
+.active{
+    color: $cyan-500;
+    border-bottom: 2px solid $cyan-500;
+}
+
+#canales-pqrs {
+    margin: 5%;
+}
+
+#defensor {
+    margin: 5%;
+}
+
+#superintendencia {
+    margin: 5%;
+}
+
+#cancellation {
+    margin: 5%;
+}
+
+.icon-list article {
+    display: flex;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 6.15485px 8.6168px 36.92913px 0px rgba(0, 177, 187, 0.10);
+    border-radius: 20px;
+    margin: 2% 0%;
+}
+
+.icon-list article figure {
+    background-color: $cyan-500;
+    padding: 4% 5%;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-list article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $gray-1;
+    padding: 3% 5%;
+}
+
+.icon-list article h4 {
+    font-size: 23px;
+}
+
+.content-vertical-list {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+.content-vertical-list span {
+    color: $purple-300;
+}
+
+.content-vertical-list nav:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $gray-3;
+    border: 4px solid $cyan-500;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+.article-line {
+    border-left: 2px solid $cyan-500;
+}
+
+.content-vertical-list article {
+    padding: 0 0px 10px 30px;
+    color: $gray-1;
+}
+
+.defesor-section1 {
+    display: flex;
+}
+
+.defesor-section1 nav {
+    margin-right: auto;
+}
+
+
+
+.accordion-button {
+    background-color: $purple-300;
+    color: white;
+    font-weight: 400;
+    font-size: 1.37rem;
+    font-family: Bariol, sans-serif;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+#revisor {
+    height: max-content;
+    background-image: url(../public/images/bg_revisor.webp);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    padding-bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.revisor-content {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.revisor-content-separe {
+    display: flex;
+}
+
+.revisor-content img {
+    position: relative;
+    width: 30%;
+    left: 5%;
+    align-content: right;
+}
+
+.revisor-content h2 {
+    text-align: center;
+    color: $gray-1;
+}
+
+.revisor-content div {
+    width: 50%;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .banner p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .banner h2 {
+        font-size: 35px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .banner{
+        background-image: url(../public/images/bg_atencion_mobile.webp);
+        flex-direction: column-reverse;
+    }
+
+    #revisor {
+        background-image: url(../public/images/bg_revisor_mobile.webp);
+    }
+
+    .revisor-content img {
+        left: 30%;
+        width: 50%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 1rem;
+        height: max-content;
+        margin-right: 5%;
+        z-index: 2;
+        text-align: center;
+        padding: 0;
+        margin: 8% 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .icon-list article {
+        flex-direction: column;
+    }
+    
+    .banner h2{
+        color: $gray-1;
+        width: 100%;
+        font-family: Geomanist, sans-serif;
+        font-size: 2.78375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .banner p{
+        width: 100%;
+        font-size: 18px;
+    }
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 50px;
+    }
+
+    .defesor-section1 {
+        flex-direction: column;
+    }
+
+    .revisor-content-separe {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    .white-button {
+        padding: 5px 10px;
+    }
+    .purple-button {
+        background-color: $purple-300;
+        padding: 5px 10px;
+    }
+}

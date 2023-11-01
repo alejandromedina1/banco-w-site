@@ -18,11 +18,11 @@ class NavbarFloat extends HTMLElement {
     </button>
     <button class="option_blog">
         <img class="icon" src="/icons/blog-purple.svg" alt="Blog">
-        <a href="">Blog</a>
+        <a href="/blog/">Blog</a>
     </button>
     <button class="option_comparator">
-        <img class="icon" src="/icons/comparator-purple.svg" alt="Blog">
-        <a href="">Comparador financiero</a>
+        <img class="icon" src="/icons/comparator-purple.svg" alt="Comparador financiero">
+        <a href="/comparator/">Comparador financiero</a>
     </button>
     <button class="option_simulator">
         <img class="icon" src="/icons/calculator-purple.svg" alt="Simulador financiero">
