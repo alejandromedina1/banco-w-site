@@ -40,6 +40,8 @@
 
 }
 
+
+
 @media screen and (min-width: 426px) and (max-width: 768px) {
     #main-banner {
 
@@ -59,6 +61,123 @@
             }
         }
     }
+}
+
+#nav-bar-float {
+    position: absolute;
+    width: 60%;
+    height: 12%;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 20%;
+    top: 630px;
+    z-index: 1;
+
+    & button {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $purple-300;
+        text-align: center;
+        font-family: Bariol, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        justify-content: center;
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0 1%;
+
+        & .icon {
+            width: 24%;
+            margin-bottom: 0.5rem;
+        }
+
+        & a {
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            color: $purple-300;
+        }
+    }
+
+    & button:hover {
+        background-color: $purple-100;
+    }
+
+    .active{
+        background-color: $purple-300;
+        & p {
+            color: white;
+            
+        }
+
+        & img {
+            filter: saturate(0) brightness(3);
+        }
+    }
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 8% 5%;
+}
+
+.card {
+    border-style: none;
+    margin: 8px;
+    width: auto;
+    height: auto;
+    border-radius: 7.723px;
+    box-shadow: 5.516607284545898px 7.723250389099121px 33.09964370727539px 0px rgba(219, 145, 102, 0.18);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-buttons {
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.card-img-top {
+    width: auto;
+    padding: 4%;
+}
+
+.orange-card-button {
+    background-color: $orange-300;
+    color: white;
+    padding: 6px 10px 8px 10px;
+    border-radius: 4.470px;
+    text-decoration: none;
+}
+
+.white-card-button {
+    background-color: white;
+    color: $orange-300;
+    padding: 6px 10px 8px 10px;
+    border-radius: 4.470px;
+    border: 2px solid $orange-300;
+    text-decoration: none;
+}
+
+.card-text {
+    color: $gray-1;
+    font-family: Bariol, sans-serif;
+    font-size: 18px;
+    width: auto;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {

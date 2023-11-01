@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personas de negocio</title>
+    <link rel="stylesheet" href="../components/footer/style.scss">
+    <link rel="stylesheet" href="../components/navbar/style.scss">
+    <link rel="stylesheet" href="../global.scss">
 
     <!--Scss-->
     <link rel="stylesheet" href="./style.scss">
 
 </head>
 <body>
+    <nav-bar-desktop></nav-bar-desktop>
     <section id="main-banner">
         <div class="container-text">
             <h1 class="mobile">PERSONAS CON NEGOCIO</h1>
@@ -20,7 +24,126 @@
             <img src="/images/woman-business.webp" alt="">
         </div>
     </section>
+
+    <nav id="nav-bar-float" class="nav-bar-float">
+        <button class="tab-button" data-tab="all" style="border-right: 1px solid #DFCCF3; border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
+          <img class="icon" src="/icons/all_option_inv.svg" alt="Todas">
+          <p>Todas</p>
+        </button>
+        <button class="tab-button" data-tab="credits" style="border-right: 1px solid #DFCCF3;">
+          <img class="icon" src="/icons/saving_option_inv.svg" alt="Ahorro">
+          <p>Créditos</p>
+        </button>
+        <button class="tab-button" data-tab="invest" style="border-right: 1px solid #DFCCF3;">
+          <img class="icon" src="/icons/invest_option_inv.svg" alt="Invertir">
+          <p>Invertir</p>
+        </button>
+        <button class="tab-button" data-tab="insurances" style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;">
+          <img class="icon" src="/icons/transfers_option_inv.svg" alt="Giros internacionales">
+          <p>Seguros</p>
+        </button>
+      </nav>
+
+      <section class="options">
+        <div class="card credits all">
+            <img src="../public/images/business-people-card1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Microcrédito</h5>
+              <p class="card-text">Crédito con asesoría personalizada que 
+                te permitirá fortalecer y hacer crecer tu negocio.</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+          <div class="card credits all">
+            <img src="../public/images/business-people-card2.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gotahorro</h5>
+              <p class="card-text">Crédito con asesoría personalizada que 
+                te brinda acceder fácilmente a préstamos para que impulses 
+                tu negocio.</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+          <div class="card credits all">
+            <img src="../public/images/business-people-card3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yo contruyo</h5>
+              <p class="card-text">Crédito con asesoría personalizada para
+                 remodelar o restaurar tu negocio.</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+          <div class="card credits all">
+            <img src="../public/images/business-people-card4.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Inmueble productivo</h5>
+              <p class="card-text">Crédito con asesoría personalizada donde podrás 
+                hacer realidad tu sueño de comprar la casa para que tengas tu negocio.</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+          <div class="card credits all">
+            <img src="../public/images/business-people-card5.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Crédito de vehículo</h5>
+              <p class="card-text">Crédito con asesoría personalizada con Alianza 
+                clave 2000, que te permitirá comprar el vehículo para generar 
+                tus propios ingresos.</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+          <div class="card credits all">
+            <img src="../public/images/business-people-card6.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CDT</h5>
+              <p class="card-text">Haz tu inversión de manera segura, fácil y 
+                rentable a través de nuestros CDTs</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+          <div class="card credits all">
+            <img src="../public/images/business-people-card7.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Crédito de vehículo</h5>
+              <p class="card-text">Queremos que estés preparado ante cualquier 
+                calamidad, por eso tenemos para ti seguros voluntarios y 
+                seguros deudores.</p>
+              <div class="card-buttons">
+                <a href="/cuenta-ahorros/" class="orange-card-button">¡Conoce más!</a>
+                <a href="/simulador-ahorro/" class="white-card-button">Simular</a>
+              </div>
+            </div>
+          </div>
+      </section>
     
+    <help-button></help-button>
+    <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+    <script type="module" src="../components/botón-ayuda/ayuda.js"></script>
+    <script type="module" src="../components/botón-inclusivo/inclusivo.js"></script>
     <script type="module" src="../components/components.js"></script>
+    <script type="module" src="../components/components.js"></script>
+    <script type="module" src="../components/footer/footer.js"></script>
+    <script type="module" src="../components/navbar/navbar.js"></script>
+
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
