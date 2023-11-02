@@ -112,8 +112,8 @@ class NavBarDesktop extends HTMLElement {
                         <li class="dropdownNav"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
-                                <li><a href="#">Créditos</a></li>
-                                <li><a href="#">Cuentas de ahorro e inversión</a></li>
+                                <li><a href="/credito-inmediato/">Créditos</a></li>
+                                <li><a href="/ahorradores_inversionistas/">Cuentas de ahorro e inversión</a></li>
                                 <li><a href="/giros-internacionales/">Giros internacionales</a></li>
                                 <li><a href="/seguros/">Seguros</a></li>
 
@@ -179,8 +179,8 @@ class NavBarDesktop extends HTMLElement {
                         <li class="dropdownNav"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
-                                <li><a href="#">Créditos</a></li>
-                                <li><a href="#">Cuentas de ahorro e inversión</a></li>
+                                <li><a href="/credito-inmediato/">Créditos</a></li>
+                                <li><a href="/ahorradores_inversionistas/">Cuentas de ahorro e inversión</a></li>
                                 <li><a href="/giros-internacionales/">Giros internacionales</a></li>
                                 <li><a href="/seguros/">Seguros</a></li>
 
