@@ -1,7 +1,7 @@
 const template = document.createElement('template')
 
 template.innerHTML = `
-<link rel="stylesheet" href="components/dropdown/style.scss" />
+<link rel="stylesheet" href="../components/dropdown/style.scss" />
 <div class="dropdownPages">
 <div class="dropdown-trigger download">
     <span class="title-span">
