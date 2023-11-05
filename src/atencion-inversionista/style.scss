@@ -342,6 +342,12 @@ p {
         width: 100%;
     }
 
+    .tab-bar {
+        overflow-x: scroll;
+        white-space: nowrap;
+        justify-content: flex-start;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -352,6 +358,4 @@ p {
     .title {
         font-size: 1.5rem;
     }
-
-
 }
