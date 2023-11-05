@@ -66,3 +66,16 @@ const toggleBg = () => {
 }
 
 toggleBg();
+
+const toggleBtnContent = () => {
+  const submitBtn = document.querySelector('.filter-btn')
+  if (window.matchMedia('(max-width: 690px)').matches) {
+    submitBtn.innerHTML = '<img src="/icons/filter-icon.svg" class="filter-icon" />'
+  } else {
+    submitBtn.innerText = 'Buscar'
+  }
+}
+
+window.addEventListener('resize', () => toggleBtnContent())
+
+toggleBtnContent()
