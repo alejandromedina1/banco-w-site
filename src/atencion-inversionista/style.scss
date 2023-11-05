@@ -252,24 +252,24 @@ p {
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1430px) {
     body {
         font-size: 10px;
     }
 
     .title {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1131px) {
     body {
         font-size: 8px;
     }
 
     .title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .tab-button,
@@ -279,13 +279,14 @@ p {
 
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 870px) {
     .mobile {
         display: flex;
     }
 
     .title {
         margin: 0;
+        font-size: 1.3rem;
     }
 
     .tab-button {
@@ -296,7 +297,7 @@ p {
 
 @media screen and (max-width: 690px) {
     .title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .tab-button,
@@ -313,12 +314,17 @@ p {
 
     .tab-button {
         width: 50%;
+        font-size: 0.8rem;
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 540px) {
+@media screen and (min-width: 425px) and (max-width: 560px) {
     .mobile {
         display: flex;
+    }
+
+    .tab-bar{
+        margin: 0 auto;
     }
 }
 
