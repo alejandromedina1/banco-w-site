@@ -150,20 +150,22 @@ p {
     background-color: $orange-400;
 }
 
-.download{
+.download {
     background-color: $purple-300;
-    .dropdown-title{
+
+    .dropdown-title {
         margin-left: 0;
         width: fit-content;
     }
-    span{
+
+    span {
         display: flex;
         align-items: center;
         width: 100%;
     }
 }
 
-.pdf{
+.pdf {
     text-decoration: none;
 }
 
@@ -179,8 +181,9 @@ p {
 
 .show {
     display: grid;
-    
+
 }
+
 .dropdown-title {
     color: #FFF;
     font-family: "font-bariol-regular";
@@ -217,12 +220,14 @@ p {
     color: #676767;
 }
 
-.pais-form, .asamblea-form {
+.pais-form,
+.asamblea-form {
     display: flex;
     justify-content: space-between;
 }
 
-.pais-form input, .pais-form select {
+.pais-form input,
+.pais-form select {
     border-radius: 0.4375rem;
     padding: 0.75rem 1.125rem 0.75rem 1.6875rem;
     border: 1.04px solid #ACACAC;
@@ -236,7 +241,8 @@ p {
     width: 85%;
 }
 
-.pais-form button, .asamblea-form button {
+.pais-form button,
+.asamblea-form button {
     width: 12%;
     padding: 0.7rem 2rem;
     background-color: $purple-300;
@@ -323,7 +329,7 @@ p {
         display: flex;
     }
 
-    .tab-bar{
+    .tab-bar {
         margin: 0 auto;
     }
 }
@@ -332,7 +338,8 @@ p {
 
     .title {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        width: 100%;
     }
 
 }
@@ -343,7 +350,7 @@ p {
     }
 
     .title {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
 
