@@ -41,11 +41,6 @@ class NavBarDesktop extends HTMLElement {
             }
         });
 
-        const logoBtn = document.querySelector('.logo');
-        logoBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.location.replace('/');
-        })
 
         const currentPath = window.location.pathname
 
@@ -56,7 +51,7 @@ class NavBarDesktop extends HTMLElement {
             { path: '/gotahorro/', id: 'clientes' },
             { path: '/credito-vehiculo/', id: 'clientes' },
             { path: '/micro-credito/', id: 'clientes' },
-            {path: '/giros-internacionales/', id: 'clientes'},
+            { path: '/giros-internacionales/', id: 'clientes' },
             { path: '/pqrs/', id: 'nosotros' }
         ]
 
@@ -239,6 +234,11 @@ class NavBarDesktop extends HTMLElement {
         </header>
         `;
 
+        const logoBtn = document.querySelector('.logo');
+        logoBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.replace('/');
+        })
     }
 }
 
