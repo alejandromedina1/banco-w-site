@@ -65,7 +65,7 @@ p {
     line-height: normal;
 }
 
-.table-data{
+.table-data {
     border-bottom: 1px solid #FFA666;
 }
 
@@ -111,6 +111,10 @@ p {
         font-size: 2.4rem;
     }
 
+    .data-mobile {
+        display: none
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -142,6 +146,11 @@ p {
         width: 32%;
     }
 
+    .table-data td,
+    .table-data th {
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
@@ -150,8 +159,14 @@ p {
     }
 
     .tab-button,
-    .points {
+    .points,
+    .table-data td,
+    .table-data th {
         font-size: 0.9rem;
+    }
+
+    .table-data td {
+        flex-wrap: wrap;
     }
 }
 
@@ -176,18 +191,15 @@ p {
 
     .title {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 }
 
 @media screen and (max-width: 425px) {
-    .tab-button {
-        font-size: 0.7rem;
-    }
 
     .title {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
 

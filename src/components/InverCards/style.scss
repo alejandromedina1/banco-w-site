@@ -4,7 +4,7 @@
     background-color: white;
     border-radius: 0.59338rem;
     box-shadow: 6.50774px 9.11084px 39.04645px 0px rgba(159, 102, 219, 0.18);
-    height: 11.25rem;
+    height: max-content;
     transition: all ease 0.3s;
 }
 
@@ -29,4 +29,10 @@
     font-weight: 700;
     line-height: 150%;
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+   .inver-card, .inver-link{
+    width: 70%;
+   }
 }

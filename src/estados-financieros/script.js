@@ -59,10 +59,23 @@ window.addEventListener('resize', () => toggleBg())
 const toggleBg = () => {
   const bannerBg = document.querySelector('.banner-bg');
   if (window.matchMedia('(max-width: 500px)').matches) {
-    bannerBg.src = '/images/gotahorro_bg_mobile.webp';
+    bannerBg.src = '/images/atencion-inver-mobile.webp';
   } else {
     bannerBg.src = '/images/atencion_inver_bg.webp'
   }
 }
 
 toggleBg();
+
+const toggleBtnContent = () => {
+  const submitBtn = document.querySelector('.filter-btn')
+  if (window.matchMedia('(max-width: 690px)').matches) {
+    submitBtn.innerHTML = '<img src="/icons/filter-icon.svg" class="filter-icon" />'
+  } else {
+    submitBtn.innerText = 'Buscar'
+  }
+}
+
+window.addEventListener('resize', () => toggleBtnContent())
+
+toggleBtnContent()
