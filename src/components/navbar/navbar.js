@@ -1,3 +1,5 @@
+import { sections } from "./sections";
+
 class NavBarDesktop extends HTMLElement {
     constructor() {
         super();
@@ -41,27 +43,6 @@ class NavBarDesktop extends HTMLElement {
             }
         });
 
-
-        const currentPath = window.location.pathname
-
-        const sections = [
-            { path: '/', id: 'inicio' },
-            { path: '/ahorradores_inversionistas/', id: 'clientes' },
-            { path: '/business-people/', id: 'clientes' },
-            { path: '/gotahorro/', id: 'clientes' },
-            { path: '/credito-vehiculo/', id: 'clientes' },
-            { path: '/micro-credito/', id: 'clientes' },
-            { path: '/giros-internacionales/', id: 'clientes' },
-            { path: '/pqrs/', id: 'nosotros' }
-        ]
-
-        const activeColor = '#FF8833'
-        sections.forEach(section => {
-            if (currentPath === section.path || (currentPath === '/' && section.path === '/')) {
-                const sectionNavItem = document.getElementById(section.id);
-                sectionNavItem.style.color = activeColor
-            }
-        })
     }
 
 
@@ -135,12 +116,7 @@ class NavBarDesktop extends HTMLElement {
                         <li class="dropdownNav"><a href="#" id="canales-atencion">Canales de atención <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content last-dropdown">
-                                <li><a href="#">Puntos de pago</a></li>
-                                <li><a href="#">Nuestras oficinas</a></li>
-                                <li><a href="#">Corresponsales en alianza</a></li>
-                                <li><a href="#">Banca telefónica</a></li>
                                 <li><a href="/pqrs/">Preguntas, quejas, reclamos y sugerencias</a></li>
-                                <li><a href="#">Abrir nuevos productos</a></li>
                                 <li><a href="/atencion_financiero/">Atención al consumidor financiero</a></li>
                             </ul>
                         </li>
@@ -217,6 +193,18 @@ class NavBarDesktop extends HTMLElement {
         logoBtn.addEventListener('click', (e) => {
             e.preventDefault();
             window.location.replace('/');
+        })
+
+        const currentPath = window.location.pathname
+
+        const activeColor = '#FF8833'
+        sections.forEach(section => {
+            if (currentPath === section.path || (currentPath === '/' && section.path === '/')) {
+                const sectionNavItem = document.getElementById(section.id);
+                const arrowSection = document.querySelector(`#${section.id} .arrow-down path`)
+                sectionNavItem.style.color = activeColor
+                arrowSection.style.stroke = activeColor
+            }
         })
     }
 }
