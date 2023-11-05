@@ -61,7 +61,7 @@ window.addEventListener('resize', () => toggleBg())
 const toggleBg = () => {
   const bannerBg = document.querySelector('.banner-bg');
   if (window.matchMedia('(max-width: 500px)').matches) {
-    bannerBg.src = '/images/gotahorro_bg_mobile.webp';
+    bannerBg.src = '/images/atencion-inver-mobile.webp';
   } else {
     bannerBg.src = '/images/atencion_inver_bg.webp'
   }
