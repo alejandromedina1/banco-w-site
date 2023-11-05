@@ -109,6 +109,7 @@ class NavBarDesktop extends HTMLElement {
                             <ul class="dropdown-content">
                                 <li><a href="/business-people/">Personas con negocio</a></li>
                                 <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
+                                <li><a href="/informacion-al-consumidor-financiero/">Consumidor financiero</a></li>
                                 <li><a href="/seguros/">Seguros</a></li>
                             </ul>
                         </li>
@@ -121,15 +122,6 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="/seguros/">Seguros</a></li>
                             </ul>
                         </li>
-                        <li class="dropdownNav"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
-                            <ul class="dropdown-content">
-                                <li><a href="#">Educación financiera</a></li>
-                                <li><a href="/informacion-al-consumidor-financiero/">Consumidor financiero</a></li>
-                                <li><a href="#">Seguridad bancaria</a></li>
-                                <li><a href="#">Revista</a></li>
-                            </ul>
-                        </li>
                         <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
@@ -138,13 +130,11 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="/proteccion-y-sostenibilidad/">Protección de datos</a></li>
                                 <li><a href="/licitaciones/">Licitación de seguros</a></li>
                                 <li><a href="/fundacion-wwb/">Fundación WWB Colombia</a></li>
-                                <li><a href="#">Sala de prensa</a></li>
                             </ul>
                         </li>
                         <li class="dropdownNav"><a href="/atencion-inversionista/" id="atencion-inversionista">Atención al inversionista <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
-                                <li><a href="#">Informes PDF</a></li>
                                 <li><a href="/estados-financieros/">Estados Financieros</a></li>
                                 <li><a href="/info-accionistas/">Información de accionistas</a></li>
                                 <li><a href="/junta-directiva-alta-gerencia/">Junta Directiva y Alta Gerencia</a></li>
@@ -176,7 +166,15 @@ class NavBarDesktop extends HTMLElement {
                     <path d="M10.5 9.625C12.433 9.625 14 8.058 14 6.125C14 4.192 12.433 2.625 10.5 2.625C8.567 2.625 7 4.192 7 6.125C7 8.058 8.567 9.625 10.5 9.625Z" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                      Iniciar sesión</a>
-
+                     <li class="dropdownNav"><a href="#" id="clientes">Clientes <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
+                         <ul class="dropdown-content">
+                             <li><a href="/business-people/">Personas con negocio</a></li>
+                             <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
+                             <li><a href="/informacion-al-consumidor-financiero/">Consumidor financiero</a></li>
+                             <li><a href="/seguros/">Seguros</a></li>
+                         </ul>
+                     </li>
                      <ul class="navegacion">
                         <li class="dropdownNav"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
@@ -188,30 +186,19 @@ class NavBarDesktop extends HTMLElement {
 
                             </ul>
                         </li>
-                        <li class="dropdownNav"><a href="#" id="asesoria-financiera">Asesoría financiera <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
-                            <ul class="dropdown-content">
-                                <li><a href="#">Educación financiera</a></li>
-                                <li><a href="/informacion-al-consumidor-financiero/">Consumidor financiero</a></li>
-                                <li><a href="#">Seguridad bancaria</a></li>
-                                <li><a href="#">Revista</a></li>
-                            </ul>
-                        </li>
                         <li class="dropdownNav"><a href="#" id="nosotros">Acerca de nosotros <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
                                 <li><a href="/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
-                                <li><a href="#">Quiénes somos</a></li>
-                                <li><a href="#">Protección de datos</a></li>
-                                <li><a href="#">Licitación de seguros</a></li>
-                                <li><a href="#">Fundación WWB Colombia</a></li>
-                                <li><a href="#">Sala de prensa</a></li>
+                                <li><a href="/quienes-somos/">Quiénes somos</a></li>
+                                <li><a href="/protecciones-de-datos/">Protección de datos</a></li>
+                                <li><a href="/licitaciones/">Licitación de seguros</a></li>
+                                <li><a href="/fundacion-wwb/">Fundación WWB Colombia</a></li>
                             </ul>
                         </li>
                         <li class="dropdownNav"><a href="#" id="atencion-inversionista">Atención al inversionista <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
                             <ul class="dropdown-content">
-                                <li><a href="#">Informes PDF</a></li>
                                 <li><a href="/estados-financieros/">Estados Financieros</a></li>
                                 <li><a href="/info-accionistas/">Información de accionistas</a></li>
                                 <li><a href="/junta-directiva-alta-gerencia/">Junta Directiva y Alta Gerencia</a></li>
