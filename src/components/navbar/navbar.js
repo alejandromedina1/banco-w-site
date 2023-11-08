@@ -121,6 +121,7 @@ class NavBarDesktop extends HTMLElement {
                                 <li><a href="/proteccion-y-sostenibilidad/">Protección de datos</a></li>
                                 <li><a href="/licitaciones/">Licitación de seguros</a></li>
                                 <li><a href="/fundacion-wwb/">Fundación WWB Colombia</a></li>
+                                <li><a href="/sala-de-prensa/">Sala de prensa</a></li>
                             </ul>
                         </li>
                         <li class="dropdownNav"><a href="/atencion-inversionista/" id="atencion-inversionista">Atención al inversionista <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
