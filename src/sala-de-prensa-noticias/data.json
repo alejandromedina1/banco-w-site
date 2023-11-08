@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "/public/images/prensa_card1.webp",
+    "title": "16 Ago, 2023",
+    "description": "Convocatoria Plan Semilla del Banco W en Cali, Palmira y Jamundí. Se destaca declaraciones de Maria Fernanda Zuleta, jefe de selección del Banco W"
+  },
+  {
+    "id": 2,
+    "image": "/public/images/prensa_card2.webp",
+    "title": "14 Ago, 2023",
+    "description": "Abren convocatoria par que jóvenes del Valle estudien en el Sena. Se destaca el programa Plan Semilla del Banco W."
+  },
+  {
+    "id": 3,
+    "image": "/public/images/prensa_card3.webp",
+    "title": "12 Ago, 2023",
+    "description": "Jóvenes vallecaucanos a estudiar: El Banco W abre convocatoria para bachilleres."
+  },
+  {
+    "id": 4,
+    "image": "/public/images/prensa_card4.webp",
+    "title": "4 Ago, 2023",
+    "description": "Microempresarios del pacífico deben $4 billones en créditos. Se destaca declaraciones de Rubens Héctor Sandoval, vicepresidente financiero ya administrativo del Banco W."
+  },
+  {
+    "id": 5,
+    "image": "/public/images/prensa_card5.webp",
+    "title": "1 Ago, 2023",
+    "description": "Talento y Cultura como factores diferenciadores. Se destaca declaraciones de Óscar Tovar, vicepresidente de productos y canales del Banco W."
+  },
+  {
+    "id": 6,
+    "image": "/public/images/prensa_card6.webp",
+    "title": "1 Ago, 2023",
+    "description": "Especial las 500 empresas más grandes del Valle. Se destaca el Banco W."
+  },
+  {
+    "id": 7,
+    "image": "/public/images/prensa_card7.webp",
+    "title": "31 Jul, 2023",
+    "description": "Compromiso Valle y el Banco W una alianza para cerrar las brechas a través de causas sociales. Se destacan declaraciones de Jose Alejandro Guerrero, presidente y María Isabel Tenorio, jefe de sostenibilidad del Banco W."
+  },
+  {
+    "id": 8,
+    "image": "/public/images/prensa_card8.webp",
+    "title": "27 Jul, 2023",
+    "description": "Banco W empresa vinculada a Compromiso Valle. Se destacan declaraciones de Jose Alejandro Guerrero, presidente y María Isabel Tenorio, jefe de sostenibilidad del Banco W."
+  },
+  {
+    "id": 9,
+    "image": "/public/images/prensa_card9.webp",
+    "title": "15 Jul, 2023",
+    "description": "Especial las 100 empresas más grandes de Colombia. Se destaca la participación del banco w dentro de las empresas más grandes de colombia, en el capítulo establecimientos de crédito."
+  }
+]
