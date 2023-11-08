@@ -171,6 +171,10 @@ h3 {
     & .container-products {
         padding: 0 5.13%;
 
+        & .dropdown {
+            display: flex;
+        }
+
         & .dropdown-products {
             display: flex;
             width: 70.3%;
@@ -183,7 +187,7 @@ h3 {
             background: $cyan-500;
             box-shadow: 2.964601755142212px 4.150442600250244px 17.78761100769043px 0px rgba(0, 177, 187, 0.21);
             margin-bottom: 1.25rem;
-            font-size: 2.1875rem;
+            font-size: 1.125rem;
             font-family: "font-geomanist-bold";
         }
 
@@ -375,9 +379,9 @@ h3 {
         }
 
         & p {
-            width: 70%;
+            width: 85%;
             color: white;
-            padding-left: 7%;
+            padding-left: 7% !important;
         }
     }
 }
@@ -944,6 +948,7 @@ h3 {
                 border-radius: 0.4375rem;
                 border: 3px solid #FFF;
                 box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.21);
+                font-size: 2.1875rem;
             }
 
             & .info-product {
@@ -1169,9 +1174,9 @@ h3 {
                     }
 
                     & p {
-                        width: 80%;
+                        width: 87%;
                         color: white;
-                        padding-left: 7%;
+                        padding-left: 7% !important;
                     }
                 }
             }
@@ -1604,6 +1609,7 @@ h3 {
                 border-radius: 0.4375rem;
                 border: 3px solid #FFF;
                 box-shadow: 5px 7px 30px 0px rgba(0, 177, 187, 0.21);
+                font-size: 2.1875rem;
             }
 
             & .info-product {
@@ -1814,9 +1820,9 @@ h3 {
                     }
 
                     & p {
-                        width: 80%;
+                        width: 87%;
                         color: white;
-                        padding-left: 7%;
+                        padding-left: 7% !important;
                     }
                 }
             }
