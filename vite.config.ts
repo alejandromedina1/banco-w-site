@@ -76,7 +76,8 @@ export default defineConfig({
                 "fundacion-wwb": resolve(root, 'fundacion-wwb', 'index.html'),
                 "proteccion-y-sostenibilidad": resolve(root, 'proteccion-y-sostenibilidad', 'index.html'),
                 "licitaciones": resolve(root, 'licitaciones', 'index.html'),
-                "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html')
+                "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html'),
+                "sala-de-prensa": resolve(root, 'sala-de-prensa', 'index.html')
             }
         },
         target: 'esnext'

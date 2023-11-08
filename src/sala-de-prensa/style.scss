@@ -1,0 +1,81 @@
+@import "../global.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --scrollY: 0px;
+}
+
+//Hero Header
+
+.Bg-animation {
+  height: 352px;
+  background-size: auto 627px;
+  background-image: url(../../public/images/bg_trabaja_mobile.webp),
+    url(../../public/images/bg_trabaja_mobile.webp);
+  background-position: calc(-493px - var(--scrollY)),
+    calc(100% + 482px + var(--scrollY)), 100%;
+  background-repeat: no-repeat;
+}
+
+.Hero {
+  position: relative;
+  display: grid;
+  margin-top: 0;
+  padding: 12px 21px;
+  background-color: $purple-300;
+
+  &-Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-Profile h1 {
+    color: var(--white, #fff);
+    text-align: center;
+    font-family: "font-geomanist-medium", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.main-content {
+  padding: 0 1.3rem;
+}
+
+/* El resto */
+@media only screen and (min-width: 1024px) {
+  .main-content {
+    margin-top: 1.5rem;
+    padding: 3rem 5rem;
+  }
+
+  .Bg-animation {
+    height: 296px;
+    background-size: auto 568px;
+    background-image: url(/public/images/bg_trabaja_desktop.webp),
+      url(/public/images/bg_trabaja_desktop.webp);
+    background-position: calc(-722px - var(--scrollY)),
+      calc(100% + 648px + var(--scrollY)), 100%;
+    background-repeat: no-repeat;
+  }
+
+  .Hero {
+    &-Profile h1 {
+      font-size: 42px;
+    }
+  }
+
+  /* El resto */
+
+}
