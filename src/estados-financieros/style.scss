@@ -196,7 +196,6 @@ p {
 
 .informes-form button {
     width: 12%;
-    padding: 0.7rem 2rem;
     background-color: $purple-300;
     border-radius: 0.4375rem;
     text-align: center;
@@ -207,6 +206,10 @@ p {
     line-height: normal;
     color: white;
     border: none;
+}
+
+.filter-icon {
+    width: 30%;
 }
 
 

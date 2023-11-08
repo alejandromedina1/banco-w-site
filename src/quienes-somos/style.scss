@@ -126,7 +126,7 @@
 
   &-header {
     font-family: "Geomanist";
-    font-size: 1.5625rem;
+    font-size: clamp(1.25rem, 1.0875rem + 0.6667vw, 1.5625rem);
     color: $gray-1;
   }
 
@@ -236,15 +236,16 @@
   & h5 {
     color: $gray-1;
     font-family: Geomanist;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.0875rem + 0.6667vw, 1.5rem);
     font-weight: 700;
   }
 
   & p {
     color: $gray-1;
     font-family: Bariol;
-    font-size: 1.25rem;
+    font-size:clamp(1.12rem, 0.8700rem + 0.3vw, 1.0rem);
     font-weight: 400;
+    height: auto;
 
   }
 
@@ -313,7 +314,7 @@
 @media screen and (max-width: 767px) {
 
   .content {
-    margin: 20px;
+    margin: 30px;
     gap: 40px;
   }
 
@@ -347,6 +348,10 @@
 
   .president-container, .content-buttons {
     grid-template-columns: 1fr;
+  }
+
+  p{
+    max-width: 330px;
   }
 
 }
