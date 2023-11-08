@@ -80,7 +80,8 @@ export default defineConfig({
                 "proteccion-y-sostenibilidad": resolve(root, 'proteccion-y-sostenibilidad', 'index.html'),
                 "licitaciones": resolve(root, 'licitaciones', 'index.html'),
                 "info-licitaciones": resolve(root, 'info-licitaciones', 'index.html'),
-                "sala-de-prensa": resolve(root, 'sala-de-prensa', 'index.html')
+                "sala-de-prensa": resolve(root, 'sala-de-prensa', 'index.html'),
+                "sala-de-prensa-noticias": resolve(root, 'sala-de-prensa-noticias', 'index.html')
             }
         },
         target: 'esnext'

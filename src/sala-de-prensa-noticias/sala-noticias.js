@@ -1,7 +1,7 @@
-import "./sala-medios.scss";
+import "./sala-noticias.scss";
 import data from "./data.json";
 
-class SalaMedios extends HTMLElement {
+class SalaNoticias extends HTMLElement {
   constructor() {
     super();
   }
@@ -35,16 +35,25 @@ class SalaMedios extends HTMLElement {
     );
     this.innerHTML = `
        <h1 class="title">
-        Nuestra presencia en medios
+        Noticias
       </h1>
+      <div class="Filter">
+        <input type="text" placeholder="Ingresa el mes">
+        <input type="text" placeholder="Ingresa el año">
+        <select name="" id="">
+          <option value="">Seleccione una categoría</option>
+          <option value="">Nuestra presencia en medios</option>
+          <option value="">Columna de opinión</option>
+          <option value="">Comunicados de prensa</option>
+          <option value="">Boletín informativo Banco w</option>
+        </select>
+        <button>Buscar</button>
+      </div>
     <section class="Cards">
       ${cards.join("")}
     </section>
-    <div class="Button">
-      <a href="/sala-de-prensa-noticias/">Ver todas las noticias </a>
-    </div>
     `;
   }
 }
 
-customElements.define("sala-medios", SalaMedios);
+customElements.define("sala-noticias", SalaNoticias);

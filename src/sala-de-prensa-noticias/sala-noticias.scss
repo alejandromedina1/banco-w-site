@@ -64,27 +64,44 @@
   }
 }
 
-.Button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0;
+.Filter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  margin-bottom: 3rem;
 
-  & a {
+  & input {
+    border-radius: 0.4375rem;
+    border: 1.04px solid var(--Gris-2, #acacac);
+    background: var(--white, #fff);
+    padding: 0.5rem 1rem;
+    width: 100%;
     font-family: "font-bariol-regular", sans-serif;
-    color: white;
-    font-size: 1rem;
-    padding: 0.6rem 1.3rem;
-    background-color: $cyan-500;
-    border-radius: 0.25rem;
-    transition: all 0.2s ease-in-out;
-    border: 1px solid $cyan-500;
+    font-size: 0.8rem;
+    color: $gray-2;
   }
-  & a:hover {
-    background-color: white;
-    border: 1px solid $cyan-500;
-    color: $cyan-500;
-    transition: all 0.2s ease-in-out;
+  & select {
+    width: 100%;
+    border-radius: 0.4375rem;
+    border: 1.04px solid var(--Gris-2, #acacac);
+    background: var(--white, #fff);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-family: "font-bariol-regular", sans-serif;
+    font-size: 0.8rem;
+    color: $gray-2;
+  }
+  & button {
+    width: 100%;
+    border-radius: 0.4375rem;
+    background: $purple-300;
+    border: 1px solid $purple-300;
+    color: white;
+  }
+  & button:hover {
+    background: white;
+    border: 1px solid $purple-300;
+    color: $purple-300;
   }
 }
 
@@ -118,12 +135,8 @@
     margin-top: 1rem;
   }
 
-  .Button {
-    margin: 5rem 0;
-  
-    & a {
-      font-size: 1.3rem;
-      padding: 0.6rem 4rem;
-    }
+  .Filter {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
   }
 }
