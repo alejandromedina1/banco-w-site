@@ -43,6 +43,24 @@ class NavBarDesktop extends HTMLElement {
             }
         });
 
+        const logoBtn = document.querySelector('.logo');
+        logoBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.replace('/');
+        })
+
+        const currentPath = window.location.pathname
+
+        const activeColor = '#FF8833'
+        sections.forEach(section => {
+            if (currentPath === section.path || (currentPath === '/' && section.path === '/')) {
+                const sectionNavItem = document.getElementById(section.id);
+                const arrowSection = document.querySelector(`#${section.id} .arrow-down path`)
+                sectionNavItem.style.color = activeColor
+                arrowSection.style.stroke = activeColor
+            }
+        })
+
     }
 
 
@@ -134,15 +152,6 @@ class NavBarDesktop extends HTMLElement {
                     <path d="M10.5 9.625C12.433 9.625 14 8.058 14 6.125C14 4.192 12.433 2.625 10.5 2.625C8.567 2.625 7 4.192 7 6.125C7 8.058 8.567 9.625 10.5 9.625Z" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                      Iniciar sesión</a>
-                     <li class="dropdownNav"><a href="#" id="clientes">Clientes <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
-                         <ul class="dropdown-content">
-                             <li><a href="/business-people/">Personas con negocio</a></li>
-                             <li><a href="/ahorradores_inversionistas/">Ahorradores e inversionistas</a></li>
-                             <li><a href="/informacion-al-consumidor-financiero/">Consumidor financiero</a></li>
-                             <li><a href="/seguros/">Seguros</a></li>
-                         </ul>
-                     </li>
                      <ul class="navegacion">
                         <li class="dropdownNav"><a href="#" id="productos-servicios">Productos y servicios <svg class="arrow-down" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1.5L4.85858 5.35858C4.93668 5.43668 5.06332 5.43668 5.14142 5.35858L9 1.5" stroke="#676767" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></a>
@@ -189,23 +198,7 @@ class NavBarDesktop extends HTMLElement {
         </header>
         `;
 
-        const logoBtn = document.querySelector('.logo');
-        logoBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.location.replace('/');
-        })
-
-        const currentPath = window.location.pathname
-
-        const activeColor = '#FF8833'
-        sections.forEach(section => {
-            if (currentPath === section.path || (currentPath === '/' && section.path === '/')) {
-                const sectionNavItem = document.getElementById(section.id);
-                const arrowSection = document.querySelector(`#${section.id} .arrow-down path`)
-                sectionNavItem.style.color = activeColor
-                arrowSection.style.stroke = activeColor
-            }
-        })
+        
     }
 }
 
