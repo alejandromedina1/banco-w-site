@@ -40,6 +40,9 @@ class SalaMedios extends HTMLElement {
     <section class="Cards">
       ${cards.join("")}
     </section>
+    <div class="Button">
+      <a href="/sala-de-prensa-noticias/">Ver todas las noticias </a>
+    </div>
     `;
   }
 }

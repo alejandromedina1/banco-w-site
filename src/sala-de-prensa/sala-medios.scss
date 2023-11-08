@@ -64,6 +64,30 @@
   }
 }
 
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+
+  & a {
+    font-family: "font-bariol-regular", sans-serif;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6rem 1.3rem;
+    background-color: $cyan-500;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid $cyan-500;
+  }
+  & a:hover {
+    background-color: white;
+    border: 1px solid $cyan-500;
+    color: $cyan-500;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .Cards {
     grid-template-columns: repeat(2, 1fr);
@@ -92,5 +116,14 @@
     font-size: 2rem;
     margin-bottom: 3rem !important;
     margin-top: 1rem;
+  }
+
+  .Button {
+    margin: 5rem 0;
+  
+    & a {
+      font-size: 1.3rem;
+      padding: 0.6rem 4rem;
+    }
   }
 }
