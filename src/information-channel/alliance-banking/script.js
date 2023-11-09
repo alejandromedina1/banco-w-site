@@ -12,7 +12,6 @@ buttonsNav.forEach(btn => {
 
         sections.forEach(section => {
             if (section.id === btn.id) {
-                console.log("hola")
                 section.classList.add("active-section")
                 section.classList.remove("inactive-section")
             } else {
