@@ -1,0 +1,1433 @@
+@import '../../global.scss';
+
+.body {
+    &_1 {
+        font-family: "font-bariol-regular";
+        font-size: 0.8125rem;
+        line-height: 150%;
+    }
+
+    &_2 {
+        font-family: "font-bariol-regular";
+        color: $gray-1;
+        font-size: 0.7rem;
+    }
+
+    &_3 {
+        font-family: "font-bariol-regular";
+        color: $gray-1;
+        font-size: 0.6rem;
+        line-height: 113%;
+    }
+}
+
+.text-btn {
+    text-align: center;
+    font-family: "font-bariol-regular";
+    font-size: 0.7rem;
+}
+
+.text-accordion {
+    font-family: "font-bariol-regular";
+    font-size: 1rem !important;
+}
+
+h1 {
+    font-family: "font-geomanist-bold";
+    font-size: 1.875rem;
+    line-height: 110%;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-family: "font-geomanist-bold";
+    font-size: 1.125rem !important;
+    margin: 0 !important;
+    color: $gray-1 !important;
+}
+
+h4 {
+    font-family: "font-geomanist-bold";
+    font-size: 0.9rem;
+    margin: 0;
+    color: $gray-1;
+}
+
+h5 {
+    font-family: "font-geomanist-bold";
+    font-size: 0.87rem !important;
+    margin: 0;
+    color: white;
+}
+
+#main-banner {
+    background-image: url("/images/phone-bank-bg-mobile.webp");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 5.12% 2.31rem;
+    background-color: $gray_3;
+    gap: 1rem;
+
+    & .text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.87rem;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+        & h1 {
+            color: $gray_1;
+            text-align: center;
+        }
+
+        & .body_1 {
+            text-align: center;
+        }
+    }
+
+    & .banking-card {
+        width: 100%;
+        background-color: white;
+        border-radius: 0.50894rem;
+        background: var(--white, #FFF);
+        box-shadow: 5.58206px 7.81489px 33.49236px 0px rgba(159, 102, 219, 0.18);
+
+        & img {
+            width: 100%;
+            border-radius: 0.50894rem 0.50894rem 0rem 0rem;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 0.2rem;
+            padding: 0.7rem 4.3%;
+            color: $gray-1;
+        }
+    }
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 3.08%;
+    margin-top: -1.5rem;
+    align-items: center;
+    justify-content: center;
+
+    .nav-phone-banking {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 0.4375rem;
+        background-color: white;
+        height: 2.6875rem;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 5px 7px 30px 0px rgba(159, 102, 219, 0.18);
+    }
+
+    .nav-btn {
+        width: auto;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .inactive-btn {
+        height: 1.6875rem;
+        color: $gray-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+
+        &:hover {
+            color: $orange-400;
+        }
+    }
+
+    .active-btn {
+        border: none;
+        height: 100%;
+        border-bottom: 0.25rem solid $orange-400;
+        color: $orange-400;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+    border-radius: 0.8125rem 0.8125rem 0rem 0rem;
+    background: white;
+    padding: 3rem 5.12% 0;
+
+    & .benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+
+        & .container-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            & .each-icon {
+                display: flex;
+                flex-direction: row;
+                gap: 5.78%;
+                align-items: center;
+
+                &_icon {
+                    display: flex;
+                    padding: 0.79475rem;
+                    border-radius: 0.33113rem;
+                    background: $orange-300;
+
+                    & img {
+                        width: 1.55625rem;
+                        height: 1.55625rem;
+                    }
+                }
+            }
+        }
+    }
+
+    & .what-to-do-phone {
+        margin-bottom: 1.5rem;
+
+        & h5 {
+            color: $gray-1;
+            text-align: left;
+        }
+
+        & ul {
+            & li {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & .text-ul {
+                    margin-top: -0.01rem;
+                }
+            }
+        }
+    }
+
+    & .what-to-do-banking {
+
+        & h5 {
+            color: $gray-1;
+            text-align: left;
+        }
+
+        & ul {
+            & li {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & .text-ul {
+                    margin-top: -0.01rem;
+                }
+            }
+        }
+    }
+
+    & .key-management {
+        & .container-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            & .each-icon {
+                display: flex;
+                flex-direction: row;
+                gap: 5.78%;
+                align-items: center;
+
+                &_icon {
+                    display: flex;
+                    padding: 0.79475rem;
+                    border-radius: 0.33113rem;
+                    background: $orange-300;
+
+                    & img {
+                        width: 1.55625rem;
+                        height: 1.55625rem;
+                    }
+                }
+
+                & .text-container {
+                    display: flex;
+                    flex-direction: column;
+
+                    & h5 {
+                        color: $gray-1 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    & .remember {
+        & ul {
+            & li {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & .text-ul {
+                    margin-top: -0.01rem;
+                }
+            }
+        }
+    }
+}
+
+.inactive-section {
+    display: none !important;
+}
+
+.active-section {
+    display: flex;
+}
+
+#register-steps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    background-color: $orange-400;
+    padding: 2.3rem 5.12%;
+    gap: 1.3rem;
+
+    & h3 {
+        color: white !important;
+    }
+
+    & .register {
+        &_communicate {
+            & h5 {
+                color: white;
+            }
+
+            & ul {
+                & li {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.5rem;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    & .text-ul {
+                        margin-top: -0.01rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &_office {
+            & h5 {
+                color: white;
+            }
+
+            & ul {
+                & li {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.5rem;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    & .text-ul {
+                        margin-top: -0.01rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#service-active {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5.12%;
+
+    & .main-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        & h5 {
+            color: $gray-1;
+        }
+
+        & ul {
+            & li {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & .text-ul {
+                    margin-top: -0.01rem;
+                }
+
+                & a {
+                    color: $orange-400;
+                }
+            }
+        }
+    }
+
+    & .img-old-men {
+        width: 110%;
+        height: auto;
+        margin: 0 -5.12%;
+    }
+
+    & .text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+
+        & p {
+            text-align: center;
+        }
+    }
+}
+
+#how-active {
+    display: flex;
+    flex-direction: column;
+    padding: 1.12rem 5.12%;
+    gap: 0.81rem;
+
+    & h3 {
+        text-align: left;
+    }
+
+    & p {
+        display: none;
+    }
+
+    & .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+
+        & ul {
+            & li {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & .text-ul {
+                    margin-top: -0.01rem;
+                    color: $gray-1;
+                }
+            }
+        }
+
+        & .accordion-button {
+            background-color: $orange-400 !important;
+            border-radius: 0.4375rem !important;
+            color: white !important;
+        }
+
+        & .accordion-item {
+            border-radius: 0.4375rem !important;
+            border: none;
+        }
+
+        & .accordion-button::after {
+            background-image: url("/icons/arrow-down-white.svg") !important;
+        }
+
+        & .accordion-body {
+            box-shadow: 5.01136px 7.01591px 30.06818px 0px rgba(255, 105, 0, 0.15);
+        }
+
+        & .differente-accordion {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .advertising {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $orange-400;
+            border-radius: 0.625rem;
+            padding: 1.125rem;
+
+            & img {
+                width: 25%;
+            }
+
+            & p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+#experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 5.12%;
+    margin-bottom: 2rem;
+
+    & h3 {
+        text-align: left;
+    }
+
+    & .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        & .each-card {
+            display: flex;
+            flex-direction: row;
+            gap: 6.72%;
+            padding: 0.975rem 0.86669rem;
+            border-radius: 0.35481rem;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            box-shadow: 2.16667px 3.03333px 13px 0px rgba(159, 102, 219, 0.18);
+
+            & .img-container {
+                width: 100%;
+                height: 100%;
+                background-color: $orange-400;
+                border-radius: 0.325rem;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .text-container {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+
+                & h5 {
+                    color: $orange-400;
+                    font-size: 0.4875rem !important;
+                    line-height: 105%;
+                    letter-spacing: 0.05363rem;
+                    margin: 0;
+                }
+
+                & h4 {
+                    color: $gray-1;
+                    font-size: 0.8125rem;
+                    line-height: 113%;
+                    text-align: left;
+                    margin: 0;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .body {
+        &_1 {
+            font-size: 1rem;
+        }
+
+        &_2 {
+            font-size: 0.85rem;
+        }
+
+        &_3 {
+            font-size: 0.75rem;
+        }
+    }
+
+    .text-btn {
+        font-size: 0.85rem;
+    }
+
+    .text-accordion {
+        font-size: 1.2rem !important;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem !important;
+    }
+
+    h5 {
+        font-size: 1.2rem !important;
+    }
+
+    #main-banner {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    #nav-bar {
+        .nav-phone-banking {
+            height: 3.5rem;
+            justify-content: space-evenly;
+        }
+
+        .nav-btn {
+            margin: 0;
+        }
+    }
+
+    .content {
+        width: 100%;
+        padding: 4rem 5.12% 0;
+
+        & .what-to-do-phone {
+            & ul {
+                & li {
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+        }
+
+        & .what-to-do-banking {
+            & ul {
+                & li {
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+        }
+
+        & .remember {
+            & ul {
+                & li {
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #register-steps {
+        & .register {
+            &_communicate {
+                & ul {
+                    & li {
+                        & .text-ul {
+                            margin-top: -0.03rem;
+                        }
+                    }
+                }
+            }
+
+            &_office {
+                & ul {
+                    & li {
+                        & .text-ul {
+                            margin-top: -0.03rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #service-active {
+
+        & .main-text-container {
+            & h5 {
+                color: $gray-1;
+            }
+
+            & ul {
+                & li {
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #how-active {
+        & .accordion {
+            & ul {
+                & li {
+                    & .text-ul {
+                        margin-top: -0.03rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #experiences {
+        & .cards-container {
+            & .each-card {
+                & .text-container {
+                    & h5 {
+                        font-size: 0.9rem !important;
+                    }
+
+                    & h4 {
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .body {
+        &_1 {
+            color: $gray-1;
+            font-size: 1.2rem;
+        }
+
+        &_2 {
+            font-size: 1rem;
+        }
+
+        &_3 {
+            font-size: 0.87rem;
+        }
+    }
+
+    .text-btn {
+        font-size: 0.9rem;
+        line-height: 100%;
+    }
+
+    .text-accordion {
+        font-size: 1.5rem !important;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem !important;
+    }
+
+    h5 {
+        font-size: 1.2rem !important;
+    }
+
+    #main-banner {
+        background-image: url("/images/phone-bank-bg-desk.webp");
+        flex-direction: row-reverse;
+        padding: 4rem 6% 6.21rem;
+        gap: 5%;
+
+        & .text-container {
+            gap: 0.3rem;
+            align-items: start;
+
+            & h1 {
+                text-align: left;
+                margin: 0;
+            }
+
+            & .body_1 {
+                text-align: left;
+            }
+        }
+    }
+
+    #nav-bar {
+        padding: 0 6%;
+        margin-top: -1.5rem;
+
+        & .nav-phone-banking {
+            width: 100%;
+            height: 3rem;
+            padding: 0 3%;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+        border-radius: 0rem;
+        padding: 5rem 6% 4rem;
+
+        & .benefits {
+            gap: 4rem;
+
+            & .container-icons {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .each-icon {
+                    width: 47%;
+                    gap: 9.5%;
+
+                    &_icon {
+                        padding: 1rem;
+
+                        & img {
+                            width: 2.725rem;
+                            height: 2.725rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .key-management {
+            & .container-icons {
+                gap: 2.3rem;
+
+                & .each-icon {
+                    width: 100%;
+                    gap: 9.5%;
+
+                    &_icon {
+                        padding: 1rem;
+
+                        & img {
+                            width: 2.725rem;
+                            height: 2.725rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .remember {
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .what-to-do {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+
+        & .what-to-do-phone {
+            width: 48%;
+            margin-bottom: 0;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+
+        & .what-to-do-banking {
+            width: 48%;
+            margin-bottom: 0;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #register-steps {
+        margin-top: 0;
+        background-color: $orange-400;
+        padding: 3.5rem 6%;
+        gap: 2rem;
+
+        & .register {
+            &_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &_communicate {
+                width: 48%;
+
+                & ul {
+                    width: 100%;
+                    gap: 1rem;
+
+                    & li {
+                        gap: 0.7rem;
+
+                        & .text-ul {
+                            margin-top: -0.2rem;
+                        }
+                    }
+                }
+            }
+
+            &_office {
+                width: 48%;
+
+                & ul {
+                    width: 100%;
+                    gap: 1rem;
+
+                    & li {
+                        gap: 0.7rem;
+
+                        & .text-ul {
+                            margin-top: -0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #service-active {
+        padding: 9rem 6% 14rem;
+        background-image: url("/images/phone-bank-bg2-desk.webp");
+        background-size: cover;
+        background-position: center center;
+        align-items: flex-end;
+
+        & .main-text-container {
+            width: 53.5%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+
+        & .img-old-men {
+            display: none;
+        }
+
+        & .text-container {
+            display: none;
+        }
+    }
+
+    #how-active {
+        display: flex;
+        flex-direction: column;
+        padding: 0 6%;
+        gap: 1.2rem;
+
+        & p {
+            display: flex;
+        }
+
+        & .accordion {
+            gap: 1.25rem;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+                padding-top: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+
+            & .differente-accordion {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            & .advertising {
+                width: 18.7%;
+                height: 100%;
+
+                & img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    #experiences {
+        gap: 4rem;
+        padding: 0 6%;
+        margin: 6rem 0 3rem;
+
+        & .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1.5rem;
+
+            & .each-card {
+                width: 47%;
+
+                & .img-container {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .text-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.53rem;
+
+                    & h5 {
+                        font-size: 0.9rem !important;
+                    }
+
+                    & h4 {
+                        font-size: 1.5rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2500px) {
+    .body {
+        &_1 {
+            color: $gray-1;
+            font-size: 1.5rem;
+        }
+
+        &_2 {
+            font-size: 1.3rem;
+        }
+
+        &_3 {
+            font-size: 1rem;
+        }
+    }
+
+    .text-btn {
+        font-size: 1.3rem;
+        line-height: 100%;
+    }
+
+    .text-accordion {
+        font-size: 1.7rem !important;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1.875rem !important;
+    }
+
+    h5 {
+        font-size: 1.5rem !important;
+    }
+
+    #main-banner {
+        background-image: url("/images/phone-bank-bg-desk.webp");
+        flex-direction: row-reverse;
+        padding: 4rem 6% 6.21rem;
+        gap: 5%;
+
+        & .text-container {
+            gap: 0.3rem;
+            align-items: start;
+
+            & h1 {
+                text-align: left;
+                margin: 0;
+            }
+
+            & .body_1 {
+                text-align: left;
+            }
+        }
+    }
+
+    #nav-bar {
+        padding: 0 6%;
+        margin-top: -2.5rem;
+
+        & .nav-phone-banking {
+            width: 100%;
+            height: 5rem;
+            padding: 0 3%;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+        border-radius: 0rem;
+        padding: 5rem 6% 4rem;
+
+        & .benefits {
+            gap: 4rem;
+
+            & .container-icons {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .each-icon {
+                    width: 47%;
+                    gap: 9.5%;
+
+                    &_icon {
+                        padding: 1rem;
+
+                        & img {
+                            width: 3.125rem;
+                            height: 3.125rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .key-management {
+            & .container-icons {
+                gap: 2.3rem;
+
+                & .each-icon {
+                    width: 100%;
+                    gap: 9.5%;
+
+                    &_icon {
+                        padding: 1rem;
+
+                        & img {
+                            width: 2.725rem;
+                            height: 2.725rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .remember {
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .what-to-do {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+        justify-content: space-between;
+
+        & .what-to-do-phone {
+            width: 48%;
+            margin-bottom: 0;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+
+        & .what-to-do-banking {
+            width: 48%;
+            margin-bottom: 0;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #register-steps {
+        margin-top: 0;
+        background-color: $orange-400;
+        padding: 5rem 6%;
+        gap: 3rem;
+
+        & .register {
+            &_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &_communicate {
+                width: 48%;
+
+                & ul {
+                    width: 100%;
+                    gap: 1rem;
+                    padding-top: 1rem;
+
+                    & li {
+                        gap: 0.7rem;
+
+                        & .text-ul {
+                            margin-top: -0.2rem;
+                        }
+                    }
+                }
+            }
+
+            &_office {
+                width: 48%;
+
+                & ul {
+                    width: 100%;
+                    gap: 1rem;
+                    padding-top: 1rem;
+
+                    & li {
+                        gap: 0.7rem;
+
+                        & .text-ul {
+                            margin-top: -0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #service-active {
+        padding: 12rem 6% 20rem;
+        background-image: url("/images/phone-bank-bg2-desk.webp");
+        background-size: cover;
+        background-position: center center;
+        align-items: flex-end;
+
+        & .main-text-container {
+            width: 53.5%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+                padding-top: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+        }
+
+        & .img-old-men {
+            display: none;
+        }
+
+        & .text-container {
+            display: none;
+        }
+    }
+
+    #how-active {
+        display: flex;
+        flex-direction: column;
+        padding: 0 6%;
+        gap: 1.2rem;
+
+        & p {
+            display: flex;
+        }
+
+        & .accordion {
+            gap: 1.25rem;
+
+
+            & ul {
+                width: 100%;
+                gap: 1rem;
+                padding-top: 1rem;
+
+                & li {
+                    gap: 0.7rem;
+
+                    & .text-ul {
+                        margin-top: -0.2rem;
+                    }
+                }
+            }
+
+            & .accordion-button {
+                height: 5rem;
+            }
+
+            & .differente-accordion {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            & .advertising {
+                width: 18.7%;
+                height: 100%;
+
+                & img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    #experiences {
+        gap: 4rem;
+        padding: 0 6%;
+        margin: 6rem 0 3rem;
+
+        & .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1.5rem;
+
+            & .each-card {
+                width: 47%;
+
+                & .img-container {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .text-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.53rem;
+
+                    & h5 {
+                        font-size: 1.5rem !important;
+                    }
+
+                    & h4 {
+                        font-size: 1.8rem;
+                    }
+
+                    & p {
+                        font-size: 1.3rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

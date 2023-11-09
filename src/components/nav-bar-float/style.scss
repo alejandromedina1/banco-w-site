@@ -4,7 +4,7 @@
   #nav-bar-float {
     position: relative;
     width: 95%;
-    height: 7rem;
+    height: 8rem;
     border-radius: 6.7px;
     border: none;
     background-color: white;
@@ -34,7 +34,7 @@
       padding: 0 1%;
 
       &:hover {
-        height: 7rem;
+        height: 8rem;
         box-shadow: 2.7083940505981445px 3.793248176574707px 16.26532745361328px 0px rgba(159, 102, 219, 0.18);
         justify-content: center;
         align-items: center;
@@ -79,6 +79,7 @@
       &_comparator {
         border-left: 1px solid $purple-100;
         border-right: 1px solid $purple-100;
+
         &:hover {
           border: none;
         }
@@ -99,13 +100,32 @@
     html {
       font-size: 18px;
     }
+
+    #nav-bar-float {
+
+      height: 9rem;
+
+      & button {
+        &:hover {
+          height: 9rem;
+        }
+
+        & .icon {
+          width: 25%;
+        }
+
+        & a {
+          font-size: 0.7rem;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1440px) {
     #nav-bar-float {
       position: relative;
       width: 70%;
-      height: 8rem;
+      height: 12rem;
       border-radius: 0.6rem;
       border: none;
       background-color: white;
@@ -114,12 +134,15 @@
       margin-left: 15%;
 
       & button {
-        height: 5rem;
+        height: 7rem;
         font-size: 1.125rem;
         font-weight: 400;
+        justify-content: center;
 
         &:hover {
-          height: 8rem;
+          height: 12rem;
+          justify-content: center !important;
+          align-items: center !important;
         }
 
         & .icon {
@@ -130,7 +153,7 @@
           display: flex;
           text-decoration: none;
           font-size: 1rem;
-          height: 50%;
+          height: 25%;
           justify-content: center;
           color: $purple-300;
         }
@@ -146,7 +169,7 @@
     #nav-bar-float {
       position: relative;
       width: 70%;
-      height: 8rem;
+      height: 12rem;
       border-radius: 0.6rem;
       border: none;
       background-color: white;
@@ -155,9 +178,13 @@
       margin-left: 15%;
 
       & button {
-        height: 5rem;
-        font-size: 1.125rem;
-        font-weight: 400;
+        height: 7rem;
+        
+        &:hover {
+          height: 12rem;
+          justify-content: center !important;
+          align-items: center !important;
+        }
 
         & .icon {
           width: 25%;
@@ -166,9 +193,11 @@
         & a {
           display: flex;
           text-decoration: none;
-          height: 50%;
+          height: 25%;
           justify-content: center;
           color: $purple-300;
+          font-size: 1.125rem;
+          font-weight: 400;
         }
       }
     }

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca Telefónica</title>
+
+    <!--Scss-->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="../../components/navbar/style.scss">
+    <link rel="stylesheet" href="../../components/footer/style.scss">
+
+</head>
+
+<body>
+    <nav-bar-desktop></nav-bar-desktop>
+
+    <section id="main-banner">
+        <div class="text-container">
+            <h1>Banca telefónica</h1>
+            <p class="body_1">Opción transaccional, desde cualquier lugar de manera ágil y segura, llamando a nuestra
+                Banca
+                Telefónica 018000515656 o al número celular 323 5996557, puedes realizar consulta de saldos y
+                movimientos,
+                pagar las cuotas de tu crédito, hacer transferencias entre cuentas del Banco W y enviar dinero para
+                retiro
+                con código OTP.
+                Además puedes retirar dinero desde los corresponsales bancarios propios, puntos Gane o Supergiros.</p>
+        </div>
+        <div class="banking-card">
+            <img src="/images/phone-bank-card.webp" alt="">
+            <div class="banking-card_text">
+                <h3>Instructivo Banca telefónica</h3>
+                <p class="body_1">Opción transaccional</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nav-bar">
+        <nav class="nav-phone-banking">
+            <button id="benefits-section" class="nav-btn active-btn text-btn"> Beneficios </button>
+
+            <button id="what-to-do-section" class="nav-btn inactive-btn text-btn"> ¿Qué hacer? </button>
+
+            <button id="key-section" class="nav-btn inactive-btn text-btn"> Manejo Clave </button>
+
+            <button id="remember-section" class="nav-btn inactive-btn text-btn"> Ten presente </button>
+
+        </nav>
+    </section>
+
+    <section class="content active-section" id="benefits-section">
+
+        <article class="benefits">
+            <div class="container-icons">
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/cellphone-white.svg" alt="">
+                    </div>
+                    <p class="body_1">Puedes contactarnos en cualquier momento sin tener que desplazarte.</p>
+                </div>
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/lock-white.svg" alt="">
+                    </div>
+                    <p class="body_1">Es un servicio fácil, rápido, seguro.</p>
+                </div>
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/phone-white.svg" alt="">
+                    </div>
+                    <p class="body_1">La opción transaccional es completamente gratuita, llamando a nuestra Banca
+                        telefónica 018000515656.</p>
+                </div>
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/not-wifi-white.svg" alt="">
+                    </div>
+                    <p class="body_1">No se necesita Internet ni celular con plan de datos.</p>
+                </div>
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/branch-white.svg" alt="">
+                    </div>
+                    <p class="body_1">Aplica para todos los operadores y celulares.</p>
+                </div>
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/check-white.svg" alt="">
+                    </div>
+                    <p class="body_1">Puedes acceder desde cualquier número fijo o celular.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="content inactive-section what-to-do" id="what-to-do-section">
+        <article class="what-to-do-phone">
+            <h5>Desde el celular y/o teléfono fijo:</h5>
+            <ul class="steps">
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Consultas: saldo cuentas de ahorro, saldo de créditos y consulta de los tres últimos movimientos
+                        de la cuenta de ahorro.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Transferencias entre cuentas del Banco W.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Pago de cuotas de crédito.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Envío de dinero por código OTP.
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <article class="what-to-do-banking">
+            <h5>Desde el Corresponsal Bancario propio, puntos Gane y Supergiros autorizados:</h5>
+            <ul class="steps">
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Retiros cuentas de ahorro.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Retiros de dinero con código OTP.
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="content inactive-section" id="key-section">
+        <article class="key-management">
+            <div class="container-icons">
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/map-white.svg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h5>¿Dónde la obtienes?</h5>
+                        <p class="body_1">En cualquiera de nuestras oficinas y/o Banca Telefónica.</p>
+                    </div>
+                </div>
+
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/lock-white.svg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h5>¿Dónde puedes cambiar tu clave personal?</h5>
+                        <p class="body_1">Comunicándote con nuestra Banca Telefónica 018000515656 o al número celular
+                            3235996557, marcando 1 para ingresar a la opción transaccional. También puedes hacerlo en
+                            cualquiera de nuestras oficinas.</p>
+                    </div>
+                </div>
+
+                <div class="each-icon">
+                    <div class="each-icon_icon">
+                        <img src="/icons/confused-emoji-white.svg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h5>¿Qué hacer si se te olvida la clave personal?</h5>
+                        <p class="body_1">Comunicándote con nuestra Banca Telefónica 018000515656 o al número celular
+                            3235996557, marcando 1 para ingresar a la opción transaccional. También puedes hacerlo en
+                            cualquiera de nuestras oficinas.</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section class="content inactive-section" id="remember-section">
+        <article class="remember">
+            <ul class="steps">
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        El servicio de opción transaccional se presta desde las 7:00 a.m. a 7:00 p.m. de lunes a
+                        domingo.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Para solicitar la activación de tu servicio, el horario de atención es de 7:00 a.m. a 6:00 p.m.
+                        de lunes a viernes y sábado de 8:00 a.m. a 2:00 p.m.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Realiza tus transacciones en efectivo solo en corresponsales bancarios, puntos en alianza
+                        autorizados. (Gane y Supergiros).
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        El Banco no solicitará información confidencial por medio de mensajes de texto o correos
+                        electrónicos.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Si por alguna razón tu clave personal se bloquea, acércate a una de nuestras oficinas.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Recuerda cambiar tu clave periódicamente y al momento de inscribirte a la opción transaccional.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Nuestro código de mensajes de texto es el 85992.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        El proceso de validación de titularidad debe ser realizado por el titular de la cuenta de
+                        ahorros.
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="register-steps">
+        <h3>¿Cómo registrarte?</h3>
+        <div class="register_container">
+            <div class="register_communicate">
+                <h5>Comunícate con nuestra Banca telefónica</h5>
+                <ul class="steps">
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Ingresa tu número de cédula.
+                        </div>
+                    </li>
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Dirígete a la opción transaccional.
+                        </div>
+                    </li>
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Realiza el proceso de validación de titularidad que indica el asesor.
+                        </div>
+
+                    </li>
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Asigna una nueva clave.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="register_office">
+                <h5>Acércate a una de nuestras oficinas y realiza tu proceso de inscripción</h5>
+                <ul class="steps">
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Presenta tu documento de identidad.
+                        </div>
+                    </li>
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Recibirás un mensaje de texto con el PIN temporal
+                            de activación.
+                        </div>
+                    </li>
+                    <li class="body_2"><img src="/icons/item-white.svg" alt="ícono" class="asterisks-mobile">
+                        <div class="text-ul">
+                            Comunícate con nuestra Banca Telefónica y cambia tu clave en la opción transaccional.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="service-active">
+        <article class="main-text-container">
+            <h5>¿Cómo activar el servicio?</h5>
+            <ul class="steps">
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Desde un celular o teléfono fijo, comunícate con nuestra Banca Telefónica 018000515656 o al
+                        número celular 323 5996557, digita tu documento de identidad. </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Marca 1 e ingresa la Opción Transaccional.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Selecciona la opción 1 si recibiste un mensaje con PIN temporal para realizar el cambio de
+                        clave.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Selecciona la opción 2 si no tienes clave personal.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Selecciona la opción 3 para reestablecer una nueva clave.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Realiza el proceso de validación de titularidad que indica el asesor.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Asigna tu clave personal y listo.
+                    </div>
+                </li>
+                <li class="body_2"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                    <div class="text-ul">
+                        Mira nuestro video explicativo <a
+                            href="https://www.bancow.com.co/canales-de-servicio/banca-telefonica/opcion-transaccional/#conoce-nuestras-experiencias-de-servicio">aquí.</a>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <img class="img-old-men" src="/images//phone-bank-bg2-mobile.webp" alt="">
+
+        <article class="text-container">
+            <h3>¿Cómo activar el servicio?</h3>
+            <p class="body_1">Sigue los pasos para que de manera rápida, fácil y segura puedas acceder a nuestros
+                servicios financieros.</p>
+        </article>
+
+    </section>
+
+    <section id="how-active">
+        <h3>Aprende a usarlo</h3>
+        <p class="body_1">Sigue los pasos para que de manera rápida, fácil y segura puedas acceder a nuestros servicios
+            financieros.</p>
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-accordion" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        1. Retira de tu cuenta de ahorros
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="steps">
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Acércate a nuestros corresponsales propios, puntos Gane o Supergiros y solicita el
+                                    retiro de tu cuenta de ahorros. </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Recibe la llamada y confirma la transacción ingresando tu clave personal. </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    ¡Retira tu dinero! Listo recibirás un mensaje de texto confirmando la transacción.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-accordion" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. Consulta tu cuenta de ahorros
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="steps">
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Desde tu celular o teléfono fijo llama a nuestra Banca Telefónica 018000515656 o al
+                                    celular 3235996557.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita tu documento de identidad y selecciona la opción transaccional.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita opción 1 e ingresa tu clave personal.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Escoge la opción de consulta de saldo o de los tres últimos movimientos de tu
+                                    cuenta.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    ¡Listo recibirás información de la consulta!
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-accordion" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. Paga tus créditos
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="steps">
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Desde tu celular o teléfono fijo llama a nuestra Banca Telefónica 018000515656 o al
+                                    celular 3235996557.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita tu documento de identidad y selecciona la opción transaccional.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita opción 1 e ingresa tu clave personal.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona la opción “pago de crédito”.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona la cuenta de ahorros de donde se debitará el dinero.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona el crédito que vas a pagar.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Ingresa el valor a pagar y confirma la transacción.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    ¡Listo recibirás un mensaje de texto confirmando la transacción!
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-accordion" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4. Transfiere entre cuentas del Banco
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body differente-accordion">
+                        <ul class="steps">
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Desde tu celular o teléfono fijo llama a nuestra Banca Telefónica 018000515656 o al
+                                    celular 3235996557.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita tu documento de identidad y selecciona la opción transaccional.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita opción 1 e ingresa tu clave personal.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona la opción “Transferencias”.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona la cuenta de ahorros de donde transferirás el dinero.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita el número de la cuenta de ahorros a la que enviarás el dinero.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Ingresa el valor a enviar.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    ¡Listo recibirás un mensaje de texto confirmando la transacción!
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="advertising">
+                            <img src="/icons/alert-orange.svg" alt="">
+                            <p class="body_1">Antes de enviar la transacción, recuerda verificar el número de la cuenta
+                                destino.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-accordion" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5. Envía dinero con código OTP
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body differente-accordion">
+                        <ul class="steps">
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Desde tu celular o teléfono fijo llama a nuestra Banca Telefónica 018000515656 o al
+                                    celular 3235996557.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita tu documento de identidad y selecciona la opción transaccional.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Digita opción 1 e ingresa tu clave personal.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona la opción “Envío con código OTP”.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Selecciona la cuenta de ahorros de donde realizarás el envío del dinero.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Ingresa el número de celular de la persona que recibirá el dinero.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    Ingresa el valor a enviar y confirma la transacción.
+                                </div>
+                            </li>
+                            <li class="body_1"><img src="/icons/item-orange.svg" alt="ícono" class="asterisks-mobile">
+                                <div class="text-ul">
+                                    ¡Listo recibirás un mensaje de texto confirmando la transacción!
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="advertising">
+                            <img src="/icons/alert-orange.svg" alt="">
+                            <p class="body_1">EL código tiene una vigencia de 90 minutos para retirar el dinero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experiences">
+        <h3>Conoce nuestras experiencias de servicio</h3>
+        <div class="cards-container">
+            <div class="each-card">
+                <div class="img-container">
+                    <img src="/images/phone-bank-card2.webp" alt="">
+                </div>
+                <div class="text-container">
+                    <h5>Video</h5>
+                    <h4>BANCO W CANALES Paso a paso retiro OTP CB</h4>
+                    <p class="body_3">Conoce aquí como realizar tus retiros OPT</p>
+                </div>
+            </div>
+
+            <div class="each-card">
+                <div class="img-container">
+                    <img src="/images/phone-bank-card2.webp" alt="">
+                </div>
+                <div class="text-container">
+                    <h5>Video</h5>
+                    <h4>Paga tus créditos Banca Telefónica Banco W</h4>
+                    <p class="body_3">Paga tus créditos de manera fácil y rápida desde tu Banca Telefónica.</p>
+                </div>
+            </div>
+            <div class="each-card">
+                <div class="img-container">
+                    <img src="/images/phone-bank-card2.webp" alt="">
+                </div>
+                <div class="text-container">
+                    <h5>Video</h5>
+                    <h4>BANCO W CANALES BANCA TELEFONICA</h4>
+                    <p class="body_3">Desde cualquier lugar de manera ágil y segura, llamando a nuestra Banca
+                        Telefónica. </p>
+                </div>
+            </div>
+            <div class="each-card">
+                <div class="img-container">
+                    <img src="/images/phone-bank-card2.webp" alt="">
+                </div>
+                <div class="text-container">
+                    <h5>Video</h5>
+                    <h4>Consulta tu cuenta de ahorros Banco W</h4>
+                    <p class="body_3">Pensando en ti, en tu tiempo y en como mejorar nuestros procesos.</p>
+                </div>
+            </div>
+            <div class="each-card">
+                <div class="img-container">
+                    <img src="/images/phone-bank-card2.webp" alt="">
+                </div>
+                <div class="text-container">
+                    <h5>Video</h5>
+                    <h4>Transferencias entre cuentas Banca Telefónica</h4>
+                    <p class="body_3">Realiza tus trasferencias entre cuentas del Banco W, desde la comodidad de tu casa
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="../../components/components.js"></script>
+
+</body>
+
+</html>

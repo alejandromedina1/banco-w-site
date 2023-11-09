@@ -247,17 +247,24 @@ h1 {
             display: flex;
             flex-direction: row;
             width: 100%;
+
+            & .specific-type {
+                width: auto;
+                height: auto;
+                position: absolute;
+                background-color: $orange-400;
+                color: white;
+                padding: 0.1rem 0.64rem;
+                margin: 0.7rem 0 0 -8.7%;
+                border: none;
+                border-radius: 0.3125rem;
+                text-align: center;
+                font-family: "font-bariol-regular";
+                font-size: 1rem;
+                font-weight: 400;
+            }
         }
     }
-
-    // .title-section {
-    //     background-color: $orange-400;
-    //     color: white;
-    //     position:absolute;
-    //     padding: 0.1rem 0.64rem;
-    //     left: -0.01%;
-    //     top: 100%;
-    // }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -355,6 +362,7 @@ h1 {
 
     #results-compare {
         padding: 0 10%;
+        margin-left: 14.58%;
 
         table,
         th,
@@ -397,6 +405,20 @@ h1 {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
+
+                & .specific-type {
+                    width: 15.7%;
+                    height: auto;
+                    position: absolute;
+                    color: white;
+                    padding: 0.1rem 0.64rem;
+                    margin: 0.7rem 0 0 -14.58%;
+                    border-radius: 0;
+                    text-align: center;
+                    font-family: "font-bariol-regular";
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -496,6 +518,7 @@ h1 {
 
     #results-compare {
         padding: 0 10%;
+        margin-left: 14.58%;
 
         table,
         th,
@@ -538,6 +561,20 @@ h1 {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
+
+                & .specific-type {
+                    width: 15.4%;
+                    height: auto;
+                    position: absolute;
+                    color: white;
+                    padding: 0.1rem 0.64rem;
+                    margin: 0.7rem 0 0 -14.58%;
+                    border-radius: 0;
+                    text-align: center;
+                    font-family: "font-bariol-regular";
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
             }
         }
     }
